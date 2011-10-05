@@ -1,0 +1,2392 @@
+# This is a text dump done via copy & paste from the PDF of the 
+# 17th WHO Model List of Essential Medicines (a95053_eng.pdf)
+ 
+ 
+WHO Model List 
+of 
+Essential Medicines 
+ 
+ 
+ 
+ 
+17th list 
+(March 2011) 
+ 
+ 
+ 
+ 
+Status of this document 
+This is a reprint of the text on the WHO Medicines web site 
+http://www.who.int/medicines/publications/essentialmedicines/en/index.html 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+The published material is being distributed without warranty of any kind, either expressed or implied.  The 
+responsibility for the interpretation and use of the material lies with the reader.  In no event shall the World Health 
+Organization be liable for damages arising from its use. 
+ 
+17th edition 
+Essential Medicines 
+WHO Model List (March 2011) 
+Explanatory Notes 
+ 
+The core list presents a list of minimum medicine needs for a basic health‐care system, listing the most 
+efficacious, safe and cost‐effective medicines for priority conditions. Priority conditions are selected on the 
+basis of current and estimated future public health relevance, and potential for safe and cost‐effective 
+treatment. 
+ 
+The complementary list presents essential medicines for priority diseases, for which specialized diagnostic 
+or monitoring facilities, and/or specialist medical care, and/or specialist training are needed. In case of doubt 
+medicines may also be listed as complementary on the basis of consistent higher costs or less attractive cost‐
+effectiveness in a variety of settings.  
+ 
+The square box symbol ( ) is primarily intended to indicate similar clinical performance within a 
+pharmacological class. The listed medicine should be the example of the class for which there is the best 
+evidence for effectiveness and safety. In some cases, this may be the first medicine that is licensed for 
+marketing; in other instances, subsequently licensed compounds may be safer or more effective. Where there 
+is no difference in terms of efficacy and safety data, the listed medicine should be the one that is generally 
+available at the lowest price, based on international drug price information sources. Not all square boxes are 
+applicable to medicine selection for children — see the second EMLc for details. 
+ 
+Therapeutic equivalence is only indicated on the basis of reviews of efficacy and safety and when consistent 
+with WHO clinical guidelines. National lists should not use a similar symbol and should be specific in their 
+final selection, which would depend on local availability and price.  
+ 
+The a symbol indicates that there is an age or weight restriction on use of the medicine; details for each 
+medicine can be found in Table 1. 
+ 
+Where the [c] symbol is placed next to the complementary list it signifies that the medicine(s) require(s) 
+specialist diagnostic or monitoring facilities, and/or specialist medical care, and/or specialist training for 
+their use in children. 
+ 
+Where the [c] symbol is placed next to an individual medicine or strength of medicine it signifies that there 
+is a specific indication for restricting its use to children. 
+ 
+The presence of an entry on the Essential Medicines List carries no assurance as to pharmaceutical quality. It 
+is the responsibility of the relevant national or regional drug regulatory authority to ensure that each 
+product is of appropriate pharmaceutical quality (including stability) and that when relevant, different 
+products are interchangeable. 
+ 
+For recommendations and advice concerning all aspects of the quality assurance of medicines see the WHO 
+Medicines web site http://www.who.int/medicines/areas/quality_assurance/en/index.html. 
+ 
+Medicines and dosage forms are listed in alphabetical order within each section and there is no implication 
+of preference for one form over another. Standard treatment guidelines should be consulted for information 
+on appropriate dosage forms. 
+ 
+ 
+The main terms used for dosage forms in the Essential Medicines List can be found in Annex 1. 
+ 
+Definitions of many of these terms and pharmaceutical quality requirements applicable to the different 
+categories are published in the current edition of The International Pharmacopoeia 
+http://www.who.int/medicines/publications/pharmacopoeia/en/index.html. 
+ 
+ 
+ 
+Essential Medicines 
+WHO Model List 
+17th edition 
+1. ANAESTHETICS
+1.1 General anaesthetics and oxygen
+1.1.1 Inhalational medicines
+halothane   Inhalation. 
+isoflurane   Inhalation. 
+nitrous oxide Inhalation. 
+oxygen  Inhalation (medicinal gas).  
+1.1.2 Injectable medicines 
+ketamine 
+Injection: 50 mg (as hydrochloride)/ml in 10‐ml vial. 
+Injection: 10 mg/ml; 20 mg/ml. 
+propofol* 
+* Thiopental may be used as an alternative depending on local 
+availability and cost. 
+1.2 Local anaesthetics
+Injection: 0.25%; 0.5% (hydrochloride) in vial.  
+ bupivacaine 
+Injection for spinal anaesthesia: 0.5% (hydrochloride) in 
+4‐ml ampoule to be mixed with 7.5% glucose solution. 
+Injection: 1%; 2% (hydrochloride) in vial. 
+ lidocaine 
+Injection for spinal anaesthesia: 5% (hydrochloride) in  
+2‐ml ampoule to be mixed with 7.5% glucose solution. 
+Topical forms: 2% to 4% (hydrochloride). 
+Dental cartridge: 2% (hydrochloride) + epinephrine 1:80 000. 
+lidocaine + epinephrine (adrenaline)  
+Injection: 1%; 2% (hydrochloride or sulfate) + epinephrine 
+1:200 000 in vial. 
+Complementary List 
+Injection: 30 mg (hydrochloride)/ml in 1‐ml ampoule. 
+ephedrine 
+(For use in spinal anaesthesia during delivery, to prevent hypotension). 
+1.3 Preoperative medication and sedation for short-term procedures
+atropine 
+Injection: 1 mg (sulfate) in 1‐ml ampoule. 
+Injection: 1 mg/ml. 
+ midazolam 
+Oral liquid: 2 mg/ml [c]. 
+Tablet: 7.5 mg; 15 mg. 
+morphine 
+EML 17 (March 2011)
+ 
+Injection: 10 mg (sulfate or hydrochloride) in 1‐ml ampoule. 
+page - 1
+Essential Medicines 
+WHO Model List 
+17th edition 
+2. ANALGESICS, ANTIPYRETICS, NON-STEROIDAL ANTI-INFLAMMATORY
+MEDICINES (NSAIMs), MEDICINES USED TO TREAT GOUT AND DISEASE MODIFYING
+AGENTS IN RHEUMATOID DISORDERS (DMARDs)
+2.1 Non-opioids and non-steroidal anti-inflammatory medicines (NSAIMs)
+Suppository: 50 mg to 150 mg. 
+acetylsalicylic acid 
+Tablet: 100 mg to 500 mg. 
+Oral liquid: 40 mg/ml (200 mg/5 ml). 
+ibuprofen a  
+Tablet: 200 mg; 400 mg. 
+a
+>3 months.
+Oral liquid: 125 mg/5 ml. 
+Suppository: 100 mg. 
+paracetamol* 
+Tablet: 100 mg to 500 mg. 
+* Not recommended for anti‐inflammatory use due to lack of 
+proven benefit to that effect. 
+Complementary List [c] 
+Suppository: 50 mg to 150 mg. 
+acetylsalicylic acid* 
+Tablet: 100 mg to 500 mg. 
+* For use for rheumatic fever, juvenile arthritis, Kawasaki disease. 
+2.2 Opioid analgesics
+Tablet: 30 mg (phosphate). 
+codeine* 
+* The Expert Committee has requested a review of the 
+comparative effectiveness and safety, for possible deletion of this 
+medicine at its next meeting.  
+Injection: 10 mg (morphine hydrochloride or morphine sulfate) 
+in 1‐ml ampoule. 
+morphine 
+Oral liquid: 10 mg (morphine hydrochloride or morphine 
+sulfate)/5 ml. 
+Tablet: 10 mg (morphine sulfate). 
+Tablet (prolonged release): 10 mg; 30 mg; 60 mg (morphine 
+sulfate). 
+2.3 Medicines used to treat gout
+allopurinol 
+Tablet: 100 mg. 
+2.4 Disease modifying agents used in rheumatoid disorders (DMARDs)
+Tablet: 100 mg; 150 mg (as phosphate or sulfate). 
+chloroquine* 
+EML 17 (March 2011)
+ 
+* The Expert Committee has requested a review of the 
+comparative effectiveness and safety, for possible deletion of this 
+medicine at its next meeting. 
+page - 2
+Essential Medicines 
+WHO Model List 
+17th edition 
+Complementary List
+azathioprine  Tablet: 50 mg. 
+hydroxychloroquine   Solid oral dosage form: 200 mg (as sulfate) [c]. 
+methotrexate  Tablet: 2.5 mg (as sodium salt). 
+penicillamine  Solid oral dosage form: 250 mg. 
+sulfasalazine  Tablet: 500 mg. 
+3. ANTIALLERGICS AND MEDICINES USED IN ANAPHYLAXIS
+Injection: 10 mg (hydrogen maleate) in 1‐ml ampoule. 
+ chlorphenamine a  
+Oral liquid: 2 mg/5 ml (hydrogen maleate) [c]. 
+Tablet: 4 mg (hydrogen maleate). 
+a
+>1 year. 
+dexamethasone Injection: 4 mg dexamethasone phosphate (as disodium salt) in 
+                      1‐ml ampoule. 
+epinephrine (adrenaline) Injection: 1 mg (as hydrochloride or hydrogen tartrate) in  
+                                   1‐ml ampoule. 
+hydrocortisone Powder for injection: 100 mg (as sodium succinate) in vial. 
+ prednisolone 
+Oral liquid: 5 mg/ml [c]. 
+Tablet: 5 mg; 25 mg. 
+4. ANTIDOTES AND OTHER SUBSTANCES USED IN POISONINGS
+4.1 Non-specific
+charcoal, activated 
+Powder. 
+4.2 Specific
+Injection: 200 mg/ml in 10‐ml ampoule. 
+acetylcysteine 
+Oral liquid: 10% [c]; 20% [c]. 
+atropine  Injection: 1 mg (sulfate) in 1‐ml ampoule. 
+calcium gluconate  Injection: 100 mg/ml in 10‐ml ampoule. 
+methylthioninium chloride   Injection: 10 mg/ml in 10‐ml ampoule. 
+   (methylene blue)  
+naloxone  Injection: 400 micrograms (hydrochloride) in 1‐ml ampoule. 
+Solid oral dosage form: 250 mg. 
+penicillamine* 
+* The Expert Committee has requested a review of the 
+comparative effectiveness and safety, for possible deletion of this 
+medicine at its next meeting. 
+potassium ferric hexacyano‐ferrate(II) ‐ Powder for oral administration. 
+       2H20 (Prussian blue)  
+sodium nitrite  Injection: 30 mg/ml in 10‐ml ampoule. 
+EML 17 (March 2011)
+ 
+page - 3
+Essential Medicines 
+WHO Model List 
+sodium thiosulfate 
+17th edition 
+Injection: 250 mg/ml in 50‐ml ampoule. 
+Complementary List 
+deferoxamine  Powder for injection: 500 mg (mesilate) in vial. 
+dimercaprol  Injection in oil: 50 mg/ml in 2‐ml ampoule. 
+sodium calcium edetate   Injection: 200 mg/ml in 5‐ml ampoule. 
+succimer  Solid oral dosage form: 100 mg. 
+5. ANTICONVULSANTS/ANTIEPILEPTICS
+Oral liquid: 100 mg/5 ml. 
+carbamazepine 
+Tablet (chewable): 100 mg; 200 mg. 
+Tablet (scored): 100 mg; 200 mg. 
+diazepam 
+lorazepam 
+Gel or rectal solution: 5 mg/ml in 0.5 ml; 2‐ml and 4‐ml tubes. 
+Parenteral formulation: 2 mg/ml in 1‐ml ampoule; 4 mg/ml in  
+1‐ml ampoule.  
+Injection: 500 mg/ml in 2‐ml ampoule; 500 mg/ml in  
+10‐ml ampoule. 
+magnesium sulfate* 
+* For use in eclampsia and severe pre‐eclampsia and not for other 
+convulsant disorders. 
+Injection: 200 mg/ml (phenobarbital sodium). 
+phenobarbital  
+Oral liquid: 15 mg/5 ml (phenobarbital). 
+Tablet: 15 mg to 100 mg (phenobarbital). 
+Capsule: 25 mg; 50 mg; 100 mg (sodium salt). 
+Injection: 50 mg/ml in 5‐ml vial (sodium salt). 
+Oral liquid: 25 mg to 30 mg/5 ml.* 
+phenytoin 
+Tablet: 25 mg; 50 mg; 100 mg (sodium salt). 
+Tablet (chewable): 50 mg. 
+* The presence of both 25 mg/5 ml and 30 mg/5 ml strengths on 
+the same market would cause confusion in prescribing and 
+dispensing and should be avoided. 
+Oral liquid: 200 mg/5 ml. 
+valproic acid (sodium valproate)  
+Tablet (crushable): 100 mg. 
+Tablet (enteric‐coated): 200 mg; 500 mg (sodium valproate). 
+Complementary List 
+Capsule: 250 mg. 
+ethosuximide 
+Oral liquid: 250 mg/5 ml. 
+EML 17 (March 2011)
+ 
+page - 4
+Essential Medicines 
+WHO Model List 
+17th edition 
+6. ANTI-INFECTIVE MEDICINES
+6.1 Anthelminthics
+6.1.1 Intestinal anthelminthics
+albendazole 
+Tablet (chewable): 400 mg. 
+Tablet: 50 mg; 150 mg (as hydrochloride). 
+levamisole* * The Expert Committee recommended that this medicine be 
+                    reviewed for deletion at its next meeting. Should be used in 
+                              combination with other anthleminthics. 
+mebendazole  Tablet (chewable): 100 mg; 500 mg. 
+Tablet (chewable): 500 mg. 
+niclosamide*  * Niclosamide is listed for use when praziquantel treatment fails. 
+                        The Expert Committee recommended that this medicine be 
+                               reviewed for deletion at its next meeting. 
+praziquantel  Tablet: 150 mg; 600 mg. 
+Oral liquid: 50 mg (as embonate or pamoate)/ml. 
+pyrantel 
+Tablet (chewable): 250 mg (as embonate or pamoate). 
+6.1.2 Antifilarials
+albendazole  Tablet (chewable): 400 mg. 
+diethylcarbamazine  Tablet: 50 mg; 100 mg (dihydrogen citrate). 
+ivermectin  Tablet (scored): 3 mg; 6 mg. 
+6.1.3 Antischistosomals and other antitrematode medicines 
+praziquantel  Tablet: 600 mg. 
+triclabendazole  Tablet: 250 mg. 
+Complementary List 
+Capsule: 250 mg. 
+oxamniquine* 
+Oral liquid: 250 mg/5 ml. 
+* Oxamniquine is listed for use when praziquantel treatment fails. 
+6.2 Antibacterials
+6.2.1 Beta Lactam medicines
+amoxicillin 
+Powder for oral liquid: 125 mg (as trihydrate)/5 ml; 250 mg (as 
+trihydrate)/5 ml [c]. 
+Solid oral dosage form: 250 mg; 500 mg (as trihydrate). 
+amoxicillin + clavulanic acid  
+Oral liquid: 125 mg amoxicillin + 31.25 mg clavulanic acid/5 ml 
+AND 250 mg amoxicillin + 62.5 mg clavulanic acid/5 ml [c]. 
+Tablet: 500 mg (as trihydrate) + 125 mg (as potassium salt). 
+ampicillin 
+EML 17 (March 2011)
+ 
+Powder for injection: 500 mg; 1 g (as sodium salt) in vial. 
+page - 5
+Essential Medicines 
+WHO Model List 
+17th edition 
+benzathine benzylpenicillin  Powder for injection: 900 mg benzylpenicillin (= 1.2 million IU) 
+                                        in 5‐ml vial [c]; 1.44 g benzylpenicillin (= 2.4 million IU) in 5‐ml 
+                                                        vial. 
+benzylpenicillin  Powder for injection: 600 mg (= 1 million IU); 3 g (= 5 million IU) 
+                                 (sodium or potassium salt) in vial. 
+cefalexin [c]
+Powder for reconstitution with water: 125 mg/5 ml; 250 mg/5 ml 
+(anhydrous).  
+Solid oral dosage form: 250 mg (as monohydrate). 
+Powder for injection: 1 g (as sodium salt) in vial. 
+cefazolin* a 
+* For surgical prophylaxis. 
+a
+>1 month. 
+Capsule: 400 mg (as trihydrate). 
+cefixime* 
+* Only listed for single‐dose treatment of uncomplicated ano‐
+genital gonorrhoea. 
+Powder for injection: 250 mg; 1 g (as sodium salt) in vial. 
+ceftriaxone* a 
+* Do not administer with calcium and avoid in infants with 
+hyperbilirubinemia. 
+a
+>41 weeks corrected gestational age. 
+Capsule: 500 mg; 1 g (as sodium salt). 
+ cloxacillin 
+Powder for injection: 500 mg (as sodium salt) in vial. 
+Powder for oral liquid: 125 mg (as sodium salt)/5 ml. 
+Powder for oral liquid: 250 mg (as potassium salt)/5 ml. 
+phenoxymethylpenicillin 
+Tablet: 250 mg (as potassium salt). 
+Powder for injection: 1 g (=1 million IU); 3 g (=3 million IU) in 
+vial.  
+procaine benzylpenicillin* 
+* Procaine benzylpenicillin is not recommended as first‐line 
+treatment for neonatal sepsis except in settings with high 
+neonatal mortality, when given by trained health workers in 
+cases where hospital care is not achievable. 
+Complementary List 
+Powder for injection: 250 mg per vial (as sodium salt). 
+cefotaxime* [c]   * 3rd generation cephalosporin of choice for use in hospitalized 
+                              neonates. 
+ceftazidime  Powder for injection: 250 mg or 1 g (as pentahydrate) in vial. 
+EML 17 (March 2011)
+ 
+page - 6
+Essential Medicines 
+WHO Model List 
+17th edition 
+Powder for injection: 250 mg (as monohydrate) + 250 mg (as sodium 
+salt); 500 mg (as monohydrate) + 500 mg (as sodium salt) in vial. 
+imipenem* + cilastatin*
+* Only listed for the treatment of life‐threatening hospital‐based 
+infection due to suspected or proven multidrug‐resistant infection. 
+Meropenem is indicated for the treatment of meningitis and is licensed 
+for use in children over the age of 3 months. 
+6.2.2 Other antibacterials
+Capsule: 250 mg; 500 mg (anhydrous). 
+azithromycin* 
+Oral liquid: 200 mg/5 ml. 
+* Only listed for single‐dose treatment of genital Chlamydia 
+trachomatis and of trachoma. 
+Solid oral dosage form: 500 mg. 
+clarithromycin* 
+* For use in combination regimens for eradication of H. Pylori in 
+adults. 
+Capsule: 250 mg. 
+Oily suspension for injection*: 0.5 g (as sodium succinate)/ml in 
+2‐ml ampoule. 
+chloramphenicol 
+* Only for the presumptive treatment of epidemic meningitis in 
+children older than 2 years. 
+Oral liquid: 150 mg (as palmitate)/5 ml. 
+Powder for injection: 1 g (sodium succinate) in vial. 
+Oral liquid: 250 mg/5 ml (anhydrous) [c]. 
+ ciprofloxacin 
+Solution for IV infusion: 2 mg/ml (as hyclate) [c]. 
+Tablet: 250 mg (as hydrochloride). 
+Oral liquid: 25 mg/5 ml [c]; 50 mg/5 ml (anhydrous) [c]. 
+doxycycline a 
+Solid oral dosage form: 50 mg [c]; 100 mg (as hyclate).  
+a Use in children <8 years only for life-threatening infections when no
+alternative exists. 
+Powder for injection: 500 mg (as lactobionate) in vial. 
+ erythromycin 
+Powder for oral liquid: 125 mg/5 ml (as stearate or estolate or 
+ethyl succinate). 
+Solid oral dosage form: 250 mg (as stearate or estolate or ethyl 
+succinate). 
+ gentamicin 
+Injection: 10 mg; 40 mg (as sulfate)/ml in 2‐ml vial. 
+Injection: 500 mg in 100‐ml vial. 
+Oral liquid: 200 mg (as benzoate)/5 ml. 
+ metronidazole 
+Suppository: 500 mg; 1 g. 
+Tablet: 200 mg to 500 mg. 
+EML 17 (March 2011)
+ 
+page - 7
+Essential Medicines 
+WHO Model List 
+nitrofurantoin 
+spectinomycin 
+17th edition 
+Oral liquid: 25 mg/5 ml [c]. 
+Tablet: 100 mg. 
+Powder for injection: 2 g (as hydrochloride) in vial. 
+Injection:  
+sulfamethoxazole + trimethoprim  
+80 mg + 16 mg/ml in 5‐ml ampoule;  
+80 mg + 16 mg/ml in 10‐ml ampoule. 
+Oral liquid: 200 mg + 40 mg/5 ml. 
+Tablet: 100 mg + 20 mg; 400 mg + 80 mg; 800 mg + 160 mg. 
+Oral liquid: 50 mg/5 ml [c]. 
+trimethoprim a  
+Tablet: 100 mg; 200 mg. 
+a
+>6 months. 
+Complementary List 
+Capsule: 150 mg (as hydrochloride). 
+clindamycin 
+Injection: 150 mg (as phosphate)/ml. 
+Oral liquid: 75 mg/5 ml (as palmitate) [c]. 
+vancomycin 
+Powder for injection: 250 mg (as hydrochloride) in vial. 
+6.2.3 Antileprosy medicines 
+Medicines  used  in  the  treatment  of  leprosy  should  never  be  used  except  in  combination.  Combination 
+therapy is essential to prevent the emergence of drug resistance. Colour coded blister packs (MDT blister 
+packs)  containing  standard  two  medicine  (paucibacillary  leprosy)  or  three  medicine  (multibacillary 
+leprosy) combinations for adult and childhood leprosy should be used. MDT blister packs can be supplied 
+free of charge through WHO. 
+clofazimine  Capsule: 50 mg; 100 mg. 
+dapsone  Tablet: 25 mg; 50 mg; 100 mg. 
+rifampicin  Solid oral dosage form: 150 mg; 300 mg. 
+6.2.4 Antituberculosis medicines
+ethambutol 
+ethambutol + isoniazid  
+Oral liquid: 25 mg/ml [c]. 
+Tablet: 100 mg to 400 mg (hydrochloride). 
+Tablet: 400 mg + 150 mg. 
+ethambutol + isoniazid + pyrazinamide 
+Tablet: 275 mg + 75 mg + 400 mg + 150 mg. 
++ rifampicin  
+ethambutol + isoniazid + rifampicin 
+Tablet: 275 mg + 75 mg + 150 mg. 
+Oral liquid: 50 mg/5 ml [c]. 
+isoniazid 
+Tablet: 100 mg to 300 mg. 
+Tablet (scored): 50 mg.  
+EML 17 (March 2011)
+ 
+page - 8
+Essential Medicines 
+WHO Model List 
+17th edition 
+Tablet:  
+isoniazid + pyrazinamide + rifampicin    75 mg + 400 mg + 150 mg. 
+150 mg + 500 mg + 150 mg (For intermittent use three times 
+weekly). 
+Tablet:  
+isoniazid + rifampicin  
+75 mg + 150 mg; 150 mg + 300 mg. 
+60 mg + 60 mg (For intermittent use three times weekly). 
+150 mg + 150 mg (For intermittent use three times weekly). 
+Oral liquid: 30 mg/ml [c]. 
+Tablet: 400 mg. 
+pyrazinamide 
+Tablet (dispersible): 150 mg. 
+Tablet (scored): 150 mg. 
+Capsule: 150 mg.* 
+rifabutin 
+* For use only in patients with HIV receiving protease inhibitors.  
+rifampicin 
+Oral liquid: 20 mg/ml [c]. 
+Solid oral dosage form: 150 mg; 300 mg. 
+streptomycin 
+Powder for injection: 1 g (as sulfate) in vial. 
+Complementary List 
+Reserve second‐line drugs for the treatment of multidrug‐resistant tuberculosis (MDR‐TB) should be 
+used in specialized centres adhering to WHO standards for TB control.  
+amikacin  Powder for injection: 100 mg; 500 mg; 1 g (as sulfate) in vial. 
+capreomycin  Powder for injection: 1 g (as sulfate) in vial. 
+cycloserine  Solid oral dosage form: 250 mg. 
+ethionamide  Tablet: 125 mg; 250 mg. 
+kanamycin  Powder for injection: 1 g (as sulfate) in vial. 
+Tablet: 200 mg; 400 mg. 
+ofloxacin* 
+* Levofloxacin may be an alternative based on availability and 
+programme considerations. 
+Granules: 4 g in sachet. 
+p‐aminosalicylic acid 
+Tablet: 500 mg. 
+6.3 Antifungal medicines 
+Vaginal cream: 1%; 10%. 
+clotrimazole 
+Vaginal tablet: 100 mg; 500 mg. 
+Capsule: 50 mg. 
+ fluconazole 
+Injection: 2 mg/ml in vial. 
+Oral liquid: 50 mg/5 ml. 
+EML 17 (March 2011)
+ 
+page - 9
+Essential Medicines 
+WHO Model List 
+17th edition 
+Oral liquid: 125 mg/5 ml [c]. 
+griseofulvin 
+Solid oral dosage form: 125 mg; 250 mg. 
+Lozenge: 100 000 IU. 
+nystatin 
+Oral liquid: 50 mg/5 ml [c]; 100 000 IU/ml [c]. 
+Pessary: 100 000 IU. 
+Tablet: 100 000 IU; 500 000 IU. 
+Complementary List 
+amphotericin B 
+Powder for injection: 50 mg in vial. 
+As sodium deoxycholate or liposomal complex. 
+Capsule: 250 mg. 
+flucytosine 
+Infusion: 2.5 g in 250 ml. 
+potassium iodide 
+Saturated solution. 
+6.4 Antiviral medicines
+6.4.1 Antiherpes medicines
+Oral liquid: 200 mg/5 ml [c]. 
+ aciclovir 
+Powder for injection: 250 mg (as sodium salt) in vial. 
+Tablet: 200 mg. 
+6.4.2 Antiretrovirals
+Based on current evidence and experience of use, medicines in the following three classes of antiretrovirals 
+are  included  as  essential  medicines  for  treatment  and  prevention  of  HIV  (prevention  of  mother‐to‐child 
+transmission  and  post‐exposure  prophylaxis).  The  Committee  emphasizes  the  importance  of  using  these 
+products  in  accordance  with  global  and  national  guidelines.    The  Committee  recommends  and  endorses 
+the  use  of  fixed‐dose  combinations  and  the  development  of  appropriate  new  fixed‐dose  combinations, 
+including  modified  dosage  forms,  non‐refrigerated  products  and  paediatric  dosage  forms  of  assured 
+pharmaceutical quality. 
+Scored tablets can be used in children and therefore can be considered for inclusion in the listing of tablets, 
+provided adequate quality products are available. 
+6.4.2.1 Nucleoside/Nucleotide reverse transcriptase inhibitors 
+Oral liquid: 100 mg (as sulfate)/5 ml. 
+abacavir (ABC) 
+Tablet: 300 mg (as sulfate). 
+Buffered powder for oral liquid: 100 mg; 167 mg; 250 mg packets. 
+didanosine (ddI) 
+Capsule (unbuffered enteric‐coated): 125 mg; 200 mg; 250 mg; 
+400 mg. 
+Tablet (buffered chewable, dispersible): 25 mg; 50 mg; 100 mg; 
+150 mg; 200 mg. 
+EML 17 (March 2011)
+ 
+page - 10
+Essential Medicines 
+WHO Model List 
+17th edition 
+Capsule: 200 mg. 
+Oral liquid: 10 mg/ml. 
+emtricitabine (FTC)* a 
+* FTC is an acceptable alternative to 3TC, based on knowledge of 
+the pharmacology, the resistance patterns and clinical trials of 
+antiretrovirals. 
+a
+>3 months. 
+Oral liquid: 50 mg/5 ml. 
+lamivudine (3TC) 
+Tablet: 150 mg. 
+Capsule: 15 mg; 20 mg; 30 mg. 
+stavudine (d4T) 
+Powder for oral liquid: 5 mg/5 ml. 
+tenofovir disoproxil fumarate (TDF) 
+Tablet: 300 mg (tenofovir disoproxil fumarate – equivalent to  
+245 mg tenofovir disoproxil). 
+Capsule: 100 mg; 250 mg. 
+Oral liquid: 50 mg/5 ml. 
+zidovudine (ZDV or AZT) 
+Solution for IV infusion injection: 10 mg/ml in 20‐ml vial. 
+Tablet: 300 mg. 
+6.4.2.2 Non-nucleoside reverse transcriptase inhibitors 
+Capsule: 50 mg; 100 mg; 200 mg. 
+Oral liquid: 150 mg/5 ml. 
+efavirenz (EFV or EFZ) a  
+Tablet: 600 mg. 
+a
+>3 years or >10 kg weight. 
+Oral liquid: 50 mg/5 ml. 
+nevirapine (NVP) 
+Tablet: 200 mg. 
+6.4.2.3 Protease inhibitors 
+Selection  of  protease  inhibitor(s)  from  the  Model  List  will  need  to  be  determined  by  each  country  after 
+consideration of international and national treatment guidelines and experience. Ritonavir is recommended 
+for use in combination as a pharmacological booster, and not as an antiretroviral in its own right. All other 
+protease inhibitors should be used in boosted forms (e.g. with ritonavir). 
+Solid oral dosage form: 100 mg; 150 mg; 300 mg (as sulfate). 
+atazanavir a 
+indinavir (IDV) 
+a
+>25 kg.  
+Solid oral dosage form: 400 mg (as sulfate). 
+Capsule: 133.3 mg + 33.3 mg.  
+lopinavir + ritonavir (LPV/r)  
+Oral liquid: 400 mg + 100 mg/5 ml. 
+Tablet (heat stable): 100 mg + 25 mg; 200 mg + 50 mg. 
+EML 17 (March 2011)
+ 
+page - 11
+Essential Medicines 
+WHO Model List 
+17th edition 
+Oral liquid: 400 mg/5 ml. 
+ritonavir 
+Solid oral dosage form: 100 mg. 
+Tablet (heat stable): 25 mg; 100 mg.  
+Solid oral dosage form: 200 mg; 500 mg (as mesilate). 
+saquinavir (SQV) a  
+a
+>25 kg. 
+FIXED-DOSE COMBINATIONS 
+Tablet: 600 mg + 200 mg + 300 mg (disoproxil fumarate equivalent 
+to 245 mg tenofovir disoproxil). 
+efavirenz + emtricitabine* + tenofovir  
+* FTC is an acceptable alternative to 3TC, based on knowledge of 
+the pharmacology, the resistance patterns and clinical trials of 
+antiretrovirals. 
+Tablet: 200 mg + 300 mg (disoproxil fumarate equivalent to 
+245 mg tenofovir disoproxil). 
+emtricitabine* + tenofovir  
+* FTC is an acceptable alternative to 3TC, based on knowledge of 
+the pharmacology, the resistance patterns and clinical trials of 
+antiretrovirals. 
+Tablet: 150 mg + 200 mg + 30 mg. 
+lamivudine + nevirapine + stavudine  
+Tablet (dispersible):  
+30 mg + 50 mg + 6 mg [c]; 60 mg + 100 mg + 12 mg [c]. 
+ 
+lamivudine + nevirapine +  Tablet: 30 mg + 50 mg + 60 mg [c]; 150 mg + 200 mg + 300 mg. 
+    zidovudine   
+lamivudine + zidovudine  Tablet: 30 mg + 60 mg [c]; 150 mg + 300 mg. 
+6.4.3 Other antivirals 
+Capsule: 30 mg; 45 mg; 75 mg (as phosphate). 
+Oral powder: 12 mg/ml. 
+oseltamivir*   
+* Oseltamivir should be used only in compliance with the WHO 
+treatment guidelines, i.e. (1) for treatment of patients with severe 
+or progressive clinical illness with confirmed or suspected 
+influenza pandemic (H1N1) 2009, (2) for the treatment of patients 
+with confirmed or suspected but uncomplicated illness due to 
+pandemic influenza virus infection who were in higher risk 
+groups, most notably for pregnant women and children under 
+2 years of age. 
+Injection for intravenous administration: 800 mg and 1 g in 10‐ml 
+phosphate buffer solution. 
+ribavirin*  
+Solid oral dosage form: 200 mg; 400 mg; 600 mg. 
+* For the treatment of viral haemorrhagic fevers only. 
+ 
+ 
+ 
+EML 17 (March 2011)
+ 
+page - 12
+Essential Medicines 
+WHO Model List 
+17th edition 
+6.5 Antiprotozoal medicines 
+6.5.1 Antiamoebic and antigiardiasis medicines 
+diloxanide a  
+Tablet: 500 mg (furoate). 
+a
+>25 kg.
+Injection: 500 mg in 100‐ml vial. 
+ metronidazole 
+Oral liquid: 200 mg (as benzoate)/5 ml. 
+Tablet: 200 mg to 500 mg. 
+6.5.2 Antileishmaniasis medicines 
+amphotericin B 
+Powder for injection: 50 mg in vial. 
+As sodium deoxycholate or liposomal complex. 
+miltefosine  Solid oral dosage form: 10 mg; 50 mg. 
+paromomycin Solution for intramuscular injection: 750 mg of paromomycin 
+                   base (as the sulfate). 
+                      Injection: 100 mg/ml, 1 vial = 30 ml or 30%, equivalent to 
+                                 approximately 8.1% antimony (pentavalent) in 5‐ml ampoule.  
+sodium stibogluconate or meglumine 
+antimoniate 
+6.5.3 Antimalarial medicines
+6.5.3.1 For curative treatment
+Medicines for the treatment of P. falciparum malaria cases should be used in combination.  The list currently 
+recommends  combinations  according  to  treatment  guidelines.    The  Committee  recognizes  that  not  all  of 
+these FDCs exist and encourages their development and rigorous testing.  The Committee also encourages 
+development and testing of rectal dosage formulations. 
+Tablet: 153 mg or 200 mg (as hydrochloride). 
+amodiaquine* 
+* To be used in combination with artesunate 50 mg. 
+Oily injection: 80 mg/ml in 1‐ml ampoule. 
+artemether* 
+* For use in the management of severe malaria. 
+Tablet: 20 mg + 120 mg. 
+artemether + lumefantrine* 
+Tablet (dispersible): 20 mg + 120 mg [c]. 
+* Not recommended in the first trimester of pregnancy or in 
+children below 5 kg. 
+Injection: ampoules, containing 60 mg anhydrous artesunic acid 
+with a separate ampoule of 5% sodium bicarbonate solution. 
+For use in the management of severe malaria. 
+artesunate* 
+Rectal dosage form: 50 mg [c]; 200 mg capsules (for pre‐referral 
+treatment of severe malaria only; patients should be taken to an 
+appropriate health facility for follow‐up care) [c]. 
+Tablet: 50 mg. 
+* To be used in combination with either amodiaquine, mefloquine 
+or sulfadoxine + pyrimethamine. 
+EML 17 (March 2011)
+ 
+page - 13
+Essential Medicines 
+WHO Model List 
+17th edition 
+Tablet: 25 mg + 67.5 mg; 50 mg + 135 mg; 100 mg + 270 mg. 
+artesunate + amodiaquine *  * Other combinations that deliver the target doses required such as 
+                                          153 mg or 200 mg (as hydrochloride) with 50 mg artesunate can be 
+                                                      alternatives. 
+                                                      Oral liquid: 50 mg (as phosphate or sulfate)/5 ml. 
+chloroquine*  Tablet: 100 mg; 150 mg (as phosphate or sulfate). 
+* For use only for the treatment of P.vivax infection. 
+Capsule: 100 mg (as hydrochloride or hyclate). 
+doxycycline* 
+Tablet (dispersible): 100 mg (as monohydrate). 
+* For use only in combination with quinine. 
+Tablet: 250 mg (as hydrochloride).  
+mefloquine* 
+* To be used in combination with artesunate 50 mg. 
+Tablet: 7.5 mg; 15 mg (as diphosphate). 
+primaquine* 
+* Only for use to achieve radical cure of P.vivax and P.ovale 
+infections, given for 14 days. 
+Injection: 300 mg quinine hydrochloride/ml in 2‐ml ampoule. 
+quinine* 
+Tablet: 300 mg (quinine sulfate) or 300 mg (quinine bisulfate). 
+* For use only in the management of severe malaria, and should be 
+used in combination with doxycycline. 
+Tablet: 500 mg + 25 mg. 
+sulfadoxine + pyrimethamine* 
+* Only in combination with artesunate 50 mg. 
+6.5.3.2 For prophylaxis 
+Oral liquid: 50 mg (as phosphate or sulfate)/5 ml. 
+chloroquine* 
+Tablet: 150 mg (as phosphate or sulfate). 
+* For use only in central American regions, for use for P.vivax. 
+Solid oral dosage form: 100 mg (as hydrochloride or hyclate). 
+doxycycline a  
+a
+>8 years. 
+Tablet: 250 mg (as hydrochloride). 
+mefloquine a  
+a
+>5 kg or >3 months. 
+Tablet: 100 mg (as hydrochloride). 
+proguanil* 
+* For use only in combination with chloroquine. 
+6.5.4 Antipneumocystosis and antitoxoplasmosis medicines 
+pyrimethamine  Tablet: 25 mg. 
+sulfadiazine  Tablet: 500 mg. 
+EML 17 (March 2011)
+ 
+page - 14
+Essential Medicines 
+WHO Model List 
+17th edition 
+Injection:  
+sulfamethoxazole + trimethoprim 
+80 mg + 16 mg/ml in 5‐ml ampoule;  
+80 mg + 16 mg/ml in 10‐ml ampoule. 
+Oral liquid: 200 mg + 40 mg/5 ml [c]. 
+Tablet: 100 mg + 20 mg; 400 mg + 80 mg [c]. 
+Complementary List
+pentamidine 
+Tablet: 200 mg; 300 mg (as isethionate). 
+6.5.5 Antitrypanosomal medicines 
+6.5.5.1 African trypanosomiasis 
+Medicines for the treatment of 1st stage African trypanosomiasis 
+Powder for injection: 200 mg (as isetionate) in vial. 
+pentamidine* 
+* To be used for the treatment of Trypanosoma brucei gambiense 
+infection. 
+Powder for injection: 1 g in vial. 
+suramin sodium* 
+* To be used for the treatment of the initial phase of 
+Trypanosoma brucei rhodesiense infection. 
+Medicines for the treatment of 2nd stage African trypanosomiasis 
+Injection: 200 mg (hydrochloride)/ml in 100‐ml bottle. 
+eflornithine* 
+melarsoprol 
+nifurtimox* 
+* To be used for the treatment of Trypanosoma brucei gambiense 
+infection. 
+Injection: 3.6% solution, 5‐ml ampoule (180 mg of active  
+compound). 
+Tablet: 120 mg. 
+* Only to be used in combination with eflornithine, for  the 
+treatment of Trypanosoma brucei gambiense infection. 
+Complementary List [c] 
+melarsoprol 
+Injection: 3.6% solution in 5‐ml ampoule (180 mg of active compound). 
+6.5.5.2 American trypanosomiasis 
+benznidazole  Tablet: 100 mg. 
+nifurtimox  Tablet: 30 mg; 120 mg; 250 mg. 
+7. ANTIMIGRAINE MEDICINES 
+7.1 For treatment of acute attack 
+acetylsalicylic acid  Tablet: 300 mg to 500 mg. 
+ibuprofen [c]  Tablet: 200 mg; 400 mg. 
+paracetamol 
+Oral liquid: 125 mg/5 ml [c]. 
+Tablet: 300 mg to 500 mg. 
+ 
+EML 17 (March 2011)
+ 
+page - 15
+Essential Medicines 
+WHO Model List 
+17th edition 
+7.2 For prophylaxis
+ propranolol 
+Tablet: 20 mg; 40 mg (hydrochloride). 
+8. ANTINEOPLASTIC, IMMUNOSUPPRESSIVES AND MEDICINES USED IN
+PALLIATIVE CARE
+8.1 Immunosuppressive medicines
+Complementary List 
+Powder for injection: 100 mg (as sodium salt) in vial. 
+azathioprine
+Tablet (scored): 50 mg. 
+Capsule: 25 mg. 
+ciclosporin
+Concentrate for injection: 50 mg/ml in 1‐ml ampoule for organ 
+transplantation. 
+8.2 Cytotoxic and adjuvant medicines  
+Complementary List 
+allopurinol [c]  Solid oral dosage form: 100 mg; 300 mg. 
+asparaginase  Powder for injection: 10 000 IU in vial. 
+bleomycin  Powder for injection: 15 mg (as sulfate) in vial. 
+Injection: 3 mg/ml in 10‐ml ampoule. 
+calcium folinate 
+Tablet: 15 mg. 
+carboplatin 
+chlorambucil 
+Injection: 50 mg/5 ml; 150 mg/15 ml; 450 mg/45 ml; 600 mg/60 ml. 
+Tablet: 2 mg. 
+Powder for injection: 500 mg in vial. 
+cyclophosphamide 
+Tablet: 25 mg. 
+cytarabine  Powder for injection: 100 mg in vial. 
+dacarbazine  Powder for injection: 100 mg in vial. 
+dactinomycin  Powder for injection: 500 micrograms in vial. 
+daunorubicin  Powder for injection: 50 mg (hydrochloride) in vial. 
+docetaxel  Injection: 20 mg/ml; 40 mg/ml. 
+doxorubicin  Powder for injection: 10 mg; 50 mg (hydrochloride) in vial. 
+Capsule: 100 mg. 
+etoposide 
+Injection: 20 mg/ml in 5‐ml ampoule. 
+fluorouracil  Injection: 50 mg/ml in 5‐ml ampoule. 
+hydroxycarbamide  Solid oral dosage form: 200 mg; 250 mg; 300 mg; 400 mg; 500 mg; 
+                                1 g. 
+ifosfamide  Powder for injection: 1 g vial; 2 g vial. 
+mercaptopurine  Tablet: 50 mg. 
+EML 17 (March 2011)
+ 
+page - 16
+Essential Medicines 
+WHO Model List 
+17th edition 
+Injection: 100 mg/ml in 4‐ml and 10‐ml ampoules. 
+mesna 
+Solid oral dosage form: 400 mg; 600 mg. 
+Powder for injection: 50 mg (as sodium salt) in vial. 
+methotrexate 
+Tablet: 2.5 mg (as sodium salt). 
+paclitaxel  Powder for injection: 6 mg/ml. 
+procarbazine  Capsule: 50 mg (as hydrochloride). 
+thioguanine [c]  Solid oral dosage form: 40 mg. 
+vinblastine  Powder for injection: 10 mg (sulfate) in vial. 
+vincristine  Powder for injection: 1 mg; 5 mg (sulfate) in vial. 
+8.3 Hormones and antihormones 
+Complementary List 
+dexamethasone 
+Injection: 4 mg dexamethasone phosphate (as disodium salt) in  
+1‐ml ampoule. 
+Oral liquid: 2 mg/5 ml [c]. 
+hydrocortisone  Powder for injection: 100 mg (as sodium succinate) in vial. 
+methylprednisolone [c]  Injection: 40 mg/ml (as sodium succinate) in 1‐ml single dose vial and  
+                                        5‐ml multidose vials; 80 mg/ml (as sodium succinate) in 1‐ml single dose 
+                                                       vial. 
+Oral liquid: 5 mg/ml [c]. 
+ prednisolone 
+Tablet: 5 mg; 25 mg. 
+tamoxifen 
+Tablet: 10 mg; 20 mg (as citrate). 
+8.4 Medicines used in palliative care
+The WHO Expert Committee recognizes the importance of listing specific medicines in the Palliative Care 
+Section.  Some medicines currently used in palliative care are included in the relevant sections of the Model 
+List,  according  to  their  therapeutic  use,  e.g.  analgesics.    The  Guidelines  for  Palliative  Care  that  were 
+referenced  in  the  previous  list  are  in  need  of  update.    The  Committee  expects  applications  for  medicines 
+needed for palliative care to be submitted for the next meeting.  
+amitriptyline [c] 
+cyclizine [c] 
+dexamethasone [c] 
+Tablet: 10 mg; 25 mg. 
+Injection: 50 mg/ml. 
+Tablet: 50 mg. 
+Injection: 4 mg/ml. 
+Tablet: 2 mg. 
+Injection: 5 mg/ml. 
+diazepam [c] 
+Oral liquid: 2 mg/5 ml. 
+Rectal solution: 2.5 mg; 5 mg; 10 mg. 
+Tablet: 5 mg; 10 mg. 
+EML 17 (March 2011)
+ 
+page - 17
+Essential Medicines 
+WHO Model List 
+docusate sodium [c]  
+fluoxetine a [c]  
+hyoscine hydrobromide [c] 
+17th edition 
+Capsule: 100 mg.  
+Oral liquid: 50 mg/5 ml. 
+Solid oral dosage form: 20 mg (as hydrochloride). 
+a
+>8 years. 
+Injection: 400 micrograms/ml; 600 micrograms/ml. 
+Transdermal patches: 1 mg/72 hours. 
+Oral liquid: 100 mg/5 ml. 
+ibuprofen a [c] 
+Tablet: 200 mg; 400 mg; 600 mg. 
+a
+Not in children less than 3 months.
+lactulose [c]  Oral liquid: 3.1‐3.7 g/5 ml. 
+midazolam [c]  Injection: 1 mg/ml; 5 mg/ml. 
+Granules (modified release) (to mix with water): 20 mg; 30 mg; 
+60 mg; 100 mg; 200 mg. 
+Injection: 10 mg/ml. 
+morphine [c] 
+Oral liquid: 10 mg/5 ml. 
+Tablet (controlled release): 10 mg; 30 mg; 60 mg.  
+Tablet (immediate release): 10 mg. 
+Injection: 2 mg base/ml in 2‐ml ampoule (as hydrochloride). 
+ondansetron [c] a 
+Oral liquid: 4 mg base/ 5 ml. 
+Solid oral dosage form: Eq 4 mg base; Eq 8 mg base. 
+a
+senna [c] 
+>1 month. 
+Oral liquid: 7.5 mg/5 ml.  
+9. ANTIPARKINSONISM MEDICINES 
+Injection: 5 mg (lactate) in 1‐ml ampoule. 
+biperiden 
+Tablet: 2 mg (hydrochloride). 
+levodopa +   carbidopa  
+Tablet: 100 mg + 10 mg; 250 mg + 25 mg. 
+10. MEDICINES AFFECTING THE BLOOD 
+10.1 Antianaemia medicines 
+Oral liquid: equivalent to 25 mg iron (as sulfate)/ml. 
+ferrous salt 
+Tablet: equivalent to 60 mg iron. 
+ferrous salt + folic acid   Tablet equivalent to 60 mg iron + 400 micrograms folic acid 
+                                            (Nutritional supplement for use during pregnancy). 
+folic acid  Tablet: 1 mg; 5 mg. 
+hydroxocobalamin  Injection: 1 mg (as acetate, hydrochloride or as sulfate) in 1‐ml 
+                               ampoule. 
+ 
+EML 17 (March 2011)
+ 
+page - 18
+Essential Medicines 
+WHO Model List 
+17th edition 
+10.2 Medicines affecting coagulation 
+heparin sodium 
+Injection: 1000 IU/ml; 5000 IU/ml; 20 000 IU/ml in 1‐ml ampoule. 
+Injection: 1 mg/ml [c]; 10 mg/ml in 5‐ml ampoule. 
+phytomenadione 
+Tablet: 10 mg. 
+protamine sulfate  Injection: 10 mg/ml in 5‐ml ampoule. 
+tranexamic acid  Injection: 100 mg/ml in 10‐ml ampoule. 
+ warfarin 
+Tablet: 1 mg; 2 mg; 5 mg (sodium salt). 
+Complementary List [c] 
+heparin sodium   Injection: 1000 IU/ml; 5000 IU/ml in 1‐ml ampoule. 
+protamine sulfate   Injection: 10 mg/ml in 5‐ml ampoule. 
+ warfarin  
+Tablet: 0.5 mg; 1 mg; 2 mg; 5 mg (sodium salt). 
+10.3 Other medicines for haemoglobinopathies
+Complementary List 
+deferoxamine*  Powder for injection: 500 mg (mesilate) in vial. 
+                       * Deferasirox oral form may be an alternative, depending on cost and 
+                                  availability. 
+hydroxycarbamide  Solid oral dosage form: 200 mg; 500 mg; 1 g. 
+11. BLOOD PRODUCTS AND PLASMA SUBSTITUTES
+11.1 Plasma substitutes
+Injectable solution: 6%. 
+ dextran 70* 
+* Polygeline, injectable solution, 3.5% is considered as equivalent. 
+11.2 Plasma fractions for specific use
+All  plasma  fractions  should  comply  with  the  WHO  Requirements  for  the  Collection,  Processing  and 
+Quality  Control  of  Blood,  Blood  Components  and  Plasma  Derivatives  (Revised  1992).  (WHO  Technical 
+Report Series, No. 840, 1994, Annex 2). 
+Complementary List 
+ factor VIII concentrate 
+ factor IX complex (coagulation 
+factors, II, VII, IX, X) concentrate 
+Dried. 
+Dried. 
+Intramuscular administration: 16% protein solution.* 
+Intravenous administration: 5%; 10% protein solution.** 
+human normal immunoglobulin 
+Subcutaneous administration: 15%; 16% protein solution.*  
+*   Indicated for primary immune deficiency. 
+** Indicated for primary immune deficiency and Kawasaki disease. 
+EML 17 (March 2011)
+ 
+page - 19
+Essential Medicines 
+WHO Model List 
+17th edition 
+12. CARDIOVASCULAR MEDICINES
+12.1 Antianginal medicines
+Tablet: 1.25 mg; 5 mg. 
+ bisoprolol* 
+*   includes metoprolol and carvedilol as alternatives. 
+glyceryl trinitrate
+ isosorbide dinitrate 
+verapamil 
+Tablet (sublingual): 500 micrograms. 
+Tablet (sublingual): 5 mg. 
+Tablet: 40 mg; 80 mg (hydrochloride). 
+12.2 Antiarrhythmic medicines
+Tablet: 1.25 mg; 5 mg. 
+ bisoprolol* 
+*   includes metoprolol and carvedilol as alternatives. 
+Injection: 250 micrograms/ml in 2‐ml ampoule. 
+digoxin 
+Oral liquid: 50 micrograms/ml. 
+Tablet: 62.5 micrograms; 250 micrograms. 
+epinephrine (adrenaline)  Injection: 100 micrograms/ml (as acid tartrate or hydrochloride) in 
+                                    10‐ml ampoule. 
+lidocaine  Injection: 20 mg (hydrochloride)/ml in 5‐ml ampoule. 
+Injection: 2.5 mg (hydrochloride)/ml in 2‐ml ampoule. 
+verapamil 
+Tablet: 40 mg; 80 mg (hydrochloride). 
+Complementary List 
+Injection: 50 mg/ml in 3‐ml ampoule (hydrochloride). 
+amiodarone 
+Tablet (HCI): 100 mg; 200 mg; 400 mg (hydrochloride). 
+12.3 Antihypertensive medicines
+ amlodipine 
+Tablet: 5 mg (as maleate, mesylate or as besylate). 
+Tablet: 1.25 mg; 5 mg. 
+ bisoprolol* 
+*   includes metoprolol and carvedilol as alternatives. 
+ enalapril 
+Tablet: 2.5 mg; 5 mg (as hydrogen maleate). 
+Powder for injection: 20 mg (hydrochloride) in ampoule. 
+Tablet: 25 mg; 50 mg (hydrochloride). 
+hydralazine* 
+* Hydralazine is listed for use in the acute management of severe 
+pregnancy‐induced hypertension only. Its use in the treatment of 
+essential hypertension is not recommended in view of the 
+availability of more evidence of efficacy and safety of other 
+medicines. 
+Oral liquid: 50 mg/5 ml. 
+ hydrochlorothiazide 
+Solid oral dosage form: 12.5 mg; 25 mg. 
+EML 17 (March 2011)
+ 
+page - 20
+Essential Medicines 
+WHO Model List 
+17th edition 
+Tablet: 250 mg. 
+methyldopa*
+* Methyldopa is listed for use in the management of pregnancy‐
+induced hypertension only. Its use in the treatment of essential 
+hypertension is not recommended in view of the availability of 
+more evidence of efficacy and safety of other medicines. 
+Complementary List 
+sodium nitroprusside
+Powder for infusion: 50 mg in ampoule. 
+12.4 Medicines used in heart failure
+Tablet: 1.25 mg; 5 mg. 
+ bisoprolol* 
+*  includes metoprolol and carvedilol as alternatives. 
+Injection: 250 micrograms/ml in 2‐ml ampoule. 
+digoxin
+Oral liquid: 50 micrograms/ml. 
+Tablet: 62.5 micrograms; 250 micrograms. 
+ enalapril
+Tablet: 2.5 mg; 5 mg (as hydrogen maleate). 
+Injection: 10 mg/ml in 2‐ml ampoule. 
+ furosemide
+Oral liquid: 20 mg/5 ml [c]. 
+Tablet: 40 mg. 
+Oral liquid: 50 mg/5 ml. 
+ hydrochlorothiazide
+Solid oral dosage form: 25 mg. 
+Complementary List 
+dopamine
+Injection: 40 mg/ml (hydrochloride) in 5‐ml vial. 
+12.5 Antithrombotic medicines
+acetylsalicylic acid
+Tablet: 100 mg. 
+Complementary List 
+streptokinase 
+Powder for injection: 1.5 million IU in vial. 
+12.6 Lipid-lowering agents
+Tablet: 5 mg; 10 mg; 20 mg; 40 mg. 
+ simvastatin* 
+* For use in high‐risk patients. 
+13. DERMATOLOGICAL MEDICINES (topical)
+13.1 Antifungal medicines
+ miconazole  Cream or ointment: 2% (nitrate). 
+selenium sulfide  Detergent‐based suspension: 2%. 
+sodium thiosulfate  Solution: 15%. 
+terbinafine  Cream: 1% or Ointment: 1% terbinafine hydrochloride. 
+EML 17 (March 2011)
+ 
+page - 21
+Essential Medicines 
+WHO Model List 
+17th edition 
+13.2 Anti-infective medicines
+Cream (as mupirocin calcium): 2%. 
+mupirocin 
+Ointment: 2%. 
+potassium permanganate 
+Aqueous solution: 1:10 000. 
+Cream: 1%. 
+silver sulfadiazine a  
+a
+>2 months. 
+13.3 Anti-inflammatory and antipruritic medicines
+Cream or ointment: 0.1% (as valerate). 
+ betamethasone a  
+a
+Hydrocortisone preferred in neonates. 
+ calamine   Lotion. 
+ hydrocortisone  Cream or ointment: 1% (acetate). 
+13.4 Medicines affecting skin differentiation and proliferation
+benzoyl peroxide Cream or lotion: 5%. 
+coal tar  Solution: 5%. 
+Ointment: 0.1% to 2%.   
+dithranol*  * The Expert Committee has requested a review of the 
+                      comparative effectiveness and safety, for possible deletion of this 
+                              medicine at its next meeting. 
+fluorouracil  Ointment: 5%. 
+ podophyllum resin 
+Solution: 10% to 25%. 
+salicylic acid Solution: 5%. 
+urea Cream or ointment: 5%; 10%. 
+13.5 Scabicides and pediculicides
+ benzyl benzoate a  
+Lotion: 25%. 
+a
+>2 years.
+Cream: 5%. 
+permethrin 
+Lotion: 1%. 
+14. DIAGNOSTIC AGENTS
+14.1 Ophthalmic medicines
+fluorescein 
+ tropicamide 
+Eye drops: 1% (sodium salt). 
+Eye drops: 0.5%. 
+14.2 Radiocontrast media
+ amidotrizoate
+barium sulfate
+EML 17 (March 2011)
+ 
+Injection: 140 mg to 420 mg iodine (as sodium or meglumine 
+salt)/ml in 20‐ml ampoule. 
+Aqueous suspension. 
+page - 22
+Essential Medicines 
+WHO Model List 
+ iohexol
+17th edition 
+Injection: 140 mg to 350 mg iodine/ml in 5‐ml; 10‐ml; 20‐ml 
+ampoules. 
+Complementary List 
+barium sulfate [c] 
+ meglumine iotroxate
+Aqueous suspension. 
+Solution: 5 g to 8 g iodine in 100 ml to 250 ml. 
+15. DISINFECTANTS AND ANTISEPTICS
+15.1 Antiseptics
+ chlorhexidine  Solution: 5% (digluconate); 20% (digluconate) (needs to be diluted 
+                          prior to use for cord care) [c]. 
+ ethanol  Solution: 70% (denatured). 
+ polyvidone iodine  Solution: 10% (equivalent to 1% available iodine). 
+15.2 Disinfectants
+ chlorine base compound Powder: (0.1% available chlorine) for solution. 
+ chloroxylenol Solution: 4.8%. 
+Solution: 2%. 
+glutaral
+16. DIURETICS
+amiloride
+Tablet: 5 mg (hydrochloride). 
+Injection: 10 mg/ml in 2‐ml ampoule. 
+ furosemide
+Oral liquid: 20 mg/5 ml [c]. 
+Tablet: 10 mg [c]; 20 mg [c]; 40 mg. 
+ hydrochlorothiazide
+Solid oral dosage form: 25 mg. 
+mannitol Injectable solution: 10%; 20%. 
+spironolactone Tablet: 25 mg. 
+Complementary List [c] 
+ hydrochlorothiazide
+mannitol 
+spironolactone 
+Tablet (scored): 25 mg. 
+Injectable solution: 10%; 20%.
+Oral liquid: 5 mg/5 ml; 10 mg/5 ml; 25 mg/5 ml. 
+Tablet: 25 mg.
+17. GASTROINTESTINAL MEDICINES
+Complementary List [c] 
+ pancreatic enzymes
+Age‐appropriate formulations and doses including lipase, protease and 
+amylase. 
+ 
+ 
+ 
+ 
+EML 17 (March 2011)
+ 
+page - 23
+Essential Medicines 
+WHO Model List 
+17th edition 
+17.1 Antiulcer medicines 
+ omeprazole
+Powder for oral liquid: 20 mg; 40 mg sachets. 
+Solid oral dosage form: 10 mg; 20 mg; 40 mg. 
+Injection: 25 mg/ml (as hydrochloride) in 2‐ml ampoule. 
+Oral liquid: 75 mg/5 ml (as hydrochloride). 
+ ranitidine* 
+Tablet: 150 mg (as hydrochloride). 
+* The Expert Committee has requested a review of the 
+comparative effectiveness and safety, for possible deletion of this 
+class of medicine at its next meeting. 
+17.2 Antiemetic medicines
+Injection: 4 mg/ml in 1‐ml ampoule (as disodium phosphate salt). 
+dexamethasone 
+Oral liquid: 0.5 mg/5 ml; 2 mg/5 ml. 
+Solid oral dosage form: 0.5 mg; 0.75 mg; 1.5 mg; 4 mg. 
+Injection: 5 mg (hydrochloride)/ml in 2‐ml ampoule. 
+metoclopramide a  
+Oral liquid: 5 mg/5 ml [c]. 
+Tablet: 10 mg (hydrochloride). 
+a
+Not in neonates. 
+Injection: 2 mg base/ml in 2‐ml ampoule (as hydrochloride). 
+Oral liquid: 4 mg base/5 ml. 
+ondansetron a 
+Solid oral dosage form: Eq 4 mg base; Eq 8 mg base; Eq 24 mg 
+base. 
+a
+>1 month. 
+17.3 Anti-inflammatory medicines
+Retention enema. 
+ sulfasalazine 
+Suppository: 500 mg. 
+Tablet: 500 mg. 
+Complementary List 
+Retention enema. 
+ hydrocortisone 
+Suppository: 25 mg (acetate). 
+(the   only applies to hydrocortisone retention enema). 
+17.4 Laxatives
+ senna
+EML 17 (March 2011)
+ 
+Tablet: 7.5 mg (sennosides) (or traditional dosage forms). 
+page - 24
+Essential Medicines 
+WHO Model List 
+17th edition 
+17.5 Medicines used in diarrhoea
+17.5.1 Oral rehydration
+oral rehydration salts 
+glucose:  
+ 
+ 
+sodium:  
+ 
+ 
+chloride:  
+ 
+ 
+potassium:  
+ 
+ 
+citrate:   
+ 
+ 
+osmolarity:  
+ 
+ 
+glucose:  
+ 
+ 
+sodium chloride: 
+ 
+potassium chloride: 
+ 
+trisodium citrate dihydrate+: 
+75 mEq  
+75 mEq or mmol/L  
+65 mEq or mmol/L 
+20 mEq or mmol/L  
+10 mmol/L  
+245 mOsm/L  
+13.5 g/L  
+  2.6 g/L 
+  1.5 g/L  
+  2.9 g/L  
++ trisodium citrate dihydrate may be replaced by sodium 
+hydrogen carbonate (sodium bicarbonate) 2.5 g/L. However, as the 
+stability of this latter formulation is very poor under tropical 
+conditions, it is only recommended when manufactured for 
+immediate use.  
+Powder for dilution in 200 ml; 500 ml; 1 L. 
+17.5.2 Medicines for diarrhoea in children
+Solid oral dosage form: 20 mg. 
+zinc sulfate* 
+* In acute diarrhoea zinc sulfate should be used as an adjunct to 
+oral rehydration salts. 
+18. HORMONES, OTHER ENDOCRINE MEDICINES AND CONTRACEPTIVES
+18.1 Adrenal hormones and synthetic substitutes
+fludrocortisone   Tablet: 100 micrograms (acetate). 
+hydrocortisone   Tablet: 5 mg; 10 mg; 20 mg. 
+18.2 Androgens
+Complementary List 
+testosterone 
+Injection: 200 mg (enanthate) in 1‐ml ampoule. 
+18.3 Contraceptives
+18.3.1 Oral hormonal contraceptives
+ ethinylestradiol +   levonorgestrel   Tablet: 30 micrograms + 150 micrograms. 
+ ethinylestradiol +   norethisterone   Tablet: 35 micrograms + 1 mg. 
+levonorgestrel
+Tablet: 30 micrograms; 750 micrograms (pack of two); 1.5 mg. 
+18.3.2 Injectable hormonal contraceptives
+estradiol cypionate +  Injection: 5 mg + 25 mg. 
+   medroxyprogesterone acetate   
+medroxyprogesterone acetate  Depot injection: 150 mg/ml in 1‐ml vial. 
+norethisterone enantate  Oily solution: 200 mg/ml in 1‐ml ampoule. 
+EML 17 (March 2011)
+ 
+page - 25
+Essential Medicines 
+WHO Model List 
+17th edition 
+18.3.3 Intrauterine devices
+copper‐containing device 
+18.3.4 Barrier methods
+condoms 
+diaphragms 
+18.3.5 Implantable contraceptives
+levonorgestrel‐releasing implant
+Two‐rod levonorgestrel‐releasing implant, each rod containing 
+75 mg of levonorgestrel (150 mg total).
+18.4 Estrogens
+18.5 Insulins and other medicines used for diabetes
+glibenclamide  Tablet: 2.5 mg; 5 mg. 
+glucagon  Injection: 1 mg/ml. 
+insulin injection (soluble)  Injection: 40 IU/ml in 10‐ml vial; 100 IU/ml in 10‐ml vial.  
+intermediate‐acting insulin   Injection: 40 IU/ml in 10‐ml vial; 100 IU/ml in 10‐ml vial  
+                                                  (as compound insulin zinc suspension or isophane insulin). 
+metformin  Tablet: 500 mg (hydrochloride). 
+Complementary List [c] 
+metformin  
+Tablet: 500 mg (hydrochloride). 
+18.6 Ovulation inducers 
+Complementary List 
+clomifene 
+Tablet: 50 mg (citrate). 
+18.7 Progestogens 
+ medroxyprogesterone acetate 
+Tablet: 5 mg. 
+18.8 Thyroid hormones and antithyroid medicines 
+levothyroxine  Tablet: 25 micrograms [c]; 50 micrograms; 100 micrograms 
+                       (sodium salt). 
+potassium iodide  Tablet: 60 mg. 
+ propylthiouracil 
+Tablet: 50 mg. 
+Complementary List [c] 
+Lugolʹs solution  Oral liquid: about 130 mg total iodine/ml. 
+potassium iodide  Tablet: 60 mg. 
+propylthiouracil   Tablet: 50 mg. 
+EML 17 (March 2011)
+ 
+page - 26
+Essential Medicines 
+WHO Model List 
+17th edition 
+19. IMMUNOLOGICALS
+19.1 Diagnostic agents
+All tuberculins should comply with the WHO Requirements for Tuberculins (Revised 1985). WHO Expert 
+Committee on Biological Standardization. Thirty‐sixth report. (WHO Technical Report Series, No. 745, 
+1987, Annex 1).  
+tuberculin, purified protein derivative 
+Injection. 
+(PPD) 
+19.2 Sera and immunoglobulins
+All plasma fractions should comply with the WHO Requirements for the Collection, Processing and 
+Quality Control of Blood, Blood Components and Plasma Derivatives (Revised 1992). WHO Expert 
+Committee on Biological Standardization. Forty‐third report. (WHO Technical Report Series, No. 840, 1994, 
+Annex 2). 
+anti‐D immunoglobulin (human) 
+Injection: 250 micrograms in single‐dose vial. 
+antitetanus immunoglobulin (human)  Injection: 500 IU in vial. 
+Injection. 
+antivenom immunoglobulin* 
+* Exact type to be defined locally. 
+diphtheria antitoxin 
+ rabies immunoglobulin 
+Injection: 10 000 IU; 20 000 IU in vial. 
+Injection: 150 IU/ml in vial. 
+19.3 Vaccines
+Selection of vaccines from the Model List will need to be determined by each country after consideration of 
+international  recommendations,  epidemiology  and  national  priorities.  The  list  below  details  the  vaccines 
+for which there is either a recommendation from the Strategic Advisory Group of Experts on Immunization 
+(SAGE)  (http://www.who.int/immunization/sage_conclusions/en/index.html)  and/or  a  WHO  position 
+paper  (http://www.who.int/immunization/documents/positionpapers/en/index.html).  This  site  will  be 
+updated  as  new  position  papers  are  published  and  contains  the  most  recent  information  and 
+recommendations. 
+All vaccines should comply with the WHO Requirements for Biological Substances. 
+BCG vaccine   
+cholera vaccine   
+diphtheria vaccine   
+hepatitis A vaccine   
+hepatitis B vaccine   
+Haemophilus influenzae type b vaccine   
+influenza vaccine   
+Japanese encephalitis vaccine   
+measles vaccine   
+meningococcal meningitis vaccine   
+mumps vaccine    
+EML 17 (March 2011)
+ 
+page - 27
+Essential Medicines 
+WHO Model List 
+17th edition 
+pertussis vaccine   
+pneumococcal vaccine   
+poliomyelitis vaccine    
+rabies vaccine    
+rotavirus vaccine   
+rubella vaccine    
+tetanus vaccine    
+typhoid vaccine    
+varicella vaccine   
+yellow fever vaccine   
+20. MUSCLE RELAXANTS (PERIPHERALLY-ACTING) AND CHOLINESTERASE
+INHIBITORS
+The Expert Committee has requested a review of this section at its next meeting. 
+ atracurium  
+neostigmine 
+Injection: 10 mg/ml (atracurium besylate). 
+Injection: 500 micrograms in 1‐ml ampoule; 2.5 mg (metilsulfate) 
+in 1‐ml ampoule. 
+Tablet: 15 mg (bromide). 
+Injection: 50 mg (chloride)/ml in 2‐ml ampoule. 
+suxamethonium 
+Powder for injection (chloride), in vial. 
+ vecuronium [c] 
+Powder for injection: 10 mg (bromide) in vial. 
+Complementary List 
+Injection: 1 mg in 1‐ml ampoule. 
+pyridostigmine 
+Tablet: 60 mg (bromide). 
+ vecuronium 
+Powder for injection: 10 mg (bromide) in vial. 
+21. OPHTHALMOLOGICAL PREPARATIONS
+This section will be reviewed at the next meeting of the Expert Committee. 
+21.1 Anti-infective agents
+aciclovir 
+Ointment: 3% W/W. 
+ gentamicin Solution (eye drops): 0.3% (sulfate). 
+ tetracycline Eye ointment: 1% (hydrochloride). 
+21.2 Anti-inflammatory agents 
+ prednisolone
+Solution (eye drops): 0.5% (sodium phosphate). 
+ 
+ 
+ 
+EML 17 (March 2011)
+ 
+page - 28
+Essential Medicines 
+WHO Model List 
+17th edition 
+21.3 Local anaesthetics 
+Solution (eye drops): 0.5% (hydrochloride). 
+ tetracaine a
+a
+Not in preterm neonates. 
+21.4 Miotics and antiglaucoma medicines 
+acetazolamide 
+Tablet: 250 mg. 
+ pilocarpine  Solution (eye drops): 2%; 4% (hydrochloride or nitrate). 
+ timolol  Solution (eye drops): 0.25%; 0.5% (as hydrogen maleate). 
+21.5 Mydriatics
+Solution (eye drops): 0.1%; 0.5%; 1% (sulfate). 
+atropine*  a  
+* [c] Or homatropine (hydrobromide) or cyclopentolate 
+(hydrochloride). 
+a
+>3 months. 
+Complementary List 
+epinephrine (adrenaline) 
+Solution (eye drops): 2% (as hydrochloride). 
+22. OXYTOCICS AND ANTIOXYTOCICS
+22.1 Oxytocics
+ ergometrine 
+misoprostol
+Injection: 200 micrograms (hydrogen maleate) in 1‐ml ampoule.  
+Tablet: 200 micrograms.* 
+* For management of incomplete abortion and miscarriage, and for 
+prevention of postpartum haemorrhage where oxytocin is not 
+available or cannot be safely used. 
+Vaginal tablet: 25 micrograms.* 
+* Only for use for induction of labour where appropriate facilities 
+are available. 
+oxytocin
+Injection: 10 IU in 1‐ml. 
+Complementary List 
+mifepristone* – misoprostol* 
+Where permitted under national 
+law and where culturally 
+acceptable. 
+Tablet 200 mg – tablet 200 micrograms. 
+* Requires close medical supervision. 
+ 
+22.2 Antioxytocics (tocolytics)
+nifedipine 
+Immediate‐release capsule: 10 mg. 
+23. PERITONEAL DIALYSIS SOLUTION
+Complementary List 
+intraperitoneal dialysis solution 
+(of appropriate composition) 
+EML 17 (March 2011)
+ 
+Parenteral solution. 
+page - 29
+Essential Medicines 
+WHO Model List 
+17th edition 
+24. MEDICINES FOR MENTAL AND BEHAVIOURAL DISORDERS
+24.1 Medicines used in psychotic disorders
+Injection: 25 mg (hydrochloride)/ml in 2‐ml ampoule. 
+ chlorpromazine 
+Oral liquid: 25 mg (hydrochloride)/5 ml. 
+Tablet: 100 mg (hydrochloride). 
+ fluphenazine 
+Injection: 25 mg (decanoate or enantate) in 1‐ml ampoule. 
+Injection: 5 mg in 1‐ml ampoule. 
+ haloperidol 
+Tablet: 2 mg; 5 mg. 
+Complementary List [c]
+Injection: 25 mg (hydrochloride)/ml in 2‐ml ampoule. 
+chlorpromazine
+Oral liquid: 25 mg (hydrochloride)/5 ml. 
+Tablet: 10 mg; 25 mg; 50 mg; 100 mg (hydrochloride). 
+Injection: 5 mg in 1‐ml ampoule. 
+haloperidol
+Oral liquid: 2 mg/ml. 
+Solid oral dosage form: 0.5 mg; 2 mg; 5 mg. 
+24.2 Medicines used in mood disorders 
+24.2.1 Medicines used in depressive disorders 
+ amitriptyline
+fluoxetine 
+Tablet: 25 mg (hydrochloride). 
+Solid oral dosage form: 20 mg (as hydrochloride). 
+Complementary List [c] 
+fluoxetine a
+Solid oral dosage form: 20 mg (as hydrochloride). 
+a
+>8 years. 
+24.2.2 Medicines used in bipolar disorders 
+carbamazepine Tablet (scored): 100 mg; 200 mg. 
+lithium carbonate Solid oral dosage form: 300 mg. 
+valproic acid (sodium valproate) Tablet (enteric‐coated): 200 mg; 500 mg (sodium valproate). 
+24.3 Medicines for anxiety disorders  
+ diazepam
+Tablet (scored): 2 mg; 5 mg. 
+24.4 Medicines used for obsessive compulsive disorders 
+clomipramine
+Capsule: 10 mg; 25 mg (hydrochloride). 
+24.5 Medicines for disorders due to psychoactive substance use 
+nicotine replacement therapy (NRT)  
+Chewing gum: 2 mg; 4 mg (as polacrilax). 
+Transdermal patch: 5 mg to 30 mg/16 hrs; 7 mg to 21 mg/24 hrs. 
+ 
+EML 17 (March 2011)
+ 
+page - 30
+Essential Medicines 
+WHO Model List 
+17th edition 
+Complementary List 
+Concentrate for oral liquid: 5 mg/ml; 10 mg/ml (hydrochloride). 
+ methadone* 
+Oral liquid: 5 mg/5 ml; 10 mg/5 ml (hydrochloride). 
+* The square box is added to include buprenorphine. The medicines 
+should only be used within an established support programme. 
+25. MEDICINES ACTING ON THE RESPIRATORY TRACT 
+25.1 Antiasthmatic and medicines for chronic obstructive pulmonary disease 
+ beclometasone  Inhalation (aerosol): 50 micrograms (dipropionate) per dose; 
+                        100 micrograms (dipropionate) per dose (as CFC free forms). 
+ budesonide [c] Inhalation (aerosol): 100 micrograms per dose; 200 micrograms 
+                         per dose. 
+epinephrine (adrenaline)  Injection: 1 mg (as hydrochloride or hydrogen tartrate) in  
+                                     1‐ml ampoule. 
+ipratropium bromide  Inhalation (aerosol): 20 micrograms/metered dose. 
+Inhalation (aerosol): 100 micrograms (as sulfate) per dose. 
+Injection: 50 micrograms (as sulfate)/ml in 5‐ml ampoule. 
+ salbutamol 
+Metered dose inhaler (aerosol): 100 micrograms (as sulfate) per 
+dose. 
+Respirator solution for use in nebulizers: 5 mg (as sulfate)/ml. 
+26. SOLUTIONS CORRECTING WATER, ELECTROLYTE AND ACID-BASE
+DISTURBANCES 
+26.1 Oral 
+oral rehydration salts   See section 17.5.1.  
+potassium chloride  Powder for solution. 
+26.2 Parenteral
+glucose 
+Injectable solution: 5% (isotonic); 10% (hypertonic);  
+50% (hypertonic). 
+Injectable solution: 4% glucose, 0.18% sodium chloride  
+(equivalent to Na+ 30 mmol/L, Cl‐ 30 mmol/L). 
+glucose with sodium chloride 
+Injectable solution: 5% glucose, 0.9% sodium chloride (equivalent 
+to 150 mmol/L Na+ and 150 mmol/L Cl‐); 5% glucose, 0.45% 
+sodium chloride (equivalent to 75 mmol/L Na+ and 75 mmol/L  
+Cl‐) [c]. 
+Solution: 11.2% in 20‐ml ampoule 
+(equivalent to K+ 1.5 mmol/ml, Cl‐ 1.5 mmol/ml). 
+potassium chloride 
+EML 17 (March 2011)
+ 
+Solution for dilution: 7.5% (equivalent to K 1 mmol/ml and  
+Cl 1 mmol/ml) [c]; 15% (equivalent to K 2 mmol/ml and  
+Cl 2 mmol/ml) [c]. 
+page - 31
+Essential Medicines 
+WHO Model List 
+sodium chloride 
+17th edition 
+Injectable solution: 0.9% isotonic (equivalent to Na+ 154 mmol/L, 
+Cl‐ 154 mmol/L). 
+Injectable solution: 1.4% isotonic (equivalent to Na+ 167 mmol/L, 
+HCO3‐ 167 mmol/L). 
+sodium hydrogen carbonate 
+Solution: 8.4% in 10‐ml ampoule (equivalent to Na+ 1000 mmol/L, 
+HCO3‐1000 mmol/L). 
+ sodium lactate, compound solution 
+Injectable solution. 
+26.3 Miscellaneous 
+water for injection 
+2‐ml; 5‐ml; 10‐ml ampoules. 
+27. VITAMINS AND MINERALS 
+ascorbic acid 
+Tablet: 50 mg. 
+Oral liquid: 400 IU/ml. 
+cholecalciferol* [c]
+Solid oral dosage form: 400 IU; 1000 IU. 
+* Ergocalciferol can be used as an alternative. 
+Oral liquid: 250 micrograms/ml (10 000 IU/ml). 
+ ergocalciferol 
+Solid oral dosage form: 1.25 mg (50 000 IU). 
+Capsule: 200 mg. 
+iodine  
+ nicotinamide 
+pyridoxine 
+Iodized oil: 1 ml (480 mg iodine); 0.5 ml (240 mg iodine) in 
+ampoule (oral or injectable); 0.57 ml (308 mg iodine) in dispenser 
+bottle. 
+Tablet: 50 mg. 
+Tablet: 25 mg (hydrochloride). 
+Capsule: 50 000 IU; 100 000 IU; 200 000 IU (as palmitate). 
+retinol 
+Oral oily solution: 100 000 IU (as palmitate)/ml in multidose 
+dispenser. 
+Tablet (sugar‐coated): 10 000 IU (as palmitate). 
+Water‐miscible injection: 100 000 IU (as palmitate) in  
+2‐ml ampoule. 
+riboflavin  Tablet: 5 mg. 
+sodium fluoride  In any appropriate topical formulation. 
+thiamine  Tablet: 50 mg (hydrochloride). 
+Complementary List 
+calcium gluconate 
+Injection: 100 mg/ml in 10‐ml ampoule. 
+28. EAR, NOSE AND THROAT CONDITIONS IN CHILDREN [c] 
+acetic acid 
+Topical: 2%, in alcohol. 
+budesonide   Nasal spray: 100 micrograms per dose. 
+ciprofloxacin  Topical: 0.3% drops (as hydrochloride). 
+EML 17 (March 2011)
+ 
+page - 32
+Essential Medicines 
+WHO Model List 
+17th edition 
+Nasal spray: 0.05%.  
+xylometazoline a  
+a Not in children less than 3 months. 
+29. SPECIFIC MEDICINES FOR NEONATAL CARE [c] 
+caffeine citrate
+Injection: 20 mg/ml (equivalent to 10 mg caffeine base/ml). 
+Oral liquid: 20 mg/ml (equivalent to 10 mg caffeine base/ml). 
+Complementary List 
+ ibuprofen 
+Solution for injection: 5 mg/ml. 
+Solution for injection:  
+ prostaglandin E 
+surfactant 
+Prostaglandin E1: 0.5 mg/ml in alcohol. 
+Prostaglandin E2: 1 mg/ml. 
+Suspension for intratracheal instillation: 25 mg/ml or 80 mg/ml. 
+ 
+EML 17 (March 2011)
+ 
+page - 33
+Essential Medicines 
+WHO Model List 
+17th edition 
+Table 1: Medicines with age or weight restrictions
+atazanavir 
+atropine 
+benzyl benzoate 
+betamethasone topical preparations 
+cefazolin 
+ceftriaxone 
+chlorphenamine 
+diloxanide 
+doxycycline 
+efavirenz 
+emtricitabine 
+fluoxetine 
+ibuprofen 
+mefloquine 
+metoclopramide 
+ondansetron 
+saquinavir 
+silver sulfadiazine 
+tetracaine 
+trimethoprim 
+xylometazoline 
+ 
+>25 kg 
+>3 months 
+>2 years 
+Hydrocortisone preferred in neonates 
+>1 month 
+>41 weeks corrected gestational age 
+>1 year 
+>25 kg  
+>8 years (except for serious infections e.g. cholera) 
+>3 years or >10 kg  
+>3 months 
+>8 years 
+>3 months (except IV form for patent ductus arteriosus) 
+>5 kg or >3 months 
+Not in neonates 
+>1 month 
+>25 kg  
+>2 months 
+Not in preterm neonates 
+>6 months 
+>3 months 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+EML 17 (March 2011)
+ 
+page - 34
+Essential Medicines 
+WHO Model List 
+17th edition 
+Annex 1: Explanation of dosage forms
+ 
+A. Principal dosage forms used in EML - Oral administration
+ 
+ 
+Term 
+ 
+Solid oral dosage form 
+Tablets  
+Tablets (qualified) 
+ 
+Definition 
+ 
+Refers to tablets or capsules or other solid dosage forms such as ʹmeltsʹ 
+that are immediate‐release preparations. It implies that there is no 
+difference in clinical efficacy or safety between the available dosage 
+forms, and countries should therefore choose the form(s) to be listed 
+depending on quality and availability.   
+ 
+The term ʹsolid oral dosage formʹ is never intended to allow any type of 
+modified‐release tablet. 
+ 
+Refers to:  
+ 
+• uncoated or coated (film‐coated or sugar‐coated) tablets that are 
+intended to be swallowed whole;  
+•
+•
+•
+unscored and scored*;  
+tablets that are intended to be chewed before being swallowed;  
+tablets that are intended to be dispersed or dissolved in water or 
+another suitable liquid before being swallowed;  
+tablets that are intended to be crushed before being swallowed. 
+•
+ 
+The term ʹtabletʹ without qualification is never intended to allow any 
+type of modified‐release tablet. 
+ 
+Refers to a specific type of tablet: 
+chewable ‐ tablets that are intended to be chewed before being 
+swallowed;  
+dispersible ‐ tablets that are intended to be dispersed in water or 
+another suitable liquid before being swallowed;  
+soluble ‐ tablets that are intended to be dissolved in water or another 
+suitable liquid before being swallowed;  
+crushable ‐ tablets that are intended to be crushed before being 
+swallowed;  
+scored ‐ tablets bearing a break mark or marks where sub‐division is 
+intended in order to provide doses of less than one tablet; 
+sublingual ‐ tablets that are intended to be placed beneath the tongue. 
+ 
+The term ʹtabletʹ is always qualified with an additional term (in 
+parentheses) in entries where one of the following types of tablet is 
+intended: gastro‐resistant (such tablets may sometimes be described as 
+enteric‐coated or as delayed‐release), prolonged‐release or another 
+modified‐release form. 
+ 
+ 
+                                                           
+*
+  
+Scored tablets may be divided for ease of swallowing, provided dose is a whole number of tablets. 
+EML 17 (March 2011)
+ 
+page - 35
+Essential Medicines 
+WHO Model List 
+ 
+Term 
+ 
+Capsules  
+Capsules (qualified) 
+Granules 
+Oral powder 
+Oral liquid  
+17th edition 
+ 
+Definition 
+ 
+Refers to hard or soft capsules.  
+ 
+The term ʹcapsuleʹ without qualification is never intended to allow any 
+type of modified‐release capsule. 
+ 
+The term ʹcapsuleʹ with qualification refers to gastro‐resistant (such 
+capsules may sometimes be described as enteric‐coated or as delayed‐
+release), prolonged‐release  or another modified‐release form. 
+ 
+Preparations that are issued to patient as granules to be swallowed 
+without further preparation, to be chewed, or to be taken in or with 
+water or another suitable liquid. 
+ 
+The term ʹgranulesʹ without further qualification is never intended to 
+allow any type of modified‐release granules. 
+ 
+Preparations that are issued to patient as powder (usually as single‐
+dose) to be taken in or with water or another suitable liquid. 
+ 
+Liquid preparations intended to be swallowed i.e. oral solutions, 
+suspensions, emulsions and oral drops, including those constituted from 
+powders or granules, but not those preparations intended for oromucosal 
+administration e.g. gargles and mouthwashes. 
+ 
+Oral liquids presented as powders or granules may offer benefits in the 
+form of better stability and lower transport costs. If more than one type 
+of oral liquid is available on the same market (e.g. solution, suspension, 
+granules for reconstitution), they may be interchanged and in such cases 
+should be bioequivalent. It is preferable that oral liquids do not contain 
+sugar and that solutions for children do not contain alcohol. 
+ 
+ 
+B. Principal dosage forms used in EMLc - Parenteral administration
+ 
+Term 
+Injection 
+Injection (qualified) 
+Injection (oily) 
+Intravenous infusion 
+Definition 
+Refers to solutions, suspensions and emulsions including those 
+constituted from powders or concentrated solutions. 
+Route of administration is indicated in parentheses where relevant. 
+The term injection is qualified by (oily) in relevant entries. 
+Refers to solutions and emulsions including those constituted from 
+powders or concentrated solutions. 
+ 
+EML 17 (March 2011)
+ 
+page - 36
+Essential Medicines 
+WHO Model List 
+17th edition 
+C. Other dosage forms
+ 
+Mode of 
+administration 
+To the eye 
+Topical 
+Rectal  
+Vaginal 
+Inhalation 
+Term to be used 
+Eye drops, eye ointments. 
+For liquids: lotions, paints. 
+For semi‐solids: cream, ointment. 
+Suppositories, gel or solution. 
+Pessaries or vaginal tablets. 
+Powder for inhalation, pressurized inhalation, nebulizer. 
+ 
+EML 17 (March 2011)
+ 
+page - 37
+Essential Medicines 
+WHO Model List 
+17th edition 
+Index 
+abacavir (ABC) ........................................................ 10 
+acetazolamide.......................................................... 29 
+acetic acid................................................................. 32 
+acetylcysteine ............................................................ 3 
+acetylsalicylic acid ........................................ 2, 15, 21 
+aciclovir .............................................................. 10, 28 
+albendazole................................................................ 5 
+allopurinol ........................................................... 2, 16 
+amidotrizoate .......................................................... 22 
+amikacin....................................................................... 9 
+amiloride .................................................................. 23 
+amiodarone ................................................................ 20 
+amitriptyline ...................................................... 17, 30 
+amlodipine............................................................... 20 
+amodiaquine............................................................ 13 
+amoxicillin ................................................................. 5 
+amoxicillin + clavulanic acid ................................... 5 
+amphotericin B..................................................... 10, 13 
+ampicillin ................................................................... 5 
+anti‐D immunoglobulin (human) ......................... 27 
+antitetanus immunoglobulin (human)................. 27 
+antivenom immunoglobulin ................................. 27 
+artemether................................................................ 13 
+artemether + lumefantrine ..................................... 13 
+artesunate................................................................. 13 
+artesunate + amodiaquine...................................... 14 
+ascorbic acid ............................................................ 32 
+asparaginase............................................................... 16 
+atazanavir................................................................. 11 
+atracurium ............................................................... 28 
+atropine ............................................................ 1, 3, 29 
+azathioprine ........................................................... 3, 16 
+azithromycin.............................................................. 7 
+barium sulfate ................................................... 22, 23 
+BCG vaccine............................................................. 27 
+beclometasone ......................................................... 31 
+benzathine benzylpenicillin .................................... 6 
+benznidazole............................................................ 15 
+benzoyl peroxide..................................................... 22 
+benzyl benzoate....................................................... 22 
+benzylpenicillin......................................................... 6 
+betamethasone......................................................... 22 
+biperiden .................................................................. 18 
+bisoprolol ........................................................... 20, 21 
+bleomycin................................................................... 16 
+budesonide ........................................................ 31, 32 
+bupivacaine................................................................ 1 
+caffeine citrate ......................................................... 33 
+calamine ................................................................... 22 
+calcium folinate.......................................................... 16 
+EML 17 (March 2011)
+ 
+calcium gluconate ............................................... 3, 32 
+capreomycin ................................................................. 9 
+carbamazepine..................................................... 4, 30 
+carboplatin ................................................................. 16 
+cefalexin...................................................................... 6 
+cefazolin...................................................................... 6 
+cefixime....................................................................... 6 
+cefotaxime .................................................................... 6 
+ceftazidime ................................................................... 6 
+ceftriaxone.................................................................. 6 
+charcoal, activated..................................................... 3 
+chlorambucil............................................................... 16 
+chloramphenicol........................................................ 7 
+chlorhexidine ........................................................... 23 
+chlorine base compound ........................................ 23 
+chloroquine .......................................................... 2, 14 
+chloroxylenol ........................................................... 23 
+chlorphenamine......................................................... 3 
+chlorpromazine ....................................................... 30 
+cholecalciferol .......................................................... 32 
+cholera vaccine ........................................................ 27 
+ciclosporin.................................................................. 16 
+ciprofloxacin ........................................................ 7, 32 
+clarithromycin ........................................................... 7 
+clindamycin ................................................................. 8 
+clofazimine................................................................. 8 
+clomifene .................................................................... 26 
+clomipramine........................................................... 30 
+clotrimazole ............................................................... 9 
+cloxacillin ................................................................... 6 
+coal tar ...................................................................... 22 
+codeine........................................................................ 2 
+condoms ................................................................... 26 
+copper‐containing device....................................... 26 
+cyclizine.................................................................... 17 
+cyclophosphamide ...................................................... 16 
+cycloserine.................................................................... 9 
+cytarabine................................................................... 16 
+dacarbazine ................................................................ 16 
+dactinomycin.............................................................. 16 
+dapsone ...................................................................... 8 
+daunorubicin.............................................................. 16 
+deferoxamine .......................................................... 4, 19 
+dexamethasone.............................................. 3, 17, 24 
+dextran 70................................................................. 19 
+diaphragms .............................................................. 26 
+diazepam........................................................ 4, 17, 30 
+didanosine (ddI) ...................................................... 10 
+diethylcarbamazine .................................................. 5 
+digoxin................................................................ 20, 21 
+page - 38
+Essential Medicines 
+WHO Model List 
+diloxanide ................................................................ 13 
+dimercaprol .................................................................. 4 
+diphtheria antitoxin................................................ 27 
+diphtheria vaccine .................................................. 27 
+dithranol................................................................... 22 
+docetaxel .................................................................... 16 
+docusate sodium ..................................................... 18 
+dopamine.................................................................... 21 
+doxorubicin................................................................ 16 
+doxycycline.......................................................... 7, 14 
+efavirenz (EFV or EFZ)........................................... 11 
+efavirenz + emtricitabine + tenofovir ................... 12 
+eflornithine .............................................................. 15 
+emtricitabine (FTC)................................................. 11 
+emtricitabine + tenofovir........................................ 12 
+enalapril ............................................................. 20, 21 
+ephedrine...................................................................... 1 
+epinephrine (adrenaline) ....................... 3, 20, 29, 31 
+ergocalciferol ........................................................... 32 
+ergometrine.............................................................. 29 
+erythromycin ............................................................. 7 
+estradiol cypionate + medroxyprogesterone 
+acetate................................................................... 25 
+ethambutol................................................................. 8 
+ethambutol + isoniazid............................................. 8 
+ethambutol + isoniazid + pyrazinamide + 
+rifampicin............................................................... 8 
+ethambutol + isoniazid + rifampicin....................... 8 
+ethanol...................................................................... 23 
+ethinylestradiol + levonorgestrel .......................... 25 
+ethinylestradiol + norethisterone.......................... 25 
+ethionamide.................................................................. 9 
+ethosuximide................................................................ 4 
+etoposide .................................................................... 16 
+factor IX complex (coagulation factors, II, VII,  
+IX, X) concentrate ................................................. 19 
+factor VIII concentrate............................................... 19 
+ferrous salt ............................................................... 18 
+ferrous salt + folic acid ........................................... 18 
+fluconazole................................................................. 9 
+flucytosine.................................................................. 10 
+fludrocortisone ........................................................ 25 
+fluorescein................................................................ 22 
+fluorouracil .......................................................... 16, 22 
+fluoxetine ........................................................... 18, 30 
+fluphenazine............................................................ 30 
+folic acid ................................................................... 18 
+furosemide ......................................................... 21, 23 
+gentamicin ........................................................... 7, 28 
+glibenclamide .......................................................... 26 
+glucagon................................................................... 26 
+glucose...................................................................... 31 
+EML 17 (March 2011)
+ 
+17th edition 
+glucose with sodium chloride ............................... 31 
+glutaral...................................................................... 23 
+glyceryl trinitrate..................................................... 20 
+griseofulvin .............................................................. 10 
+Haemophilus influenzae type b vaccine .................. 27 
+haloperidol............................................................... 30 
+halothane.................................................................... 1 
+heparin sodium ....................................................... 19 
+hepatitis A vaccine.................................................. 27 
+hepatitis B vaccine................................................... 27 
+human normal immunoglobulin................................ 19 
+hydralazine .............................................................. 20 
+hydrochlorothiazide ................................... 20, 21, 23 
+hydrocortisone................................... 3, 17, 22, 24, 25 
+hydroxocobalamin .................................................. 18 
+hydroxycarbamide................................................ 16, 19 
+hydroxychloroquine ..................................................... 3 
+hyoscine hydrobromide ......................................... 18 
+ibuprofen.................................................. 2, 15, 18, 33 
+ifosfamide ................................................................... 16 
+imipenem + cilastatin................................................... 7 
+indinavir (IDV) ........................................................ 11 
+influenza vaccine..................................................... 27 
+insulin injection (soluble)....................................... 26 
+intermediate‐acting insulin.................................... 26 
+intraperitoneal dialysis solution 
+(of appropriate composition) .................................. 29 
+iodine ........................................................................ 32 
+iohexol ...................................................................... 23 
+ipratropium bromide.............................................. 31 
+isoflurane.................................................................... 1 
+isoniazid ..................................................................... 8 
+isoniazid + pyrazinamide + rifampicin .................. 9 
+isoniazid + rifampicin ............................................... 9 
+isosorbide dinitrate ................................................. 20 
+ivermectin .................................................................. 5 
+Japanese encephalitis vaccine................................ 27 
+kanamycin.................................................................... 9 
+ketamine ..................................................................... 1 
+lactulose.................................................................... 18 
+lamivudine (3TC) .................................................... 11 
+lamivudine + nevirapine + stavudine................... 12 
+lamivudine + nevirapine + zidovudine ................ 12 
+lamivudine + zidovudine....................................... 12 
+levamisole .................................................................. 5 
+levodopa + carbidopa ............................................. 18 
+levonorgestrel .......................................................... 25 
+levonorgestrel‐releasing implant .......................... 26 
+levothyroxine........................................................... 26 
+lidocaine ............................................................... 1, 20 
+lidocaine + epinephrine (adrenaline)...................... 1 
+lithium carbonate .................................................... 30 
+page - 39
+Essential Medicines 
+WHO Model List 
+lopinavir + ritonavir (LPV/r) ................................. 11 
+lorazepam .................................................................. 4 
+Lugolʹs solution......................................................... 26 
+magnesium sulfate.................................................... 4 
+mannitol ................................................................... 23 
+measles vaccine ....................................................... 27 
+mebendazole.............................................................. 5 
+medroxyprogesterone acetate ......................... 25, 26 
+mefloquine ............................................................... 14 
+meglumine iotroxate .................................................. 23 
+melarsoprol.............................................................. 15 
+meningococcal meningitis vaccine ....................... 27 
+mercaptopurine.......................................................... 16 
+mesna......................................................................... 17 
+metformin ................................................................ 26 
+methadone.................................................................. 31 
+methotrexate .......................................................... 3, 17 
+methyldopa.............................................................. 21 
+methylprednisolone.................................................... 17 
+methylthioninium chloride (methylene blue)....... 3 
+metoclopramide ...................................................... 24 
+metronidazole ..................................................... 7, 13 
+miconazole............................................................... 21 
+midazolam ........................................................... 1, 18 
+mifepristone ............................................................... 29 
+miltefosine ............................................................... 13 
+misoprostol .............................................................. 29 
+morphine.......................................................... 1, 2, 18 
+mumps vaccine ....................................................... 27 
+mupirocin................................................................. 22 
+naloxone ..................................................................... 3 
+neostigmine ............................................................. 28 
+nevirapine (NVP).................................................... 11 
+niclosamide................................................................ 5 
+nicotinamide............................................................ 32 
+nicotine replacement therapy (NRT).................... 30 
+nifedipine ................................................................. 29 
+nifurtimox ................................................................ 15 
+nitrofurantoin ............................................................ 8 
+nitrous oxide.............................................................. 1 
+norethisterone enantate.......................................... 25 
+nystatin..................................................................... 10 
+ofloxacin....................................................................... 9 
+omeprazole .............................................................. 24 
+ondansetron....................................................... 18, 24 
+oral rehydration salts ....................................... 25, 31 
+oseltamivir ............................................................... 12 
+oxamniquine ................................................................ 5 
+oxygen ........................................................................ 1 
+oxytocin.................................................................... 29 
+paclitaxel.................................................................... 17 
+p‐aminosalicylic acid ................................................... 9 
+EML 17 (March 2011)
+ 
+17th edition 
+pancreatic enzymes .................................................... 23 
+paracetamol.......................................................... 2, 15 
+paromomycin........................................................... 13 
+penicillamine................................................................ 3 
+pentamidine ............................................................... 15 
+permethrin ............................................................... 22 
+pertussis vaccine ..................................................... 28 
+phenobarbital............................................................. 4 
+phenoxymethylpenicillin ......................................... 6 
+phenytoin ................................................................... 4 
+phytomenadione ..................................................... 19 
+pilocarpine ............................................................... 29 
+pneumococcal vaccine............................................ 28 
+podophyllum resin ................................................. 22 
+poliomyelitis vaccine .............................................. 28 
+polyvidone iodine ................................................... 23 
+potassium chloride.................................................. 31 
+potassium ferric hexacyano‐ferrate(II) ‐2H20 
+(Prussian blue)....................................................... 3 
+potassium iodide .................................................. 10, 26 
+potassium permanganate....................................... 22 
+praziquantel............................................................... 5 
+prednisolone .................................................. 3, 17, 28 
+primaquine............................................................... 14 
+procaine benzylpenicillin......................................... 6 
+procarbazine............................................................... 17 
+proguanil.................................................................. 14 
+propofol ...................................................................... 1 
+propranolol .............................................................. 16 
+propylthiouracil ...................................................... 26 
+prostaglandin E.......................................................... 33 
+protamine sulfate .................................................... 19 
+pyrantel ...................................................................... 5 
+pyrazinamide............................................................. 9 
+pyridostigmine ........................................................... 28 
+pyridoxine ................................................................ 32 
+pyrimethamine ........................................................ 14 
+quinine...................................................................... 14 
+rabies immunoglobulin .......................................... 27 
+rabies vaccine........................................................... 28 
+ranitidine .................................................................. 24 
+retinol........................................................................ 32 
+ribavirin.................................................................... 12 
+riboflavin .................................................................. 32 
+rifabutin...................................................................... 9 
+rifampicin ............................................................... 8, 9 
+ritonavir.................................................................... 12 
+rotavirus vaccine ..................................................... 28 
+rubella vaccine......................................................... 28 
+salbutamol................................................................ 31 
+salicylic acid............................................................. 22 
+saquinavir (SQV)..................................................... 12 
+page - 40
+Essential Medicines 
+WHO Model List 
+17th edition 
+terbinafine ................................................................ 21 
+testosterone ................................................................ 25 
+tetanus vaccine ........................................................ 28 
+tetracaine .................................................................. 29 
+tetracycline ............................................................... 28 
+thiamine.................................................................... 32 
+thioguanine ................................................................ 17 
+timolol....................................................................... 29 
+tranexamic acid ....................................................... 19 
+triclabendazole .......................................................... 5 
+trimethoprim ............................................................. 8 
+tropicamide .............................................................. 22 
+tuberculin, purified protein derivative (PPD)..... 27 
+typhoid vaccine ....................................................... 28 
+urea ........................................................................... 22 
+valproic acid (sodium valproate)...................... 4, 30 
+vancomycin .................................................................. 8 
+varicella vaccine ...................................................... 28 
+vecuronium.............................................................. 28 
+verapamil ................................................................. 20 
+vinblastine.................................................................. 17 
+vincristine .................................................................. 17 
+warfarin .................................................................... 19 
+water for injection ................................................... 32 
+xylometazoline ........................................................ 33 
+yellow fever vaccine ............................................... 28 
+zidovudine (ZDV or AZT) ..................................... 11 
+zinc sulfate ............................................................... 25 
+selenium sulfide ...................................................... 21 
+senna................................................................... 18, 24 
+silver sulfadiazine................................................... 22 
+simvastatin............................................................... 21 
+sodium calcium edetate................................................ 4 
+sodium chloride ...................................................... 32 
+sodium fluoride....................................................... 32 
+sodium hydrogen carbonate ................................. 32 
+sodium lactate ......................................................... 32 
+sodium nitrite ............................................................ 3 
+sodium nitroprusside................................................. 21 
+sodium stibogluconate or  
+meglumine antimoniate ..................................... 13 
+sodium thiosulfate .............................................. 4, 21 
+spectinomycin ........................................................... 8 
+spironolactone ......................................................... 23 
+stavudine (d4T) ....................................................... 11 
+streptokinase .............................................................. 21 
+streptomycin.............................................................. 9 
+succimer....................................................................... 4 
+sulfadiazine.............................................................. 14 
+sulfadoxine + pyrimethamine ............................... 14 
+sulfamethoxazole + trimethoprim .................... 8, 15 
+sulfasalazine........................................................... 3, 24 
+suramin sodium ...................................................... 15 
+surfactant................................................................... 33 
+suxamethonium ...................................................... 28 
+tamoxifen ................................................................... 17 
+tenofovir disoproxil fumarate ............................... 11 
+ 
+EML 17 (March 2011)
+ 
+page - 41
