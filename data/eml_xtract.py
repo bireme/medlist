@@ -5,13 +5,15 @@ from itertools import dropwhile
 from pprint import pprint
 import re
 
+EML_FILENAME = 'eml17-copypaste.txt'
+
 def get_index():
     excludes = [
         'Essential Medicines', 'WHO Model List', 
         'EML 17 (March 2011)', '17th edition',
         ]
     entries = []
-    with open('eml17.txt') as eml:
+    with open(EML_FILENAME) as eml:
         tudo = ((i+1, lin.strip()) for i, lin in enumerate(eml))
         index = dropwhile((lambda t: not t[1].startswith('Index')), tudo)
         index.next()
@@ -41,7 +43,7 @@ def get_sections():
     page = prev_page = 0
     sec_ant = (0,)
     sections = []
-    with open('eml17.txt') as eml:
+    with open(EML_FILENAME) as eml:
         tudo = ((i+1, lin.rstrip()) for i, lin in enumerate(eml))
         for nl, lin in tudo:
             if lin in excecoes:
@@ -58,11 +60,7 @@ def get_sections():
                 assert sec_ant != sec_num
                 # assert that section 1. is followed by 1.1. or 2.
                 assert sum( (b-a for a, b in zip(sec_ant+(0,), sec_num)) ) == 1
-                sections.append({
-                    'sec_num' : sec_num,
-                    'sec_title' : sec_title,
-                    'sec_page' : sec_page,
-                })
+                sections.append( (sec_num, sec_title, sec_page) )
                 sec_ant = sec_num
             else:
                 page_match = re_page.match(lin)
@@ -74,10 +72,13 @@ def get_sections():
     return sections
 
 if __name__=='__main__':
-    #index = get_index() 
+    #index = get_index()
+    #index.sort() 
     #pprint(index)
     #print(len(index))
-    pprint(get_sections())
+    sections = get_sections()
+    sections.sort()
+    pprint(sections)
 
 """
 Termos avulsos (sem num de pagina):
