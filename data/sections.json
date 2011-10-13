@@ -1,179 +1,1437 @@
-page - 1
-page - 2
-page - 3
-page - 4
-page - 5
-page - 6
-page - 7
-page - 8
-page - 9
-page - 10
-page - 11
-page - 12
-page - 13
-page - 14
-page - 15
-page - 16
-page - 17
-page - 18
-page - 19
-page - 20
-page - 21
-page - 22
-page - 23
-page - 24
-page - 25
-page - 26
-page - 27
-page - 28
-page - 29
-page - 30
-page - 31
-page - 32
-page - 33
-page - 34
-page - 35
-page - 36
-page - 37
-page - 38
-page - 39
-page - 40
-page - 41
-[((1,), 'ANAESTHETICS', 1),
- ((1, 1), 'General anaesthetics and oxygen', 1),
- ((1, 1, 1), 'Inhalational medicines', 1),
- ((1, 1, 2), 'Injectable medicines', 1),
- ((1, 2), 'Local anaesthetics', 1),
- ((1, 3), 'Preoperative medication and sedation for short-term procedures', 1),
- ((2,), 'ANALGESICS, ANTIPYRETICS, NON-STEROIDAL ANTI-INFLAMMATORY', 2),
- ((2, 1),
-  'Non-opioids and non-steroidal anti-inflammatory medicines (NSAIMs)',
-  2),
- ((2, 2), 'Opioid analgesics', 2),
- ((2, 3), 'Medicines used to treat gout', 2),
- ((2, 4), 'Disease modifying agents used in rheumatoid disorders (DMARDs)', 2),
- ((3,), 'ANTIALLERGICS AND MEDICINES USED IN ANAPHYLAXIS', 3),
- ((4,), 'ANTIDOTES AND OTHER SUBSTANCES USED IN POISONINGS', 3),
- ((4, 1), 'Non-specific', 3),
- ((4, 2), 'Specific', 3),
- ((5,), 'ANTICONVULSANTS/ANTIEPILEPTICS', 4),
- ((6,), 'ANTI-INFECTIVE MEDICINES', 5),
- ((6, 1), 'Anthelminthics', 5),
- ((6, 1, 1), 'Intestinal anthelminthics', 5),
- ((6, 1, 2), 'Antifilarials', 5),
- ((6, 1, 3), 'Antischistosomals and other antitrematode medicines', 5),
- ((6, 2), 'Antibacterials', 5),
- ((6, 2, 1), 'Beta Lactam medicines', 5),
- ((6, 2, 2), 'Other antibacterials', 7),
- ((6, 2, 3), 'Antileprosy medicines', 8),
- ((6, 2, 4), 'Antituberculosis medicines', 8),
- ((6, 3), 'Antifungal medicines', 9),
- ((6, 4), 'Antiviral medicines', 10),
- ((6, 4, 1), 'Antiherpes medicines', 10),
- ((6, 4, 2), 'Antiretrovirals', 10),
- ((6, 4, 2, 1), 'Nucleoside/Nucleotide reverse transcriptase inhibitors', 10),
- ((6, 4, 2, 2), 'Non-nucleoside reverse transcriptase inhibitors', 11),
- ((6, 4, 2, 3), 'Protease inhibitors', 11),
- ((6, 4, 3), 'Other antivirals', 12),
- ((6, 5), 'Antiprotozoal medicines', 13),
- ((6, 5, 1), 'Antiamoebic and antigiardiasis medicines', 13),
- ((6, 5, 2), 'Antileishmaniasis medicines', 13),
- ((6, 5, 3), 'Antimalarial medicines', 13),
- ((6, 5, 3, 1), 'For curative treatment', 13),
- ((6, 5, 3, 2), 'For prophylaxis', 14),
- ((6, 5, 4), 'Antipneumocystosis and antitoxoplasmosis medicines', 14),
- ((6, 5, 5), 'Antitrypanosomal medicines', 15),
- ((6, 5, 5, 1), 'African trypanosomiasis', 15),
- ((6, 5, 5, 2), 'American trypanosomiasis', 15),
- ((7,), 'ANTIMIGRAINE MEDICINES', 15),
- ((7, 1), 'For treatment of acute attack', 15),
- ((7, 2), 'For prophylaxis', 16),
- ((8,), 'ANTINEOPLASTIC, IMMUNOSUPPRESSIVES AND MEDICINES USED IN', 16),
- ((8, 1), 'Immunosuppressive medicines', 16),
- ((8, 2), 'Cytotoxic and adjuvant medicines', 16),
- ((8, 3), 'Hormones and antihormones', 17),
- ((8, 4), 'Medicines used in palliative care', 17),
- ((9,), 'ANTIPARKINSONISM MEDICINES', 18),
- ((10,), 'MEDICINES AFFECTING THE BLOOD', 18),
- ((10, 1), 'Antianaemia medicines', 18),
- ((10, 2), 'Medicines affecting coagulation', 19),
- ((10, 3), 'Other medicines for haemoglobinopathies', 19),
- ((11,), 'BLOOD PRODUCTS AND PLASMA SUBSTITUTES', 19),
- ((11, 1), 'Plasma substitutes', 19),
- ((11, 2), 'Plasma fractions for specific use', 19),
- ((12,), 'CARDIOVASCULAR MEDICINES', 20),
- ((12, 1), 'Antianginal medicines', 20),
- ((12, 2), 'Antiarrhythmic medicines', 20),
- ((12, 3), 'Antihypertensive medicines', 20),
- ((12, 4), 'Medicines used in heart failure', 21),
- ((12, 5), 'Antithrombotic medicines', 21),
- ((12, 6), 'Lipid-lowering agents', 21),
- ((13,), 'DERMATOLOGICAL MEDICINES (topical)', 21),
- ((13, 1), 'Antifungal medicines', 21),
- ((13, 2), 'Anti-infective medicines', 22),
- ((13, 3), 'Anti-inflammatory and antipruritic medicines', 22),
- ((13, 4), 'Medicines affecting skin differentiation and proliferation', 22),
- ((13, 5), 'Scabicides and pediculicides', 22),
- ((14,), 'DIAGNOSTIC AGENTS', 22),
- ((14, 1), 'Ophthalmic medicines', 22),
- ((14, 2), 'Radiocontrast media', 22),
- ((15,), 'DISINFECTANTS AND ANTISEPTICS', 23),
- ((15, 1), 'Antiseptics', 23),
- ((15, 2), 'Disinfectants', 23),
- ((16,), 'DIURETICS', 23),
- ((17,), 'GASTROINTESTINAL MEDICINES', 23),
- ((17, 1), 'Antiulcer medicines', 24),
- ((17, 2), 'Antiemetic medicines', 24),
- ((17, 3), 'Anti-inflammatory medicines', 24),
- ((17, 4), 'Laxatives', 24),
- ((17, 5), 'Medicines used in diarrhoea', 25),
- ((17, 5, 1), 'Oral rehydration', 25),
- ((17, 5, 2), 'Medicines for diarrhoea in children', 25),
- ((18,), 'HORMONES, OTHER ENDOCRINE MEDICINES AND CONTRACEPTIVES', 25),
- ((18, 1), 'Adrenal hormones and synthetic substitutes', 25),
- ((18, 2), 'Androgens', 25),
- ((18, 3), 'Contraceptives', 25),
- ((18, 3, 1), 'Oral hormonal contraceptives', 25),
- ((18, 3, 2), 'Injectable hormonal contraceptives', 25),
- ((18, 3, 3), 'Intrauterine devices', 26),
- ((18, 3, 4), 'Barrier methods', 26),
- ((18, 3, 5), 'Implantable contraceptives', 26),
- ((18, 4), 'Estrogens', 26),
- ((18, 5), 'Insulins and other medicines used for diabetes', 26),
- ((18, 6), 'Ovulation inducers', 26),
- ((18, 7), 'Progestogens', 26),
- ((18, 8), 'Thyroid hormones and antithyroid medicines', 26),
- ((19,), 'IMMUNOLOGICALS', 27),
- ((19, 1), 'Diagnostic agents', 27),
- ((19, 2), 'Sera and immunoglobulins', 27),
- ((19, 3), 'Vaccines', 27),
- ((20,), 'MUSCLE RELAXANTS (PERIPHERALLY-ACTING) AND CHOLINESTERASE', 28),
- ((21,), 'OPHTHALMOLOGICAL PREPARATIONS', 28),
- ((21, 1), 'Anti-infective agents', 28),
- ((21, 2), 'Anti-inflammatory agents', 28),
- ((21, 3), 'Local anaesthetics', 29),
- ((21, 4), 'Miotics and antiglaucoma medicines', 29),
- ((21, 5), 'Mydriatics', 29),
- ((22,), 'OXYTOCICS AND ANTIOXYTOCICS', 29),
- ((22, 1), 'Oxytocics', 29),
- ((22, 2), 'Antioxytocics (tocolytics)', 29),
- ((23,), 'PERITONEAL DIALYSIS SOLUTION', 29),
- ((24,), 'MEDICINES FOR MENTAL AND BEHAVIOURAL DISORDERS', 30),
- ((24, 1), 'Medicines used in psychotic disorders', 30),
- ((24, 2), 'Medicines used in mood disorders', 30),
- ((24, 2, 1), 'Medicines used in depressive disorders', 30),
- ((24, 2, 2), 'Medicines used in bipolar disorders', 30),
- ((24, 3), 'Medicines for anxiety disorders', 30),
- ((24, 4), 'Medicines used for obsessive compulsive disorders', 30),
- ((24, 5), 'Medicines for disorders due to psychoactive substance use', 30),
- ((25,), 'MEDICINES ACTING ON THE RESPIRATORY TRACT', 31),
- ((25, 1),
-  'Antiasthmatic and medicines for chronic obstructive pulmonary disease',
-  31),
- ((26,), 'SOLUTIONS CORRECTING WATER, ELECTROLYTE AND ACID-BASE', 31),
- ((26, 1), 'Oral', 31),
- ((26, 2), 'Parenteral', 31),
- ((26, 3), 'Miscellaneous', 32),
- ((27,), 'VITAMINS AND MINERALS', 32),
- ((28,), 'EAR, NOSE AND THROAT CONDITIONS IN CHILDREN [c]', 32),
- ((29,), 'SPECIFIC MEDICINES FOR NEONATAL CARE [c]', 33)]
+[
+  [
+    [
+      1
+    ], 
+    "ANAESTHETICS", 
+    1
+  ], 
+  [
+    [
+      1, 
+      1
+    ], 
+    "General anaesthetics and oxygen", 
+    1
+  ], 
+  [
+    [
+      1, 
+      1, 
+      1
+    ], 
+    "Inhalational medicines", 
+    1
+  ], 
+  [
+    [
+      1, 
+      1, 
+      2
+    ], 
+    "Injectable medicines", 
+    1
+  ], 
+  [
+    [
+      1, 
+      2
+    ], 
+    "Local anaesthetics", 
+    1
+  ], 
+  [
+    [
+      1, 
+      2, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    1
+  ], 
+  [
+    [
+      1, 
+      3
+    ], 
+    "Preoperative medication and sedation for short-term procedures", 
+    1
+  ], 
+  [
+    [
+      2
+    ], 
+    "ANALGESICS, ANTIPYRETICS, NON-STEROIDAL ANTI-INFLAMMATORY", 
+    2
+  ], 
+  [
+    [
+      2, 
+      1
+    ], 
+    "Non-opioids and non-steroidal anti-inflammatory medicines (NSAIMs)", 
+    2
+  ], 
+  [
+    [
+      2, 
+      1, 
+      "complementary"
+    ], 
+    "Complementary List [c]", 
+    2
+  ], 
+  [
+    [
+      2, 
+      2
+    ], 
+    "Opioid analgesics", 
+    2
+  ], 
+  [
+    [
+      2, 
+      3
+    ], 
+    "Medicines used to treat gout", 
+    2
+  ], 
+  [
+    [
+      2, 
+      4
+    ], 
+    "Disease modifying agents used in rheumatoid disorders (DMARDs)", 
+    2
+  ], 
+  [
+    [
+      2, 
+      4, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    3
+  ], 
+  [
+    [
+      3
+    ], 
+    "ANTIALLERGICS AND MEDICINES USED IN ANAPHYLAXIS", 
+    3
+  ], 
+  [
+    [
+      4
+    ], 
+    "ANTIDOTES AND OTHER SUBSTANCES USED IN POISONINGS", 
+    3
+  ], 
+  [
+    [
+      4, 
+      1
+    ], 
+    "Non-specific", 
+    3
+  ], 
+  [
+    [
+      4, 
+      2
+    ], 
+    "Specific", 
+    3
+  ], 
+  [
+    [
+      4, 
+      2, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    4
+  ], 
+  [
+    [
+      5
+    ], 
+    "ANTICONVULSANTS/ANTIEPILEPTICS", 
+    4
+  ], 
+  [
+    [
+      5, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    4
+  ], 
+  [
+    [
+      6
+    ], 
+    "ANTI-INFECTIVE MEDICINES", 
+    5
+  ], 
+  [
+    [
+      6, 
+      1
+    ], 
+    "Anthelminthics", 
+    5
+  ], 
+  [
+    [
+      6, 
+      1, 
+      1
+    ], 
+    "Intestinal anthelminthics", 
+    5
+  ], 
+  [
+    [
+      6, 
+      1, 
+      2
+    ], 
+    "Antifilarials", 
+    5
+  ], 
+  [
+    [
+      6, 
+      1, 
+      3
+    ], 
+    "Antischistosomals and other antitrematode medicines", 
+    5
+  ], 
+  [
+    [
+      6, 
+      1, 
+      3, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    5
+  ], 
+  [
+    [
+      6, 
+      2
+    ], 
+    "Antibacterials", 
+    5
+  ], 
+  [
+    [
+      6, 
+      2, 
+      1
+    ], 
+    "Beta Lactam medicines", 
+    5
+  ], 
+  [
+    [
+      6, 
+      2, 
+      1, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    6
+  ], 
+  [
+    [
+      6, 
+      2, 
+      2
+    ], 
+    "Other antibacterials", 
+    7
+  ], 
+  [
+    [
+      6, 
+      2, 
+      2, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    8
+  ], 
+  [
+    [
+      6, 
+      2, 
+      3
+    ], 
+    "Antileprosy medicines", 
+    8
+  ], 
+  [
+    [
+      6, 
+      2, 
+      4
+    ], 
+    "Antituberculosis medicines", 
+    8
+  ], 
+  [
+    [
+      6, 
+      2, 
+      4, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    9
+  ], 
+  [
+    [
+      6, 
+      3
+    ], 
+    "Antifungal medicines", 
+    9
+  ], 
+  [
+    [
+      6, 
+      3, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    10
+  ], 
+  [
+    [
+      6, 
+      4
+    ], 
+    "Antiviral medicines", 
+    10
+  ], 
+  [
+    [
+      6, 
+      4, 
+      1
+    ], 
+    "Antiherpes medicines", 
+    10
+  ], 
+  [
+    [
+      6, 
+      4, 
+      2
+    ], 
+    "Antiretrovirals", 
+    10
+  ], 
+  [
+    [
+      6, 
+      4, 
+      2, 
+      1
+    ], 
+    "Nucleoside/Nucleotide reverse transcriptase inhibitors", 
+    10
+  ], 
+  [
+    [
+      6, 
+      4, 
+      2, 
+      2
+    ], 
+    "Non-nucleoside reverse transcriptase inhibitors", 
+    11
+  ], 
+  [
+    [
+      6, 
+      4, 
+      2, 
+      3
+    ], 
+    "Protease inhibitors", 
+    11
+  ], 
+  [
+    [
+      6, 
+      4, 
+      3
+    ], 
+    "Other antivirals", 
+    12
+  ], 
+  [
+    [
+      6, 
+      5
+    ], 
+    "Antiprotozoal medicines", 
+    13
+  ], 
+  [
+    [
+      6, 
+      5, 
+      1
+    ], 
+    "Antiamoebic and antigiardiasis medicines", 
+    13
+  ], 
+  [
+    [
+      6, 
+      5, 
+      2
+    ], 
+    "Antileishmaniasis medicines", 
+    13
+  ], 
+  [
+    [
+      6, 
+      5, 
+      3
+    ], 
+    "Antimalarial medicines", 
+    13
+  ], 
+  [
+    [
+      6, 
+      5, 
+      3, 
+      1
+    ], 
+    "For curative treatment", 
+    13
+  ], 
+  [
+    [
+      6, 
+      5, 
+      3, 
+      2
+    ], 
+    "For prophylaxis", 
+    14
+  ], 
+  [
+    [
+      6, 
+      5, 
+      4
+    ], 
+    "Antipneumocystosis and antitoxoplasmosis medicines", 
+    14
+  ], 
+  [
+    [
+      6, 
+      5, 
+      4, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    15
+  ], 
+  [
+    [
+      6, 
+      5, 
+      5
+    ], 
+    "Antitrypanosomal medicines", 
+    15
+  ], 
+  [
+    [
+      6, 
+      5, 
+      5, 
+      1
+    ], 
+    "African trypanosomiasis", 
+    15
+  ], 
+  [
+    [
+      6, 
+      5, 
+      5, 
+      1, 
+      "complementary"
+    ], 
+    "Complementary List [c]", 
+    15
+  ], 
+  [
+    [
+      6, 
+      5, 
+      5, 
+      2
+    ], 
+    "American trypanosomiasis", 
+    15
+  ], 
+  [
+    [
+      7
+    ], 
+    "ANTIMIGRAINE MEDICINES", 
+    15
+  ], 
+  [
+    [
+      7, 
+      1
+    ], 
+    "For treatment of acute attack", 
+    15
+  ], 
+  [
+    [
+      7, 
+      2
+    ], 
+    "For prophylaxis", 
+    16
+  ], 
+  [
+    [
+      8
+    ], 
+    "ANTINEOPLASTIC, IMMUNOSUPPRESSIVES AND MEDICINES USED IN", 
+    16
+  ], 
+  [
+    [
+      8, 
+      1
+    ], 
+    "Immunosuppressive medicines", 
+    16
+  ], 
+  [
+    [
+      8, 
+      1, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    16
+  ], 
+  [
+    [
+      8, 
+      2
+    ], 
+    "Cytotoxic and adjuvant medicines", 
+    16
+  ], 
+  [
+    [
+      8, 
+      2, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    16
+  ], 
+  [
+    [
+      8, 
+      3
+    ], 
+    "Hormones and antihormones", 
+    17
+  ], 
+  [
+    [
+      8, 
+      3, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    17
+  ], 
+  [
+    [
+      8, 
+      4
+    ], 
+    "Medicines used in palliative care", 
+    17
+  ], 
+  [
+    [
+      9
+    ], 
+    "ANTIPARKINSONISM MEDICINES", 
+    18
+  ], 
+  [
+    [
+      10
+    ], 
+    "MEDICINES AFFECTING THE BLOOD", 
+    18
+  ], 
+  [
+    [
+      10, 
+      1
+    ], 
+    "Antianaemia medicines", 
+    18
+  ], 
+  [
+    [
+      10, 
+      2
+    ], 
+    "Medicines affecting coagulation", 
+    19
+  ], 
+  [
+    [
+      10, 
+      2, 
+      "complementary"
+    ], 
+    "Complementary List [c]", 
+    19
+  ], 
+  [
+    [
+      10, 
+      3
+    ], 
+    "Other medicines for haemoglobinopathies", 
+    19
+  ], 
+  [
+    [
+      10, 
+      3, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    19
+  ], 
+  [
+    [
+      11
+    ], 
+    "BLOOD PRODUCTS AND PLASMA SUBSTITUTES", 
+    19
+  ], 
+  [
+    [
+      11, 
+      1
+    ], 
+    "Plasma substitutes", 
+    19
+  ], 
+  [
+    [
+      11, 
+      2
+    ], 
+    "Plasma fractions for specific use", 
+    19
+  ], 
+  [
+    [
+      11, 
+      2, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    19
+  ], 
+  [
+    [
+      12
+    ], 
+    "CARDIOVASCULAR MEDICINES", 
+    20
+  ], 
+  [
+    [
+      12, 
+      1
+    ], 
+    "Antianginal medicines", 
+    20
+  ], 
+  [
+    [
+      12, 
+      2
+    ], 
+    "Antiarrhythmic medicines", 
+    20
+  ], 
+  [
+    [
+      12, 
+      2, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    20
+  ], 
+  [
+    [
+      12, 
+      3
+    ], 
+    "Antihypertensive medicines", 
+    20
+  ], 
+  [
+    [
+      12, 
+      3, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    21
+  ], 
+  [
+    [
+      12, 
+      4
+    ], 
+    "Medicines used in heart failure", 
+    21
+  ], 
+  [
+    [
+      12, 
+      4, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    21
+  ], 
+  [
+    [
+      12, 
+      5
+    ], 
+    "Antithrombotic medicines", 
+    21
+  ], 
+  [
+    [
+      12, 
+      5, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    21
+  ], 
+  [
+    [
+      12, 
+      6
+    ], 
+    "Lipid-lowering agents", 
+    21
+  ], 
+  [
+    [
+      13
+    ], 
+    "DERMATOLOGICAL MEDICINES (topical)", 
+    21
+  ], 
+  [
+    [
+      13, 
+      1
+    ], 
+    "Antifungal medicines", 
+    21
+  ], 
+  [
+    [
+      13, 
+      2
+    ], 
+    "Anti-infective medicines", 
+    22
+  ], 
+  [
+    [
+      13, 
+      3
+    ], 
+    "Anti-inflammatory and antipruritic medicines", 
+    22
+  ], 
+  [
+    [
+      13, 
+      4
+    ], 
+    "Medicines affecting skin differentiation and proliferation", 
+    22
+  ], 
+  [
+    [
+      13, 
+      5
+    ], 
+    "Scabicides and pediculicides", 
+    22
+  ], 
+  [
+    [
+      14
+    ], 
+    "DIAGNOSTIC AGENTS", 
+    22
+  ], 
+  [
+    [
+      14, 
+      1
+    ], 
+    "Ophthalmic medicines", 
+    22
+  ], 
+  [
+    [
+      14, 
+      2
+    ], 
+    "Radiocontrast media", 
+    22
+  ], 
+  [
+    [
+      14, 
+      2, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    23
+  ], 
+  [
+    [
+      15
+    ], 
+    "DISINFECTANTS AND ANTISEPTICS", 
+    23
+  ], 
+  [
+    [
+      15, 
+      1
+    ], 
+    "Antiseptics", 
+    23
+  ], 
+  [
+    [
+      15, 
+      2
+    ], 
+    "Disinfectants", 
+    23
+  ], 
+  [
+    [
+      16
+    ], 
+    "DIURETICS", 
+    23
+  ], 
+  [
+    [
+      16, 
+      "complementary"
+    ], 
+    "Complementary List [c]", 
+    23
+  ], 
+  [
+    [
+      17
+    ], 
+    "GASTROINTESTINAL MEDICINES", 
+    23
+  ], 
+  [
+    [
+      17, 
+      "complementary"
+    ], 
+    "Complementary List [c]", 
+    23
+  ], 
+  [
+    [
+      17, 
+      1
+    ], 
+    "Antiulcer medicines", 
+    24
+  ], 
+  [
+    [
+      17, 
+      2
+    ], 
+    "Antiemetic medicines", 
+    24
+  ], 
+  [
+    [
+      17, 
+      3
+    ], 
+    "Anti-inflammatory medicines", 
+    24
+  ], 
+  [
+    [
+      17, 
+      3, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    24
+  ], 
+  [
+    [
+      17, 
+      4
+    ], 
+    "Laxatives", 
+    24
+  ], 
+  [
+    [
+      17, 
+      5
+    ], 
+    "Medicines used in diarrhoea", 
+    25
+  ], 
+  [
+    [
+      17, 
+      5, 
+      1
+    ], 
+    "Oral rehydration", 
+    25
+  ], 
+  [
+    [
+      17, 
+      5, 
+      2
+    ], 
+    "Medicines for diarrhoea in children", 
+    25
+  ], 
+  [
+    [
+      18
+    ], 
+    "HORMONES, OTHER ENDOCRINE MEDICINES AND CONTRACEPTIVES", 
+    25
+  ], 
+  [
+    [
+      18, 
+      1
+    ], 
+    "Adrenal hormones and synthetic substitutes", 
+    25
+  ], 
+  [
+    [
+      18, 
+      2
+    ], 
+    "Androgens", 
+    25
+  ], 
+  [
+    [
+      18, 
+      2, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    25
+  ], 
+  [
+    [
+      18, 
+      3
+    ], 
+    "Contraceptives", 
+    25
+  ], 
+  [
+    [
+      18, 
+      3, 
+      1
+    ], 
+    "Oral hormonal contraceptives", 
+    25
+  ], 
+  [
+    [
+      18, 
+      3, 
+      2
+    ], 
+    "Injectable hormonal contraceptives", 
+    25
+  ], 
+  [
+    [
+      18, 
+      3, 
+      3
+    ], 
+    "Intrauterine devices", 
+    26
+  ], 
+  [
+    [
+      18, 
+      3, 
+      4
+    ], 
+    "Barrier methods", 
+    26
+  ], 
+  [
+    [
+      18, 
+      3, 
+      5
+    ], 
+    "Implantable contraceptives", 
+    26
+  ], 
+  [
+    [
+      18, 
+      4
+    ], 
+    "Estrogens", 
+    26
+  ], 
+  [
+    [
+      18, 
+      5
+    ], 
+    "Insulins and other medicines used for diabetes", 
+    26
+  ], 
+  [
+    [
+      18, 
+      5, 
+      "complementary"
+    ], 
+    "Complementary List [c]", 
+    26
+  ], 
+  [
+    [
+      18, 
+      6
+    ], 
+    "Ovulation inducers", 
+    26
+  ], 
+  [
+    [
+      18, 
+      6, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    26
+  ], 
+  [
+    [
+      18, 
+      7
+    ], 
+    "Progestogens", 
+    26
+  ], 
+  [
+    [
+      18, 
+      8
+    ], 
+    "Thyroid hormones and antithyroid medicines", 
+    26
+  ], 
+  [
+    [
+      18, 
+      8, 
+      "complementary"
+    ], 
+    "Complementary List [c]", 
+    26
+  ], 
+  [
+    [
+      19
+    ], 
+    "IMMUNOLOGICALS", 
+    27
+  ], 
+  [
+    [
+      19, 
+      1
+    ], 
+    "Diagnostic agents", 
+    27
+  ], 
+  [
+    [
+      19, 
+      2
+    ], 
+    "Sera and immunoglobulins", 
+    27
+  ], 
+  [
+    [
+      19, 
+      3
+    ], 
+    "Vaccines", 
+    27
+  ], 
+  [
+    [
+      20
+    ], 
+    "MUSCLE RELAXANTS (PERIPHERALLY-ACTING) AND CHOLINESTERASE", 
+    28
+  ], 
+  [
+    [
+      20, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    28
+  ], 
+  [
+    [
+      21
+    ], 
+    "OPHTHALMOLOGICAL PREPARATIONS", 
+    28
+  ], 
+  [
+    [
+      21, 
+      1
+    ], 
+    "Anti-infective agents", 
+    28
+  ], 
+  [
+    [
+      21, 
+      2
+    ], 
+    "Anti-inflammatory agents", 
+    28
+  ], 
+  [
+    [
+      21, 
+      3
+    ], 
+    "Local anaesthetics", 
+    29
+  ], 
+  [
+    [
+      21, 
+      4
+    ], 
+    "Miotics and antiglaucoma medicines", 
+    29
+  ], 
+  [
+    [
+      21, 
+      5
+    ], 
+    "Mydriatics", 
+    29
+  ], 
+  [
+    [
+      21, 
+      5, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    29
+  ], 
+  [
+    [
+      22
+    ], 
+    "OXYTOCICS AND ANTIOXYTOCICS", 
+    29
+  ], 
+  [
+    [
+      22, 
+      1
+    ], 
+    "Oxytocics", 
+    29
+  ], 
+  [
+    [
+      22, 
+      1, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    29
+  ], 
+  [
+    [
+      22, 
+      2
+    ], 
+    "Antioxytocics (tocolytics)", 
+    29
+  ], 
+  [
+    [
+      23
+    ], 
+    "PERITONEAL DIALYSIS SOLUTION", 
+    29
+  ], 
+  [
+    [
+      23, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    29
+  ], 
+  [
+    [
+      24
+    ], 
+    "MEDICINES FOR MENTAL AND BEHAVIOURAL DISORDERS", 
+    30
+  ], 
+  [
+    [
+      24, 
+      1
+    ], 
+    "Medicines used in psychotic disorders", 
+    30
+  ], 
+  [
+    [
+      24, 
+      1, 
+      "complementary"
+    ], 
+    "Complementary List [c]", 
+    30
+  ], 
+  [
+    [
+      24, 
+      2
+    ], 
+    "Medicines used in mood disorders", 
+    30
+  ], 
+  [
+    [
+      24, 
+      2, 
+      1
+    ], 
+    "Medicines used in depressive disorders", 
+    30
+  ], 
+  [
+    [
+      24, 
+      2, 
+      1, 
+      "complementary"
+    ], 
+    "Complementary List [c]", 
+    30
+  ], 
+  [
+    [
+      24, 
+      2, 
+      2
+    ], 
+    "Medicines used in bipolar disorders", 
+    30
+  ], 
+  [
+    [
+      24, 
+      3
+    ], 
+    "Medicines for anxiety disorders", 
+    30
+  ], 
+  [
+    [
+      24, 
+      4
+    ], 
+    "Medicines used for obsessive compulsive disorders", 
+    30
+  ], 
+  [
+    [
+      24, 
+      5
+    ], 
+    "Medicines for disorders due to psychoactive substance use", 
+    30
+  ], 
+  [
+    [
+      24, 
+      5, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    31
+  ], 
+  [
+    [
+      25
+    ], 
+    "MEDICINES ACTING ON THE RESPIRATORY TRACT", 
+    31
+  ], 
+  [
+    [
+      25, 
+      1
+    ], 
+    "Antiasthmatic and medicines for chronic obstructive pulmonary disease", 
+    31
+  ], 
+  [
+    [
+      26
+    ], 
+    "SOLUTIONS CORRECTING WATER, ELECTROLYTE AND ACID-BASE", 
+    31
+  ], 
+  [
+    [
+      26, 
+      1
+    ], 
+    "Oral", 
+    31
+  ], 
+  [
+    [
+      26, 
+      2
+    ], 
+    "Parenteral", 
+    31
+  ], 
+  [
+    [
+      26, 
+      3
+    ], 
+    "Miscellaneous", 
+    32
+  ], 
+  [
+    [
+      27
+    ], 
+    "VITAMINS AND MINERALS", 
+    32
+  ], 
+  [
+    [
+      27, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    32
+  ], 
+  [
+    [
+      28
+    ], 
+    "EAR, NOSE AND THROAT CONDITIONS IN CHILDREN [c]", 
+    32
+  ], 
+  [
+    [
+      29
+    ], 
+    "SPECIFIC MEDICINES FOR NEONATAL CARE [c]", 
+    33
+  ], 
+  [
+    [
+      29, 
+      "complementary"
+    ], 
+    "Complementary List", 
+    33
+  ]
+]

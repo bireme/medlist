@@ -44,7 +44,6 @@ medicines = [
         'section': '1.2',
         'generic_name': 'bupivacaine',
         'reference_medicine':True,
-        'medicine_note' : 'Thiopental may be used as an alternative depending on local availability and cost.', 
         'forms' : [
             {
                 'dosage_form' : 'injection',
