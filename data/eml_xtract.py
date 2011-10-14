@@ -84,7 +84,8 @@ def index_sort_key(entry):
 def list_medicines(index):
     from base28 import reprbase
     for i, entry in enumerate(index):
-        print reprbase(i+28), entry[0], entry[1]
+        pages = ','.join(str(x) for x in entry[1])
+        print '{0}\t{1}\t{2}'.format(reprbase(i+28), entry[0], pages)
 
 if __name__=='__main__':
     index = get_index()
