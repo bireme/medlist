@@ -359,6 +359,13 @@ BODY, TABLE, TD, TH {
 	text-align: left;
 	padding: 4px 12px;
 }
+.genericTable A {
+	color: #1c4c6b;
+	text-decoration: none;
+}
+.genericTable A:hover {
+	text-decoration: underline;
+}
 .highlightBlock {
 	clear: both;
 	margin-bottom: 20px;
