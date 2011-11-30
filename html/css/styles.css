@@ -111,6 +111,9 @@ BODY, TABLE, TD, TH {
 	height: 16px;
 	border: none;
 }
+.mid {
+	width: 90px;
+}
 .loginBox .submit {
 	background: url(../images/bt-ok.png) no-repeat;
 	width: 29px;
@@ -323,6 +326,26 @@ BODY, TABLE, TD, TH {
 	color: #ff5000;
 	margin-bottom: 12px;
 }
+#filters {
+	margin-bottom: 20px;
+}
+.hBlock, #filters .floatBlock {
+	float: left;
+}
+#filters .hBlock {
+	min-height: 80px;
+	padding: 0 2%;
+	border-right: 1px solid #666;
+}
+#filters .hBlock.last {
+	border-right: none;
+}
+#filters .floatBlock:first-child {
+	margin-right: 20px;
+}
+#filters .rightSide {
+	padding-right: 8px;
+}
 .list .orderBy {
 	float: right;
 }
@@ -365,6 +388,23 @@ BODY, TABLE, TD, TH {
 }
 .genericTable A:hover {
 	text-decoration: underline;
+}
+.compareLists TD, .compareLists TH {
+	vertical-align: middle;
+	text-align: center !important;
+}
+.compareLists .rowRef {
+	text-align: left !important;
+}
+.compareLists TD SPAN SPAN {
+	display: none;
+}
+.compareLists TD SPAN.checked {
+	display: block;
+	width: 16px;
+	height: 16px;
+	margin: auto;
+	background: url(../images/agt_action_success_16px.png) no-repeat;
 }
 .highlightBlock {
 	clear: both;
