@@ -1,0 +1,6 @@
+Medicine|MedicineID
+Language|LangID
+MedicineRef|MedicineRefID
+MedicineAppStatus|MedicineAppStatusID
+MedicineAppType|MedicineAppTypeID
+MedicineApp|MedicineAppID

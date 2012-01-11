@@ -1,1 +1,3 @@
 *.pyc
+medlist/tools/csv_dados*
+medlist/tools/json*
