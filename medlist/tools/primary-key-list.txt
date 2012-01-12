@@ -4,3 +4,6 @@ MedicineRef|MedicineRefID
 MedicineAppStatus|MedicineAppStatusID
 MedicineAppType|MedicineAppTypeID
 MedicineApp|MedicineAppID
+MedicineAppHistoryDate|MedicineAppHistoryDateID
+MedicineAppType_Local|NULL
+Medicine_Local|NULL
