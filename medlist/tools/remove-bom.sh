@@ -2,7 +2,7 @@
 
 CURRENT=`pwd`
 
-FILES=csv_dados/especial
+FILES=csv_dados
 
 cd ${FILES}
 
