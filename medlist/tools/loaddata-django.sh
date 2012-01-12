@@ -15,4 +15,6 @@ python manage.py loaddata tools/json-django/MedicineAppType_Local.json
 python manage.py loaddata tools/json-django/MedicineAppHistoryDate.json
 python manage.py loaddata tools/json-django/Medicine_Local.json
 
+python manage.py loaddata tools/json-django/MedicineRef.json
+
 cd ${CUR}

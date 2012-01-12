@@ -1,9 +1,10 @@
+#! coding: utf-8
 from django.db import models
 
 class Medicine(models.Model):
 
 	def __unicode__(self):
-		return str(self.Abbreviation)
+		return str(self.MedicineID)
 
 	MedicineID = models.AutoField(primary_key=True)
 	Abbreviation = models.CharField('Abreviation', max_length=50, null=True)
@@ -32,14 +33,14 @@ class Medicine_Local(models.Model):
 class MedicineRef(models.Model):
 
 	MedicineRefID = models.AutoField(primary_key=True)
-	MedicineID = models.ForeignKey(Medicine,verbose_name='Medicine Identification')
-	Hyperlink = models.CharField('Hyperlink', max_length=500)
-	MedicineRefDesc = models.TextField('Description')
+	MedicineID = models.ForeignKey(Medicine,verbose_name='Medicine Identification', null=True, blank=True)
+	Hyperlink = models.CharField('Hyperlink', max_length=500, null=True, blank=True)
+	MedicineRefDesc = models.TextField('Description', null=True, blank=True)
 	MedicineRefType = models.CharField('Type', max_length=30, blank=True, null=True)
-	MedicineRefOrder = models.IntegerField('Order')
+	MedicineRefOrder = models.IntegerField('Order', null=True, blank=True)
 
 	def __unicode__(self):
-		return str(self.MedicineID)
+		return str(self.MedicineRefDesc)
 	
 class MedicineAppStatus(models.Model):
 
@@ -62,8 +63,8 @@ class MedicineAppType_Local(models.Model):
 	LangID = models.ForeignKey(Language,verbose_name='Language Identification')
 	MedicineAppTypeName = models.CharField('Name',max_length=50)
 
-	"""def __unicode__(self):
-		return str(self.MedicineAppTypeName)"""
+	def __unicode__(self):
+		return unicode(self.MedicineAppTypeName)
 
 
 class MedicineApp(models.Model):
@@ -78,6 +79,9 @@ class MedicineApp(models.Model):
 	Sectionid = models.IntegerField('Section ID', blank=True, null=True)
 	ApplyToChildrenOnly = models.BooleanField('Apply to Children Only?', blank=True)
 	NotApplicableForChildren = models.BooleanField('Not Applicable For Children?', blank=True)
+
+	def __unicode__(self):
+		return unicode(self.MedicineID)
 
 class MedicineAppHistoryDate(models.Model):
 

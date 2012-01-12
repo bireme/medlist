@@ -29,11 +29,12 @@ for file in files:
 		content = open(file['file']).read()
 		open(file['file'], 'w').write(content.replace('\0', ''))
 
-	file = csv.reader(open(file['file'], 'rb'), delimiter=';')
+	file = csv.reader(open(file['file'], 'rb'), delimiter='|')
 
 	rownum = 0
 	header = []
 	data = []
+
 	for row in file:
 
 		if rownum == 0:
