@@ -24,6 +24,11 @@ for file in files:
 	meta_file = file
 	print '-> Converting %s..' % file['file']
 
+	if '\0' in open(file['file']).read():
+		print 'File has a NULL byte. Converting..'
+		content = open(file['file']).read()
+		open(file['file'], 'w').write(content.replace('\0', ''))
+
 	file = csv.reader(open(file['file'], 'rb'), delimiter=';')
 
 	rownum = 0
