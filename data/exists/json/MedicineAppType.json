@@ -1,0 +1,16 @@
+[
+  {
+    "pk": 1, 
+    "model": "medicine.MedicineAppType", 
+    "fields": {
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "medicine.MedicineAppType", 
+    "fields": {
+      "MedicineAppTypeID": 2
+    }
+  }
+]

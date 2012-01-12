@@ -1,0 +1,18 @@
+[
+  {
+    "pk": 1, 
+    "model": "medicine.MedicineAppStatus", 
+    "fields": {
+      "MedicineAppStatusID": 1, 
+      "MedicineAppStatusName": "Added"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "medicine.MedicineAppStatus", 
+    "fields": {
+      "MedicineAppStatusID": 2, 
+      "MedicineAppStatusName": "Removed"
+    }
+  }
+]

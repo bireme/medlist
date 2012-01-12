@@ -1,0 +1,7762 @@
+[
+  {
+    "pk": 2, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 2, 
+      "Sectionid": 13, 
+      "ATC_code": "V03AB23", 
+      "MedicineAppID": 2, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 3, 
+      "Sectionid": 6, 
+      "ATC_code": "N02BA01", 
+      "MedicineAppID": 3, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 4, 
+      "Sectionid": 27, 
+      "ATC_code": "J05AB01", 
+      "MedicineAppID": 4, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 5, 
+      "Sectionid": 134, 
+      "ATC_code": "A12AA03", 
+      "MedicineAppID": 5, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 10, 
+      "Sectionid": 17, 
+      "ATC_code": "P02CA03", 
+      "MedicineAppID": 6, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 11, 
+      "Sectionid": 109, 
+      "ATC_code": "M03AA01", 
+      "MedicineAppID": 7, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 14, 
+      "Sectionid": 8, 
+      "ATC_code": "M04AA01", 
+      "MedicineAppID": 8, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 15, 
+      "Sectionid": 69, 
+      "ATC_code": "D10AX05", 
+      "MedicineAppID": 9, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 16, 
+      "Sectionid": 81, 
+      "ATC_code": "A02AB01", 
+      "MedicineAppID": 10, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 17, 
+      "Sectionid": 79, 
+      "ATC_code": "C03DB01", 
+      "MedicineAppID": 11, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 19, 
+      "Sectionid": 123, 
+      "ATC_code": "N06AA09", 
+      "MedicineAppID": 13, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 20, 
+      "Sectionid": 21, 
+      "ATC_code": "J01CA04", 
+      "MedicineAppID": 14, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 15, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 21, 
+      "Sectionid": 21, 
+      "ATC_code": "J01CR02", 
+      "MedicineAppID": 15, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 16, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 22, 
+      "Sectionid": 25, 
+      "ATC_code": "J02AA01", 
+      "MedicineAppID": 16, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 17, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 23, 
+      "Sectionid": 21, 
+      "ATC_code": "J01CA01", 
+      "MedicineAppID": 17, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 18, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 24, 
+      "Sectionid": 104, 
+      "ATC_code": "J06BB01", 
+      "MedicineAppID": 18, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 19, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 25, 
+      "Sectionid": 104, 
+      "ATC_code": "J06BB02", 
+      "MedicineAppID": 19, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 20, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 26, 
+      "Sectionid": 104, 
+      "ATC_code": "J06AA03", 
+      "MedicineAppID": 20, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 21, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 27, 
+      "Sectionid": 36, 
+      "ATC_code": "P01BE02", 
+      "MedicineAppID": 21, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 22, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 28, 
+      "Sectionid": 36, 
+      "ATC_code": "P01BE03", 
+      "MedicineAppID": 22, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 23, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 29, 
+      "Sectionid": 134, 
+      "ATC_code": "A11GA01", 
+      "MedicineAppID": 23, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 24, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 30, 
+      "Sectionid": 48, 
+      "ATC_code": "L01XX02", 
+      "MedicineAppID": 24, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 25, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 31, 
+      "Sectionid": 59, 
+      "ATC_code": "C07AB03", 
+      "MedicineAppID": 25, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 26, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 32, 
+      "Sectionid": 115, 
+      "ATC_code": "S01FA01", 
+      "MedicineAppID": 26, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 33, 
+      "Sectionid": 47, 
+      "ATC_code": "L04AX01", 
+      "MedicineAppID": 27, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 35, 
+      "Sectionid": 75, 
+      "ATC_code": "V08BA01", 
+      "MedicineAppID": 28, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 36, 
+      "Sectionid": 106, 
+      "ATC_code": "J07AN01", 
+      "MedicineAppID": 29, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 37, 
+      "Sectionid": 128, 
+      "ATC_code": "R03BA01", 
+      "MedicineAppID": 30, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 31, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 38, 
+      "Sectionid": 21, 
+      "ATC_code": "J01CE08", 
+      "MedicineAppID": 31, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 32, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 39, 
+      "Sectionid": 41, 
+      "ATC_code": "P01CA02", 
+      "MedicineAppID": 32, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 40, 
+      "Sectionid": 66, 
+      "ATC_code": "D01AE20", 
+      "MedicineAppID": 33, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 34, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 41, 
+      "Sectionid": 70, 
+      "ATC_code": "D10E01", 
+      "MedicineAppID": 34, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 35, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 42, 
+      "Sectionid": 71, 
+      "ATC_code": "P03AX01", 
+      "MedicineAppID": 35, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 36, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 43, 
+      "Sectionid": 21, 
+      "ATC_code": "J01CE01", 
+      "MedicineAppID": 36, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 37, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 45, 
+      "Sectionid": 68, 
+      "ATC_code": "D07AC01", 
+      "MedicineAppID": 37, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 38, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 46, 
+      "Sectionid": 51, 
+      "ATC_code": "N04AA02", 
+      "MedicineAppID": 38, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 39, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 49, 
+      "Sectionid": 3, 
+      "ATC_code": "N01BB01", 
+      "MedicineAppID": 39, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 40, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 50, 
+      "Sectionid": 68, 
+      "ATC_code": "D02AB", 
+      "MedicineAppID": 40, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 41, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 51, 
+      "Sectionid": 48, 
+      "ATC_code": "V03AF03", 
+      "MedicineAppID": 41, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 42, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 5, 
+      "Sectionid": 13, 
+      "ATC_code": "A12AA03", 
+      "MedicineAppID": 42, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 44, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 58, 
+      "Sectionid": 12, 
+      "ATC_code": "A07BA01", 
+      "MedicineAppID": 44, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 46, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 61, 
+      "Sectionid": 22, 
+      "ATC_code": "J01BA01", 
+      "MedicineAppID": 46, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 47, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 64, 
+      "Sectionid": 77, 
+      "ATC_code": "D08AC02", 
+      "MedicineAppID": 47, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 48, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 65, 
+      "Sectionid": 78, 
+      "ATC_code": "D08AX", 
+      "MedicineAppID": 48, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 50, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 55, 
+      "Sectionid": 14, 
+      "ATC_code": "N03AF01", 
+      "MedicineAppID": 50, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 51, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 56, 
+      "Sectionid": 21, 
+      "ATC_code": "J01DD02", 
+      "MedicineAppID": 51, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 52, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 57, 
+      "Sectionid": 21, 
+      "ATC_code": "J01DD04", 
+      "MedicineAppID": 52, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 53, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 60, 
+      "Sectionid": 48, 
+      "ATC_code": "L01AA02", 
+      "MedicineAppID": 53, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 55, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 67, 
+      "Sectionid": 36, 
+      "ATC_code": "P01BA01", 
+      "MedicineAppID": 55, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 56, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 67, 
+      "Sectionid": 37, 
+      "ATC_code": "P01BA01", 
+      "MedicineAppID": 56, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 57, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 67, 
+      "Sectionid": 9, 
+      "ATC_code": "P01BA01", 
+      "MedicineAppID": 57, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 58, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 70, 
+      "Sectionid": 78, 
+      "ATC_code": "D08AE05", 
+      "MedicineAppID": 58, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 59, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 71, 
+      "Sectionid": 10, 
+      "ATC_code": "R06AB04", 
+      "MedicineAppID": 59, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 60, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 72, 
+      "Sectionid": 121, 
+      "ATC_code": "N05AA01", 
+      "MedicineAppID": 60, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 61, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 73, 
+      "Sectionid": 47, 
+      "ATC_code": "L04AA01", 
+      "MedicineAppID": 61, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 63, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 75, 
+      "Sectionid": 22, 
+      "ATC_code": "J01MA02", 
+      "MedicineAppID": 63, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 65, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 77, 
+      "Sectionid": 22, 
+      "ATC_code": "J01FF01", 
+      "MedicineAppID": 65, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 66, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 79, 
+      "Sectionid": 23, 
+      "ATC_code": "J04BA01", 
+      "MedicineAppID": 66, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 67, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 80, 
+      "Sectionid": 99, 
+      "ATC_code": "G03GB02", 
+      "MedicineAppID": 67, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 68, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 81, 
+      "Sectionid": 126, 
+      "ATC_code": "N06AA04", 
+      "MedicineAppID": 68, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 70, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 83, 
+      "Sectionid": 21, 
+      "ATC_code": "J01CF02", 
+      "MedicineAppID": 70, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 71, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 84, 
+      "Sectionid": 70, 
+      "ATC_code": "D05AA", 
+      "MedicineAppID": 71, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 72, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 85, 
+      "Sectionid": 7, 
+      "ATC_code": "R05DA04", 
+      "MedicineAppID": 72, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 74, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 87, 
+      "Sectionid": 96, 
+      "ATC_code": "None", 
+      "MedicineAppID": 74, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 75, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 88, 
+      "Sectionid": 95, 
+      "ATC_code": "G02BA02", 
+      "MedicineAppID": 75, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 78, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 92, 
+      "Sectionid": 48, 
+      "ATC_code": "L01AX04", 
+      "MedicineAppID": 78, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 79, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 94, 
+      "Sectionid": 23, 
+      "ATC_code": "J04BA02", 
+      "MedicineAppID": 79, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 80, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 96, 
+      "Sectionid": 13, 
+      "ATC_code": "V03AC01", 
+      "MedicineAppID": 80, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 82, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 98, 
+      "Sectionid": 10, 
+      "ATC_code": "H02AB02", 
+      "MedicineAppID": 82, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 84, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 101, 
+      "Sectionid": 56, 
+      "ATC_code": "B05AA05", 
+      "MedicineAppID": 84, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 86, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 103, 
+      "Sectionid": 96, 
+      "ATC_code": "G02BB", 
+      "MedicineAppID": 86, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 87, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 104, 
+      "Sectionid": 4, 
+      "ATC_code": "N05BA01", 
+      "MedicineAppID": 87, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 88, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 105, 
+      "Sectionid": 18, 
+      "ATC_code": "P02CB02", 
+      "MedicineAppID": 88, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 90, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 107, 
+      "Sectionid": 60, 
+      "ATC_code": "C01AA05", 
+      "MedicineAppID": 90, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 91, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 108, 
+      "Sectionid": 33, 
+      "ATC_code": "P01AC01", 
+      "MedicineAppID": 91, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 92, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 109, 
+      "Sectionid": 13, 
+      "ATC_code": "V03AB09", 
+      "MedicineAppID": 92, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 93, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 110, 
+      "Sectionid": 106, 
+      "ATC_code": "J07AJ51", 
+      "MedicineAppID": 93, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 94, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 111, 
+      "Sectionid": 104, 
+      "ATC_code": "J06AA01", 
+      "MedicineAppID": 94, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 95, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 112, 
+      "Sectionid": 70, 
+      "ATC_code": "D05AC01", 
+      "MedicineAppID": 95, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 96, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 113, 
+      "Sectionid": 62, 
+      "ATC_code": "C01CA04", 
+      "MedicineAppID": 96, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 98, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 115, 
+      "Sectionid": 22, 
+      "ATC_code": "J01AA02", 
+      "MedicineAppID": 98, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 99, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 115, 
+      "Sectionid": 36, 
+      "ATC_code": "J01AA02", 
+      "MedicineAppID": 99, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 100, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 117, 
+      "Sectionid": 40, 
+      "ATC_code": "P01CX03", 
+      "MedicineAppID": 100, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 101, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 118, 
+      "Sectionid": 3, 
+      "ATC_code": "R03CA02", 
+      "MedicineAppID": 101, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 102, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 119, 
+      "Sectionid": 60, 
+      "ATC_code": "C01CA24", 
+      "MedicineAppID": 102, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 103, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 119, 
+      "Sectionid": 10, 
+      "ATC_code": "C01CA24", 
+      "MedicineAppID": 103, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 104, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 119, 
+      "Sectionid": 115, 
+      "ATC_code": "S01EA01", 
+      "MedicineAppID": 104, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 105, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 122, 
+      "Sectionid": 134, 
+      "ATC_code": "A11CC01", 
+      "MedicineAppID": 105, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 108, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 125, 
+      "Sectionid": 22, 
+      "ATC_code": "J01FA01", 
+      "MedicineAppID": 108, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 109, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 128, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AK02", 
+      "MedicineAppID": 109, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 110, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 129, 
+      "Sectionid": 77, 
+      "ATC_code": "D08AX08", 
+      "MedicineAppID": 110, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 112, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 131, 
+      "Sectionid": 97, 
+      "ATC_code": "G03CA01", 
+      "MedicineAppID": 112, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 113, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 132, 
+      "Sectionid": 94, 
+      "ATC_code": "G03AB03", 
+      "MedicineAppID": 113, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 114, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 133, 
+      "Sectionid": 94, 
+      "ATC_code": "G03AA05", 
+      "MedicineAppID": 114, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 115, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 134, 
+      "Sectionid": 14, 
+      "ATC_code": "N03AD01", 
+      "MedicineAppID": 115, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 116, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 135, 
+      "Sectionid": 48, 
+      "ATC_code": "L01CB01", 
+      "MedicineAppID": 116, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 117, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 136, 
+      "Sectionid": 57, 
+      "ATC_code": "B02BD01", 
+      "MedicineAppID": 117, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 118, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 137, 
+      "Sectionid": 57, 
+      "ATC_code": "B02BD02", 
+      "MedicineAppID": 118, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 119, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 138, 
+      "Sectionid": 53, 
+      "ATC_code": "B03A", 
+      "MedicineAppID": 119, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 120, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 139, 
+      "Sectionid": 53, 
+      "ATC_code": "B03AD", 
+      "MedicineAppID": 120, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 121, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 140, 
+      "Sectionid": 25, 
+      "ATC_code": "J02AC01", 
+      "MedicineAppID": 121, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 122, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 141, 
+      "Sectionid": 25, 
+      "ATC_code": "J02AX01", 
+      "MedicineAppID": 122, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 124, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 143, 
+      "Sectionid": 74, 
+      "ATC_code": "S01JA01", 
+      "MedicineAppID": 124, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 125, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 144, 
+      "Sectionid": 48, 
+      "ATC_code": "L01BC02", 
+      "MedicineAppID": 125, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 126, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 145, 
+      "Sectionid": 121, 
+      "ATC_code": "N05AB02", 
+      "MedicineAppID": 126, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 127, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 147, 
+      "Sectionid": 53, 
+      "ATC_code": "B03BB01", 
+      "MedicineAppID": 127, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 128, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 148, 
+      "Sectionid": 79, 
+      "ATC_code": "C03CA01", 
+      "MedicineAppID": 128, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 129, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 149, 
+      "Sectionid": 22, 
+      "ATC_code": "J01GB03", 
+      "MedicineAppID": 129, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 130, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 150, 
+      "Sectionid": 98, 
+      "ATC_code": "A10BB01", 
+      "MedicineAppID": 130, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 131, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 151, 
+      "Sectionid": 132, 
+      "ATC_code": "B05BA03", 
+      "MedicineAppID": 131, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 132, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 152, 
+      "Sectionid": 132, 
+      "ATC_code": "B05BB02", 
+      "MedicineAppID": 132, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 133, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 153, 
+      "Sectionid": 78, 
+      "ATC_code": "V07AV", 
+      "MedicineAppID": 133, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 134, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 154, 
+      "Sectionid": 59, 
+      "ATC_code": "C01DA02", 
+      "MedicineAppID": 134, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 135, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 155, 
+      "Sectionid": 25, 
+      "ATC_code": "D01BA01", 
+      "MedicineAppID": 135, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 136, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 156, 
+      "Sectionid": 121, 
+      "ATC_code": "N05AD01", 
+      "MedicineAppID": 136, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 137, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 157, 
+      "Sectionid": 2, 
+      "ATC_code": "N01AB01", 
+      "MedicineAppID": 137, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 138, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 158, 
+      "Sectionid": 54, 
+      "ATC_code": "B01AB01", 
+      "MedicineAppID": 138, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 139, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 159, 
+      "Sectionid": 106, 
+      "ATC_code": "J07BC01", 
+      "MedicineAppID": 139, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 140, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 160, 
+      "Sectionid": 61, 
+      "ATC_code": "C02DB02", 
+      "MedicineAppID": 140, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 141, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 161, 
+      "Sectionid": 61, 
+      "ATC_code": "C03AA03", 
+      "MedicineAppID": 141, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 142, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 162, 
+      "Sectionid": 68, 
+      "ATC_code": "D07AA02", 
+      "MedicineAppID": 142, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 143, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 162, 
+      "Sectionid": 84, 
+      "ATC_code": "A07EA02", 
+      "MedicineAppID": 143, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 144, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 164, 
+      "Sectionid": 53, 
+      "ATC_code": "B03BA03", 
+      "MedicineAppID": 144, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 145, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 165, 
+      "Sectionid": 6, 
+      "ATC_code": "M01AE01", 
+      "MedicineAppID": 145, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 147, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 167, 
+      "Sectionid": 21, 
+      "ATC_code": "J01DH51", 
+      "MedicineAppID": 147, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 149, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 169, 
+      "Sectionid": 106, 
+      "ATC_code": "J07BB", 
+      "MedicineAppID": 149, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 150, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 170, 
+      "Sectionid": 98, 
+      "ATC_code": "A10AB", 
+      "MedicineAppID": 150, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 151, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 171, 
+      "Sectionid": 98, 
+      "ATC_code": "A10AC", 
+      "MedicineAppID": 151, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 152, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 172, 
+      "Sectionid": 119, 
+      "ATC_code": "B05DA", 
+      "MedicineAppID": 152, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 153, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 173, 
+      "Sectionid": 134, 
+      "ATC_code": "H03CA", 
+      "MedicineAppID": 153, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 154, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 174, 
+      "Sectionid": 75, 
+      "ATC_code": "V08AB02", 
+      "MedicineAppID": 154, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 157, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 177, 
+      "Sectionid": 128, 
+      "ATC_code": "R03BB01", 
+      "MedicineAppID": 157, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 159, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 179, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AC01", 
+      "MedicineAppID": 159, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 160, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 180, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AM03", 
+      "MedicineAppID": 160, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 162, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 182, 
+      "Sectionid": 59, 
+      "ATC_code": "C01DA08", 
+      "MedicineAppID": 162, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 163, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 183, 
+      "Sectionid": 18, 
+      "ATC_code": "P02CF01", 
+      "MedicineAppID": 163, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 164, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 184, 
+      "Sectionid": 2, 
+      "ATC_code": "N01AX03", 
+      "MedicineAppID": 164, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 166, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 186, 
+      "Sectionid": 51, 
+      "ATC_code": "N04BA02", 
+      "MedicineAppID": 166, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 168, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 188, 
+      "Sectionid": 101, 
+      "ATC_code": "H03AA01", 
+      "MedicineAppID": 168, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 169, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 189, 
+      "Sectionid": 3, 
+      "ATC_code": "N01BB02", 
+      "MedicineAppID": 169, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 170, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 190, 
+      "Sectionid": 3, 
+      "ATC_code": "N01BB52", 
+      "MedicineAppID": 170, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 172, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 192, 
+      "Sectionid": 124, 
+      "ATC_code": "N05AN01", 
+      "MedicineAppID": 172, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 174, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 194, 
+      "Sectionid": 81, 
+      "ATC_code": "A02AA04", 
+      "MedicineAppID": 174, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 175, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 195, 
+      "Sectionid": 14, 
+      "ATC_code": "B05XA05", 
+      "MedicineAppID": 175, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 176, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 196, 
+      "Sectionid": 79, 
+      "ATC_code": "B05BC01", 
+      "MedicineAppID": 176, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 177, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 197, 
+      "Sectionid": 106, 
+      "ATC_code": "J07BD52", 
+      "MedicineAppID": 177, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 178, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 198, 
+      "Sectionid": 17, 
+      "ATC_code": "P02CA01", 
+      "MedicineAppID": 178, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 179, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 199, 
+      "Sectionid": 136, 
+      "ATC_code": "G03AC06", 
+      "MedicineAppID": 179, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 180, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 200, 
+      "Sectionid": 36, 
+      "ATC_code": "P01BC02", 
+      "MedicineAppID": 180, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 182, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 202, 
+      "Sectionid": 34, 
+      "ATC_code": "P01CB01", 
+      "MedicineAppID": 182, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 183, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 203, 
+      "Sectionid": 75, 
+      "ATC_code": "V08AC02", 
+      "MedicineAppID": 183, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 184, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 204, 
+      "Sectionid": 40, 
+      "ATC_code": "P01CD01", 
+      "MedicineAppID": 184, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 185, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 205, 
+      "Sectionid": 106, 
+      "ATC_code": "J07AH", 
+      "MedicineAppID": 185, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 186, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 206, 
+      "Sectionid": 48, 
+      "ATC_code": "L01BB02", 
+      "MedicineAppID": 186, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 187, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 207, 
+      "Sectionid": 98, 
+      "ATC_code": "A10BA02", 
+      "MedicineAppID": 187, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 188, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 208, 
+      "Sectionid": 13, 
+      "ATC_code": "V03AB26", 
+      "MedicineAppID": 188, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 190, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 210, 
+      "Sectionid": 61, 
+      "ATC_code": "C02AB01", 
+      "MedicineAppID": 190, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 191, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 211, 
+      "Sectionid": 67, 
+      "ATC_code": "D01AE02", 
+      "MedicineAppID": 191, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 192, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 212, 
+      "Sectionid": 13, 
+      "ATC_code": "V03AB17", 
+      "MedicineAppID": 192, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 193, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 213, 
+      "Sectionid": 82, 
+      "ATC_code": "A03FA01", 
+      "MedicineAppID": 193, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 194, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 214, 
+      "Sectionid": 22, 
+      "ATC_code": "J01XD01", 
+      "MedicineAppID": 194, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 196, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 216, 
+      "Sectionid": 66, 
+      "ATC_code": "D01AC02", 
+      "MedicineAppID": 196, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 197, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 217, 
+      "Sectionid": 4, 
+      "ATC_code": "N02AA01", 
+      "MedicineAppID": 197, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 199, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 219, 
+      "Sectionid": 106, 
+      "ATC_code": "J07BD52", 
+      "MedicineAppID": 199, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 201, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 221, 
+      "Sectionid": 13, 
+      "ATC_code": "V03AB15", 
+      "MedicineAppID": 201, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 202, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 222, 
+      "Sectionid": 67, 
+      "ATC_code": "D06AX04", 
+      "MedicineAppID": 202, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 203, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 223, 
+      "Sectionid": 109, 
+      "ATC_code": "N07AA01", 
+      "MedicineAppID": 203, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 205, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 225, 
+      "Sectionid": 30, 
+      "ATC_code": "J05AG01", 
+      "MedicineAppID": 205, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 206, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 226, 
+      "Sectionid": 17, 
+      "ATC_code": "P02DA01", 
+      "MedicineAppID": 206, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 207, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 227, 
+      "Sectionid": 134, 
+      "ATC_code": "A11HA01", 
+      "MedicineAppID": 207, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 209, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 229, 
+      "Sectionid": 41, 
+      "ATC_code": "P01CC01", 
+      "MedicineAppID": 209, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 210, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 230, 
+      "Sectionid": 22, 
+      "ATC_code": "J01XE01", 
+      "MedicineAppID": 210, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 211, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 231, 
+      "Sectionid": 2, 
+      "ATC_code": "N01AX13", 
+      "MedicineAppID": 211, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 212, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 232, 
+      "Sectionid": 100, 
+      "ATC_code": "G03DC02", 
+      "MedicineAppID": 212, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 213, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 233, 
+      "Sectionid": 136, 
+      "ATC_code": "G03AC01", 
+      "MedicineAppID": 213, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 214, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 234, 
+      "Sectionid": 25, 
+      "ATC_code": "", 
+      "MedicineAppID": 214, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 215, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 235, 
+      "Sectionid": 88, 
+      "ATC_code": "A07CA", 
+      "MedicineAppID": 215, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 216, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 236, 
+      "Sectionid": 19, 
+      "ATC_code": "P02BA02", 
+      "MedicineAppID": 216, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 217, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 237, 
+      "Sectionid": 2, 
+      "ATC_code": "V03AN01", 
+      "MedicineAppID": 217, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 218, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 238, 
+      "Sectionid": 117, 
+      "ATC_code": "H01BB02", 
+      "MedicineAppID": 218, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 219, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 239, 
+      "Sectionid": 6, 
+      "ATC_code": "N02BE01", 
+      "MedicineAppID": 219, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 220, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 240, 
+      "Sectionid": 9, 
+      "ATC_code": "M01CC01", 
+      "MedicineAppID": 220, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 222, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 242, 
+      "Sectionid": 71, 
+      "ATC_code": "P03AC04", 
+      "MedicineAppID": 222, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 224, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 244, 
+      "Sectionid": 14, 
+      "ATC_code": "N03AA02", 
+      "MedicineAppID": 224, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 225, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 245, 
+      "Sectionid": 21, 
+      "ATC_code": "J01CE02", 
+      "MedicineAppID": 225, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 226, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 246, 
+      "Sectionid": 14, 
+      "ATC_code": "N03AB02", 
+      "MedicineAppID": 226, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 227, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 247, 
+      "Sectionid": 54, 
+      "ATC_code": "B02BA01", 
+      "MedicineAppID": 227, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 228, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 248, 
+      "Sectionid": 114, 
+      "ATC_code": "S01EB01", 
+      "MedicineAppID": 228, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 231, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 251, 
+      "Sectionid": 70, 
+      "ATC_code": "D06BB04", 
+      "MedicineAppID": 231, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 232, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 252, 
+      "Sectionid": 106, 
+      "ATC_code": "J07BF", 
+      "MedicineAppID": 232, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 234, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 254, 
+      "Sectionid": 77, 
+      "ATC_code": "D08AG02", 
+      "MedicineAppID": 234, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 236, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 256, 
+      "Sectionid": 131, 
+      "ATC_code": "B05XA01", 
+      "MedicineAppID": 236, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 237, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 257, 
+      "Sectionid": 13, 
+      "ATC_code": "V03AB31", 
+      "MedicineAppID": 237, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 238, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 258, 
+      "Sectionid": 25, 
+      "ATC_code": "H03CA", 
+      "MedicineAppID": 238, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 239, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 259, 
+      "Sectionid": 67, 
+      "ATC_code": "D08AX06", 
+      "MedicineAppID": 239, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 240, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 260, 
+      "Sectionid": 17, 
+      "ATC_code": "P02BA01", 
+      "MedicineAppID": 240, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 245, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 265, 
+      "Sectionid": 36, 
+      "ATC_code": "P01BA03", 
+      "MedicineAppID": 245, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 246, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 266, 
+      "Sectionid": 60, 
+      "ATC_code": "C01BA02", 
+      "MedicineAppID": 246, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 247, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 267, 
+      "Sectionid": 21, 
+      "ATC_code": "J01CE09", 
+      "MedicineAppID": 247, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 249, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 269, 
+      "Sectionid": 37, 
+      "ATC_code": "P01BB01", 
+      "MedicineAppID": 249, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 250, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 270, 
+      "Sectionid": 4, 
+      "ATC_code": "R06AD02", 
+      "MedicineAppID": 250, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 251, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 271, 
+      "Sectionid": 45, 
+      "ATC_code": "C07AA05", 
+      "MedicineAppID": 251, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 253, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 273, 
+      "Sectionid": 101, 
+      "ATC_code": "H03BA02", 
+      "MedicineAppID": 253, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 254, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 274, 
+      "Sectionid": 54, 
+      "ATC_code": "V03AB14", 
+      "MedicineAppID": 254, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 255, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 275, 
+      "Sectionid": 17, 
+      "ATC_code": "P02CC01", 
+      "MedicineAppID": 255, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 256, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 276, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AK01", 
+      "MedicineAppID": 256, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 257, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 277, 
+      "Sectionid": 109, 
+      "ATC_code": "N07AA02", 
+      "MedicineAppID": 257, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 258, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 278, 
+      "Sectionid": 134, 
+      "ATC_code": "A11HA02", 
+      "MedicineAppID": 258, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 259, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 279, 
+      "Sectionid": 38, 
+      "ATC_code": "P01BD01", 
+      "MedicineAppID": 259, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 260, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 280, 
+      "Sectionid": 60, 
+      "ATC_code": "C01BA01", 
+      "MedicineAppID": 260, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 262, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 282, 
+      "Sectionid": 36, 
+      "ATC_code": "P01BC01", 
+      "MedicineAppID": 262, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 264, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 284, 
+      "Sectionid": 106, 
+      "ATC_code": "J07BG", 
+      "MedicineAppID": 264, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 265, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 285, 
+      "Sectionid": 104, 
+      "ATC_code": "J06BB05", 
+      "MedicineAppID": 265, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 267, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 287, 
+      "Sectionid": 134, 
+      "ATC_code": "A11CA01", 
+      "MedicineAppID": 267, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 268, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 288, 
+      "Sectionid": 134, 
+      "ATC_code": "A11HA04", 
+      "MedicineAppID": 268, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 269, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 289, 
+      "Sectionid": 23, 
+      "ATC_code": "J04AB02", 
+      "MedicineAppID": 269, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 270, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 290, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AM02", 
+      "MedicineAppID": 270, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 271, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 291, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AM05", 
+      "MedicineAppID": 271, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 272, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 292, 
+      "Sectionid": 106, 
+      "ATC_code": "J07BJ", 
+      "MedicineAppID": 272, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 273, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 293, 
+      "Sectionid": 128, 
+      "ATC_code": "", 
+      "MedicineAppID": 273, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 274, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 294, 
+      "Sectionid": 70, 
+      "ATC_code": "D01AE12", 
+      "MedicineAppID": 274, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 275, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 295, 
+      "Sectionid": 66, 
+      "ATC_code": "D01AE13", 
+      "MedicineAppID": 275, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 276, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 296, 
+      "Sectionid": 86, 
+      "ATC_code": "A06AB06", 
+      "MedicineAppID": 276, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 279, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 299, 
+      "Sectionid": 13, 
+      "ATC_code": "V03AB03", 
+      "MedicineAppID": 279, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 280, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 300, 
+      "Sectionid": 132, 
+      "ATC_code": "B05XA03", 
+      "MedicineAppID": 280, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 281, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 301, 
+      "Sectionid": 134, 
+      "ATC_code": "A12CD01", 
+      "MedicineAppID": 281, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 282, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 302, 
+      "Sectionid": 132, 
+      "ATC_code": "B05XA02", 
+      "MedicineAppID": 282, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 283, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 303, 
+      "Sectionid": 132, 
+      "ATC_code": "B05BB01", 
+      "MedicineAppID": 283, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 284, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 304, 
+      "Sectionid": 13, 
+      "ATC_code": "V03AB08", 
+      "MedicineAppID": 284, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 285, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 305, 
+      "Sectionid": 61, 
+      "ATC_code": "C02DD01", 
+      "MedicineAppID": 285, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 286, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 306, 
+      "Sectionid": 13, 
+      "ATC_code": "V03AB06", 
+      "MedicineAppID": 286, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 287, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 307, 
+      "Sectionid": 22, 
+      "ATC_code": "J01XX04", 
+      "MedicineAppID": 287, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 288, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 308, 
+      "Sectionid": 79, 
+      "ATC_code": "C03DA01", 
+      "MedicineAppID": 288, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 289, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 309, 
+      "Sectionid": 63, 
+      "ATC_code": "B01AD01", 
+      "MedicineAppID": 289, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 290, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 310, 
+      "Sectionid": 24, 
+      "ATC_code": "J01GA01", 
+      "MedicineAppID": 290, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 291, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 311, 
+      "Sectionid": 38, 
+      "ATC_code": "J01EC02", 
+      "MedicineAppID": 291, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 292, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 312, 
+      "Sectionid": 67, 
+      "ATC_code": "D06BA01", 
+      "MedicineAppID": 292, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 294, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 314, 
+      "Sectionid": 36, 
+      "ATC_code": "P01BD51", 
+      "MedicineAppID": 294, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 295, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 315, 
+      "Sectionid": 22, 
+      "ATC_code": "J01EE01", 
+      "MedicineAppID": 295, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 296, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 316, 
+      "Sectionid": 9, 
+      "ATC_code": "A07EC01", 
+      "MedicineAppID": 296, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 297, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 317, 
+      "Sectionid": 18, 
+      "ATC_code": "P01CX02", 
+      "MedicineAppID": 297, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 298, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 318, 
+      "Sectionid": 109, 
+      "ATC_code": "M03AB01", 
+      "MedicineAppID": 298, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 300, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 320, 
+      "Sectionid": 92, 
+      "ATC_code": "G03BA03", 
+      "MedicineAppID": 300, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 301, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 321, 
+      "Sectionid": 106, 
+      "ATC_code": "J07AJ51", 
+      "MedicineAppID": 301, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 302, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 322, 
+      "Sectionid": 113, 
+      "ATC_code": "S01HA03", 
+      "MedicineAppID": 302, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 303, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 323, 
+      "Sectionid": 111, 
+      "ATC_code": "S01AA09", 
+      "MedicineAppID": 303, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 305, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 325, 
+      "Sectionid": 134, 
+      "ATC_code": "A11DA01", 
+      "MedicineAppID": 305, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 307, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 327, 
+      "Sectionid": 2, 
+      "ATC_code": "N01AF03", 
+      "MedicineAppID": 307, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 308, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 328, 
+      "Sectionid": 114, 
+      "ATC_code": "S01ED01", 
+      "MedicineAppID": 308, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 310, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 330, 
+      "Sectionid": 19, 
+      "ATC_code": "P02BX04", 
+      "MedicineAppID": 310, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 311, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 331, 
+      "Sectionid": 22, 
+      "ATC_code": "J01EA01", 
+      "MedicineAppID": 311, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 312, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 332, 
+      "Sectionid": 74, 
+      "ATC_code": "S01FA06", 
+      "MedicineAppID": 312, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 313, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 333, 
+      "Sectionid": 103, 
+      "ATC_code": "V04CF01", 
+      "MedicineAppID": 313, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 314, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 334, 
+      "Sectionid": 106, 
+      "ATC_code": "J07AP", 
+      "MedicineAppID": 314, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 315, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 335, 
+      "Sectionid": 70, 
+      "ATC_code": "D02AE01", 
+      "MedicineAppID": 315, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 316, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 336, 
+      "Sectionid": 124, 
+      "ATC_code": "N03AG01", 
+      "MedicineAppID": 316, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 317, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 337, 
+      "Sectionid": 22, 
+      "ATC_code": "J01XA01", 
+      "MedicineAppID": 317, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 318, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 338, 
+      "Sectionid": 109, 
+      "ATC_code": "M03AC03", 
+      "MedicineAppID": 318, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 319, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 339, 
+      "Sectionid": 59, 
+      "ATC_code": "C08DA01", 
+      "MedicineAppID": 319, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 322, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 342, 
+      "Sectionid": 54, 
+      "ATC_code": "B01AA03", 
+      "MedicineAppID": 322, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 323, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 343, 
+      "Sectionid": 133, 
+      "ATC_code": "V07AB", 
+      "MedicineAppID": 323, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 324, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 345, 
+      "Sectionid": 29, 
+      "ATC_code": "J05AF01", 
+      "MedicineAppID": 324, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 325, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 347, 
+      "Sectionid": 36, 
+      "ATC_code": "P01BE52", 
+      "MedicineAppID": 325, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 327, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 349, 
+      "Sectionid": 29, 
+      "ATC_code": "J05AF02", 
+      "MedicineAppID": 327, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 328, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 350, 
+      "Sectionid": 29, 
+      "ATC_code": "J05AF05", 
+      "MedicineAppID": 328, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 329, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 351, 
+      "Sectionid": 29, 
+      "ATC_code": "J05AF04", 
+      "MedicineAppID": 329, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 330, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 352, 
+      "Sectionid": 30, 
+      "ATC_code": "J05AG03", 
+      "MedicineAppID": 330, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 331, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 353, 
+      "Sectionid": 31, 
+      "ATC_code": "J05AE02", 
+      "MedicineAppID": 331, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 332, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 354, 
+      "Sectionid": 31, 
+      "ATC_code": "J05AE03", 
+      "MedicineAppID": 332, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 333, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 355, 
+      "Sectionid": 31, 
+      "ATC_code": "J05AE30", 
+      "MedicineAppID": 333, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 334, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 356, 
+      "Sectionid": 31, 
+      "ATC_code": "J05AE04", 
+      "MedicineAppID": 334, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 335, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 357, 
+      "Sectionid": 31, 
+      "ATC_code": "J05AE01", 
+      "MedicineAppID": 335, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 336, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 358, 
+      "Sectionid": 24, 
+      "ATC_code": "J01GB06", 
+      "MedicineAppID": 336, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 337, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 359, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AA01", 
+      "MedicineAppID": 337, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 338, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 360, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AB30", 
+      "MedicineAppID": 338, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 339, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 362, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AB01", 
+      "MedicineAppID": 339, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 340, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 363, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AD03", 
+      "MedicineAppID": 340, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 341, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 364, 
+      "Sectionid": 24, 
+      "ATC_code": "J01GB04", 
+      "MedicineAppID": 341, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 343, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 366, 
+      "Sectionid": 24, 
+      "ATC_code": "J01MA01", 
+      "MedicineAppID": 343, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 345, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 33, 
+      "Sectionid": 9, 
+      "ATC_code": "L04AX01", 
+      "MedicineAppID": 345, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 346, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 371, 
+      "Sectionid": 48, 
+      "ATC_code": "L01DC01", 
+      "MedicineAppID": 346, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 349, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 90, 
+      "Sectionid": 48, 
+      "ATC_code": "L01AA01", 
+      "MedicineAppID": 349, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 350, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 377, 
+      "Sectionid": 48, 
+      "ATC_code": "L01BC01", 
+      "MedicineAppID": 350, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 351, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 379, 
+      "Sectionid": 48, 
+      "ATC_code": "L01DA01", 
+      "MedicineAppID": 351, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 352, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 380, 
+      "Sectionid": 48, 
+      "ATC_code": "L01DB02", 
+      "MedicineAppID": 352, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 353, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 114, 
+      "Sectionid": 48, 
+      "ATC_code": "L01DB01", 
+      "MedicineAppID": 353, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 355, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 384, 
+      "Sectionid": 17, 
+      "ATC_code": "P02CE01", 
+      "MedicineAppID": 355, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 357, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 386, 
+      "Sectionid": 9, 
+      "ATC_code": "L04AX03", 
+      "MedicineAppID": 357, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 358, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 387, 
+      "Sectionid": 48, 
+      "ATC_code": "L01XB01", 
+      "MedicineAppID": 358, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 359, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 388, 
+      "Sectionid": 48, 
+      "ATC_code": "L01CA01", 
+      "MedicineAppID": 359, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 360, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 389, 
+      "Sectionid": 48, 
+      "ATC_code": "L01CA02", 
+      "MedicineAppID": 360, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 361, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 262, 
+      "Sectionid": 10, 
+      "ATC_code": "H02AB06", 
+      "MedicineAppID": 361, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 362, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 391, 
+      "Sectionid": 49, 
+      "ATC_code": "L02BA01", 
+      "MedicineAppID": 362, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 363, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 3, 
+      "Sectionid": 44, 
+      "ATC_code": "N02BA01", 
+      "MedicineAppID": 363, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 364, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 3, 
+      "Sectionid": 63, 
+      "ATC_code": "B01AC06", 
+      "MedicineAppID": 364, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 365, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 22, 
+      "Sectionid": 34, 
+      "ATC_code": "J02AA01", 
+      "MedicineAppID": 365, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 366, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 31, 
+      "Sectionid": 60, 
+      "ATC_code": "C07AB03", 
+      "MedicineAppID": 366, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 367, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 31, 
+      "Sectionid": 61, 
+      "ATC_code": "C07AB03", 
+      "MedicineAppID": 367, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 368, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 32, 
+      "Sectionid": 4, 
+      "ATC_code": "A03BA01", 
+      "MedicineAppID": 368, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 369, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 32, 
+      "Sectionid": 13, 
+      "ATC_code": "A03BA01", 
+      "MedicineAppID": 369, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 371, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 55, 
+      "Sectionid": 124, 
+      "ATC_code": "N03AF01", 
+      "MedicineAppID": 371, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 373, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 104, 
+      "Sectionid": 14, 
+      "ATC_code": "N05BA01", 
+      "MedicineAppID": 373, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 374, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 104, 
+      "Sectionid": 125, 
+      "ATC_code": "N05BA01", 
+      "MedicineAppID": 374, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 375, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 107, 
+      "Sectionid": 62, 
+      "ATC_code": "C01AA05", 
+      "MedicineAppID": 375, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 376, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 115, 
+      "Sectionid": 37, 
+      "ATC_code": "J01AA02", 
+      "MedicineAppID": 376, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 379, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 149, 
+      "Sectionid": 111, 
+      "ATC_code": "S01AA11", 
+      "MedicineAppID": 379, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 380, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 161, 
+      "Sectionid": 62, 
+      "ATC_code": "C03AA03", 
+      "MedicineAppID": 380, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 381, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 161, 
+      "Sectionid": 79, 
+      "ATC_code": "C03AA03", 
+      "MedicineAppID": 381, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 382, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 162, 
+      "Sectionid": 10, 
+      "ATC_code": "H02AB09", 
+      "MedicineAppID": 382, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 385, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 187, 
+      "Sectionid": 94, 
+      "ATC_code": "G03AC03", 
+      "MedicineAppID": 385, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 386, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 189, 
+      "Sectionid": 60, 
+      "ATC_code": "C01BB01", 
+      "MedicineAppID": 386, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 387, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 199, 
+      "Sectionid": 100, 
+      "ATC_code": "G03AC06", 
+      "MedicineAppID": 387, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 388, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 200, 
+      "Sectionid": 37, 
+      "ATC_code": "P01BC02", 
+      "MedicineAppID": 388, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 389, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 417, 
+      "Sectionid": 75, 
+      "ATC_code": "V08AA01", 
+      "MedicineAppID": 389, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 390, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 386, 
+      "Sectionid": 48, 
+      "ATC_code": "L01BA01", 
+      "MedicineAppID": 390, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 391, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 214, 
+      "Sectionid": 33, 
+      "ATC_code": "P01AB01", 
+      "MedicineAppID": 391, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 392, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 217, 
+      "Sectionid": 7, 
+      "ATC_code": "N02AA01", 
+      "MedicineAppID": 392, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 394, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 239, 
+      "Sectionid": 44, 
+      "ATC_code": "N02BE01", 
+      "MedicineAppID": 394, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 395, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 240, 
+      "Sectionid": 13, 
+      "ATC_code": "M01CC01", 
+      "MedicineAppID": 395, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 396, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 241, 
+      "Sectionid": 38, 
+      "ATC_code": "P01CX01", 
+      "MedicineAppID": 396, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 397, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 241, 
+      "Sectionid": 40, 
+      "ATC_code": "P01CX01", 
+      "MedicineAppID": 397, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 398, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 256, 
+      "Sectionid": 132, 
+      "ATC_code": "B05XA01", 
+      "MedicineAppID": 398, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 399, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 258, 
+      "Sectionid": 101, 
+      "ATC_code": "H03CA", 
+      "MedicineAppID": 399, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 400, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 260, 
+      "Sectionid": 19, 
+      "ATC_code": "P02BA01", 
+      "MedicineAppID": 400, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 401, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 262, 
+      "Sectionid": 49, 
+      "ATC_code": "H02AB06", 
+      "MedicineAppID": 401, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 403, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 262, 
+      "Sectionid": 112, 
+      "ATC_code": "S01BA04", 
+      "MedicineAppID": 403, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 404, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 270, 
+      "Sectionid": 82, 
+      "ATC_code": "R06AD02", 
+      "MedicineAppID": 404, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 405, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 289, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AB02", 
+      "MedicineAppID": 405, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 406, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 419, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AM06", 
+      "MedicineAppID": 406, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 408, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 306, 
+      "Sectionid": 66, 
+      "ATC_code": "V03AB06", 
+      "MedicineAppID": 408, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 409, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 315, 
+      "Sectionid": 38, 
+      "ATC_code": "J01EE01", 
+      "MedicineAppID": 409, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 410, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 316, 
+      "Sectionid": 84, 
+      "ATC_code": "A07EC01", 
+      "MedicineAppID": 410, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": "*", 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 411, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 317, 
+      "Sectionid": 40, 
+      "ATC_code": "P01CX02", 
+      "MedicineAppID": 411, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 412, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 336, 
+      "Sectionid": 14, 
+      "ATC_code": "N03AG01", 
+      "MedicineAppID": 412, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 413, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 339, 
+      "Sectionid": 60, 
+      "ATC_code": "C08DA01", 
+      "MedicineAppID": 413, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 414, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 420, 
+      "Sectionid": 106, 
+      "ATC_code": "J07BL", 
+      "MedicineAppID": 414, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 415, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 421, 
+      "Sectionid": 106, 
+      "ATC_code": "J07AJ51", 
+      "MedicineAppID": 415, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 416, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 348, 
+      "Sectionid": 29, 
+      "ATC_code": "J05AF06", 
+      "MedicineAppID": 416, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 417, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 119, 
+      "Sectionid": 128, 
+      "ATC_code": "C01CA24", 
+      "MedicineAppID": 417, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 418, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 423, 
+      "Sectionid": 22, 
+      "ATC_code": "J01FA10", 
+      "MedicineAppID": 418, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 419, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 424, 
+      "Sectionid": 36, 
+      "ATC_code": "P01BA06", 
+      "MedicineAppID": 419, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 422, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 98, 
+      "Sectionid": 49, 
+      "ATC_code": "H02AB02", 
+      "MedicineAppID": 422, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 423, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 0, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 162, 
+      "Sectionid": 49, 
+      "ATC_code": "H02AB09", 
+      "MedicineAppID": 423, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 424, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 427, 
+      "Sectionid": 61, 
+      "ATC_code": "C09AA02", 
+      "MedicineAppID": 424, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 425, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 427, 
+      "Sectionid": 62, 
+      "ATC_code": "C09AA02", 
+      "MedicineAppID": 425, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 426, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": 1, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 428, 
+      "Sectionid": 81, 
+      "ATC_code": "A02BA02", 
+      "MedicineAppID": 426, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 437, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 1, 
+      "Sectionid": 114, 
+      "ATC_code": "S01EC01", 
+      "MedicineAppID": 437, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 438, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 439, 
+      "Sectionid": 25, 
+      "ATC_code": "G01AF02", 
+      "MedicineAppID": 438, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 439, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 440, 
+      "Sectionid": 21, 
+      "ATC_code": "J01DD08", 
+      "MedicineAppID": 439, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 440, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 441, 
+      "Sectionid": 89, 
+      "ATC_code": "A12CB01", 
+      "MedicineAppID": 440, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 441, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 442, 
+      "Sectionid": 135, 
+      "ATC_code": "N07BC02", 
+      "MedicineAppID": 441, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 443, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 444, 
+      "Sectionid": 117, 
+      "ATC_code": "A02BB01", 
+      "MedicineAppID": 443, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 445, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 443, 
+      "Sectionid": 117, 
+      "ATC_code": "A02BB01", 
+      "MedicineAppID": 445, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 447, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 148, 
+      "Sectionid": 62, 
+      "ATC_code": "C03CA01", 
+      "MedicineAppID": 447, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 448, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 228, 
+      "Sectionid": 118, 
+      "ATC_code": "C08CA05", 
+      "MedicineAppID": 448, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 449, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 446, 
+      "Sectionid": 61, 
+      "ATC_code": "C08CA01", 
+      "MedicineAppID": 449, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 452, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 449, 
+      "Sectionid": 117, 
+      "ATC_code": "G02AB03", 
+      "MedicineAppID": 452, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 453, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 450, 
+      "Sectionid": 21, 
+      "ATC_code": "J01DB04", 
+      "MedicineAppID": 453, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 454, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 451, 
+      "Sectionid": 24, 
+      "ATC_code": "", 
+      "MedicineAppID": 454, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 455, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 452, 
+      "Sectionid": 29, 
+      "ATC_code": "", 
+      "MedicineAppID": 455, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 456, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 453, 
+      "Sectionid": 29, 
+      "ATC_code": "", 
+      "MedicineAppID": 456, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 457, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 454, 
+      "Sectionid": null, 
+      "ATC_code": "", 
+      "MedicineAppID": 457, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 458, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 455, 
+      "Sectionid": null, 
+      "ATC_code": "", 
+      "MedicineAppID": 458, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 459, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 456, 
+      "Sectionid": null, 
+      "ATC_code": "", 
+      "MedicineAppID": 459, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 460, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 457, 
+      "Sectionid": null, 
+      "ATC_code": "", 
+      "MedicineAppID": 460, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 461, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 458, 
+      "Sectionid": null, 
+      "ATC_code": "", 
+      "MedicineAppID": 461, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 462, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 459, 
+      "Sectionid": 144, 
+      "ATC_code": "", 
+      "MedicineAppID": 462, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 463, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 460, 
+      "Sectionid": 34, 
+      "ATC_code": "", 
+      "MedicineAppID": 463, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 464, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 461, 
+      "Sectionid": 57, 
+      "ATC_code": "", 
+      "MedicineAppID": 464, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 465, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 462, 
+      "Sectionid": 64, 
+      "ATC_code": "", 
+      "MedicineAppID": 465, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 466, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 463, 
+      "Sectionid": 136, 
+      "ATC_code": "", 
+      "MedicineAppID": 466, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 467, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 464, 
+      "Sectionid": 145, 
+      "ATC_code": "", 
+      "MedicineAppID": 467, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 468, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 465, 
+      "Sectionid": 106, 
+      "ATC_code": "", 
+      "MedicineAppID": 468, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 469, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 466, 
+      "Sectionid": 106, 
+      "ATC_code": "", 
+      "MedicineAppID": 469, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 470, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 467, 
+      "Sectionid": 106, 
+      "ATC_code": "", 
+      "MedicineAppID": 470, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 471, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 468, 
+      "Sectionid": 106, 
+      "ATC_code": "", 
+      "MedicineAppID": 471, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 472, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 469, 
+      "Sectionid": 106, 
+      "ATC_code": "", 
+      "MedicineAppID": 472, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 473, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 470, 
+      "Sectionid": 106, 
+      "ATC_code": "", 
+      "MedicineAppID": 473, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 474, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 471, 
+      "Sectionid": 106, 
+      "ATC_code": "", 
+      "MedicineAppID": 474, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 475, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 4, 
+      "Sectionid": 111, 
+      "ATC_code": "", 
+      "MedicineAppID": 475, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 476, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 472, 
+      "Sectionid": 123, 
+      "ATC_code": "", 
+      "MedicineAppID": 476, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 477, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 473, 
+      "Sectionid": 340, 
+      "ATC_code": "", 
+      "MedicineAppID": 477, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 478, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 235, 
+      "Sectionid": 131, 
+      "ATC_code": "", 
+      "MedicineAppID": 478, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 489, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 454, 
+      "Sectionid": null, 
+      "ATC_code": "", 
+      "MedicineAppID": 489, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 490, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 458, 
+      "Sectionid": 28, 
+      "ATC_code": "", 
+      "MedicineAppID": 490, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 491, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 457, 
+      "Sectionid": 28, 
+      "ATC_code": "", 
+      "MedicineAppID": 491, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 492, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 456, 
+      "Sectionid": 28, 
+      "ATC_code": "", 
+      "MedicineAppID": 492, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 493, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 455, 
+      "Sectionid": 28, 
+      "ATC_code": "", 
+      "MedicineAppID": 493, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 494, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 454, 
+      "Sectionid": 28, 
+      "ATC_code": "", 
+      "MedicineAppID": 494, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 495, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 14, 
+      "Sectionid": null, 
+      "ATC_code": "", 
+      "MedicineAppID": 495, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 496, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 14, 
+      "Sectionid": null, 
+      "ATC_code": "", 
+      "MedicineAppID": 496, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 497, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 501, 
+      "Sectionid": null, 
+      "ATC_code": "", 
+      "MedicineAppID": 497, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 498, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 501, 
+      "Sectionid": 60, 
+      "ATC_code": "", 
+      "MedicineAppID": 498, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 499, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 502, 
+      "Sectionid": 339, 
+      "ATC_code": "", 
+      "MedicineAppID": 499, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 500, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 502, 
+      "Sectionid": null, 
+      "ATC_code": "", 
+      "MedicineAppID": 500, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 501, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 14, 
+      "Sectionid": 48, 
+      "ATC_code": "", 
+      "MedicineAppID": 501, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 502, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 20, 
+      "Sectionid": 21, 
+      "ATC_code": "", 
+      "MedicineAppID": 502, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 503, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 2, 
+      "Sectionid": 13, 
+      "ATC_code": "V03AB23", 
+      "MedicineAppID": 503, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 504, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 4, 
+      "Sectionid": 27, 
+      "ATC_code": "", 
+      "MedicineAppID": 504, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 505, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 21, 
+      "Sectionid": 21, 
+      "ATC_code": "", 
+      "MedicineAppID": 505, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 507, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 28, 
+      "Sectionid": 36, 
+      "ATC_code": "", 
+      "MedicineAppID": 507, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 508, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 503, 
+      "Sectionid": 31, 
+      "ATC_code": "", 
+      "MedicineAppID": 508, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 509, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 32, 
+      "Sectionid": 115, 
+      "ATC_code": "S01FA01", 
+      "MedicineAppID": 509, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 510, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 38, 
+      "Sectionid": 21, 
+      "ATC_code": "", 
+      "MedicineAppID": 510, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 511, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 504, 
+      "Sectionid": 128, 
+      "ATC_code": "", 
+      "MedicineAppID": 511, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 512, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 504, 
+      "Sectionid": 339, 
+      "ATC_code": "", 
+      "MedicineAppID": 512, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 513, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 505, 
+      "Sectionid": 48, 
+      "ATC_code": "", 
+      "MedicineAppID": 513, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 514, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 506, 
+      "Sectionid": 21, 
+      "ATC_code": "", 
+      "MedicineAppID": 514, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 517, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 507, 
+      "Sectionid": 21, 
+      "ATC_code": "", 
+      "MedicineAppID": 517, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 518, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 64, 
+      "Sectionid": 77, 
+      "ATC_code": "D08AC02", 
+      "MedicineAppID": 518, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 519, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 71, 
+      "Sectionid": 10, 
+      "ATC_code": "", 
+      "MedicineAppID": 519, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 520, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 72, 
+      "Sectionid": 121, 
+      "ATC_code": "", 
+      "MedicineAppID": 520, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 521, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 508, 
+      "Sectionid": 134, 
+      "ATC_code": "", 
+      "MedicineAppID": 521, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 522, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 75, 
+      "Sectionid": 22, 
+      "ATC_code": "J01MA02", 
+      "MedicineAppID": 522, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 523, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 75, 
+      "Sectionid": 339, 
+      "ATC_code": "", 
+      "MedicineAppID": 523, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 524, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 77, 
+      "Sectionid": 20, 
+      "ATC_code": "", 
+      "MedicineAppID": 524, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 525, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 85, 
+      "Sectionid": 7, 
+      "ATC_code": "", 
+      "MedicineAppID": 525, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 526, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 98, 
+      "Sectionid": 49, 
+      "ATC_code": "H02AB02", 
+      "MedicineAppID": 526, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 527, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 98, 
+      "Sectionid": 82, 
+      "ATC_code": "", 
+      "MedicineAppID": 527, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 528, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 115, 
+      "Sectionid": 22, 
+      "ATC_code": "", 
+      "MedicineAppID": 528, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 529, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 239, 
+      "Sectionid": 44, 
+      "ATC_code": "", 
+      "MedicineAppID": 529, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 530, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 262, 
+      "Sectionid": 10, 
+      "ATC_code": "H02AB06", 
+      "MedicineAppID": 530, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 531, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 262, 
+      "Sectionid": 49, 
+      "ATC_code": "H02AB06", 
+      "MedicineAppID": 531, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 532, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 509, 
+      "Sectionid": 14, 
+      "ATC_code": "", 
+      "MedicineAppID": 532, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 533, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 230, 
+      "Sectionid": 22, 
+      "ATC_code": "J01XE01", 
+      "MedicineAppID": 533, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 534, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 315, 
+      "Sectionid": 38, 
+      "ATC_code": "J01EE01", 
+      "MedicineAppID": 534, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 535, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 331, 
+      "Sectionid": 22, 
+      "ATC_code": "J01EA01", 
+      "MedicineAppID": 535, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 536, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 289, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AB02", 
+      "MedicineAppID": 536, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 537, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 128, 
+      "Sectionid": 24, 
+      "ATC_code": "", 
+      "MedicineAppID": 537, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 539, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 179, 
+      "Sectionid": 24, 
+      "ATC_code": "J04AC01", 
+      "MedicineAppID": 539, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 540, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 276, 
+      "Sectionid": 24, 
+      "ATC_code": "", 
+      "MedicineAppID": 540, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 541, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 511, 
+      "Sectionid": 24, 
+      "ATC_code": "", 
+      "MedicineAppID": 541, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 542, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 155, 
+      "Sectionid": 25, 
+      "ATC_code": "", 
+      "MedicineAppID": 542, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 543, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 234, 
+      "Sectionid": 25, 
+      "ATC_code": "", 
+      "MedicineAppID": 543, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 544, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 456, 
+      "Sectionid": 28, 
+      "ATC_code": "", 
+      "MedicineAppID": 544, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 545, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 458, 
+      "Sectionid": 28, 
+      "ATC_code": "", 
+      "MedicineAppID": 545, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 546, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 457, 
+      "Sectionid": 28, 
+      "ATC_code": "", 
+      "MedicineAppID": 546, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 547, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 229, 
+      "Sectionid": 40, 
+      "ATC_code": "", 
+      "MedicineAppID": 547, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 548, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 165, 
+      "Sectionid": 44, 
+      "ATC_code": "M01AE01", 
+      "MedicineAppID": 548, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 549, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 144, 
+      "Sectionid": 70, 
+      "ATC_code": "L01BC02", 
+      "MedicineAppID": 549, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 550, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 512, 
+      "Sectionid": 48, 
+      "ATC_code": "", 
+      "MedicineAppID": 550, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 551, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 513, 
+      "Sectionid": 48, 
+      "ATC_code": "", 
+      "MedicineAppID": 551, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 552, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 514, 
+      "Sectionid": 48, 
+      "ATC_code": "", 
+      "MedicineAppID": 552, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 553, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 247, 
+      "Sectionid": 54, 
+      "ATC_code": "", 
+      "MedicineAppID": 553, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 554, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 158, 
+      "Sectionid": 54, 
+      "ATC_code": "B01AB01", 
+      "MedicineAppID": 554, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 555, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 274, 
+      "Sectionid": 54, 
+      "ATC_code": "", 
+      "MedicineAppID": 555, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 556, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 342, 
+      "Sectionid": 54, 
+      "ATC_code": "B01AA03", 
+      "MedicineAppID": 556, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 557, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 161, 
+      "Sectionid": 79, 
+      "ATC_code": "C03AA03", 
+      "MedicineAppID": 557, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 558, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 148, 
+      "Sectionid": 62, 
+      "ATC_code": "C03CA01", 
+      "MedicineAppID": 558, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 559, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 148, 
+      "Sectionid": 79, 
+      "ATC_code": "C03CA01", 
+      "MedicineAppID": 559, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 560, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 35, 
+      "Sectionid": 75, 
+      "ATC_code": "V08BA01", 
+      "MedicineAppID": 560, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 561, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 196, 
+      "Sectionid": 79, 
+      "ATC_code": "B05BC01", 
+      "MedicineAppID": 561, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 562, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 308, 
+      "Sectionid": 79, 
+      "ATC_code": "C03DA01", 
+      "MedicineAppID": 562, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 563, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 515, 
+      "Sectionid": 80, 
+      "ATC_code": "", 
+      "MedicineAppID": 563, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 564, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 516, 
+      "Sectionid": 81, 
+      "ATC_code": "", 
+      "MedicineAppID": 564, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 565, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 428, 
+      "Sectionid": 81, 
+      "ATC_code": "A02BA02", 
+      "MedicineAppID": 565, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 566, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 517, 
+      "Sectionid": 82, 
+      "ATC_code": "", 
+      "MedicineAppID": 566, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 567, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 518, 
+      "Sectionid": 91, 
+      "ATC_code": "", 
+      "MedicineAppID": 567, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 568, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 162, 
+      "Sectionid": 91, 
+      "ATC_code": "", 
+      "MedicineAppID": 568, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 569, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 207, 
+      "Sectionid": 98, 
+      "ATC_code": "", 
+      "MedicineAppID": 569, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 570, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 188, 
+      "Sectionid": 101, 
+      "ATC_code": "", 
+      "MedicineAppID": 570, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 571, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 519, 
+      "Sectionid": 101, 
+      "ATC_code": "", 
+      "MedicineAppID": 571, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 572, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 258, 
+      "Sectionid": 101, 
+      "ATC_code": "", 
+      "MedicineAppID": 572, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 573, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 273, 
+      "Sectionid": 101, 
+      "ATC_code": "", 
+      "MedicineAppID": 573, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 574, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 156, 
+      "Sectionid": 121, 
+      "ATC_code": "N05AD01", 
+      "MedicineAppID": 574, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 575, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 472, 
+      "Sectionid": 123, 
+      "ATC_code": "", 
+      "MedicineAppID": 575, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 576, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 520, 
+      "Sectionid": 135, 
+      "ATC_code": "", 
+      "MedicineAppID": 576, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 577, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 256, 
+      "Sectionid": 132, 
+      "ATC_code": "", 
+      "MedicineAppID": 577, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 578, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 152, 
+      "Sectionid": 132, 
+      "ATC_code": "", 
+      "MedicineAppID": 578, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 579, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 521, 
+      "Sectionid": 339, 
+      "ATC_code": "", 
+      "MedicineAppID": 579, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 580, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 522, 
+      "Sectionid": 340, 
+      "ATC_code": "", 
+      "MedicineAppID": 580, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 581, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 523, 
+      "Sectionid": 340, 
+      "ATC_code": "", 
+      "MedicineAppID": 581, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 582, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 165, 
+      "Sectionid": 340, 
+      "ATC_code": "", 
+      "MedicineAppID": 582, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }, 
+  {
+    "pk": 583, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 524, 
+      "Sectionid": 50, 
+      "ATC_code": "", 
+      "MedicineAppID": 583, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 584, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 525, 
+      "Sectionid": 50, 
+      "ATC_code": "", 
+      "MedicineAppID": 584, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 585, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 526, 
+      "Sectionid": 50, 
+      "ATC_code": "", 
+      "MedicineAppID": 585, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 586, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 527, 
+      "Sectionid": 50, 
+      "ATC_code": "", 
+      "MedicineAppID": 586, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 587, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 19, 
+      "Sectionid": 50, 
+      "ATC_code": "", 
+      "MedicineAppID": 587, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 588, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 98, 
+      "Sectionid": 50, 
+      "ATC_code": "", 
+      "MedicineAppID": 588, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 589, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 104, 
+      "Sectionid": 50, 
+      "ATC_code": "", 
+      "MedicineAppID": 589, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 590, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 165, 
+      "Sectionid": 50, 
+      "ATC_code": "", 
+      "MedicineAppID": 590, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 591, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 217, 
+      "Sectionid": 50, 
+      "ATC_code": "", 
+      "MedicineAppID": 591, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 592, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 296, 
+      "Sectionid": 50, 
+      "ATC_code": "", 
+      "MedicineAppID": 592, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 593, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 528, 
+      "Sectionid": 144, 
+      "ATC_code": "", 
+      "MedicineAppID": 593, 
+      "ApplyToChildrenOnly": 0, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 1
+    }
+  }, 
+  {
+    "pk": 594, 
+    "model": "medicine.MedicineApp", 
+    "fields": {
+      "EMLSquareBox": null, 
+      "MedicineAppStatusID": 1, 
+      "NotApplicableForChildren": 0, 
+      "MedicineID": 529, 
+      "Sectionid": 9, 
+      "ATC_code": "", 
+      "MedicineAppID": 594, 
+      "ApplyToChildrenOnly": 1, 
+      "EMLRef1": null, 
+      "MedicineAppTypeID": 2
+    }
+  }
+]

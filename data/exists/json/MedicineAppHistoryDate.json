@@ -1,0 +1,46 @@
+[
+  {
+    "pk": 1, 
+    "model": "medicine.MedicineAppHistoryDate", 
+    "fields": {
+      "EMLNumber": 13, 
+      "ExpComNumber": 13, 
+      "MedicineAppHistoryDateID": 1, 
+      "EMLYear": 2003, 
+      "ChangeDate": "removed from EML 12"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "medicine.MedicineAppHistoryDate", 
+    "fields": {
+      "EMLNumber": 14, 
+      "ExpComNumber": 14, 
+      "MedicineAppHistoryDateID": 2, 
+      "EMLYear": 2005, 
+      "ChangeDate": "removed from EML 13"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "medicine.MedicineAppHistoryDate", 
+    "fields": {
+      "EMLNumber": 15, 
+      "ExpComNumber": 15, 
+      "MedicineAppHistoryDateID": 3, 
+      "EMLYear": 2007, 
+      "ChangeDate": "removed from EML 14"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "medicine.MedicineAppHistoryDate", 
+    "fields": {
+      "EMLNumber": 16, 
+      "ExpComNumber": 16, 
+      "MedicineAppHistoryDateID": 4, 
+      "EMLYear": 2009, 
+      "ChangeDate": "removed from EML 15 - April 2007"
+    }
+  }
+]

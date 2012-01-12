@@ -1,0 +1,128 @@
+[
+  {
+    "pk": 1, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "\u0627\u0644\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u0623\u0633\u0627\u0633\u064a\u0629", 
+      "MedicineAppTypeID": 1, 
+      "LangID": "AR"
+    }
+  }, 
+  {
+    "pk": 2, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "Core List", 
+      "MedicineAppTypeID": 1, 
+      "LangID": "EN"
+    }
+  }, 
+  {
+    "pk": 3, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "Lista b\u00e1sica", 
+      "MedicineAppTypeID": 1, 
+      "LangID": "ES"
+    }
+  }, 
+  {
+    "pk": 4, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "Liste principale", 
+      "MedicineAppTypeID": 1, 
+      "LangID": "FR"
+    }
+  }, 
+  {
+    "pk": 5, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "Latin (Core list)", 
+      "MedicineAppTypeID": 1, 
+      "LangID": "LA"
+    }
+  }, 
+  {
+    "pk": 6, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "\u041e\u0441\u043d\u043e\u0432\u043d\u043e\u0439 \u043f\u0435\u0440\u0435\u0447\u0435\u043d\u044c", 
+      "MedicineAppTypeID": 1, 
+      "LangID": "RU"
+    }
+  }, 
+  {
+    "pk": 7, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "\u6838\u5fc3\u6e05\u5355", 
+      "MedicineAppTypeID": 1, 
+      "LangID": "ZH"
+    }
+  }, 
+  {
+    "pk": 8, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "\u0627\u0644\u0642\u0627\u0626\u0645\u0629 \u0627\u0644\u062a\u0643\u0645\u064a\u0644\u064a\u0629", 
+      "MedicineAppTypeID": 2, 
+      "LangID": "AR"
+    }
+  }, 
+  {
+    "pk": 9, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "Complementary List", 
+      "MedicineAppTypeID": 2, 
+      "LangID": "EN"
+    }
+  }, 
+  {
+    "pk": 10, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "Lista complementaria", 
+      "MedicineAppTypeID": 2, 
+      "LangID": "ES"
+    }
+  }, 
+  {
+    "pk": 11, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "Liste compl\u00e9mentaire", 
+      "MedicineAppTypeID": 2, 
+      "LangID": "FR"
+    }
+  }, 
+  {
+    "pk": 12, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "Latin (complementary list)", 
+      "MedicineAppTypeID": 2, 
+      "LangID": "LA"
+    }
+  }, 
+  {
+    "pk": 13, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "\u0414\u043e\u043f\u043e\u043b\u043d\u0438\u0442\u0435\u043b\u044c\u043d\u044b\u0439 \u043f\u0435\u0440\u0435\u0447\u0435\u043d\u044c", 
+      "MedicineAppTypeID": 2, 
+      "LangID": "RU"
+    }
+  }, 
+  {
+    "pk": 14, 
+    "model": "medicine.MedicineAppType_Local", 
+    "fields": {
+      "MedicineAppTypeName": "\u8865\u5145\u6e05\u5355", 
+      "MedicineAppTypeID": 2, 
+      "LangID": "ZH"
+    }
+  }
+]

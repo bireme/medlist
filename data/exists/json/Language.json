@@ -1,0 +1,58 @@
+[
+  {
+    "pk": "EN", 
+    "model": "medicine.Language", 
+    "fields": {
+      "LangID": "EN", 
+      "Name": "English"
+    }
+  }, 
+  {
+    "pk": "ES", 
+    "model": "medicine.Language", 
+    "fields": {
+      "LangID": "ES", 
+      "Name": "Espagnol"
+    }
+  }, 
+  {
+    "pk": "FR", 
+    "model": "medicine.Language", 
+    "fields": {
+      "LangID": "FR", 
+      "Name": "French"
+    }
+  }, 
+  {
+    "pk": "RU", 
+    "model": "medicine.Language", 
+    "fields": {
+      "LangID": "RU", 
+      "Name": "Russian"
+    }
+  }, 
+  {
+    "pk": "ZH", 
+    "model": "medicine.Language", 
+    "fields": {
+      "LangID": "ZH", 
+      "Name": "Chinese"
+    }
+  }, 
+  {
+    "pk": "AR", 
+    "model": "medicine.Language", 
+    "fields": {
+      "LangID": "AR", 
+      "Name": "Arab"
+    }
+  }, 
+  {
+    "pk": "LA", 
+    "model": "medicine.Language", 
+    "fields": {
+      "LangID": "LA", 
+      "Name": "Latin"
+    }
+  }
+]
