@@ -4,3 +4,4 @@ medlist/tools/json*
 tmp/
 medlist/database
 .DS_Store
+settings.py
