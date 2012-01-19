@@ -54,6 +54,13 @@ class PharmaceuticalFormType(models.Model):
 
 	id = models.AutoField(primary_key=True)
 
+	def __unicode__(self):
+		translations = PharmaceuticalFormTypeLocal.objects.filter(pharmaceutical_form_type=self.id)
+		if len(translations) > 0:
+			return translations[0].name
+		else:
+			return str('No Labels')
+
 # local do PharmaceuticalFormType
 class PharmaceuticalFormTypeLocal(models.Model):
 
@@ -77,6 +84,7 @@ class PharmaceuticalFormLocal(models.Model):
 class MedicineApplication(models.Model):
 
 	id = models.AutoField(primary_key=True)
+	medicine = models
 
 # traduzir atraves da tradução do django
 class NoteType(models.Model):
@@ -100,6 +108,36 @@ class Composition(models.Model):
 	pharmaceutical_form = models.ForeignKey(PharmaceuticalForm)
 	drug = models.ForeignKey(Drug)
 	concentration = models.CharField(max_length=255)
+
+# Listas
+
+class List(models.Model):
+
+	country_list = models.BooleanField() # flag se é lista de país, ou outro tipo de lista
+	especial_list = models.BooleanField() # se é algum tipo High Cost, por exemplo (???)
+
+# Traduções da lista
+class ListLocal(models.Model):
+
+	language = models.ForeignKey(Language)
+	list = models.ForeignKey(List)
+	name = models.CharField(max_length=255)
+
+# sessão de uma lista
+class Section(models.Model):
+
+	parentID = models.ForeignKey('self', null=True) # FK para marcar os subniveis de seção
+	list = models.ForeignKey(List)
+	complementary = models.BooleanField()
+
+
+class SectionLocal(models.Model):
+
+	language = models.ForeignKey(Language)
+	section = models.ForeignKey(Section)
+	name = models.CharField(max_length=255)
+
+
 
 
 

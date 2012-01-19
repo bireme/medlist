@@ -1,3 +1,4 @@
+#! coding: utf-8
 from django.contrib import admin
 from models import *
 
@@ -35,25 +36,37 @@ admin.site.register(DosageFormLocal)
 admin.site.register(MedicinePharmaceuticalForm)
 admin.site.register(MedicineApplication)"""
 
+# tabular: tradução de medicine (inserido em MedicineAdmin)
 class MedicineLocalAdmin(admin.TabularInline):
 	model = MedicineLocal
 	extra = 1
 
-class CompositionAdmin(admin.TabularInline):
+# tabular: tradução de forma farmaceutica (inserido em PharmaceuticalFormAdminTabular)
+class PharmaceuticalFormTypeLocalAdminTabular(admin.TabularInline):
+	model = PharmaceuticalFormTypeLocal
+	extra = 1
+
+class PharmaceuticalFormTypeAdmin(admin.ModelAdmin):
+	model = PharmaceuticalFormType
+	inlines = [PharmaceuticalFormTypeLocalAdminTabular, ]
+
+class CompositionAdminTabular(admin.TabularInline):
 	model = Composition
 	extra = 1
 
-class PharmaceuticalFormAdmin(admin.TabularInline):
+class PharmaceuticalFormAdmin(admin.ModelAdmin):
+	model = PharmaceuticalForm
+	inlines = [CompositionAdminTabular, ]
+
+class PharmaceuticalFormAdminTabular(admin.TabularInline):
 	model = PharmaceuticalForm
 	extra = 1
-	inlines = [CompositionAdmin, ]
-
-
 
 class MedicineAdmin(admin.ModelAdmin):
 	model = Medicine
-	inlines = [MedicineLocalAdmin, PharmaceuticalFormAdmin]
+	inlines = [MedicineLocalAdmin, PharmaceuticalFormAdminTabular]
 
 admin.site.register(Language)
-admin.site.register(PharmaceuticalFormType)
+admin.site.register(PharmaceuticalForm, PharmaceuticalFormAdmin)
+admin.site.register(PharmaceuticalFormType, PharmaceuticalFormTypeAdmin)
 admin.site.register(Medicine, MedicineAdmin)
