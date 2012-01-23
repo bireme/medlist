@@ -54,9 +54,24 @@ class CompositionAdminTabular(admin.TabularInline):
 	model = Composition
 	extra = 1
 
+class DrugLocalAdminTabular(admin.TabularInline):
+	model = DrugLocal
+	extra = 1
+
+class DrugAdmin(admin.ModelAdmin):
+	model = Drug
+	inlines = [DrugLocalAdminTabular, ]
+	#list_display = ('')
+
+class PharmaceuticalFormLocalAdminTabular(admin.TabularInline):
+	model = PharmaceuticalFormLocal
+	extra = 1
+	
+
 class PharmaceuticalFormAdmin(admin.ModelAdmin):
 	model = PharmaceuticalForm
-	inlines = [CompositionAdminTabular, ]
+	inlines = [PharmaceuticalFormLocalAdminTabular, CompositionAdminTabular]
+	list_display = ('medicine','medicine_id', 'pharmaceutical_form_type', 'only_for_children', 'only_for_adult')
 
 class PharmaceuticalFormAdminTabular(admin.TabularInline):
 	model = PharmaceuticalForm
@@ -65,8 +80,10 @@ class PharmaceuticalFormAdminTabular(admin.TabularInline):
 class MedicineAdmin(admin.ModelAdmin):
 	model = Medicine
 	inlines = [MedicineLocalAdmin, PharmaceuticalFormAdminTabular]
+	list_display = ('__unicode__', 'get_pharm_forms')
 
 admin.site.register(Language)
+admin.site.register(Drug, DrugAdmin)
 admin.site.register(PharmaceuticalForm, PharmaceuticalFormAdmin)
 admin.site.register(PharmaceuticalFormType, PharmaceuticalFormTypeAdmin)
 admin.site.register(Medicine, MedicineAdmin)

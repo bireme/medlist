@@ -10,7 +10,7 @@ class Language(models.Model):
 		verbose_name_plural = 'Languages'
 
 	def __unicode__(self):
-		return str(self.abbreviation)
+		return unicode(self.abbreviation)
 
 	abbreviation = models.CharField(max_length=2)
 	name = models.CharField(max_length=255)
@@ -25,7 +25,18 @@ class Medicine(models.Model):
 		if len(translations) > 0:
 			return translations[0].name
 		else:
-			return str('No Labels')
+			return unicode('(No Labels)')
+
+	def get_pharm_forms(self):
+		forms = PharmaceuticalForm.objects.filter(medicine=self.id)
+		if len(forms) > 0:
+			final_form = ""
+			for form in forms:
+				final_form += "%s, " % form
+			final_form = final_form[:-2]
+			return final_form
+		else:
+			return unicode('(No forms)')
 
 # Tabela com itens traduzidos do Model Medicine
 class MedicineLocal(models.Model):
@@ -42,12 +53,22 @@ class Drug(models.Model):
 
 	id = models.AutoField(primary_key=True)
 
+	def __unicode__(self):
+		translation = DrugLocal.objects.filter(drug=self.id)
+		if len(translation) > 0:
+			return unicode(translation[0])
+		else:
+			return unicode("(No name)")
+
 # Tabela com itens traduzidos do Model Drug
 class DrugLocal(models.Model):
 	
 	drug = models.ForeignKey(Drug)
 	language = models.ForeignKey(Language)
 	name = models.CharField(max_length=255)
+
+	def __unicode__(self):
+		return unicode(self.name)
 
 #vocabulario controlado
 class PharmaceuticalFormType(models.Model):
@@ -59,7 +80,7 @@ class PharmaceuticalFormType(models.Model):
 		if len(translations) > 0:
 			return translations[0].name
 		else:
-			return str('No Labels')
+			return unicode('(No Labels)')
 
 # local do PharmaceuticalFormType
 class PharmaceuticalFormTypeLocal(models.Model):
@@ -74,6 +95,12 @@ class PharmaceuticalForm(models.Model):
 	pharmaceutical_form_type = models.ForeignKey(PharmaceuticalFormType)
 	only_for_children = models.BooleanField()
 	only_for_adult = models.BooleanField()
+
+	def medicine_id(self):
+		return unicode(self.medicine.id)
+
+	def __unicode__(self):
+		return unicode(self.pharmaceutical_form_type)
 
 class PharmaceuticalFormLocal(models.Model):
 	
