@@ -19,6 +19,7 @@ class Language(models.Model):
 class Medicine(models.Model):
 
 	id = models.AutoField(primary_key=True)
+	is_generic = models.BooleanField()
 
 	def __unicode__(self):
 		translations = MedicineLocal.objects.filter(medicine=self.id)
@@ -95,6 +96,7 @@ class PharmaceuticalForm(models.Model):
 	pharmaceutical_form_type = models.ForeignKey(PharmaceuticalFormType)
 	only_for_children = models.BooleanField()
 	only_for_adult = models.BooleanField()
+	atc_code = models.CharField(max_length=255)
 
 	def medicine_id(self):
 		return unicode(self.medicine.id)
@@ -108,11 +110,6 @@ class PharmaceuticalFormLocal(models.Model):
 	pharmaceutical_form = models.ForeignKey(PharmaceuticalForm)	
 	label = models.CharField(max_length=255)
 
-class MedicineApplication(models.Model):
-
-	id = models.AutoField(primary_key=True)
-	medicine = models
-
 # traduzir atraves da tradução do django
 class NoteType(models.Model):
 
@@ -122,7 +119,7 @@ class Note(models.Model):
 
 	type = models.ForeignKey(NoteType)
 	pharmaceutical_form = models.ForeignKey(PharmaceuticalForm, null=True, blank=True)
-	medicine_application = models.ForeignKey(MedicineApplication, null=True, blank=True)
+	medicine = models.ForeignKey(Medicine, null=True, blank=True)
 
 class NoteLocal(models.Model):
 
@@ -136,38 +133,21 @@ class Composition(models.Model):
 	drug = models.ForeignKey(Drug)
 	concentration = models.CharField(max_length=255)
 
-# Listas
+class Product(models.Model):
 
-class List(models.Model):
+	medicine = models.ForeignKey(Medicine)
+	pharmaceutical_form = models.ForeignKey(PharmaceuticalForm)
 
-	country_list = models.BooleanField() # flag se é lista de país, ou outro tipo de lista
-	especial_list = models.BooleanField() # se é algum tipo High Cost, por exemplo (???)
+	# (?) model ainda indefinido 
 
-# Traduções da lista
-class ListLocal(models.Model):
-
-	language = models.ForeignKey(Language)
-	list = models.ForeignKey(List)
-	name = models.CharField(max_length=255)
-
-# sessão de uma lista
-class Section(models.Model):
-
-	parentID = models.ForeignKey('self', null=True) # FK para marcar os subniveis de seção
-	list = models.ForeignKey(List)
-	complementary = models.BooleanField()
-
-
-class SectionLocal(models.Model):
+class ProductLocal(models.Model):
 
 	language = models.ForeignKey(Language)
-	section = models.ForeignKey(Section)
+	product = models.ForeignKey(Product)
 	name = models.CharField(max_length=255)
-
 
 
 
 
 # OBS:
 # - O que for tradução de labels do sistema, retirar as traduções da modelagem.
-# - Estudar qual a melhor relação de PharmaceuticalForm: se relacionar com MedicineApplication ou Medicine
