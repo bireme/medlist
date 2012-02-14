@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<add>
+	<doc>
+		<field name="id"></field>
+		<field name="name">en^ketamine</field>
+		<field name="name">es^ketamine</field>
+		<field name="name">pt^ketamine</field>
+		<field name="name">pt^ketamine</field>
+		<field name="pharmaceutical-form">
+			<![CDATA[
+				type:"Injection";
+				value:"50 mg (as hydrochloride)/ml in 10‐ml vial"
+			]]>
+		</field>
+		<field name="section">ANAESTHETICS</field>
+		<field name="subsection">Injectable medicines</field>
+	</doc>
+	
+	<doc>
+		<field name="id"></field>
+		<field name="name">en^bupivacaine</field>
+		<field name="pharmaceutical-form">
+			<![CDATA[
+				type:"Injection";
+				value:"0.25%; 0.5% (hydrochloride) in vial."
+			]]>
+		</field>
+		<field name="pharmaceutical-form">
+			<![CDATA[
+				type:"Injection for spinal anaesthesia";
+				value:"0.5% (hydrochloride) in 4‐ml ampoule to be mixed with 7.5% glucose solution"
+			]]>
+		</field>
+		<field name="section">ANAESTHETICS</field>
+		<field name="subsection">Local anaesthesics</field>
+		<field name="squarebox">true</field>
+	</doc>
+
+	<doc>
+		<field name="id"></field>
+		<field name="name">en^ephedrine</field>
+		<field name="pharmaceutical-form">
+			<![CDATA[
+				type:"Injection";
+				value:"30 mg (hydrochloride)/ml in 1‐ml ampoule";
+				observation:"(For use in spinal anaesthesia during delivery, to prevent hypotension)"
+			]]>
+		</field>
+		<field name="section">ANAESTHETICS</field>
+		<field name="subsection">Local anaesthesics</field>
+	</doc>
+	
+	<doc>
+		<field name="id"></field>
+		<field name="name">en^morphine</field>
+		<field name="pharmaceutical-form">
+			<![CDATA[
+				type:"Injection";
+				value:"10 mg (sulfate or hydrochloride) in 1‐ml ampoule"
+			]]>
+		</field>
+		<field name="pharmaceutical-form">
+			<![CDATA[
+				type:"Injection";
+				value:"10 mg (morphine hydrochloride or morphine sulfate) in 1‐ml ampoule."
+			]]>
+		</field>
+		<field name="pharmaceutical-form">
+			<![CDATA[
+				type:"Oral liquid";
+				value:" 10 mg (morphine hydrochloride or morphine sulfate)/5 m"
+			]]>
+		</field>
+		<field name="pharmaceutical-form">
+			<![CDATA[
+				type:"Tablet";
+				value:"10 mg (morphine sulfate)"
+			]]>
+		</field>
+		<field name="pharmaceutical-form">
+			<![CDATA[
+				type:"Tablet (prolonged release";
+				value:"10 mg; 30 mg; 60 mg (morphine sulfate)."
+			]]>
+		</field>
+
+		<field name="section">ANAESTHETICS</field>
+		<field name="subsection">Preoperative medication and sedation for short-term procedures</field>
+		<field name="section">ANALGESICS, ANTIPYRETICS, NON-STEROIDAL ANTI-INFLAMMATORY 
+MEDICINES (NSAIMs), MEDICINES USED TO TREAT GOUT AND DISEASE MODIFYING 
+AGENTS IN RHEUMATOID DISORDERS (DMARDs)</field>
+		<field name="subsection">Opioid analgesic</field>
+
+	</doc>
+
+	<doc>
+		<field name="id"></field>
+		<field name="name">en^biperiden</field>
+		<field name="pharmaceutical-form">
+			<![CDATA[
+				type:"Injection";
+				value:"10 mg (sulfate or hydrochloride) in 1‐ml ampoule"
+			]]>
+		</field>
+		<field name="pharmaceutical-form">
+			<![CDATA[
+				type:"Tablet";
+				value:"2 mg (hydrochloride)"
+			]]>
+		</field>
+		<field name="section">ANTIPARKINSONISM MEDICINE</field>
+	</doc>
+
+
+</add>
