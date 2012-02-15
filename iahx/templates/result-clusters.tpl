@@ -19,17 +19,17 @@
 			<a href="#" onclick="showChart(this,'{$texts.$label}','{$key}')" class="thickbox"><img src="image/common/chart.gif"></a>
 			<ul id="{$key}_set">
 			{if $key == 'pharmaceutical_form_type'}
-				<strong>Pharmaceutical Form Type</strong>
+				<strong>{$texts.CLUSTER_PHARM_FORM_TYPE}</strong>
 			{elseif $key == 'section'}
-				<strong>Section</strong>
+				<strong>{$texts.CLUSTER_SECTION}</strong>
 			{elseif $key == 'subsection'}
-				<strong>Sub Section</strong>
+				<strong>{$texts.CLUSTER_SUBSECTION}</strong>
 			{elseif $key == 'squarebox'}
 				<strong>Square Box</strong>
 			{elseif $key == 'list'}
-				<strong>List</strong>
+				<strong>{$texts.CLUSTER_LIST}</strong>
 			{elseif $key == 'country'}
-				<strong>Country</strong>
+				<strong>{$texts.CLUSTER_COUNTRY}</strong>
 			{/if}
 			
 			{foreach key=clusterKey item=clusterItem from=$item}

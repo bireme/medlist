@@ -2,26 +2,40 @@
     <!-- display_banner: false -->
 {else}
     <div class="top">
-        <div class="parent">
-            <a href="{$config->bvs_url}">
-                <img src="./image/{$lang}/logo_bvs.gif" alt="{$texts.vhl_alternate}" title="{$texts.vhl_alternate}" />
-            </a>
+        <div class="topMenu">
+            <ul>
+                <li><a href="http://stela.org.br/regionalplatform/">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Send us a comment</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
         </div>
-        <div class="identification">
-            <h2>{$texts.BVS_TITLE}</h2>
-            <h1>{$texts.TITLE}</h1>
+        <div class="loginBox">
+            
+                <input type="text" class="textEntry" />
+                <input type="password" class="textEntry" />
+                <input type="submit" class="submit" value="" />
+            
+            <div id="forgotPass"><a href="#">I Forgot my login data</a></div>
         </div>
-
-        <div class="otherVersions">
-            {foreach key=langcode item=language from=$texts.AVAILABLE_LANGUAGES}
-                {if $langcode|lower eq $lang }
-                    {assign var="class" value=" class='selected'"}
-                {else}
-                    {assign var="class" value=""}
-                {/if}
-                <a href="#" onclick="searchForm.q.value='';changeFormParameter('lang','{$langcode|lower}');" {$class}>{$language}</a>
-            {/foreach}
+        <div class="spacer"></div>
+        <div class="banner">
+            <div id="logo"><span>Regional Platform for Innovation and Access for Health</span></div>
+            <div class="identification">
+                List of Essential Medicines
+            </div>
+            <div class="langSelector">
+                <ul>
+                {foreach key=langcode item=language from=$texts.AVAILABLE_LANGUAGES}
+                    {if $langcode|lower eq $lang }
+                        {assign var="class" value=" class='selected'"}
+                    {else}
+                        {assign var="class" value=""}
+                    {/if}
+                    <li><a id="lang_{$langcode|lower}" href="#" onclick="searchForm.q.value='';changeFormParameter('lang','{$langcode|lower}');" {$class}><span>{$language}</span></a></li>
+                {/foreach}
+                </ul>
+            </div>
         </div>
-        <div class="spacer">&#160;</div>
-    </div>        
+    </div>
 {/if}

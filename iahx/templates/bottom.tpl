@@ -1,13 +1,4 @@
-				<div class="footer">
-					<div class="powered">
-						powered by <strong>iAHx-{$smarty.const.VERSION}</strong> {$texts.BVS_TITLE}
-					</div>
-					<div class="links">
-						<a href="{$config->bvs_url}">{$texts.BACK_HOME}</a>
-						|
-						<a href="{$config->about_bvs_url}">{$texts.ABOUT_BVS}</a>
-					</div>
-				</div>
+				
 				{literal}
 				<script language="JavaScript" type="text/javascript">
 					if(!cookiesEnabled()){
@@ -20,8 +11,32 @@
 				</script>
 				{/literal}
 			</div>
-
+			<div class="spacer"></div>
 		</div> <!-- div content -->
+
+		<div class="footer">
+			<div class="wrapper">
+				<div id="institutionalInfo">
+					<p><strong>Regional Office of the World Health Organization</strong></p>
+					<p>525 Twenty-third Street, N.W., Washington, D.C. 20037, United States of America</p>
+					<p>Country/City Code: (202) Tel: 974-3000 Fax: 974-3663</p>
+					<p>©2011 Pan American Health Organization/Organización Panamericana de la Salud</p>
+					<p>©2011 World Health Organization. All rights reserved</p>
+				</div>
+				<div id="instLogos">
+					<div class="logo" id="pahoLogo">
+						<a href="http://new.paho.org" title="Pan American Health Organization" ><img src="image/common/ml/logo-paho.png" alt="PAHO logo" /></a>
+					</div>
+					<div class="logo" id="tdrLogo">
+						<a href="http://apps.who.int/tdr/" title="Tropical Diseases Research" ><img src="image/common/ml/logo-tdr.png" alt="TDR/WHO logo" /></a>
+					</div>
+					<div class="logo" id="stelaLogo">
+						<a href="http://portal.stela.org.br/" title="Instituto Stela" ><img src="image/common/ml/logo-stela.png" alt="Instituto Stela logo" /></a>
+					</div>
+				</div>
+				<div class="spacer"></div>
+			</div>
+		</div>
 
 		<!-- google analytics -->
 		<script type="text/javascript">

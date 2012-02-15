@@ -88,43 +88,56 @@
             {occ label=$texts.LABEL_LANG element=$doc->la separator=; translation=$texts suffix=LANG_}
         </div>-->
         
+        {assign var="setted" value=false}
         {foreach from=$doc->name item=name}
-			{assign var="newname" value="^"|explode:$name}
-			
-			{if $newname[0] eq $lang}
-				<h3><a href="#">{$newname[1]|capitalize}</a></h3>
-			{/if}
-		{/foreach}
+            {assign var="newname" value="^"|explode:$name}
+            
+            {if $setted == false}
+                {if $newname[0] eq $lang}
+                    <h3><a href="#">{$newname[1]|capitalize}</a></h3>
+                    {assign var="setted" value=true}
+                {/if}
+            {/if}
+        {/foreach}
+
+        {if $setted == false}
+            <h3><a href="#">{$newname[1]|capitalize}</a></h3>
+        {/if}
 		
-		{foreach from=$doc->pharmaceutical_form item=item}
-			<p>
-				{assign var="lines" value="\";"|explode:$item}
-				{foreach from=$lines item=line}
-					{assign var="values" value=":"|explode:$line}
-					
-					{assign var="key" value=$values[0]|trim}
-					{assign var="value" value=$values[1]|trim|replace:"\"":""}
-					
-					{if $key eq 'type'}
-						<strong>{$value}:</strong>
-						
-					{elseif $key eq 'observation'}
-						<strong>Observation:</strong>{$value}<br>
-					
-					{elseif $key eq 'value'}
-						{$value}<br>
-					
-					{else}
-						else
-						<strong>{$value}:</strong>
-					{/if}				
-					
-				{/foreach}
-			</p>
-		{/foreach}
+        <div class="pharmaceutical_forms">
+            <h4>Pharmaceutical Forms</h4>
+            {foreach from=$doc->pharmaceutical_form item=item}
+                <div class="pharmaceutical_form">
+                    <p>
+                        {assign var="lines" value="\";"|explode:$item}
+                        {foreach from=$lines item=line}
+                            {assign var="values" value=":"|explode:$line}
+                            
+                            {assign var="key" value=$values[0]|trim}
+                            {assign var="value" value=$values[1]|trim|replace:"\"":""}
+                            
+                            {if $key eq 'type'}
+                                <strong>{$value}:</strong>
+                                
+                            {elseif $key eq 'observation'}
+                                <strong>Observation:</strong>{$value}<br>
+                            
+                            {elseif $key eq 'value'}
+                                {$value}<br>
+                            
+                            {else}
+                                else
+                                <strong>{$value}:</strong>
+                            {/if}               
+                            
+                        {/foreach}
+                    </p>
+                </div>
+            {/foreach}
+        </div>
         
         {if $doc->list|@count > 0}
-			<br><strong>Nas listas:</strong>
+			<br><strong>{$texts.LABEL_IN_LIST}:</strong>
 			{assign var="count" value=1}
 			{foreach from=$doc->list item=list}
 				{if $count < $doc->list|@count}
@@ -137,7 +150,7 @@
         {/if}
         
         {if $doc->country|@count > 0}
-			<br><strong>Nos paises:</strong>
+			<br><strong>{$texts.LABEL_IN_COUNTRIES}:</strong>
 			{assign var="count" value=1}
 			{foreach from=$doc->country item=country}
 				{if $count < $doc->country|@count}
