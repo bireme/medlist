@@ -87,36 +87,6 @@
         <strong>High Cost:</strong> {if $HighCost} YES {else} NO {/if} <br>
         <strong>Strategic Fund:</strong> {if $StrategicFund} YES {else} NO {/if} <br>
 
-        <!-- countries -->
-        {if $doc->country|@count > 0}
-            <h4>{$texts.LABEL_IN_COUNTRIES}</h4>
-            <ul>
-                {foreach from=$doc->country item=country}
-                    <li>{$country}</li>
-                {/foreach}
-            </ul>
-        {/if}
-        
-        <!--
-        {if $doc->list|@count > 0}
-            <br><strong>{$texts.LABEL_IN_LIST}:</strong>
-            {assign var="count" value=1}
-            {foreach from=$doc->list item=list}
-                {if $count < $doc->list|@count}
-                    {$list},
-                {else}
-                    {$list}.
-                {/if}
-                {assign var="count" value=$count+1}
-            {/foreach}
-        {/if}
-        
-        {if $scieloLinkList|@count > 0}
-            <div class="abstractFulltextList">
-                
-            </div>
-        {/if}
-        -->
 
     </div>
     <div class="spacer"></div>
