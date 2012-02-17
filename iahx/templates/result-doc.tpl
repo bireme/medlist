@@ -16,78 +16,7 @@
         {$smarty.foreach.doclist.index+$pagination.from}.
     </div>
     <div class="data">
-
-        <!-- title -->
-        <h3>
-        {if $doc->db eq 'LIS'}
-            {assign var=url value=$doc->ur[0]}
-
-            <a href="{$url}" target="_blank">
-                {occ element=$doc->ti separator=/}
-            </a>
-        {elseif $doc->db eq 'DECS'}
-            {assign var=ti value=ti_`$smarty.request.lang`}
-
-            <a href="decs_detail.php?term={$doc->$ti[0]}&lang={$smarty.request.lang}" target="_blank">
-                {$doc->$ti[0]}
-            </a>            
-        {else}
-            {if $doc->db|contains:"COCHRANE"}
-                <a href="#" onclick="javascript:show_cochrane(this,'{$doc->db}','{$doc->id}')" target="_blank">
-                    {occ element=$doc->ti separator=/}
-                </a>
-            {else}
-                <a href="resources/{$doc->id}">
-                    {occ element=$doc->ti separator=/}
-                </a>
-            {/if}
-        {/if}
-        </h3>
-        <!-- author -->
-        {occ element=$doc->au separator=; class=author}
-        <!-- source -->
-        {if $doc->db|contains:"COCHRANE"}
-            {occ element=$doc->db separator=; class=source suffix=SOURCE_ translation=$texts}
-        {else}
-            {if $doc->type[0] == 'article' AND  $doc->fo[0]|count > 0}
-                {assign var=journal value=$doc->fo[0]|substring_before:";"}
-
-                {if $journal|count > 0}
-                    <div>
-                        <a href="http://portal.revistas.bvs.br/transf.php?xsl=xsl/titles.xsl&xml=http://catserver.bireme.br/cgi-bin/wxis1660.exe/?IsisScript=../cgi-bin/catrevistas/catrevistas.xis|database_name=TITLES|list_type=title|cat_name=ALL|from=1|count=50&lang=pt&comefrom=home&home=false&task=show_magazines&request_made_adv_search=false&lang=pt&show_adv_search=false&help_file=/help_pt.htm&connector=ET&search_exp={$journal|noaccent}" target="_blank"><span>{$journal}</span></a>;
-                        {$doc->fo[0]|substring_after:";"}
-                    </div>
-                {else}
-                    {occ  element=$doc->fo separator=; class=source}
-                {/if}
-            {/if}
-        {/if}
-        
-        {if $doc->db eq 'DECS'}
-            {assign var=ab value=ab_`$smarty.request.lang`}
-            {$doc->$ab[0]}
-        {/if}
-
-        <!-- database -->
-        <!--<div class="source">
-            {translate text=$doc->type[0] suffix=TYPE_ translation=$texts}
-
-            [{translate text=$doc->db suffix=DB_ translation=$texts}
-
-            {if $doc->db|contains:"MEDLINE"}
-                <span>PMID:</span> {$doc->id|substring_after:"-"}
-            {elseif $doc->db|contains:"COCHRANE"}
-                 <span>ID:</span> {$doc->id}
-            {elseif $doc->db|contains:"-"}
-                <span>ID:</span> {$doc->id|substring_after:"-"}
-            {elseif $doc->db|contains:"campusvirtualsp"}
-            {else}
-                <span>ID:</span> {$doc->id}
-            {/if}]
-
-            {occ label=$texts.LABEL_LANG element=$doc->la separator=; translation=$texts suffix=LANG_}
-        </div>-->
-        
+    
         {assign var="setted" value=false}
         {foreach from=$doc->name item=name}
             {assign var="newname" value="^"|explode:$name}
@@ -104,10 +33,12 @@
             <h3><a href="#">{$newname[1]|capitalize}</a></h3>
         {/if}
 		
+        <!-- pharmaceutical forms -->
         <div class="pharmaceutical_forms">
             <h4>Pharmaceutical Forms</h4>
+            <ul>
             {foreach from=$doc->pharmaceutical_form item=item}
-                <div class="pharmaceutical_form">
+                <li class="pharmaceutical_form">
                     <p>
                         {assign var="lines" value="\";"|explode:$item}
                         {foreach from=$lines item=line}
@@ -132,34 +63,52 @@
                             
                         {/foreach}
                     </p>
-                </div>
+                </li>
             {/foreach}
+            </ul>
         </div>
         
-        {if $doc->list|@count > 0}
-			<br><strong>{$texts.LABEL_IN_LIST}:</strong>
-			{assign var="count" value=1}
-			{foreach from=$doc->list item=list}
-				{if $count < $doc->list|@count}
-					{$list},
-				{else}
-					{$list}.
-				{/if}
-				{assign var="count" value=$count+1}
-			{/foreach}
+        <!-- Lists -->
+        <h4>{$texts.LABEL_IN_LIST}</h4>
+        {foreach from=$doc->list item=list}
+            {if $list eq "EML"}
+                {assign var="EML" value=true }
+            {elseif $list eq "EMLc"}
+                {assign var="EMLc" value=true }
+            {elseif $list eq "High Cost"}
+                {assign var="HighCost" value=true }
+            {elseif $list eq "Strategic Fund"}
+                {assign var="StrategicFund" value=true }
+            {/if}
+        {/foreach}
+
+        <strong>EML:</strong> {if $EML} YES {else} NO {/if} <br>
+        <strong>EMLc:</strong> {if $EMLc} YES {else} NO {/if} <br>
+        <strong>High Cost:</strong> {if $HighCost} YES {else} NO {/if} <br>
+        <strong>Strategic Fund:</strong> {if $StrategicFund} YES {else} NO {/if} <br>
+
+        <!-- countries -->
+        {if $doc->country|@count > 0}
+            <h4>{$texts.LABEL_IN_COUNTRIES}</h4>
+            <ul>
+                {foreach from=$doc->country item=country}
+                    <li>{$country}</li>
+                {/foreach}
+            </ul>
         {/if}
         
-        {if $doc->country|@count > 0}
-			<br><strong>{$texts.LABEL_IN_COUNTRIES}:</strong>
-			{assign var="count" value=1}
-			{foreach from=$doc->country item=country}
-				{if $count < $doc->country|@count}
-					{$country},
-				{else}
-					{$country}.
-				{/if}
-				{assign var="count" value=$count+1}
-			{/foreach}
+        <!--
+        {if $doc->list|@count > 0}
+            <br><strong>{$texts.LABEL_IN_LIST}:</strong>
+            {assign var="count" value=1}
+            {foreach from=$doc->list item=list}
+                {if $count < $doc->list|@count}
+                    {$list},
+                {else}
+                    {$list}.
+                {/if}
+                {assign var="count" value=$count+1}
+            {/foreach}
         {/if}
         
         {if $scieloLinkList|@count > 0}
@@ -167,6 +116,7 @@
                 
             </div>
         {/if}
+        -->
 
     </div>
     <div class="spacer"></div>
