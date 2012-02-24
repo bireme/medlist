@@ -2,23 +2,10 @@
 from django.db import models
 from datetime import datetime
 
-PHARMACEUTICAL_FORM_TYPE = (
-    ('INJ', 'Injection'),
-    ('COMP', 'Comprimido'),
-    ('TAB', 'Tablet'),
+LANGUAGES_CHOICES = (
+    ('pt-br', 'Português Brasil'),
+    ('es', 'Espanhol'),
 )
-
-class Language(models.Model):
-    class Meta:
-        verbose_name = 'Language'
-        verbose_name_plural = 'Languages'
-
-    def __unicode__(self):
-        return unicode(self.abbreviation)
-
-    abbreviation = models.CharField(max_length=10)
-    name = models.CharField(max_length=255)    
-
 
 class MedicineList(models.Model):
     abbreviation = models.CharField(max_length=20)
@@ -29,19 +16,15 @@ class MedicineList(models.Model):
 
 
 class Medicine(models.Model):
-    id = models.AutoField(primary_key=True)
+    name = models.CharField(max_length=255)
     def __unicode__(self):
-        translations = MedicineLocal.objects.filter(medicine=self.id)
-        if len(translations) > 0:
-            return translations[0].name
-        else:
-            return unicode('(No Labels)')    
+        return unicode(self.name)
 
 
 # Tabela com itens traduzidos do Model Medicine
 class MedicineLocal(models.Model):
     medicine = models.ForeignKey(Medicine)
-    language = models.ForeignKey(Language)
+    language = models.CharField(max_length=10, choices=LANGUAGES_CHOICES)
     name = models.CharField(max_length=255)
     
     class Meta:
@@ -49,10 +32,25 @@ class MedicineLocal(models.Model):
         verbose_name_plural = "Medicine Translations"
 
 
+#vocabulario controlado
+class PharmaceuticalFormType(models.Model):    
+    name = models.CharField(max_length=255)
+
+    def __unicode__(self):
+        return unicode(self.name)
+
+# local do PharmaceuticalFormType
+class PharmaceuticalFormTypeLocal(models.Model):
+
+    pharmaceutical_form_type = models.ForeignKey(PharmaceuticalFormType)
+    language = models.CharField(max_length=10, choices=LANGUAGES_CHOICES)
+    name = models.CharField(max_length=255)
+
+
 class PharmaceuticalForm(models.Model):
     medicine = models.ForeignKey(Medicine)
     medicineList = models.ManyToManyField(MedicineList)
-    pharmaceutical_form_type = models.CharField(max_length=50, choices=PHARMACEUTICAL_FORM_TYPE)
+    pharmaceutical_form_type =  models.ForeignKey(PharmaceuticalFormType)
     atc_code = models.CharField(max_length=255)
     coposition = models.CharField(max_length=255)
 
@@ -61,3 +59,4 @@ class PharmaceuticalForm(models.Model):
 
     def __unicode__(self):
         return unicode(self.pharmaceutical_form_type)
+

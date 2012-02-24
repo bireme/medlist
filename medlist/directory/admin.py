@@ -8,6 +8,10 @@ class PharmaceuticalFormAdmin(admin.TabularInline):
     model = PharmaceuticalForm
     extra = 1
 
+class PharmaceuticalFormTypeLocalAdmin(admin.TabularInline):
+    model = PharmaceuticalFormTypeLocal
+    extra = 1
+
 class MedicineLocalAdmin(admin.TabularInline):
     model = MedicineLocal
     extra = 1
@@ -21,6 +25,10 @@ class MedicineAdmin(admin.ModelAdmin):
     inlines = [MedicineLocalAdmin, PharmaceuticalFormAdmin]
 
 
-admin.site.register(Language)
+class PharmaceuticalFormTypeAdmin(admin.ModelAdmin):
+    model = PharmaceuticalFormType
+    inlines = [PharmaceuticalFormTypeLocalAdmin]
+
+admin.site.register(PharmaceuticalFormType, PharmaceuticalFormTypeAdmin)
 admin.site.register(MedicineList)
 admin.site.register(Medicine, MedicineAdmin)
