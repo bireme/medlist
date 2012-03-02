@@ -2,7 +2,24 @@
 	<doc>
 		{% for medicine in medicines %}
 			<add>
-				lala
+				<field name="id">{{ medicine.medicine.id }}</field>
+				{% for local in medicine.local %}
+					<field name="name">{{local.language}}^{{local.name}}</field>
+				{% endfor %}
+				
+				{% for form in medicine.forms %}
+					<field name="pharmaceutical_form"><![CDATA[type:"{{form.pharmaceutical_form_type}}";value:"{{form.composition}}"]]></field>
+					<field name="pharmaceutical_form_type">{{form.pharmaceutical_form_type}}</field>
+					{% for list in form.medicineList.all %}
+						<field name="list">{{list.abbreviation}}</field>
+					{% endfor %}
+					{% for country in form.countries.all %}
+						<field name="list">{{country.name}}</field>
+					{% endfor %}
+				{% endfor %}
+				
+				<!-- <field name="section">ANAESTHETICS</field> -->
+				<!-- <field name="subsection">Injectable medicines</field> -->				
 			</add>
 		{% endfor %}
 	</doc>
