@@ -23,6 +23,20 @@ class MedicineList(models.Model):
     def __unicode__(self): 
         return unicode(self.abbreviation)    
 
+class Country(models.Model):
+
+    class Meta:
+        verbose_name = "Country"
+        verbose_name_plural = "Countries"
+
+    abbreviation = models.CharField(max_length=20)
+    name = models.CharField(max_length=255)    
+    
+    date_creation = models.DateTimeField(default=datetime.now, editable=False)
+    
+    def __unicode__(self): 
+        return unicode(self.abbreviation)    
+
 
 class Medicine(models.Model):
 
@@ -98,6 +112,7 @@ class PharmaceuticalForm(models.Model):
     pharmaceutical_form_type =  models.ForeignKey(PharmaceuticalFormType)
     atc_code = models.CharField(max_length=255)
     composition = models.CharField(max_length=255)
+    countries = models.ManyToManyField(Country)
     
     date_creation = models.DateTimeField(default=datetime.now, editable=False)
     
