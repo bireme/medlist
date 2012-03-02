@@ -47,5 +47,6 @@ class PharmaceuticalFormAdmin(admin.ModelAdmin):
 
 admin.site.register(PharmaceuticalFormType, PharmaceuticalFormTypeAdmin)
 admin.site.register(MedicineList)
+admin.site.register(Country)
 admin.site.register(Medicine, MedicineAdmin)
 admin.site.register(PharmaceuticalForm, PharmaceuticalFormAdmin)
