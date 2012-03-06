@@ -1,6 +1,7 @@
 *.pyc
 medlist/tools/csv_dados*
 medlist/tools/json*
+medlist/medlist
 tmp/
 medlist/database
 .DS_Store
