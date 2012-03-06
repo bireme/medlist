@@ -7,10 +7,12 @@
     
 	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
 	
-	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.18.custom.min.js"></script>
 	<script type="text/javascript" src="js/jquery.easing.js"></script>
 	<script type="text/javascript" src="js/jquery.collapse.js"></script>
     
+	<link rel="stylesheet" type="text/css" href="css/smoothness/jquery-ui-1.8.18.custom.css" media="screen" />
     <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen" />
 </head>
 
@@ -59,68 +61,348 @@
 			<div class="content">
 				<div class="mainContent">
 					<div class="blockTitle">Medicine ABCD</div>
-					<div class="highlightBlock">
-						<div class="highlightItem">
-							ATC
-							<strong>0203ABCD</strong>
-						</div>
-						<!--div class="highlightItem">
-							DDD
-							<strong>25 Mg</strong>
-						</div-->
-						<div class="highlightItem checked">
-							Lista Nacional
-							<strong>Brasil</strong>
-						</div>
-						<div class="spacer"></div>
-					</div>
-					<div class="blockSubTitle">Evidence Summary</div>
-					<ul class="listItems">
-						<li>
-							<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
-							<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
-							<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
-						</li>
-						<li>
-							<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
-							<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
-							<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
-						</li>
-						<li>
-							<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
-							<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
-							<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
-						</li>
-					</ul>
-				</div>
-				<div class="sideBar">
-					<div class="sideBarItem" id="lists">
-						<div class="blockSubTitle">Listas</div>
+					<div class="blockSubTitle">Pharmaceutical forms</div>
+					<script>
+					$(function() {
+						$( "#tabs" ).tabs();
+					});
+					</script>
+					<div id="tabs">
 						<ul>
-							<li class="checked">Essential Medicines</li>
-							<li class="checked">Strategic Funds</li>
-							<li class="checked">Hight Cost</li>
+							<li><a href="#tab01">form 01</a></li>
+							<li><a href="#tab02">form 02</a></li>
+							<li><a href="#tab03">form 03</a></li>
+							<li><a href="#tab04">form 04</a></li>
+							<li><a href="#tab05">form 05</a></li>
 						</ul>
-					</div>
-					<div class="sideBarItem" id="countries">
-						<div class="blockSubTitle">Países</div>
-						<div>
-							Argentina, Bolivia, Brasil, Chile, Colombia, Paraguay, Venezuela
+						<div id="tab01">
+							<div class="highlightBlock">
+								<div class="highlightItem">
+									ATC
+									<strong>0203ABCD</strong>
+								</div>
+								<!--div class="highlightItem">
+									DDD
+									<strong>25 Mg</strong>
+								</div-->
+								<div class="highlightItem checked">
+									Lista Nacional
+									<strong>Brasil</strong>
+								</div>
+								<div class="spacer"></div>
+							</div>
+							<div class="mainBlock">
+								<div class="blockSubTitle">Evidence Summary</div>
+								<ul class="listItems">
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+								</ul>
+							</div>
+							<div class="sideBar">
+								<div class="sideBarItem" id="lists">
+									<div class="blockSubTitle">Listas</div>
+									<ul>
+										<li class="checked"><span>YES</span>Essential Medicines</li>
+										<li class="checked"><span>YES</span>Strategic Funds</li>
+										<li class="notchecked"><span>NO</span>Hight Cost</li>
+									</ul>
+								</div>
+								<div class="sideBarItem" id="countries">
+									<div class="blockSubTitle">Países</div>
+									<div>
+										Argentina, Bolivia, Brasil, Chile, Colombia, Paraguay, Venezuela
+									</div>
+								</div>
+								<div class="sideBarItem" id="products">	
+									<div class="blockSubTitle">Products in Brasil</div>
+									<ul>
+										<li>Product 1</li>
+										<li>Product 2</li>
+										<li>Product 3</li>
+										<li>Product 4</li>
+										<li>Product 5</li>
+										<li>Product 6</li>
+									</ul>
+								</div>
+							</div>
+							<div class="spacer"></div>
+						</div>
+						<div id="tab02">
+							<div class="highlightBlock">
+								<div class="highlightItem">
+									ATC
+									<strong>0203BCDE</strong>
+								</div>
+								<!--div class="highlightItem">
+									DDD
+									<strong>25 Mg</strong>
+								</div-->
+								<div class="highlightItem checked">
+									Lista Nacional
+									<strong>A</strong>
+								</div>
+								<div class="spacer"></div>
+							</div>
+							<div class="mainBlock">
+								<div class="blockSubTitle">Evidence Summary</div>
+								<ul class="listItems">
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+								</ul>
+							</div>
+							<div class="sideBar">
+								<div class="sideBarItem" id="lists">
+									<div class="blockSubTitle">Listas</div>
+									<ul>
+										<li class="checked"><span>YES</span>Essential Medicines</li>
+										<li class="checked"><span>YES</span>Strategic Funds</li>
+										<li class="notchecked"><span>NO</span>Hight Cost</li>
+									</ul>
+								</div>
+								<div class="sideBarItem" id="countries">
+									<div class="blockSubTitle">Países</div>
+									<div>
+										Argentina, Bolivia, Brasil, Chile, Colombia, Paraguay, Venezuela
+									</div>
+								</div>
+								<div class="sideBarItem" id="products">	
+									<div class="blockSubTitle">Products in Brasil</div>
+									<ul>
+										<li>Product 1</li>
+										<li>Product 2</li>
+										<li>Product 3</li>
+										<li>Product 4</li>
+										<li>Product 5</li>
+										<li>Product 6</li>
+									</ul>
+								</div>
+							</div>
+							<div class="spacer"></div>
+						</div>
+						<div id="tab03">
+							<div class="highlightBlock">
+								<div class="highlightItem">
+									ATC
+									<strong>0203ABCD</strong>
+								</div>
+								<!--div class="highlightItem">
+									DDD
+									<strong>25 Mg</strong>
+								</div-->
+								<div class="highlightItem checked">
+									Lista Nacional
+									<strong>Brasil</strong>
+								</div>
+								<div class="spacer"></div>
+							</div>
+							<div class="mainBlock">
+								<div class="blockSubTitle">Evidence Summary</div>
+								<ul class="listItems">
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+								</ul>
+							</div>
+							<div class="sideBar">
+								<div class="sideBarItem" id="lists">
+									<div class="blockSubTitle">Listas</div>
+									<ul>
+										<li class="checked"><span>YES</span>Essential Medicines</li>
+										<li class="checked"><span>YES</span>Strategic Funds</li>
+										<li class="notchecked"><span>NO</span>Hight Cost</li>
+									</ul>
+								</div>
+								<div class="sideBarItem" id="countries">
+									<div class="blockSubTitle">Países</div>
+									<div>
+										Argentina, Bolivia, Brasil, Chile, Colombia, Paraguay, Venezuela
+									</div>
+								</div>
+								<div class="sideBarItem" id="products">	
+									<div class="blockSubTitle">Products in Brasil</div>
+									<ul>
+										<li>Product 1</li>
+										<li>Product 2</li>
+										<li>Product 3</li>
+										<li>Product 4</li>
+										<li>Product 5</li>
+										<li>Product 6</li>
+									</ul>
+								</div>
+							</div>
+							<div class="spacer"></div>
+						</div>
+						<div id="tab04">
+							<div class="highlightBlock">
+								<div class="highlightItem">
+									ATC
+									<strong>0203ABCD</strong>
+								</div>
+								<!--div class="highlightItem">
+									DDD
+									<strong>25 Mg</strong>
+								</div-->
+								<div class="highlightItem checked">
+									Lista Nacional
+									<strong>Brasil</strong>
+								</div>
+								<div class="spacer"></div>
+							</div>
+							<div class="mainBlock">
+								<div class="blockSubTitle">Evidence Summary</div>
+								<ul class="listItems">
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+								</ul>
+							</div>
+							<div class="sideBar">
+								<div class="sideBarItem" id="lists">
+									<div class="blockSubTitle">Listas</div>
+									<ul>
+										<li class="checked"><span>YES</span>Essential Medicines</li>
+										<li class="checked"><span>YES</span>Strategic Funds</li>
+										<li class="notchecked"><span>NO</span>Hight Cost</li>
+									</ul>
+								</div>
+								<div class="sideBarItem" id="countries">
+									<div class="blockSubTitle">Países</div>
+									<div>
+										Argentina, Bolivia, Brasil, Chile, Colombia, Paraguay, Venezuela
+									</div>
+								</div>
+								<div class="sideBarItem" id="products">	
+									<div class="blockSubTitle">Products in Brasil</div>
+									<ul>
+										<li>Product 1</li>
+										<li>Product 2</li>
+										<li>Product 3</li>
+										<li>Product 4</li>
+										<li>Product 5</li>
+										<li>Product 6</li>
+									</ul>
+								</div>
+							</div>
+							<div class="spacer"></div>
+						</div>
+						<div id="tab05">
+							<div class="highlightBlock">
+								<div class="highlightItem">
+									ATC
+									<strong>0203ABCD</strong>
+								</div>
+								<!--div class="highlightItem">
+									DDD
+									<strong>25 Mg</strong>
+								</div-->
+								<div class="highlightItem checked">
+									Lista Nacional
+									<strong>Brasil</strong>
+								</div>
+								<div class="spacer"></div>
+							</div>
+							<div class="mainBlock">
+								<div class="blockSubTitle">Evidence Summary</div>
+								<ul class="listItems">
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+									<li>
+										<div class="itemTitle">Lorem Ipsum Dolor Sit Amet</div>
+										<div class="itemDescription">Vivamus bibendum tincidunt metus, eget elementum ante volutpat eu. In quis nibh tellus, sit amet ultrices eros. Nam vitae tellus ultricies dolor condimentum bibendum</div>
+										<div class="itemFooter">Author Name - <span class="date">16/10/2011</span></div>
+									</li>
+								</ul>
+							</div>
+							<div class="sideBar">
+								<div class="sideBarItem" id="lists">
+									<div class="blockSubTitle">Listas</div>
+									<ul>
+										<li class="checked"><span>YES</span>Essential Medicines</li>
+										<li class="checked"><span>YES</span>Strategic Funds</li>
+										<li class="notchecked"><span>NO</span>Hight Cost</li>
+									</ul>
+								</div>
+								<div class="sideBarItem" id="countries">
+									<div class="blockSubTitle">Países</div>
+									<div>
+										Argentina, Bolivia, Brasil, Chile, Colombia, Paraguay, Venezuela
+									</div>
+								</div>
+								<div class="sideBarItem" id="products">	
+									<div class="blockSubTitle">Products in Brasil</div>
+									<ul>
+										<li>Product 1</li>
+										<li>Product 2</li>
+										<li>Product 3</li>
+										<li>Product 4</li>
+										<li>Product 5</li>
+										<li>Product 6</li>
+									</ul>
+								</div>
+							</div>
+							<div class="spacer"></div>
 						</div>
 					</div>
-					<div class="sideBarItem" id="products">	
-						<div class="blockSubTitle">Products in Brasil</div>
-						<ul>
-							<li>Product 1</li>
-							<li>Product 2</li>
-							<li>Product 3</li>
-							<li>Product 4</li>
-							<li>Product 5</li>
-							<li>Product 6</li>
-						</ul>
-					</div>
+					<div class="spacer"></div>
 				</div>
-				<div class="spacer"></div>
 			</div>
 		</div>		
     </div>

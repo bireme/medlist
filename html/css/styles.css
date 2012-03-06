@@ -294,26 +294,36 @@ BODY, TABLE, TD, TH {
 	border-radius: 6px;
 }
 .content .mainContent {
-	float: left;
 	margin-right: 2%;
+	/*width: 73%;*/
+}
+.content .mainContent .mainBlock {
+	float: left;
 	width: 73%;
 }
 .content .sideBar {
 	float: left;
 	width: 22%;
 	margin-left: 3%;
-	margin-top: 36px;
 }
 .sideBarItem {
 	margin-bottom: 20px;
 	line-height: 140%;
 }
-.sideBarItem .checked {
-	padding-left: 22px;
-	background: url(../images/agt_action_success_16px.png) no-repeat;
+.sideBarItem .checked SPAN, .sideBarItem .notchecked SPAN {
+	display: inline-block;
+	width: 24px;
+	margin: 2px 4px 2px 0px;
+	text-align: center;
+	font-size: 70%;
+}
+.sideBarItem .checked SPAN {
+	background: #B2E8AE;
+}
+.sideBarItem .notchecked SPAN {
+	background: #FA9895;
 }
 .blockTitle {
-	float: left;
 	font-size: 160%;
 	font-weight: bold;
 	color: #ff5000;
