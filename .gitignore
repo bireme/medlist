@@ -6,3 +6,4 @@ tmp/
 medlist/database
 .DS_Store
 settings.py
+medlist/media/
