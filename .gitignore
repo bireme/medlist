@@ -5,5 +5,5 @@ medlist/medlist
 tmp/
 medlist/database
 .DS_Store
-settings.py
 medlist/media/
+settings_local.py
