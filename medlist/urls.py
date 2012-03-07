@@ -25,5 +25,5 @@ urlpatterns = patterns('',
 
 # static files in development
 
-if settings.DEBUG:
+if settings.LOCAL:
     urlpatterns += staticfiles_urlpatterns()
