@@ -1,0 +1,29 @@
+{
+    "docs": [
+        {
+            "is_country": false, 
+            "name": "WHO Model List of Essential Medicines", 
+            "is_special_list": true, 
+            "abbreviation": "EML", 
+            "year": 2011, 
+            "type": "L"
+        }, 
+        {
+            "name": "ANAESTHETICS", 
+            "parent": false, 
+            "specialist_care": false, 
+            "pharmaceuticalforms": [
+                {
+                    "only_for_children": true, 
+                    "square_box": true, 
+                    "id": "medicine-pharmaceutical-form-id", 
+                    "specialist_care": true, 
+                    "observation": null
+                }
+            ], 
+            "complementary_list": false, 
+            "type": "S", 
+            "observation": null
+        }
+    ]
+}
