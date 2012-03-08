@@ -1,4 +1,3 @@
-
 "list":{
 	"id": "id-list",
 	"name":"Essential Medicine List",
@@ -17,8 +16,8 @@
     		"id": "medicine-pharmaceutical-form-id",
     		"observation": "xxxxx",
     		"only_for_children": true,
-    		"square_box" : true,
-    		"specialist_care": true
+    		"best_evidence" : true,
+    		"specialist_care_for_children": true
     	},
     	{
     		"id": "medicine-pharmaceutical-form-id"
