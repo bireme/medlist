@@ -1,0 +1,76 @@
+{
+    "id": "EML",
+    "section": {
+        "name": "ANAESTHETICS",
+        "section": {
+            "name": "General anaesthetics and oxygen",
+            "section":{
+            	"name": "Inhalational medicines",
+	            "observation": "xxxxx",
+	            "specialist_care": true,
+	            "parent" : "section-id",
+	            "pharmaceuticalform_list": [
+	            	{
+	            		"id": "medicine-pharmaceutical-form-id",
+	            		"observation": "xxxxx",
+	            		"only_for_children": true,
+	            		"square_box" : true,
+	            		"specialist_care": true
+	            	},
+	            	{
+	            		"id": "medicine-pharmaceutical-form-id"
+	            	},
+	            	{
+	            		"id": "medicine-pharmaceutical-form-id"
+	            	},
+	            	{
+	            		"id": "medicine-pharmaceutical-form-id"
+	            	},
+	            	{
+	            		"id": "medicine-pharmaceutical-form-id"
+
+	            	}
+	            ]
+	        },    
+            "section":{
+            	"name": "Injectable medicines",
+	            "observation": "xxxxx",
+	            "pharmaceuticalform_list": [
+	            	{
+	            		"id": "medicine-pharmaceutical-form-id"
+	            	},
+	            	{
+	            		"id": "medicine-pharmaceutical-form-id"	            		
+	            	}
+	            ]
+	        }    
+        },
+        "section": {
+        	"name" : "Local anaesthetics",
+            "pharmaceuticalform_list": [
+            	{
+            		"id": "medicine-pharmaceutical-form-id"
+            	},
+            	{
+            		"id": "medicine-pharmaceutical-form-id"	            		
+
+            	}
+            ],
+            "section":{
+            	"complementary_list": true,
+            	"observation": "",
+	            "pharmaceuticalform_list": [
+	            	{
+	            		"id": "medicine-pharmaceutical-form-id"
+	            	},
+	            	{
+	            		"id": "medicine-pharmaceutical-form-id"	            		
+
+	            	}
+	            ]
+
+            }
+        }	
+        
+    }
+}

@@ -1,0 +1,37 @@
+
+"list":{
+	"id": "id-list",
+	"name":"Essential Medicine List",
+	"sigla": "EML"
+}
+
+
+"section":{
+	"list": "EML",
+	"name": "Inhalational medicines",
+    "observation": "xxxxx",
+    "specialist_care": true,
+    "parent" : "section-id",
+    "pharmaceuticalform_list": [
+    	{
+    		"id": "medicine-pharmaceutical-form-id",
+    		"observation": "xxxxx",
+    		"only_for_children": true,
+    		"square_box" : true,
+    		"specialist_care": true
+    	},
+    	{
+    		"id": "medicine-pharmaceutical-form-id"
+    	},
+    	{
+    		"id": "medicine-pharmaceutical-form-id"
+    	},
+    	{
+    		"id": "medicine-pharmaceutical-form-id"
+    	},
+    	{
+    		"id": "medicine-pharmaceutical-form-id"
+
+    	}
+    ]
+},    
