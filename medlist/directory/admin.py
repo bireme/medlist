@@ -14,18 +14,6 @@ class MedicineLocalAdmin(admin.TabularInline):
     model = MedicineLocal
     extra = 1
 
-class MedicineListAdmin(admin.StackedInline):
-    model = MedicineList
-    extra = 1
-
-class EvidenceSummaryLocalAdmin(admin.StackedInline):
-    model = EvidenceSummaryLocal
-    extra = 1
-
-class EvidenceSummaryUploadAdmin(admin.StackedInline):
-    model = EvidenceSummaryUpload
-    extra = 1
-
 class MedicineAdmin(admin.ModelAdmin):
     model = Medicine
     inlines = [MedicineLocalAdmin, PharmaceuticalFormAdmin]
@@ -50,13 +38,7 @@ class PharmaceuticalFormAdmin(admin.ModelAdmin):
     search_fields = ('pharmaceutical_form_type__name', 'atc_code', 'composition')
     list_filter = ('pharmaceutical_form_type__name',)
 
-class EvidenceSummaryAdmin(admin.ModelAdmin):
-
-    inlines = [EvidenceSummaryLocalAdmin, EvidenceSummaryUploadAdmin]
 
 admin.site.register(PharmaceuticalFormType, PharmaceuticalFormTypeAdmin)
-admin.site.register(MedicineList)
-admin.site.register(Country)
-admin.site.register(EvidenceSummary, EvidenceSummaryAdmin)
 admin.site.register(Medicine, MedicineAdmin)
 admin.site.register(PharmaceuticalForm, PharmaceuticalFormAdmin)
