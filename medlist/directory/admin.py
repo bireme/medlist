@@ -4,24 +4,29 @@ from models import *
 
 class PharmaceuticalFormAdmin(admin.StackedInline):
     model = PharmaceuticalForm
-    extra = 1
+    extra = 0
 
 class PharmaceuticalFormTypeLocalAdmin(admin.TabularInline):
     model = PharmaceuticalFormTypeLocal
-    extra = 1
+    extra = 0
 
 class MedicineLocalAdmin(admin.TabularInline):
     model = MedicineLocal
-    extra = 1
+    extra = 0
 
 class MedicineAdmin(admin.ModelAdmin):
     model = Medicine
     inlines = [MedicineLocalAdmin, PharmaceuticalFormAdmin]
 
-    list_display = ('__unicode__', 'date_creation',)
+    list_display = ('__unicode__', 'get_link_medicine')
     list_filter = ('date_creation', )
     list_display_links = ('__unicode__',)
     search_fields = ('name', )
+
+    def get_link_medicine(self, obj):
+        output = '<a href="/medicine/%s" target="_blank">Link</a>' % obj.id
+        return unicode(output)
+    get_link_medicine.allow_tags = True
 
 
 class PharmaceuticalFormTypeAdmin(admin.ModelAdmin):
