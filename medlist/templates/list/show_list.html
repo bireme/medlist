@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block "head" %}
+	<script type="text/javascript" src="{{STATIC_URL}}js/jquery.easing.js"></script>
+	<script type="text/javascript" src="{{STATIC_URL}}js/jquery.collapse.js"></script>
+
+	<script type="text/javascript">
+		$(function(){
+			$('#collapser').jqcollapse({
+			   slide: true,
+			   speed: 500,
+			   easing: 'easeOutCubic'
+			});
+		});
+	</script>
+{% endblock %}
+
+{% block "breadcrumb" %}
+	<a href="{{ROOT_URL}}">Home</a> / Lists / {{list.name|capfirst}}
+{% endblock %}
+
+{% block "content" %}
+	<div class="list">
+		<div class="blockTitle">{{list.name}}</div>
+		<div class="orderBy">
+			<select>
+				<option value="">Order by</option>
+				<option value="001">Purpose</option>
+				<option value="002">Disease</option>
+				<option value="003">Alphabetic</option>
+			</select>
+		</div>
+		<div class="spacer"></div>
+
+		<ul id="collapser">
+			{% include "list/section.html" %}
+		</ul>
+	</div>
+{% endblock %}

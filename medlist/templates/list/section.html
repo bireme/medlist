@@ -1,0 +1,43 @@
+{% load mptt_tags %}
+
+{% recursetree nodes %}
+    <li>{{ node.title }}
+        {% if not node.is_leaf_node %}
+            <ul class="children">
+                {{ children }}
+            </ul>
+        {% else %}
+        	<ul>
+        		<li>
+        			<div class="tableContainer">
+        				<table class="genericTable" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<th>Name</th>
+								<th>Form</th>
+								<th>Composition</th>
+							</tr>
+							{% for id, section_forms in pharm_section.items %}
+								{% if id == node.id %}
+									{% for section_form in section_forms %}
+										{% with section_form.pharmaceutical_form as form %}
+											<tr>
+												<td><a href="/medicine/{{form.medicine.id}}" title="#">{{ form.medicine.name }}</a></td>
+												<td>{{form.pharmaceutical_form_type}}</td>
+												<td>{% if form.composition %}
+													{{ form.composition }}
+												{% else %}
+													N/A
+												{% endif %}</td>
+											</tr>
+										{% endwith %}
+
+									{% endfor %}
+								{% endif %}
+							{% endfor %}
+						</table>
+        			</div>
+        		</li>
+        	</ul>
+        {% endif %}
+    </li>
+{% endrecursetree %}

@@ -2,12 +2,8 @@
 
 from django.contrib import admin
 from models import *
-
-def get_child(obj, list={}):
-	if obj.parent:
-		list[obj.id] = get_child()
-	else:
-		return list
+from urllib2 import urlopen
+import json
 
 class SectionPharmFormAdmin(admin.StackedInline):
 	model = SectionPharmForm
@@ -16,38 +12,22 @@ class SectionPharmFormAdmin(admin.StackedInline):
 class SectionAdmin(admin.ModelAdmin):
 
 	inlines = (SectionPharmFormAdmin, )
-	list_display = ('__unicode__', 'get_list_abbreviation', 'get_number_section')
+	list_display = ('title', 'get_list_abbreviation', 'get_parent_title')
+	exclude = ('hierarchy',)
+	list_filter = ('list__abbreviation', )
+	search_fields = ('section', 'list')
 
-	def get_number_section(self, obj):
-		
-		sections = {}
-		count = 1
+class ListAdmin(admin.ModelAdmin):
 
-		obj_sections = Section.objects.filter(list=obj.list)
-		obj_sections = obj_sections.filter(parent=None)
-		for section in obj_sections:
-			
-			tmp = {'number': count}
-			tmp['children'] = {}
-			count2 = 1
+	list_display = ('__unicode__', 'abbreviation', 'is_special', 'is_country', 'get_link_list')
+	list_filter = ('is_country', 'is_special')
+	search_fields = ('abbreviation', 'name', 'id')
 
-			for child in Section.objects.filter(parent=section.id):
-					
-				number = "%s.%s" % (count, count2)
-				tmp2 = {'number': number}
-				tmp['children'][child.id] = tmp2
-				count2 += 1
+	def get_link_list(self, obj):
+		output = '<a href="/list/%s" target="_blank">Link</a>' % obj.id
+		return unicode(output)
+	get_link_list.allow_tags = True
 
-				if child.id == obj.id:
-					return number
-
-			count += 1
-			sections[section.id] = tmp
-
-			if section.id == obj.id:
-					return count
-
-		return unicode()
 
 admin.site.register(Section, SectionAdmin)
-admin.site.register(List)
+admin.site.register(List, ListAdmin)

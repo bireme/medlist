@@ -11,13 +11,13 @@
 {% block "breadcrumb" %}
 	<a href="{{ ROOT_URL }}">Home</a> / 
 	<a href="">List of Essential Medicines</a> / 
-	{{medicine.name}}
+	{{medicine.name|capfirst}}
 {% endblock %}
 
 {% block "content" %}
 
 	<div class="mainContent">
-		<div class="blockTitle">{{medicine.name}}</div>
+		<div class="blockTitle">{{medicine.name|capfirst}}</div>
 		<div class="blockSubTitle">Pharmaceutical forms</div>
 		<script>
 		$(function() {
@@ -34,67 +34,50 @@
 			{% for form_id,form in forms.items %}
 				<div id="tab0{{forloop.counter}}">
 					<div class="highlightBlock">
+						
 						<div class="highlightItem">
-							ATC
-							<strong>{{ form.form.atc_code }}</strong>
+							{% if form.form.atc_code %}
+								ATC
+								<strong>{{ form.form.atc_code }}</strong>
+							{% else %}
+								ATC
+								<strong>N/A</strong>
+							{% endif %}
 						</div>
+
 						<div class="highlightItem">
-							Composition
-							<strong>{{ form.form.composition }}</strong>
+							{% if form.form.composition %}
+								Composition
+								<strong>{{ form.form.composition }}</strong>
+							{% else %}
+								Composition
+								<strong>N/A</strong>
+							{% endif %}
 						</div>
 
 						<div class="spacer"></div>
 
 					</div>
-					<div class="mainBlock">
 
-						{% if form.evidence|length > 0%}
-							<div class="blockSubTitle">Evidence Summary</div>
-							<ul class="listItems">
-								{% for evidence in form.evidence %}
-									<div class="itemTitle">{{evidence.evidence.title}}</div>
-									<div class="itemDescription">{{evidence.evidence.abstract}}</div>
-									<div class="itemFooter">
-										<span class="files">Files:</span><br>
-										<ul>
-											{% for file in evidence.file %}
-												<li><a href="{{file.get_relative_url}}">{{file.title}}</a></li>
-											{% endfor %}
-										</ul>
-										Author Name - <span class="date">16/10/2011</span>
-									</div>
-								{% endfor %}
-							</ul>
-						{% else %}
-							<div class="blockSubTitle">(This form no have evidences yet)</div>
-						{% endif %}
-						
+					<div class="mainBlock">
+						<div class="blockSubTitle">(This form no have evidences yet)</div>	
 					</div>
+
 					<div class="sideBar">
 						<div class="sideBarItem" id="lists">
 
 							<div class="blockSubTitle">Listas</div>
 							<ul>
-								{% for list in all_lists %}
-									{% if list in form.medicineList.all %}
-										<li class="checked"><span>YES</span>{{list}}</li>
-									{% else %}
-										<li class="notchecked"><span>NO</span>{{list}}</li> 
-									{% endif %}
-								{% endfor %}
+								<li class="checked"><span>YES</span>{{list}}</li>
 							</ul>
 						</div>
 
-						{% if form.form.countries.count > 0 %}
-							<div class="sideBarItem" id="countries">
-								<div class="blockSubTitle">Países</div>
-								<div>
-									{% for country in form.form.countries.all %}
-										{{ country }}{% if not forloop.last %},{% endif %}
-									{% endfor %}
-								</div>
+						<div class="sideBarItem" id="countries">
+							<div class="blockSubTitle">Países</div>
+							<div>
+								Argentina, Brasil.
 							</div>
-						{% endif %}
+						</div>
 						
 					</div>
 					<div class="spacer"></div>
