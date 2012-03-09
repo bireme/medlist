@@ -19,7 +19,6 @@ class MedicineAdmin(admin.ModelAdmin):
     inlines = [MedicineLocalAdmin, PharmaceuticalFormAdmin]
 
     list_display = ('__unicode__', 'get_link_medicine')
-    list_filter = ('date_creation', )
     list_display_links = ('__unicode__',)
     search_fields = ('name', )
 
