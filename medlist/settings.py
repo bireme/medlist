@@ -146,6 +146,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'medlist.directory',
     'medlist.list',
+    'mptt',
 )
 
 # A sample logging configuration. The only tangible logging
