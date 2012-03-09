@@ -28,9 +28,9 @@ class MedicineLocal(models.Model):
         verbose_name = "Medicine Translation"
         verbose_name_plural = "Medicine Translations"
 
-    medicine = models.ForeignKey(Medicine)
-    language = models.CharField(max_length=10, choices=LANGUAGES_CHOICES)
-    name = models.CharField(max_length=255)
+    medicine = models.ForeignKey(Medicine, verbose_name=_("medicine"))
+    language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
+    name = models.CharField(_("name"), max_length=255)
     
     class Meta:
         verbose_name = "Medicine Translation"
@@ -42,7 +42,7 @@ class PharmaceuticalFormType(models.Model):
         verbose_name = "Pharmaceutical Form Type"
         verbose_name_plural = "Pharmaceutical Form Types"
 
-    name = models.CharField(max_length=255)
+    name = models.CharField(_("name"), max_length=255)
     
     created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)   
 
@@ -56,8 +56,8 @@ class PharmaceuticalFormTypeLocal(models.Model):
         verbose_name_plural = "Pharmaceutical Form Type Translations"
 
     pharmaceutical_form_type = models.ForeignKey(PharmaceuticalFormType)
-    language = models.CharField(max_length=10, choices=LANGUAGES_CHOICES)
-    name = models.CharField(max_length=255)
+    language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
+    name = models.CharField(_("name"), max_length=255)
 
 class PharmaceuticalForm(models.Model):
 
@@ -65,11 +65,11 @@ class PharmaceuticalForm(models.Model):
         verbose_name = "Pharmaceutical Form"
         verbose_name_plural = "Pharmaceutical Forms"
 
-    medicine = models.ForeignKey(Medicine)
+    medicine = models.ForeignKey(Medicine, verbose_name=_("medicine"))
     #list = models.ManyToManyField('List', blank=True)
-    pharmaceutical_form_type =  models.ForeignKey(PharmaceuticalFormType)
-    atc_code = models.CharField(max_length=255, blank=True)
-    composition = models.CharField(max_length=255, blank=True)
+    pharmaceutical_form_type =  models.ForeignKey(PharmaceuticalFormType, verbose_name=_("pharmaceutical form type"))
+    atc_code = models.CharField(_("atc code"), max_length=255, blank=True)
+    composition = models.CharField(_("composition"), max_length=255, blank=True)
     
     created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)
     
@@ -82,4 +82,3 @@ class PharmaceuticalForm(models.Model):
             output += "%s" % (self.composition)
 
         return unicode(output)
-
