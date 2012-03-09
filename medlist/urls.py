@@ -20,7 +20,12 @@ urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
 
     url(r'^api/iahx/?$', 'medlist.api.views.iahx'),
+    url(r'^api/get_hierarchy_relation/(\d+)/?$', 'medlist.api.views.get_hierarchy_relation'),
+    url(r'^api/get_section_parents/(\d+)/?$', 'medlist.api.views.get_section_parents'),
+    
     url(r'^medicine/(\d+)/?$', 'medlist.directory.views.show_medicine'),
+    
+    url(r'^list/(\d+)/?$', 'medlist.list.views.show_list'),
 )
 
 # static files in development
