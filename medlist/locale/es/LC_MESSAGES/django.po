@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-12 13:38-0300\n"
+"POT-Creation-Date: 2012-03-12 16:04-0300\n"
 "PO-Revision-Date: 2012-03-12 13:42-0300\n"
 "Last-Translator: Vinicius Andrade <vinicius.andrade@bireme.org>\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
@@ -17,27 +17,20 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: directory/models.py:17
-#: directory/models.py:47
-#: directory/models.py:74
-#: list/models.py:19
-#: list/models.py:39
+#: directory/models.py:17 directory/models.py:47 directory/models.py:74
+#: list/models.py:19 list/models.py:39
 msgid "date creation"
 msgstr ""
 
-#: directory/models.py:31
-#: directory/models.py:68
+#: directory/models.py:31 directory/models.py:68
 msgid "medicine"
 msgstr ""
 
-#: directory/models.py:32
-#: directory/models.py:59
+#: directory/models.py:32 directory/models.py:59
 msgid "language"
 msgstr ""
 
-#: directory/models.py:33
-#: directory/models.py:45
-#: directory/models.py:60
+#: directory/models.py:33 directory/models.py:45 directory/models.py:60
 #: list/models.py:13
 msgid "name"
 msgstr ""
@@ -54,8 +47,7 @@ msgstr ""
 msgid "composition"
 msgstr ""
 
-#: list/models.py:10
-#: list/models.py:35
+#: list/models.py:10 list/models.py:35
 msgid "list"
 msgstr ""
 
@@ -79,8 +71,7 @@ msgstr ""
 msgid "country list"
 msgstr ""
 
-#: list/models.py:27
-#: list/models.py:55
+#: list/models.py:27 list/models.py:55
 msgid "section"
 msgstr ""
 
@@ -100,8 +91,7 @@ msgstr ""
 msgid "complementary list"
 msgstr ""
 
-#: list/models.py:37
-#: list/models.py:59
+#: list/models.py:37 list/models.py:59
 msgid "observation"
 msgstr ""
 
@@ -115,6 +105,15 @@ msgstr ""
 
 #: list/models.py:58
 msgid "specialist care for children"
+msgstr ""
+
+#: templates/base-index.html:12 templates/base.html:12 templates/top.html:23
+#: templates/directory/show_medicine.html:16 templates/list/show_list.html:23
+msgid "List of Essential Medicines"
+msgstr "Lista de Medicamentos Esenciales"
+
+#: templates/top.html:5 templates/main/index.html:4
+msgid "Home"
 msgstr ""
 
 #: templates/top.html:6
@@ -133,29 +132,63 @@ msgstr "Contáctenos"
 msgid "I Forgot my login data"
 msgstr "He olvidado mis datos de acceso"
 
-#: templates/top.html:23
-#: templates/directory/show_medicine.html:14
-msgid "List of Essential Medicines"
-msgstr "Lista de Medicamentos Esenciales"
+#: templates/directory/show_medicine.html:12
+msgid "Medicine"
+msgstr ""
 
-#: templates/directory/show_medicine.html:22
+#: templates/directory/show_medicine.html:25
 msgid "Pharmaceutical forms"
 msgstr "Formas farmacéuticas"
 
-#: templates/directory/show_medicine.html:51
 #: templates/directory/show_medicine.html:54
+#: templates/directory/show_medicine.html:57
 msgid "Composition"
 msgstr "Composición"
 
-#: templates/directory/show_medicine.html:64
+#: templates/directory/show_medicine.html:67
 msgid "This medicine no have evidences yet"
 msgstr "Este medicamento aún no tienen evidencias"
 
-#: templates/directory/show_medicine.html:70
+#: templates/directory/show_medicine.html:73
 msgid "Lists"
 msgstr "Listas"
 
-#: templates/directory/show_medicine.html:77
+#: templates/directory/show_medicine.html:80
 msgid "Country list"
 msgstr "Lista de paises"
 
+#: templates/list/show_list.html:4
+#, fuzzy
+msgid "List"
+msgstr "Listas"
+
+#: templates/main/index.html:8
+#, fuzzy
+msgid "Essential Medicines"
+msgstr "Lista de Medicamentos Esenciales"
+
+#: templates/main/index.html:10 templates/main/index.html.py:21
+#, fuzzy
+msgid "Compare lists"
+msgstr "Lista de paises"
+
+#: templates/main/index.html:13
+msgid "General List"
+msgstr ""
+
+#: templates/main/index.html:14
+msgid "Medicine for Children"
+msgstr ""
+
+#: templates/main/index.html:19
+#, fuzzy
+msgid "PAHO Lists"
+msgstr "Listas"
+
+#: templates/main/index.html:31
+msgid "National Forms"
+msgstr ""
+
+#: templates/main/index.html:34
+msgid "Select Country"
+msgstr ""

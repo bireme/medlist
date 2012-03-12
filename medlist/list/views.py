@@ -2,6 +2,7 @@
 
 from medlist.list.models import *
 from django.shortcuts import HttpResponse, render_to_response, get_object_or_404
+from django.template import RequestContext
 
 def get_parents(id):
 	output = {}
@@ -27,7 +28,7 @@ def show_list(request, list):
 	output['nodes'] = sections
 	output['pharm_section'] = pharm_section
 	
-	return render_to_response('list/show_list.html', output)
+	return render_to_response('list/show_list.html', output, context_instance=RequestContext(request))
 
 
 

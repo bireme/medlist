@@ -1,6 +1,9 @@
 {% extends "base.html" %}
+{% load i18n %}
 
-{% block "head" %}
+{% block "title" %}{{ list.name|capfirst }} | {% trans "List" %} | {% endblock %}
+
+{% block "extrahead" %}
 	<script type="text/javascript" src="{{STATIC_URL}}js/jquery.easing.js"></script>
 	<script type="text/javascript" src="{{STATIC_URL}}js/jquery.collapse.js"></script>
 
@@ -16,7 +19,10 @@
 {% endblock %}
 
 {% block "breadcrumb" %}
-	<a href="{{ROOT_URL}}">Home</a> / Lists / {{list.name|capfirst}}
+	<a href="{{ROOT_URL}}">Home</a> / 
+	<a href="http://{{request.META.HTTP_HOST}}" title="{% trans "List of Essential Medicines" %}">{% trans "List of Essential Medicines" %}</a> /
+	<a>Lists</a> /
+	{{list.name|capfirst}}
 {% endblock %}
 
 {% block "content" %}

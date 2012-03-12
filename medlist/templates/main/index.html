@@ -1,10 +1,13 @@
 {% extends "base-index.html" %}
+{% load i18n %}
+
+{% block "title" %}{% trans "Home" %} | {% endblock %}
 
 {% block "content" %}
 	<div class="contentBlock">
-		<div class="bTitle">Essential Medicines</div>
+		<div class="bTitle">{% trans "Essential Lists" %}</div>
 		<div class="innerBlock">
-			<div class="compare"><a href="">Compare lists</a></div>
+			<div class="compare"><a href="">{% trans "Compare lists" %}</a></div>
 			<div class="spacer"></div>
 			<ul>
 				<li><a href="01-list.html">General List</a></li>
@@ -13,22 +16,22 @@
 		</div>
 	</div>
 	<div class="contentBlock">
-		<div class="bTitle">PAHO Lists</div>
+		<div class="bTitle">{% trans "PAHO Lists" %}</div>
 		<div class="innerBlock">
-			<div class="compare"><a href="">Compare lists</a></div>
+			<div class="compare"><a href="">{% trans "Compare lists" %}</a></div>
 			<div class="spacer"></div>
 			<ul>				
 				{% for list in lists_special %}
-					<li><a href="#" title="{{list.name}}">{{ list.name|truncatewords:"4" }}</a></li>
+					<li><a href="#" title="{{list.name}}">{{ list.name|truncatewords:"6" }}</a></li>
 				{% endfor %}
 			</ul>
 		</div>
 	</div>
 	<div class="contentBlock">
-		<div class="bTitle">National Forms</div>
+		<div class="bTitle">{% trans "National Forms" %}</div>
 		<div class="innerBlock">
 			<select>
-				<option value="">Select Country</option>
+				<option value="">{% trans "Select Country" %}</option>
 				{% for list in lists_country %}
 					<option value="ar">{{ list }}</option>
 				{% endfor %}

@@ -25,6 +25,7 @@ def show_medicine(request, id):
 		'forms': new_forms,
 	})
 
-	return render_to_response('directory/show_medicine.html', dict_response)
+	return render_to_response('directory/show_medicine.html', dict_response, 
+		context_instance=RequestContext(request))
 
 

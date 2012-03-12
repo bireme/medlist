@@ -9,9 +9,12 @@
 	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/smoothness/jquery-ui-1.8.18.custom.css" media="screen" />
 {% endblock %}
 
+{% block "title" %}{{ medicine.name|capfirst }} | {% trans "Medicine" %} | {% endblock %}
+
 {% block "breadcrumb" %}
 	<a href="{{ ROOT_URL }}">Home</a> / 
-	<a href="">{% trans "List of Essential Medicines" %}</a> / 
+	<a href="http://{{request.META.HTTP_HOST}}">{% trans "List of Essential Medicines" %}</a> / 
+	<a>Medicines</a> /
 	{{medicine.name|capfirst}}
 {% endblock %}
 

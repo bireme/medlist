@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 {% get_static_prefix as STATIC_URL %}
 <html>
 	<head>
@@ -7,12 +8,8 @@
 		<script type="text/javascript" src="{{ STATIC_URL }}/js/jquery-1.7.1.min.js"></script>
 		<script type="text/javascript" src="{{ STATIC_URL }}/js/functions.js"></script>
 		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/styles.css" media="screen" />
-    	<script language="javascript">
-    		function change_lang(new_lang) {
-    			$('#lang').val(new_lang); 
-    			$('form#setlang').submit();
-    		}
-	   	</script>
+
+		<title>{% block "title" %}{% endblock %}{% trans "List of Essential Medicines" %}</title>
 
 		{% block "extrahead" %}{% endblock %}
 	</head>
