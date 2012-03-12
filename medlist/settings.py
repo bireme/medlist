@@ -1,6 +1,6 @@
 #! coding: utf-8
 # Django settings for medlist project.
-import os
+import os, re
 
 LOCAL = False
 DEBUG = False
@@ -99,8 +99,10 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.i18n',
     'django.core.context_processors.media',
     'django.core.context_processors.static',
+    'django.core.context_processors.request',
     'django.contrib.auth.context_processors.auth',
     'django.contrib.messages.context_processors.messages',
+    'medlist.settings.settings_context',
 )
 
 # List of finder classes that know how to find static files in
@@ -180,3 +182,12 @@ LOGGING = {
     }
 }
 
+# this adding the constants of settings to template context
+_context = {} 
+local_context = locals()
+for (k,v) in local_context.items():
+    if re.search('^[A-Z0-9_]+$',k):
+        _context[k] = str(v)
+
+def settings_context(context):
+    return _context
