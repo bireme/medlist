@@ -18,7 +18,7 @@ urlpatterns = patterns('',
 
     # Uncomment the next line to enable the admin:
     url(r'^admin/', include(admin.site.urls)),
-
+    
     url(r'^api/iahx/?$', 'medlist.api.views.iahx'),
     url(r'^api/get_hierarchy_relation/(\d+)/?$', 'medlist.api.views.get_hierarchy_relation'),
     url(r'^api/get_section_parents/(\d+)/?$', 'medlist.api.views.get_section_parents'),
@@ -30,6 +30,7 @@ urlpatterns = patterns('',
     # internationalization
     url(r'^i18n/', include('django.conf.urls.i18n')),
 
+    url(r'^', 'medlist.main.views.index'),
 )
 
 # static files in development

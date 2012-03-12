@@ -10,11 +10,14 @@
 		{% block "extrahead" %}{% endblock %}
 	</head>
 	<body>
-		<div class="container">
+		<div class="container home">
         {% include "top.html" %}
 		<div class="middle">
-			<div class="breadcrumb">
-				{% block "breadcrumb" %}{% endblock %}
+			<div id="searchBox">
+				<form name="search" method="post">
+					<input type="text" class="textEntry"/>
+					<input type="submit" class="submit" id="searchSubmit" value=""/>
+				</form>
 			</div>
 			<div class="content">
 				{% block "content" %}{% endblock %}

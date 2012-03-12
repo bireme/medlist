@@ -1,0 +1,39 @@
+{% extends "base-index.html" %}
+
+{% block "content" %}
+	<div class="contentBlock">
+		<div class="bTitle">Essential Medicines</div>
+		<div class="innerBlock">
+			<div class="compare"><a href="">Compare lists</a></div>
+			<div class="spacer"></div>
+			<ul>
+				<li><a href="01-list.html">General List</a></li>
+				<li><a href="#">Medicine for Children</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="contentBlock">
+		<div class="bTitle">PAHO Lists</div>
+		<div class="innerBlock">
+			<div class="compare"><a href="">Compare lists</a></div>
+			<div class="spacer"></div>
+			<ul>				
+				{% for list in lists_special %}
+					<li><a href="#" title="{{list.name}}">{{ list.name|truncatewords:"4" }}</a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	<div class="contentBlock">
+		<div class="bTitle">National Forms</div>
+		<div class="innerBlock">
+			<select>
+				<option value="">Select Country</option>
+				{% for list in lists_country %}
+					<option value="ar">{{ list }}</option>
+				{% endfor %}
+			</select>
+		</div>
+	</div>
+	<div class="spacer"></div>
+{% endblock %}
