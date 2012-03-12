@@ -26,6 +26,10 @@ urlpatterns = patterns('',
     url(r'^medicine/(\d+)/?$', 'medlist.directory.views.show_medicine'),
     
     url(r'^list/(\d+)/?$', 'medlist.list.views.show_list'),
+
+    # internationalization
+    url(r'^i18n/', include('django.conf.urls.i18n')),
+
 )
 
 # static files in development

@@ -55,5 +55,5 @@ class SectionPharmForm(models.Model):
 	section = models.ForeignKey(Section, verbose_name=_("section"))
 	pharmaceutical_form = models.ForeignKey(PharmaceuticalForm, verbose_name=_("pharmaceutical form"))
 	only_for_children = models.BooleanField(_("only for children"))
-	specialist_care_for_children = models.BooleanField(_("specialist carte for children"))
+	specialist_care_for_children = models.BooleanField(_("specialist care for children"))
 	observation = models.TextField(_("observation"), blank=True, null=True)
