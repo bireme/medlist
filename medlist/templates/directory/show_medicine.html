@@ -1,4 +1,5 @@
 {% extends "base.html" %}
+{% load i18n %}
 
 {% block "extrahead" %}
 	<script type="text/javascript" src="{{STATIC_URL}}/js/jquery-ui-1.8.18.custom.min.js"></script>
@@ -10,7 +11,7 @@
 
 {% block "breadcrumb" %}
 	<a href="{{ ROOT_URL }}">Home</a> / 
-	<a href="">List of Essential Medicines</a> / 
+	<a href="">{% trans "List of Essential Medicines" %}</a> / 
 	{{medicine.name|capfirst}}
 {% endblock %}
 
@@ -18,7 +19,7 @@
 
 	<div class="mainContent">
 		<div class="blockTitle">{{medicine.name|capfirst}}</div>
-		<div class="blockSubTitle">Pharmaceutical forms</div>
+		<div class="blockSubTitle">{% trans "Pharmaceutical forms" %}</div>
 		<script>
 		$(function() {
 			$( "#tabs" ).tabs();
@@ -47,10 +48,10 @@
 
 						<div class="highlightItem">
 							{% if form.form.composition %}
-								Composition
+								{% trans "Composition" %}
 								<strong>{{ form.form.composition }}</strong>
 							{% else %}
-								Composition
+								{% trans "Composition" %}
 								<strong>N/A</strong>
 							{% endif %}
 						</div>
@@ -60,20 +61,20 @@
 					</div>
 
 					<div class="mainBlock">
-						<div class="blockSubTitle">(This form no have evidences yet)</div>	
+						<div class="blockSubTitle">({% trans "This medicine no have evidences yet" %})</div>	
 					</div>
 
 					<div class="sideBar">
 						<div class="sideBarItem" id="lists">
 
-							<div class="blockSubTitle">Listas</div>
+							<div class="blockSubTitle">{% trans "Lists" %}</div>
 							<ul>
 								<li class="checked"><span>YES</span>{{list}}</li>
 							</ul>
 						</div>
 
 						<div class="sideBarItem" id="countries">
-							<div class="blockSubTitle">Países</div>
+							<div class="blockSubTitle">{% trans "Country list" %}</div>
 							<div>
 								Argentina, Brasil.
 							</div>

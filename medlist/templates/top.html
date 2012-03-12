@@ -1,10 +1,11 @@
+{% load i18n %}
 <div class="top">
 	<div class="topMenu">
 		<ul>
 			<li><a href="http://stela.org.br/regionalplatform/">Home</a></li>
-			<li><a href="#">About us</a></li>
-			<li><a href="#">Send us a comment</a></li>
-			<li><a href="#">Contact us</a></li>
+			<li><a href="#">{% trans "About us" %}</a></li>
+			<li><a href="#">{% trans "Send us a comment" %}</a></li>
+			<li><a href="#">{% trans "Contact us" %}</a></li>
 		</ul>
 	</div>
 	<div class="loginBox">
@@ -13,23 +14,29 @@
 			<input type="password" class="textEntry" />
 			<input type="submit" class="submit" value="" />
 		</form>
-		<div id="forgotPass"><a href="#">I Forgot my login data</a></div>
+		<div id="forgotPass"><a href="#">{% trans "I Forgot my login data" %}</a></div>
 	</div>
 	<div class="spacer"></div>
 	<div class="banner">
 		<div id="logo"><span>Regional Platform for Innovation and Access for Health</span></div>
 		<div class="identification">
-			List of Essential Medicines
+			{% trans "List of Essential Medicines" %}
 		</div>
 		<!--div id="joinToday">
 			<div id="signInMsg"><span>>>Join today!<br/>Begin today to interact</span></div>
 			<div id="signupButton"><a href="#"><span>Sign up</span></a></div>
 		</div-->
 		<div class="langSelector">
+			<form action="/i18n/setlang/" method="post" id="setlang">
+				{% csrf_token %}
+				<input name="next" type="hidden" value="{{ redirect_to }}" />
+				<input name="language" type="hidden" value=""  id="lang"/>
+			</form>					
+		
 			<ul>
-				<li><a id="lang_en" href="#"><span>English</span></a></li>
-				<li><a id="lang_pt" href="#"><span>Português</span></a></li>
-				<li><a id="lang_es" href="#"><span>Español</span></a></li>
+				<li><a id="lang_en" href="#" onclick="change_lang('en')" ><span>English</span></a></li>
+				<li><a id="lang_pt" href="#" onclick="change_lang('pt-BR')" ><span>Português</span></a></li>
+				<li><a id="lang_es" href="#" onclick="change_lang('es')"><span>Español</span></a></li>
 			</ul>
 		</div>
 	</div>

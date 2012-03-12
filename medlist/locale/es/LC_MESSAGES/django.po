@@ -1,0 +1,161 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: medlist-0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-03-12 13:38-0300\n"
+"PO-Revision-Date: 2012-03-12 13:42-0300\n"
+"Last-Translator: Vinicius Andrade <vinicius.andrade@bireme.org>\n"
+"Language-Team: BIREME <reddes@bireme.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: directory/models.py:17
+#: directory/models.py:47
+#: directory/models.py:74
+#: list/models.py:19
+#: list/models.py:39
+msgid "date creation"
+msgstr ""
+
+#: directory/models.py:31
+#: directory/models.py:68
+msgid "medicine"
+msgstr ""
+
+#: directory/models.py:32
+#: directory/models.py:59
+msgid "language"
+msgstr ""
+
+#: directory/models.py:33
+#: directory/models.py:45
+#: directory/models.py:60
+#: list/models.py:13
+msgid "name"
+msgstr ""
+
+#: directory/models.py:70
+msgid "pharmaceutical form type"
+msgstr "tipo de forma farmacéutica"
+
+#: directory/models.py:71
+msgid "atc code"
+msgstr ""
+
+#: directory/models.py:72
+msgid "composition"
+msgstr ""
+
+#: list/models.py:10
+#: list/models.py:35
+msgid "list"
+msgstr ""
+
+#: list/models.py:11
+msgid "lists"
+msgstr ""
+
+#: list/models.py:14
+msgid "abbreviation"
+msgstr ""
+
+#: list/models.py:15
+msgid "year of publication"
+msgstr ""
+
+#: list/models.py:16
+msgid "special list"
+msgstr ""
+
+#: list/models.py:17
+msgid "country list"
+msgstr ""
+
+#: list/models.py:27
+#: list/models.py:55
+msgid "section"
+msgstr ""
+
+#: list/models.py:28
+msgid "sections"
+msgstr ""
+
+#: list/models.py:33
+msgid "title"
+msgstr ""
+
+#: list/models.py:34
+msgid "parent section"
+msgstr ""
+
+#: list/models.py:36
+msgid "complementary list"
+msgstr ""
+
+#: list/models.py:37
+#: list/models.py:59
+msgid "observation"
+msgstr ""
+
+#: list/models.py:56
+msgid "pharmaceutical form"
+msgstr ""
+
+#: list/models.py:57
+msgid "only for children"
+msgstr ""
+
+#: list/models.py:58
+msgid "specialist care for children"
+msgstr ""
+
+#: templates/top.html:6
+msgid "About us"
+msgstr "Acerca"
+
+#: templates/top.html:7
+msgid "Send us a comment"
+msgstr "Envíe sus comentarios"
+
+#: templates/top.html:8
+msgid "Contact us"
+msgstr "Contáctenos"
+
+#: templates/top.html:17
+msgid "I Forgot my login data"
+msgstr "He olvidado mis datos de acceso"
+
+#: templates/top.html:23
+#: templates/directory/show_medicine.html:14
+msgid "List of Essential Medicines"
+msgstr "Lista de Medicamentos Esenciales"
+
+#: templates/directory/show_medicine.html:22
+msgid "Pharmaceutical forms"
+msgstr "Formas farmacéuticas"
+
+#: templates/directory/show_medicine.html:51
+#: templates/directory/show_medicine.html:54
+msgid "Composition"
+msgstr "Composición"
+
+#: templates/directory/show_medicine.html:64
+msgid "This medicine no have evidences yet"
+msgstr "Este medicamento aún no tienen evidencias"
+
+#: templates/directory/show_medicine.html:70
+msgid "Lists"
+msgstr "Listas"
+
+#: templates/directory/show_medicine.html:77
+msgid "Country list"
+msgstr "Lista de paises"
+

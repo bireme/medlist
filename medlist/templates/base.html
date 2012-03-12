@@ -6,7 +6,13 @@
 
 		<script type="text/javascript" src="{{ STATIC_URL }}/js/jquery-1.7.1.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/styles.css" media="screen" />
-
+    	<script language="javascript">
+    		function change_lang(new_lang) {
+    			$('#lang').val(new_lang); 
+    			$('form#setlang').submit();
+    		}
+	   	</script>
+		
 		{% block "extrahead" %}{% endblock %}
 	</head>
 	<body>
