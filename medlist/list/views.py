@@ -18,7 +18,7 @@ def show_list(request, id):
 
 	list = get_object_or_404(List, pk=id)
 
-	sections = Section.tree.all()
+	sections = Section.tree.filter(list=list)
 
 	pharm_section = {}
 	for section in sections:
