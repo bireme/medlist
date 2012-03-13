@@ -156,6 +156,7 @@ INSTALLED_APPS = (
     # 'django.contrib.admindocs',
     'medlist.directory',
     'medlist.list',
+    'medlist.history',
     'mptt',
 )
 
