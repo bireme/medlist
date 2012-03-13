@@ -27,6 +27,9 @@ class MedicineAdmin(admin.ModelAdmin):
         return unicode(output)
     get_link_medicine.allow_tags = True
 
+    # removes delete option
+    def has_delete_permission(self, request, obj=None):
+        return False
 
 class PharmaceuticalFormTypeAdmin(admin.ModelAdmin):
     model = PharmaceuticalFormType
@@ -41,6 +44,10 @@ class PharmaceuticalFormAdmin(admin.ModelAdmin):
     list_display = ('__unicode__', 'composition', 'medicine', 'atc_code')
     search_fields = ('pharmaceutical_form_type__name', 'atc_code', 'composition')
     list_filter = ('pharmaceutical_form_type__name',)
+
+    # removes delete option
+    def has_delete_permission(self, request, obj=None):
+        return False
 
 
 admin.site.register(PharmaceuticalFormType, PharmaceuticalFormTypeAdmin)
