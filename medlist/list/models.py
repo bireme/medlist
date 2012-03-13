@@ -12,6 +12,12 @@ class List(models.Model):
 			('p', _('PAHO List')),
 			('w', _('WHO List')),
 		)
+	LIST_SUBTYPES = (
+			('e', _('EML')),
+			('c', _('EML Children')),
+			('h', _('High Cost')),
+			('s', _('Strategic Fund')),
+		)
 
 	class Meta:
 		verbose_name = _("list")
@@ -21,6 +27,7 @@ class List(models.Model):
 	abbreviation = models.CharField(_("abbreviation"), max_length=50)
 	year = models.IntegerField(_("year of publication"))
 	type = models.CharField(_("Type"), max_length=1, choices=LIST_TYPES)
+	subtype = models.CharField(_("Sub-Type"), max_length=1, choices=LIST_SUBTYPES, null=True, blank=True)
 
 	created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)
 

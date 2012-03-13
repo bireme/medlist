@@ -2,6 +2,7 @@
 from medlist.directory.models import *
 from django.shortcuts import render_to_response, HttpResponse
 from django.template import RequestContext
+from medlist.list.models import *
 
 def show_medicine(request, id):
 	
@@ -19,10 +20,29 @@ def show_medicine(request, id):
 		new_forms[form.id] = {}
 		new_forms[form.id]['form'] = form
 
+	forms = []
+	for form in pharm_forms:
+		forms += SectionPharmForm.objects.filter(pharmaceutical_form=form)
+
+	tmp_lists = {}
+	tmp_countries = {}
+	for form in forms:
+		for section in Section.objects.filter(sectionpharmform=form):
+			if section.list.type == 'c':
+				tmp_countries[section.list.name] = True
+			else:
+				tmp_lists[section.list.subtype] = True
+							
+
+	lists = tmp_lists.keys()
+	countries = tmp_countries.keys()
+
 	dict_response = RequestContext (request, {
 		'medicine': medicine,
 		'pharm_forms': pharm_forms,
 		'forms': new_forms,
+		'lists': lists,
+		'countries': countries,
 	})
 
 	return render_to_response('directory/show_medicine.html', dict_response, 
