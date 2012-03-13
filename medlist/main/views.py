@@ -5,12 +5,14 @@ from django.template import RequestContext
 def index(request):
 
 	lists = List.objects.all()
-	country = lists.filter(is_country=True)
-	special = lists.filter(is_special=True)
+	paho_lists = lists.filter(type="p")
+	who_lists = lists.filter(type="w")
+	country_lists = lists.filter(type="c")
 
 	dict_response = RequestContext (request, {
-		'lists_country': country,
-		'lists_special': special,
+		'paho_lists' : paho_lists,
+		"who_lists" : who_lists,
+		"country_lists" : country_lists,
 	})
 
 	return render_to_response("main/index.html", dict_response)

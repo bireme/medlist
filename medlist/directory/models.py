@@ -19,8 +19,8 @@ class Medicine(models.Model):
     def __unicode__(self):
         return unicode(self.name)
 
-    def creator(self):
-        return self.user_creation.username
+    def get_link(self):
+        return reverse('medlist.directory.views.show_medicine', kwargs={'id': self.id})
 
 class MedicineLocal(models.Model):
 

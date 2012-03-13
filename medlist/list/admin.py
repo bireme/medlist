@@ -18,8 +18,8 @@ class SectionAdmin(admin.ModelAdmin):
 
 class ListAdmin(admin.ModelAdmin):
 
-	list_display = ('__unicode__', 'abbreviation', 'is_special', 'is_country', 'get_link_list')
-	list_filter = ('is_country', 'is_special')
+	list_display = ('__unicode__', 'abbreviation', 'type', 'get_link_list')
+	list_filter = ('type', 'year')
 	search_fields = ('abbreviation', 'name', 'id')
 
 	def get_link_list(self, obj):

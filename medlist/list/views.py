@@ -14,9 +14,9 @@ def get_parents(id):
 	else:
 		return output
 
-def show_list(request, list):
+def show_list(request, id):
 
-	list = get_object_or_404(List, pk=list)
+	list = get_object_or_404(List, pk=id)
 
 	sections = Section.tree.all()
 

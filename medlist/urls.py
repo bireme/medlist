@@ -23,9 +23,9 @@ urlpatterns = patterns('',
     url(r'^api/get_hierarchy_relation/(\d+)/?$', 'medlist.api.views.get_hierarchy_relation'),
     url(r'^api/get_section_parents/(\d+)/?$', 'medlist.api.views.get_section_parents'),
     
-    url(r'^medicine/(\d+)/?$', 'medlist.directory.views.show_medicine'),
+    url(r'^medicine/(?P<id>\d+)/?$', 'medlist.directory.views.show_medicine'),
     
-    url(r'^list/(\d+)/?$', 'medlist.list.views.show_list'),
+    url(r'^list/(?P<id>\d+)/?$', 'medlist.list.views.show_list'),
 
     # internationalization
     url(r'^i18n/', include('django.conf.urls.i18n')),

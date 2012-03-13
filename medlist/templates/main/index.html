@@ -1,6 +1,16 @@
 {% extends "base-index.html" %}
 {% load i18n %}
 
+{% block "extrahead" %}
+	<script>
+		$(document).ready(function(){
+			$("#countrylists").change(function(){
+				location.href = $(this).val();
+			});
+		});
+	</script>
+{% endblock %}
+
 {% block "title" %}{% trans "Home" %} | {% endblock %}
 
 {% block "content" %}
@@ -10,8 +20,9 @@
 			<div class="compare"><a href="">{% trans "Compare lists" %}</a></div>
 			<div class="spacer"></div>
 			<ul>
-				<li><a href="01-list.html">General List</a></li>
-				<li><a href="#">Medicine for Children</a></li>
+				{% for list in who_lists %}
+					<li><a href="{{list.get_link}}" title="{{list.name}}">{{list.name}}</a></li>
+				{% endfor %}
 			</ul>
 		</div>
 	</div>
@@ -21,8 +32,8 @@
 			<div class="compare"><a href="">{% trans "Compare lists" %}</a></div>
 			<div class="spacer"></div>
 			<ul>				
-				{% for list in lists_special %}
-					<li><a href="#" title="{{list.name}}">{{ list.name|truncatewords:"6" }}</a></li>
+				{% for list in paho_lists %}
+					<li><a href="{{list.get_link}}" title="{{list.name}}">{{list.name}}</a></li>
 				{% endfor %}
 			</ul>
 		</div>
@@ -30,10 +41,10 @@
 	<div class="contentBlock">
 		<div class="bTitle">{% trans "National Forms" %}</div>
 		<div class="innerBlock">
-			<select>
+			<select id="countrylists">
 				<option value="">{% trans "Select Country" %}</option>
-				{% for list in lists_country %}
-					<option value="ar">{{ list }}</option>
+				{% for list in country_lists %}
+					<option value="{{list.get_link}}">{{ list.name }}</option>
 				{% endfor %}
 			</select>
 		</div>
