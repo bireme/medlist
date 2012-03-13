@@ -168,7 +168,7 @@ msgstr "Listas Essenciais"
 
 #: templates/main/index.html:10 templates/main/index.html.py:21
 msgid "Compare lists"
-msgstr "lista complementar"
+msgstr "comparar listas"
 
 #: templates/main/index.html:19
 msgid "PAHO Lists"
