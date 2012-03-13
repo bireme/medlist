@@ -31,12 +31,12 @@
 		<div id="tabs">
 			<ul>
 				{% for form_id,form in forms.items %}
-					<li><a href="#tab0{{forloop.counter}}">{{form.form.pharmaceutical_form_type}}</a></li>
+					<li><a href="#type{{form.form.id}}">{{form.form.pharmaceutical_form_type}}</a></li>
 				{% endfor %}
 			</ul>
 
 			{% for form_id,form in forms.items %}
-				<div id="tab0{{forloop.counter}}">
+				<div id="type{{form.form.id}}">
 					<div class="highlightBlock">
 						
 						<div class="highlightItem">
