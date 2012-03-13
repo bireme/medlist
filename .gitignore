@@ -7,3 +7,4 @@ medlist/database
 .DS_Store
 medlist/media/
 settings_local.py
+fabfile.py
