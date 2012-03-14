@@ -68,8 +68,18 @@ class Section(MPTTModel):
 
 class SectionPharmForm(models.Model):
 	
+	class Meta:
+		verbose_name = _("pharmaceutical form")
+		verbose_name_plural = _("pharmaceutical forms")
+
 	section = models.ForeignKey(Section, verbose_name=_("section"))
 	pharmaceutical_form = models.ForeignKey(PharmaceuticalForm, verbose_name=_("pharmaceutical form"))
 	only_for_children = models.BooleanField(_("only for children"))
 	specialist_care_for_children = models.BooleanField(_("specialist care for children"))
 	observation = models.TextField(_("observation"), blank=True, null=True)
+	restriction_age = models.CharField(_("restriction age or weight"), max_length=255, null=True, blank=True)
+
+	def __unicode__(self):
+		return unicode(self.pharmaceutical_form)
+
+
