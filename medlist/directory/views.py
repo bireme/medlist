@@ -45,6 +45,16 @@ def show_medicine(request, id):
 		'countries': countries,
 	})
 
+	# if cames information
+	if 'section' in request.GET:
+		section = request.GET['section']
+
+		section = Section.objects.get(pk=section)
+		tree = section.get_ancestors()
+
+		dict_response['section'] = section
+		dict_response['tree'] = tree
+
 	return render_to_response('directory/show_medicine.html', dict_response, 
 		context_instance=RequestContext(request))
 

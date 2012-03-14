@@ -21,7 +21,7 @@
 									{% for section_form in section_forms %}
 										{% with section_form.pharmaceutical_form as form %}
 											<tr>
-												<td><a href="/medicine/{{form.medicine.id}}#type{{form.id}}" title="#">{{ form.medicine.name }}</a></td>
+												<td><a href="/medicine/{{form.medicine.id}}/?section={{node.id}}#type{{form.id}}" title="#">{{ form.medicine.name }}</a></td>
 												<td>{{form.pharmaceutical_form_type}}</td>
 												<td>{% if form.composition %}
 													{{ form.composition }}
