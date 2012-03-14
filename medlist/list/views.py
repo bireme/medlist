@@ -18,6 +18,11 @@ def show_list(request, id):
 
 	list = get_object_or_404(List, pk=id)
 
+	if not list.published:
+		if not 'preview' in request.GET.keys():
+			return render_to_response('under_construction.html', {}, context_instance=RequestContext(request))
+
+
 	sections = Section.tree.filter(list=list)
 
 	pharm_section = {}

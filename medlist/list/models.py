@@ -27,7 +27,8 @@ class List(models.Model):
 	abbreviation = models.CharField(_("abbreviation"), max_length=50)
 	year = models.IntegerField(_("year of publication"))
 	type = models.CharField(_("Type"), max_length=1, choices=LIST_TYPES)
-	subtype = models.CharField(_("Sub-Type"), max_length=1, choices=LIST_SUBTYPES, null=True, blank=True)
+	subtype = models.CharField(_("sub-Type"), max_length=1, choices=LIST_SUBTYPES, null=True, blank=True)
+	published = models.BooleanField(_("published"), default=False)
 
 	created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)
 

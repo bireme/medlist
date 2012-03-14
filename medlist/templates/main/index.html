@@ -21,7 +21,9 @@
 			<div class="spacer"></div>
 			<ul>
 				{% for list in who_lists %}
-					<li><a href="{{list.get_link}}" title="{{list.name}}">{{list.name}}</a></li>
+					{% if list.published %}
+						<li><a href="{{list.get_link}}" title="{{list.name}}">{{list.name}}</a></li>
+					{% endif %}
 				{% endfor %}
 			</ul>
 		</div>
@@ -33,7 +35,9 @@
 			<div class="spacer"></div>
 			<ul>				
 				{% for list in paho_lists %}
-					<li><a href="{{list.get_link}}" title="{{list.name}}">{{list.name}}</a></li>
+					{% if list.published %}
+						<li><a href="{{list.get_link}}" title="{{list.name}}">{{list.name}}</a></li>
+					{% endif %}
 				{% endfor %}
 			</ul>
 		</div>
@@ -44,7 +48,9 @@
 			<select id="countrylists">
 				<option value="">{% trans "Select Country" %}</option>
 				{% for list in country_lists %}
-					<option value="{{list.get_link}}">{{ list.name }}</option>
+					{% if list.published %}
+						<option value="{{list.get_link}}">{{ list.name }}</option>
+					{% endif %}
 				{% endfor %}
 			</select>
 		</div>

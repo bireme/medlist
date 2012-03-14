@@ -1,5 +1,6 @@
 #! coding: utf-8
 
+from django.utils.translation import ugettext_lazy as _
 from django.contrib import admin
 from models import *
 from urllib2 import urlopen
@@ -19,30 +20,25 @@ class SectionAdmin(admin.ModelAdmin):
 
 class ListAdmin(admin.ModelAdmin):
 
-	list_display = ('__unicode__', 'abbreviation', 'type', 'get_link_list')
+	list_display = ('__unicode__', 'abbreviation', 'type', 'get_link_list', 'published')
 	list_filter = ('type', 'year')
 	search_fields = ('abbreviation', 'name', 'id')
-	actions = ['archivate_list']
+	actions = ['make_published']
 
 	def get_link_list(self, obj):
 		output = '<a href="/list/%s" target="_blank">Link</a>' % obj.id
 		return unicode(output)
 	get_link_list.allow_tags = True
 
-	def archivate_list(self, request, queryset):
-
+	# action that makes published
+	def make_published(modeladmin, request, queryset):
 		for obj in queryset:
-				
-			history = History()
-
-			history.name = obj.name
-			history.year = obj.year
-			history.type = obj.type
-			history.subtype = obj.subtype
-			history.content = json.dumps('aqui vem o conteudo serializado')
-			
-			history.save()
-
+			if not obj.published:
+				obj.published = True
+			else:
+				obj.published = False
+			obj.save()
+	make_published.short_description = _("Published or unpublished selected lists")
 
 admin.site.register(Section, SectionAdmin)
 admin.site.register(List, ListAdmin)
