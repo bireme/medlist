@@ -3,6 +3,7 @@
 from medlist.list.models import *
 from django.shortcuts import HttpResponse, render_to_response, get_object_or_404
 from django.template import RequestContext
+from django.http import Http404
 
 def get_parents(id):
 	output = {}
@@ -18,10 +19,11 @@ def show_list(request, id):
 
 	list = get_object_or_404(List, pk=id)
 
+	# just shows the list that not have been published yet if have 'preview' parameter
 	if not list.published:
+		# if not have preview parameter, returns 404 error
 		if not 'preview' in request.GET.keys():
-			return render_to_response('under_construction.html', {}, context_instance=RequestContext(request))
-
+			raise Http404
 
 	sections = Section.tree.filter(list=list)
 
