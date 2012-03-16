@@ -16,3 +16,6 @@ DATABASES = {
     }
 }
 
+
+
+SOLR_URL = 'http://localhost/medlist/'
