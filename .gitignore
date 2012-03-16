@@ -2,6 +2,8 @@
 medlist/tools/csv_dados*
 medlist/tools/json*
 medlist/medlist
+medlist/medlist.db
+medlist/static/admin
 tmp/
 medlist/database
 .DS_Store

@@ -1,6 +1,8 @@
 #! coding: utf-8
 from django.contrib import admin
+from django.contrib import messages
 from models import *
+from app_actions import solr_index
 from django.utils.translation import ugettext_lazy as _
 
 class PharmaceuticalFormAdmin(admin.StackedInline):
@@ -24,7 +26,7 @@ class MedicineAdmin(admin.ModelAdmin):
     search_fields = ('name', )
     list_filter = ('active', )
 
-    actions = ['make_active']
+    actions = ['make_active', 'index']
 
     def get_link_medicine(self, obj):
         output = '<a href="/medicine/%s" target="_blank">Link</a>' % obj.id
@@ -44,6 +46,33 @@ class MedicineAdmin(admin.ModelAdmin):
                 obj.active = True
             obj.save()
     make_active.short_description = _("Activate or deactivate selected medicines")
+
+    # adding option to index a medicine on Solr index
+    def index(modeladmin, request, queryset):
+        index_sucess = True
+        for obj in queryset:
+            index_sucess = solr_index(obj)
+
+        if not index_sucess:
+            messages.error(request, _("Unable to index medicines"))
+        else:
+            modeladmin.message_user(request, _("Selected medicines were indexed"))
+
+    index.short_description = _("Index selected medicines")
+
+
+    def save_model(self, request, obj, form, change):
+        index_sucess = solr_index(obj)
+        if not index_sucess:
+            messages.warning(request, _("Search index update fail."))
+
+        obj.save()
+
+    def get_actions(self, request):
+        actions = super(MedicineAdmin, self).get_actions(request)
+        del actions['delete_selected']
+        return actions        
+
 
 class PharmaceuticalFormTypeAdmin(admin.ModelAdmin):
     model = PharmaceuticalFormType

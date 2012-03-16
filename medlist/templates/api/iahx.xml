@@ -3,6 +3,7 @@
 		{% for medicine in medicines %}
 			<add>
 				<field name="id">{{ medicine.medicine.id }}</field>
+				<field name="name">en^{{medicine.medicine.name}}</field>
 				{% for local in medicine.local %}
 					<field name="name">{{local.language}}^{{local.name}}</field>
 				{% endfor %}
