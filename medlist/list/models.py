@@ -66,6 +66,16 @@ class Section(MPTTModel):
 	def get_list_abbreviation(self):
 		return unicode(self.list.abbreviation)	
 
+	def get_hierarchy(self):
+		hierarchy_list = [sec.title for sec in self.get_ancestors()]
+		hierarchy_flat = "/ ".join(hierarchy_list)
+
+		return hierarchy_flat
+	
+	get_hierarchy.admin_order_field = 'parent'
+	get_hierarchy.short_description = _("hierarchy")
+
+	get_list_abbreviation.short_description = _("list abbreviation")
 
 class SectionPharmForm(models.Model):
 	

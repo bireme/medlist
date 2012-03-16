@@ -14,7 +14,7 @@ class SectionPharmFormAdmin(admin.StackedInline):
 class SectionAdmin(admin.ModelAdmin):
 
 	inlines = (SectionPharmFormAdmin, )
-	list_display = ('title', 'get_list_abbreviation', 'get_parent_title')
+	list_display = ('title', 'get_list_abbreviation', 'get_hierarchy')
 	list_filter = ('list__abbreviation', )
 	search_fields = ('section', 'list')
 
