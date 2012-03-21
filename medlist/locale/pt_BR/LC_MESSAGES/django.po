@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-15 17:55-0300\n"
+"POT-Creation-Date: 2012-03-21 11:10-0300\n"
 "PO-Revision-Date: 2012-03-12 16:16-0300\n"
 "Last-Translator: Moacir <moa.moda@gmail.com>\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
@@ -18,8 +18,24 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
 
-#: directory/admin.py:46 directory/admin.py:76
+#: directory/admin.py:48 directory/admin.py:105
 msgid "Activate or deactivate selected medicines"
+msgstr ""
+
+#: directory/admin.py:57
+msgid "Unable to index medicines"
+msgstr ""
+
+#: directory/admin.py:59
+msgid "Selected medicines were indexed"
+msgstr ""
+
+#: directory/admin.py:61
+msgid "Index selected medicines"
+msgstr ""
+
+#: directory/admin.py:67
+msgid "Search index update fail."
 msgstr ""
 
 #: directory/models.py:17 directory/models.py:48 directory/models.py:76
@@ -114,9 +130,17 @@ msgstr "lista"
 msgid "list subtype"
 msgstr ""
 
-#: list/admin.py:41
+#: list/admin.py:42
 msgid "Published or unpublished selected lists"
 msgstr "Publicar ou despublicar as listas selecionadas"
+
+#: list/admin.py:49
+msgid "Created of list archive copy successfully"
+msgstr ""
+
+#: list/admin.py:51
+msgid "Create a archive copy of selected lists"
+msgstr ""
 
 #: list/models.py:23 list/models.py:52
 msgid "list"
@@ -146,7 +170,7 @@ msgstr "Sub-Tipo"
 msgid "published"
 msgstr "publicado"
 
-#: list/models.py:44 list/models.py:76
+#: list/models.py:44 list/models.py:86
 msgid "section"
 msgstr "seção"
 
@@ -166,34 +190,47 @@ msgstr "seção pai"
 msgid "complementary list"
 msgstr "lista complementar"
 
-#: list/models.py:54 list/models.py:80
+#: list/models.py:54 list/models.py:90
 msgid "observation"
 msgstr "observações"
 
-#: list/models.py:73 list/models.py:77
+#: list/models.py:76
+msgid "hierarchy"
+msgstr ""
+
+#: list/models.py:78
+#, fuzzy
+msgid "list abbreviation"
+msgstr "abreviação"
+
+#: list/models.py:83 list/models.py:87
 msgid "pharmaceutical form"
 msgstr "forma farmacêutica"
 
-#: list/models.py:74
+#: list/models.py:84
 msgid "pharmaceutical forms"
 msgstr "forma farmacêutica"
 
-#: list/models.py:78
+#: list/models.py:88
 msgid "only for children"
 msgstr "apenas para crianças"
 
-#: list/models.py:79
+#: list/models.py:89
 msgid "specialist care for children"
 msgstr "apenas para crianças"
 
-#: list/models.py:81
+#: list/models.py:91
 msgid "restriction age or weight"
 msgstr "restrição de idade ou peso"
 
-#: templates/base-index.html:12 templates/base.html:12 templates/top.html:23
+#: templates/base-index.html:12 templates/top.html:23
 #: templates/directory/show_medicine.html:28 templates/list/show_list.html:23
 msgid "List of Essential Medicines"
 msgstr "Lista Essencial de Medicamentos"
+
+#: templates/base.html:12
+msgid "Annotated Medicine Lists"
+msgstr "Listas Anotadas de Medicamentos"
 
 #: templates/top.html:5 templates/main/index.html:14
 msgid "Home"
