@@ -25,7 +25,7 @@ class History(models.Model):
 	content = models.TextField(_("content serialized"))
 	year = models.CharField(_("list year"), max_length=4)
 	type = models.CharField(_("list type"), max_length=255, choices=LIST_TYPES)
-	subtype = models.CharField(_("list subtype"), max_length=255, choices=LIST_SUBTYPES)
+	subtype = models.CharField(_("list subtype"), max_length=255, choices=LIST_SUBTYPES, null=True, blank=True)
 	created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)
 
 	def __unicode__(self):
