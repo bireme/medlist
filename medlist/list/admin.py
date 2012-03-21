@@ -21,13 +21,13 @@ class SectionAdmin(admin.ModelAdmin):
 
 class ListAdmin(admin.ModelAdmin):
 
-	list_display = ('__unicode__', 'abbreviation', 'type', 'get_link_list', 'published')
+	list_display = ('__unicode__', 'abbreviation', 'type','get_link_list', 'published')
 	list_filter = ('type', 'year')
 	search_fields = ('abbreviation', 'name', 'id')
 	actions = ['make_published', 'archive_list']
 
 	def get_link_list(self, obj):
-		output = '<a href="/list/%s" target="_blank">Link</a>' % obj.id
+		output = '<a href="/list/%s/?preview" target="_blank">Link</a>' % obj.id
 		return unicode(output)
 	get_link_list.allow_tags = True
 

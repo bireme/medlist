@@ -35,9 +35,6 @@ class List(models.Model):
 	def __unicode__(self):
 		return unicode(self.name)
 
-	def get_link(self):
-		return reverse('medlist.list.views.show_list', kwargs={'id': self.id})
-
 class Section(MPTTModel):
 
 	class Meta:
