@@ -47,8 +47,8 @@ class EvidenceSummary(models.Model):
     language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
     context = models.TextField(_("context"))
     question = models.TextField(_("question"))
-    link = models.TextField(_("link"))
-    file = models.FileField(_("file"), upload_to='evidences_files')
+    link = models.TextField(_("link"), blank=True)
+    file = models.FileField(_("file"), upload_to='evidences_files', blank=True)
     
     class Meta:
         verbose_name = "Medicine Evidence Summary"
