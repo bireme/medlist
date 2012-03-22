@@ -160,6 +160,7 @@ INSTALLED_APPS = (
     'medlist.list',
     'medlist.history',
     'mptt',
+    'south',
 )
 
 # A sample logging configuration. The only tangible logging
