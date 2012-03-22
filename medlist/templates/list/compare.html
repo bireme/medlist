@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block "title" %}Compare Lists | {{block.super}}{% endblock %}
+
+{% block "extrahead" %}
+	<script>
+		$(function(){
+
+			var checkbox = $("#list_filter");
+			var form = $("#lists_filter");
+			var hidden = $("#id_hidden");
+			var select = $("#select_countries");
+
+			function submit_lists_filter() {
+				
+				// adding all checked lists to string
+				lists = "";
+				checkbox.each(function(){
+					if($(this).is(':checked')) {
+						lists += $(this).val() + ",";
+					}
+				});
+
+				// adding country list selected to string
+				if(select.val() != "") {
+					lists += select.val() + ",";
+				}
+				
+
+				// remove latest comma of the string
+				if(lists != "") {
+					lists = lists.substring(0,(lists.length - 1))
+				}
+
+				// adding string to hidden value
+				hidden.val(lists);
+
+				// submit the form
+				form.submit();
+			}
+
+			// engine to storage selected lists
+			var lists_selected = hidden.val().split(',');
+
+			// check all the lists which was selected
+			checkbox.each(function(){
+				for(list in lists_selected) {
+					if(lists_selected[list] == $(this).val()) {
+						$(this).attr('checked', true);
+					}
+				}
+			});
+
+			select.find("option").each(function(){
+				for(list in lists_selected) {
+					if(lists_selected[list] == $(this).val()) {
+						$(this).attr('selected', true);
+					}
+				}
+			});
+
+			// listenning click on special lists
+			checkbox.click(function(){
+				
+				submit_lists_filter();				
+			});
+
+			// listening change on country lists
+			select.change(function(){
+
+				submit_lists_filter();
+			});
+
+
+		})
+	</script>
+{% endblock %}
+
+{% block "breadcrumb" %}
+	<a href="{{ROOT_URL}}">Home</a> / 
+	<a href="http://{{request.META.HTTP_HOST}}" title="{% trans "List of Essential Medicines" %}">{% trans "List of Essential Medicines" %}</a> /
+	{% trans "Compare Lists" %}
+{% endblock %}
+
+{% block "content" %}
+	<div class="list">
+		<div class="blockTitle">Compare Lists</div>
+		<div class="spacer"></div>
+		<div id="filters">
+			<div class="blockSubTitle">Filters</div>
+			<div class="hBlock">
+				<div class="floatBlock">
+					<form id="lists_filter" action="." method="GET" />
+						{% for list in lists_special %}
+							<!-- controllers -->
+							<input type="hidden" id="id_hidden" name="lists" value="{{request.GET.lists}}" />
+							<input type="hidden" name="only_matched" value="false" />
+							<input type="hidden" name="only_unmatched" value="false" />
+							
+							<input type="checkbox" id="list_filter" value="{{list.id}}"/>
+							<label for="list_filter" class="rightSide">{{list.abbreviation}}</label><br/>
+						{% endfor %}
+					</form>
+				</div>
+
+			</div>
+			<div class="hBlock">
+				Countries
+				<select id="select_countries" class="dropDownBox textEntry mid">
+					<option value="">Select Country</option>
+					{% for list in lists_country %}
+						<option value="{{list.id}}">{{list.abbreviation}}</option>
+					{% endfor %}
+				</select>
+			</div>
+			<div class="hBlock last">
+				<input type="checkbox" id="match" /> <label for="match" class="rightSide">Only Matched</label><br/>
+				<input type="checkbox" id="notMatch" /> <label for="notMatch" class="rightSide">Only Unmatched</label><br/>
+			</div>
+			<div class="spacer"></div>
+		</div><!--/filters-->
+		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="genericTable compareLists">
+			<thead>
+				<tr>
+					<th class="rowRef">{% trans "Name" %}</th>
+					<th class="rowRef">{% trans "Type" %}</th>
+
+					{% for list in selected_lists %}	
+						<th>{{ list.obj.abbreviation }}</th>
+					{% endfor %}
+					
+				</tr>
+			</thead>
+			<tbody>
+				{% for sf in section_forms %}
+					<tr>
+						<td class="rowRef">{{ sf.pharmaceutical_form.medicine|capfirst }}</td>
+						<td class="rowRef">{{ sf.pharmaceutical_form.pharmaceutical_form_type|capfirst }}</td>
+
+						{% for list in selected_lists %}	
+							<td>
+								{% if sf.pharmaceutical_form.id in list.forms %}
+									<span class="checked"><span>x</span></span>
+								{% else %}
+									-
+								{% endif %}
+							</td>
+						{% endfor %}
+
+						<!-- 
+						<td>-</td>
+						<td><span class="checked"><span>x</span></span></td>
+						 -->
+					</tr>
+				{% endfor %}
+			</tbody>
+		</table>
+	</div><!--/list-->
+{% endblock %}

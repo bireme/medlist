@@ -37,6 +37,39 @@ def show_list(request, id):
 	
 	return render_to_response('list/show_list.html', output, context_instance=RequestContext(request))
 
+def compare(request):
 
+	if not 'lists' in request.GET:
+		lists = ''
+	else:
+		lists = request.GET['lists']
 
+	output = {}
 
+	lists_special = List.objects.filter(published=True).exclude(type='c')
+	lists_country = List.objects.filter(published=True).filter(type='c')
+	section_forms = SectionPharmForm.objects.all()
+
+	selected_lists = []
+	for list in lists.split(','):
+		try:
+			obj = List.objects.get(pk=list)
+			tmp = {'obj': obj, 'forms': []}
+
+			for sf in section_forms:
+				if len(SectionPharmForm.objects
+					.filter(section__list=obj)
+					.filter(pharmaceutical_form=sf.pharmaceutical_form)) > 0:
+
+					tmp['forms'].append(sf.pharmaceutical_form.id)
+
+			selected_lists.append(tmp)
+		except:
+			pass
+	
+	output['lists_special'] = lists_special
+	output['lists_country'] = lists_country
+	output['section_forms'] = section_forms
+	output['selected_lists'] = selected_lists
+
+	return render_to_response('list/compare.html', output, context_instance=RequestContext(request))

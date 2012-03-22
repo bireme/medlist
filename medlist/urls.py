@@ -26,6 +26,7 @@ urlpatterns = patterns('',
     url(r'^medicine/(?P<id>\d+)/?$', 'medlist.directory.views.show_medicine'),
     
     url(r'^list/(?P<id>\d+)/?$', 'medlist.list.views.show_list'),
+    url(r'^list/compare/?$', 'medlist.list.views.compare'),
 
     # internationalization
     url(r'^i18n/', include('django.conf.urls.i18n')),

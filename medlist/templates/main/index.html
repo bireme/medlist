@@ -17,7 +17,7 @@
 	<div class="contentBlock">
 		<div class="bTitle">{% trans "Essential Lists" %}</div>
 		<div class="innerBlock">
-			<div class="compare"><a href="">{% trans "Compare lists" %}</a></div>
+			<div class="compare"><a href="{% url list.views.compare %}">{% trans "Compare lists" %}</a></div>
 			<div class="spacer"></div>
 			<ul>
 				{% for list in who_lists %}
@@ -31,7 +31,7 @@
 	<div class="contentBlock">
 		<div class="bTitle">{% trans "PAHO Lists" %}</div>
 		<div class="innerBlock">
-			<div class="compare"><a href="">{% trans "Compare lists" %}</a></div>
+			<div class="compare"><a href="{% url list.views.compare %}">{% trans "Compare lists" %}</a></div>
 			<div class="spacer"></div>
 			<ul>				
 				{% for list in paho_lists %}
