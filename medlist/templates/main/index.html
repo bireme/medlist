@@ -22,7 +22,7 @@
 			<ul>
 				{% for list in who_lists %}
 					{% if list.published %}
-						<li><a href="{{list.get_link}}" title="{{list.name}}">{{list.name}}</a></li>
+						<li><a href="{% url list.views.show_list list.id %}" title="{{list.name}}">{{list.name}}</a></li>
 					{% endif %}
 				{% endfor %}
 			</ul>
@@ -36,7 +36,7 @@
 			<ul>				
 				{% for list in paho_lists %}
 					{% if list.published %}
-						<li><a href="{{list.get_link}}" title="{{list.name}}">{{list.name}}</a></li>
+						<li><a href="{% url list.views.show_list list.id %}" title="{{list.name}}">{{list.name}}</a></li>
 					{% endif %}
 				{% endfor %}
 			</ul>
