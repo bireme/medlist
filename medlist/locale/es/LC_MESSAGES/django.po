@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-21 11:09-0300\n"
+"POT-Creation-Date: 2012-03-22 15:40-0300\n"
 "PO-Revision-Date: 2012-03-12 13:42-0300\n"
 "Last-Translator: Vinicius Andrade <vinicius.andrade@bireme.org>\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
@@ -37,12 +37,12 @@ msgstr ""
 msgid "Search index update fail."
 msgstr ""
 
-#: directory/models.py:17 directory/models.py:48 directory/models.py:76
-#: history/models.py:29 list/models.py:33 list/models.py:56
+#: directory/models.py:17 directory/models.py:48 directory/models.py:75
+#: history/models.py:29 list/models.py:33 list/models.py:53
 msgid "date creation"
 msgstr ""
 
-#: directory/models.py:18 directory/models.py:74
+#: directory/models.py:18 directory/models.py:73
 msgid "active"
 msgstr ""
 
@@ -59,15 +59,15 @@ msgstr ""
 msgid "name"
 msgstr ""
 
-#: directory/models.py:71
+#: directory/models.py:70
 msgid "pharmaceutical form type"
 msgstr "tipo de forma farmacéutica"
 
-#: directory/models.py:72
+#: directory/models.py:71
 msgid "atc code"
 msgstr ""
 
-#: directory/models.py:73
+#: directory/models.py:72
 msgid "composition"
 msgstr ""
 
@@ -142,7 +142,7 @@ msgstr ""
 msgid "Create a archive copy of selected lists"
 msgstr ""
 
-#: list/models.py:23 list/models.py:52
+#: list/models.py:23 list/models.py:49
 msgid "list"
 msgstr ""
 
@@ -158,7 +158,7 @@ msgstr ""
 msgid "year of publication"
 msgstr ""
 
-#: list/models.py:29
+#: list/models.py:29 templates/list/compare.html:68
 msgid "Type"
 msgstr ""
 
@@ -170,65 +170,65 @@ msgstr ""
 msgid "published"
 msgstr ""
 
-#: list/models.py:44 list/models.py:86
+#: list/models.py:41 list/models.py:83
 msgid "section"
 msgstr ""
 
-#: list/models.py:45
+#: list/models.py:42
 msgid "sections"
 msgstr ""
 
-#: list/models.py:50
+#: list/models.py:47
 msgid "title"
 msgstr ""
 
-#: list/models.py:51
+#: list/models.py:48
 msgid "parent section"
 msgstr ""
 
-#: list/models.py:53
+#: list/models.py:50
 msgid "complementary list"
 msgstr ""
 
-#: list/models.py:54 list/models.py:90
+#: list/models.py:51 list/models.py:87
 msgid "observation"
 msgstr ""
 
-#: list/models.py:76
+#: list/models.py:73
 msgid "hierarchy"
 msgstr ""
 
-#: list/models.py:78
+#: list/models.py:75
 msgid "list abbreviation"
 msgstr ""
 
-#: list/models.py:83 list/models.py:87
+#: list/models.py:80 list/models.py:84
 msgid "pharmaceutical form"
 msgstr ""
 
-#: list/models.py:84
+#: list/models.py:81
 #, fuzzy
 msgid "pharmaceutical forms"
 msgstr "Formas farmacéuticas"
 
-#: list/models.py:88
+#: list/models.py:85
 msgid "only for children"
 msgstr ""
 
-#: list/models.py:89
+#: list/models.py:86
 msgid "specialist care for children"
 msgstr ""
 
-#: list/models.py:91
+#: list/models.py:88
 msgid "restriction age or weight"
 msgstr ""
 
-#: templates/base-index.html:12 templates/top.html:23
-#: templates/directory/show_medicine.html:28 templates/list/show_list.html:23
+#: templates/base-index.html:12 templates/directory/show_medicine.html:28
+#: templates/list/compare.html:12 templates/list/show_list.html:23
 msgid "List of Essential Medicines"
 msgstr "Lista de Medicamentos Esenciales"
 
-#: templates/base.html:12
+#: templates/base.html:12 templates/top.html:23
 msgid "Annotated Medicine Lists"
 msgstr "Listas Anotadas de Medicamentos"
 
@@ -276,6 +276,28 @@ msgstr "Listas"
 #: templates/directory/show_medicine.html:117
 msgid "Country list"
 msgstr "Lista de paises"
+
+#: templates/list/compare.html:4 templates/list/compare.html.py:13
+#: templates/list/compare.html:35
+#, fuzzy
+msgid "Compare Lists"
+msgstr "Lista de paises"
+
+#: templates/list/compare.html:38
+msgid "Filters"
+msgstr ""
+
+#: templates/list/compare.html:58
+msgid "Only Matched"
+msgstr ""
+
+#: templates/list/compare.html:59
+msgid "Only Unmatched"
+msgstr ""
+
+#: templates/list/compare.html:67
+msgid "Name"
+msgstr ""
 
 #: templates/list/show_list.html:4
 #, fuzzy
