@@ -39,9 +39,8 @@ def show_list(request, id):
 
 def compare(request):
 
-	if not 'lists' in request.GET:
-		lists = ''
-	else:
+	lists = ''
+	if 'lists' in request.GET:
 		lists = request.GET['lists']
 
 	output = {}
