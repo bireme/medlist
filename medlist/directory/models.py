@@ -1,5 +1,5 @@
 #! coding: utf-8
-
+import os
 from django.db import models
 from datetime import datetime
 from medlist import settings
@@ -36,6 +36,26 @@ class MedicineLocal(models.Model):
     class Meta:
         verbose_name = "Medicine Translation"
         verbose_name_plural = "Medicine Translations"
+
+class EvidenceSummary(models.Model):
+
+    class Meta:
+        verbose_name = "Medicine Evidence Summary"
+        verbose_name_plural = "Medicine Evidence Summaries"
+
+    medicine = models.ForeignKey(Medicine, verbose_name=_("medicine"))
+    language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
+    context = models.TextField(_("context"))
+    question = models.TextField(_("question"))
+    link = models.TextField(_("link"))
+    file = models.FileField(_("file"), upload_to='evidences_files')
+    
+    class Meta:
+        verbose_name = "Medicine Evidence Summary"
+        verbose_name_plural = "Medicine Evidence Summaries"
+
+    def __unicode__(self):
+        return unicode(self.context)
 
 class PharmaceuticalFormType(models.Model):    
 

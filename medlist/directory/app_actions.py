@@ -6,7 +6,8 @@ from models import PharmaceuticalForm, MedicineLocal
 from medlist.list.models import Section 
 
 def solr_index(med):
-	pharm_forms = PharmaceuticalForm.objects.filter(medicine=med.id)
+
+	pharm_forms = med.pharmaceuticalform_set.all()
 	form_cdata = []
 	lists = []
 	countries = []
@@ -36,6 +37,8 @@ def solr_index(med):
 				countries.append(section.list.name)
 			else:
 				lists.append(section.list.abbreviation)
+
+	print pharm_forms
 
 	# try to create a connection to a solr server and send medicine
 	try:            

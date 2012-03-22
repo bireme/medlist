@@ -3,6 +3,8 @@ from django.contrib import admin
 from django.contrib import messages
 from models import *
 from app_actions import solr_index
+from django.db.models.signals import post_save
+from django.dispatch import receiver
 from django.utils.translation import ugettext_lazy as _
 
 class PharmaceuticalFormAdmin(admin.StackedInline):
@@ -13,13 +15,17 @@ class PharmaceuticalFormTypeLocalAdmin(admin.TabularInline):
     model = PharmaceuticalFormTypeLocal
     extra = 0
 
+class EvidenceSummaryAdmin(admin.StackedInline):
+    model = EvidenceSummary
+    extra = 0
+
 class MedicineLocalAdmin(admin.TabularInline):
     model = MedicineLocal
     extra = 0
 
 class MedicineAdmin(admin.ModelAdmin):
     model = Medicine
-    inlines = [MedicineLocalAdmin, PharmaceuticalFormAdmin]
+    inlines = [MedicineLocalAdmin, PharmaceuticalFormAdmin,  EvidenceSummaryAdmin, ]
 
     list_display = ('__unicode__', 'get_link_medicine', 'active')
     list_display_links = ('__unicode__',)
@@ -60,13 +66,12 @@ class MedicineAdmin(admin.ModelAdmin):
 
     index.short_description = _("Index selected medicines")
 
-
     def save_model(self, request, obj, form, change):
+        obj.save()
+
         index_sucess = solr_index(obj)
         if not index_sucess:
             messages.warning(request, _("Search index update fail."))
-
-        obj.save()
 
     def get_actions(self, request):
         actions = super(MedicineAdmin, self).get_actions(request)
@@ -93,6 +98,7 @@ class PharmaceuticalFormAdmin(admin.ModelAdmin):
     # removes delete option
     def has_delete_permission(self, request, obj=None):
         return False
+
 
     # adding option to activate or not a register
     def make_active(modeladmin, request, queryset):

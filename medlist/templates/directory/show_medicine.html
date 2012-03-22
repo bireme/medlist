@@ -77,10 +77,6 @@
 
 					</div>
 
-					<div class="mainBlock">
-						<div class="blockSubTitle">({% trans "This medicine no have evidences yet" %})</div>	
-					</div>
-
 					<div class="sideBar">
 						<div class="sideBarItem" id="lists">
 
@@ -132,6 +128,40 @@
 				</div>
 			{% endfor %}
 		</div>
+
+		<div class="blockSubTitle">{% trans "Medicine Evidences Summaries" %}</div>
+		<div class="mainBlock">
+			{% if evidences %}
+				{% for evidence in evidences %}			
+					<div>
+						{% trans "Context" %}
+					</div>
+					<div>	
+						<strong>{{ evidence.context }}</strong>
+					</div>
+					<div>
+						{% trans "Question" %}
+					</div>
+					<div>
+					 	<strong>{{ evidence.question }}</strong>					 	
+					</div>
+					{% if evidence.link %}
+						<div>
+							<a href="{{ evidence.link }}" target="_blank">{{ evidence.link }}</a>
+						</div>
+					{% endif %}
+					{% if evidence.file %}
+						<div>	
+							 <a href="{{ evidence.file.url }}" target="_blank">{{ evidence.file }}</a>
+						</div>
+					{% endif %}
+				{% endfor %}
+			{% else %}	
+				<div class="blockSubTitle">({% trans "This medicine no have evidences yet" %})</div>	
+			{% endif %}	
+		</div>
+		
 		<div class="spacer"></div>
+
 	</div>
 {% endblock %}

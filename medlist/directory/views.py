@@ -15,6 +15,11 @@ def show_medicine(request, id):
 	# get pharm forms contents in this medicine
 	pharm_forms = PharmaceuticalForm.objects.filter(medicine=id)
 
+	# get evidences summaries of medicine
+	evidences = medicine.evidencesummary_set.all()
+
+	print evidences
+
 	new_forms = {}
 	for form in pharm_forms:
 		new_forms[form.id] = {}
@@ -43,6 +48,7 @@ def show_medicine(request, id):
 		'forms': new_forms,
 		'lists': lists,
 		'countries': countries,
+		'evidences': evidences,
 	})
 
 	# if cames information
