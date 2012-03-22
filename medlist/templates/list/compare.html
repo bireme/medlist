@@ -61,36 +61,40 @@
 			<div class="spacer"></div>
 		</div><!--/filters-->
 
-		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="genericTable compareLists">
-			<thead>
-				<tr>
-					<th class="rowRef">{% trans "Name"|capfirst %}</th>
-					<th class="rowRef">{% trans "Type"|capfirst %}</th>
-
-					{% for list in selected_lists %}	
-						<th>{{ list.obj.abbreviation|capfirst }}</th>
-					{% endfor %}
-					
-				</tr>
-			</thead>
-			<tbody>
-				{% for sf in section_forms %}
+		{% if section_forms|length > 0 %}
+			<table width="100%" cellpadding="0" cellspacing="0" border="0" class="genericTable compareLists">
+				<thead>
 					<tr>
-						<td class="rowRef">{{ sf.pharmaceutical_form.medicine|capfirst }}</td>
-						<td class="rowRef">{{ sf.pharmaceutical_form.pharmaceutical_form_type|capfirst }}</td>
+						<th class="rowRef">{% trans "Name"|capfirst %}</th>
+						<th class="rowRef">{% trans "Type"|capfirst %}</th>
 
 						{% for list in selected_lists %}	
-							<td>
-								{% if sf.pharmaceutical_form.id in list.forms %}
-									<span class="checked"><span>x</span></span>
-								{% else %}
-									-
-								{% endif %}
-							</td>
+							<th>{{ list.obj.abbreviation|capfirst }}</th>
 						{% endfor %}
+						
 					</tr>
-				{% endfor %}
-			</tbody>
-		</table>
+				</thead>
+				<tbody>
+					{% for sf in section_forms %}
+						<tr>
+							<td class="rowRef">{{ sf.pharmaceutical_form.medicine|capfirst }}</td>
+							<td class="rowRef">{{ sf.pharmaceutical_form.pharmaceutical_form_type|capfirst }}</td>
+
+							{% for list in selected_lists %}	
+								<td>
+									{% if sf.pharmaceutical_form.id in list.forms %}
+										<span class="checked"><span>x</span></span>
+									{% else %}
+										-
+									{% endif %}
+								</td>
+							{% endfor %}
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		{% else %}
+			<span>{% trans "Sorry, but there's no results for this filter's combination." %}</span>
+		{% endif %}
 	</div><!--/list-->
 {% endblock %}
