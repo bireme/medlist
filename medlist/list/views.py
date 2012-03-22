@@ -50,6 +50,15 @@ def compare(request):
 	lists_country = List.objects.filter(published=True).filter(type='c')
 	section_forms = SectionPharmForm.objects.all()
 
+	forms = []
+	for sf in section_forms:
+		id = sf.pharmaceutical_form.id
+		if id in forms:
+			section_forms = section_forms.exclude(pk=sf.id)
+		else:
+			forms.append(id)
+		
+
 	selected_lists = []
 	for list in lists.split(','):
 		try:
