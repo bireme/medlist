@@ -50,6 +50,7 @@ def compare(request):
 	lists_country = List.objects.filter(published=True).filter(type='c')
 	section_forms = SectionPharmForm.objects.all()
 
+	# removes all duplicated pharmaceutical form
 	forms = []
 	for sf in section_forms:
 		id = sf.pharmaceutical_form.id
@@ -57,8 +58,8 @@ def compare(request):
 			section_forms = section_forms.exclude(pk=sf.id)
 		else:
 			forms.append(id)
-		
 
+	# make structure of comparation
 	selected_lists = []
 	for list in lists.split(','):
 		try:
@@ -76,6 +77,36 @@ def compare(request):
 		except:
 			pass
 	
+	# list only matcheds in all lists selecteds
+	matcheds = {}
+	for sf in section_forms:
+		is_match = True
+		for list in selected_lists:
+			if not sf.pharmaceutical_form.id in list['forms']:
+				is_match = False
+
+		if is_match:
+			matcheds[sf.pharmaceutical_form.id] = True
+	
+	matcheds = matcheds.keys()
+
+	# if only matched selected	
+	if 'only_matched' in request.GET and request.GET['only_matched'] == "true":		
+		
+		# filter the medicine that will be dislayed
+		for sf in section_forms:
+			if not sf.pharmaceutical_form.id in matcheds:
+				section_forms = section_forms.exclude(pk=sf.id)
+
+	# if only unmatched selected	
+	if 'only_unmatched' in request.GET and request.GET['only_unmatched'] == "true":		
+	
+		# filter the medicine that will be dislayed
+		for sf in section_forms:
+			if sf.pharmaceutical_form.id in matcheds:
+				section_forms = section_forms.exclude(pk=sf.id)		
+
+
 	output['lists_special'] = lists_special
 	output['lists_country'] = lists_country
 	output['section_forms'] = section_forms
