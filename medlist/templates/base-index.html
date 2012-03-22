@@ -18,8 +18,8 @@
         {% include "top.html" %}
 		<div class="middle">
 			<div id="searchBox">
-				<form name="search" method="post">
-					<input type="text" class="textEntry"/>
+				<form name="search" method="post" action="{{IAHX_URL}}">
+					<input type="text" class="textEntry" name="q"/>
 					<input type="submit" class="submit" id="searchSubmit" value=""/>
 				</form>
 			</div>

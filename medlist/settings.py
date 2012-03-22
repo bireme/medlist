@@ -16,6 +16,8 @@ PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 
 ROOT_URL = "http://stela.org.br/rscpaho/"
 
+IAHX_URL = "http://pesquisa.teste.bvsalud.org/medlist/"
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3', # Add 'postgresql_psycopg2', 'postgresql', 'mysql', 'sqlite3' or 'oracle'.

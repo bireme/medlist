@@ -1,102 +1,10 @@
 {% extends "base.html" %}
 {% load i18n %}
 
-{% block "title" %}Compare Lists | {{block.super}}{% endblock %}
+{% block "title" %}{% trans "Compare Lists" %} | {{block.super}}{% endblock %}
 
 {% block "extrahead" %}
-	<script>
-		$(function(){
-
-			var checkbox = $(".list_filter");
-			var form = $("#lists_filter");
-			var hidden = $("#id_hidden");
-			var select = $("#select_countries");
-			var matches = $(".matches");
-
-			function submit_lists_filter() {
-				
-				// adding all checked lists to string
-				lists = "";
-				checkbox.each(function(){
-					if($(this).is(':checked')) {
-						lists += $(this).val() + ",";
-					}
-				});
-
-				// adding country list selected to string
-				if(select.val() != "") {
-					lists += select.val() + ",";
-				}
-
-				// changing the matches parameters to true or false
-				matches.each(function(){
-					current_hidden_id = "#id_hidden_" + $(this).attr('rel');
-					if($(this).is(":checked")) {
-						$(current_hidden_id).val('true');
-					} else {
-						$(current_hidden_id).val('false');
-					}
-				});
-				
-
-				// remove latest comma of the string
-				if(lists != "") {
-					lists = lists.substring(0,(lists.length - 1))
-				}
-
-				// adding string to hidden value
-				hidden.val(lists);
-
-				// submit the form
-				form.submit();
-			}
-
-			// engine to storage selected lists
-			var lists_selected = hidden.val().split(',');
-
-			// check all the lists which was selected
-			checkbox.each(function(){
-				for(list in lists_selected) {
-					if(lists_selected[list] == $(this).val()) {
-						$(this).attr('checked', true);
-					}
-				}
-			});
-
-			// select country list which as selected
-			select.find("option").each(function(){
-				for(list in lists_selected) {
-					if(lists_selected[list] == $(this).val()) {
-						$(this).attr('selected', true);
-					}
-				}
-			});
-
-			// check all the matches which was selected
-			matches.each(function(){
-				current_hidden_id = "#id_hidden_" + $(this).attr('rel');
-				if($(current_hidden_id).val() == "true") {
-					$(this).attr('checked', true);
-				}
- 			});
-
-			// listenning click on special lists
-			checkbox.click(function(){
-				submit_lists_filter();				
-			});
-
-			// listening change on country lists
-			select.change(function(){
-				submit_lists_filter();
-			});
-
-			matches.change(function(){
-				submit_lists_filter();
-			});
-
-
-		})
-	</script>
+	<script type="text/javascript" src="{{ STATIC_URL }}/js/compare.js"></script>
 {% endblock %}
 
 {% block "breadcrumb" %}
@@ -124,10 +32,10 @@
 	</form>
 
 	<div class="list">
-		<div class="blockTitle">Compare Lists</div>
+		<div class="blockTitle">{% trans "Compare Lists" %}</div>
 		<div class="spacer"></div>
 		<div id="filters">
-			<div class="blockSubTitle">Filters</div>
+			<div class="blockSubTitle">{% trans "Filters" %}</div>
 			<div class="hBlock">
 				<div class="floatBlock">
 					{% for list in lists_special %}
@@ -138,7 +46,7 @@
 
 			</div>
 			<div class="hBlock">
-				Countries
+				{% trans "Countries" %}
 				<select id="select_countries" class="dropDownBox textEntry mid">
 					<option value="">--</option>
 					{% for list in lists_country %}
@@ -147,19 +55,20 @@
 				</select>
 			</div>
 			<div class="hBlock last">
-				<input type="checkbox" class="matches" rel="only_matched" /> <label for="match" class="rightSide">Only Matched</label><br/>
-				<input type="checkbox" class="matches" rel="only_unmatched" /> <label for="notMatch" class="rightSide">Only Unmatched</label><br/>
+				<input type="checkbox" class="matches" rel="only_matched" /> <label for="match" class="rightSide">{% trans "Only Matched" %}</label><br/>
+				<input type="checkbox" class="matches" rel="only_unmatched" /> <label for="notMatch" class="rightSide">{% trans "Only Unmatched" %}</label><br/>
 			</div>
 			<div class="spacer"></div>
 		</div><!--/filters-->
+
 		<table width="100%" cellpadding="0" cellspacing="0" border="0" class="genericTable compareLists">
 			<thead>
 				<tr>
-					<th class="rowRef">{% trans "Name" %}</th>
-					<th class="rowRef">{% trans "Type" %}</th>
+					<th class="rowRef">{% trans "Name"|capfirst %}</th>
+					<th class="rowRef">{% trans "Type"|capfirst %}</th>
 
 					{% for list in selected_lists %}	
-						<th>{{ list.obj.abbreviation }}</th>
+						<th>{{ list.obj.abbreviation|capfirst }}</th>
 					{% endfor %}
 					
 				</tr>
@@ -179,11 +88,6 @@
 								{% endif %}
 							</td>
 						{% endfor %}
-
-						<!-- 
-						<td>-</td>
-						<td><span class="checked"><span>x</span></span></td>
-						 -->
 					</tr>
 				{% endfor %}
 			</tbody>
