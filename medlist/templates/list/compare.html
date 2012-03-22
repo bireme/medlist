@@ -7,7 +7,7 @@
 	<script>
 		$(function(){
 
-			var checkbox = $("#list_filter");
+			var checkbox = $(".list_filter");
 			var form = $("#lists_filter");
 			var hidden = $("#id_hidden");
 			var select = $("#select_countries");
@@ -106,7 +106,6 @@
 {% endblock %}
 
 {% block "content" %}
-
 	<form id="lists_filter" action="{% url list.views.compare %}" method="GET" />
 		<!-- controllers -->
 		<input type="hidden" id="id_hidden" name="lists" value="{{request.GET.lists}}" />
@@ -132,7 +131,7 @@
 			<div class="hBlock">
 				<div class="floatBlock">
 					{% for list in lists_special %}
-						<input type="checkbox" id="list_filter" value="{{list.id}}"/>
+						<input type="checkbox" class="list_filter" value="{{list.id}}"/>
 						<label for="list_filter" class="rightSide">{{list.abbreviation}}</label><br/>
 					{% endfor %}
 				</div>
