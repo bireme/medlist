@@ -39,6 +39,8 @@ def show_list(request, id):
 
 def compare(request):
 
+	ITEMS_PER_PAGE = 0
+
 	lists = ''
 	if 'lists' in request.GET:
 		lists = request.GET['lists']
@@ -105,6 +107,25 @@ def compare(request):
 			if sf.pharmaceutical_form.id in matcheds:
 				section_forms = section_forms.exclude(pk=sf.id)		
 
+	# pagination
+	if ITEMS_PER_PAGE > 0:
+		
+		start = 0
+		
+		if 'page' in request.GET:
+			page = int(request.GET['page'])
+			start = (ITEMS_PER_PAGE * page) - ITEMS_PER_PAGE
+		
+		finish = start + ITEMS_PER_PAGE
+		
+		pagination = {}
+		total_pages = len(section_forms) / ITEMS_PER_PAGE
+		if (len(section_forms) % ITEMS_PER_PAGE) != 0:
+			total_pages += 1
+		pagination['items'] = range(1, total_pages+1)
+		output['pagination'] = pagination
+
+		section_forms = section_forms[start:finish]
 
 	output['lists_special'] = lists_special
 	output['lists_country'] = lists_country
