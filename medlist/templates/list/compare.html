@@ -11,6 +11,7 @@
 			var form = $("#lists_filter");
 			var hidden = $("#id_hidden");
 			var select = $("#select_countries");
+			var matches = $(".matches");
 
 			function submit_lists_filter() {
 				
@@ -26,6 +27,16 @@
 				if(select.val() != "") {
 					lists += select.val() + ",";
 				}
+
+				// changing the matches parameters to true or false
+				matches.each(function(){
+					current_hidden_id = "#id_hidden_" + $(this).attr('rel');
+					if($(this).is(":checked")) {
+						$(current_hidden_id).val('true');
+					} else {
+						$(current_hidden_id).val('false');
+					}
+				});
 				
 
 				// remove latest comma of the string
@@ -52,6 +63,7 @@
 				}
 			});
 
+			// select country list which as selected
 			select.find("option").each(function(){
 				for(list in lists_selected) {
 					if(lists_selected[list] == $(this).val()) {
@@ -60,15 +72,25 @@
 				}
 			});
 
+			// check all the matches which was selected
+			matches.each(function(){
+				current_hidden_id = "#id_hidden_" + $(this).attr('rel');
+				if($(current_hidden_id).val() == "true") {
+					$(this).attr('checked', true);
+				}
+ 			});
+
 			// listenning click on special lists
 			checkbox.click(function(){
-				
 				submit_lists_filter();				
 			});
 
 			// listening change on country lists
 			select.change(function(){
+				submit_lists_filter();
+			});
 
+			matches.change(function(){
 				submit_lists_filter();
 			});
 
@@ -84,6 +106,24 @@
 {% endblock %}
 
 {% block "content" %}
+
+	<form id="lists_filter" action="{% url list.views.compare %}" method="GET" />
+		<!-- controllers -->
+		<input type="hidden" id="id_hidden" name="lists" value="{{request.GET.lists}}" />
+		
+		{% if request.GET.only_matched == 'true' %}
+			<input type="hidden" id="id_hidden_only_matched" name="only_matched" value="true" />
+		{% else %}
+			<input type="hidden" id="id_hidden_only_matched" name="only_matched" value="false" />
+		{% endif %}
+
+		{% if request.GET.only_unmatched == 'true' %}
+			<input type="hidden" id="id_hidden_only_unmatched" name="only_unmatched" value="true" />
+		{% else %}
+			<input type="hidden" id="id_hidden_only_unmatched" name="only_unmatched" value="false" />
+		{% endif %}
+	</form>
+
 	<div class="list">
 		<div class="blockTitle">Compare Lists</div>
 		<div class="spacer"></div>
@@ -91,32 +131,25 @@
 			<div class="blockSubTitle">Filters</div>
 			<div class="hBlock">
 				<div class="floatBlock">
-					<form id="lists_filter" action="." method="GET" />
-						{% for list in lists_special %}
-							<!-- controllers -->
-							<input type="hidden" id="id_hidden" name="lists" value="{{request.GET.lists}}" />
-							<input type="hidden" name="only_matched" value="false" />
-							<input type="hidden" name="only_unmatched" value="false" />
-							
-							<input type="checkbox" id="list_filter" value="{{list.id}}"/>
-							<label for="list_filter" class="rightSide">{{list.abbreviation}}</label><br/>
-						{% endfor %}
-					</form>
+					{% for list in lists_special %}
+						<input type="checkbox" id="list_filter" value="{{list.id}}"/>
+						<label for="list_filter" class="rightSide">{{list.abbreviation}}</label><br/>
+					{% endfor %}
 				</div>
 
 			</div>
 			<div class="hBlock">
 				Countries
 				<select id="select_countries" class="dropDownBox textEntry mid">
-					<option value="">Select Country</option>
+					<option value="">--</option>
 					{% for list in lists_country %}
 						<option value="{{list.id}}">{{list.abbreviation}}</option>
 					{% endfor %}
 				</select>
 			</div>
 			<div class="hBlock last">
-				<input type="checkbox" id="match" /> <label for="match" class="rightSide">Only Matched</label><br/>
-				<input type="checkbox" id="notMatch" /> <label for="notMatch" class="rightSide">Only Unmatched</label><br/>
+				<input type="checkbox" class="matches" rel="only_matched" /> <label for="match" class="rightSide">Only Matched</label><br/>
+				<input type="checkbox" class="matches" rel="only_unmatched" /> <label for="notMatch" class="rightSide">Only Unmatched</label><br/>
 			</div>
 			<div class="spacer"></div>
 		</div><!--/filters-->
