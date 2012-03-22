@@ -67,7 +67,6 @@ class PharmaceuticalForm(models.Model):
         verbose_name_plural = "Pharmaceutical Forms"
 
     medicine = models.ForeignKey(Medicine, verbose_name=_("medicine"))
-    #list = models.ManyToManyField('List', blank=True)
     pharmaceutical_form_type =  models.ForeignKey(PharmaceuticalFormType, verbose_name=_("pharmaceutical form type"))
     atc_code = models.CharField(_("atc code"), max_length=255, blank=True)
     composition = models.CharField(_("composition"), max_length=255, blank=True)
