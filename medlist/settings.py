@@ -14,7 +14,7 @@ MANAGERS = ADMINS
 
 PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 
-ROOT_URL = "http://stela.org.br/regionalplatform/"
+ROOT_URL = "http://stela.org.br/rscpaho/"
 
 DATABASES = {
     'default': {
