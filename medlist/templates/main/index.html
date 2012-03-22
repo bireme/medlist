@@ -49,7 +49,7 @@
 				<option value="">{% trans "Select Country" %}</option>
 				{% for list in country_lists %}
 					{% if list.published %}
-						<option value="{{list.get_link}}">{{ list.name }}</option>
+						<option value="{% url list.views.show_list list.id %}">{{ list.name }}</option>
 					{% endif %}
 				{% endfor %}
 			</select>
