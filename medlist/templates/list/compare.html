@@ -47,7 +47,7 @@
 			</div>
 			<div class="hBlock">
 				{% trans "Countries" %}
-				<select id="select_countries" class="dropDownBox textEntry mid">
+				<select multiple id="select_countries" class="dropDownBox textEntry mid">
 					<option value="">--</option>
 					{% for list in lists_country %}
 						<option value="{{list.id}}">{{list.abbreviation}}</option>
@@ -55,8 +55,9 @@
 				</select>
 			</div>
 			<div class="hBlock last">
-				<input type="checkbox" class="matches" rel="only_matched" /> <label for="match" class="rightSide">{% trans "Only Matched" %}</label><br/>
-				<input type="checkbox" class="matches" rel="only_unmatched" /> <label for="notMatch" class="rightSide">{% trans "Only Unmatched" %}</label><br/>
+				<input type="radio" class="matches" name="matches" id="all_results_radio" rel="all_results" /> <label for="match" class="rightSide">{% trans "All Results" %}</label><br/>
+				<input type="radio" class="matches" name="matches" rel="only_matched" /> <label for="match" class="rightSide">{% trans "Only Matched" %}</label><br/>
+				<input type="radio" class="matches" name="matches" rel="only_unmatched" /> <label for="notMatch" class="rightSide">{% trans "Only Unmatched" %}</label><br/>
 			</div>
 			<div class="spacer"></div>
 		</div><!--/filters-->

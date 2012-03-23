@@ -66,12 +66,14 @@ $(function(){
 	});
 
 	// check all the matches which was selected
+	var all = true
 	matches.each(function(){
 		current_hidden_id = "#id_hidden_" + $(this).attr('rel');
 		if($(current_hidden_id).val() == "true") {
-			$(this).attr('checked', true);
+			all = false
+			$(this).attr('checked', 'true');
 		}
-		});
+	});
 
 	// listenning click on special lists
 	checkbox.click(function(){
