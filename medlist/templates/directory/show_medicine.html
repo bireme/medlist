@@ -12,24 +12,19 @@
 {% block "title" %}{{ medicine.name|capfirst }} | {% trans "Medicine" %} | {% endblock %}
 
 {% block "breadcrumb" %}
-	
-	{% if 'section' in request.GET %}
-		
-		<a href="{% url medlist.list.views.show_list id=section.list.id %}" title="{{ section.list.name }}">{{ section.list.name }}</a> /
-		
-		{% for section in tree %}
-			<a href="{% url medlist.list.views.show_list id=section.list.id %}" title="{{ section.title }}">{{ section.title }}</a> /
-		{% endfor %}
+	<a href="{{ ROOT_URL }}">Home</a> / 
+	<a href="http://{{request.META.HTTP_HOST}}">{% trans "List of Essential Medicines" %}</a> / 
 
-		<a href="{% url medlist.list.views.show_list id=section.list.id %}" title="{{ section.title }}">{{ section.title }}</a> /
+	{% if 'section' in request.GET %}	
+		<a href="{% url medlist.list.views.show_list id=section.list.id %}" title="{{ section.list.name }}">{{ section.list.name }}</a> /
+
 		{{ medicine.name|capfirst }}
+
 	{% else %}
-		<a href="{{ ROOT_URL }}">Home</a> / 
-		<a href="http://{{request.META.HTTP_HOST}}">{% trans "List of Essential Medicines" %}</a> / 
 		<a>Medicines</a> /
 		{{medicine.name|capfirst}}
-	{% endif %}
 
+	{% endif %}
 {% endblock %}
 
 {% block "content" %}

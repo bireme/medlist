@@ -21,7 +21,6 @@
 {% block "breadcrumb" %}
 	<a href="{{ROOT_URL}}">Home</a> / 
 	<a href="http://{{request.META.HTTP_HOST}}" title="{% trans "List of Essential Medicines" %}">{% trans "List of Essential Medicines" %}</a> /
-	<a>Lists</a> /
 	{{list.name|capfirst}}
 {% endblock %}
 
