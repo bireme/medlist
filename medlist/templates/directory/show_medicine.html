@@ -77,29 +77,16 @@
 
 							<div class="blockSubTitle">{% trans "Lists" %}</div>{{list}}
 							<ul>
-									{% if 'e' in lists %}
-										<li class="checked"><span>YES</span>EML</li>
-									{% else %}
-										<li class="notchecked"><span>NO</span>EML</li>
-									{% endif %}
-
-									{% if 'c' in lists %}
-										<li class="checked"><span>YES</span>EMLc</li>
-									{% else %}
-										<li class="notchecked"><span>NO</span>EMLc</li>
-									{% endif %}
-
-									{% if 's' in lists %}
-										<li class="checked"><span>YES</span>Strategic Fund</li>
-									{% else %}
-										<li class="notchecked"><span>NO</span>Strategic Fund</li>
-									{% endif %}
-
-									{% if 'h' in lists %}
-										<li class="checked"><span>YES</span>High Cost</li>
-									{% else %}
-										<li class="notchecked"><span>NO</span>High Cost</li>
-									{% endif %}
+								<!-- {{form_id}} -->
+								{% for list, forms in forms_in_lists.items %}
+									{% if forms.type != 'c' %}
+										{% if form_id in forms.forms %}
+											<li class="checked"><span>YES</span>{{list}}</li>
+										{% else %}
+											<li class="notchecked"><span>NO</span>{{list}}</li>
+										{% endif%}
+									{% endif%}
+								{% endfor %}
 							</ul>
 						</div>
 
@@ -107,13 +94,15 @@
 							<div class="sideBarItem" id="countries">
 								<div class="blockSubTitle">{% trans "Country list" %}</div>
 								<div>
-									{% for country in countries %}
-										{% if forloop.last %}
-											{{country}}.
-										{% else %}
-											{{country}},
-										{% endif %}
+									<ul>
+									{% for list, forms in forms_in_lists.items %}
+										{% if forms.type == 'c' %}
+											{% if form_id in forms.forms %}
+												<li>{{ list }}</li>
+											{% endif %}
+										{% endif%}
 									{% endfor %}
+								</ul>
 								</div>
 							</div>
 						{% endif %}

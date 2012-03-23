@@ -1,6 +1,7 @@
 #! coding:utf-8
 from medlist.directory.models import *
 from django.shortcuts import render_to_response, HttpResponse
+from django.http import Http404
 from django.template import RequestContext
 from medlist.list.models import *
 
@@ -10,7 +11,7 @@ def show_medicine(request, id):
 	try:
 		medicine = Medicine.objects.get(id=id)
 	except:
-		return HttpResponse("Medicamento não encontrado")
+		raise Http404
 
 	# get pharm forms contents in this medicine
 	pharm_forms = PharmaceuticalForm.objects.filter(medicine=id)
@@ -18,7 +19,17 @@ def show_medicine(request, id):
 	# get evidences summaries of medicine
 	evidences = medicine.evidencesummary_set.all()
 
-	print evidences
+	# making lists
+	forms_in_lists = {}
+	for list in List.objects.filter(published=True):
+		for form in pharm_forms:
+			
+			if not list.abbreviation in forms_in_lists.keys():
+				forms_in_lists[list.abbreviation] = {'type': list.type, 'forms': []}
+			
+			if SectionPharmForm.objects.filter(section__list__id=list.id).filter(pharmaceutical_form=form): 
+				if not form.id in forms_in_lists[list.abbreviation]:
+					forms_in_lists[list.abbreviation]["forms"].append(form.id)			
 
 	new_forms = {}
 	for form in pharm_forms:
@@ -49,6 +60,7 @@ def show_medicine(request, id):
 		'lists': lists,
 		'countries': countries,
 		'evidences': evidences,
+		'forms_in_lists': forms_in_lists,
 	})
 
 	# if cames information
