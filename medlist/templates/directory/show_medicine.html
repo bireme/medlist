@@ -69,7 +69,40 @@
 						</div>
 
 						<div class="spacer"></div>
+					</div>
 
+					<div class="mainBlock">
+						<div class="blockSubTitle">In Lists</div>
+						<ul class="listItems">
+							{% for sf in form.form_in_lists %}
+
+								{% if sf.restriction_age or sf.only_for_children or sf.specialist_care_for_children or sf.observation %}
+									<li>
+										<div class="itemTitle">{{sf.section.list}}</div>
+										<div class="itemDescription">
+											
+											{% if sf.restriction_age %}
+												<b>{% trans "restriction age or weight"|capfirst %}:</b> {{ sf.restriction_age|capfirst }}<br>
+											{% endif %}
+
+											{% if sf.only_for_children %}
+												<b>{% trans "This medicine is only for children."|capfirst %}</b><br>
+											{% endif %}
+
+											{% if sf.specialist_care_for_children %}
+												<b>{% trans "This medicine requires a specialist care for children."|capfirst %}</b><br>
+											{% endif %}
+
+											{% if sf.observation %}
+												<b>{% trans "Others observations"|capfirst %}:</b><br>
+												{{sf.observation}}
+												<br>
+											{% endif %}
+										</div>
+									</li>
+								{% endif %}
+							{% endfor %}
+						</ul>
 					</div>
 
 					<div class="sideBar">
@@ -90,22 +123,20 @@
 							</ul>
 						</div>
 
-						{% if countries|length > 0 %}
-							<div class="sideBarItem" id="countries">
-								<div class="blockSubTitle">{% trans "Country list" %}</div>
-								<div>
-									<ul>
-									{% for list, forms in forms_in_lists.items %}
-										{% if forms.type == 'c' %}
-											{% if form_id in forms.forms %}
-												<li>{{ list }}</li>
-											{% endif %}
-										{% endif%}
-									{% endfor %}
-								</ul>
-								</div>
+						<div class="sideBarItem" id="countries">
+							<div class="blockSubTitle">{% trans "Country list" %}</div>
+							<div>
+								<ul>
+								{% for list, forms in forms_in_lists.items %}
+									{% if forms.type == 'c' %}
+										{% if form_id in forms.forms %}
+											<li>{{ list }}</li>
+										{% endif %}
+									{% endif%}
+								{% endfor %}
+							</ul>
 							</div>
-						{% endif %}
+						</div>
 						
 					</div>
 					<div class="spacer"></div>

@@ -35,6 +35,7 @@ def show_medicine(request, id):
 	for form in pharm_forms:
 		new_forms[form.id] = {}
 		new_forms[form.id]['form'] = form
+		new_forms[form.id]['form_in_lists'] = SectionPharmForm.objects.filter(pharmaceutical_form=form)
 
 	forms = []
 	for form in pharm_forms:
