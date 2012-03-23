@@ -49,6 +49,9 @@ def compare(request):
 	lists = []
 	if 'lists' in request.GET and request.GET['lists'] != "":
 		lists = request.GET['lists'].split(',')
+		if 'null' in lists:
+			lists.remove("null")
+
 
 	# if not load some lists, the section_form becomes empty
 	section_forms = []
@@ -67,6 +70,7 @@ def compare(request):
 	# make structure of comparation
 	selected_lists = []
 	for list in lists:
+
 		try:
 			obj = List.objects.get(pk=list)
 			tmp = {'obj': obj, 'forms': []}
