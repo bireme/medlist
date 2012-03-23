@@ -41,15 +41,19 @@ def compare(request):
 
 	ITEMS_PER_PAGE = 0
 
-	lists = ''
-	if 'lists' in request.GET:
-		lists = request.GET['lists']
-
 	output = {}
 
 	lists_special = List.objects.filter(published=True).exclude(type='c')
 	lists_country = List.objects.filter(published=True).filter(type='c')
-	section_forms = SectionPharmForm.objects.all()
+	
+	lists = []
+	if 'lists' in request.GET and request.GET['lists'] != "":
+		lists = request.GET['lists'].split(',')
+
+	# if not load some lists, the section_form becomes empty
+	section_forms = []
+	if len(lists) > 0:
+		section_forms = SectionPharmForm.objects.filter(section__list__id__in=lists).distinct()
 
 	# removes all duplicated pharmaceutical form
 	forms = []
@@ -62,7 +66,7 @@ def compare(request):
 
 	# make structure of comparation
 	selected_lists = []
-	for list in lists.split(','):
+	for list in lists:
 		try:
 			obj = List.objects.get(pk=list)
 			tmp = {'obj': obj, 'forms': []}
