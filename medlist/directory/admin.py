@@ -3,8 +3,6 @@ from django.contrib import admin
 from django.contrib import messages
 from models import *
 from app_actions import solr_index
-from django.db.models.signals import post_save
-from django.dispatch import receiver
 from django.utils.translation import ugettext_lazy as _
 
 class PharmaceuticalFormAdmin(admin.StackedInline):
@@ -65,19 +63,35 @@ class MedicineAdmin(admin.ModelAdmin):
             modeladmin.message_user(request, _("Selected medicines were indexed"))
 
     index.short_description = _("Index selected medicines")
+    
+    def save_formset(self, request, form, formset, change):        
+        # save of related objects (formsets) are call after save_model 
+        # so if one or more of related models are changed is necessary update Solr index again
+        medicine_id = None
+        instances = formset.save(commit=False)
+        for instance in instances:
+            medicine_id = instance.medicine.id
+            instance.save()
+        formset.save_m2m()
+        
+        # re-index on Solr the medicine object
+        if medicine_id:
+            medicine_obj = Medicine.objects.get(pk=medicine_id)
+            solr_index(medicine_obj)
+        
 
     def save_model(self, request, obj, form, change):
-        obj.save()
-
+        obj.save()       
+        
         index_sucess = solr_index(obj)
         if not index_sucess:
             messages.warning(request, _("Search index update fail."))
+
 
     def get_actions(self, request):
         actions = super(MedicineAdmin, self).get_actions(request)
         del actions['delete_selected']
         return actions        
-
 
 class PharmaceuticalFormTypeAdmin(admin.ModelAdmin):
     model = PharmaceuticalFormType
@@ -99,7 +113,6 @@ class PharmaceuticalFormAdmin(admin.ModelAdmin):
     def has_delete_permission(self, request, obj=None):
         return False
 
-
     # adding option to activate or not a register
     def make_active(modeladmin, request, queryset):
         for obj in queryset:
@@ -109,7 +122,6 @@ class PharmaceuticalFormAdmin(admin.ModelAdmin):
                 obj.active = True
             obj.save()
     make_active.short_description = _("Activate or deactivate selected medicines")
-
 
 
 admin.site.register(PharmaceuticalFormType, PharmaceuticalFormTypeAdmin)
