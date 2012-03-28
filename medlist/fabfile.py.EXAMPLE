@@ -1,26 +1,26 @@
 # -*- coding: utf-8 -*-
+import os
 from fabric.api import env, local, settings, abort, run, cd
 from fabric.operations import local,put, sudo
 from fabric.context_managers import prefix
 
+env.user = ''
+env.path = ''
+env.gitpath = ''
+env.virtualenv = ''
 
-def dev():
-    env.user = ''
+def test():
     env.hosts = ['']
-    env.path = ''
-
  
-def prod():    
-    env.user = ''
+def homolog():    
     env.hosts = ['']
-    env.path = ''
 
 def reset_db(app):
     """Realiza reset do app
     """    
-    with prefix('. PATH_TO_ENV'):
+    with prefix('. %s/bin/activate' % env.virtualenv):
         with cd(env.path):   
-            run('python manage.py reset %s --noinput' % app) 
+            run('python manage.py reset %s' % app) 
             run('python manage.py syncdb')
             run('python manage.py loaddata fixtures/%s.json' % app)
      
@@ -28,22 +28,27 @@ def reset_db(app):
 def migration():
     """Realiza migration local
     """    
-    with prefix('. PATH_TO_ENV'):
+    with prefix('. %s/bin/activate' % env.virtualenv):
        local('python manage.py schemamigration gerenciador --auto') 
        local('python manage.py migrate gerenciador')
 
 def restart_app():
     """Restarts remote uwsgi.
     """
+    with cd(os.path.join(env.path,'..')):
+        run("touch application.wsgi")
+
+def update_version_file():
     with cd(env.path):
-        cd("..")
-        run("touch production.wsgi")
+        run("git describe | cut -f 1,2 -d - > templates/version.txt")
 
 def simple_update():
     """Somente atualiza código (git pull) e restart serviço
     """
-    with cd(env.path):
+    with cd(env.gitpath):
         run("git pull")
+
+    update_version_file()
     restart_app()
  
 def full_update():    
@@ -51,9 +56,10 @@ def full_update():
     """
     simple_update()
     with cd(env.path):
-        with prefix('. PATH_TO_ENV'):
+        with prefix('. %s/bin/activate' % env.virtualenv):
             run('pip install -r requirements.txt')
             run('python manage.py syncdb')
             run('python manage.py migrate gerenciador') # South
-        
+    
+    update_version_file()     
     restart_app()
