@@ -484,3 +484,7 @@ BODY, TABLE, TD, TH {
 #stelaLogo {
 	
 }
+#sysVersion{
+	float: right;	
+	margin-right: 10px;
+}
