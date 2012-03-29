@@ -20,14 +20,14 @@
             
             {if $setted == false}
                 {if $newname[0] eq $lang}
-                    <h3><a href="#">{$newname[1]|capitalize}</a></h3>
+                    <h3><a href="{$config->medlist_url}medicine/{$doc->id}/">{$newname[1]|capitalize}</a></h3>
                     {assign var="setted" value=true}
                 {/if}
             {/if}
         {/foreach}
 
         {if $setted == false}
-            <h3><a href="#">{$newname[1]|capitalize}</a></h3>
+            <h3><a href="{$config->medlist_url}medicine/{$doc->id}/">{$newname[1]|capitalize}</a></h3>
         {/if}
 		
         <!-- pharmaceutical forms -->
