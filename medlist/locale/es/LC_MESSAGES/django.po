@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-29 16:45-0300\n"
-"PO-Revision-Date: 2012-03-29 17:14-0300\n"
+"PO-Revision-Date: 2012-03-29 17:23-0300\n"
 "Last-Translator: Vinicius Andrade <vinicius.andrade@bireme.org>\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
 "Language: \n"
@@ -382,7 +382,7 @@ msgstr "Lista"
 
 #: templates/main/index.html:18
 msgid "Essential Lists"
-msgstr "Lista Esenciales"
+msgstr "Listas Esenciales"
 
 #: templates/main/index.html:20
 #: templates/main/index.html.py:34
@@ -395,7 +395,7 @@ msgstr "Listas OPS"
 
 #: templates/main/index.html:46
 msgid "National Forms"
-msgstr ""
+msgstr "Listas Nacionales"
 
 #: templates/main/index.html:49
 msgid "Select Country"
