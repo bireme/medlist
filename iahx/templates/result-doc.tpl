@@ -4,9 +4,6 @@
 
 {foreach from=$result->response->docs item=doc name=doclist}
 
-    {* assign var=refID value=$doc->id|regex_replace:"/.*-/":"" *}
-    {assign var=refID value=$doc->id|substring_after:"-"}
-
 <div id="{$doc->id}" class="record">
 
     <div class="yourSelectionCheck">
@@ -35,7 +32,7 @@
 		
         <!-- pharmaceutical forms -->
         <div class="pharmaceutical_forms">
-            <h4>Pharmaceutical Forms</h4>
+            <h4>{$texts.LABEL_PHARMACEUTICAL_FORMS}</h4>
             <ul>
             {foreach from=$doc->pharmaceutical_form item=item}
                 <li class="pharmaceutical_form">
@@ -69,23 +66,27 @@
         </div>
         
         <!-- Lists -->
-        <h4>{$texts.LABEL_IN_LIST}</h4>
-        {foreach from=$doc->list item=list}
-            {if $list eq "EML"}
-                {assign var="EML" value=true }
-            {elseif $list eq "EMLc"}
-                {assign var="EMLc" value=true }
-            {elseif $list eq "High Cost"}
-                {assign var="HighCost" value=true }
-            {elseif $list eq "Strategic Fund"}
-                {assign var="StrategicFund" value=true }
-            {/if}
-        {/foreach}
-
-        <strong>EML:</strong> {if $EML} YES {else} NO {/if} <br>
-        <strong>EMLc:</strong> {if $EMLc} YES {else} NO {/if} <br>
-        <strong>High Cost:</strong> {if $HighCost} YES {else} NO {/if} <br>
-        <strong>Strategic Fund:</strong> {if $StrategicFund} YES {else} NO {/if} <br>
+        <div class="in_lists">
+			<h4>{$texts.LABEL_IN_LIST}</h4>
+			{foreach from=$doc->list item=list}
+				{if $list eq "EML"}
+					{assign var="EML" value=true }
+				{elseif $list eq "EMLc"}
+					{assign var="EMLc" value=true }
+				{elseif $list eq "High Cost"}
+					{assign var="HighCost" value=true }
+				{elseif $list eq "Strategic Fund"}
+					{assign var="StrategicFund" value=true }
+				{/if}
+			{/foreach}
+			
+			<ul>			
+				<li><strong>EML:</strong> {if $EML} YES {else} NO {/if} </li>
+				<li><strong>EMLc:</strong> {if $EMLc} YES {else} NO {/if} </li>
+				<li><strong>High Cost:</strong> {if $HighCost} YES {else} NO {/if} </li>
+				<li><strong>Strategic Fund:</strong> {if $StrategicFund} YES {else} NO {/if} </li>
+			</ul>
+		</div>
 
 
     </div>
@@ -93,16 +94,6 @@
 
     <div class="user-actions">
         {include file="doc-actions-bar.tpl"}
-        
-        {if $doc->db|contains:"MEDLINE"}
-            <div class="pubmed">
-                <a href="{$doc->id}">
-                <img src="./image/common/icon_PubMed.gif"/>
-                <span>PubMed LinkOut</span>
-                </a>
-            </div>
-        {/if}
-        
     </div>
 
 </div>

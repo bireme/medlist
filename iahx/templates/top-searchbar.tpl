@@ -1,6 +1,6 @@
         <div class="resultsFor">
-            <a href="http://stela.org.br/rscpaho/">{$texts.BVS_HOME}</a> >
-            <a href="{$smarty.server.PHP_SELF}?lang={$lang}">Medlist</a> >
+            <a href="{$config->prais_url}">{$texts.PRAIS_HOME}</a> >
+            <a href="{$config->medlist_url}">{$texts.MEDLIST_HOME}</a> >
             <a href="{$smarty.server.PHP_SELF}?lang={$lang}">{$texts.SEARCH_HOME}</a>
         {php}
             global $q, $filter, $filter_chain, $filterLabel, $texts;
