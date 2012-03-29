@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-03-29 16:38-0300\n"
-"PO-Revision-Date: 2012-03-29 16:45-0300\n"
+"PO-Revision-Date: 2012-03-29 17:20-0300\n"
 "Last-Translator: Vinicius Andrade <vinicius.andrade@bireme.org>\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
 "Language: \n"
@@ -108,12 +108,12 @@ msgstr "Lista de países"
 #: history/models.py:10
 #: list/models.py:12
 msgid "PAHO List"
-msgstr "Listas PAHO"
+msgstr "Listas OPAS"
 
 #: history/models.py:11
 #: list/models.py:13
 msgid "WHO List"
-msgstr "Listas PAHO"
+msgstr "Listas OMS"
 
 #: history/models.py:14
 #: list/models.py:16
@@ -392,7 +392,7 @@ msgstr "comparar listas"
 
 #: templates/main/index.html:32
 msgid "PAHO Lists"
-msgstr "Listas PAHO"
+msgstr "Listas OPAS"
 
 #: templates/main/index.html:46
 msgid "National Forms"
