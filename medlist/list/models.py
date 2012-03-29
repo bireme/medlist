@@ -65,6 +65,7 @@ class Section(MPTTModel):
 
 	def get_hierarchy(self):
 		hierarchy_list = [sec.title for sec in self.get_ancestors()]
+		hierarchy_list.insert(0,self.title)
 		hierarchy_flat = "/ ".join(hierarchy_list)
 
 		return hierarchy_flat
