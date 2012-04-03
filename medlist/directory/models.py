@@ -23,6 +23,16 @@ class Medicine(models.Model):
     def get_link(self):
         return reverse('medlist.directory.views.show_medicine', kwargs={'id': self.id})
 
+    def get_translation(self, lang_code):
+        translation = MedicineLocal.objects.filter(list=self.id, language=lang_code)
+        if translation:
+            return translation[0].name
+        else:
+            return self.name
+
+    def __unicode__(self):
+        return unicode(self.name)
+
 class MedicineLocal(models.Model):
 
     class Meta:
@@ -66,6 +76,16 @@ class PharmaceuticalFormType(models.Model):
     name = models.CharField(_("name"), max_length=255)
     
     created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)   
+
+    def __unicode__(self):
+        return unicode(self.name)
+
+    def get_translation(self, lang_code):
+        translation = PharmaceuticalFormTypeLocal.objects.filter(list=self.id, language=lang_code)
+        if translation:
+            return translation[0].name
+        else:
+            return self.name
 
     def __unicode__(self):
         return unicode(self.name)
