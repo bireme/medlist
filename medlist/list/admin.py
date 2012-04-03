@@ -1,12 +1,19 @@
 #! coding: utf-8
-
 from django.utils.translation import ugettext_lazy as _
 from django.contrib import admin
 from models import *
 from urllib2 import urlopen
 from app_actions import create_list_archive
 from medlist.history.models import *
-import json
+
+
+class ListLocalAdmin(admin.TabularInline):
+    model = ListLocal
+    extra = 0
+
+class SectionLocalAdmin(admin.TabularInline):
+    model = SectionLocal
+    extra = 0
 
 class SectionPharmFormAdmin(admin.StackedInline):
 	model = SectionPharmForm
@@ -14,7 +21,7 @@ class SectionPharmFormAdmin(admin.StackedInline):
 
 class SectionAdmin(admin.ModelAdmin):
 
-	inlines = (SectionPharmFormAdmin, )
+	inlines = [SectionLocalAdmin, SectionPharmFormAdmin, ]	
 	list_display = ('title', 'get_list_abbreviation', 'get_hierarchy')
 	list_filter = ('list__abbreviation', )
 	search_fields = ('section', 'list')
@@ -25,6 +32,7 @@ class ListAdmin(admin.ModelAdmin):
 	list_filter = ('type', 'year')
 	search_fields = ('abbreviation', 'name', 'id')
 	actions = ['make_published', 'archive_list']
+	inlines = [ListLocalAdmin, ]
 
 	def get_link_list(self, obj):
 		output = '<a href="/list/%s/?preview" target="_blank">Link</a>' % obj.id
