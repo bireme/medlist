@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load app_filters %}
 
 {% block "title" %}{{ list.name|capfirst }} | {% trans "List" %} | {% endblock %}
 
@@ -21,12 +22,12 @@
 {% block "breadcrumb" %}
 	<a href="{{ROOT_URL}}">Home</a> / 
 	<a href="http://{{request.META.HTTP_HOST}}" title="{% trans "List of Essential Medicines" %}">{% trans "List of Essential Medicines" %}</a> /
-	{{list.name|capfirst}}
+	{{ list|translate:request.LANGUAGE_CODE|capfirst }}
 {% endblock %}
 
 {% block "content" %}
 	<div class="list">
-		<div class="blockTitle">{{list.name}}</div>
+		<div class="blockTitle">{{ list|translate:request.LANGUAGE_CODE }}</div>
 		<!-- <div class="orderBy">
 			<select>
 				<option value="">Order by</option>

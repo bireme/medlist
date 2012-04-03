@@ -96,6 +96,13 @@ class Section(MPTTModel):
         hierarchy_flat = "/ ".join(hierarchy_list)
 
         return hierarchy_flat
+
+    def get_translation(self, lang_code):
+        translation = SectionLocal.objects.filter(section=self.id, language=lang_code)
+        if translation:
+            return translation[0].name
+        else:
+            return self.title
     
     get_hierarchy.admin_order_field = 'parent'
     get_hierarchy.short_description = _("hierarchy")

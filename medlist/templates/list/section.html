@@ -1,7 +1,9 @@
 {% load mptt_tags %}
+{% load i18n %}
+{% load app_filters %}
 
 {% recursetree nodes %}
-    <li>{{ node.title }}
+    <li>{{ node|translate:request.LANGUAGE_CODE }}
         {% if not node.is_leaf_node %}
             <ul class="children">
                 {{ children }}
@@ -12,17 +14,17 @@
         			<div class="tableContainer">
         				<table class="genericTable" cellpadding="0" cellspacing="0" width="100%">
 							<tr>
-								<th>Name</th>
-								<th>Form</th>
-								<th>Composition</th>
+								<th>{% trans 'medicine'|capfirst %}</th>
+								<th>{% trans 'pharmaceutical form type'|capfirst %}</th>
+								<th>{% trans 'composition'|capfirst %}</th>
 							</tr>
 							{% for id, section_forms in pharm_section.items %}
 								{% if id == node.id %}
 									{% for section_form in section_forms %}
 										{% with section_form.pharmaceutical_form as form %}
 											<tr>
-												<td><a href="/medicine/{{form.medicine.id}}/?section={{node.id}}#type{{form.id}}" title="#">{{ form.medicine.name }}</a></td>
-												<td>{{form.pharmaceutical_form_type}}</td>
+												<td><a href="/medicine/{{form.medicine.id}}/?section={{node.id}}#type{{form.id}}" title="#">{{ form.medicine|translate:request.LANGUAGE_CODE }}</a></td>
+												<td>{{ form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}</td>
 												<td>{% if form.composition %}
 													{{ form.composition }}
 												{% else %}

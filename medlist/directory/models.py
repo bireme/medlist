@@ -24,7 +24,7 @@ class Medicine(models.Model):
         return reverse('medlist.directory.views.show_medicine', kwargs={'id': self.id})
 
     def get_translation(self, lang_code):
-        translation = MedicineLocal.objects.filter(list=self.id, language=lang_code)
+        translation = MedicineLocal.objects.filter(medicine=self.id, language=lang_code)
         if translation:
             return translation[0].name
         else:
@@ -81,7 +81,7 @@ class PharmaceuticalFormType(models.Model):
         return unicode(self.name)
 
     def get_translation(self, lang_code):
-        translation = PharmaceuticalFormTypeLocal.objects.filter(list=self.id, language=lang_code)
+        translation = PharmaceuticalFormTypeLocal.objects.filter(pharmaceutical_form_type=self.id, language=lang_code)
         if translation:
             return translation[0].name
         else:
