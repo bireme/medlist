@@ -12,6 +12,36 @@
 		<title>{% block "title" %}{% endblock %}{% trans "List of Essential Medicines" %}</title>
 
 		{% block "extrahead" %}{% endblock %}
+
+		<script>
+			$(function(){
+
+				var searchfield = $("#searchfield");
+				var text = '{% trans "search form to retrieve medicine information from all lists" %}';
+
+				// sets the default value
+				function set_default_searchfield() {
+					searchfield.css('color', "#999");
+					searchfield.val(text);
+				}
+				set_default_searchfield();
+
+				// give action for focus in
+				searchfield.focusin(function(){
+					if($(this).val() == text) {
+						searchfield.css('color', "#000");
+						$(this).val("");
+					}
+				});
+
+				// give action for focus out
+				searchfield.focusout(function(){
+					if($(this).val() == "") {
+						set_default_searchfield();
+					}
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<div class="container home">
@@ -19,7 +49,7 @@
 		<div class="middle">
 			<div id="searchBox">
 				<form name="search" method="post" action="{{IAHX_URL}}">
-					<input type="text" class="textEntry" name="q"/>
+					<input type="text" id="searchfield" class="textEntry" name="q"/>
 					<input type="submit" class="submit" id="searchSubmit" value=""/>
 				</form>
 			</div>
