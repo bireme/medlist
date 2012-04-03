@@ -1,5 +1,6 @@
 {% extends "base-index.html" %}
 {% load i18n %}
+{% load app_filters %}
 
 {% block "extrahead" %}
 	<script>
@@ -14,6 +15,7 @@
 {% block "title" %}{% trans "Home" %} | {% endblock %}
 
 {% block "content" %}
+
 	<div class="contentBlock">
 		<div class="bTitle">{% trans "Essential Lists" %}</div>
 		<div class="innerBlock">
@@ -22,7 +24,7 @@
 			<ul>
 				{% for list in who_lists %}
 					{% if list.published %}
-						<li><a href="{% url list.views.show_list list.id %}" title="{{list.name}}">{{list.name}}</a></li>
+						<li><a href="{% url list.views.show_list list.id %}" title="{{list.name}}">{{ list|translate:request.LANGUAGE_CODE }}</a></li>
 					{% endif %}
 				{% endfor %}
 			</ul>
@@ -36,7 +38,7 @@
 			<ul>				
 				{% for list in paho_lists %}
 					{% if list.published %}
-						<li><a href="{% url list.views.show_list list.id %}" title="{{list.name}}">{{list.name}}</a></li>
+						<li><a href="{% url list.views.show_list list.id %}" title="{{list.name}}">{{ list|translate:request.LANGUAGE_CODE }}</a></li>
 					{% endif %}
 				{% endfor %}
 			</ul>
@@ -49,7 +51,7 @@
 				<option value="">{% trans "Select Country" %}</option>
 				{% for list in country_lists %}
 					{% if list.published %}
-						<option value="{% url list.views.show_list list.id %}">{{ list.name }}</option>
+						<option value="{% url list.views.show_list list.id %}">{{ list|translate:request.LANGUAGE_CODE }}</option>
 					{% endif %}
 				{% endfor %}
 			</select>

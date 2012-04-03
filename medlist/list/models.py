@@ -38,6 +38,13 @@ class List(models.Model):
 
     created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)
 
+    def get_translation(self, lang_code):
+        translation = ListLocal.objects.filter(list=self.id, language=lang_code)
+        if translation:
+            return translation[0].name
+        else:
+            return self.name
+
     def __unicode__(self):
         return unicode(self.name)
 
