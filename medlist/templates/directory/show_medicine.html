@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load app_filters %}
 
 {% block "extrahead" %}
 	<script type="text/javascript" src="{{STATIC_URL}}/js/jquery-ui-1.8.18.custom.min.js"></script>
@@ -7,21 +8,38 @@
 	<script type="text/javascript" src="{{STATIC_URL}}/js/jquery.collapse.js"></script>
     
 	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/smoothness/jquery-ui-1.8.18.custom.css" media="screen" />
+
+	<script>
+		// hide title of div if this is no have content
+		function show_hide_titles(classname) {
+			$(function(){
+				$("." + classname).each(function(){
+					if(!$(this).find('ul').find('li').html()) {
+						$(this).find('.blockSubTitle').hide();
+					} 
+				});
+			});
+		}
+
+		show_hide_titles('countries');
+		show_hide_titles('obs_lists');
+	</script>
 {% endblock %}
 
-{% block "title" %}{{ medicine.name|capfirst }} | {% trans "Medicine" %} | {% endblock %}
+{% block "title" %}{{ medicine }} | {% trans "Medicine" %} | {% endblock %}
 
 {% block "breadcrumb" %}
-	<a href="{{ ROOT_URL }}">Home</a> / 
+	<a href="{{ ROOT_URL }}">{% trans "Home" %}</a> / 
 	<a href="http://{{request.META.HTTP_HOST}}">{% trans "List of Essential Medicines" %}</a> / 
 
 	{% if 'section' in request.GET %}	
-		<a href="{% url medlist.list.views.show_list id=section.list.id %}" title="{{ section.list.name }}">{{ section.list.name }}</a> /
 
+		<a href="{% url medlist.list.views.show_list id=section.list.id %}" title="{{ section.list.name }}">{{ section.list.name }}</a> /
 		{{ medicine.name|capfirst }}
 
 	{% else %}
-		<a>Medicines</a> /
+
+		<a>{% trans "Medicines" %}</a> /
 		{{medicine.name|capfirst}}
 
 	{% endif %}
@@ -71,8 +89,9 @@
 						<div class="spacer"></div>
 					</div>
 
-					<div class="mainBlock">
-						<div class="blockSubTitle">In Lists</div>
+					<div class="mainBlock obs_lists">
+						<div class="blockSubTitle">{% trans "Observations for this pharmaceutical form on the lists:" %}</div>
+						
 						<ul class="listItems">
 							{% for sf in form.form_in_lists %}
 
@@ -103,6 +122,7 @@
 								{% endif %}
 							{% endfor %}
 						</ul>
+						<div class="spacer"></div>
 					</div>
 
 					<div class="sideBar">
@@ -122,19 +142,18 @@
 								{% endfor %}
 							</ul>
 						</div>
-
-						<div class="sideBarItem" id="countries">
+						<div class="sideBarItem countries" id="countries">
 							<div class="blockSubTitle">{% trans "Country list" %}</div>
 							<div>
 								<ul>
-								{% for list, forms in forms_in_lists.items %}
-									{% if forms.type == 'c' %}
-										{% if form_id in forms.forms %}
-											<li>{{ list }}</li>
-										{% endif %}
-									{% endif%}
-								{% endfor %}
-							</ul>
+									{% for list, forms in forms_in_lists.items %}
+										{% if forms.type == 'c' %}
+											{% if form_id in forms.forms %}
+												<li>{{ list }}</li>
+											{% endif %}
+										{% endif%}
+									{% endfor %}
+								</ul>
 							</div>
 						</div>
 						
