@@ -29,8 +29,8 @@
 {% block "title" %}{{ medicine|translate:request.LANGUAGE_CODE|capfirst }} | {% trans "Medicine" %} | {% endblock %}
 
 {% block "breadcrumb" %}
-	<a href="{{ ROOT_URL }}">{% trans "Home" %}</a> / 
-	<a href="http://{{request.META.HTTP_HOST}}">{% trans "List of Essential Medicines" %}</a> / 
+	
+	{{ block.super }} /
 
 	{% if 'section' in request.GET %}	
 

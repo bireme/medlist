@@ -18,7 +18,10 @@
         {% include "top.html" %}
 		<div class="middle">
 			<div class="breadcrumb">
-				{% block "breadcrumb" %}{% endblock %}
+				{% block "breadcrumb" %}
+					<a href="{{ROOT_URL}}">Home</a> / 
+					<a href="{% url main.views.index %}" title="{% trans "Annotated Medicine Lists" %}">{% trans "Annotated Medicine Lists" %}</a>
+				{% endblock %}
 			</div>
 			<div class="content">
 				{% block "content" %}{% endblock %}

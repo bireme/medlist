@@ -8,8 +8,7 @@
 {% endblock %}
 
 {% block "breadcrumb" %}
-	<a href="{{ROOT_URL}}">Home</a> / 
-	<a href="http://{{request.META.HTTP_HOST}}" title="{% trans "List of Essential Medicines" %}">{% trans "List of Essential Medicines" %}</a> /
+	{{ block.super }} /
 	{% trans "Compare Lists" %}
 {% endblock %}
 
