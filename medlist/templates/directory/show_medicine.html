@@ -202,7 +202,7 @@
 					{% endif %}
 					{% if evidence.file %}
 						<div>	
-							 <a href="{{ evidence.file.url }}" target="_blank">{{ evidence.file }}</a>
+							 <a href="{{ evidence.file.url }}" target="_blank">{% trans "view details"|capfirst %}</a>
 						</div>
 					{% endif %}
 				{% endfor %}
