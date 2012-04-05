@@ -24,12 +24,12 @@ def show_medicine(request, id):
 	for list in List.objects.filter(published=True):
 		for form in pharm_forms:
 			
-			if not list.abbreviation in forms_in_lists.keys():
-				forms_in_lists[list.abbreviation] = {'type': list.type, 'forms': []}
+			if not list.id in forms_in_lists.keys():
+				forms_in_lists[list.id] = {'type': list.type, 'forms': [], 'list': List.objects.get(id=list.id)}
 			
 			if SectionPharmForm.objects.filter(section__list__id=list.id).filter(pharmaceutical_form=form): 
-				if not form.id in forms_in_lists[list.abbreviation]:
-					forms_in_lists[list.abbreviation]["forms"].append(form.id)			
+				if not form.id in forms_in_lists[list.id]:
+					forms_in_lists[list.id]["forms"].append(form.id)			
 
 	new_forms = {}
 	for form in pharm_forms:

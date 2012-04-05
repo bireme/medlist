@@ -26,7 +26,7 @@
 	</script>
 {% endblock %}
 
-{% block "title" %}{{ medicine }} | {% trans "Medicine" %} | {% endblock %}
+{% block "title" %}{{ medicine|translate:request.LANGUAGE_CODE|capfirst }} | {% trans "Medicine" %} | {% endblock %}
 
 {% block "breadcrumb" %}
 	<a href="{{ ROOT_URL }}">{% trans "Home" %}</a> / 
@@ -35,12 +35,12 @@
 	{% if 'section' in request.GET %}	
 
 		<a href="{% url medlist.list.views.show_list id=section.list.id %}" title="{{ section.list.name }}">{{ section.list.name }}</a> /
-		{{ medicine.name|capfirst }}
+		{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}
 
 	{% else %}
 
 		<a>{% trans "Medicines" %}</a> /
-		{{medicine.name|capfirst}}
+		{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}
 
 	{% endif %}
 {% endblock %}
@@ -48,7 +48,7 @@
 {% block "content" %}
 
 	<div class="mainContent">
-		<div class="blockTitle">{{medicine.name|capfirst}}</div>
+		<div class="blockTitle">{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}</div>
 		<div class="blockSubTitle">{% trans "Pharmaceutical forms" %}</div>
 		<script>
 		$(function() {
@@ -57,6 +57,7 @@
 		</script>
 		<div id="tabs">
 			<ul>
+				<!--  TODO translate -->
 				{% for form_id,form in forms.items %}
 					<li><a href="#type{{form.form.id}}">{{form.form.pharmaceutical_form_type}}</a></li>
 				{% endfor %}
@@ -97,7 +98,10 @@
 
 								{% if sf.restriction_age or sf.only_for_children or sf.specialist_care_for_children or sf.observation %}
 									<li>
-										<div class="itemTitle">{{sf.section.list}}</div>
+										<div class="itemTitle">
+											{{ sf.section.list|translate:request.LANGUAGE_CODE|capfirst }}
+										</div>
+										
 										<div class="itemDescription">
 											
 											{% if sf.restriction_age %}
@@ -134,9 +138,17 @@
 								{% for list, forms in forms_in_lists.items %}
 									{% if forms.type != 'c' %}
 										{% if form_id in forms.forms %}
-											<li class="checked"><span>YES</span>{{list}}</li>
+											<li class="checked"><span>YES</span>
+												<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
+													{{ forms.list.abbreviation }}
+												</a>
+											</li>
 										{% else %}
-											<li class="notchecked"><span>NO</span>{{list}}</li>
+											<li class="notchecked"><span>NO</span>
+												<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
+													{{ forms.list.abbreviation }}
+												</a>
+											</li>
 										{% endif%}
 									{% endif%}
 								{% endfor %}
@@ -149,7 +161,11 @@
 									{% for list, forms in forms_in_lists.items %}
 										{% if forms.type == 'c' %}
 											{% if form_id in forms.forms %}
-												<li>{{ list }}</li>
+												<li>
+													<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
+														{{ forms.list.abbreviation }}
+													</a>
+												</li>
 											{% endif %}
 										{% endif%}
 									{% endfor %}
