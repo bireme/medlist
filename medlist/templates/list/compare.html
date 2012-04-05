@@ -68,7 +68,7 @@
 				<thead>
 					<tr>
 						<th class="rowRef">{% trans "Name"|capfirst %}</th>
-						<th class="rowRef">{% trans "Type"|capfirst %}</th>
+						<th class="rowRef">{% trans "Pharmaceutical Form"|capfirst %}</th>
 
 						{% for list in selected_lists %}	
 							<th>{{ list.obj.abbreviation|capfirst }}</th>
@@ -82,7 +82,14 @@
 							<td class="rowRef">
 								<a href="{% url directory.views.show_medicine sf.pharmaceutical_form.medicine.id %}">{{ sf.pharmaceutical_form.medicine|capfirst }}</a>
 							</td>
-							<td class="rowRef">{{ sf.pharmaceutical_form.pharmaceutical_form_type|capfirst }}</td>
+							<td class="rowRef">
+								{{ sf.pharmaceutical_form.pharmaceutical_form_type|capfirst }}<br>
+								{% if sf.pharmaceutical_form.composition  %}
+									{{ sf.pharmaceutical_form.composition|capfirst }}
+								{% else %}
+									<i>{% trans "No have composition" %}</i>
+								{% endif %}
+							</td>
 
 							{% for list in selected_lists %}	
 								<td>
