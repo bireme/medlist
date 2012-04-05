@@ -16,6 +16,7 @@
 		<script>
 			$(function(){
 
+				var searchform = $("#searchform");
 				var searchfield = $("#searchfield");
 				var text = '{% trans "search form to retrieve medicine information from all lists" %}';
 
@@ -40,7 +41,18 @@
 						set_default_searchfield();
 					}
 				});
+				
+				// if search field has a default value, it changes 
+				// value for null
+				searchform.submit(function(){
+					if(searchfield.val() == text) {
+						searchfield.val("");
+					}
+				});
 			});
+			
+
+			
 		</script>
 	</head>
 	<body>
@@ -48,7 +60,7 @@
         {% include "top.html" %}
 		<div class="middle">
 			<div id="searchBox">
-				<form name="search" method="post" action="{{IAHX_URL}}">
+				<form name="search" method="post" action="{{IAHX_URL}}" id="searchform">
 					<input type="text" id="searchfield" class="textEntry" name="q"/>
 					<input type="submit" class="submit" id="searchSubmit" value=""/>
 				</form>
