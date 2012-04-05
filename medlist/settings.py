@@ -187,6 +187,9 @@ LOGGING = {
     }
 }
 
+# pagination of compare lists
+ITEMS_PER_PAGE = 8
+
 # this adding the constants of settings to template context
 _context = {} 
 local_context = locals()

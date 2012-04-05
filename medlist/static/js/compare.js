@@ -5,6 +5,7 @@ $(function(){
 	var hidden = $("#id_hidden");
 	var select = $("#select_countries");
 	var matches = $(".matches");
+	var page = $(".page");
 
 	function submit_lists_filter() {
 		
@@ -88,6 +89,14 @@ $(function(){
 	matches.change(function(){
 		submit_lists_filter();
 	});
+
+	// listening items of page
+	page.click(function(){
+		$("#pagination").val($(this).attr('rel'));
+		submit_lists_filter();
+	});	
+
+
 
 
 })

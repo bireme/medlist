@@ -29,6 +29,8 @@
 		{% else %}
 			<input type="hidden" id="id_hidden_only_unmatched" name="only_unmatched" value="false" />
 		{% endif %}
+		<!-- pagination -->
+		<input type="hidden" id="pagination" name="page" value="1" />
 	</form>
 
 	<div class="list">
@@ -96,6 +98,28 @@
 					{% endfor %}
 				</tbody>
 			</table>
+
+			<div class="pagination">
+				
+				{% if pagination.page > 1 %}
+					<a href="#" rel="{{ pagination.prev }}" class="page"> << </a>
+				{% endif %}
+				<ul>
+					{% for item in pagination.items %}
+						<li>
+							{% if pagination.page == item %}
+								<b>{{ item }}</b>
+							{% else %}
+								<a href="#" rel="{{ item }}" class="page">{{ item }}</a>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
+				{% if pagination.page < pagination.items|length %}
+					<a href="#" rel="{{ pagination.next }}" class="page"> >> </a>
+				{% endif %}
+			</div>
+
 		{% else %}
 			<span>{% trans "Sorry, but there's no results for this filter's combination." %}</span>
 		{% endif %}

@@ -4,6 +4,7 @@ from medlist.list.models import *
 from django.shortcuts import HttpResponse, render_to_response, get_object_or_404
 from django.template import RequestContext
 from django.http import Http404
+import settings
 
 def get_parents(id):
 	output = {}
@@ -38,8 +39,6 @@ def show_list(request, id):
 	return render_to_response('list/show_list.html', output, context_instance=RequestContext(request))
 
 def compare(request):
-
-	ITEMS_PER_PAGE = 0
 
 	output = {}
 
@@ -116,21 +115,43 @@ def compare(request):
 				section_forms = section_forms.exclude(pk=sf.id)		
 
 	# pagination
+	if 'items_per_page' in request.GET and request.GET['items_per_page'] > -1:
+		ITEMS_PER_PAGE = int(request.GET['items_per_page'])
+	else:
+		ITEMS_PER_PAGE = settings.ITEMS_PER_PAGE
+
 	if ITEMS_PER_PAGE > 0:
 		
+		pagination = {}
 		start = 0
 		
-		if 'page' in request.GET:
-			page = int(request.GET['page'])
-			start = (ITEMS_PER_PAGE * page) - ITEMS_PER_PAGE
-		
-		finish = start + ITEMS_PER_PAGE
-		
-		pagination = {}
 		total_pages = len(section_forms) / ITEMS_PER_PAGE
 		if (len(section_forms) % ITEMS_PER_PAGE) != 0:
 			total_pages += 1
+
 		pagination['items'] = range(1, total_pages+1)
+		
+		if 'page' in request.GET and request.GET['page'] > 0:
+			try:
+				page = int(request.GET['page'])
+			except:
+				page = 1
+			
+			start = (ITEMS_PER_PAGE * page) - ITEMS_PER_PAGE
+		
+			if page > 1:
+				pagination['prev'] = page - 1
+
+			if page < total_pages:
+				pagination['next'] = page + 1
+
+			pagination['page'] = page
+		else:
+			pagination['page'] = 1			
+			pagination['next'] = 2
+		
+		finish = start + ITEMS_PER_PAGE
+		
 		output['pagination'] = pagination
 
 		section_forms = section_forms[start:finish]
