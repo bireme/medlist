@@ -136,6 +136,7 @@ class SectionPharmForm(models.Model):
     specialist_care_for_children = models.BooleanField(_("specialist care for children"))
     observation = models.TextField(_("observation"), blank=True, null=True)
     restriction_age = models.CharField(_("restriction age or weight"), max_length=255, null=True, blank=True)
+    best_evidence = models.BooleanField(_("The best evidence for effectiveness and safety"))
 
     def __unicode__(self):
         return unicode(self.pharmaceutical_form)

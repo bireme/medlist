@@ -121,6 +121,11 @@
 												{{sf.observation}}
 												<br>
 											{% endif %}
+
+											{% if sf.best_evidence %}
+												<b>{% trans "This medicine has the best evidence for effectiveness and safety."|capfirst %}</b><br>
+												<br>
+											{% endif %}
 										</div>
 									</li>
 								{% endif %}
