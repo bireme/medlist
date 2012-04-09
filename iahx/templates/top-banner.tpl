@@ -7,14 +7,6 @@
 			<li><a href="#">{$texts.CONTACT}</a></li>
 		</ul>
 	</div>
-	<div class="loginBox">
-		
-			<input type="text" class="textEntry" />
-			<input type="password" class="textEntry" />
-			<input type="submit" class="submit" value="" />
-		
-		<div id="forgotPass"><a href="#">{$texts.FORGOT_LOGIN}</a></div>
-	</div>
 	<div class="spacer"></div>
 	<div class="banner">
 		<div id="logo"><span>Regional Platform for Innovation and Access for Health</span></div>

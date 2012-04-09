@@ -87,6 +87,16 @@ class PharmaceuticalFormType(models.Model):
         else:
             return self.name
 
+    def get_translations(self):
+        translation_list = ["en^%s" % self.name.strip()]
+        translation = PharmaceuticalFormTypeLocal.objects.filter(pharmaceutical_form_type=self.id)
+        if translation:
+            other_languages = ["%s^%s" % (trans.language, trans.name.strip()) for trans in translation]
+            translation_list.extend(other_languages)
+        
+        return translation_list
+
+
     def __unicode__(self):
         return unicode(self.name)
 
