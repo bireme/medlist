@@ -488,3 +488,8 @@ BODY, TABLE, TD, TH {
 	float: right;	
 	margin-right: 20px;
 }
+.observation{
+    background-color: #ccc; 
+    padding: 3px;
+    margin-right: 5px;
+}
