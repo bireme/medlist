@@ -39,7 +39,7 @@
 
 	{% else %}
 
-		<a>{% trans "Medicines" %}</a> /
+		<a>{% trans "medicines"|capfirst %}</a> /
 		{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}
 
 	{% endif %}
