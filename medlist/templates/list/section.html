@@ -22,24 +22,63 @@
 							{% for id, section_forms in pharm_section.items %}
 								{% if id == node.id %}
 									{% for section_form in section_forms %}
-										{% with section_form.pharmaceutical_form as form %}
-											<tr>
-												<td><a href="/medicine/{{form.medicine.id}}/?section={{node.id}}#type{{form.id}}" title="#">{{ form.medicine|translate:request.LANGUAGE_CODE }}</a></td>
-												<td>{{ form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}</td>
-												<td>{% if form.composition %}
-													{{ form.composition }}
-												{% else %}
-													N/A
-												{% endif %}</td>
-                                                <td>
-                                                    {% if  section_form.restriction_age %}<a href="#" class="observation" id="obs_a"> a </a>{% endif %}
-                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation" id="obs_c1"> c1 </a>{% endif %}
-                                                    {% if section_form.only_for_children %}<a href="#" class="observation" id="obs_c2"> c2 </a>{% endif %}
-                                                    {% if section_form.best_evidence %}<a href="#" class="observation" id="obs_e"> e </a>{% endif %}
-                                                </td>
-											</tr>
-										{% endwith %}
+										{% if not section_form.complementary_list %}
+											{% with section_form.pharmaceutical_form as form %}
+												<tr>
+													<td><a href="/medicine/{{form.medicine.id}}/?section={{node.id}}#type{{form.id}}" title="#">{{ form.medicine|translate:request.LANGUAGE_CODE }}</a></td>
+													<td>{{ form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}</td>
+													<td>{% if form.composition %}
+														{{ form.composition }}
+													{% else %}
+														N/A
+													{% endif %}</td>
+	                                                <td>
+	                                                    {% if  section_form.restriction_age %}<a href="#" class="observation" id="obs_a"> a </a>{% endif %}
+	                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation" id="obs_c1"> c1 </a>{% endif %}
+	                                                    {% if section_form.only_for_children %}<a href="#" class="observation" id="obs_c2"> c2 </a>{% endif %}
+	                                                    {% if section_form.best_evidence %}<a href="#" class="observation" id="obs_e"> e </a>{% endif %}
+	                                                </td>
+												</tr>
+											{% endwith %}
+										{% endif %}
+									{% endfor %}
+								{% endif %}
+							{% endfor %}
+						</table>
+        			</div>
 
+        			<h2>{% trans "complementary list"|capfirst %}:</h2>
+
+        			<div class="tableContainer">
+        				<table class="genericTable complementary" cellpadding="0" cellspacing="0" width="100%">
+							<tr>
+								<th>{% trans 'medicine'|capfirst %}</th>
+								<th>{% trans 'pharmaceutical form type'|capfirst %}</th>
+								<th>{% trans 'composition'|capfirst %}</th>
+                                <th>{% trans 'observation'|capfirst %}</th>
+							</tr>
+							{% for id, section_forms in pharm_section.items %}
+								{% if id == node.id %}
+									{% for section_form in section_forms %}
+										{% if section_form.complementary_list %}
+											{% with section_form.pharmaceutical_form as form %}
+												<tr>
+													<td><a href="/medicine/{{form.medicine.id}}/?section={{node.id}}#type{{form.id}}" title="#">{{ form.medicine|translate:request.LANGUAGE_CODE }}</a></td>
+													<td>{{ form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}</td>
+													<td>{% if form.composition %}
+														{{ form.composition }}
+													{% else %}
+														N/A
+													{% endif %}</td>
+	                                                <td>
+	                                                    {% if  section_form.restriction_age %}<a href="#" class="observation" id="obs_a"> a </a>{% endif %}
+	                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation" id="obs_c1"> c1 </a>{% endif %}
+	                                                    {% if section_form.only_for_children %}<a href="#" class="observation" id="obs_c2"> c2 </a>{% endif %}
+	                                                    {% if section_form.best_evidence %}<a href="#" class="observation" id="obs_e"> e </a>{% endif %}
+	                                                </td>
+												</tr>
+											{% endwith %}
+										{% endif %}
 									{% endfor %}
 								{% endif %}
 							{% endfor %}

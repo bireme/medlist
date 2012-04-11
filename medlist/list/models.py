@@ -83,7 +83,6 @@ class Section(MPTTModel):
     title = models.CharField(_("title"), max_length=255)
     parent = TreeForeignKey('Section', verbose_name=_("parent section"), blank=True, null=True, related_name='children')
     list = models.ForeignKey(List, verbose_name=_("list"))
-    complementary_list = models.BooleanField(_("complementary list"))
     observation = models.TextField(_("observation"), blank=True, null=True)
 
     created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)
@@ -156,6 +155,7 @@ class SectionPharmForm(models.Model):
     observation = models.TextField(_("observation"), blank=True, null=True)
     restriction_age = models.CharField(_("restriction age or weight"), max_length=255, null=True, blank=True)
     best_evidence = models.BooleanField(_("The best evidence for effectiveness and safety"))
+    complementary_list = models.BooleanField(_("complementary list"))
 
     def __unicode__(self):
         return unicode(self.pharmaceutical_form)
