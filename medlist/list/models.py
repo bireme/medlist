@@ -45,6 +45,15 @@ class List(models.Model):
         else:
             return self.name
 
+    def get_translations(self):
+        translation_list = ["en^%s" % self.name.strip()]
+        translation = ListLocal.objects.filter(list=self.id)
+        if translation:
+            other_languages = ["%s^%s" % (trans.language, trans.name.strip()) for trans in translation]
+            translation_list.extend(other_languages)
+        
+        return translation_list
+
     def __unicode__(self):
         return unicode(self.name)
 
@@ -103,6 +112,16 @@ class Section(MPTTModel):
             return translation[0].name
         else:
             return self.title
+
+    def get_translations(self):
+        translation_list = ["en^%s" % self.title.strip()]
+        translation = SectionLocal.objects.filter(section=self.id)
+        if translation:
+            other_languages = ["%s^%s" % (trans.language, trans.name.strip()) for trans in translation]
+            translation_list.extend(other_languages)
+        
+        return translation_list
+
     
     get_hierarchy.admin_order_field = 'parent'
     get_hierarchy.short_description = _("hierarchy")

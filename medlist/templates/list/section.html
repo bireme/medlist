@@ -17,6 +17,7 @@
 								<th>{% trans 'medicine'|capfirst %}</th>
 								<th>{% trans 'pharmaceutical form type'|capfirst %}</th>
 								<th>{% trans 'composition'|capfirst %}</th>
+                                <th>{% trans 'observation'|capfirst %}</th>
 							</tr>
 							{% for id, section_forms in pharm_section.items %}
 								{% if id == node.id %}
@@ -30,6 +31,12 @@
 												{% else %}
 													N/A
 												{% endif %}</td>
+                                                <td>
+                                                    {% if  section_form.restriction_age %}<a href="#" class="observation" id="obs_a"> a </a>{% endif %}
+                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation" id="obs_c1"> c1 </a>{% endif %}
+                                                    {% if section_form.only_for_children %}<a href="#" class="observation" id="obs_c2"> c2 </a>{% endif %}
+                                                    {% if section_form.best_evidence %}<a href="#" class="observation" id="obs_e"> e </a>{% endif %}
+                                                </td>
 											</tr>
 										{% endwith %}
 
