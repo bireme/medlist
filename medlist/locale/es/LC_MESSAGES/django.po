@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-03-29 16:45-0300\n"
+"POT-Creation-Date: 2012-04-11 15:31-0300\n"
 "PO-Revision-Date: 2012-03-29 17:23-0300\n"
 "Last-Translator: Vinicius Andrade <vinicius.andrade@bireme.org>\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
@@ -17,8 +17,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: directory/admin.py:52
-#: directory/admin.py:124
+#: directory/admin.py:52 directory/admin.py:124
 msgid "Activate or deactivate selected medicines"
 msgstr "Activar o desactivar  medicamentos seleccionados"
 
@@ -38,99 +37,83 @@ msgstr "Indizar los medicamentos seleccionados"
 msgid "Search index update fail."
 msgstr "No fue posible actualizar el indice de búsqueda"
 
-#: directory/models.py:17
-#: directory/models.py:68
-#: directory/models.py:95
-#: history/models.py:29
-#: list/models.py:33
-#: list/models.py:53
+#: directory/models.py:17 directory/models.py:78 directory/models.py:115
+#: history/models.py:29 list/models.py:39 list/models.py:80
 msgid "date creation"
 msgstr "fecha de creación"
 
-#: directory/models.py:18
-#: directory/models.py:93
+#: directory/models.py:18 directory/models.py:113
 msgid "active"
 msgstr "activo"
 
-#: directory/models.py:32
-#: directory/models.py:46
-#: directory/models.py:89
+#: directory/models.py:42 directory/models.py:56 directory/models.py:109
+#: templates/list/section.html:17
 msgid "medicine"
 msgstr "medicamento"
 
-#: directory/models.py:33
-#: directory/models.py:47
-#: directory/models.py:80
+#: directory/models.py:43 directory/models.py:57 directory/models.py:100
+#: list/models.py:54 list/models.py:116
 msgid "language"
 msgstr "idioma"
 
-#: directory/models.py:34
-#: directory/models.py:66
-#: directory/models.py:81
-#: list/models.py:26
+#: directory/models.py:44 directory/models.py:76 directory/models.py:101
+#: list/models.py:32 list/models.py:55 list/models.py:117
 msgid "name"
 msgstr "nombre"
 
-#: directory/models.py:48
+#: directory/models.py:58
 msgid "context"
 msgstr "contexto"
 
-#: directory/models.py:49
+#: directory/models.py:59
 msgid "question"
 msgstr "pregunta"
 
-#: directory/models.py:50
+#: directory/models.py:60
 msgid "link"
 msgstr "link"
 
-#: directory/models.py:51
+#: directory/models.py:61
 msgid "file"
 msgstr "archivo"
 
-#: directory/models.py:90
+#: directory/models.py:110 templates/list/section.html:18
 msgid "pharmaceutical form type"
 msgstr "tipo de forma farmacéutica"
 
-#: directory/models.py:91
+#: directory/models.py:111
 msgid "atc code"
 msgstr "código ATC"
 
-#: directory/models.py:92
+#: directory/models.py:112 templates/list/section.html:19
 msgid "composition"
 msgstr "composición"
 
-#: history/models.py:9
-#: list/models.py:11
+#: history/models.py:9 list/models.py:17
 msgid "Country List"
 msgstr "Lista de paises"
 
-#: history/models.py:10
-#: list/models.py:12
+#: history/models.py:10 list/models.py:18
 msgid "PAHO List"
 msgstr "Listas OPS"
 
-#: history/models.py:11
-#: list/models.py:13
+#: history/models.py:11 list/models.py:19
 msgid "WHO List"
 msgstr "Listas OMS"
 
-#: history/models.py:14
-#: list/models.py:16
+#: history/models.py:14 list/models.py:22
 msgid "EML"
 msgstr "LME"
 
-#: history/models.py:15
-#: list/models.py:17
+#: history/models.py:15 list/models.py:23
 msgid "EML Children"
 msgstr ""
 
-#: history/models.py:16
-#: list/models.py:18
+#: history/models.py:16 list/models.py:24
 msgid "High Cost"
 msgstr "Alto Costo"
 
-#: history/models.py:17
-#: list/models.py:19
+#: history/models.py:17 list/models.py:25
 msgid "Strategic Fund"
 msgstr "Fondo Estratégico"
 
@@ -162,118 +145,115 @@ msgstr "tipo de la lista"
 msgid "list subtype"
 msgstr "subtipo de la lista"
 
-#: list/admin.py:42
+#: list/admin.py:50
 msgid "Published or unpublished selected lists"
 msgstr "Publicar o despublicar las listas seleccionadas"
 
-#: list/admin.py:49
+#: list/admin.py:57
 msgid "Created of list archive copy successfully"
 msgstr "Archivo de la lista creado  con éxito"
 
-#: list/admin.py:51
+#: list/admin.py:59
 msgid "Create a archive copy of selected lists"
 msgstr "Crear una copia de archivo de las listas de seleccionados"
 
-#: list/models.py:23
-#: list/models.py:49
+#: list/models.py:29 list/models.py:53 list/models.py:76
 msgid "list"
 msgstr "lista"
 
-#: list/models.py:24
+#: list/models.py:30
 msgid "lists"
 msgstr "listas"
 
-#: list/models.py:27
+#: list/models.py:33
 msgid "abbreviation"
 msgstr "abreviación"
 
-#: list/models.py:28
+#: list/models.py:34
 msgid "year of publication"
 msgstr "año de publicación"
 
-#: list/models.py:29
-#: templates/list/compare.html:70
+#: list/models.py:35
 msgid "Type"
 msgstr "Tipo"
 
-#: list/models.py:30
+#: list/models.py:36
 msgid "sub-Type"
 msgstr "subtipo"
 
-#: list/models.py:31
+#: list/models.py:37
 msgid "published"
 msgstr "publicado"
 
-#: list/models.py:41
-#: list/models.py:84
+#: list/models.py:68 list/models.py:115 list/models.py:133
 msgid "section"
 msgstr "sección"
 
-#: list/models.py:42
+#: list/models.py:69
 msgid "sections"
 msgstr "seccións"
 
-#: list/models.py:47
+#: list/models.py:74
 msgid "title"
 msgstr "título"
 
-#: list/models.py:48
+#: list/models.py:75
 msgid "parent section"
 msgstr "padre sección"
 
-#: list/models.py:50
+#: list/models.py:77
 msgid "complementary list"
 msgstr "lista complementaria"
 
-#: list/models.py:51
-#: list/models.py:88
+#: list/models.py:78 list/models.py:137
 msgid "observation"
 msgstr "observación"
 
-#: list/models.py:74
+#: list/models.py:108
 msgid "hierarchy"
 msgstr "jerarquía"
 
-#: list/models.py:76
+#: list/models.py:110
 msgid "list abbreviation"
 msgstr "abreviación de la lista"
 
-#: list/models.py:81
-#: list/models.py:85
+#: list/models.py:130 list/models.py:134
 msgid "pharmaceutical form"
 msgstr "forma farmacéutica"
 
-#: list/models.py:82
+#: list/models.py:131
 msgid "pharmaceutical forms"
 msgstr "Formas farmacéuticas"
 
-#: list/models.py:86
+#: list/models.py:135
 msgid "only for children"
 msgstr "sólo para niños"
 
-#: list/models.py:87
+#: list/models.py:136
 msgid "specialist care for children"
 msgstr "especialista en el cuidado de los niños"
 
-#: list/models.py:89
-#: templates/directory/show_medicine.html:85
+#: list/models.py:138 templates/directory/show_medicine.html:108
 msgid "restriction age or weight"
 msgstr "restricción de la edad o el peso"
 
+#: list/models.py:139
+msgid "The best evidence for effectiveness and safety"
+msgstr "Mejor evidência en terminos de efectividad e seguridad"
+
 #: templates/base-index.html:12
-#: templates/directory/show_medicine.html:16
-#: templates/list/compare.html:12
-#: templates/list/show_list.html:23
 msgid "List of Essential Medicines"
 msgstr "Lista de Medicamentos Esenciales"
 
-#: templates/base.html:12
-#: templates/top.html:23
+#: templates/base-index.html:21
+msgid "search form to retrieve medicine information from all lists"
+msgstr "recuperar informaciones de medicamentos de todas las listas"
+
+#: templates/base.html:12 templates/base.html.py:23 templates/top.html:15
 msgid "Annotated Medicine Lists"
 msgstr "Listas Anotadas de Medicamentos"
 
-#: templates/top.html:5
-#: templates/main/index.html:14
+#: templates/top.html:5 templates/main/index.html:15
 msgid "Home"
 msgstr "Inicio"
 
@@ -289,115 +269,135 @@ msgstr "Envíe sus comentarios"
 msgid "Contact us"
 msgstr "Contáctenos"
 
-#: templates/top.html:17
-msgid "I Forgot my login data"
-msgstr "He olvidado mis datos de acceso"
-
-#: templates/directory/show_medicine.html:12
+#: templates/directory/show_medicine.html:29
 msgid "Medicine"
 msgstr "Medicamento"
 
-#: templates/directory/show_medicine.html:34
+#: templates/directory/show_medicine.html:42
+msgid "medicines"
+msgstr "medicamentos"
+
+#: templates/directory/show_medicine.html:52
 msgid "Pharmaceutical forms"
 msgstr "Formas farmacéuticas"
 
-#: templates/directory/show_medicine.html:63
-#: templates/directory/show_medicine.html:66
+#: templates/directory/show_medicine.html:82
+#: templates/directory/show_medicine.html:85
 msgid "Composition"
 msgstr "Composición"
 
-#: templates/directory/show_medicine.html:89
+#: templates/directory/show_medicine.html:94
+msgid "Observations for this pharmaceutical form on the lists:"
+msgstr "Observaciones para esa forma farmacéutica en las listas:"
+
+#: templates/directory/show_medicine.html:112
 msgid "This medicine is only for children."
 msgstr "Este medicamento es sólo para niños"
 
-#: templates/directory/show_medicine.html:93
+#: templates/directory/show_medicine.html:116
 msgid "This medicine requires a specialist care for children."
 msgstr "Este medicamento requiere la atención de un especialista para el uso en niños"
 
-#: templates/directory/show_medicine.html:97
+#: templates/directory/show_medicine.html:120
 msgid "Others observations"
 msgstr "Otras observaciones"
 
-#: templates/directory/show_medicine.html:111
+#: templates/directory/show_medicine.html:126
+msgid "This medicine has the best evidence for effectiveness and safety."
+msgstr "Este medicamento possue la mejor evidência en terminos de efectividad e seguridad."
+
+#: templates/directory/show_medicine.html:140
 msgid "Lists"
 msgstr "Listas"
 
-#: templates/directory/show_medicine.html:127
+#: templates/directory/show_medicine.html:163
 msgid "Country list"
 msgstr "Lista de paises"
 
-#: templates/directory/show_medicine.html:147
+#: templates/directory/show_medicine.html:187
 msgid "Medicine Evidences Summaries"
 msgstr "Sumarios de Evidencia"
 
-#: templates/directory/show_medicine.html:152
+#: templates/directory/show_medicine.html:192
 msgid "Context"
 msgstr "Contexto"
 
-#: templates/directory/show_medicine.html:158
+#: templates/directory/show_medicine.html:198
 msgid "Question"
 msgstr "Pregunta"
 
-#: templates/directory/show_medicine.html:175
+#: templates/directory/show_medicine.html:210
+msgid "view details"
+msgstr "ver los detalles"
+
+#: templates/directory/show_medicine.html:215
 msgid "This medicine no have evidences yet"
 msgstr "Este medicamento aún no tienen evidencias"
 
-#: templates/list/compare.html:4
-#: templates/list/compare.html.py:13
-#: templates/list/compare.html:35
+#: templates/list/compare.html:4 templates/list/compare.html.py:12
+#: templates/list/compare.html:36
 msgid "Compare Lists"
 msgstr "Comparar listas"
 
-#: templates/list/compare.html:38
+#: templates/list/compare.html:39
 msgid "Filters"
 msgstr "Filtros"
 
-#: templates/list/compare.html:49
+#: templates/list/compare.html:50
 msgid "Countries"
 msgstr "Paises"
 
-#: templates/list/compare.html:58
+#: templates/list/compare.html:59
 msgid "All Results"
 msgstr "Todos los resultados"
 
-#: templates/list/compare.html:59
+#: templates/list/compare.html:60
 msgid "Only Matched"
 msgstr "Sólo Igualables"
 
-#: templates/list/compare.html:60
+#: templates/list/compare.html:61
 msgid "Only Unmatched"
 msgstr "Sólo Inigualables"
 
-#: templates/list/compare.html:69
+#: templates/list/compare.html:70
 msgid "Name"
 msgstr "Nombre"
 
-#: templates/list/compare.html:100
+#: templates/list/compare.html:71
+msgid "Pharmaceutical Form"
+msgstr "Forma farmacéutica"
+
+#: templates/list/compare.html:90
+msgid "No have composition"
+msgstr "no hay composición"
+
+#: templates/list/compare.html:130
 msgid "Sorry, but there's no results for this filter's combination."
 msgstr "No hay resultados para esta combinación de filtro."
 
-#: templates/list/show_list.html:4
+#: templates/list/show_list.html:5
 msgid "List"
 msgstr "Lista"
 
-#: templates/main/index.html:18
+#: templates/main/index.html:20
 msgid "Essential Lists"
 msgstr "Listas Esenciales"
 
-#: templates/main/index.html:20
-#: templates/main/index.html.py:34
+#: templates/main/index.html:22 templates/main/index.html.py:36
 msgid "Compare lists"
 msgstr "Compare las listas"
 
-#: templates/main/index.html:32
+#: templates/main/index.html:34
 msgid "PAHO Lists"
 msgstr "Listas OPS"
 
-#: templates/main/index.html:46
+#: templates/main/index.html:48
 msgid "National Forms"
 msgstr "Listas Nacionales"
 
-#: templates/main/index.html:49
+#: templates/main/index.html:51
 msgid "Select Country"
 msgstr "Seleccione el país"
 
+#~ msgid "I Forgot my login data"
+#~ msgstr "He olvidado mis datos de acceso"
