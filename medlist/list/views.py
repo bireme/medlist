@@ -27,14 +27,22 @@ def show_list(request, id):
 			raise Http404
 
 	sections = Section.tree.filter(list=list)
+	sections_has_complementary = []
+	for section in sections:
+		if SectionPharmForm.objects.filter(section=section).filter(complementary_list=True).count() > 0:
+			sections_has_complementary.append(section.id)
+
 
 	pharm_section = {}
 	for section in sections:
-		pharm_section[section.id] = SectionPharmForm.objects.filter(section=section)
+		query = SectionPharmForm.objects.filter(section=section)
+		pharm_section[section.id] = query
+		
 
 	output = {'list': list}
 	output['nodes'] = sections
 	output['pharm_section'] = pharm_section
+	output['sections_has_complementary'] = sections_has_complementary
 	
 	return render_to_response('list/show_list.html', output, context_instance=RequestContext(request))
 
