@@ -34,10 +34,10 @@
 														N/A
 													{% endif %}</td>
 	                                                <td>
-	                                                    {% if  section_form.restriction_age %}<a href="#" class="observation" id="obs_a"> a </a>{% endif %}
-	                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation" id="obs_c1"> c1 </a>{% endif %}
-	                                                    {% if section_form.only_for_children %}<a href="#" class="observation" id="obs_c2"> c2 </a>{% endif %}
-	                                                    {% if section_form.best_evidence %}<a href="#" class="observation" id="obs_e"> e </a>{% endif %}
+	                                                    {% if  section_form.restriction_age %}<a href="#" class="observation obs_a"> a </a>{% endif %}
+	                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation obs_c1"> c1 </a>{% endif %}
+	                                                    {% if section_form.only_for_children %}<a href="#" class="observation obs_c2"> c2 </a>{% endif %}
+	                                                    {% if section_form.best_evidence %}<a href="#" class="observation obs_e"> e </a>{% endif %}
 	                                                </td>
 												</tr>
 											{% endwith %}
@@ -49,7 +49,7 @@
         			</div>
 
         			{% if node.id in sections_has_complementary %}
-	        			<h2>{% trans "complementary list"|capfirst %}:</h2>
+	        			<h2><a href="#" class="comp_list">{% trans "complementary list"|capfirst %}</a>:</h2>
 
 	        			<div class="tableContainer">
 	        				<table class="genericTable complementary" cellpadding="0" cellspacing="0" width="100%">
@@ -73,10 +73,10 @@
 															N/A
 														{% endif %}</td>
 		                                                <td>
-		                                                    {% if  section_form.restriction_age %}<a href="#" class="observation" id="obs_a"> a </a>{% endif %}
-		                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation" id="obs_c1"> c1 </a>{% endif %}
-		                                                    {% if section_form.only_for_children %}<a href="#" class="observation" id="obs_c2"> c2 </a>{% endif %}
-		                                                    {% if section_form.best_evidence %}<a href="#" class="observation" id="obs_e"> e </a>{% endif %}
+		                                                    {% if  section_form.restriction_age %}<a href="#" class="observation obs_a"> a </a>{% endif %}
+		                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation obs_c1"> c1 </a>{% endif %}
+		                                                    {% if section_form.only_for_children %}<a href="#" class="observation obs_c2"> c2 </a>{% endif %}
+		                                                    {% if section_form.best_evidence %}<a href="#" class="observation obs_e"> e </a>{% endif %}
 		                                                </td>
 													</tr>
 												{% endwith %}
