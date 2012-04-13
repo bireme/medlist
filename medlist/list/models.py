@@ -100,7 +100,7 @@ class Section(MPTTModel):
 
     def get_hierarchy(self):
         hierarchy_list = [sec.title for sec in self.get_ancestors()]
-        hierarchy_list.insert(0,self.title)
+        hierarchy_list.append(self.title)
         hierarchy_flat = "/ ".join(hierarchy_list)
 
         return hierarchy_flat
@@ -122,7 +122,6 @@ class Section(MPTTModel):
         return translation_list
 
     
-    get_hierarchy.admin_order_field = 'parent'
     get_hierarchy.short_description = _("hierarchy")
 
     get_list_abbreviation.short_description = _("list abbreviation")
