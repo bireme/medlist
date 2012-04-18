@@ -4,6 +4,20 @@
 {% block "title" %}{% trans "Compare Lists" %} | {{block.super}}{% endblock %}
 
 {% block "extrahead" %}
+	<script type="text/javascript" src="{{STATIC_URL}}js/jquery.easing.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.collapse.js"></script>    
+
+	<script type="text/javascript">
+		$(function(){
+			$('#collapser').jqcollapse({
+			   slide: true,
+			   speed: 500,
+			   easing: 'easeOutCubic',
+			   expanded: true
+			});
+		});
+	</script>
+
 	<script type="text/javascript" src="{{ STATIC_URL }}/js/compare.js"></script>
 {% endblock %}
 
@@ -37,35 +51,40 @@
 		<div class="spacer"></div>
 		<div id="filters">
 			<div class="blockSubTitle">{% trans "Filters" %}</div>
-			<div class="hBlock">
-				<div class="floatBlock">
-					{% for list in lists_special %}
-						<input type="checkbox" class="list_filter" value="{{list.id}}"/>
-						<label for="list_filter" class="rightSide">{{list.abbreviation}}</label><br/>
-					{% endfor %}
-				</div>
-
-			</div>
-			<div class="hBlock">
-				{% trans "Countries" %}
-				<select multiple id="select_countries" class="dropDownBox textEntry mid">
-					<option value="">--</option>
-					{% for list in lists_country %}
-						<option value="{{list.id}}">{{list.abbreviation}}</option>
-					{% endfor %}
-				</select>
-			</div>
-			<div class="hBlock last">
-				<input type="radio" class="matches" name="matches" id="all_results_radio" rel="all_results" /> <label for="match" class="rightSide">{% trans "All Results" %}</label><br/>
-				<input type="radio" class="matches" name="matches" rel="only_matched" /> <label for="match" class="rightSide">{% trans "Only Matched" %}</label><br/>
-				<input type="radio" class="matches" name="matches" rel="only_unmatched" /> <label for="notMatch" class="rightSide">{% trans "Only Unmatched" %}</label><br/>
-			</div>
-			<div class="spacer"></div>
+			<ul id="collapser">
+				<li>{% trans "lists"|capfirst %}
+					<ul>
+						<li>
+							{% for list in lists_special %}
+								<input type="checkbox" id="list_{{list.id}}" class="list_filter" value="{{list.id}}"/>
+								<label for="list_{{list.id}}" class="rightSide">{{list.abbreviation}}</label>
+							{% endfor %}
+						</li>
+					</ul>
+				</li>
+				<li>{% trans "countries"|capfirst %}
+					<ul>
+						<li>
+							{% for list in lists_country %}
+								<input type="checkbox" id="list_{{list.id}}" class="list_filter" value="{{list.id}}"/>
+								<label for="list_{{list.id}}" class="rightSide">{{list.abbreviation}}</label>
+							{% endfor %}
+						</li>
+					</ul>
+				</li>
+			</ul>
 		</div><!--/filters-->
+
+		<div class="hBlock">
+			<input type="radio" class="matches" name="matches" id="all_results_radio" rel="all_results" /> <label for="match" class="rightSide">{% trans "All Results" %}</label>
+			<input type="radio" class="matches" name="matches" rel="only_matched" /> <label for="match" class="rightSide">{% trans "Only Matched" %}</label>
+			<input type="radio" class="matches" name="matches" rel="only_unmatched" /> <label for="notMatch" class="rightSide">{% trans "Only Unmatched" %}</label>
+		</div>
+		<div class="spacer"></div>
 
 		{% if section_forms|length > 0 %}
 			<table width="100%" cellpadding="0" cellspacing="0" border="0" class="genericTable compareLists">
-				<thead>
+				<thead>				
 					<tr>
 						<th class="rowRef">{% trans "Name"|capfirst %}</th>
 						<th class="rowRef">{% trans "Pharmaceutical Form"|capfirst %}</th>
@@ -107,27 +126,42 @@
 
 			<div class="pagination">
 				
-				{% if pagination.page > 1 %}
-					<a href="#" rel="{{ pagination.prev }}" class="page"> << </a>
-				{% endif %}
-				<ul>
-					{% for item in pagination.items %}
+				{% if pagination.items|length > 1 %}
+					<ul>
 						<li>
-							{% if pagination.page == item %}
-								<b>{{ item }}</b>
+							{% if pagination.page > 1 %}
+								<a href="#" rel="{{ pagination.prev }}" class="page"> < </a>
 							{% else %}
-								<a href="#" rel="{{ item }}" class="page">{{ item }}</a>
+								<
 							{% endif %}
 						</li>
-					{% endfor %}
-				</ul>
-				{% if pagination.page < pagination.items|length %}
-					<a href="#" rel="{{ pagination.next }}" class="page"> >> </a>
-				{% endif %}
-			</div>
+						
+						{% for item in pagination.items %}
+							<li>
+								{% if pagination.page == item %}
+									<span class="selected">{{ item }}</span>
+								{% else %}
+									<a href="#" rel="{{ item }}" class="page">{{ item }}</a>
+								{% endif %}
+							</li>
+						{% endfor %}
+
+						<li>
+							{% if pagination.page < pagination.items|length %}
+								<a href="#" rel="{{ pagination.next }}" class="page"> > </a>
+							{% else %}
+								>
+							{% endif %}
+						</li>
+					</ul>
+				</div>
+			{% endif %}
 
 		{% else %}
-			<span>{% trans "Sorry, but there's no results for this filter's combination." %}</span>
+			<p>
+				<br>
+				{% trans "Sorry, but there's no results for this filter's combination." %}
+			</p>
 		{% endif %}
 	</div><!--/list-->
 {% endblock %}

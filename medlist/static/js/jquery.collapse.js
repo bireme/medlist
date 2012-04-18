@@ -6,7 +6,8 @@ jQuery.fn.jqcollapse = function(o) {
  var o = jQuery.extend( {
    slide: true,
    speed: 300,
-   easing: ''
+   easing: '',
+   expanded: false
  },o);
  
  $(this).each(function(){
@@ -23,18 +24,21 @@ jQuery.fn.jqcollapse = function(o) {
 	    	parent_li.wrapInner('<a/>');
 	    }
 	    
-	    parent_li.find('a').addClass('jqcNode').css('cursor','pointer').click(function() {
+	    parent_li.find('a').addClass('jqcNode').css('cursor','pointer').addClass('plus').click(function() {
 	        if(o.slide==true){
 	        	sub_ul.slideToggle(o.speed, o.easing);
 	        }else{
 	        	sub_ul.toggle();
 	        }
+			$(this).toggleClass('minus');
 	    });
 	    parent_li.append(sub_ul);
 	});
 	
 	//Hide all sub-lists
-	 $('#'+e+' ul').hide();
+	if(!o.expanded) {
+		$('#'+e+' ul').hide();
+	}
 	 
  });
  

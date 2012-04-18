@@ -46,7 +46,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+P A, LI A {
+	color: #1C4C6B;
+	text-decoration: none;
+}
+P A:hover, LI A:hover {
+	text-decoration: underline;
+}
 /* MEDLIST STYLES */
 /* by BIREME */
 .spacer {
@@ -298,30 +304,47 @@ BODY, TABLE, TD, TH {
 	/*width: 73%;*/
 }
 .content .mainContent .mainBlock {
-	float: left;
-	width: 73%;
+
+}
+.mainBlock STRONG {
+	font-size: 90%;
 }
 .content .sideBar {
 	float: left;
 	width: 22%;
 	margin-left: 3%;
 }
-.sideBarItem {
+.listItem {
 	margin-bottom: 20px;
 	line-height: 140%;
+	float: left;
+	margin: 0px .5%;
 }
-.sideBarItem .checked SPAN, .sideBarItem .notchecked SPAN {
+.listItem.lists {
+	width: 35%;
+}
+.listItem.countries {
+	width: 23%;
+}
+.listItem .checked SPAN, .listItem .notchecked SPAN {
 	display: inline-block;
 	width: 24px;
 	margin: 2px 4px 2px 0px;
 	text-align: center;
 	font-size: 70%;
 }
-.sideBarItem .checked SPAN {
+.listItem .checked SPAN {
 	background: #B2E8AE;
 }
-.sideBarItem .notchecked SPAN {
+.listItem .notchecked SPAN {
 	background: #FA9895;
+}
+.topBarGroup {
+	width: 36%;
+	float: right;
+}
+.topBarItem {
+	float: right;
 }
 .blockTitle {
 	font-size: 160%;
@@ -335,6 +358,27 @@ BODY, TABLE, TD, TH {
 	font-weight: bold;
 	color: #ff5000;
 	margin-bottom: 12px;
+}
+.listItems {
+	margin-top:12px;
+	padding-left: 20px;
+}
+.listItems LI {
+	list-style: disc;
+	margin-bottom: 8px !important;
+	font-size: 90%;
+}
+.ui-tabs .blockSubTitle {
+	font-size: 100%;
+}
+.evidenceSummary {
+	margin-top: 22px;
+}
+.evidenceSummary .listItems {
+	font-size: 115%;
+}
+.evidenceSummary .evidenceContext {
+	font-weight: bold;
 }
 #filters {
 	margin-bottom: 20px;
@@ -373,6 +417,14 @@ BODY, TABLE, TD, TH {
 .jqcNode {
 	font-weight: bold;
 	color: #1c4c6b;
+}
+.plus {
+	background: url(../images/plus.gif) no-repeat 0px 2px;
+	padding-left: 18px;
+}
+.minus {
+	background: url(../images/minus.gif) no-repeat 0px 2px;
+	padding-left: 18px;
 }
 .jqcNode:hover {
 	text-decoration: underline;
@@ -430,6 +482,7 @@ BODY, TABLE, TD, TH {
 	margin-right: 12px;
 	text-align: center;
 	line-height: 140%;
+	max-width: 120px;
 }
 .highlightItem.checked {
 	padding-left: 45px;
@@ -450,6 +503,17 @@ BODY, TABLE, TD, TH {
 .itemFooter {
 	font-size: 85%;
 	font-weight: bold;
+}
+TH.tableHeadFilters {
+	text-align:left !important;
+}
+TH.tableHeadFilters INPUT{
+	margin-left: 12px;
+}
+TH.tableHeadFilters LABEL{
+	font-weight: normal;
+	font-size: 85%;
+
 }
 .footer {
 	background: #000 url(../images/bg-barra-inferior.png) repeat-x;
@@ -484,12 +548,20 @@ BODY, TABLE, TD, TH {
 #stelaLogo {
 	
 }
-#sysVersion{
-	float: right;	
-	margin-right: 20px;
+.ui-widget-content {
+	color: #555;
 }
-.observation{
-    background-color: #ccc; 
-    padding: 3px;
-    margin-right: 5px;
+
+/* pagination */
+.pagination ul{
+	padding: 5px 0px;
+}
+.pagination ul li{
+	padding: 3px 5px;
+	display: inline;
+	background: #f0f0f0;
+}
+
+.pagination ul li:hover, .pagination .selected{
+	background: #ccc;
 }

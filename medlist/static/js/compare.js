@@ -17,11 +17,6 @@ $(function(){
 			}
 		});
 
-		// adding country list selected to string
-		if(select.val() != "") {
-			lists += select.val() + ",";
-		}
-
 		// changing the matches parameters to true or false
 		matches.each(function(){
 			current_hidden_id = "#id_hidden_" + $(this).attr('rel');
