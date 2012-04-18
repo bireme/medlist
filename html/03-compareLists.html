@@ -61,49 +61,61 @@
 					<div class="blockTitle">Compare Lists</div>
 					<div class="spacer"></div>
 					<div id="filters">
-						<div class="blockSubTitle">Filters</div>
-						<div class="hBlock">
-							<label for="atcPrefix" class="leftSide">ATC Prefix</label> <input type="text" class="textEntry mid" />
-						</div>
-						<div class="hBlock">
-							<div class="floatBlock">
-								<input type="checkbox" id="eml" /> <label for="eml" class="rightSide">EML</label><br/>
-								<input type="checkbox" id="emlc" /> <label for="emlc" class="rightSide">EMLc</label><br/>
-								<input type="checkbox" id="psf" /> <label for="psf" class="rightSide">PSF</label>
-							</div>
-							<div class="floatBlock">
-								<input type="checkbox" id="phcm" /> <label for="phcm" class="rightSide">PHCM</label><br/>
-								<input type="checkbox" id="nfdms" /> <label for="nfdms" class="rightSide">NFDMS</label>
-							</div>
-						</div>
-						<div class="hBlock">
-							Countries
-							<select class="dropDownBox textEntry mid">
-								<option value="">Select Country</option>
-								<option value="ar">Argentina</option>
-								<option value="bo">Bolivia</option>
-								<option value="br">Brasil</option>
-								<option value="cl">Chile</option>
-								<option value="co">Colombia</option>
-								<option value="py">Paraguay</option>
-								<option value="uy">Uruguay</option>
-								<option value="ve">Venezuela</option>
-							</select>
-						</div>
-						<div class="hBlock last">
-							<input type="checkbox" id="match" /> <label for="match" class="rightSide">Only Matched</label><br/>
-							<input type="checkbox" id="notMatch" /> <label for="notMatch" class="rightSide">Only Unmatched</label><br/>
-							<input type="checkbox" id="byList" /> <label for="byList" class="rightSide">Limit by List</label>
-							<select class="dropDownBox textEntry mid">
-								<option value="">Select List</option>
-								<option value="ar">Argentina</option>
-								<option value="ve">Venezuela</option>
-							</select>
-						</div>
-						<div class="spacer"></div>
+						
+						<script type="text/javascript">
+							$(function(){
+								$('#collapser').jqcollapse({
+								   slide: true,
+								   speed: 500,
+								   easing: 'easeOutCubic'
+								});
+							});
+						</script>
+
+						<ul id="collapser">
+							<li>Medicine lists
+								<ul>
+									<li>
+										<input type="checkbox" id="eml" /> <label for="eml" class="rightSide">EML</label>
+										<input type="checkbox" id="emlc" /> <label for="emlc" class="rightSide">EMLc</label>
+										<input type="checkbox" id="psf" /> <label for="psf" class="rightSide">PSF</label>
+										<input type="checkbox" id="phcm" /> <label for="phcm" class="rightSide">PHCM</label>
+										<input type="checkbox" id="nfdms" /> <label for="nfdms" class="rightSide">NFDMS</label>
+									</li>
+								</ul>
+							</li>
+							<li>Country lists
+								<ul>
+									<li>
+										<input type="checkbox" id="ar" /> <label for="ar" class="rightSide">Argentina</label>
+										<input type="checkbox" id="bo" /> <label for="bo" class="rightSide">Bolivia</label>
+										<input type="checkbox" id="br" /> <label for="br" class="rightSide">Brasil</label>
+										<input type="checkbox" id="cl" /> <label for="cl" class="rightSide">Chile</label>
+										<input type="checkbox" id="co" /> <label for="co" class="rightSide">Colombia</label>
+										<input type="checkbox" id="py" /> <label for="py" class="rightSide">Paraguay</label>
+										<input type="checkbox" id="uy" /> <label for="uy" class="rightSide">Uriuguay</label>
+										<input type="checkbox" id="ve" /> <label for="ve" class="rightSide">Venezuela</label>
+									</li>
+								</ul>
+							</li>
+						</ul>
+						
+						
 					</div><!--/filters-->
 					<table width="100%" cellpadding="0" cellspacing="0" border="0" class="genericTable compareLists">
 						<thead>
+							<tr>
+								<th colspan="10" class="tableHeadFilters">
+									<input type="checkbox" id="match" /> <label for="match">Only Matched</label>
+									<input type="checkbox" id="notMatch" /> <label for="notMatch" class="rightSide">Only Unmatched</label>
+									<input type="checkbox" id="byList" /> <label for="byList" class="rightSide">Limit by List</label>
+									<select class="dropDownBox textEntry mid">
+										<option value="">Select List</option>
+										<option value="ar">Argentina</option>
+										<option value="ve">Venezuela</option>
+									</select>
+								</th>
+							</tr>
 							<tr>
 								<th class="rowRef">ATC</th>
 								<th class="rowRef">Nome</th>
