@@ -434,6 +434,7 @@ BODY, TABLE, TD, TH {
 	border: 4px solid #7d9cb2;
 	border-radius: 6px;
 	padding: 6px;
+	margin: 12px 0px;
 }
 .genericTable TH {
 	font-weight: bold;
@@ -450,6 +451,12 @@ BODY, TABLE, TD, TH {
 }
 .genericTable A:hover {
 	text-decoration: underline;
+}
+.comp_list A {
+	background: url(../images/application_side_list.png) no-repeat;
+	padding-left: 20px;
+	font-size: 90%;
+	font-weight: bold;
 }
 .compareLists TD, .compareLists TH {
 	vertical-align: middle;
