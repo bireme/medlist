@@ -1,0 +1,58 @@
+@import url(./layout.css);
+@import url(./styles.css);
+
+DIV.spacer {
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	float: none;
+	font-size: 1px;
+	height: 1px;
+	clear: both;
+}
+
+/*
+DIV.top {
+	background:#344b66;
+	height:9px;
+}
+
+
+DIV.identification {
+    height: 155px;
+    margin-left: 80px;
+
+}
+
+DIV.identification H1{
+	padding: 93px 0px 0px 190px;	
+	display:none;
+}
+
+DIV.identification H2{
+	display:none;
+}
+*/
+
+DIV.search DIV.informationTypes A.selected, DIV.search DIV.searchForm {
+}
+
+DIV.results DIV.resultServices DIV H4, 
+DIV.resultSet DIV.infoBar {
+}
+
+DIV.results DIV.resultServices DIV {
+}
+
+.record:hover {
+	background: #f9fcfe;
+}
+
+
+#fulltext strong {
+	background: none !important;
+}
+
+#fulltext.closed strong {
+	background: none !important;
+}
