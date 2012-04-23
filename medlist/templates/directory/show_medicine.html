@@ -91,7 +91,7 @@
 							</ul>
 						</div>
 						<div class="listItem countries">
-							<div class="blockSubTitle">{% trans "Country list" %}</div>
+							<div class="blockSubTitle">{% trans "Countries lists" %}</div>
 							<div>
 								{% for list, forms in forms_in_lists.items %}
 									{% if forms.type == 'c' %}
@@ -134,7 +134,7 @@
 
 					<div class="mainBlock obs_lists">
 
-						<div class="blockSubTitle">{% trans "Observations for this pharmaceutical form on the lists:" %}</div>
+						<div class="blockSubTitle">{% trans "Observations for this pharmaceutical form can be found on the lists:" %}</div>
 
 						{% for sf in form.form_in_lists %}
 
@@ -145,7 +145,7 @@
 									<ul class="listItems">
 										{% if sf.restriction_age %}
 											<li>
-												<b>{% trans "restriction age or weight"|capfirst %}:</b> {{ sf.restriction_age|capfirst }}<br>
+												<b>{% trans "age or weight restriction"|capfirst %}:</b> {{ sf.restriction_age|capfirst }}<br>
 											</li>
 										{% endif %}
 
@@ -157,7 +157,7 @@
 
 										{% if sf.specialist_care_for_children %}
 											<li>
-												<b>{% trans "This medicine requires a specialist care for children."|capfirst %}</b><br>
+												<b>{% trans "This medicine requires a children care specialist."|capfirst %}</b><br>
 											</li>
 										{% endif %}
 
@@ -178,24 +178,6 @@
 									</ul>
 								{% endif %}
 							{% endfor %}
-
-						<strong>WHO Model List of Essential Medicines</strong>
-						<ul class="listItems">
-							<li>
-								Restriction age or weight: > 3 years
-							</li>
-							<li>
-								This medicine is only for children.
-							</li>
-							<li>
-								This medicine requires a specialist care for children.
-							</li>
-							<li>
-								<p>
-									Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacinia ultrices tellus, id adipiscing arcu consequat vel. Sed sem metus, ultrices ac tincidunt ut, facilisis eget odio
-								</p>
-							</li>
-						</ul>
 					</div>
 					<div class="spacer"></div>
 				</div>
