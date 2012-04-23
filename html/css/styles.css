@@ -314,17 +314,32 @@ BODY, TABLE, TD, TH {
 	width: 22%;
 	margin-left: 3%;
 }
+.listItemBlock {
+	float: left;
+	width: 48%;
+}
 .listItem {
 	margin-bottom: 20px;
 	line-height: 140%;
-	float: left;
 	margin: 0px .5%;
 }
-.listItem.lists {
-	width: 35%;
+.blockSubTitle {
+	font-size: 140%;
+	font-weight: bold;
+	color: #ff5000;
+	margin-bottom: 12px;
 }
-.listItem.countries {
-	width: 23%;
+.ui-tabs-panel .blockSubTitle {
+	font-size: 120%;
+}
+.listItem .blockSubTitle{
+	font-size: 105%;
+}
+.listItem .blockSubTitle.l2 {
+	margin-bottom: 4px;
+}
+.listItem UL {
+	margin-bottom: 20px;
 }
 .listItem .checked SPAN, .listItem .notchecked SPAN {
 	display: inline-block;
@@ -340,7 +355,7 @@ BODY, TABLE, TD, TH {
 	background: #FA9895;
 }
 .topBarGroup {
-	width: 36%;
+	width: 50%;
 	float: right;
 }
 .topBarItem {
@@ -353,12 +368,7 @@ BODY, TABLE, TD, TH {
 	width: 75%;
 	margin-bottom: 12px;
 }
-.blockSubTitle {
-	font-size: 120%;
-	font-weight: bold;
-	color: #ff5000;
-	margin-bottom: 12px;
-}
+
 .listItems {
 	margin-top:12px;
 	padding-left: 20px;
@@ -367,9 +377,6 @@ BODY, TABLE, TD, TH {
 	list-style: disc;
 	margin-bottom: 8px !important;
 	font-size: 90%;
-}
-.ui-tabs .blockSubTitle {
-	font-size: 100%;
 }
 .evidenceSummary {
 	margin-top: 22px;
@@ -558,3 +565,11 @@ TH.tableHeadFilters LABEL{
 .ui-widget-content {
 	color: #555;
 }
+/* Vertical Tabs
+----------------------------------*/
+.ui-tabs-vertical.ui-tabs {border: 0px;}
+.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; position: absolute; width: 145px; }
+.ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; overflow: hidden; width: 145px; }
+.ui-tabs-vertical .ui-tabs-nav li a { display:block; }
+.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
+.ui-tabs-vertical .ui-tabs-panel {float: right; width: 600px; border: 1px solid #AAA; border-radius: 4px;}
