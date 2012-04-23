@@ -80,7 +80,15 @@ BODY, TABLE, TD, TH {
 .container {
 	width: 980px;
 	margin: 0 auto;
+	min-height: 600px;
 }
+
+@media only screen and (min-height: 810px) {
+	.container {
+		min-height: 850px;
+	}
+}
+
 .top A {
 	color: #FFF;
 	text-decoration: none;
@@ -525,7 +533,7 @@ TH.tableHeadFilters LABEL{
 .footer {
 	background: #000 url(../images/bg-barra-inferior.png) repeat-x;
 	color: #FFF;
-	height: 130px;
+	height: 67px;
 }
 .wrapper {
 	width: 940px;
@@ -555,7 +563,15 @@ TH.tableHeadFilters LABEL{
 #stelaLogo {
 	
 }
-.ui-widget-content {
+
+#sysVersion{
+	margin: 50px 10px 0 0;
+	float: right;
+	right: 10px;
+	font-size: 80%;
+}
+
+.right-widget-content {
 	color: #555;
 }
 
@@ -572,3 +588,5 @@ TH.tableHeadFilters LABEL{
 .pagination ul li:hover, .pagination .selected{
 	background: #ccc;
 }
+
+
