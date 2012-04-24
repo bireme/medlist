@@ -51,59 +51,78 @@
 		<div class="blockTitle">{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}</div>
 		<div class="blockSubTitle">{% trans "Pharmaceutical forms" %}</div>
 		<script>
+		// $(function() {
+		// 	$( "#tabs" ).tabs();
+		// });
+
 		$(function() {
-			$( "#tabs" ).tabs();
+			$("#tabs").tabs().addClass('ui-tabs-vertical ui-helper-clearfix');
+			$("#tabs li").removeClass('ui-corner-top').addClass('ui-corner-left');
+
+			$("#tabs ul li.ui-state-default a").each(function(){
+				string = $(this).html().replace(/^\s+|\s+$/g, '');
+				title = $(this).attr('title').replace(/^\s+|\s+$/g, '');
+				if(string.length < title.length) $(this).html(string + "...");
+			});
 		});
+
 		</script>
 		<div id="tabs">
 			<ul>
 				<!--  TODO translate -->
 				{% for form_id,form in forms.items %}
-					<li><a href="#type{{form.form.id}}">{{form.form.pharmaceutical_form_type}}</a></li>
+					<li><a href="#type{{form.form.id}}" title="{{form.form.pharmaceutical_form_type}}">{{form.form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE|slice:"15"}}
+					</a></li>	
+
 				{% endfor %}
 			</ul>
 
 			{% for form_id,form in forms.items %}
 				<div id="type{{form.form.id}}">
-					<div class="highlightBlock">
 
-						<div class="listItem lists">
-							<div class="blockSubTitle">{% trans "Lists" %}</div>{{list}}
-							<ul>
-								<!-- {{form_id}} -->
-								{% for list, forms in forms_in_lists.items %}
-									{% if forms.type != 'c' %}
-										{% if form_id in forms.forms %}
-											<li class="checked"><span>YES</span>
-												<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
-													{{ forms.list.abbreviation }}
-												</a>
-											</li>
-										{% else %}
-											<li class="notchecked"><span>NO</span>
-												<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
-													{{ forms.list.abbreviation }}
-												</a>
-											</li>
+					<div class="blockSubTitle">{{ form.form.pharmaceutical_form_type }}</div>
+
+					<div class="highlightBlock">
+						<div class="listItemBlock">
+							<div class="listItem lists">
+								<div class="blockSubTitle l2">{% trans "Lists" %}</div>{{list}}
+								<ul>
+									<!-- {{form_id}} -->
+									{% for list, forms in forms_in_lists.items %}
+										{% if forms.type != 'c' %}
+											{% if form_id in forms.forms %}
+												<li class="checked"><span>YES</span>
+													<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
+														{{ forms.list|translate:request.LANGUAGE_CODE|slice:"40" }}{% if forms.list|translate:request.LANGUAGE_CODE|length > 40 %}...{% endif %}
+													</a>
+												</li>
+											{% else %}
+												<li class="notchecked"><span>NO</span>
+													<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
+														{{ forms.list.abbreviation }}
+													</a>
+												</li>
+											{% endif%}
 										{% endif%}
-									{% endif%}
-								{% endfor %}
-							</ul>
-						</div>
-						<div class="listItem countries">
-							<div class="blockSubTitle">{% trans "Countries lists" %}</div>
-							<div>
-								{% for list, forms in forms_in_lists.items %}
-									{% if forms.type == 'c' %}
-										{% if form_id in forms.forms %}
-											<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
-													{{ forms.list.abbreviation }}
-											</a>
-										{% endif %}
-									{% endif%}
-								{% endfor %}
+									{% endfor %}
+								</ul>
+							</div>
+							<div class="listItem countries">
+								<div class="blockSubTitle">{% trans "Countries lists" %}</div>
+								<div>
+									{% for list, forms in forms_in_lists.items %}
+										{% if forms.type == 'c' %}
+											{% if form_id in forms.forms %}
+												<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
+														{{ forms.list.abbreviation }}
+												</a>
+											{% endif %}
+										{% endif%}
+									{% endfor %}
+								</div>
 							</div>
 						</div>
+
 						<div class="topBarGroup">
 							<div class="topBarItem">									
 								<div class="highlightItem">
