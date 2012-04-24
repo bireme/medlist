@@ -62,30 +62,34 @@
 				<div class="mainContent">
 					<div class="blockTitle">Medicine ABCD</div>
 					<div class="blockSubTitle">Pharmaceutical forms</div>
-					<script>
+					<script type="text/javascript">
 					$(function() {
-						$( "#tabs" ).tabs();
+						$("#tabs").tabs().addClass('ui-tabs-vertical ui-helper-clearfix');
+						$("#tabs li").removeClass('ui-corner-top').addClass('ui-corner-left');
 					});
 					</script>
 					<div id="tabs">
 						<ul>
-							<li><a href="#tab01">Suspension for intratracheal instillation</a></li>
-							<li><a href="#tab02">Suspension for intratracheal instillation</a></li>							
+							<li><a href="#tab01" title="Suspension for intratracheal instillation">	Tablet (enteric-coa...</a></li>
+							<li><a href="#tab02" title="Suspension for intratracheal instillation">Suspension...</a></li>	
 						</ul>
 						<div id="tab01">
+							<div class="blockSubTitle">Tablet (enteric-coated)</div>
 							<div class="highlightBlock">
-								<div class="listItem lists">
-									<div class="blockSubTitle">Listas</div>
-									<ul>
-										<li class="checked"><span>YES</span>WHO Essential Medicines List</li>
-										<li class="checked"><span>YES</span>Strategic Funds</li>
-										<li class="notchecked"><span>NO</span>Hight Cost</li>
-									</ul>
-								</div>
-								<div class="listItem countries">
-									<div class="blockSubTitle">Países</div>
-									<div>
-										Argentina, Bolivia, Brasil, Chile, Colombia, Paraguay, Venezuela
+								<div class="listItemBlock">
+									<div class="listItem lists">
+										<div class="blockSubTitle l2">Listas</div>
+										<ul>
+											<li class="checked"><span>YES</span>WHO Essential Medicines List</li>
+											<li class="checked"><span>YES</span>Strategic Funds</li>
+											<li class="notchecked"><span>NO</span>Hight Cost</li>
+										</ul>
+									</div>
+									<div class="listItem countries">
+										<div class="blockSubTitle">Países</div>
+										<div>
+											Argentina, Bolivia, Brasil, Chile, Colombia, Paraguay, Venezuela
+										</div>
 									</div>
 								</div>
 								<div class="topBarGroup">
@@ -129,19 +133,22 @@
 							</div>
 						</div>
 						<div id="tab02">
+							<div class="blockSubTitle">Suspension for intratracheal instillation</div>
 							<div class="highlightBlock">
-								<div class="listItem lists">
-									<div class="blockSubTitle">Listas</div>
-									<ul>
-										<li class="checked"><span>YES</span>Essential Medicines</li>
-										<li class="checked"><span>YES</span>Strategic Funds</li>
-										<li class="notchecked"><span>NO</span>Hight Cost</li>
-									</ul>
-								</div>
-								<div class="listItem countries">
-									<div class="blockSubTitle">Países</div>
-									<div>
-										Argentina, Bolivia, Brasil, Chile, Colombia, Paraguay, Venezuela
+								<div class="listItemBlock">
+									<div class="listItem lists">
+										<div class="blockSubTitle l2">Listas</div>
+										<ul>
+											<li class="checked"><span>YES</span>Essential Medicines</li>
+											<li class="checked"><span>YES</span>Strategic Funds</li>
+											<li class="notchecked"><span>NO</span>Hight Cost</li>
+										</ul>
+									</div>
+									<div class="listItem countries">
+										<div class="blockSubTitle">Países</div>
+										<div>
+											Argentina, Bolivia, Brasil, Chile, Colombia, Paraguay, Venezuela
+										</div>
 									</div>
 								</div>
 								<div class="topBarGroup">

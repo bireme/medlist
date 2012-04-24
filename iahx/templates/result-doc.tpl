@@ -4,7 +4,7 @@
 
 {foreach from=$result->response->docs item=doc name=doclist}
 
-<div id="{$doc->id}" class="record">
+	<div id="{$doc->id}" class="record">
 
     <div class="yourSelectionCheck">
         <a onclick="markUnmark(this.firstChild,'{$doc->id}');"><img src="./image/common/box_unselected.gif" state="u" alt="{$texts.MARK_DOCUMENT}" title="{$texts.MARK_DOCUMENT}" /></a>
@@ -25,7 +25,7 @@
             <ul>
             {foreach from=$doc->pharmaceutical_form item=item}
                 <li class="pharmaceutical_form">
-					<strong>{extractdata element=$item part=$lang}: {extractdata element=$item part=comp}</strong>
+					{extractdata element=$item part=$lang}: {extractdata element=$item part=comp}
 				</li>	
             {/foreach}
             </ul>
@@ -43,10 +43,8 @@
 				{/foreach}				
 			</ul>
 		</div>
-
-
+		<div class="spacer"></div>
     </div>
-    <div class="spacer"></div>
 
     <div class="user-actions">
         {include file="doc-actions-bar.tpl"}
