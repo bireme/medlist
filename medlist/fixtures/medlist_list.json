@@ -1,0 +1,4583 @@
+[
+  {
+    "pk": 11, 
+    "model": "list.list", 
+    "fields": {
+      "name": "WHO Model List of Essential Medicines", 
+      "created": "2012-04-24 17:42:59", 
+      "year": 2011, 
+      "abbreviation": "WHO EML", 
+      "subtype": "e", 
+      "published": true, 
+      "type": "w"
+    }
+  }, 
+  {
+    "pk": 27, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 12, 
+      "observation": "", 
+      "parent": null, 
+      "created": "2012-04-24 17:45:21", 
+      "title": "Anaesthetics", 
+      "list": 11, 
+      "lft": 1, 
+      "tree_id": 1, 
+      "level": 0
+    }
+  }, 
+  {
+    "pk": 28, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 7, 
+      "observation": "", 
+      "parent": 27, 
+      "created": "2012-04-24 17:45:34", 
+      "title": "General anaesthetics and oxygen", 
+      "list": 11, 
+      "lft": 2, 
+      "tree_id": 1, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 29, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 4, 
+      "observation": "", 
+      "parent": 28, 
+      "created": "2012-04-24 17:45:48", 
+      "title": "Inhalational medicines", 
+      "list": 11, 
+      "lft": 3, 
+      "tree_id": 1, 
+      "level": 2
+    }
+  }, 
+  {
+    "pk": 30, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 6, 
+      "observation": "", 
+      "parent": 28, 
+      "created": "2012-04-24 17:50:58", 
+      "title": "Injectable medicines", 
+      "list": 11, 
+      "lft": 5, 
+      "tree_id": 1, 
+      "level": 2
+    }
+  }, 
+  {
+    "pk": 31, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 9, 
+      "observation": "", 
+      "parent": 27, 
+      "created": "2012-04-24 17:54:07", 
+      "title": "Local anaesthetics", 
+      "list": 11, 
+      "lft": 8, 
+      "tree_id": 1, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 32, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 11, 
+      "observation": "", 
+      "parent": 27, 
+      "created": "2012-04-24 18:07:10", 
+      "title": "Preoperative medication and sedation for short-term procedures", 
+      "list": 11, 
+      "lft": 10, 
+      "tree_id": 1, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 33, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 10, 
+      "observation": "", 
+      "parent": null, 
+      "created": "2012-04-24 18:16:58", 
+      "title": "Analgesics, antipyretics, non-steroidal anti-inflammatory medicines (NSAIMs), medicines used to treat gout and disease modifying agents in rheumatoid disorders (DMARDs) ", 
+      "list": 11, 
+      "lft": 1, 
+      "tree_id": 2, 
+      "level": 0
+    }
+  }, 
+  {
+    "pk": 37, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 3, 
+      "observation": "", 
+      "parent": 33, 
+      "created": "2012-04-25 09:27:46", 
+      "title": "Disease modifying agents used in rheumatoid disorders (DMARDs)", 
+      "list": 11, 
+      "lft": 2, 
+      "tree_id": 2, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 36, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 5, 
+      "observation": "", 
+      "parent": 33, 
+      "created": "2012-04-25 09:23:36", 
+      "title": "Medicines used to treat gout", 
+      "list": 11, 
+      "lft": 4, 
+      "tree_id": 2, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 34, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 7, 
+      "observation": "", 
+      "parent": 33, 
+      "created": "2012-04-25 09:10:08", 
+      "title": "Non-opioids and non-steroidal anti-inflammatory medicines (NSAIMs)", 
+      "list": 11, 
+      "lft": 6, 
+      "tree_id": 2, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 35, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 9, 
+      "observation": "", 
+      "parent": 33, 
+      "created": "2012-04-25 09:17:04", 
+      "title": "Opioid analgesics", 
+      "list": 11, 
+      "lft": 8, 
+      "tree_id": 2, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 43, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 32, 
+      "observation": "", 
+      "parent": null, 
+      "created": "2012-04-25 09:50:30", 
+      "title": "Anti-infective medicines", 
+      "list": 11, 
+      "lft": 1, 
+      "tree_id": 3, 
+      "level": 0
+    }
+  }, 
+  {
+    "pk": 44, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 9, 
+      "observation": "", 
+      "parent": 43, 
+      "created": "2012-04-25 09:50:57", 
+      "title": "Anthelminthics", 
+      "list": 11, 
+      "lft": 2, 
+      "tree_id": 3, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 46, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 4, 
+      "observation": "", 
+      "parent": 44, 
+      "created": "2012-04-25 23:33:30", 
+      "title": "Antifilarials", 
+      "list": 11, 
+      "lft": 3, 
+      "tree_id": 3, 
+      "level": 2
+    }
+  }, 
+  {
+    "pk": 47, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 6, 
+      "observation": "", 
+      "parent": 44, 
+      "created": "2012-04-25 23:35:18", 
+      "title": "Antischistosomals and other antitrematode medicines", 
+      "list": 11, 
+      "lft": 5, 
+      "tree_id": 3, 
+      "level": 2
+    }
+  }, 
+  {
+    "pk": 45, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 8, 
+      "observation": "", 
+      "parent": 44, 
+      "created": "2012-04-25 09:53:42", 
+      "title": "Intestinal anthelminthics", 
+      "list": 11, 
+      "lft": 7, 
+      "tree_id": 3, 
+      "level": 2
+    }
+  }, 
+  {
+    "pk": 48, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 19, 
+      "observation": "", 
+      "parent": 43, 
+      "created": "2012-04-25 23:35:59", 
+      "title": "Antibacterials ", 
+      "list": 11, 
+      "lft": 10, 
+      "tree_id": 3, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 51, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 12, 
+      "observation": "Medicines used in the treatment of leprosy should never be used except in combination. Combination\r\ntherapy is essential to prevent the emergence of drug resistance. Colour coded blister packs (MDT blister\r\npacks) containing standard two medicine (paucibacillary leprosy) or three medicine (multibacillary leprosy) combinations for adult and childhood leprosy should be used. MDT blister packs can be supplied\r\nfree of charge through WHO.", 
+      "parent": 48, 
+      "created": "2012-04-26 00:24:46", 
+      "title": "Antileprosy medicines", 
+      "list": 11, 
+      "lft": 11, 
+      "tree_id": 3, 
+      "level": 2
+    }
+  }, 
+  {
+    "pk": 52, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 14, 
+      "observation": "", 
+      "parent": 48, 
+      "created": "2012-04-26 00:29:15", 
+      "title": "Antituberculosis medicines", 
+      "list": 11, 
+      "lft": 13, 
+      "tree_id": 3, 
+      "level": 2
+    }
+  }, 
+  {
+    "pk": 49, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 16, 
+      "observation": "", 
+      "parent": 48, 
+      "created": "2012-04-25 23:36:56", 
+      "title": "Beta Lactam medicines", 
+      "list": 11, 
+      "lft": 15, 
+      "tree_id": 3, 
+      "level": 2
+    }
+  }, 
+  {
+    "pk": 50, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 18, 
+      "observation": "", 
+      "parent": 48, 
+      "created": "2012-04-25 23:58:33", 
+      "title": "Other antibacterial", 
+      "list": 11, 
+      "lft": 17, 
+      "tree_id": 3, 
+      "level": 2
+    }
+  }, 
+  {
+    "pk": 53, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 21, 
+      "observation": "", 
+      "parent": 43, 
+      "created": "2012-04-26 09:55:33", 
+      "title": "Antifungal medicines", 
+      "list": 11, 
+      "lft": 20, 
+      "tree_id": 3, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 54, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 31, 
+      "observation": "", 
+      "parent": 43, 
+      "created": "2012-04-26 09:58:30", 
+      "title": "Antiviral medicines", 
+      "list": 11, 
+      "lft": 22, 
+      "tree_id": 3, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 55, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 24, 
+      "observation": "", 
+      "parent": 54, 
+      "created": "2012-04-26 10:00:23", 
+      "title": "Antiherpes medicines", 
+      "list": 11, 
+      "lft": 23, 
+      "tree_id": 3, 
+      "level": 2
+    }
+  }, 
+  {
+    "pk": 56, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 30, 
+      "observation": "Based on current evidence and experience of use, medicines in the following three classes of antiretrovirals are included as essential medicines for treatment and prevention of HIV (prevention of mother-to-child transmission and post-exposure prophylaxis). The Committee emphasizes the importance of using these products in accordance with global and national guidelines. The Committee recommends and endorses the use of fixed-dose combinations and the development of appropriate new fixed-dose combinations, including modified dosage forms, non-refrigerated products and paediatric dosage forms of assured pharmaceutical quality.\r\n\r\nScored tablets can be used in children and therefore can be considered for inclusion in the listing of tablets, provided adequate quality products are available.", 
+      "parent": 54, 
+      "created": "2012-04-26 10:02:49", 
+      "title": "Antiretrovirals", 
+      "list": 11, 
+      "lft": 25, 
+      "tree_id": 3, 
+      "level": 2
+    }
+  }, 
+  {
+    "pk": 58, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 27, 
+      "observation": "", 
+      "parent": 56, 
+      "created": "2012-04-26 10:20:56", 
+      "title": "Non-nucleoside reverse transcriptase inhibitors", 
+      "list": 11, 
+      "lft": 26, 
+      "tree_id": 3, 
+      "level": 3
+    }
+  }, 
+  {
+    "pk": 57, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 29, 
+      "observation": "", 
+      "parent": 56, 
+      "created": "2012-04-26 10:16:02", 
+      "title": "Nucleoside/Nucleotide reverse transcriptase inhibitors", 
+      "list": 11, 
+      "lft": 28, 
+      "tree_id": 3, 
+      "level": 3
+    }
+  }, 
+  {
+    "pk": 38, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 2, 
+      "observation": "", 
+      "parent": null, 
+      "created": "2012-04-25 09:33:54", 
+      "title": "Antiallergics and medicines used in anaphylaxis", 
+      "list": 11, 
+      "lft": 1, 
+      "tree_id": 4, 
+      "level": 0
+    }
+  }, 
+  {
+    "pk": 42, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 2, 
+      "observation": "", 
+      "parent": null, 
+      "created": "2012-04-25 09:49:17", 
+      "title": "Anticonvulsants/antiepileptics", 
+      "list": 11, 
+      "lft": 1, 
+      "tree_id": 5, 
+      "level": 0
+    }
+  }, 
+  {
+    "pk": 39, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 6, 
+      "observation": "", 
+      "parent": null, 
+      "created": "2012-04-25 09:35:27", 
+      "title": "Antidotes and other substances used in poisonings", 
+      "list": 11, 
+      "lft": 1, 
+      "tree_id": 6, 
+      "level": 0
+    }
+  }, 
+  {
+    "pk": 40, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 3, 
+      "observation": "", 
+      "parent": 39, 
+      "created": "2012-04-25 09:35:58", 
+      "title": "Non-specific", 
+      "list": 11, 
+      "lft": 2, 
+      "tree_id": 6, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 41, 
+    "model": "list.section", 
+    "fields": {
+      "rght": 5, 
+      "observation": "", 
+      "parent": 39, 
+      "created": "2012-04-25 09:41:11", 
+      "title": "Specific", 
+      "list": 11, 
+      "lft": 4, 
+      "tree_id": 6, 
+      "level": 1
+    }
+  }, 
+  {
+    "pk": 47, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 29, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 1, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 48, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 29, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 2, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 49, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 29, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 3, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 50, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 29, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 4, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 51, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 30, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 8, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 52, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Thiopental may be used as an alternative depending on local\r\navailability and cost.", 
+      "restriction_age": "", 
+      "section": 30, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 6, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 53, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Thiopental may be used as an alternative depending on local\r\navailability and cost.", 
+      "restriction_age": "", 
+      "section": 30, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 7, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 54, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 31, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 22, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 55, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 31, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 24, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 56, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 31, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 25, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 57, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 31, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 26, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 58, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 31, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 27, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 59, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 31, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 28, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 60, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 31, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 30, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 61, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 31, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 31, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 62, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 31, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 32, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 63, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "For use in spinal anaesthesia during delivery, to prevent hypotension.", 
+      "restriction_age": "", 
+      "section": 31, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 33, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 64, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 32, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 34, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 65, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 32, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 38, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 66, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 32, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 39, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 67, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 32, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 40, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 68, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 32, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 41, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 69, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 32, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 43, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 70, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 34, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 60, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 71, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 34, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 61, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 72, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "> 3 months", 
+      "section": 34, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 64, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 73, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "> 3 months", 
+      "section": 34, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 65, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 74, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "> 3 months", 
+      "section": 34, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 66, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 75, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Not recommended for anti-inflammatory use due to lack of proven benefit to that effect.", 
+      "restriction_age": "", 
+      "section": 34, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 69, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 76, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Not recommended for anti-inflammatory use due to lack of proven benefit to that effect.", 
+      "restriction_age": "", 
+      "section": 34, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 70, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 77, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Not recommended for anti-inflammatory use due to lack of proven benefit to that effect.", 
+      "restriction_age": "", 
+      "section": 34, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 71, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 78, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "For use for rheumatic fever, juvenile arthritis, Kawasaki disease.", 
+      "restriction_age": "", 
+      "section": 34, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 60, 
+      "specialist_care_for_children": true, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 79, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "For use for rheumatic fever, juvenile arthritis, Kawasaki disease.", 
+      "restriction_age": "", 
+      "section": 34, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 61, 
+      "specialist_care_for_children": true, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 80, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "The Expert Committee has requested a review of the comparative effectiveness and safety, for possible deletion of this medicine at its next meeting.", 
+      "restriction_age": "", 
+      "section": 35, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 17, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 81, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 35, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 43, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 82, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 35, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 44, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 83, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 35, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 45, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 84, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 35, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 46, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 85, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 35, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 47, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 86, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 35, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 48, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 87, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 36, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 73, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 88, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "The Expert Committee has requested a review of the comparative effectiveness and safety, for possible deletion of this medicine at its next meeting.", 
+      "restriction_age": "", 
+      "section": 37, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 75, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 89, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "The Expert Committee has requested a review of the comparative effectiveness and safety, for possible deletion of this medicine at its next meeting.", 
+      "restriction_age": "", 
+      "section": 37, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 76, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 90, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 37, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 78, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 91, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 37, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 81, 
+      "specialist_care_for_children": true, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 92, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 37, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 82, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 93, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 37, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 84, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 94, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 37, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 85, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 95, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "> 1 year", 
+      "section": 38, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 88, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 96, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "> 1 year", 
+      "section": 38, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 89, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 97, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "> 1 year", 
+      "section": 38, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 90, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 98, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 38, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 91, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 99, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 38, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 99, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 100, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 38, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 102, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 101, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 38, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 109, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 102, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 38, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 110, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 103, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 38, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 111, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 104, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 40, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 113, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 105, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 114, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 106, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 115, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 107, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 116, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 108, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 34, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 109, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 117, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 110, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 118, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 111, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 119, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 112, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "The Expert Committee has requested a review of the comparative effectiveness and safety, for possible deletion of this medicine at its next meeting.", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 84, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 113, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 120, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 114, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 121, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 115, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 122, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 116, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 124, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 117, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 125, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 118, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 126, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 119, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 41, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 127, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 120, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 128, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 121, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 129, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 122, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 130, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 123, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 131, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 124, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 132, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 125, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 133, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 126, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 134, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 127, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 135, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 128, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 145, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 129, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 146, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 130, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "For use in eclampsia and severe pre-eclampsia and not for other convulsant disorders.", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 147, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 131, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "For use in eclampsia and severe pre-eclampsia and not for other convulsant disorders.", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 148, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 132, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 149, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 133, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 150, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 134, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 151, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 135, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 152, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 136, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "The presence of both 25 mg/5 ml and 30 mg/5 ml strengths on the same market would cause confusion in prescribing and dispensing and should be avoided.", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 153, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 137, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 154, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 138, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 155, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 139, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 156, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 140, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 157, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 141, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 158, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 142, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 159, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 143, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 160, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 144, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 161, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 145, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 162, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 146, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 42, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 163, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 147, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 45, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 164, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 148, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "The Expert Committee recommended that this medicine be reviewed for deletion at its next meeting. Should be used in combination with other anthelminthics.", 
+      "restriction_age": "", 
+      "section": 45, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 165, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 149, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "The Expert Committee recommended that this medicine be reviewed for deletion at its next meeting. Should be used in combination with other anthelminthics.", 
+      "restriction_age": "", 
+      "section": 45, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 166, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 150, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 45, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 167, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 151, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 45, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 168, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 152, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Niclosamide is listed for use when praziquantel treatment fails. The Expert Committee recommended that this medicine be reviewed for deletion at its next meeting.", 
+      "restriction_age": "", 
+      "section": 45, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 169, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 153, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 45, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 170, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 154, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 45, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 171, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 155, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 45, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 172, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 156, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 45, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 173, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 157, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 46, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 164, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 158, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 46, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 174, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 159, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 46, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 175, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 160, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 46, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 176, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 161, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 46, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 177, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 162, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 47, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 171, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 163, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 47, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 178, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 164, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Oxamniquine is listed for use when praziquantel treatment fails.", 
+      "restriction_age": "", 
+      "section": 47, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 179, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 165, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Oxamniquine is listed for use when praziquantel treatment fails.", 
+      "restriction_age": "", 
+      "section": 47, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 180, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 166, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 181, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 167, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 182, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 168, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 183, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 169, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 184, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 170, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 185, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 171, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 186, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 172, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 187, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 173, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 188, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 174, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 189, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 175, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 190, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 176, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 191, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 177, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 192, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 178, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 193, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 179, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 194, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 180, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 195, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 181, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "For surgical prophylaxis.", 
+      "restriction_age": "> 1 month", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 197, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 182, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Only listed for single-dose treatment of uncomplicated ano-genital gonorrhoea.", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 198, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 183, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Do not administer with calcium and avoid in infants with hyperbilirubinemia.", 
+      "restriction_age": ">41 weeks corrected gestational age.", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 199, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 184, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Do not administer with calcium and avoid in infants with hyperbilirubinemia.", 
+      "restriction_age": ">41 weeks corrected gestational age.", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 200, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 185, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 201, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 186, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 202, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 187, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 203, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 188, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 204, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 189, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 205, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 190, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 206, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 191, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Procaine benzylpenicillin is not recommended as first-line treatment for neonatal sepsis except in settings with high neonatal mortality, when given by trained health workers in cases where hospital care is not achievable.", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 207, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 192, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Procaine benzylpenicillin is not recommended as first-line treatment for neonatal sepsis except in settings with high neonatal mortality, when given by trained health workers in cases where hospital care is not achievable.", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 208, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 193, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "3rd generation cephalosporin of choice for use in hospitalized neonates.", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 209, 
+      "specialist_care_for_children": true, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 194, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 210, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 195, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 211, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 196, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Only listed for the treatment of life-threatening hospital-based infection due to suspected or proven multidrug-resistant infection. \r\n\r\nMeropenem is indicated for the treatment of meningitis and is licensed for use in children over the age of 3 months.", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 212, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 197, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Only listed for the treatment of life-threatening hospital-based infection due to suspected or proven multidrug-resistant infection. \r\n\r\nMeropenem is indicated for the treatment of meningitis and is licensed for use in children over the age of 3 months.", 
+      "restriction_age": "", 
+      "section": 49, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 213, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 198, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Only listed for single-dose treatment of genital Chlamydia trachomatis and of trachoma.", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 214, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 199, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Only listed for single-dose treatment of genital Chlamydia trachomatis and of trachoma.", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 215, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 200, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Only listed for single-dose treatment of genital Chlamydia trachomatis and of trachoma.", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 216, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 201, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 217, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 202, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Only for the presumptive treatment of epidemic meningitis in children older than 2 years", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 218, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 203, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 219, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 204, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 220, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 205, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "The best evidence for effectiveness and safety applies to adults only.", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 221, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 206, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "The best evidence for effectiveness and safety applies to adults only.", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 222, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 207, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "The best evidence for effectiveness and safety applies to adults only.", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 223, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 208, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "For use in combination regimens for eradication of H. Pylori in adults.", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 225, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 209, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "Use in children < 8 years only for life-threatening infections when no alternative exists.", 
+      "section": 50, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 226, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 210, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "Use in children < 8 years only for life-threatening infections when no alternative exists.", 
+      "section": 50, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 227, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 211, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "Use in children < 8 years only for life-threatening infections when no alternative exists.", 
+      "section": 50, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 228, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 212, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "Use in children < 8 years only for life-threatening infections when no alternative exists.", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 229, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 213, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 233, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 214, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 234, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 215, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 235, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 216, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 236, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 217, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 237, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 218, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 240, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 219, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 241, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 220, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 242, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 221, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 243, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 222, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 244, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 223, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 245, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 224, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 246, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 225, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 247, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 226, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 248, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 227, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 249, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 228, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 250, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 229, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 251, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 230, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 252, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 231, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 253, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 232, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": ">6 months.", 
+      "section": 50, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 254, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 233, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": ">6 months.", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 255, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 234, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": ">6 months.", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 256, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 235, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 257, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 236, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 258, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 237, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 259, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 238, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 50, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 260, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 239, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 51, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 261, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 240, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 51, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 262, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 241, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 51, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 263, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 242, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 51, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 264, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 243, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 51, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 265, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 244, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 51, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 266, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 245, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 51, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 267, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 246, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 269, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 247, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 270, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 248, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 271, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 249, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 272, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 250, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 273, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 251, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 274, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 252, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 275, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 253, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 276, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 254, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 277, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 255, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "For intermittent use three times weekly.", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 278, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 256, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 13, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 257, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 14, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 258, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "For intermittent use three times weekly.", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 15, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 259, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "For intermittent use three times weekly.", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 16, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 260, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 279, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 261, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 280, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 262, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 281, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 263, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 282, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 264, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "For use only in patients with HIV receiving protease inhibitors.", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 283, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 265, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 268, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 266, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 266, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 267, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 267, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 268, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 284, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 269, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 285, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 270, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 286, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 271, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 287, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 272, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 288, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 273, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 289, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 274, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 290, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 275, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 291, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 276, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 292, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 277, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Levofloxacin may be an alternative based on availability and programme considerations.", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 293, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 278, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "Levofloxacin may be an alternative based on availability and programme considerations.", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 294, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 279, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 295, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 280, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 52, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 296, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 281, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 297, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 282, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 298, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 283, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 299, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 284, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 300, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 285, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 301, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 286, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 302, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 287, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 303, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 288, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 304, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 289, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 305, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 290, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 306, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 291, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 307, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 292, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 308, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 293, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": true, 
+      "pharmaceutical_form": 309, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 294, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 310, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 295, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 311, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 296, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 312, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 297, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "As sodium deoxycholate or liposomal complex.", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 313, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 298, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 314, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 299, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 315, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 300, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 53, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 316, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": true
+    }
+  }, 
+  {
+    "pk": 301, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 55, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 318, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 302, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 55, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 319, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 303, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 55, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 320, 
+      "specialist_care_for_children": false, 
+      "best_evidence": true, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 304, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 322, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 305, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 323, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 306, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 324, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 307, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 325, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 308, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 326, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 309, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 327, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 310, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 328, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 311, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 329, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 312, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 330, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 313, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 331, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 314, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 332, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 315, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 333, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 316, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 334, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 317, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 335, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 318, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "FTC is an acceptable alternative to 3TC, based on knowledge of the pharmacology, the resistance patterns and clinical trials of antiretrovirals.", 
+      "restriction_age": ">3 months.", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 336, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 319, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "FTC is an acceptable alternative to 3TC, based on knowledge of the pharmacology, the resistance patterns and clinical trials of antiretrovirals.", 
+      "restriction_age": ">3 months.", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 337, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 320, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 338, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 321, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 339, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 322, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 340, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 323, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 341, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 324, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 342, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 325, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 343, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 326, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "(tenofovir disoproxil fumarate \u2013 equivalent to 245 mg tenofovir disoproxil).", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 344, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 327, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 345, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 328, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 346, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 329, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 347, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 330, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 348, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 331, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 57, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 349, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 332, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": ">3 years or >10 kg weight.", 
+      "section": 58, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 350, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 333, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": ">3 years or >10 kg weight.", 
+      "section": 58, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 351, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 334, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": ">3 years or >10 kg weight.", 
+      "section": 58, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 352, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 335, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": ">3 years or >10 kg weight.", 
+      "section": 58, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 353, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 336, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": ">3 years or >10 kg weight.", 
+      "section": 58, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 354, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 337, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 58, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 355, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }, 
+  {
+    "pk": 338, 
+    "model": "list.sectionpharmform", 
+    "fields": {
+      "observation": "", 
+      "restriction_age": "", 
+      "section": 58, 
+      "only_for_children": false, 
+      "pharmaceutical_form": 356, 
+      "specialist_care_for_children": false, 
+      "best_evidence": false, 
+      "complementary_list": false
+    }
+  }
+]
