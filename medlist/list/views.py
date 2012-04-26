@@ -2,6 +2,7 @@
 
 from medlist.list.models import *
 from django.shortcuts import HttpResponse, render_to_response, get_object_or_404
+from django.views.decorators.cache import cache_page
 from django.template import RequestContext
 from django.http import Http404
 import settings
@@ -16,6 +17,7 @@ def get_parents(id):
 	else:
 		return output
 
+@cache_page(settings.SHOW_LIST_CACHE)
 def show_list(request, id):
 
 	list = get_object_or_404(List, pk=id)

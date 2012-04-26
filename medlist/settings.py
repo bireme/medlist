@@ -24,6 +24,9 @@ CONTACT_US_URL = "http://prais.paho.org:8080/rscpaho/#/home/criticasugestao"
 ## pagination of compare lists
 ITEMS_PER_PAGE = 50
 
+## cache for list page
+SHOW_LIST_CACHE = 60 * 60
+
 # Search url's
 IAHX_URL = "http://pesquisa.teste.bvsalud.org/medlist/"
 
@@ -35,6 +38,14 @@ DATABASES = {
         'PASSWORD': '',                  # Not used with sqlite3.
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
+    }
+}
+
+
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': '/tmp/django_cache',
     }
 }
 
