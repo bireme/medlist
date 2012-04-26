@@ -10,19 +10,15 @@
 	<link rel="stylesheet" type="text/css" href="{{STATIC_URL}}/css/smoothness/jquery-ui-1.8.18.custom.css" media="screen" />
 
 	<script>
-		// hide title of div if this is no have content
-		function show_hide_titles(classname) {
-			// $(function(){
-			// 	$("." + classname).each(function(){
-			// 		if(!$(this).find('ul').find('li').html()) {
-			// 			$(this).find('.blockSubTitle').hide();
-			// 		} 
-			// 	});
-			// });
-		}
-
-		show_hide_titles('countries');
-		show_hide_titles('obs_lists');
+		$(function(){
+			if($(".lists").find('ul').html() == "") {
+				$(".lists").hide();
+			}
+			
+			if($(".countries").find('div').html()) {
+				$(".countries").hide();
+			}
+		});
 	</script>
 {% endblock %}
 
@@ -85,7 +81,7 @@
 					<div class="highlightBlock">
 						<div class="listItemBlock">
 							<div class="listItem lists">
-								<div class="blockSubTitle l2">{% trans "Lists" %}</div>{{list}}
+								<div class="blockSubTitle l2">{% trans "Lists" %}</div>
 								<ul>
 									<!-- {{form_id}} -->
 									{% for list, forms in forms_in_lists.items %}
@@ -99,7 +95,7 @@
 											{% else %}
 												<li class="notchecked"><span>NO</span>
 													<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
-														{{ forms.list.abbreviation }}
+														{{ forms.list|translate:request.LANGUAGE_CODE|slice:"40" }}{% if forms.list|translate:request.LANGUAGE_CODE|length > 40 %}...{% endif %}
 													</a>
 												</li>
 											{% endif%}
@@ -109,12 +105,12 @@
 							</div>
 							<div class="listItem countries">
 								<div class="blockSubTitle">{% trans "Countries lists" %}</div>
-								<div>
+								<div class="coutriesContent">
 									{% for list, forms in forms_in_lists.items %}
 										{% if forms.type == 'c' %}
 											{% if form_id in forms.forms %}
 												<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
-														{{ forms.list.abbreviation }}
+													{{ forms.list.abbreviation }}
 												</a>
 											{% endif %}
 										{% endif%}
@@ -153,78 +149,80 @@
 
 					<div class="mainBlock obs_lists">
 
-						<div class="blockSubTitle">{% trans "Observations for this pharmaceutical form can be found on the lists:" %}</div>
+						{% if form.form_in_lists|length > 0 %}
+							<div class="blockSubTitle">{% trans "Observations for this pharmaceutical form can be found on the lists:" %}</div>
+						{% endif %}
 
 						{% for sf in form.form_in_lists %}
 
-								{% if sf.restriction_age or sf.only_for_children or sf.specialist_care_for_children or sf.observation %}							
-									
-									<strong>{{ sf.section.list|translate:request.LANGUAGE_CODE|capfirst }}</strong>
+								{% if sf.restriction_age or sf.only_for_children or sf.specialist_care_for_children or sf.observation or sf.best_evidence %}							
+										<strong>{{ sf.section.list|translate:request.LANGUAGE_CODE|capfirst }}</strong>
 
-									<ul class="listItems">
-										{% if sf.restriction_age %}
-											<li>
-												<b>{% trans "age or weight restriction"|capfirst %}:</b> {{ sf.restriction_age|capfirst }}<br>
-											</li>
-										{% endif %}
+										<ul class="listItems">
+											{% if sf.restriction_age %}
+												<li>
+													<b>{% trans "age or weight restriction"|capfirst %}:</b> {{ sf.restriction_age|capfirst }}<br>
+												</li>
+											{% endif %}
 
-										{% if sf.only_for_children %}
-											<li>
-												<b>{% trans "This medicine is only for children."|capfirst %}</b><br>
-											</li>
-										{% endif %}
+											{% if sf.only_for_children %}
+												<li>
+													<b>{% trans "This medicine is only for children."|capfirst %}</b><br>
+												</li>
+											{% endif %}
 
-										{% if sf.specialist_care_for_children %}
-											<li>
-												<b>{% trans "This medicine requires a children care specialist."|capfirst %}</b><br>
-											</li>
-										{% endif %}
+											{% if sf.specialist_care_for_children %}
+												<li>
+													<b>{% trans "This medicine requires a children care specialist."|capfirst %}</b><br>
+												</li>
+											{% endif %}
 
-										{% if sf.observation %}
-											<li>
-												<b>{% trans "Other observations"|capfirst %}:</b><br>
-												{{sf.observation}}
-												<br>
-											</li>
-										{% endif %}
-
-										{% if sf.best_evidence %}
-											<li>
-												<b>{% trans "This medicine has the best evidence for effectiveness and safety."|capfirst %}</b><br>
-												<br>
-											</li>
-										{% endif %}										
-									</ul>
-								{% endif %}
+											{% if sf.observation %}
+												<li>
+													<b>{% trans "Others observations"|capfirst %}:</b><br>
+													{{sf.observation}}
+													<br>
+												</li>
+											{% endif %}
+											
+											{% if sf.best_evidence %}
+												<li>
+													<b>{% trans "This medicine has the best evidence for effectiveness and safety."|capfirst %}</b><br>
+													<br>
+												</li>
+											{% endif %}										
+										</ul>
+									{% endif %}
 							{% endfor %}
 					</div>
 					<div class="spacer"></div>
 				</div>
 			{% endfor %}
 		</div>
-		
+
 		{% if evidences %}
 			<div class="mainBlock evidenceSummary">
 				<div class="blockSubTitle">{% trans "Medicine Evidences Summaries" %}</div>
-					<ul class="listItems">
-						{% for evidence in evidences %}			
-							<li>
-								<b>{% trans "Context" %}</b>:<br>
-								<p class="evidenceContext">{{ evidence.context }}</p>
-								<b>{% trans "Question" %}</b>:<br>
-								<p class="question">{{ evidence.question }}</p>
+				<ul class="listItems">
+					{% for evidence in evidences %}			
+						<li>
+							<b>{% trans "Context" %}</b>:<br>
+							<p class="evidenceContext">{{ evidence.context }}</p>
+							<b>{% trans "Question" %}</b>:<br>
+							<p class="question">{{ evidence.question }}</p>
 
-								{% if evidence.link %}
-									<p><a href="{{ evidence.link }}" target="_blank">{{ evidence.link }}</a></p>
-								{% endif %}
-								{% if evidence.file %}	
-									<a href="{{ evidence.file.url }}" target="_blank">{% trans "view details"|capfirst %}</a>
-								{% endif %}
-							</li>
-						{% endfor %}
-					</ul>
+							{% if evidence.link %}
+								<p><a href="{{ evidence.link }}" target="_blank">{{ evidence.link }}</a></p>
+							{% endif %}
+							{% if evidence.file %}	
+								<a href="{{ evidence.file.url }}" target="_blank">{% trans "view details"|capfirst %}</a>
+							{% endif %}
+						</li>
+					{% endfor %}
+				</ul>
 			</div>
-		{% endif %}			
+		{% endif %}	
+		
 		<div class="spacer"></div>
 
 	</div>
