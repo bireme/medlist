@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-}
+};
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -568,7 +568,7 @@ TH.tableHeadFilters LABEL{
 /* Vertical Tabs
 ----------------------------------*/
 .ui-tabs-vertical.ui-tabs {border: 0px;}
-.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; position: absolute; width: 145px; }
+.ui-tabs-vertical .ui-tabs-nav { padding: .2em .1em .2em .2em; width: 145px; float: left; }
 .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; overflow: hidden; width: 145px; }
 .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
 .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
