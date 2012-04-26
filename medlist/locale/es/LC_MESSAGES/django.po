@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-26 10:16-0300\n"
-"PO-Revision-Date: 2012-04-26 10:17-0300\n"
+"POT-Creation-Date: 2012-04-26 10:24-0300\n"
+"PO-Revision-Date: 2012-04-26 11:05-0300\n"
 "Last-Translator: Vinicius Andrade <vinicius.andrade@bireme.org>\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
 "Language: \n"
@@ -351,7 +351,7 @@ msgid "This medicine requires a children care specialist."
 msgstr "Este medicamento requiere la atención de un especialista en niños"
 
 #: templates/directory/show_medicine.html:185
-msgid "Others observations"
+msgid "Other observations"
 msgstr "Otras observaciones"
 
 #: templates/directory/show_medicine.html:193
