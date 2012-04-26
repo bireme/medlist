@@ -134,15 +134,20 @@ BODY, TABLE, TD, TH {
 	width: 984px;
 }
 .banner #logo {
-	background: url(../images/logotipo.png) no-repeat;
-	width: 291px;
-	height: 80px;
+	width: 330px;
+	height: 90px;
 	margin-left: 20px;
 	top: 30px;
 	position: absolute
 }
-.banner #logo:hover {
-	background-position: -291px;
+.logo-en {
+	background: url(../images/logo-en.png) no-repeat;
+}
+.logo-es {
+	background: url(../images/logo-es.png) no-repeat;
+}
+.logo-pt-br {
+	background: url(../images/logo-pt.png) no-repeat;
 }
 .banner #logo SPAN {
 	display: none;
@@ -177,19 +182,47 @@ BODY, TABLE, TD, TH {
 .banner #joinToday #signupButton SPAN {
 	display: none;
 }
-.banner .langSelector {
+.banner .top-rightBlock {
 	float: right;
-	margin: 30px 20px 0 0;
 }
-.banner .langSelector LI A {
-	width: 60px;
-	height: 20px;
+.banner .top-rightBlock .separator {
+	float: left;
+	width: 1px;
+	background: #000;
+	height: 90px;
+	margin-top: 15px;
+}
+.banner #top-pahoLogo {
+	width: 169px;
+	margin: 22px 32px 0px 17px;
+}
+.banner #top-pahoLogo IMG {
+	width: 100%;
+}
+.banner .top-rightBlock .langSelector {
+	background: url(../images/fundoIdioma.png) no-repeat;
+	width: 100px;
+	height: 27px;
+	text-align: center;
+	padding: 4px 0px;
+	font-weight: bold;
+	margin: 4px auto 0px;
+}
+.banner .top-rightBlock .langSelector .currentLang A {
 	display: block;
-	margin: 5px;
+	height: 25px;
+	width: 100px;
+	text-decoration: none;
 }
-.banner .langSelector LI A SPAN {
-	display: none;
+.banner .top-rightBlock .langSelector .currentLang .arrow-bottom-wht {
+	background: url(../images/setaBaixoBranca.png) no-repeat;
+	margin: 6px auto 0 auto;
+	width: 7px;
+	height: 4px;
 }
+
+/****** language selector version 1.0 ******/
+/*
 .banner .langSelector LI A#lang_en {background: url(../images/ingles.png) no-repeat;}
 .banner .langSelector LI A#lang_es {background: url(../images/espanhol.png) no-repeat;}
 .banner .langSelector LI A#lang_pt {background: url(../images/portugues.png) no-repeat;}
@@ -197,6 +230,25 @@ BODY, TABLE, TD, TH {
 .banner .langSelector LI A#lang_es:hover,
 .banner .langSelector LI A#lang_pt:hover {
 	background-position: -60px;
+}
+*/
+.availableLangs {
+	position: absolute;
+	background: #2A4C69;
+	border: 1px solid #FFF;
+	width: 99px;
+}
+.availableLangs UL {
+	margin: 6px 0px;
+}
+.availableLangs LI {
+	padding: 5px 0px 5px 14px;
+	text-align: left;
+}
+.availableLangs LI A {
+	color: #FFF;
+	margin: 0px;
+	font-weight: normal;
 }
 .middle {
 	margin: 160px 0px 20px 0px;
@@ -414,7 +466,7 @@ BODY, TABLE, TD, TH {
 	float: right;
 }
 .list UL {
-	margin-left: 24px;
+	margin: -10px 0 0 24px;
 	line-height: 160%;
 }
 .list UL LI {
@@ -484,6 +536,21 @@ BODY, TABLE, TD, TH {
 	height: 16px;
 	margin: auto;
 	background: url(../images/agt_action_success_16px.png) no-repeat;
+}
+.pagination {
+	margin-top: 12px;
+}
+.pagination UL {
+	float: right;
+}
+.pagination LI {
+	float: left;
+	margin: 10px !important;
+}
+.pagination LI .selected {
+	font-weight: bold;
+	color: #FF5000;
+	font-size: 110%;
 }
 .highlightBlock {
 	clear: both;
@@ -575,4 +642,4 @@ TH.tableHeadFilters LABEL{
 .ui-tabs-vertical .ui-tabs-nav li { clear: left; width: 100%; border-bottom-width: 1px !important; border-right-width: 0 !important; margin: 0 -1px .2em 0; overflow: hidden; width: 145px; }
 .ui-tabs-vertical .ui-tabs-nav li a { display:block; }
 .ui-tabs-vertical .ui-tabs-nav li.ui-tabs-selected { padding-bottom: 0; padding-right: .1em; border-right-width: 1px; border-right-width: 1px; }
-.ui-tabs-vertical .ui-tabs-panel {float: right; width: 600px; border: 1px solid #AAA; border-radius: 4px;}
+.ui-tabs-vertical .ui-tabs-panel {float: right; width: 598px; border: 1px solid #AAA; border-radius: 4px;}

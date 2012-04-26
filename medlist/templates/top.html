@@ -1,5 +1,24 @@
 {% load i18n %}
-<div class="top">
+
+<script>
+	$(function(){
+		var lang = "{{ request.LANGUAGE_CODE }}";
+		var box_langs = $(".availableLangs");
+		var cur_lang = $(".currentLang");
+		
+		$("#lang_" + lang).hide();
+		box_langs.hide();
+
+		cur_lang.click(function(){
+			box_langs.toggle();
+		});	
+    })
+
+
+
+</script>
+
+<div class="top" class="">
 	<div class="topMenu">
 		<ul>
 			<li><a href="{{ ROOT_URL }}" title="{% trans "Home" %}" target="_blank">{% trans "Home" %}</a></li>
@@ -10,23 +29,50 @@
 	</div>
 	<div class="spacer"></div>
 	<div class="banner">
-		<div id="logo"><span>{% trans "Regional Platform for Innovation and Access for Health" }</span></div>
+		<div id="logo" class="logo-{{ request.LANGUAGE_CODE }}"><span>{% trans "Regional Platform for Innovation and Access for Health" }</span></div>
 		<div class="identification">
 			{% trans "Annotated Medicine Lists" %}
 		</div>
-		<div class="langSelector">
-			
-			<form action="/i18n/setlang/" method="post" id="setlang">
-				{% csrf_token %}
-				<input name="next" type="hidden" value="{{ redirect_to }}" />
-				<input name="language" type="hidden" value=""  id="lang"/>
-			</form>					
-		
+
+		<div class="top-rightBlock">
+			<div class="separator">
+			</div>
+			<div id="top-pahoLogo">
+				<img src="{{ STATIC_URL }}images/logo-paho.png" title="Pan American Health Organization - PAHO/WHO"/>
+			</div>
+			<div class="langSelector">
+
+				<form action="/i18n/setlang/" method="post" id="setlang">
+					{% csrf_token %}
+					<input name="next" type="hidden" value="{{ redirect_to }}" />
+					<input name="language" type="hidden" value=""  id="lang"/>
+				</form>					
+
+				<div class="currentLang">
+					<a href="#">
+						<span>
+							{% if request.LANGUAGE_CODE == "pt-br"%}Português{% endif %}
+							{% if request.LANGUAGE_CODE == "en"%}English{% endif %}
+							{% if request.LANGUAGE_CODE == "es"%}Español{% endif %}
+						</span>
+						<div class="arrow-bottom-wht"></div>
+					</a>
+				</div>
+				<div class="availableLangs" id="langs" style="display: block;">
+					<ul>
+						<li id="lang_en"><a href="#" onclick="change_lang('en')" ><span>English</span></a></li>
+						<li id="lang_pt-br"><a href="#" onclick="change_lang('pt-BR')" ><span>Português</span></a></li>
+						<li id="lang_es"><a href="#" onclick="change_lang('es')"><span>Español</span></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- <div class="langSelector">
 			<ul>
 				<li><a id="lang_en" href="#" onclick="change_lang('en')" ><span>English</span></a></li>
 				<li><a id="lang_pt" href="#" onclick="change_lang('pt-BR')" ><span>Português</span></a></li>
 				<li><a id="lang_es" href="#" onclick="change_lang('es')"><span>Español</span></a></li>
 			</ul>
-		</div>
+		</div> -->
 	</div>
 </div>
