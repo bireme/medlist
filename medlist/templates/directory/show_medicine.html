@@ -182,7 +182,7 @@
 
 										{% if sf.observation %}
 											<li>
-												<b>{% trans "Others observations"|capfirst %}:</b><br>
+												<b>{% trans "Other observations"|capfirst %}:</b><br>
 												{{sf.observation}}
 												<br>
 											</li>
@@ -202,32 +202,29 @@
 				</div>
 			{% endfor %}
 		</div>
-
-		<div class="mainBlock evidenceSummary">
-			<div class="blockSubTitle">{% trans "Medicine Evidences Summaries" %}</div>
-			{% if evidences %}
-				<ul class="listItems">
-					{% for evidence in evidences %}			
-						<li>
-							<b>{% trans "Context" %}</b>:<br>
-							<p class="evidenceContext">{{ evidence.context }}</p>
-							<b>{% trans "Question" %}</b>:<br>
-							<p class="question">{{ evidence.question }}</p>
-
-							{% if evidence.link %}
-								<p><a href="{{ evidence.link }}" target="_blank">{{ evidence.link }}</a></p>
-							{% endif %}
-							{% if evidence.file %}	
-								<a href="{{ evidence.file.url }}" target="_blank">{% trans "view details"|capfirst %}</a>
-							{% endif %}
-						</li>
-					{% endfor %}
-				</ul>
-			{% else %}	
-				<div class="blockSubTitle">({% trans "This medicine no have evidences yet" %})</div>	
-			{% endif %}	
-		</div>
 		
+		{% if evidences %}
+			<div class="mainBlock evidenceSummary">
+				<div class="blockSubTitle">{% trans "Medicine Evidences Summaries" %}</div>
+					<ul class="listItems">
+						{% for evidence in evidences %}			
+							<li>
+								<b>{% trans "Context" %}</b>:<br>
+								<p class="evidenceContext">{{ evidence.context }}</p>
+								<b>{% trans "Question" %}</b>:<br>
+								<p class="question">{{ evidence.question }}</p>
+
+								{% if evidence.link %}
+									<p><a href="{{ evidence.link }}" target="_blank">{{ evidence.link }}</a></p>
+								{% endif %}
+								{% if evidence.file %}	
+									<a href="{{ evidence.file.url }}" target="_blank">{% trans "view details"|capfirst %}</a>
+								{% endif %}
+							</li>
+						{% endfor %}
+					</ul>
+			</div>
+		{% endif %}			
 		<div class="spacer"></div>
 
 	</div>

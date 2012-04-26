@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-18 14:29-0300\n"
-"PO-Revision-Date: 2012-03-29 17:20-0300\n"
+"POT-Creation-Date: 2012-04-26 11:12-0300\n"
+"PO-Revision-Date: 2012-04-26 10:24-0300\n"
 "Last-Translator: Vinicius Andrade <vinicius.andrade@bireme.org>\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
 "Language: \n"
@@ -48,7 +48,7 @@ msgid "active"
 msgstr "ativo"
 
 #: directory/models.py:42 directory/models.py:56 directory/models.py:119
-#: templates/list/section.html:17 templates/list/section.html.py:58
+#: templates/list/section.html:19 templates/list/section.html.py:60
 msgid "medicine"
 msgstr "medicamento"
 
@@ -78,8 +78,8 @@ msgstr "link"
 msgid "file"
 msgstr "Arquivo"
 
-#: directory/models.py:120 templates/list/section.html:18
-#: templates/list/section.html.py:59
+#: directory/models.py:120 templates/list/section.html:20
+#: templates/list/section.html.py:61
 msgid "pharmaceutical form type"
 msgstr "forma farmacêutica"
 
@@ -87,8 +87,8 @@ msgstr "forma farmacêutica"
 msgid "atc code"
 msgstr "código ATC"
 
-#: directory/models.py:122 templates/list/section.html:19
-#: templates/list/section.html.py:60
+#: directory/models.py:122 templates/list/section.html:21
+#: templates/list/section.html.py:62
 msgid "composition"
 msgstr "composição"
 
@@ -164,7 +164,7 @@ msgstr "Cria uma cópia de histórico das listas selecionadas"
 msgid "list"
 msgstr "lista"
 
-#: list/models.py:30 templates/list/compare.html:55
+#: list/models.py:30 templates/list/compare.html:57
 msgid "lists"
 msgstr "listas"
 
@@ -204,8 +204,8 @@ msgstr "título"
 msgid "parent section"
 msgstr "seção pai"
 
-#: list/models.py:86 list/models.py:154 templates/list/section.html:20
-#: templates/list/section.html.py:61
+#: list/models.py:86 list/models.py:154 templates/list/section.html:22
+#: templates/list/section.html.py:63
 msgid "observation"
 msgstr "observações"
 
@@ -243,7 +243,7 @@ msgstr ""
 "Este medicamento possui a melhor evidência em questões de efetividade e "
 "segurança"
 
-#: list/models.py:157 templates/list/section.html:53
+#: list/models.py:157 templates/list/section.html:55
 msgid "complementary list"
 msgstr "lista complementar"
 
@@ -287,101 +287,98 @@ msgstr "medicamentos"
 msgid "Pharmaceutical forms"
 msgstr "formas farmacêuticas"
 
-#: templates/directory/show_medicine.html:71
+#: templates/directory/show_medicine.html:88
 msgid "Lists"
 msgstr "Listas"
 
-#: templates/directory/show_medicine.html:94
+#: templates/directory/show_medicine.html:111
 msgid "Countries lists"
 msgstr "Lista de países"
 
-#: templates/directory/show_medicine.html:122
-#: templates/directory/show_medicine.html:125
+#: templates/directory/show_medicine.html:141
+#: templates/directory/show_medicine.html:144
 msgid "Composition"
 msgstr "Composição"
 
-#: templates/directory/show_medicine.html:137
+#: templates/directory/show_medicine.html:156
 msgid "Observations for this pharmaceutical form can be found on the lists:"
-msgstr "Observações para esta forma farmacêutica podem ser encontradas nas listas:"
+msgstr ""
+"Observações para esta forma farmacêutica podem ser encontradas nas listas:"
 
-#: templates/directory/show_medicine.html:148
+#: templates/directory/show_medicine.html:167
 msgid "age or weight restriction"
 msgstr "restrição de idade ou peso"
 
-#: templates/directory/show_medicine.html:154
+#: templates/directory/show_medicine.html:173
 msgid "This medicine is only for children."
 msgstr "Este medicamento é apenas para crianças"
 
-#: templates/directory/show_medicine.html:160
+#: templates/directory/show_medicine.html:179
 msgid "This medicine requires a children care specialist."
 msgstr "Este medicamento requer um especialista para uso em crianças"
 
-#: templates/directory/show_medicine.html:166
-msgid "Others observations"
+#: templates/directory/show_medicine.html:185
+msgid "Other observations"
 msgstr "Outras observações"
 
-#: templates/directory/show_medicine.html:174
+#: templates/directory/show_medicine.html:193
 msgid "This medicine has the best evidence for effectiveness and safety."
 msgstr "Este medicamento ainda não possui evidências."
 
-#: templates/directory/show_medicine.html:206
+#: templates/directory/show_medicine.html:208
 msgid "Medicine Evidences Summaries"
 msgstr "Sumários de Evidência"
 
-#: templates/directory/show_medicine.html:211
+#: templates/directory/show_medicine.html:212
 msgid "Context"
 msgstr "Contexto"
 
-#: templates/directory/show_medicine.html:213
+#: templates/directory/show_medicine.html:214
 msgid "Question"
 msgstr "Questão"
 
-#: templates/directory/show_medicine.html:220
+#: templates/directory/show_medicine.html:221
 msgid "view details"
 msgstr "ver detalhes"
 
-#: templates/directory/show_medicine.html:226
-msgid "This medicine no have evidences yet"
-msgstr "Este medicamento ainda não possui evidências."
-
-#: templates/list/compare.html:4 templates/list/compare.html.py:26
-#: templates/list/compare.html:50
+#: templates/list/compare.html:4 templates/list/compare.html.py:28
+#: templates/list/compare.html:52
 msgid "Compare Lists"
 msgstr "Comparar listas"
 
-#: templates/list/compare.html:53
+#: templates/list/compare.html:55
 msgid "Filters"
 msgstr "Filtros"
 
-#: templates/list/compare.html:65
+#: templates/list/compare.html:67
 msgid "countries"
 msgstr "países"
 
-#: templates/list/compare.html:79
+#: templates/list/compare.html:81
 msgid "All Results"
 msgstr "Todos os resultados"
 
-#: templates/list/compare.html:80
+#: templates/list/compare.html:82
 msgid "Only Matched"
 msgstr "Somente os coincidentes"
 
-#: templates/list/compare.html:81
+#: templates/list/compare.html:83
 msgid "Only Unmatched"
 msgstr "Somente os não-coincidentes"
 
-#: templates/list/compare.html:89
+#: templates/list/compare.html:91
 msgid "Name"
 msgstr "Nome"
 
-#: templates/list/compare.html:90
+#: templates/list/compare.html:92
 msgid "Pharmaceutical Form"
 msgstr "Formas Farmacêuticas"
 
-#: templates/list/compare.html:109
+#: templates/list/compare.html:111
 msgid "No have composition"
 msgstr "Não possui composição"
 
-#: templates/list/compare.html:163
+#: templates/list/compare.html:165
 msgid "Sorry, but there's no results for this filter's combination."
 msgstr "Desculpe, não existe resultado para a combinação de filtros escolhida."
 
@@ -408,6 +405,9 @@ msgstr "Listas Nacionais"
 #: templates/main/index.html:51
 msgid "Select Country"
 msgstr "Selecione o país"
+
+#~ msgid "This medicine does not have evidences yet"
+#~ msgstr "Este medicamento ainda não possui evidências"
 
 #~ msgid "I Forgot my login data"
 #~ msgstr "Esqueci meu login"
