@@ -306,8 +306,11 @@ BODY, TABLE, TD, TH {
 .content .mainContent .mainBlock {
 
 }
-.mainBlock STRONG {
+.mainBlock STRONG, .mainBlock em {
 	font-size: 90%;
+}
+.mainBlock em {
+	font-style: italic;
 }
 .content .sideBar {
 	float: left;

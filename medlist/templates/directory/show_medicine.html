@@ -154,7 +154,8 @@
 							
 							{% for sf in form.form_in_lists %}
 
-								<strong>{{ sf.section.list|translate:request.LANGUAGE_CODE|capfirst }}</strong>
+								<strong>{{ sf.section.list|translate:request.LANGUAGE_CODE|capfirst }}</strong><br>
+								<em>{{ sf.section|translate:request.LANGUAGE_CODE|capfirst }}</em>
 
 								<ul class="listItems">
 									{% if sf.restriction_age %}
