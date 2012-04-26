@@ -151,49 +151,48 @@
 
 						{% if form.form_in_lists|length > 0 %}
 							<div class="blockSubTitle">{% trans "Observations for this pharmaceutical form can be found on the lists:" %}</div>
+							
+							{% for sf in form.form_in_lists %}
+
+								<strong>{{ sf.section.list|translate:request.LANGUAGE_CODE|capfirst }}</strong>
+
+								<ul class="listItems">
+									{% if sf.restriction_age %}
+										<li>
+											<b>{% trans "age or weight restriction"|capfirst %}:</b> {{ sf.restriction_age|capfirst }}<br>
+										</li>
+									{% endif %}
+
+									{% if sf.only_for_children %}
+										<li>
+											<b>{% trans "This medicine is only for children."|capfirst %}</b><br>
+										</li>
+									{% endif %}
+
+									{% if sf.specialist_care_for_children %}
+										<li>
+											<b>{% trans "This medicine requires a children care specialist."|capfirst %}</b><br>
+										</li>
+									{% endif %}
+
+									{% if sf.observation %}
+										<li>
+											<b>{% trans "Others observations"|capfirst %}:</b><br>
+											{{sf.observation}}
+											<br>
+										</li>
+									{% endif %}
+									
+									{% if sf.best_evidence %}
+										<li>
+											<b>{% trans "This medicine has the best evidence for effectiveness and safety."|capfirst %}</b><br>
+											<br>
+										</li>
+									{% endif %}										
+								</ul>
+							{% endfor %}
 						{% endif %}
 
-						{% for sf in form.form_in_lists %}
-
-								{% if sf.restriction_age or sf.only_for_children or sf.specialist_care_for_children or sf.observation or sf.best_evidence %}							
-										<strong>{{ sf.section.list|translate:request.LANGUAGE_CODE|capfirst }}</strong>
-
-										<ul class="listItems">
-											{% if sf.restriction_age %}
-												<li>
-													<b>{% trans "age or weight restriction"|capfirst %}:</b> {{ sf.restriction_age|capfirst }}<br>
-												</li>
-											{% endif %}
-
-											{% if sf.only_for_children %}
-												<li>
-													<b>{% trans "This medicine is only for children."|capfirst %}</b><br>
-												</li>
-											{% endif %}
-
-											{% if sf.specialist_care_for_children %}
-												<li>
-													<b>{% trans "This medicine requires a children care specialist."|capfirst %}</b><br>
-												</li>
-											{% endif %}
-
-											{% if sf.observation %}
-												<li>
-													<b>{% trans "Others observations"|capfirst %}:</b><br>
-													{{sf.observation}}
-													<br>
-												</li>
-											{% endif %}
-											
-											{% if sf.best_evidence %}
-												<li>
-													<b>{% trans "This medicine has the best evidence for effectiveness and safety."|capfirst %}</b><br>
-													<br>
-												</li>
-											{% endif %}										
-										</ul>
-									{% endif %}
-							{% endfor %}
 					</div>
 					<div class="spacer"></div>
 				</div>
