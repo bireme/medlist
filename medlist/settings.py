@@ -11,11 +11,20 @@ ADMINS = (
 )
 
 MANAGERS = ADMINS
-
 PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 
-ROOT_URL = "http://stela.org.br/rscpaho/"
+# MEDLIST CONFIGURATIONS 
 
+## Top links
+ROOT_URL = "http://www.paho.org/prais"
+ABOUT_US_URL = "#"
+SEND_US_A_COMMENT_URL = "#"
+CONTACT_US_URL = "http://prais.paho.org:8080/rscpaho/#/home/criticasugestao"
+
+## pagination of compare lists
+ITEMS_PER_PAGE = 50
+
+# Search url's
 IAHX_URL = "http://pesquisa.teste.bvsalud.org/medlist/"
 
 DATABASES = {
@@ -187,8 +196,6 @@ LOGGING = {
     }
 }
 
-# pagination of compare lists
-ITEMS_PER_PAGE = 50
 
 # this adding the constants of settings to template context
 _context = {} 

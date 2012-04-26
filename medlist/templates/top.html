@@ -2,10 +2,10 @@
 <div class="top">
 	<div class="topMenu">
 		<ul>
-			<li><a href="http://stela.org.br/regionalplatform/">{% trans "Home" %}</a></li>
-			<li><a href="#">{% trans "About us" %}</a></li>
-			<li><a href="#">{% trans "Send us a comment" %}</a></li>
-			<li><a href="#">{% trans "Contact us" %}</a></li>
+			<li><a href="{{ ROOT_URL }}" title="{% trans "Home" %}" target="_blank">{% trans "Home" %}</a></li>
+			<li><a href="{{ ABOUT_US_URL }}" title="{% trans "About us" %}" target="_blank">{% trans "About us" %}</a></li>
+			<li><a href="{{ SEND_US_A_COMMENT_URL }}" title="{% trans "Send us a comment" %}" target="_blank">{% trans "Send us a comment" %}</a></li>
+			<li><a href="{{ CONTACT_US_URL }}" title="{% trans "Contact us" %}" target="_blank">{% trans "Contact us" %}</a></li>
 		</ul>
 	</div>
 	<div class="spacer"></div>
