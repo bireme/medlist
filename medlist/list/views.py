@@ -48,6 +48,7 @@ def show_list(request, id):
 	
 	return render_to_response('list/show_list.html', output, context_instance=RequestContext(request))
 
+@cache_page(settings.SHOW_LIST_CACHE)
 def compare(request):
 
 	output = {}
