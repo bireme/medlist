@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-04-26 11:12-0300\n"
+"POT-Creation-Date: 2012-04-27 11:20-0300\n"
 "PO-Revision-Date: 2012-04-26 11:05-0300\n"
 "Last-Translator: Vinicius Andrade <vinicius.andrade@bireme.org>\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
@@ -252,90 +252,94 @@ msgstr "Lista de Medicamentos Esenciales"
 msgid "search form to retrieve medicine information from all lists"
 msgstr "recuperar información de medicamentos de todas las listas"
 
-#: templates/base.html:12 templates/base.html.py:23 templates/top.html:15
+#: templates/base.html:12 templates/base.html.py:23 templates/top.html:34
 msgid "Annotated Medicine Lists"
 msgstr "Listas Anotadas de Medicamentos"
 
-#: templates/top.html:5 templates/main/index.html:15
+#: templates/top.html:24 templates/main/index.html:15
 msgid "Home"
 msgstr "Início"
 
-#: templates/top.html:6
+#: templates/top.html:25
 msgid "About us"
 msgstr "Acerca"
 
-#: templates/top.html:7
+#: templates/top.html:26
 msgid "Send us a comment"
 msgstr "Envíe comentarios"
 
-#: templates/top.html:8
+#: templates/top.html:27
 msgid "Contact us"
 msgstr "Contáctenos"
 
-#: templates/directory/show_medicine.html:29
+#: templates/directory/show_medicine.html:14
+msgid "No country medicine list has published this medicine"
+msgstr "Ninguna lista de medicamento de país ha publicado este medicamento"
+
+#: templates/directory/show_medicine.html:25
 msgid "Medicine"
 msgstr "Medicamento"
 
-#: templates/directory/show_medicine.html:42
+#: templates/directory/show_medicine.html:38
 msgid "medicines"
 msgstr "medicamentos"
 
-#: templates/directory/show_medicine.html:52
+#: templates/directory/show_medicine.html:48
 msgid "Pharmaceutical forms"
 msgstr "Formas farmacéuticas"
 
-#: templates/directory/show_medicine.html:88
+#: templates/directory/show_medicine.html:84
 msgid "Lists"
 msgstr "Listas"
 
-#: templates/directory/show_medicine.html:111
+#: templates/directory/show_medicine.html:108
 msgid "Countries lists"
 msgstr "Lista de paises"
 
+#: templates/directory/show_medicine.html:138
 #: templates/directory/show_medicine.html:141
-#: templates/directory/show_medicine.html:144
 msgid "Composition"
 msgstr "Composición"
 
-#: templates/directory/show_medicine.html:156
+#: templates/directory/show_medicine.html:154
 msgid "Observations for this pharmaceutical form can be found on the lists:"
 msgstr "Observaciones para la forma farmacéutica se encuentra en las listas:"
 
-#: templates/directory/show_medicine.html:167
+#: templates/directory/show_medicine.html:164
 msgid "age or weight restriction"
 msgstr "restriccíon de edad o peso"
 
-#: templates/directory/show_medicine.html:173
+#: templates/directory/show_medicine.html:170
 msgid "This medicine is only for children."
 msgstr "El medicamento es sólamente para niños"
 
-#: templates/directory/show_medicine.html:179
+#: templates/directory/show_medicine.html:176
 msgid "This medicine requires a children care specialist."
 msgstr "Este medicamento requiere la atención de un especialista en niños"
 
-#: templates/directory/show_medicine.html:185
-msgid "Other observations"
+#: templates/directory/show_medicine.html:182
+msgid "Others observations"
 msgstr "Otras observaciones"
 
-#: templates/directory/show_medicine.html:193
+#: templates/directory/show_medicine.html:190
 msgid "This medicine has the best evidence for effectiveness and safety."
 msgstr ""
 "Este medicamento presenta la mejor evidencia en términos de efectividad e "
 "seguridad."
 
-#: templates/directory/show_medicine.html:208
+#: templates/directory/show_medicine.html:206
 msgid "Medicine Evidences Summaries"
 msgstr "Sumarios de Evidencia"
 
-#: templates/directory/show_medicine.html:212
+#: templates/directory/show_medicine.html:210
 msgid "Context"
 msgstr "Contexto"
 
-#: templates/directory/show_medicine.html:214
+#: templates/directory/show_medicine.html:212
 msgid "Question"
 msgstr "Pregunta"
 
-#: templates/directory/show_medicine.html:221
+#: templates/directory/show_medicine.html:219
 msgid "view details"
 msgstr "ver los detalles"
 
@@ -376,7 +380,7 @@ msgstr "Forma farmacéutica"
 msgid "No have composition"
 msgstr "no hay composición"
 
-#: templates/list/compare.html:165
+#: templates/list/compare.html:164
 msgid "Sorry, but there's no results for this filter's combination."
 msgstr "No hay resultados para esta combinación de filtro."
 
@@ -403,6 +407,9 @@ msgstr "Listas Nacionales"
 #: templates/main/index.html:51
 msgid "Select Country"
 msgstr "Seleccione el país"
+
+#~ msgid "No observations"
+#~ msgstr "Sin observaciones"
 
 #~ msgid "This medicine does not have evidences yet"
 #~ msgstr "Este medicamento aún no tienen evidencias"
