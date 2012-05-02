@@ -101,7 +101,7 @@
 					{% for sf in section_forms %}
 						<tr>
 							<td class="rowRef">
-								<a href="{% url directory.views.show_medicine sf.pharmaceutical_form.medicine.id %}">{{ sf.pharmaceutical_form.medicine|capfirst }}</a>
+								<a href="{% url directory.views.show_medicine sf.pharmaceutical_form.medicine.id %}#type{{ sf.pharmaceutical_form.id }}">{{ sf.pharmaceutical_form.medicine|capfirst }}</a>
 							</td>
 							<td class="rowRef">
 								{{ sf.pharmaceutical_form.pharmaceutical_form_type|capfirst }}<br>
