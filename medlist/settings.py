@@ -25,7 +25,7 @@ CONTACT_US_URL = "http://prais.paho.org:8080/rscpaho/#/home/criticasugestao"
 ITEMS_PER_PAGE = 50
 
 ## cache for list page
-SHOW_LIST_CACHE = 60 * 60
+CACHE_TIMEOUT = (60 * 60) * 12
 
 # Search url's
 IAHX_URL = "http://pesquisa.teste.bvsalud.org/medlist/"
@@ -153,7 +153,10 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.locale.LocaleMiddleware',
     'django.middleware.gzip.GZipMiddleware',
+    # 'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
+
+# INTERNAL_IPS = ('127.0.0.1',)
 
 ROOT_URLCONF = 'medlist.urls'
 
@@ -183,6 +186,7 @@ INSTALLED_APPS = (
     'medlist.history',
     'mptt',
     'south',
+    # 'debug_toolbar',
 )
 
 # A sample logging configuration. The only tangible logging
