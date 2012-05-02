@@ -48,20 +48,19 @@ def show_list(request, id):
 	
 	return render_to_response('list/show_list.html', output, context_instance=RequestContext(request))
 
-@cache_page(settings.SHOW_LIST_CACHE)
+#@cache_page(settings.SHOW_LIST_CACHE)
 def compare(request):
 
 	output = {}
 
 	lists_special = List.objects.filter(published=True).exclude(type='c')
 	lists_country = List.objects.filter(published=True).filter(type='c')
-	
+
 	lists = []
 	if 'lists' in request.GET and request.GET['lists'] != "":
 		lists = request.GET['lists'].split(',')
 		if 'null' in lists:
 			lists.remove("null")
-
 
 	# if not load some lists, the section_form becomes empty
 	section_forms = []
@@ -69,23 +68,23 @@ def compare(request):
 		section_forms = SectionPharmForm.objects.filter(section__list__id__in=lists).distinct()
 
 	# removes all duplicated pharmaceutical form
-	forms = []
-	for sf in section_forms:
-		id = sf.pharmaceutical_form.id
-		if id in forms:
-			section_forms = section_forms.exclude(pk=sf.id)
-		else:
-			forms.append(id)
+	# forms = []
+	# for sf in section_forms:
+	# 	id = sf.pharmaceutical_form.id
+	# 	if id in forms:
+	# 		section_forms = section_forms.exclude(pk=sf.id)
+	# 	else:
+	# 		forms.append(id)
 
 	# make structure of comparation
 	selected_lists = []
 	for list in lists:
-
 		try:
 			obj = List.objects.get(pk=list)
 			tmp = {'obj': obj, 'forms': []}
 
 			for sf in section_forms:
+
 				if len(SectionPharmForm.objects
 					.filter(section__list=obj)
 					.filter(pharmaceutical_form=sf.pharmaceutical_form)) > 0:
