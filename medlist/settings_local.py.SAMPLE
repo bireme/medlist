@@ -19,3 +19,7 @@ DATABASES = {
 
 
 SOLR_URL = 'http://localhost/medlist/'
+
+## Google Analytics Integration
+GOOGLE_ANALYTICS_ID='UA-31359378-1'
+GOOGLE_ANALYTICS_DOMAIN='paho.org'

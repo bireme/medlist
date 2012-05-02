@@ -21,6 +21,7 @@
 			<script type="text/javascript">
 			  var _gaq = _gaq || [];
 			  _gaq.push(['_setAccount', '{$config->google_analytics_code}']);
+			  _gaq.push(['_setDomainName', '{$config->google_analytics_domain}']);
 			  _gaq.push(['_trackPageview']);
 			{literal}
 			  (function() {

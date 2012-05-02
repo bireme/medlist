@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<dia_config>
+    <site>medlist</site>
+    <search_server>srv.homolog.bvsalud.org</search_server>
+    <documents_per_page>15</documents_per_page>
+    <default_lang>en</default_lang>
+    <log_dir>./logs/</log_dir>
+    <prais_url>http://www.paho.org/prais</prais_url>
+    <medlist_url>http://medlist.paho.org/</medlist_url>
+    <environment>homolog</environment>
+    <google_analytics_code></google_analytics_code>
+    <google_analytics_domain></google_analytics_domain>
+
+    <search_collection_list>
+        <collection>
+            <name>main</name>
+            <cluster_items_limit>10</cluster_items_limit>
+            <set></set>
+            <filter></filter>
+            <index_list>
+                <index>
+                    <name>ALL</name>
+                    <prefix></prefix>
+                </index>
+                <index>
+                    <name>DRUG_NAME</name>
+                    <prefix>name</prefix>
+                </index>
+                <index>
+                    <name>PHARMACEUTICAL_FORM_TYPE</name>
+                    <prefix>pharmaceutical_form</prefix>
+                </index>
+
+            </index_list>
+            <where_list/>
+             <sort_list>
+                 <sort>
+                     <name>RELEVANCE</name>
+                     <value>score desc</value>
+                 </sort>
+             </sort_list>
+             <format_list>
+               <format>
+                 <name>summary</name>
+               </format>
+               <format>
+                 <name>simple</name>
+               </format>
+             </format_list>
+        </collection>
+    </search_collection_list>
+</dia_config>
