@@ -155,10 +155,8 @@ BODY, TABLE, TD, TH {
 	float: left;
 	font-size: 180%;
 	color: #FFF;
-	margin: 55px 0 0 80px;
+	margin: 55px 0 0 60px;
 }
-
-*+html .banner .identification { /* target IE7 only */   margin-right: 80px;}
 
 .banner #joinToday {
 	float: left;
@@ -195,7 +193,7 @@ BODY, TABLE, TD, TH {
 	margin-top: 15px;
 }
 .banner #top-pahoLogo {
-	width: 169px;
+	width: 198px;
 	margin: 22px 32px 0px 17px;
 }
 .banner #top-pahoLogo IMG {
