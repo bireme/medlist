@@ -83,4 +83,20 @@ def get_section_parents(request, id_section):
 
 	return HttpResponse(json.dumps(output), mimetype="application/json")
 
+def get_pharmaceutical_forms(request):
+
+	all = PharmaceuticalForm.objects.all()
+	if 'term' in request.GET and request.GET['term'] != "":
+		all = all.filter(medicine__name__icontains=request.GET['term'])
+	
+	output = []
+	for item in all:
+		# output.append({'id': item.id, 'name': item.__unicode__()})
+		output.append("%s: %s" % (item.id, item.__unicode__()))
+
+
+
+	return HttpResponse(json.dumps(output), mimetype="application/json")
+
+
 
