@@ -134,11 +134,10 @@ BODY, TABLE, TD, TH {
 	width: 984px;
 }
 .banner #logo {
-	width: 330px;
+	float: left;
 	height: 90px;
-	margin-left: 20px;
-	top: 30px;
-	position: absolute
+	margin: 30px 0 0 20px;
+	width: 330px;
 }
 .logo-en {
 	background: url(../images/logo-en.png) no-repeat;
@@ -156,8 +155,9 @@ BODY, TABLE, TD, TH {
 	float: left;
 	font-size: 180%;
 	color: #FFF;
-	margin: 55px 0px 0px 390px;
+	margin: 55px 0 0 60px;
 }
+
 .banner #joinToday {
 	float: left;
 	margin: 25px 0px 0px 675px;
@@ -192,8 +192,11 @@ BODY, TABLE, TD, TH {
 	height: 90px;
 	margin-top: 15px;
 }
+
+*+html .banner .top-rightBlock { /* target IE7 only */   width: 248px;}
+
 .banner #top-pahoLogo {
-	width: 169px;
+	width: 198px;
 	margin: 22px 32px 0px 17px;
 }
 .banner #top-pahoLogo IMG {
@@ -238,6 +241,7 @@ BODY, TABLE, TD, TH {
 	border: 1px solid #FFF;
 	width: 99px;
 }
+*+html .availableLangs { /* target IE7 only */  margin-left: -50px;}
 .availableLangs UL {
 	margin: 6px 0px;
 }
@@ -279,7 +283,7 @@ BODY, TABLE, TD, TH {
 	background-position: -59px;
 }
 .middle #searchBox .textEntry {
-	width: 864px;
+	width: 850px;
 	background: #F9F9F9;
 	border: 1px solid #DDD;
 	height: 20px;
