@@ -1,0 +1,69 @@
+<script type="text/javascript" src="{{ STATIC_URL }}/js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}/js/jquery-ui-1.8.20.custom.min.js"></script>
+<script>
+    $(".autocomplete").autocomplete({
+        source: "{% url api.views.get_pharmaceutical_forms %}",
+        minLength: 3
+    });
+
+    $(function(){
+
+        var ids = [];
+        $(".autocomplete[value]").each(function(){
+            id = $(this).val();
+            ids.push(id);
+            $(this).attr('rel', id);
+        });
+        
+        $.getJSON('{% url api.views.get_pharmaceutical_forms %}?ids='+ids, function(data) {
+            $.each(data, function(key, value){
+                $(".autocomplete[rel="+key+"]").val(value);
+            })
+        });
+
+        // listen do submit
+        $("#section_form").submit(function(){
+            $(".autocomplete[value]").each(function(){
+                var text = $(this).val();
+                text = text.split(":");
+                $(this).val(text[0]);
+            });
+        });
+    });
+</script>
+
+<style>
+    .autocomplete{
+        width: 80%;
+    }
+</style>
+
+<fieldset class="module aligned {{ fieldset.classes }}">
+    {% if fieldset.name %}<h2>{{ fieldset.name }}</h2>{% endif %}
+    {% if fieldset.description %}
+        <div class="description">{{ fieldset.description|safe }}</div>
+    {% endif %}
+    {% for line in fieldset %}
+        <div class="form-row{% if line.fields|length_is:'1' and line.errors %} errors{% endif %}{% for field in line %} {{ field.field.name }}{% endfor %}">
+            {% if line.fields|length_is:'1' %}{{ line.errors }}{% endif %}
+            {% for field in line %}
+                <div{% if not line.fields|length_is:'1' %} class="field-box{% if not field.is_readonly and field.errors %} errors{% endif %}"{% endif %}>
+                    {% if not line.fields|length_is:'1' and not field.is_readonly %}{{ field.errors }}{% endif %}
+                    {% if field.is_checkbox %}
+                        {{ field.field }}{{ field.label_tag }}
+                    {% else %}
+                        {{ field.label_tag }}
+                        {% if field.is_readonly %}
+                            <p>{{ field.contents }}</p>
+                        {% else %}
+                            {{ field.field }}
+                        {% endif %}
+                    {% endif %}
+                    {% if field.field.help_text %}
+                        <p class="help">{{ field.field.help_text|safe }}</p>
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+</fieldset>

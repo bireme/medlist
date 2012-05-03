@@ -85,16 +85,30 @@ def get_section_parents(request, id_section):
 
 def get_pharmaceutical_forms(request):
 
+	if 'ids' in request.GET and request.GET['ids'] != "":
+		ids = request.GET['ids']
+		ids = ids.split(",")
+
+		output = {}
+		for id in ids:
+			try:
+				obj = PharmaceuticalForm.objects.get(id=id)
+				output[id]= "%s: %s" % (obj.id, obj.__unicode__())
+			except: pass
+		
+		return HttpResponse(json.dumps(output), mimetype="application/json")
+
 	all = PharmaceuticalForm.objects.all()
 	if 'term' in request.GET and request.GET['term'] != "":
 		all = all.filter(medicine__name__icontains=request.GET['term'])
+
+	if 'id' in request.GET and request.GET['id'] != "":
+		all = all.filter(id=request.GET['id'])	
 	
 	output = []
 	for item in all:
 		# output.append({'id': item.id, 'name': item.__unicode__()})
 		output.append("%s: %s" % (item.id, item.__unicode__()))
-
-
 
 	return HttpResponse(json.dumps(output), mimetype="application/json")
 

@@ -4,8 +4,16 @@ from django.contrib import admin
 from models import *
 from urllib2 import urlopen
 from app_actions import create_list_archive
+from django import forms
 from medlist.history.models import *
 
+class SectionPharmFormAdminForm(forms.ModelForm):
+	pharmaceutical_form = forms.CharField(widget=forms.TextInput(attrs={'class':'autocomplete'}))
+	class Meta:
+		model = SectionPharmForm
+
+	def clean_pharmaceutical_form(self):
+		return PharmaceuticalForm.objects.get(pk=self.cleaned_data['pharmaceutical_form'])
 
 class ListLocalAdmin(admin.TabularInline):
     model = ListLocal
@@ -16,15 +24,17 @@ class SectionLocalAdmin(admin.TabularInline):
     extra = 0
 
 class SectionPharmFormAdmin(admin.StackedInline):
+	form = SectionPharmFormAdminForm
 	model = SectionPharmForm
 	extra = 0
+
 
 class SectionAdmin(admin.ModelAdmin):
 
 	inlines = [SectionLocalAdmin, SectionPharmFormAdmin, ]	
 	list_display = ('title', 'get_list_abbreviation', 'get_hierarchy')
 	list_filter = ('list__abbreviation', )
-	search_fields = ('title', 'observation', 'id')
+	search_fields = ('title', 'observation', 'id')       
 
 class ListAdmin(admin.ModelAdmin):
 
