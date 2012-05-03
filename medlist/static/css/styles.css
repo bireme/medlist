@@ -241,6 +241,7 @@ BODY, TABLE, TD, TH {
 	border: 1px solid #FFF;
 	width: 99px;
 }
+*+html .availableLangs { /* target IE7 only */  margin-left: -50px;}
 .availableLangs UL {
 	margin: 6px 0px;
 }
