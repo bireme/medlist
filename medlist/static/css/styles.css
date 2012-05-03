@@ -192,6 +192,9 @@ BODY, TABLE, TD, TH {
 	height: 90px;
 	margin-top: 15px;
 }
+
+*+html .banner .top-rightBlock { /* target IE7 only */   width: 248px;}
+
 .banner #top-pahoLogo {
 	width: 198px;
 	margin: 22px 32px 0px 17px;
