@@ -22,6 +22,7 @@ urlpatterns = patterns('',
     url(r'^api/iahx/?$', 'medlist.api.views.iahx'),
     url(r'^api/get_hierarchy_relation/(\d+)/?$', 'medlist.api.views.get_hierarchy_relation'),
     url(r'^api/get_section_parents/(\d+)/?$', 'medlist.api.views.get_section_parents'),
+    url(r'^api/get_pharmaceutical_forms/?$', 'medlist.api.views.get_pharmaceutical_forms'),
     
     url(r'^medicine/(?P<id>\d+)/?$', 'medlist.directory.views.show_medicine'),
     
@@ -31,7 +32,7 @@ urlpatterns = patterns('',
     # internationalization
     url(r'^i18n/', include('django.conf.urls.i18n')),
 
-    url(r'^', 'medlist.main.views.index'),
+    url(r'^$', 'medlist.main.views.index'),
 )
 
 # static files in development
