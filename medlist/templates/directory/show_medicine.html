@@ -217,7 +217,7 @@
 							<p class="question">{{ evidence.question }}</p>
 
 							{% if evidence.link %}
-								<p><a href="{{ evidence.link }}" target="_blank">{{ evidence.link }}</a></p>
+								<p><a href="{{ evidence.link }}" target="_blank">{% trans "view details"|capfirst %}</a></p>
 							{% endif %}
 							{% if evidence.file %}	
 								<a href="{{ evidence.file.url }}" target="_blank">{% trans "view details"|capfirst %}</a>
