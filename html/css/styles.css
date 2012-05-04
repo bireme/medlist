@@ -139,13 +139,13 @@ BODY, TABLE, TD, TH {
     margin: 30px 0 0 20px;
     width: 330px;
 }
-.en .banner #logo {
+.logo-en {
 	background: url(../images/logo-en.png) no-repeat;
 }
-.es .banner #logo {
+.logo-es {
 	background: url(../images/logo-es.png) no-repeat;
 }
-.pt .banner #logo {
+.logo-pt-br {
 	background: url(../images/logo-pt.png) no-repeat;
 }
 .banner #logo SPAN {
@@ -468,7 +468,7 @@ BODY, TABLE, TD, TH {
 	float: right;
 }
 .list UL {
-	margin-left: 24px;
+	margin: -10px 0 0 24px;
 	line-height: 160%;
 }
 .list UL LI {

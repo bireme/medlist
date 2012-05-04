@@ -3,6 +3,7 @@
 from medlist.list.models import *
 from django.shortcuts import HttpResponse, render_to_response, get_object_or_404
 from django.views.decorators.cache import cache_page
+from django.views.decorators.csrf import csrf_protect
 from django.template import RequestContext
 from django.http import Http404
 from django.core.cache import cache
@@ -19,6 +20,7 @@ def get_parents(id):
 		return output
 
 @cache_page(settings.CACHE_TIMEOUT)
+@csrf_protect
 def show_list(request, id):
 
 	list = get_object_or_404(List, pk=id)
