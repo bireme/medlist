@@ -20,29 +20,33 @@
 		</h3>
 		
         <!-- pharmaceutical forms -->
-        <div class="pharmaceutical_forms">
-            <h4>{$texts.LABEL_PHARMACEUTICAL_FORMS}</h4>
-            <ul>
-            {foreach from=$doc->pharmaceutical_form item=item}
-                <li class="pharmaceutical_form">
-					{extractdata element=$item part=$lang}: {extractdata element=$item part=comp}
-				</li>	
-            {/foreach}
-            </ul>
-        </div>
+        {if $doc->pharmaceutical_form}
+			<div class="pharmaceutical_forms">
+				<h4>{$texts.LABEL_PHARMACEUTICAL_FORMS}</h4>
+				<ul>
+				{foreach from=$doc->pharmaceutical_form item=item}
+					<li class="pharmaceutical_form">
+						{extractdata element=$item part=$lang}: {extractdata element=$item part=comp}
+					</li>	
+				{/foreach}
+				</ul>
+			</div>
+		{/if}
         
         <!-- Lists -->
-        <div class="in_lists">
-			<h4>{$texts.LABEL_IN_LIST}</h4>
-			<ul>
-				{foreach from=$doc->list item=list}
-					<li>{extractdata element=$list part=$lang}</li>
-				{/foreach}
-				{foreach from=$doc->country item=list}
-					<li>{extractdata element=$list part=$lang}</li>
-				{/foreach}				
-			</ul>
-		</div>
+        {if $doc->list}
+			<div class="in_lists">
+				<h4>{$texts.LABEL_IN_LIST}</h4>
+				<ul>
+					{foreach from=$doc->list item=list}
+						<li>{extractdata element=$list part=$lang}</li>
+					{/foreach}
+					{foreach from=$doc->country item=list}
+						<li>{extractdata element=$list part=$lang}</li>
+					{/foreach}				
+				</ul>
+			</div>
+		{/if}
 		<div class="spacer"></div>
     </div>
 

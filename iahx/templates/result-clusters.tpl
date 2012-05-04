@@ -12,7 +12,7 @@
 
       	<div id="{$key}">
 		<strong>{$texts.$label}</strong>
-		<a href="#" onclick="showChart(this,'{$texts.$label}','{$key}')" class="thickbox"><img src="image/common/chart.gif"></a>
+		<a href="#" onclick="showChart(this,'{$texts.$label}','{$key}')" class="thickbox"><img src="image/common/chart.gif" border="0"></a>
 		<ul id="{$key}_set">
 			{foreach key=clusterKey item=clusterItem from=$item}
 				<li>				

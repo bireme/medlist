@@ -29,8 +29,6 @@
         <script language="JavaScript" type="text/javascript" src="./js/pubmed_linkout.js"></script>
 		<script language="JavaScript" type="text/javascript" src="./js/thickbox.js"></script>
 		<script language="JavaScript" type="text/javascript" src="./local/functions.js"></script>
-        <script language="JavaScript" type="text/javascript" src="./local/add_collection.js"></script>
-
 
 		<!-- Page icon -->
 		<link rel="shortcut icon" href="./image/favicon.ico">

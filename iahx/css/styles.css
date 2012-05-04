@@ -1,23 +1,11 @@
 BODY {
-	font-size: 72%;
-	_font-size: 70%;
 	background: #FFF url(../image/common/ml/bg-barra-superior_s1.png) repeat-x 0px -10px;
 	font-family: tahoma;
 	color: #555;
 
 }
-HTML/**/>BODY {
-	font-size: 70%;
-}
-BODY, INPUT, SELECT, TEXTAREA {
-	font-family: Arial, Verdana, Helvetica;
-}
-A IMG {
-	border: 0px;
-	vertical-align: middle;
-}
-HR{
-	border: 0.5px solid #E5E5E5;
+BODY, TABLE, TD, TH {
+	font-size: 8.5pt;
 }
 a{
 	color: #07449f;
@@ -113,24 +101,63 @@ DIV.otherVersions A.selected IMG, DIV.otherVersions A:hover IMG {
 	width: 984px;
 }
 .banner #logo {
-	background: url(../image/common/ml/logotipo.png) no-repeat;
-	width: 291px;
-	height: 80px;
-	margin-left: 20px;
-	top: 30px;
-	position: absolute
+	float: left;
+	height: 90px;
+	margin: 30px 0 0 20px;
+	width: 330px;
 }
-.banner #logo:hover {
-	background-position: -291px;
+.logo-en {
+	background: url(../image/en/logo-en.png) no-repeat;
 }
+.logo-es {
+	background: url(../image/es/logo-es.png) no-repeat;
+}
+.logo-pt {
+	background: url(../image/pt/logo-pt.png) no-repeat;
+}
+
 .banner #logo SPAN {
 	display: none;
 }
 .banner .identification {
 	float: left;
 	font-size: 180%;
-	color: #FFF;
-	margin: 55px 0px 0px 390px;
+	color: white;
+	margin: 55px 0 0 60px;
+}
+.banner .top-rightBlock {
+	float: right;
+}
+*+html .banner .top-rightBlock { /* target IE7 only */   width: 248px;}
+.banner .top-rightBlock .separator {
+	float: left;
+	width: 1px;
+	background: black;
+	height: 90px;
+	margin-top: 15px;
+}
+.banner .top-rightBlock .langSelector {
+	background: url(../image/common/fundoIdioma.png) no-repeat;
+	width: 100px;
+	height: 27px;
+	text-align: center;
+	padding: 4px 0px;
+	font-weight: bold;
+	margin: 4px auto 0px;
+}
+.banner .top-rightBlock .langSelector .currentLang .arrow-bottom-wht {
+	background: url(../image/common/setaBaixoBranca.png) no-repeat;
+	margin: 6px auto 0 auto;
+	width: 7px;
+	height: 4px;
+}
+
+.banner #top-pahoLogo {
+	width: 198px;
+	margin: 22px 32px 0px 17px;
+}
+.banner #top-pahoLogo img {
+	width: 100%;
 }
 .banner #joinToday {
 	float: left;
@@ -150,33 +177,26 @@ DIV.otherVersions A.selected IMG, DIV.otherVersions A:hover IMG {
 	height: 24px;
 	margin: 6px 0px 0px 125px;
 }
-.banner #joinToday #signupButton:hover {
-	background-position: -69px;
+.availableLangs {
+	position: absolute;
+	background: #2A4C69;
+	border: 1px solid #FFF;
+	width: 99px;
 }
-.banner #joinToday #signupButton SPAN {
-	display: none;
+*+html .availableLangs { /* target IE7 only */   margin-left: -50px;}
+.availableLangs UL {
+	margin: 6px 0px;
 }
-.banner .langSelector {
-	float: right;
-	margin: 30px 20px 0 0;
+.availableLangs LI {
+	padding: 5px 0px 5px 14px;
+	text-align: left;
 }
-.banner .langSelector LI A {
-	width: 60px;
-	height: 20px;
-	display: block;
-	margin: 5px;
+.availableLangs LI A {
+	color: #FFF;
+	margin: 0px;
+	font-weight: normal;
 }
-.banner .langSelector LI A SPAN {
-	display: none;
-}
-.banner .langSelector LI A#lang_en {background: url(../image/common/ml/ingles.png) no-repeat;}
-.banner .langSelector LI A#lang_es {background: url(../image/common/ml/espanhol.png) no-repeat;}
-.banner .langSelector LI A#lang_pt {background: url(../image/common/ml/portugues.png) no-repeat;}
-.banner .langSelector LI A#lang_en:hover,
-.banner .langSelector LI A#lang_es:hover,
-.banner .langSelector LI A#lang_pt:hover {
-	background-position: -60px;
-}
+
 
 /********** END OF MEDLIST BRANDING CLASSES **********/
 
