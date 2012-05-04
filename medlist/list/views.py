@@ -71,6 +71,7 @@ def compare(request):
 	section_forms = []
 	if len(lists) > 0:
 		section_forms = SectionPharmForm.objects.filter(section__list__id__in=lists).distinct()
+		section_forms = section_forms.order_by("pharmaceutical_form__medicine__name")
 
 	# removes all duplicated pharmaceutical form
 	# forms = []
