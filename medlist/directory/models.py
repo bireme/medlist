@@ -6,6 +6,7 @@ from medlist import settings
 from django.utils.translation import ugettext_lazy as _
 
 LANGUAGES_CHOICES = (
+    ('en', 'English'),    # default language 
     ('pt-br', 'Brazilian Portuguese'),
     ('es', 'Spanish'),
 )  
@@ -40,7 +41,7 @@ class MedicineLocal(models.Model):
         verbose_name_plural = "Medicine Translations"
 
     medicine = models.ForeignKey(Medicine, verbose_name=_("medicine"))
-    language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
+    language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES[1:])
     name = models.CharField(_("name"), max_length=255)
     
     class Meta:
@@ -107,7 +108,7 @@ class PharmaceuticalFormTypeLocal(models.Model):
         verbose_name_plural = "Pharmaceutical Form Type Translations"
 
     pharmaceutical_form_type = models.ForeignKey(PharmaceuticalFormType)
-    language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
+    language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES[1:])
     name = models.CharField(_("name"), max_length=255)
 
 class PharmaceuticalForm(models.Model):
