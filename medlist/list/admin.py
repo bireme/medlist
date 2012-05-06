@@ -8,12 +8,12 @@ from django import forms
 from medlist.history.models import *
 
 class SectionPharmFormAdminForm(forms.ModelForm):
-	pharmaceutical_form = forms.CharField(widget=forms.TextInput(attrs={'class':'autocomplete'}))
+	#pharmaceutical_form = forms.CharField(widget=forms.TextInput(attrs={'class':'autocomplete'}))
 	class Meta:
 		model = SectionPharmForm
 
-	def clean_pharmaceutical_form(self):
-		return PharmaceuticalForm.objects.get(pk=self.cleaned_data['pharmaceutical_form'])
+	# def clean_pharmaceutical_form(self):
+	# 	return PharmaceuticalForm.objects.get(pk=self.cleaned_data['pharmaceutical_form'])
 
 class ListLocalAdmin(admin.TabularInline):
     model = ListLocal
