@@ -9,7 +9,7 @@ from medlist.history.models import *
 
 class PharmaceuticalFormWidget(forms.TextInput):
 	def render(self, name, value, attrs=None):
-		if isinstance(value, int):
+		if isinstance(value, (long, int)):
 			pharmaceutical_form = PharmaceuticalForm.objects.get(pk=value)
 			value = "%s: %s" % (pharmaceutical_form.id, pharmaceutical_form.__unicode__())
 
