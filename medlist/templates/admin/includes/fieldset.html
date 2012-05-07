@@ -6,36 +6,11 @@
         source: "{% url api.views.get_pharmaceutical_forms %}",
         minLength: 1
     });
-
-    $(function(){
-
-        var ids = [];
-        $(".autocomplete[value]").each(function(){
-            id = $(this).val();
-            ids.push(id);
-            $(this).attr('rel', id);
-        });
-        
-        $.getJSON('{% url api.views.get_pharmaceutical_forms %}?ids='+ids, function(data) {
-            $.each(data, function(key, value){
-                $(".autocomplete[rel="+key+"]").val(value);
-            })
-        });
-
-        // listen do submit
-        $("#section_form").submit(function(){
-            $(".autocomplete[value]").each(function(){
-                var text = $(this).val();
-                text = text.split(":");
-                $(this).val(text[0]);
-            });
-        });
-    });
 </script>
 
 <style>
     input.autocomplete {
-        width: 80%;
+        width: 70%;
     }
 
     .ui-autocomplete {

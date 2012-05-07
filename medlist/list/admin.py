@@ -7,15 +7,24 @@ from app_actions import create_list_archive
 from django import forms
 from medlist.history.models import *
 
+class PharmaceuticalFormWidget(forms.TextInput):
+	def render(self, name, value, attrs=None):		
+		if isinstance(value, (long, int)):
+			pharmaceutical_form = PharmaceuticalForm.objects.get(pk=value)
+			value = "%s: %s" % (pharmaceutical_form.id, pharmaceutical_form.__unicode__())
+
+		return super(PharmaceuticalFormWidget, self).render(name, value, attrs)
+
+
 class SectionPharmFormAdminForm(forms.ModelForm):
-	pharmaceutical_form = forms.CharField(widget=forms.TextInput(attrs={'class':'autocomplete'}))
+	pharmaceutical_form = forms.CharField(widget=PharmaceuticalFormWidget(attrs={'class':'autocomplete'}))
 	class Meta:
 		model = SectionPharmForm
 
 	def clean_pharmaceutical_form(self):
 		pk = self.cleaned_data['pharmaceutical_form']
 		pk = pk.split(":")
-		pk = int(pk[0])
+		pk = int(pk[0])		
 		return PharmaceuticalForm.objects.get(pk=pk)
 
 class ListLocalAdmin(admin.TabularInline):
