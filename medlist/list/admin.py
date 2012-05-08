@@ -8,6 +8,7 @@ from django import forms
 from medlist.history.models import *
 
 class PharmaceuticalFormWidget(forms.TextInput):
+
 	def render(self, name, value, attrs=None):
 		if isinstance(value, (long, int)):
 			pharmaceutical_form = PharmaceuticalForm.objects.get(pk=value)
@@ -17,7 +18,7 @@ class PharmaceuticalFormWidget(forms.TextInput):
 
 
 class SectionPharmFormAdminForm(forms.ModelForm):
-	pharmaceutical_form = forms.CharField(widget=PharmaceuticalFormWidget(attrs={'class':'autocomplete'}))
+	pharmaceutical_form = forms.CharField(widget=PharmaceuticalFormWidget(attrs={'class':'autocomplete autocomplete-pharmform'}))
 	class Meta:
 		model = SectionPharmForm
 
@@ -80,6 +81,11 @@ class ListAdmin(admin.ModelAdmin):
 
 	archive_list.short_description = _("Create a archive copy of selected lists")
 
+class SectionPharmFormAdmin(admin.ModelAdmin):
+	form = SectionPharmFormAdminForm
+	list_display = ("__unicode__", "section",)
+	list_filter = ("best_evidence", "only_for_children", "specialist_care_for_children",)
 
 admin.site.register(Section, SectionAdmin)
 admin.site.register(List, ListAdmin)
+admin.site.register(SectionPharmForm, SectionPharmFormAdmin)

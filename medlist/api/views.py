@@ -112,5 +112,16 @@ def get_pharmaceutical_forms(request):
 
 	return HttpResponse(json.dumps(output), mimetype="application/json")
 
+def get_sections(request):
+
+	output = {}
+	if 'list' in request.GET and request.GET['list'] != "":
+		list = request.GET['list']
+		all = Section.objects.filter(list=list)
+
+		for item in all:
+			output[item.id] = item.__unicode__()
+
+	return HttpResponse(json.dumps(output), mimetype="application/json")
 
 

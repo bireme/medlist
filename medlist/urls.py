@@ -23,6 +23,7 @@ urlpatterns = patterns('',
     url(r'^api/get_hierarchy_relation/(\d+)/?$', 'medlist.api.views.get_hierarchy_relation'),
     url(r'^api/get_section_parents/(\d+)/?$', 'medlist.api.views.get_section_parents'),
     url(r'^api/get_pharmaceutical_forms/?$', 'medlist.api.views.get_pharmaceutical_forms'),
+    url(r'^api/get_sections/?$', 'medlist.api.views.get_sections'),
     
     url(r'^medicine/(?P<id>\d+)/?$', 'medlist.directory.views.show_medicine'),
     
