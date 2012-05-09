@@ -47,7 +47,9 @@ class SectionAdmin(admin.ModelAdmin):
 	inlines = [SectionLocalAdmin, SectionPharmFormAdmin, ]	
 	list_display = ('title', 'get_list_abbreviation', 'get_hierarchy')
 	list_filter = ('list__abbreviation', )
-	search_fields = ('title', 'observation', 'id')       
+	search_fields = ('title', 'observation', 'id')   
+
+	fields = ('title', 'list', 'parent', 'observation')    
 
 class ListAdmin(admin.ModelAdmin):
 
