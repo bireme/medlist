@@ -18,6 +18,13 @@
 			if(countries_content == "") {
 				$(".countriesContent").html("<i>"+message+".</i>");
 			} 
+
+			// Remove a ultima virgula do pais e coloca um ponto final.
+			var last_country = $(".country_link:last-child").html().replace(/^\s+|\s+$/g,"");
+			last_country = last_country.substring(0, last_country.length-1);
+			last_country += ".";
+			$(".country_link:last-child").html(last_country);
+
 		})
 	</script>
 {% endblock %}
@@ -110,8 +117,8 @@
 									{% for list, forms in forms_in_lists.items %}
 										{% if forms.type == 'c' %}
 											{% if form_id in forms.forms %}
-												<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
-													{{ forms.list.abbreviation }}
+												<a href="{% url list.views.show_list forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}" class="country_link">
+													{{ forms.list.abbreviation }},
 												</a>
 											{% endif %}
 										{% endif%}
