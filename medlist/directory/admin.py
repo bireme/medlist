@@ -104,7 +104,7 @@ class PharmaceuticalFormAdmin(admin.ModelAdmin):
     model = PharmaceuticalForm
     
     list_display = ('__unicode__', 'composition', 'medicine', 'atc_code', 'active')
-    search_fields = ('pharmaceutical_form_type__name', 'atc_code', 'composition')
+    search_fields = ('pharmaceutical_form_type__name', 'atc_code', 'composition', 'medicine__name')
     list_filter = ('pharmaceutical_form_type__name', 'active')
 
     actions = ['make_active']
