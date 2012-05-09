@@ -18,6 +18,7 @@ class PharmaceuticalFormWidget(forms.TextInput):
 
 
 class SectionPharmFormAdminForm(forms.ModelForm):
+	
 	pharmaceutical_form = forms.CharField(widget=PharmaceuticalFormWidget(attrs={'class':'autocomplete autocomplete-pharmform'}))
 	class Meta:
 		model = SectionPharmForm
@@ -45,7 +46,7 @@ class SectionPharmFormAdmin(admin.StackedInline):
 class SectionAdmin(admin.ModelAdmin):
 
 	inlines = [SectionLocalAdmin, SectionPharmFormAdmin, ]	
-	list_display = ('title', 'get_list_abbreviation', 'get_hierarchy')
+	list_display = ('id', 'title', 'get_list_abbreviation', 'get_hierarchy')
 	list_filter = ('list__abbreviation', )
 	search_fields = ('title', 'observation', 'id')   
 
@@ -84,9 +85,11 @@ class ListAdmin(admin.ModelAdmin):
 	archive_list.short_description = _("Create a archive copy of selected lists")
 
 class SectionPharmFormAdmin(admin.ModelAdmin):
+
 	form = SectionPharmFormAdminForm
-	list_display = ("__unicode__", "section",)
+	list_display = ("id", "__unicode__", "section",)
 	list_filter = ("best_evidence", "only_for_children", "specialist_care_for_children",)
+	raw_id_fields = ("section",)
 
 admin.site.register(Section, SectionAdmin)
 admin.site.register(List, ListAdmin)
