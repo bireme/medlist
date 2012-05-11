@@ -87,9 +87,18 @@ class ListAdmin(admin.ModelAdmin):
 class SectionPharmFormAdmin(admin.ModelAdmin):
 
 	form = SectionPharmFormAdminForm
-	list_display = ("id", "__unicode__", "section",)
+	list_display = ("id", 'pharmaceutical_form_id', "__unicode__", 'section')
 	list_filter = ("best_evidence", "only_for_children", "specialist_care_for_children",)
+	search_fields = ("id", 'pharmaceutical_form__medicine__name', 'pharmaceutical_form__composition')
 	raw_id_fields = ("section",)
+
+	actions = ['index', ]
+
+	# adding option to activate or not a register
+	def index(modeladmin, request, queryset):
+		for obj in queryset:
+			obj.save()
+	index.short_description = _("Indexes these pharmaceutical forms")
 
 admin.site.register(Section, SectionAdmin)
 admin.site.register(List, ListAdmin)

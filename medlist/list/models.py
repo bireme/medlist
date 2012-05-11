@@ -159,4 +159,7 @@ class SectionPharmForm(models.Model):
     def __unicode__(self):
         return unicode(self.pharmaceutical_form)
 
+    def pharmaceutical_form_id(self):
+        return unicode(self.pharmaceutical_form.id)
+
 
