@@ -10,3 +10,4 @@ medlist/database
 medlist/media/
 settings_local.py
 fabfile.py
+medlist/index/

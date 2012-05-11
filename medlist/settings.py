@@ -79,6 +79,8 @@ try:
 except ImportError:
     pass
 
+WHOOSH_INDEX = os.path.join(PROJECT_ROOT_PATH, 'index')
+
 # If you set this to False, Django will not format dates, numbers and
 # calendars according to the current locale
 USE_L10N = True
