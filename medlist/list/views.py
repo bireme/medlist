@@ -76,13 +76,13 @@ def compare(request):
 		section_forms = section_forms.order_by("pharmaceutical_form__medicine__name")
 
 	# removes all duplicated pharmaceutical form
-	# forms = []
-	# for sf in section_forms:
-	# 	id = sf.pharmaceutical_form.id
-	# 	if id in forms:
-	# 		section_forms = section_forms.exclude(pk=sf.id)
-	# 	else:
-	# 		forms.append(id)
+	forms = []
+	for sf in section_forms:
+		id = sf.pharmaceutical_form.id
+		if id in forms:
+			section_forms = section_forms.exclude(pk=sf.id)
+		else:
+			forms.append(id)
 
 	# check for cache using user selected lists on the name
 	selected_lists = cache.get('selected_lists%s' % cache_lists)
