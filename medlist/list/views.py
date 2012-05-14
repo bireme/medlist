@@ -83,7 +83,22 @@ def compare(request):
 	
 	# search these forms
 	pharmaceutical_forms = search(lists)
-	print len(pharmaceutical_forms)	
+	print len(pharmaceutical_forms)
+
+	languages = {}
+	languages['pt-br'] = ['medicine_pt', 'type_pt']
+	languages['es'] = ['medicine_es', 'type_es']
+
+	if request.LANGUAGE_CODE != 'en':
+		count = 0
+		for form in pharmaceutical_forms:
+			for lang in languages[request.LANGUAGE_CODE]:
+				if lang in form and form[lang]:
+					field = lang.split("_")[0]
+					form[field] = form[lang]
+
+			pharmaceutical_forms[count] = form
+			count += 1
 	
 	# make pagination
 	paginator = Paginator(pharmaceutical_forms, settings.ITEMS_PER_PAGE)

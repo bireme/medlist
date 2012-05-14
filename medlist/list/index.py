@@ -4,9 +4,14 @@ from django.conf import settings
 from whoosh import store, fields, index
 from search import search
 from models import *
+from directory.models import LANGUAGES_CHOICES
 
 WHOOSH_SCHEMA = fields.Schema(medicine=fields.TEXT(stored=True),
+                                medicine_es=fields.TEXT(stored=True),
+                                medicine_pt=fields.TEXT(stored=True),
 								type=fields.TEXT(stored=True),
+                                type_es=fields.TEXT(stored=True),
+                                type_pt=fields.TEXT(stored=True),
 								composition=fields.TEXT(stored=True),
 								list=fields.NUMERIC(stored=True),
 								medicine_id=fields.NUMERIC(stored=True),
@@ -39,7 +44,11 @@ def update_index(sender, instance, created, **kwargs):
     # if don't exists, create the doc
     if not docs:
         writer.add_document(medicine=instance.pharmaceutical_form.medicine.name,
+                            medicine_es=instance.pharmaceutical_form.medicine.get_translation('es'),
+                            medicine_pt=instance.pharmaceutical_form.medicine.get_translation('pt-br'),
                             type=instance.pharmaceutical_form.pharmaceutical_form_type.name,
+                            type_es=instance.pharmaceutical_form.pharmaceutical_form_type.get_translation('es'),
+                            type_pt=instance.pharmaceutical_form.pharmaceutical_form_type.get_translation('pt-br'),
                             composition=instance.pharmaceutical_form.composition,
                             list=[instance.section.list.id],
                             medicine_id=instance.pharmaceutical_form.medicine.id,
@@ -47,9 +56,13 @@ def update_index(sender, instance, created, **kwargs):
     # if exists, update doc
     else:   
         writer.update_document(medicine=instance.pharmaceutical_form.medicine.name,
+                            medicine_es=instance.pharmaceutical_form.medicine.get_translation('es'),
+                            medicine_pt=instance.pharmaceutical_form.medicine.get_translation('pt-br'),
                             type=instance.pharmaceutical_form.pharmaceutical_form_type.name,
+                            type_es=instance.pharmaceutical_form.pharmaceutical_form_type.get_translation('es'),
+                            type_pt=instance.pharmaceutical_form.pharmaceutical_form_type.get_translation('pt-br'),
                             composition=instance.pharmaceutical_form.composition,
-                            list=list,
+                            list=[instance.section.list.id],
                             medicine_id=instance.pharmaceutical_form.medicine.id,
                             id=instance.pharmaceutical_form.id)
     writer.commit()
@@ -59,7 +72,7 @@ def delete_index(sender, instance, using, **kwargs):
     """
     Removes a list from lists field on doc.
     """
-    
+
     ix = index.open_dir(settings.WHOOSH_INDEX)
     writer = ix.writer()
     
@@ -70,10 +83,26 @@ def delete_index(sender, instance, using, **kwargs):
         try: list.remove(instance.section.list.id) 
         except: pass
 
+    medicine_local = []
+    for language in LANGUAGES_CHOICES:
+        language = language[0]
+        medicine = "%s^|%s" % (language, instance.pharmaceutical_form.medicine.get_translation(language))
+        medicine_local.append(medicine)
+
+    type_local = []
+    for language in LANGUAGES_CHOICES:
+        language = language[0]
+        type = "%s^|%s" % (language, instance.pharmaceutical_form.pharmaceutical_form_type.get_translation(language))
+        type_local.append(medicine)
+
         writer.update_document(medicine=instance.pharmaceutical_form.medicine.name,
+                            medicine_es=instance.pharmaceutical_form.medicine.get_translation('es'),
+                            medicine_pt=instance.pharmaceutical_form.medicine.get_translation('pt-br'),
                             type=instance.pharmaceutical_form.pharmaceutical_form_type.name,
+                            type_es=instance.pharmaceutical_form.pharmaceutical_form_type.get_translation('es'),
+                            type_pt=instance.pharmaceutical_form.pharmaceutical_form_type.get_translation('pt-br'),
                             composition=instance.pharmaceutical_form.composition,
-                            list=list,
+                            list=[instance.section.list.id],
                             medicine_id=instance.pharmaceutical_form.medicine.id,
                             id=instance.pharmaceutical_form.id)
         writer.commit()
