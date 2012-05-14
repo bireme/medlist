@@ -62,7 +62,7 @@ def update_index(sender, instance, created, **kwargs):
                             type_es=instance.pharmaceutical_form.pharmaceutical_form_type.get_translation('es'),
                             type_pt=instance.pharmaceutical_form.pharmaceutical_form_type.get_translation('pt-br'),
                             composition=instance.pharmaceutical_form.composition,
-                            list=[instance.section.list.id],
+                            list=list,
                             medicine_id=instance.pharmaceutical_form.medicine.id,
                             id=instance.pharmaceutical_form.id)
     writer.commit()
@@ -83,18 +83,6 @@ def delete_index(sender, instance, using, **kwargs):
         try: list.remove(instance.section.list.id) 
         except: pass
 
-    medicine_local = []
-    for language in LANGUAGES_CHOICES:
-        language = language[0]
-        medicine = "%s^|%s" % (language, instance.pharmaceutical_form.medicine.get_translation(language))
-        medicine_local.append(medicine)
-
-    type_local = []
-    for language in LANGUAGES_CHOICES:
-        language = language[0]
-        type = "%s^|%s" % (language, instance.pharmaceutical_form.pharmaceutical_form_type.get_translation(language))
-        type_local.append(medicine)
-
         writer.update_document(medicine=instance.pharmaceutical_form.medicine.name,
                             medicine_es=instance.pharmaceutical_form.medicine.get_translation('es'),
                             medicine_pt=instance.pharmaceutical_form.medicine.get_translation('pt-br'),
@@ -102,7 +90,7 @@ def delete_index(sender, instance, using, **kwargs):
                             type_es=instance.pharmaceutical_form.pharmaceutical_form_type.get_translation('es'),
                             type_pt=instance.pharmaceutical_form.pharmaceutical_form_type.get_translation('pt-br'),
                             composition=instance.pharmaceutical_form.composition,
-                            list=[instance.section.list.id],
+                            list=list,
                             medicine_id=instance.pharmaceutical_form.medicine.id,
                             id=instance.pharmaceutical_form.id)
         writer.commit()
