@@ -5,7 +5,7 @@ from django.template import RequestContext
 def index(request):
 
 	lists = List.objects.all().order_by("name")
-	print lists
+	#print lists
 	paho_lists = lists.filter(type="p")
 	who_lists = lists.filter(type="w")
 	country_lists = lists.filter(type="c")

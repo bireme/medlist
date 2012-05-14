@@ -83,7 +83,7 @@ def compare(request):
 	
 	# search these forms
 	pharmaceutical_forms = search(lists)
-	print len(pharmaceutical_forms)
+	#print len(pharmaceutical_forms)
 
 	languages = {}
 	languages['pt-br'] = ['medicine_pt', 'type_pt']
