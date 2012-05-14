@@ -21,6 +21,9 @@ def search(query, field="list", limit=None, sortedby='medicine', type=None):
 		if type == 'docnum':
 			results.append(result.docnum)
 		else:
-			results.append({key: value for key,value in result.items()})
+			current = {}
+			for key,value in result.items():
+				current[key] = value
+			results.append(current)
 
 	return results
