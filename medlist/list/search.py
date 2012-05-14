@@ -1,22 +1,26 @@
 from whoosh.qparser import QueryParser
-from whoosh import index
+from whoosh.searching import Results
+import whoosh
 import settings
 
 
-def search(query, field="*", limit=None, sortedby=None):
+def search(query, field="list", limit=None, sortedby='medicine', type=None):
 
 	query = unicode(query)
-	
-	ix = index.open_dir(settings.WHOOSH_INDEX)
+
+	ix = whoosh.index.open_dir(settings.WHOOSH_INDEX)
 	searcher = ix.searcher()
 
-	parser = QueryParser(field, ix.schema)
+	parser = whoosh.qparser.QueryParser(field, ix.schema)
 	myquery = parser.parse(query)
-
+	
 	search = searcher.search(myquery, limit=None, sortedby=sortedby)
 
 	results = []
 	for result in search:
-		results.append({key: value for key,value in result.items()})
+		if type == 'docnum':
+			results.append(result.docnum)
+		else:
+			results.append({key: value for key,value in result.items()})
 
 	return results
