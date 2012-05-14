@@ -1,0 +1,23 @@
+<div class="pagination">
+	{% if pagination %}
+		<ul>
+			{% if pagination.has_previous %}
+				<li><a href="#" rel="{{ pagination.previous_page_number }}" class="page"> < </a></li>
+	        {% endif %}
+
+			{% for item in paginator.page_range %}
+				<li>
+					{% if pagination.number == item %}
+						<span class="selected">{{ item }}</span>
+					{% else %}
+						<a href="#" rel="{{ item }}" class="page">{{ item }}</a>
+					{% endif %}
+				</li>
+			{% endfor %}
+
+			{% if pagination.has_next %}
+				<li><a href="#" rel="{{ pagination.next_page_number }}" class="page"> > </a></li>
+	        {% endif %}
+		</ul>
+	{% endif %}
+</div>

@@ -78,43 +78,44 @@
 		</div><!--/filters-->
 
 		<div class="hBlock">
-			<input type="radio" class="matches" name="matches" id="all_results_radio" rel="all_results" /> <label for="match" class="rightSide">{% trans "All Results" %}</label>
-			<input type="radio" class="matches" name="matches" rel="only_matched" /> <label for="match" class="rightSide">{% trans "Only Matched" %}</label>
-			<input type="radio" class="matches" name="matches" rel="only_unmatched" /> <label for="notMatch" class="rightSide">{% trans "Only Unmatched" %}</label>
+			<input type="radio" class="matches" name="matches" id="all_results_radio" rel="all_results" /> <label for="all_results_radio" class="rightSide">{% trans "All Results" %}</label>
+			<input type="radio" class="matches" name="matches" rel="only_matched" id="match" /> <label for="match" class="rightSide">{% trans "Only Matched" %}</label>
+			<input type="radio" class="matches" name="matches" rel="only_unmatched" id="unmatch" /> <label for="unmatch" class="rightSide">{% trans "Only Unmatched" %}</label>
 		</div>
 		<div class="spacer"></div>
 
-		{% if section_forms|length > 0 %}
+		{% if pharmaceutical_forms|length > 0 %}
+			{% include "list/pagination.html" %}
 			<table width="100%" cellpadding="0" cellspacing="0" border="0" class="genericTable compareLists">
 				<thead>				
 					<tr>
 						<th class="rowRef">{% trans "Name"|capfirst %}</th>
 						<th class="rowRef">{% trans "Pharmaceutical Form"|capfirst %}</th>
 
-						{% for list in selected_lists %}	
-							<th>{{ list.obj.abbreviation|capfirst }}</th>
+						{% for list in lists %}	
+							<th>{{ list.abbreviation|capfirst }}</th>
 						{% endfor %}
 						
 					</tr>
 				</thead>
 				<tbody>
-					{% for sf in section_forms %}
+					{% for item in pharmaceutical_forms %}
 						<tr>
 							<td class="rowRef">
-								<a href="{% url directory.views.show_medicine sf.pharmaceutical_form.medicine.id %}#type{{ sf.pharmaceutical_form.id }}">{{ sf.pharmaceutical_form.medicine|capfirst }}</a>
+								<a href="{% url directory.views.show_medicine item.medicine_id %}#type{{ item.id }}">{{ item.medicine|capfirst }}</a>
 							</td>
 							<td class="rowRef">
-								{{ sf.pharmaceutical_form.pharmaceutical_form_type|capfirst }}<br>
-								{% if sf.pharmaceutical_form.composition  %}
-									{{ sf.pharmaceutical_form.composition|capfirst }}
+								{{ item.type|capfirst }}<br>
+								{% if item.composition  %}
+									{{ item.composition|capfirst }}
 								{% else %}
 									<i>{% trans "No have composition" %}</i>
 								{% endif %}
 							</td>
 
-							{% for list in selected_lists %}	
+							{% for list in lists %}	
 								<td>
-									{% if sf.pharmaceutical_form.id in list.forms %}
+									{% if list.id in item.list %}
 										<span class="checked"><span>x</span></span>
 									{% else %}
 										-
@@ -125,38 +126,7 @@
 					{% endfor %}
 				</tbody>
 			</table>
-
-			<div class="pagination">
-				{% if pagination.items|length > 1 %}
-					<ul>
-						<li>
-							{% if pagination.page > 1 %}
-								<a href="#" rel="{{ pagination.prev }}" class="page"> < </a>
-							{% else %}
-								<
-							{% endif %}
-						</li>
-						
-						{% for item in pagination.items %}
-							<li>
-								{% if pagination.page == item %}
-									<span class="selected">{{ item }}</span>
-								{% else %}
-									<a href="#" rel="{{ item }}" class="page">{{ item }}</a>
-								{% endif %}
-							</li>
-						{% endfor %}
-
-						<li>
-							{% if pagination.page < pagination.items|length %}
-								<a href="#" rel="{{ pagination.next }}" class="page"> > </a>
-							{% else %}
-								>
-							{% endif %}
-						</li>
-					</ul>
-				</div>
-			{% endif %}
+			{% include "list/pagination.html" %}
 
 		{% else %}
 			<p>
