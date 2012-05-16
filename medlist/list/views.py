@@ -79,7 +79,7 @@ def compare(request):
 
 	# if UNMATCHEDS, make a ANDNOT query
 	elif request.GET.get('only_unmatched') and request.GET.get('only_unmatched') == 'true':
-		lists = lists.replace("OR", "ANDNOT")
+		lists = "(%s) ANDNOT (%s)" % (lists, lists.replace("OR", "AND"))
 	
 	# search these forms
 	pharmaceutical_forms = search(lists)
