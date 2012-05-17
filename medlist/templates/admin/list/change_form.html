@@ -4,16 +4,8 @@
 	<script>
 		// to prevent jquery conflicts
 		$ = django.jQuery; jQuery = django.jQuery;
-	</script>
-
-	<script type="text/javascript" src="{{ STATIC_URL }}/js/jquery-ui-1.8.20.custom.min.js"></script>
-	<script>
+	
 		$(function(){
-		    $(".autocomplete-pharmform").autocomplete({
-		        source: "{% url api.views.get_pharmaceutical_forms %}",
-		        minLength: 1
-		    });
-
 		    $("#id_list").change(function(){
 		    	var val = $(this).find('option:selected').val();
 		    	$.getJSON("{% url api.views.get_sections %}/?list="+val, function(json) {
@@ -29,26 +21,4 @@
 		    });
 		})
 	</script>
-
-	<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/jquery-ui-1.8.20.custom.css" media="screen" />
-	<style>
-	    input.autocomplete {
-	        width: 70%;
-	    }
-
-	    .ui-autocomplete {
-	        padding: 5px;
-	        margin: 0;
-	        border-radius: 0;
-	        width: 80%
-	    }
-
-	    .ui-menu-item, #ui-active-menuitem {
-	        border-radius: 0;
-	        list-style:none;
-	        padding: 3px;
-	        font-size: 9pt;
-	    }
-	</style>
-
 {% endblock %}

@@ -7,28 +7,6 @@ from app_actions import create_list_archive
 from django import forms
 from medlist.history.models import *
 
-class PharmaceuticalFormWidget(forms.TextInput):
-
-	def render(self, name, value, attrs=None):
-		if isinstance(value, (long, int)):
-			pharmaceutical_form = PharmaceuticalForm.objects.get(pk=value)
-			value = "%s: %s" % (pharmaceutical_form.id, pharmaceutical_form.__unicode__())
-
-		return super(PharmaceuticalFormWidget, self).render(name, value, attrs)
-
-
-class SectionPharmFormAdminForm(forms.ModelForm):
-	
-	pharmaceutical_form = forms.CharField(widget=PharmaceuticalFormWidget(attrs={'class':'autocomplete autocomplete-pharmform'}))
-	class Meta:
-		model = SectionPharmForm
-
-	def clean_pharmaceutical_form(self):
-		pk = self.cleaned_data['pharmaceutical_form']
-		pk = pk.split(":")
-		pk = int(pk[0])		
-		return PharmaceuticalForm.objects.get(pk=pk)
-
 class ListLocalAdmin(admin.TabularInline):
     model = ListLocal
     extra = 0
@@ -38,7 +16,7 @@ class SectionLocalAdmin(admin.TabularInline):
     extra = 0
 
 class SectionPharmFormAdmin(admin.StackedInline):
-	form = SectionPharmFormAdminForm
+	raw_id_fields = ("pharmaceutical_form",)
 	model = SectionPharmForm
 	extra = 0
 
@@ -86,11 +64,10 @@ class ListAdmin(admin.ModelAdmin):
 
 class SectionPharmFormAdmin(admin.ModelAdmin):
 
-	form = SectionPharmFormAdminForm
-	list_display = ("id", 'pharmaceutical_form_id', "__unicode__", 'section')
+	list_display = ("id", "__unicode__", 'section')
 	list_filter = ("best_evidence", "only_for_children", "specialist_care_for_children",)
 	search_fields = ("id", 'pharmaceutical_form__medicine__name', 'pharmaceutical_form__composition')
-	raw_id_fields = ("section",)
+	raw_id_fields = ("section", "pharmaceutical_form")
 
 	actions = ['index', ]
 
