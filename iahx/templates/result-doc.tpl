@@ -34,7 +34,7 @@
 		{/if}
         
         <!-- Lists -->
-        {if $doc->list}
+        {if $doc->list OR $doc->country}
 			<div class="in_lists">
 				<h4>{$texts.LABEL_IN_LIST}</h4>
 				<ul>
