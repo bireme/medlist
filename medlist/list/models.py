@@ -95,6 +95,9 @@ class Section(MPTTModel):
         if self.parent:
             return unicode(self.parent.title)
 
+    def get_clean_title(self):
+        return self.clean_title(self.title)
+
     def get_list_abbreviation(self):
         return unicode(self.list.abbreviation)  
 
@@ -113,13 +116,22 @@ class Section(MPTTModel):
             return self.title
 
     def get_translations(self):
-        translation_list = ["en^%s" % self.title.strip()]
+        translation_list = ["en^%s" % self.clean_title(self.title)]
         translation = SectionLocal.objects.filter(section=self.id)
         if translation:
-            other_languages = ["%s^%s" % (trans.language, trans.name.strip()) for trans in translation]
+            other_languages = ["%s^%s" % (trans.language, self.clean_title(trans.name)) for trans in translation]
             translation_list.extend(other_languages)
         
         return translation_list
+
+    def clean_title(self, raw_title):
+        """Normalize section title removing section number, etc. Ex. 13.3. Medicines used in bipolar disorders """
+        title_parts = raw_title.split('.')
+        clean_title = title_parts[len(title_parts)-1]
+        if (clean_title == ''):
+            clean_title = title_parts[len(title_parts)-2]
+
+        return clean_title.strip()
 
     
     get_hierarchy.short_description = _("hierarchy")
