@@ -15,7 +15,18 @@ def solr_index(med):
     pharma_form_type_list = []
     category_list = []
 
-    # medicine
+    # if medicine status is not active delete from solr index
+    if not med.active:
+        try:
+            solr = SolrConnection(settings.SOLR_URL)
+            solr.delete(id=str(med.id))
+            response = solr.commit()
+        except Exception as ex: 
+            return False
+
+        return True
+
+    # index medicine on solr index
     medicine_translations = MedicineLocal.objects.filter(medicine=med.id)
     medicine_list = ['en^%s' % med.name.strip()]
     for translation in medicine_translations:
@@ -23,8 +34,8 @@ def solr_index(med):
     
     medicine_list = "|".join(medicine_list) # ex.: en^codeine|pt-br^codeína|es^codeína
 
-    # pharmaceutical forms
-    pharm_forms = med.pharmaceuticalform_set.all()
+    # retrieve actives pharmaceutical forms of currente medicine
+    pharm_forms = med.pharmaceuticalform_set.filter(active=True)
     for form in pharm_forms:
 
         # ex. ^enTablet|es^Tableta|pt-br^Comprimido
