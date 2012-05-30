@@ -123,7 +123,13 @@ class PharmaceuticalFormAdmin(admin.ModelAdmin):
             obj.save()
     make_active.short_description = _("Activate or deactivate selected medicines")
 
+class EvidenceSummaryAdmin(admin.ModelAdmin):
+
+    list_display = ('id', 'medicine', 'file')
+    search_fields = ('medicine', 'language', 'context', 'question')
+
 
 admin.site.register(PharmaceuticalFormType, PharmaceuticalFormTypeAdmin)
 admin.site.register(Medicine, MedicineAdmin)
 admin.site.register(PharmaceuticalForm, PharmaceuticalFormAdmin)
+admin.site.register(EvidenceSummary, EvidenceSummaryAdmin)
