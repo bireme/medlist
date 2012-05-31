@@ -11,7 +11,7 @@
 
 	<script>
 		$(function(){
-			
+
 		})
 	</script>
 {% endblock %}
@@ -99,8 +99,27 @@
 							</div>
 
 							<div class="listItem countries">
-								<div class="blockSubTitle">{% trans "Countries lists" %}</div>
-								<div class="countriesContent">
+								<div class="blockSubTitle">{% trans "Country lists" %}</div>
+								<script>
+									$(function(){
+										var this_class = ".country-{{form.form.id}}";
+										var message = "{% trans 'No country medicine list has published this medicine' %}";
+										var countries_content = $(this_class).html();
+
+										if(countries_content != null) {
+											countries_content = countries_content.replace(/^\s+|\s+$/g,"");
+										}
+
+										if(countries_content == "") {
+										    $(this_class).html("<i>"+message+".</i>");
+									    } else {
+									    	last_link = $(this_class + " .country_link:last-child").html();
+									    	last_link = last_link.replace(/^\s+|\s+$/g,"").slice(0, -1) + ".";
+									    	$(this_class + " .country_link:last-child").html(last_link);
+									   }
+									});
+								</script>
+								<div class="countriesContent country-{{form.form.id}}">
 									{% for list, forms in forms_in_lists.items %}
 										{% if forms.type == 'c' %}
 											{% if form_id in forms.forms %}
