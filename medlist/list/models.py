@@ -5,6 +5,7 @@ from django.utils.translation import ugettext_lazy as _
 from mptt.models import MPTTModel, TreeForeignKey
 from datetime import datetime
 from django.core.urlresolvers import reverse
+from django.utils.safestring import mark_safe
 
 LANGUAGES_CHOICES = (
     ('pt-br', 'Brazilian Portuguese'),
@@ -167,6 +168,9 @@ class SectionPharmForm(models.Model):
     restriction_age = models.CharField(_("restriction age or weight"), max_length=255, null=True, blank=True)
     best_evidence = models.BooleanField(_("The best evidence for effectiveness and safety"))
     complementary_list = models.BooleanField(_("complementary list"))
+
+    def html_observation(self):
+        return mark_safe(self.observation)
 
     def __unicode__(self):
         return unicode(self.pharmaceutical_form)
