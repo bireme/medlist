@@ -11,25 +11,7 @@
 
 	<script>
 		$(function(){
-			var message = "{% trans 'No country medicine list has published this medicine' %}";
-			var countries_content = $(".countriesContent").html();
 			
-			if(countries_content != null) {
-				countries_content = countries_content.replace(/^\s+|\s+$/g,"");
-			}
-
-			if(countries_content == "") {
-				$(".countriesContent").html("<i>"+message+".</i>");
-			} else {
-				
-				// Remove a ultima virgula do pais e coloca um ponto final.
-				var last_country = $(".country_link:last-child").html().replace(/^\s+|\s+$/g,"");
-				last_country = last_country.substring(0, last_country.length-1);
-				last_country += ".";
-				$(".country_link:last-child").html(last_country);
-			}
-
-
 		})
 	</script>
 {% endblock %}
