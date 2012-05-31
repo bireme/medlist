@@ -186,6 +186,7 @@ INSTALLED_APPS = (
     'medlist.directory',
     'medlist.list',
     'medlist.history',
+    'medlist.evidence',
     'mptt',
     'south',
     # 'debug_toolbar',
