@@ -78,3 +78,15 @@ class EvidenceSummaryLocal(models.Model):
 
     def __unicode__(self):
         return unicode(self.title)
+
+class MedicineEvidenceSummary(models.Model):
+
+    class Meta:
+        verbose_name = "Evidence Summary in Medicine"
+        verbose_name_plural = "Evidence Summaries in Medicine"
+
+    medicine = models.ForeignKey(Medicine)
+    evidence = models.ForeignKey(EvidenceSummary)
+
+    def __unicode__(self):
+        return self.evidence

@@ -49,36 +49,6 @@ class MedicineLocal(models.Model):
         verbose_name = "Medicine Translation"
         verbose_name_plural = "Medicine Translations"
 
-class EvidenceSummary(models.Model):
-
-    class Meta:
-        verbose_name = "Medicine Evidence Summary"
-        verbose_name_plural = "Medicine Evidence Summaries"
-
-    # gets new filename: md5(filename + time)
-    def new_filename(instance, filename):
-        path = 'evidences_files'
-        
-        fname, dot, extension = filename.rpartition('.')
-        fname = slugify(fname)[:60]
-        file = "%s.%s" % (fname, extension)
-
-        return os.path.join(path, file)
-
-    medicine = models.ForeignKey(Medicine, verbose_name=_("medicine"))
-    language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
-    context = models.TextField(_("context"))
-    question = models.TextField(_("question"))
-    link = models.TextField(_("link"), blank=True)
-    file = models.FileField(_("file"), upload_to=new_filename, blank=True)
-    
-    class Meta:
-        verbose_name = "Medicine Evidence Summary"
-        verbose_name_plural = "Medicine Evidence Summaries"
-
-    def __unicode__(self):
-        return unicode(self.context)
-
 class PharmaceuticalFormType(models.Model):    
 
     class Meta:

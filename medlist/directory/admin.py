@@ -4,17 +4,18 @@ from django.contrib import messages
 from models import *
 from app_actions import solr_index
 from django.utils.translation import ugettext_lazy as _
+from evidence.models import *
 
 class PharmaceuticalFormAdmin(admin.StackedInline):
     model = PharmaceuticalForm
     extra = 0
 
-class PharmaceuticalFormTypeLocalAdmin(admin.TabularInline):
-    model = PharmaceuticalFormTypeLocal
+class MedicineEvidenceSummaryInline(admin.StackedInline):
+    model = MedicineEvidenceSummary
     extra = 0
 
-class EvidenceSummaryAdmin(admin.StackedInline):
-    model = EvidenceSummary
+class PharmaceuticalFormTypeLocalAdmin(admin.TabularInline):
+    model = PharmaceuticalFormTypeLocal
     extra = 0
 
 class MedicineLocalAdmin(admin.TabularInline):
@@ -23,7 +24,7 @@ class MedicineLocalAdmin(admin.TabularInline):
 
 class MedicineAdmin(admin.ModelAdmin):
     model = Medicine
-    inlines = [MedicineLocalAdmin, PharmaceuticalFormAdmin,  EvidenceSummaryAdmin, ]
+    inlines = [MedicineLocalAdmin, PharmaceuticalFormAdmin, MedicineEvidenceSummaryInline]
 
     list_display = ('__unicode__', 'get_link_medicine', 'active')
     list_display_links = ('__unicode__',)
@@ -124,13 +125,6 @@ class PharmaceuticalFormAdmin(admin.ModelAdmin):
             obj.save()
     make_active.short_description = _("Activate or deactivate selected medicines")
 
-class EvidenceSummaryAdmin(admin.ModelAdmin):
-
-    list_display = ('id', 'medicine', 'file')
-    search_fields = ('medicine', 'language', 'context', 'question')
-
-
 admin.site.register(PharmaceuticalFormType, PharmaceuticalFormTypeAdmin)
 admin.site.register(Medicine, MedicineAdmin)
 admin.site.register(PharmaceuticalForm, PharmaceuticalFormAdmin)
-admin.site.register(EvidenceSummary, EvidenceSummaryAdmin)
