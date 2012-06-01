@@ -76,6 +76,7 @@ def solr_index(med):
         solr = SolrConnection(settings.SOLR_URL)
         solr.add(
             id = str(med.id), 
+            type = "medicine",
             name = medicine_list,
             pharmaceutical_form = pharma_form_list,        
             pharmaceutical_form_type = pharma_form_type_list,
