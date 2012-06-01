@@ -81,6 +81,7 @@
 
  <fields>
    <field name="id" type="string" indexed="true" stored="true"/>
+   <field name="type" type="string" indexed="true" stored="true"/>
    <field name="name" type="text" indexed="true" stored="true" />
    <field name="pharmaceutical_form" type="text" indexed="true" stored="true" multiValued="true"/>   
    <field name="pharmaceutical_form_type" type="string" indexed="true" stored="true" multiValued="true"/>   
@@ -88,6 +89,16 @@
    <field name="list" type="string" indexed="true" stored="true" multiValued="true"/>
    <field name="country" type="string" indexed="true" stored="true" multiValued="true"/>
    
+   <!-- evidendesummary fields -->
+   <field name="evidence_medicine" type="text" indexed="true" stored="true" multiValued="true"/>
+   <field name="title" type="text" indexed="true" stored="true" multiValued="false"/>
+   <field name="description" type="text" indexed="true" stored="true" multiValued="false"/>
+   <field name="context" type="text" indexed="true" stored="true" multiValued="false"/>
+   <field name="question" type="text" indexed="true" stored="true" multiValued="false"/>
+   <field name="link" type="string" indexed="false" stored="true" multiValued="false"/>
+   <field name="file" type="string" indexed="false" stored="true" multiValued="false"/>
+   <field name="language" type="string" indexed="false" stored="true" multiValued="false"/>
+
    <dynamicField name="*" type="ignored" multiValued="true"/>
    <field name="tw" type="text" indexed="true" stored="false" multiValued="true"/>
 
