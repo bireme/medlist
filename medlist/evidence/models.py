@@ -18,8 +18,6 @@ class EvidenceSummary(models.Model):
 
         return os.path.join(path, file)
 
-    medicine = models.ForeignKey(Medicine, related_name="+")
-
     created = models.DateTimeField(_("Created at"), default=datetime.now(), editable=False)
     updated = models.DateTimeField(_("Updated at"), default=datetime.now(), editable=False)
 
@@ -89,4 +87,4 @@ class MedicineEvidenceSummary(models.Model):
     evidence = models.ForeignKey(EvidenceSummary)
 
     def __unicode__(self):
-        return self.evidence
+        return unicode(self.evidence.title)

@@ -10,6 +10,5 @@ class EvidenceSummaryAdmin(admin.ModelAdmin):
     inlines = (EvidenceSummaryLocalInline, )
     list_display = ('__unicode__', 'created', 'updated')
     search_fields = ('title', 'question', 'context', 'file', 'id')
-    raw_id_fields = ('medicine',)
 
 admin.site.register(EvidenceSummary, EvidenceSummaryAdmin)
