@@ -27,6 +27,7 @@ class EvidenceSummary(models.Model):
     description = models.TextField(_("Description"), blank=True, null=True)
     context = models.TextField(_("Context"), blank=True, null=True)
     question = models.CharField(_("Question"), max_length=255, blank=True, null=True)
+    link = models.URLField(_("link"), blank=True)
     file = models.FileField(_("File"), upload_to=new_filename, blank=True)
 
     def __unicode__(self):
@@ -68,11 +69,12 @@ class EvidenceSummaryLocal(models.Model):
     description = models.TextField(_("Description"), blank=True, null=True)
     context = models.TextField(_("Context"), blank=True, null=True)
     question = models.CharField(_("Question"), max_length=255, blank=True, null=True)
+    link = models.URLField(_("link"), blank=True)
     file = models.FileField(_("File"), upload_to=new_filename, blank=True)
 
     def save(self, *args, **kwargs):
         self.updated = datetime.now()
-        super(EvidenceSummary, self).save(*args, **kwargs) 
+        super(EvidenceSummaryLocal, self).save(*args, **kwargs) 
 
     def __unicode__(self):
         return unicode(self.title)
