@@ -65,15 +65,19 @@
 		<div>
 			{occ label=$texts.LABEL_LANGUAGE element=$doc->language}
 		</div>
-		<div>
-			{occ label=$texts.LABEL_EVIDENCE_MEDICINE element=$doc->evidence_medicine}
-		</div>
-
 		{if $doc->link}
 			<div>
 				<a href="{$doc->link}" target="_blank">{$texts.LABEL_VIEW_DETAILS}</a>
 			</div>
 		{/if}
+		<div class="in_lists">
+			<h4>{$texts.LABEL_EVIDENCE_MEDICINE}</h4>
+			<ul>
+			{foreach from=$doc->evidence_medicine item=medicine}
+				<li>{$medicine}</li>
+			{/foreach}
+			</ul>
+		</div>
 
 	
 	{/if}
