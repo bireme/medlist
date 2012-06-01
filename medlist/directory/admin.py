@@ -90,7 +90,8 @@ class MedicineAdmin(admin.ModelAdmin):
 
     def get_actions(self, request):
         actions = super(MedicineAdmin, self).get_actions(request)
-        del actions['delete_selected']
+        if 'delete_selected' in actions:
+            del actions['delete_selected']
         return actions        
 
 class PharmaceuticalFormTypeAdmin(admin.ModelAdmin):
