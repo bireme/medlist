@@ -125,3 +125,32 @@ def get_sections(request):
 	return HttpResponse(json.dumps(output), mimetype="application/json")
 
 
+def index(request):
+	fator = 1
+	from directory.app_actions import solr_index
+	from datetime import datetime
+	import time
+
+	t1 = time.time()
+
+	count = 1
+	for medicine in Medicine.objects.all()[:10]:
+		
+		if count % fator == 0: print count
+		solr_index(medicine)
+		count += 1
+
+	count = 1
+	for section_pharm_form in SectionPharmForm.objects.all()[:10]:
+
+		if count % fator == 0: print count
+		section_pharm_form.save()
+		count += 1
+
+	t2 = time.time()
+	ellapsed = t2-t1
+	
+	return HttpResponse("Ellapsed %fs" % ellapsed, mimetype="text/plain")
+
+
+
