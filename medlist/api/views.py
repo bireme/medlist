@@ -136,14 +136,14 @@ def index(request):
 	count = 1
 	for medicine in Medicine.objects.all()[:10]:
 		
-		if count % fator == 0: print count
+		# if count % fator == 0: print count
 		solr_index(medicine)
 		count += 1
 
 	count = 1
 	for section_pharm_form in SectionPharmForm.objects.all()[:10]:
 
-		if count % fator == 0: print count
+		# if count % fator == 0: print count
 		section_pharm_form.save()
 		count += 1
 
