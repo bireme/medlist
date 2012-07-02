@@ -222,18 +222,25 @@
 			<div class="mainBlock evidenceSummary">
 				<div class="blockSubTitle">{% trans "Medicine Evidences Summaries" %}</div>
 				<ul class="listItems">
-					{% for evidence in evidences %}			
+					{% for summary in evidences %}			
 						<li>
-							<b>{% trans "Context" %}</b>:<br>
-							<p class="evidenceContext">{{ evidence.context }}</p>
-							<b>{% trans "Question" %}</b>:<br>
-							<p class="question">{{ evidence.question }}</p>
+							<h3>{{ summary.evidence.title }}</h3>
+							{% if summary.evidence.description %}	
+								<b>{% trans "Description" %}</b><br/>
+								<p class="description">{{ summary.evidence.description }}</p>
+							{% endif %}	
 
-							{% if evidence.link %}
-								<p><a href="{{ evidence.link }}" target="_blank">{% trans "view details"|capfirst %}</a></p>
+							<b>{% trans "Context" %}</b>:
+							{{ summary.evidence.context }}<br/>
+
+							<b>{% trans "Question" %}</b><br/>
+							<p class="question">{{ summary.evidence.question }}</p>
+
+							{% if summary.evidence.link %}
+								<p><a href="{{ summary.evidence.link }}" target="_blank">{% trans "view details"|capfirst %}</a></p>
 							{% endif %}
-							{% if evidence.file %}	
-								<a href="{{ evidence.file.url }}" target="_blank">{% trans "view details"|capfirst %}</a>
+							{% if summary.evidence.file %}	
+								<a href="{{ summary.evidence.file.url }}" target="_blank">{% trans "view details"|capfirst %}</a>
 							{% endif %}
 						</li>
 					{% endfor %}

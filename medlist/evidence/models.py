@@ -21,6 +21,7 @@ class EvidenceSummary(models.Model):
     created = models.DateTimeField(_("Created at"), default=datetime.now(), editable=False)
     updated = models.DateTimeField(_("Updated at"), default=datetime.now(), editable=False)
 
+    language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES, default='en')
     title = models.CharField(_("Title"), max_length=255)
     description = models.TextField(_("Description"), blank=True, null=True)
     context = models.TextField(_("Context"), blank=True, null=True)
@@ -58,7 +59,7 @@ class EvidenceSummaryLocal(models.Model):
         return os.path.join(path, file)
 
     evidence = models.ForeignKey(EvidenceSummary)
-    language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES[1:])
+    language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
 
     created = models.DateTimeField(_("Created at"), default=datetime.now(), editable=False)
     updated = models.DateTimeField(_("Updated at"), default=datetime.now(), editable=False)

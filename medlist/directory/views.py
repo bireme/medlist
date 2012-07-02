@@ -4,6 +4,7 @@ from django.shortcuts import render_to_response, HttpResponse
 from django.http import Http404
 from django.template import RequestContext
 from medlist.list.models import *
+from medlist.evidence.models import MedicineEvidenceSummary
 
 def show_medicine(request, id):
 	
@@ -17,7 +18,7 @@ def show_medicine(request, id):
 	pharm_forms = PharmaceuticalForm.objects.filter(medicine=id)
 
 	# get evidences summaries of medicine
-	evidences = medicine.evidencesummary_set.all()
+	evidences = MedicineEvidenceSummary.objects.filter(medicine=id)
 
 	# making lists
 	forms_in_lists = {}
