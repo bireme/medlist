@@ -4,6 +4,7 @@ from django.conf import settings
 from django.contrib import messages
 from models import PharmaceuticalForm, PharmaceuticalFormTypeLocal, MedicineLocal
 from medlist.list.models import Section, SectionPharmForm
+from medlist.evidence.models import MedicineEvidenceSummary
 
 
 def solr_index(med):
@@ -14,6 +15,7 @@ def solr_index(med):
     pharma_form_list = []
     pharma_form_type_list = []
     category_list = []
+    observation_list = []
 
     # if medicine status is not active delete from solr index
     if not med.active:
@@ -49,6 +51,18 @@ def solr_index(med):
         section_pharm_form_list = SectionPharmForm.objects.filter(pharmaceutical_form=form)
 
         for section_pharm_form in section_pharm_form_list:
+            #add observations of current section_pharm_form
+            if section_pharm_form.only_for_children:
+                observation_list.append('only_for_children')
+            if section_pharm_form.specialist_care_for_children:
+                observation_list.append('specialist_care_for_children')
+            if section_pharm_form.restriction_age:
+                observation_list.append('restriction_age')
+            if section_pharm_form.best_evidence:
+                observation_list.append('best_evidence')
+            if section_pharm_form.observation:
+                observation_list.append('observation')
+
             section = Section.objects.get(pk=section_pharm_form.section.id)
             section_translations = "|".join(section.get_translations())
 
@@ -70,6 +84,11 @@ def solr_index(med):
                 if list_associated not in lists:
                     lists.append( list_associated )
 
+    #check if current medicine have Evidence summaries
+    has_evidence = ""
+    evidence_total = MedicineEvidenceSummary.objects.filter(medicine=med.id).count()
+    if evidence_total > 0:
+        has_evidence = "true"
 
     # try to create a connection to a solr server and send medicine
     try:
@@ -83,6 +102,8 @@ def solr_index(med):
             list=lists,
             country=countries,
             category=category_list,
+            observation=observation_list,
+            has_evidence=has_evidence,
         )
         response = solr.commit()
     except Exception as ex: 

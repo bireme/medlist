@@ -99,6 +99,9 @@
    <field name="file" type="string" indexed="false" stored="true" multiValued="false"/>
    <field name="language" type="string" indexed="false" stored="true" multiValued="false"/>
 
+   <field name="observation" type="string" indexed="true" stored="true" multiValued="true"/>
+   <field name="has_evidence" type="string" indexed="true" stored="true" multiValued="false"/>
+
    <dynamicField name="*" type="ignored" multiValued="true"/>
    <field name="tw" type="text" indexed="true" stored="false" multiValued="true"/>
 
