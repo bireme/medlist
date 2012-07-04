@@ -175,7 +175,11 @@
      <lst name="invariants">
          <str name="facet">true</str>
          <str name="facet.field">category</str>
-         <str name="facet.field">pharmaceutical_form_type</str>
+         <str name="facet.field">pharmaceutical_form_type</str>         
+         <str name="facet.field">list</str>         
+         <str name="facet.field">country</str>   
+         <str name="facet.field">observation</str>
+         <str name="facet.field">has_evidence</str>               
          <str name="facet.limit">20</str>
          <str name="facet.mincount">1</str>
      </lst>
