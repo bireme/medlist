@@ -85,7 +85,7 @@ def solr_index(med):
                     lists.append( list_associated )
 
     #check if current medicine have Evidence summaries
-    has_evidence = ""
+    has_evidence = None
     evidence_total = MedicineEvidenceSummary.objects.filter(medicine=med.id).count()
     if evidence_total > 0:
         has_evidence = "true"
