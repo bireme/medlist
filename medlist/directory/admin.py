@@ -105,7 +105,7 @@ class PharmaceuticalFormTypeAdmin(admin.ModelAdmin):
 class PharmaceuticalFormAdmin(admin.ModelAdmin):
     model = PharmaceuticalForm
     
-    list_display = ('medicine', 'composition', 'atc_code', 'active')
+    list_display = ('medicine', 'composition',  'pharmaceutical_form_type', 'atc_code', 'active')
     search_fields = ('pharmaceutical_form_type__name', 'atc_code', 'composition', 'medicine__name')
     list_filter = ('pharmaceutical_form_type__name', 'active')
 
