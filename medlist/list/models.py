@@ -36,7 +36,6 @@ class List(models.Model):
     type = models.CharField(_("Type"), max_length=1, choices=LIST_TYPES)
     subtype = models.CharField(_("sub-Type"), max_length=1, choices=LIST_SUBTYPES, null=True, blank=True)
     published = models.BooleanField(_("published"), default=False)
-    obs = models.TextField(_("observation"), null=True, blank=True)
 
     created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)
 
@@ -64,6 +63,7 @@ class ListLocal(models.Model):
     list = models.ForeignKey(List, verbose_name=_("list"))
     language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
     name = models.CharField(_("name"), max_length=255)
+    obs = models.TextField(_("observation"), null=True, blank=True)
     
     class Meta:
         verbose_name = "List Translation"
