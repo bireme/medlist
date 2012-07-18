@@ -33,13 +33,16 @@
 	<div class="list">
 		<div class="blockTitle">{{ list|translate:request.LANGUAGE_CODE }}</div>
 		<div class="spacer"></div>
+		
+		{% if list.obs %}
+			<div class="observation">
+				{{ list.obs }}
+			</div>
+		{% endif %}
+		
 		<ul id="collapser">
 			{% include "list/section.html" %}
 		</ul>
 		<div class="spacer"></div>
-		<div class="observation">
-			<h3>{% trans "observations"|capfirst %}:</h3>
-			{{ list.obs }}
-		</div>
 	</div>
 {% endblock %}

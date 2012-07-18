@@ -36,12 +36,21 @@ class List(models.Model):
     type = models.CharField(_("Type"), max_length=1, choices=LIST_TYPES)
     subtype = models.CharField(_("sub-Type"), max_length=1, choices=LIST_SUBTYPES, null=True, blank=True)
     published = models.BooleanField(_("published"), default=False)
+    obs = models.TextField(_("observation"), null=True, blank=True)
 
     created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)
 
     def get_translation(self, lang_code):
+        
+        if "|" in lang_code:
+            lang_code = lang_code.split("|")
+            attr = lang_code[1]
+            lang_code = lang_code[0]
+
         translation = ListLocal.objects.filter(list=self.id, language=lang_code)
-        if translation:
+        if translation and attr:
+            if hasattr(ListLocal, attr):
+                return getattr(ListLocal, attr)
             return translation[0].name
         else:
             return self.name

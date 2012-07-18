@@ -12,7 +12,7 @@ class PharmaceuticalFormAdmin(admin.StackedInline):
 
 class MedicineEvidenceSummaryInline(admin.StackedInline):
     model = MedicineEvidenceSummary
-    raw_id_fields = ("evidence",)
+    raw_id_fields = ("evidence", )
     extra = 0
 
 class PharmaceuticalFormTypeLocalAdmin(admin.TabularInline):
