@@ -56,6 +56,10 @@ P A:hover, LI A:hover {
 
 /* MEDLIST STYLES */
 /* by BIREME */
+
+a, a:link, a:visited {
+	text-decoration: underline;
+}
 .spacer {
 	clear: both;
 	height: 1px;
