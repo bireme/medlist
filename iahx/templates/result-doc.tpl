@@ -63,7 +63,7 @@
 			{occ label=$texts.LABEL_QUESTION element=$doc->question}
 		</div>
 		<div>
-			{occ label=$texts.LABEL_LANGUAGE element=$doc->language}
+			{occ label=$texts.LABEL_LANGUAGE element=$doc->language translation=$texts suffix=LANG_}
 		</div>
 		{if $doc->link}
 			<div>
@@ -82,12 +82,8 @@
 	
 	{/if}
 	
-	<div class="spacer"></div>
+		<div class="spacer"></div>
 	</div>
-
-    <div class="user-actions">
-        {include file="doc-actions-bar.tpl"}
-    </div>
 
 </div>
 {/foreach}
