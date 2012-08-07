@@ -1,7 +1,7 @@
         <div class="resultsFor">
             <a href="{$config->prais_url}">{$texts.PRAIS_HOME}</a> >
             <a href="{$config->medlist_url}">{$texts.MEDLIST_HOME}</a> >
-            <a href="{$smarty.server.PHP_SELF}?lang={$lang}">{$texts.SEARCH_HOME}</a>
+            <a href="{$smarty.server.PHP_SELF}?lang={$lang}&where=MEDICINES">{$texts.SEARCH_HOME}</a>
         </div>
 
         <div class="search">
