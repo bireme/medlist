@@ -119,5 +119,13 @@
  <copyField source="name" dest="tw"/>
  <copyField source="pharmaceutical_form" dest="tw"/>
  <copyField source="pharmaceutical_form_type" dest="tw"/>
+
+ <!-- copy evidendesummary fields for search-->
+ <copyField source="evidence_medicine" dest="tw"/>
+ <copyField source="title" dest="tw"/>
+ <copyField source="description" dest="tw"/>
+ <copyField source="context" dest="tw"/>
+ <copyField source="question" dest="tw"/>
+
  
 </schema>
