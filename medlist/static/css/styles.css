@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
-center,
+b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
@@ -53,13 +53,8 @@ P A, LI A {
 P A:hover, LI A:hover {
 	text-decoration: underline;
 }
-
 /* MEDLIST STYLES */
 /* by BIREME */
-
-a, a:link, a:visited {
-	text-decoration: underline;
-}
 .spacer {
 	clear: both;
 	height: 1px;
@@ -124,6 +119,9 @@ BODY, TABLE, TD, TH {
 }
 .mid {
 	width: 90px;
+}
+.big {
+	width: 180px;
 }
 .loginBox .submit {
 	background: url(../images/bt-ok.png) no-repeat;
@@ -295,9 +293,9 @@ BODY, TABLE, TD, TH {
 	background: #FFF;
 	border-radius: 6px;
 	float: left;
-	width: 308px;
+	width: 948px;
 	margin: 0px 6px;
-	min-height: 150px;
+	min-height:350px;
 }
 .middle .contentBlock .bTitle {
 	background: #E7EBEE;
@@ -309,9 +307,45 @@ BODY, TABLE, TD, TH {
 }
 .middle .contentBlock .innerBlock {
 	padding: 6px;
+	width: 19%;
+	margin: 2%;
+	float: left;
+}
+.middle .contentBlock .innerBlock .icon {
+	width: 70px;
+	height: 60px;
+	background: url(../images/sprite_homeIcons.png) no-repeat;
+	float: left;
+	margin: 0px 6px 6px 0px;
+}
+.middle .contentBlock .innerBlock .listData {
+	margin-top: 16px;
+}
+.middle .contentBlock .innerBlock .listData .lTitle A {
+	Font-size: 130%;
+	text-decoration: none;
+	font-weight: bold;
+	color: #294e6b;
+}
+.middle .contentBlock .innerBlock .listData .lTitle A:hover {
+	color: #db5500;
+}
+.middle .contentBlock .innerBlock .icon.whoList {
+	background-position: 0px;
+}
+.middle .contentBlock .innerBlock .icon.pahoList {
+	background-position: -70px;
+}
+.middle .contentBlock .innerBlock .icon.nationalList {
+	background-position: -140px;
+}
+.middle .contentBlock .innerBlock .icon.evidenceSummaries {
+	background-position: -210px;
+}
+.middle .contentBlock .innerBlock .compare {
+	margin: 6px 0px;
 }
 .middle .contentBlock .innerBlock .compare A {
-	float: right;
 	padding: 2px 0px 2px 20px;
 	background: url(../images/compare.gif) no-repeat;
 	color: #555;
@@ -471,9 +505,6 @@ BODY, TABLE, TD, TH {
 }
 .list .orderBy {
 	float: right;
-}
-.list .observation {
-	margin: 0 0 20px 0;
 }
 .list UL {
 	margin: -10px 0 0 24px;

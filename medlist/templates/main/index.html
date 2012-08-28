@@ -15,11 +15,14 @@
 {% block "title" %}{% trans "Home" %} | {% endblock %}
 
 {% block "content" %}
-
 	<div class="contentBlock">
-		<div class="bTitle">{% trans "Essential Lists" %}</div>
+		<div class="bTitle">{% trans "Medicine Lists" %}</div>
 		<div class="innerBlock">
-			<div class="compare"><a href="{% url list.views.compare %}">{% trans "Compare lists"|capfirst %}</a></div>
+			<div class="icon whoList"></div>
+			<div class="listData">
+				<div class="lTitle"><a href="#">{% trans "WHO Lists" %}</a></div>
+				<div class="compare"><a href="{% url list.views.compare %}">{% trans "Compare lists"|capfirst %}</a></div>
+			</div>
 			<div class="spacer"></div>
 			<ul>
 				{% for list in who_lists %}
@@ -29,13 +32,14 @@
 				{% endfor %}
 			</ul>
 		</div>
-	</div>
-	<div class="contentBlock">
-		<div class="bTitle">{% trans "PAHO Lists" %}</div>
 		<div class="innerBlock">
-			<div class="compare"><a href="{% url list.views.compare %}">{% trans "Compare lists"|capfirst %}</a></div>
+			<div class="icon pahoList"></div>
+			<div class="listData">
+				<div class="lTitle"><a href="#">{% trans "PAHO Lists" %}</a></div>
+				<div class="compare"><a href="{% url list.views.compare %}">{% trans "Compare lists"|capfirst %}</a></div>
+			</div>
 			<div class="spacer"></div>
-			<ul>				
+			<ul>
 				{% for list in paho_lists %}
 					{% if list.published %}
 						<li><a href="{% url list.views.show_list list.id %}" title="{{list.name}}">{{ list|translate:request.LANGUAGE_CODE }}</a></li>
@@ -43,11 +47,13 @@
 				{% endfor %}
 			</ul>
 		</div>
-	</div>
-	<div class="contentBlock">
-		<div class="bTitle">{% trans "National Forms" %}</div>
 		<div class="innerBlock">
-			<select id="countrylists">
+			<div class="icon nationalList"></div>
+			<div class="listData">
+				<div class="lTitle"><a href="#">{% trans "National Forms" %}</a></div>
+			</div>
+			<div class="spacer"></div>
+			<select class="textEntry big" select id="countrylists">
 				<option value="">{% trans "Select Country" %}</option>
 				{% for list in country_lists %}
 					{% if list.published %}
@@ -55,6 +61,13 @@
 					{% endif %}
 				{% endfor %}
 			</select>
+		</div>
+		<div class="innerBlock">
+			<div class="icon evidenceSummaries"></div>
+			<div class="listData">
+				<div class="lTitle"><a href="#">Evidence Summaries</a></div>
+			</div>
+			<div class="spacer"></div>
 		</div>
 	</div>
 	<div class="spacer"></div>
