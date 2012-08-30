@@ -321,7 +321,7 @@ BODY, TABLE, TD, TH {
 .middle .contentBlock .innerBlock .listData {
 	margin-top: 16px;
 }
-.middle .contentBlock .innerBlock .listData .lTitle A {
+.middle .contentBlock .innerBlock .listData .lTitle {
 	Font-size: 130%;
 	text-decoration: none;
 	font-weight: bold;

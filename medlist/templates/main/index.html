@@ -20,7 +20,7 @@
 		<div class="innerBlock">
 			<div class="icon whoList"></div>
 			<div class="listData">
-				<div class="lTitle"><a href="#">{% trans "WHO Lists" %}</a></div>
+				<div class="lTitle">{% trans "WHO Lists" %}</div>
 				<div class="compare"><a href="{% url list.views.compare %}">{% trans "Compare lists"|capfirst %}</a></div>
 			</div>
 			<div class="spacer"></div>
@@ -35,7 +35,7 @@
 		<div class="innerBlock">
 			<div class="icon pahoList"></div>
 			<div class="listData">
-				<div class="lTitle"><a href="#">{% trans "PAHO Lists" %}</a></div>
+				<div class="lTitle">{% trans "PAHO Lists" %}</div>
 				<div class="compare"><a href="{% url list.views.compare %}">{% trans "Compare lists"|capfirst %}</a></div>
 			</div>
 			<div class="spacer"></div>
@@ -50,7 +50,7 @@
 		<div class="innerBlock">
 			<div class="icon nationalList"></div>
 			<div class="listData">
-				<div class="lTitle"><a href="#">{% trans "National Forms" %}</a></div>
+				<div class="lTitle">{% trans "National Forms" %}</div>
 			</div>
 			<div class="spacer"></div>
 			<select class="textEntry big" select id="countrylists">
@@ -65,11 +65,12 @@
 		<div class="innerBlock">
 			<div class="icon evidenceSummaries"></div>
 			<div class="listData">
-				<div class="lTitle">
-					<a href="{{IAHX_URL}}/?lang={{ request.LANGUAGE_CODE }}&where=EVIDENCES">{% trans "Evidence Summaries" %}</a>
-				</div>
+				<div class="lTitle">{% trans "Evidence Summaries" %}</div>
 			</div>
 			<div class="spacer"></div>
+			<ul>
+				<li><a href="{{IAHX_URL}}/?lang={{ request.LANGUAGE_CODE }}&where=EVIDENCES" title="{% trans "Show all evidence summaries" %}">{% trans "Show all evidence summaries" %}</a></li>
+			</ul>
 		</div>
 	</div>
 	<div class="spacer"></div>
