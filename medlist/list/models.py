@@ -48,11 +48,11 @@ class List(models.Model):
             lang_code = lang_code[0]
 
         translation = ListLocal.objects.filter(list=self.id, language=lang_code)
-        if translation and attr:
+        try:
             if hasattr(ListLocal, attr):
                 return getattr(ListLocal, attr)
             return translation[0].name
-        else:
+        except:
             return self.name
 
     def get_translations(self):
