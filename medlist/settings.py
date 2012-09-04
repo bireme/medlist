@@ -189,6 +189,7 @@ INSTALLED_APPS = (
     'medlist.evidence',
     'mptt',
     'south',
+    'rosetta',
     # 'debug_toolbar',
 )
 

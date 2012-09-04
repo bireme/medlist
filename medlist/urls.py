@@ -37,7 +37,11 @@ urlpatterns = patterns('',
     url(r'^$', 'medlist.main.views.index'),
 )
 
-# static files in development
+if 'rosetta' in settings.INSTALLED_APPS:
+    urlpatterns += patterns('',
+        url(r'^rosetta/', include('rosetta.urls')),
+    )
 
+# static files in development
 if settings.LOCAL:
     urlpatterns += staticfiles_urlpatterns()
