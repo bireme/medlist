@@ -3,20 +3,21 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # FULL NAME <EMAIL@ADDRESS>, 2012.
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2012-09-04 15:14-0300\n"
-"PO-Revision-Date: 2012-04-26 10:24-0300\n"
-"Last-Translator: Vinicius Andrade <vinicius.andrade@bireme.org>\n"
+"PO-Revision-Date: 2012-09-04 15:37\n"
+"Last-Translator:   <renato.murasaki@bireme.org>\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
-"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
 "Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"X-Translated-Using: django-rosetta 0.6.6\n"
 
 #: directory/admin.py:54 directory/admin.py:127
 msgid "Activate or deactivate selected medicines"
@@ -77,27 +78,22 @@ msgid "composition"
 msgstr "composição"
 
 #: evidence/admin.py:26
-#, fuzzy
 msgid "Unable to index Evidence Summary"
-msgstr "Erro ao indexar os medicamentos"
+msgstr "Erro ao indexar o sumário de evidência"
 
 #: evidence/admin.py:28
-#, fuzzy
 msgid "Selected Evidences Summaries were indexed"
-msgstr "Os medicamentos selecionados foram indexados com sucesso"
+msgstr "Os sumários selecionados foram indexados com sucesso"
 
 #: evidence/admin.py:30
-#, fuzzy
 msgid "Index selected Evidences Summaries"
-msgstr "Sumários de Evidência"
+msgstr "indexar sumários selecionados"
 
 #: evidence/models.py:9
-#, fuzzy
 msgid "Evidence Summary"
-msgstr "Sumários de Evidência"
+msgstr "Sumário de Evidência"
 
 #: evidence/models.py:10 templates/main/index.html:68
-#, fuzzy
 msgid "Evidence Summaries"
 msgstr "Sumários de Evidência"
 
@@ -106,20 +102,17 @@ msgid "Created at"
 msgstr "Criado em"
 
 #: evidence/models.py:22 evidence/models.py:65
-#, fuzzy
 msgid "Updated at"
-msgstr "data de criação"
+msgstr "data de atualização"
 
 #: evidence/models.py:25 evidence/models.py:67
-#, fuzzy
 msgid "Title"
 msgstr "título"
 
 #: evidence/models.py:26 evidence/models.py:68
 #: templates/directory/show_medicine.html:229
-#, fuzzy
 msgid "Description"
-msgstr "seção"
+msgstr "descrição"
 
 #: evidence/models.py:27 evidence/models.py:69
 #: templates/directory/show_medicine.html:233
@@ -216,9 +209,8 @@ msgid "Create a archive copy of selected lists"
 msgstr "Cria uma cópia de histórico das listas selecionadas"
 
 #: list/admin.py:78
-#, fuzzy
 msgid "Indexes these pharmaceutical forms"
-msgstr "forma farmacêutica"
+msgstr "indexar estas formas farmacêuticas"
 
 #: list/models.py:30 list/models.py:72 list/models.py:96
 msgid "list"
@@ -299,7 +291,9 @@ msgstr "restrição de idade ou peso"
 
 #: list/models.py:179
 msgid "The best evidence for effectiveness and safety"
-msgstr "Este medicamento possui a melhor evidência em questões de efetividade e segurança"
+msgstr ""
+"Este medicamento possui a melhor evidência em questões de efetividade e "
+"segurança"
 
 #: list/models.py:180 templates/list/section.html:65
 msgid "complementary list"
@@ -342,7 +336,6 @@ msgid "Lists"
 msgstr "Listas"
 
 #: templates/directory/show_medicine.html:102
-#, fuzzy
 msgid "Country lists"
 msgstr "Lista de países"
 
@@ -357,7 +350,8 @@ msgstr "Composição"
 
 #: templates/directory/show_medicine.html:167
 msgid "Observations for this pharmaceutical form can be found on the lists:"
-msgstr "Observações para esta forma farmacêutica podem ser encontradas nas listas:"
+msgstr ""
+"Observações para esta forma farmacêutica podem ser encontradas nas listas:"
 
 #: templates/directory/show_medicine.html:177
 msgid "age or weight restriction"
@@ -431,19 +425,18 @@ msgstr "Não possui composição"
 
 #: templates/list/compare.html:134
 msgid "Sorry, but there's no results for this filter's combination."
-msgstr "Desculpe, não existe resultado para a combinação de filtros escolhida."
+msgstr ""
+"Desculpe, não existe resultado para a combinação de filtros escolhida."
 
 #: templates/list/show_list.html:5
 msgid "List"
 msgstr "Listas"
 
 #: templates/main/index.html:19
-#, fuzzy
 msgid "Medicine Lists"
 msgstr "Listas Anotadas de Medicamentos"
 
 #: templates/main/index.html:23
-#, fuzzy
 msgid "WHO Lists"
 msgstr "Listas OMS"
 
@@ -464,9 +457,8 @@ msgid "Select Country"
 msgstr "Selecione o país"
 
 #: templates/main/index.html:72
-#, fuzzy
 msgid "Show all evidence summaries"
-msgstr "Sumários de Evidência"
+msgstr "Exibir todos sumários de evidência"
 
 #~ msgid "context"
 #~ msgstr "Contexto"
