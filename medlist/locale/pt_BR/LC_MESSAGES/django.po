@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-04 15:14-0300\n"
-"PO-Revision-Date: 2012-09-04 15:37\n"
-"Last-Translator:   <renato.murasaki@bireme.org>\n"
+"POT-Creation-Date: 2012-09-04 16:20-0300\n"
+"PO-Revision-Date: 2012-09-04 16:25\n"
+"Last-Translator:   <moa@moa.com>\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -433,8 +433,8 @@ msgid "List"
 msgstr "Listas"
 
 #: templates/main/index.html:19
-msgid "Medicine Lists"
-msgstr "Listas Anotadas de Medicamentos"
+msgid "Medicine Lists and Evidence Summaries"
+msgstr "Listas de Medicamentos e Sumários de Evidência"
 
 #: templates/main/index.html:23
 msgid "WHO Lists"
@@ -459,6 +459,9 @@ msgstr "Selecione o país"
 #: templates/main/index.html:72
 msgid "Show all evidence summaries"
 msgstr "Exibir todos sumários de evidência"
+
+#~ msgid "Medicine Lists"
+#~ msgstr "Listas Anotadas de Medicamentos"
 
 #~ msgid "context"
 #~ msgstr "Contexto"

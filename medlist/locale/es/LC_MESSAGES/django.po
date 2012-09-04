@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-09-04 15:18-0300\n"
+"POT-Creation-Date: 2012-09-04 16:20-0300\n"
 "PO-Revision-Date: 2012-04-26 11:05-0300\n"
 "Last-Translator: Vinicius Andrade <vinicius.andrade@bireme.org>\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
@@ -440,8 +440,8 @@ msgstr "Lista"
 
 #: templates/main/index.html:19
 #, fuzzy
-msgid "Medicine Lists"
-msgstr "Listas Anotadas de Medicamentos"
+msgid "Medicine Lists and Evidence Summaries"
+msgstr "Sumarios de Evidencia"
 
 #: templates/main/index.html:23
 #, fuzzy
@@ -468,6 +468,10 @@ msgstr "Seleccione el país"
 #, fuzzy
 msgid "Show all evidence summaries"
 msgstr "Sumarios de Evidencia"
+
+#, fuzzy
+#~ msgid "Medicine Lists"
+#~ msgstr "Listas Anotadas de Medicamentos"
 
 #~ msgid "context"
 #~ msgstr "contexto"
