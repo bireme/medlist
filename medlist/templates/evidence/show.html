@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load app_filters %}
+
+{% block "extrahead" %}
+<script>
+	function copyToClipboard(s) {
+	    if (window.clipboardData && clipboardData.setData) {
+	        clipboardData.setData('text', s);
+	    }
+	}
+</script>
+{% endblock %}
+
+{% block "title" %}
+	{{ translate }} |
+{% endblock %}
+
+{% block "breadcrumb" %}
+	{{ block.super }} / {% trans "Evidence Summary" %}
+{% endblock %}
+
+{% block "content" %}
+	<div class="list">
+		<div class="blockTitle">{{ translate }}</div>
+
+		{% if translate.file %}
+			<div id="downloadButton" class="button">
+				<a href="{{ MEDIA_URL }}{{ translate.file }}" class="download" target="_blank">download</a>
+			</div>
+			<div class="spacer"></div>
+		{% endif %}
+		
+		<div class="context">
+			{% if translate.context %}
+				<strong>{% trans "Context" %}:</strong> {{ translate.context }}
+			{% endif %}
+			
+			{% if translate.description %}
+				<strong>{% trans "Description" %}:</strong>
+				<p>{{ translate.description }}</p>
+			{% endif %}
+
+			{% if translate.link %}
+				<strong>URL:</strong>
+				<input class="url2copy" type="text" value="{{ translate.link }}" />
+				<span id="copyButton" class="button">
+					<a href="{{ translate.link }}" class="copy" target="_blank">{% trans "visit" %}</a>
+				</span> 
+			{% endif %}
+		</div>
+	</div>
+{% endblock %}
