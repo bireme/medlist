@@ -2,6 +2,7 @@ from django.db import models
 from datetime import datetime
 from django.utils.translation import ugettext_lazy as _
 from medlist.directory.models import *
+from django.conf import settings
 
 class EvidenceSummary(models.Model):
 
