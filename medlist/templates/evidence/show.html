@@ -18,8 +18,6 @@
 	<div class="list">
 		<div class="blockTitle">{{ translate }}</div>
 
-		<embed src="{{ translate.link }}" width="650" height="950">		
-
 		{% if translate.file or translate.link %}
 			<div id="downloadButton" class="button">
 				{% if translate.file %}
@@ -28,7 +26,6 @@
 					<a href="{{ MEDIA_URL }}{{ translate.link }}" class="download" target="_blank">download</a>
 				{% endif %}
 			</div>
-			<div class="spacer"></div>
 		{% endif %}
 		
 		<div class="context">
@@ -79,7 +76,15 @@
 			{% endif %}
 		</div>
 
-		<div id="documentViewer" class="flexpaper_viewer"></div>
+		{% if translate.file and translate.file_is_pdf or translate.link and translate.link_is_pdf %}
+			<div id="documentViewer" class="pdf">
+				{% if translate.file %}
+					<embed type="application/pdf" src="http://{{ request.get_host }}/{{ translate.file }}" width="805" height="650">		
+				{% else %}
+					<embed type="application/pdf" src="{{ translate.link }}" width="805" height="650">		
+				{% endif %}
+			</div>
+		{% endif %}
 
 	</div>
 {% endblock %}

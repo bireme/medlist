@@ -19,6 +19,16 @@ class EvidenceSummary(models.Model):
 
         return os.path.join(path, file)
 
+    def file_is_pdf(self):
+        if "pdf" in self.file:
+            return True
+        return False
+
+    def link_is_pdf(self):
+        if "pdf" in self.link:
+            return True
+        return False
+
     created = models.DateTimeField(_("Created at"), default=datetime.now(), editable=False)
     updated = models.DateTimeField(_("Updated at"), default=datetime.now(), editable=False)
 
@@ -71,6 +81,16 @@ class EvidenceSummaryLocal(models.Model):
     question = models.CharField(_("Question"), max_length=255, blank=True, null=True)
     link = models.URLField(_("link"), blank=True)
     file = models.FileField(_("File"), upload_to=new_filename, blank=True)
+
+    def file_is_pdf(self):
+        if "pdf" in self.file:
+            return True
+        return False
+
+    def link_is_pdf(self):
+        if "pdf" in self.link:
+            return True
+        return False
 
     def save(self, *args, **kwargs):
         self.updated = datetime.now()

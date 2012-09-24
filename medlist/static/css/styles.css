@@ -513,6 +513,9 @@ BODY, TABLE, TD, TH {
 	float: none;
 	display: inline-block;
 }
+.pdf {
+	margin: 20px 0;
+}
 .button A {
 	padding: 12px 12px 12px 32px;
 	display: block;
