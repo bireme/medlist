@@ -18,6 +18,8 @@
 	<div class="list">
 		<div class="blockTitle">{{ translate }}</div>
 
+		<embed src="{{ translate.link }}" width="650" height="950">		
+
 		{% if translate.file or translate.link %}
 			<div id="downloadButton" class="button">
 				{% if translate.file %}
