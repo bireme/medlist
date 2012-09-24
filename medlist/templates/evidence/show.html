@@ -3,13 +3,7 @@
 {% load app_filters %}
 
 {% block "extrahead" %}
-<script>
-	function copyToClipboard(s) {
-	    if (window.clipboardData && clipboardData.setData) {
-	        clipboardData.setData('text', s);
-	    }
-	}
-</script>
+	  
 {% endblock %}
 
 {% block "title" %}
@@ -24,9 +18,13 @@
 	<div class="list">
 		<div class="blockTitle">{{ translate }}</div>
 
-		{% if translate.file %}
+		{% if translate.file or translate.link %}
 			<div id="downloadButton" class="button">
-				<a href="{{ MEDIA_URL }}{{ translate.file }}" class="download" target="_blank">download</a>
+				{% if translate.file %}
+					<a href="{{ MEDIA_URL }}{{ translate.file }}" class="download" target="_blank">download</a>
+				{% else %}
+					<a href="{{ MEDIA_URL }}{{ translate.link }}" class="download" target="_blank">download</a>
+				{% endif %}
 			</div>
 			<div class="spacer"></div>
 		{% endif %}
@@ -41,13 +39,45 @@
 				<p>{{ translate.description }}</p>
 			{% endif %}
 
-			{% if translate.link %}
+			{% if translate.file or translate.link %}
 				<strong>URL:</strong>
-				<input class="url2copy" type="text" value="{{ translate.link }}" />
-				<span id="copyButton" class="button">
-					<a href="{{ translate.link }}" class="copy" target="_blank">{% trans "visit" %}</a>
-				</span> 
+				{% if translate.file %}
+					<input class="url2copy" type="text" value="http://{{ request.get_host }}/{{ translate.file }}" />
+					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1" height="1" id="clippy" >
+					    <param name="movie" value="{{ STATIC_URL }}/flash/clippy.swf"/>
+					    <param name="allowScriptAccess" value="always" />
+					    <param name="quality" value="high" />
+					    <param name="scale" value="noscale" />
+					    <param NAME="FlashVars" value="text=http://{{ request.get_host }}/{{ translate.file }}">
+					    <param name="bgcolor" value="#fff">
+					    <embed src="{{ STATIC_URL }}/flash/clippy.swf" width="110" height="14" name="clippy" quality="high"
+					        allowScriptAccess="always"
+					        type="application/x-shockwave-flash"
+					        pluginspage="http://www.macromedia.com/go/getflashplayer"
+					        FlashVars="text=http://{{ request.get_host }}/{{ translate.file }}"
+					        bgcolor="#fff" />
+					</object>
+				{% else %}
+					<input class="url2copy" type="text" value="{{ translate.link }}" />
+					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1" height="1" id="clippy" >
+					    <param name="movie" value="{{ STATIC_URL }}/flash/clippy.swf"/>
+					    <param name="allowScriptAccess" value="always" />
+					    <param name="quality" value="high" />
+					    <param name="scale" value="noscale" />
+					    <param NAME="FlashVars" value="text={{ translate.link }}">
+					    <param name="bgcolor" value="#fff">
+					    <embed src="{{ STATIC_URL }}/flash/clippy.swf" width="110" height="14" name="clippy" quality="high"
+					        allowScriptAccess="always"
+					        type="application/x-shockwave-flash"
+					        pluginspage="http://www.macromedia.com/go/getflashplayer"
+					        FlashVars="text={{ translate.link }}"
+					        bgcolor="#fff" />
+					</object>
+				{% endif %}
 			{% endif %}
 		</div>
+
+		<div id="documentViewer" class="flexpaper_viewer"></div>
+
 	</div>
 {% endblock %}
