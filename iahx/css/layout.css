@@ -485,6 +485,7 @@ DIV.record DIV.data .pharmaceutical_forms, DIV.record DIV.data .in_lists {
 	float: left;
 	width: 45%;
 	margin-right: 4%;
+    margin-top: 10px;
 }
 DIV.record DIV.data .pharmaceutical_forms H4, DIV.record DIV.data .in_lists H4 {
 	margin-bottom: 3px;
