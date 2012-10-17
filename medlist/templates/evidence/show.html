@@ -38,6 +38,11 @@
 				<p>{{ translate.description }}</p>
 			{% endif %}
 
+			{% if translate.question %}
+				<strong>{% trans "Question" %}:</strong>
+				<p>{{ translate.question }}</p>
+			{% endif %}
+
 			{% if translate.file or translate.link %}
 				<strong>URL:</strong>
 				{% if translate.file %}
