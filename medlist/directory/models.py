@@ -102,6 +102,8 @@ class PharmaceuticalForm(models.Model):
     pharmaceutical_form_type =  models.ForeignKey(PharmaceuticalFormType, verbose_name=_("pharmaceutical form type"))
     atc_code = models.CharField(_("atc code"), max_length=255, blank=True)
     composition = models.CharField(_("composition"), max_length=255, blank=True)
+    composition_es = models.CharField(_("composition_es"), max_length=255, blank=True)
+    composition_pt = models.CharField(_("composition_pt"), max_length=255, blank=True)
     active = models.BooleanField(_("active"), default=True)
     
     created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)

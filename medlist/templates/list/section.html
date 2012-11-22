@@ -39,11 +39,13 @@
 													<tr>
 														<td><a href="{% url directory.views.show_medicine form.medicine.id %}/?section={{node.id}}#type{{form.id}}" title="#">{{ form.medicine|translate:request.LANGUAGE_CODE }}</a></td>
 														<td>{{ form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}</td>
-														<td>{% if form.composition %}
-															{{ form.composition }}
-														{% else %}
-															N/A
-														{% endif %}</td>
+														<td>
+															{% if form.composition %}
+																{% field_lang form "composition" request.LANGUAGE_CODE %}
+															{% else %}
+																N/A
+															{% endif %}
+														</td>
 		                                                <td>
 		                                                    {% if  section_form.restriction_age %}<a href="#" class="observation obs_a"> a </a>{% endif %}
 		                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation obs_c1"> c1 </a>{% endif %}
@@ -80,11 +82,13 @@
 													<tr>
 														<td><a href="/medicine/{{form.medicine.id}}/?section={{node.id}}#type{{form.id}}" title="#">{{ form.medicine|translate:request.LANGUAGE_CODE }}</a></td>
 														<td>{{ form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}</td>
-														<td>{% if form.composition %}
-															{{ form.composition }}
-														{% else %}
-															N/A
-														{% endif %}</td>
+														<td>
+															{% if form.composition %}
+																{% field_lang form "composition" request.LANGUAGE_CODE %}
+															{% else %}
+																N/A
+															{% endif %}
+														</td>
 		                                                <td>
 		                                                    {% if  section_form.restriction_age %}<a href="#" class="observation obs_a"> a </a>{% endif %}
 		                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation obs_c1"> c1 </a>{% endif %}
