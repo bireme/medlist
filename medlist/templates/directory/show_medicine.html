@@ -149,7 +149,7 @@
 								<div class="highlightItem">
 									{% if form.form.composition %}
 										{% trans "Composition" %}
-										<strong>{{ form.form.composition }}</strong>
+										<strong>{% field_lang form.form "composition" request.LANGUAGE_CODE %}</strong>
 									{% else %}
 										{% trans "Composition" %}
 										<strong>N/A</strong>
