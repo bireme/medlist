@@ -76,12 +76,10 @@ msgid "composition"
 msgstr "composición"
 
 #: evidence/admin.py:26
-#, fuzzy
 msgid "Unable to index Evidence Summary"
 msgstr "No fue posible indizar los medicamentos"
 
 #: evidence/admin.py:28
-#, fuzzy
 msgid "Selected Evidences Summaries were indexed"
 msgstr "Os medicamentos seleccionados fueron indizados"
 
@@ -91,12 +89,10 @@ msgid "Index selected Evidences Summaries"
 msgstr "Sumarios de Evidencia"
 
 #: evidence/models.py:9
-#, fuzzy
 msgid "Evidence Summary"
 msgstr "Sumarios de Evidencia"
 
 #: evidence/models.py:10 templates/main/index.html:68
-#, fuzzy
 msgid "Evidence Summaries"
 msgstr "Sumarios de Evidencia"
 
@@ -105,12 +101,10 @@ msgid "Created at"
 msgstr "fecha de creación"
 
 #: evidence/models.py:22 evidence/models.py:65
-#, fuzzy
 msgid "Updated at"
 msgstr "fecha de actualización"
 
 #: evidence/models.py:25 evidence/models.py:67
-#, fuzzy
 msgid "Title"
 msgstr "título"
 
@@ -341,7 +335,6 @@ msgid "Lists"
 msgstr "Listas"
 
 #: templates/directory/show_medicine.html:102
-#, fuzzy
 msgid "Country lists"
 msgstr "Lista de paises"
 
@@ -439,12 +432,10 @@ msgid "List"
 msgstr "Lista"
 
 #: templates/main/index.html:19
-#, fuzzy
 msgid "Medicine Lists and Evidence Summaries"
-msgstr "Sumarios de Evidencia"
+msgstr "Lista de Medicamentos e Sumarios de Evidencia"
 
 #: templates/main/index.html:23
-#, fuzzy
 msgid "WHO Lists"
 msgstr "Listas OMS"
 

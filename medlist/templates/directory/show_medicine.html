@@ -70,7 +70,7 @@
 			{% for form_id,form in forms.items %}
 				<div id="type{{form.form.id}}">
 
-					<div class="blockSubTitle">{{ form.form.pharmaceutical_form_type }}</div>
+					<div class="blockSubTitle">{{ form.form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}</div>
 
 					<div class="highlightBlock">
 						<div class="listItemBlock">
