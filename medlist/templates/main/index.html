@@ -69,7 +69,7 @@
 			</div>
 			<div class="spacer"></div>
 			<ul>
-				<li><a href="{{IAHX_URL}}/?lang={{ request.LANGUAGE_CODE }}&where=EVIDENCES" title="{% trans "Show all evidence summaries" %}">{% trans "Show all evidence summaries" %}</a></li>
+				<li><a href="{{IAHX_URL}}?lang={{ request.LANGUAGE_CODE|slice:":2" }}&where=EVIDENCES" title="{% trans "Show all evidence summaries" %}">{% trans "Show all evidence summaries" %}</a></li>
 			</ul>
 		</div>
 	</div>
