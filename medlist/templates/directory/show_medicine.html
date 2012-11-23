@@ -174,7 +174,8 @@
 								<ul class="listItems">
 									{% if sf.restriction_age %}
 										<li>
-											<b>{% trans "age or weight restriction"|capfirst %}:</b> {{ sf.restriction_age|capfirst }}<br>
+											<b>{% trans "age or weight restriction"|capfirst %}:</b> 
+											{% field_lang sf "restriction_age" request.LANGUAGE_CODE %}<br>
 										</li>
 									{% endif %}
 
@@ -193,7 +194,7 @@
 									{% if sf.observation %}
 										<li>
 											<b>{% trans "Others observations"|capfirst %}:</b><br>
-											{{sf.html_observation}}
+											{% field_lang sf "observation" request.LANGUAGE_CODE %}
 											<br>
 										</li>
 									{% endif %}
