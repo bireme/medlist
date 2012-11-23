@@ -10,6 +10,7 @@ from django.utils.safestring import mark_safe
 LANGUAGES_CHOICES = (
     ('pt-br', 'Brazilian Portuguese'),
     ('es', 'Spanish'),
+    ('en', 'English'),
 )  
 
 class List(models.Model):
@@ -155,6 +156,7 @@ class SectionLocal(models.Model):
     section = models.ForeignKey(Section, verbose_name=_("section"))
     language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
     name = models.CharField(_("name"), max_length=255)
+    observation = models.TextField(_("observation"), null=True, blank=True)
 
     class Meta:
         verbose_name = "Section Translation"

@@ -11,7 +11,7 @@ class ListLocalAdmin(admin.TabularInline):
     model = ListLocal
     extra = 0
 
-class SectionLocalAdmin(admin.TabularInline):
+class SectionLocalAdmin(admin.StackedInline):
     model = SectionLocal
     extra = 0
 
