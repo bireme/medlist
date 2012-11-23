@@ -8,7 +8,9 @@
             <ul class="children">
             	{% if node.observation %}
 	            	<div class="observation">
-	            		{{ node.observation }}
+	            		{% with request.LANGUAGE_CODE|add:"|observation" as language %}
+	            			{{ node|translate:language }}
+	            		{% endwith %}
 	            	</div>
 	            {% endif %}	
                 {{ children }}                
@@ -17,7 +19,9 @@
         	<ul>
         		{% if node.observation %}
 	        		<div class="observation">
-		        		{{ node.observation }}
+		        		{% with request.LANGUAGE_CODE|add:"|observation" as language %}
+	            			{{ node|translate:language }}
+	            		{% endwith %}
 		        	</div>
 		        {% endif %}	
         		<li>

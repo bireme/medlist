@@ -42,7 +42,6 @@ class List(models.Model):
     created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)
 
     def get_translation(self, lang_code):
-        
         if "|" in lang_code:
             lang_code = lang_code.split("|")
             attr = lang_code[1]
@@ -121,11 +120,27 @@ class Section(MPTTModel):
         return hierarchy_flat
 
     def get_translation(self, lang_code):
-        translation = SectionLocal.objects.filter(section=self.id, language=lang_code)
-        if translation:
-            return translation[0].name
-        else:
-            return self.title
+
+        attr = None
+        if "|" in lang_code:
+            lang_code = lang_code.split("|")
+            attr = lang_code[1]
+            lang_code = lang_code[0]
+
+        translations = SectionLocal.objects.filter(section=self.id, language=lang_code)
+        
+        if translations:
+            translation = translations[0]
+            if attr:
+                if hasattr(translation, attr):
+                    return getattr(translation, attr)
+
+        if not translations:
+            if attr:
+                return getattr(self, attr)
+        
+        return self.title
+            
 
     def get_translations(self):
         translation_list = ["en^%s" % self.clean_title(self.title)]
@@ -155,7 +170,7 @@ class SectionLocal(models.Model):
 
     section = models.ForeignKey(Section, verbose_name=_("section"))
     language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
-    name = models.CharField(_("name"), max_length=255)
+    title = models.CharField(_("name"), max_length=255, null=True)
     observation = models.TextField(_("observation"), null=True, blank=True)
 
     class Meta:
