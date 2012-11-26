@@ -32,8 +32,9 @@ class List(models.Model):
         verbose_name_plural = _("lists")
 
     name = models.CharField(_("name"), max_length=255)
-    abbreviation = models.CharField(_("abbreviation"), max_length=50)
+    abbreviation = models.CharField(_("abbreviation"), max_length=50)    
     year = models.IntegerField(_("year of publication"))
+    edition = models.CharField(_("edition"), max_length=50, blank=True)
     type = models.CharField(_("Type"), max_length=1, choices=LIST_TYPES)
     subtype = models.CharField(_("sub-Type"), max_length=1, choices=LIST_SUBTYPES, null=True, blank=True)
     published = models.BooleanField(_("published"), default=False)
