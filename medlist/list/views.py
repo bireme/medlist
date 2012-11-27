@@ -21,7 +21,7 @@ def get_parents(id):
 	else:
 		return output
 
-# @cache_page(settings.CACHE_TIMEOUT)
+@cache_page(settings.CACHE_TIMEOUT)
 @csrf_protect
 def show_list(request, id):
 
