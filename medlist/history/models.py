@@ -3,6 +3,12 @@ from django.db import models
 from datetime import datetime
 from list.models import *
 
+LANGUAGES_CHOICES = (
+    ('pt-br', 'Brazilian Portuguese'),
+    ('es', 'Spanish'),
+    ('en', 'English'),
+)
+
 class History(models.Model):
 
     LIST_TYPES = (
@@ -30,6 +36,8 @@ class History(models.Model):
     published = models.BooleanField(_("published"), default=False)
     obs = models.TextField(_("observation"), null=True, blank=True)
     created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)
+    xml = models.TextField(blank=True, null=True)
+    content = models.TextField()
 
     def __unicode__(self):
         return unicode(self.name)
@@ -44,6 +52,8 @@ class HistoryLocal(models.Model):
     language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
     name = models.CharField(_("name"), max_length=255)
     obs = models.TextField(_("observation"), null=True, blank=True)
+    xml = models.TextField(blank=True, null=True)
+    content = models.TextField()
 
     def __unicode__(self):
         return unicode(self.language)
