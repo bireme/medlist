@@ -48,7 +48,7 @@ class HistoryLocal(models.Model):
         verbose_name = _("history translation")
         verbose_name_plural = _("history translations")
 
-    list = models.ForeignKey(List, verbose_name=_("list"))
+    history = models.ForeignKey(History, verbose_name=_("history"), null=True)
     language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
     name = models.CharField(_("name"), max_length=255)
     obs = models.TextField(_("observation"), null=True, blank=True)

@@ -43,18 +43,28 @@ class List(models.Model):
     created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)
 
     def get_translation(self, lang_code):
+        attr = None
         if "|" in lang_code:
             lang_code = lang_code.split("|")
             attr = lang_code[1]
             lang_code = lang_code[0]
 
-        translation = ListLocal.objects.filter(list=self.id, language=lang_code)
-        try:
-            if hasattr(ListLocal, attr):
-                return getattr(ListLocal, attr)
-            return translation[0].name
-        except:
-            return self.name
+        translations = ListLocal.objects.filter(list=self.id, language=lang_code)
+        
+        if translations:
+            translation = translations[0]
+            if attr:
+                if hasattr(translation, attr):
+                    return getattr(translation, attr)
+            else:
+                return translation.name
+
+        if not translations:
+            if attr:
+                return getattr(self, attr)
+        
+        return self.name
+
 
     def get_translations(self):
         translation_list = ["en^%s" % self.name.strip()]
