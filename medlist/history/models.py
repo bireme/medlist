@@ -28,7 +28,7 @@ class History(models.Model):
         verbose_name_plural = _("histories")
 
     name = models.CharField(_("name"), max_length=255)
-    abbreviation = models.CharField(_("abbreviation"), max_length=50)
+    abbreviation = models.CharField(_("abbreviation"), max_length=50, blank=True)
     year = models.IntegerField(_("year of publication"))
     edition = models.CharField(_("edition"), max_length=50, blank=True)
     type = models.CharField(_("Type"), max_length=1, choices=LIST_TYPES)
