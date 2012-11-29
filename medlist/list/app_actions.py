@@ -34,6 +34,7 @@ def create_list_archive(list):
     output['pharm_section'] = pharm_section
     output['sections_has_complementary'] = sections_has_complementary
     output['request'] = request
+    output['is_history'] = True
     
     list_xml = render_to_string('history/xml_list.tpl', output)
     list_xml = list_xml.strip()

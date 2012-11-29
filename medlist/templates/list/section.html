@@ -41,7 +41,13 @@
 											{% if not section_form.complementary_list %}
 												{% with section_form.pharmaceutical_form as form %}
 													<tr>
-														<td><a href="{% url directory.views.show_medicine form.medicine.id %}/?section={{node.id}}#type{{form.id}}" title="#">{{ form.medicine|translate:request.LANGUAGE_CODE }}</a></td>
+														<td>
+															{% if not is_history %}
+																<a href="{% url directory.views.show_medicine form.medicine.id %}/?section={{node.id}}#type{{form.id}}" title="#">{{ form.medicine|translate:request.LANGUAGE_CODE }}</a>
+															{% else %}
+																{{ form.medicine|translate:request.LANGUAGE_CODE }}
+															{% endif %}
+														</td>
 														<td>{{ form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}</td>
 														<td>
 															{% if form.composition %}
@@ -84,7 +90,13 @@
 											{% if section_form.complementary_list %}
 												{% with section_form.pharmaceutical_form as form %}
 													<tr>
-														<td><a href="/medicine/{{form.medicine.id}}/?section={{node.id}}#type{{form.id}}" title="#">{{ form.medicine|translate:request.LANGUAGE_CODE }}</a></td>
+														<td>
+															{% if not is_history %}
+																<a href="{% url directory.views.show_medicine form.medicine.id %}/?section={{node.id}}#type{{form.id}}" title="#">{{ form.medicine|translate:request.LANGUAGE_CODE }}</a>
+															{% else %}
+																{{ form.medicine|translate:request.LANGUAGE_CODE }}
+															{% endif %}
+														</td>
 														<td>{{ form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}</td>
 														<td>
 															{% if form.composition %}

@@ -11,7 +11,7 @@
 	<edition>{{ list.edition }}</edition>
 	<type>{{ list.type }}</type>
 	<subtype>{{ list.subtype }}</subtype>
-	<observation>{{ list.obs|safe }}</observation>
+	<observation>{% field_lang list "obs" request.LANGUAGE_CODE %}</observation>
 	
 	<section_list>
 
