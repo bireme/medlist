@@ -4,13 +4,14 @@
 
 {% spaceless %}
 <?xml version="1.0" encoding="UTF-8"?>
-<list>
+<list lang="{{request.LANGUAGE_CODE}}">
 	<name>{{ list|translate:request.LANGUAGE_CODE }}</name>
-	{%if list.obs %}
-		<observation>
-			{{ list.obs|safe }}
-		</observation>
-	{% endif %}
+	<abbreviation>{{ list.abbreviation }}</abbreviation>
+	<year>{{ list.year }}</year>
+	<edition>{{ list.edition }}</edition>
+	<type>{{ list.type }}</type>
+	<subtype>{{ list.subtype }}</subtype>
+	<observation>{{ list.obs|safe }}</observation>
 	
 	<section_list>
 
