@@ -80,7 +80,7 @@
 												<pharmaceutical_form>
 													<medicine>
 														{{ form.medicine|translate:request.LANGUAGE_CODE }}
-													<medicine>
+													</medicine>
 													<form_type>
 														{{ form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}
 													</form_type>
@@ -91,7 +91,7 @@
 		                                                {% if  section_form.restriction_age %}<restriction_age>true</restriction_age>{% endif %}
 		                                                {% if section_form.specialist_care_for_children %}<specialist_care_for_children>true</specialist_care_for_children> {% endif %}
 		                                                {% if section_form.only_for_children %}<only_for_children>true</only_for_children>{% endif %}
-		                                                {% if section_form.best_evidence %}<best_evidence>true</best_evidence> {% endif %}		                                                
+		                                                {% if section_form.best_evidence %}<best_evidence>true</best_evidence> {% endif %}
 		                                            </observation_list>
 												</pharmaceutical_form>
 											{% endwith %}
