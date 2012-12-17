@@ -145,6 +145,8 @@ class Section(MPTTModel):
             if attr:
                 if hasattr(translation, attr):
                     return getattr(translation, attr)
+            else:
+                return translation.title                    
 
         if not translations:
             if attr:
