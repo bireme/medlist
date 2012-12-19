@@ -54,6 +54,12 @@
 													<composition>
 														{% field_lang form "composition" request.LANGUAGE_CODE %}
 													</composition>
+													<observation>
+														{% field_lang section_form "observation" request.LANGUAGE_CODE %}
+													</observation>
+													<restriction_age>
+														{% field_lang section_form "restriction_age" request.LANGUAGE_CODE %}
+													</restriction_age>
 		                                            <observation_list>
 		                                                {% if  section_form.restriction_age %}<restriction_age>true</restriction_age>{% endif %}
 		                                                {% if section_form.specialist_care_for_children %}<specialist_care_for_children>true</specialist_care_for_children> {% endif %}

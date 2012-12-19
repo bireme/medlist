@@ -1,5 +1,6 @@
 from django import template
 from django.utils.safestring import mark_safe
+from django.utils.html import escape
 
 register = template.Library()
 
@@ -19,4 +20,4 @@ def field_lang(obj, field_name, lang):
     if not field_value:        
         field_value = getattr(obj, field_name)
 
-    return mark_safe(field_value)
+    return escape(field_value)
