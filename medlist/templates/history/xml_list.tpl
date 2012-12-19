@@ -39,7 +39,6 @@
 			        	</observation>
 			        {% endif %}	
 	        		<pharmaceutical_form_list>
-	        			{% if not node.id in sections_has_complementary %}
 							{% for id, section_forms in pharm_section.items %}
 								{% if id == node.id %}
 									{% for section_form in section_forms %}
@@ -67,7 +66,6 @@
 									{% endfor %}
 								{% endif %}
 							{% endfor %}
-						{% endif %}
 					</pharmaceutical_form_list>
 
 	    			{% if node.id in sections_has_complementary %}        			
