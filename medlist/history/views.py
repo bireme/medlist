@@ -73,3 +73,21 @@ def save_history(request, id):
         print 'not saved local %s to list %s' % (request.META['LANGUAGE_CODE'], list.id)
 
     return HttpResponse('Saved list %s.' % list.id)
+
+
+def show_history(request, id):
+
+    output = {}
+    language = request.LANGUAGE_CODE
+
+    history = get_object_or_404(History, pk=id)
+    history_local = HistoryLocal.objects.filter(history=history).filter(language=language)[0]
+
+    if not history_local:
+        history_local = history
+
+    output['history'] = history
+    output['history_local'] = history_local
+
+    return render_to_response('history/show_history.html', output, context_instance=RequestContext(request))
+   

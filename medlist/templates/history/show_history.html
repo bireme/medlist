@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load app_filters %}
+
+{% block "extrahead" %}
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.easing.js"></script>
+    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.collapse.js"></script>    
+    <script type="text/javascript" src="{{STATIC_URL}}js/tinybox.js"></script>    
+    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tinybox-styles.css" media="screen" />
+
+    <script type="text/javascript">
+        $(function(){
+            $('#collapser').jqcollapse({
+               slide: true,
+               speed: 500,
+               easing: 'easeOutCubic'
+            });
+        });
+    </script>
+
+    <script type="text/javascript" src="{{STATIC_URL}}js/footnotes.js"></script>
+
+{% endblock %}
+
+{% block "breadcrumb" %}
+    {{ block.super }} /
+    {% trans "History" %} /
+    {{ history.name|capfirst }} ({{ history.year}} {% if history.editition %}ed.  {{ history.edition }} {% endif %})
+{% endblock %}
+
+{% block "content" %}
+    {{ history_local.content|safe }}
+{% endblock %}

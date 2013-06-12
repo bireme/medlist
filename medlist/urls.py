@@ -34,6 +34,7 @@ urlpatterns = patterns('',
     url(r'^evidence/(?P<id>\d+)/?$', 'medlist.evidence.views.show'),
     
     url(r'^history/(?P<id>\d+)/?$', 'medlist.history.views.save_history'),
+    url(r'^show_history/(?P<id>\d+)/?$', 'medlist.history.views.show_history'),
 
     # internationalization
     url(r'^i18n/', include('django.conf.urls.i18n')),

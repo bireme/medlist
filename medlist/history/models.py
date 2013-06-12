@@ -39,6 +39,30 @@ class History(models.Model):
     xml = models.TextField(blank=True, null=True)
     content = models.TextField()
 
+    def get_translation(self, lang_code):
+        attr = None
+        if "|" in lang_code:
+            lang_code = lang_code.split("|")
+            attr = lang_code[1]
+            lang_code = lang_code[0]
+
+        translations = HistoryLocal.objects.filter(history=self.id, language=lang_code)
+        
+        if translations:
+            translation = translations[0]
+            if attr:
+                if hasattr(translation, attr):
+                    return getattr(translation, attr)
+            else:
+                return translation.name
+
+        if not translations:
+            if attr:
+                return getattr(self, attr)
+        
+        return self.name
+
+
     def __unicode__(self):
         return unicode(self.name)
 
