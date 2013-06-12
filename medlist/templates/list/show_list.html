@@ -54,7 +54,7 @@
 			<ul>
 				{% for history in history_list %}
 					<li>					
-						<a href="{% url history.views.show_history history.id %}">{{ history.year }} {% if history.edition %}ed. {{ history.edition }} {%endif%}</a>
+						<a href="{% url history.views.show_history history.id %}">{{ history.year }} {{ history.edition }}</a>
 					</li>
 				{% endfor %}						
 			</ul>			
