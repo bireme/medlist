@@ -81,9 +81,9 @@ def show_history(request, id):
     language = request.LANGUAGE_CODE
 
     history = get_object_or_404(History, pk=id)
-    history_local = HistoryLocal.objects.filter(history=history).get(language=language)
-
-    if not history_local:
+    try:
+        history_local = HistoryLocal.objects.filter(history=history).get(language=language)
+    except HistoryLocal.DoesNotExist:
         history_local = history
 
     output['history'] = history
