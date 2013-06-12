@@ -1,6 +1,7 @@
 #!coding: utf-8
 
 from medlist.list.models import *
+from medlist.history.models import *
 from django.shortcuts import HttpResponse, render_to_response, get_object_or_404
 from django.views.decorators.cache import cache_page
 from django.views.decorators.csrf import csrf_protect
@@ -45,11 +46,13 @@ def show_list(request, id):
 		query = SectionPharmForm.objects.filter(section=section)
 		pharm_section[section.id] = query
 		
+	history_list = History.objects.filter(abbreviation=list.abbreviation)
 
 	output = {'list': list}
 	output['nodes'] = sections
 	output['pharm_section'] = pharm_section
 	output['sections_has_complementary'] = sections_has_complementary
+	output['history_list'] = history_list
 	
 	return render_to_response('list/show_list.html', output, context_instance=RequestContext(request))
 

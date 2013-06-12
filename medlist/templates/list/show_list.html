@@ -46,3 +46,18 @@
 		<div class="spacer"></div>
 	</div>
 {% endblock %}
+
+{% block "extracontent" %}
+	{% if history_list %}
+		<div class="history_list">
+			<strong class="lTitle">{% trans "History" %}</strong>
+			<ul>
+				{% for history in history_list %}
+					<li>					
+						<a href="{% url history.views.show_history history.id %}">{{ history.year }} {% if history.edition %}ed. {{ history.edition }} {%endif%}</a>
+					</li>
+				{% endfor %}						
+			</ul>			
+		<div>
+	{% endif %}
+{% endblock %}

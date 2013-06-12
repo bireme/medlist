@@ -731,3 +731,12 @@ TH.tableHeadFilters LABEL{
 .observation{
 	margin: 10px 0 5px 0;
 }
+
+.history_list{
+	margin: 5px 0 30px 50px;
+	font-size: 130%;
+}
+.history_list UL{
+	list-style-type:circle;
+	margin: 5px 0 0 30px;
+}
