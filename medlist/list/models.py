@@ -159,7 +159,7 @@ class Section(MPTTModel):
         translation_list = ["en^%s" % self.clean_title(self.title)]
         translation = SectionLocal.objects.filter(section=self.id)
         if translation:
-            other_languages = ["%s^%s" % (trans.language, self.clean_title(trans.name)) for trans in translation]
+            other_languages = ["%s^%s" % (trans.language, self.clean_title(trans.title)) for trans in translation]
             translation_list.extend(other_languages)
         
         return translation_list
