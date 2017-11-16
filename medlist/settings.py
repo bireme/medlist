@@ -16,10 +16,7 @@ PROJECT_ROOT_PATH = os.path.dirname(os.path.abspath(__file__))
 # MEDLIST CONFIGURATIONS 
 
 ## Top links
-ROOT_URL = "http://www.paho.org/prais"
-ABOUT_US_URL = "#"
-SEND_US_A_COMMENT_URL = "#"
-CONTACT_US_URL = "http://prais.paho.org:8080/rscpaho/#/home/criticasugestao"
+ROOT_URL = "http://prais.paho.org/"
 
 ## pagination of compare lists
 ITEMS_PER_PAGE = 50
