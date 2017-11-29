@@ -12,25 +12,25 @@
 		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/styles.css" media="screen" />
 
 		<title>{% block "title" %}{% endblock %}{% trans "Annotated Medicine Lists" %}</title>
-		
+
 		{% block "extrahead" %}{% endblock %}
 	</head>
 	<body>
-		<div class="container">
         {% include "top.html" %}
-		<div class="middle">
-			<div class="breadcrumb">
-				{% block "breadcrumb" %}
-					<a href="{{ROOT_URL}}">Home</a> / 
-					<a href="{% url main.views.index %}" title="{% trans "Annotated Medicine Lists" %}">{% trans "Annotated Medicine Lists" %}</a>
-				{% endblock %}
-			</div>
-			<div class="content">
-				{% block "content" %}{% endblock %}
-			</div>
-			{% block "extracontent" %}{% endblock %}
-		</div>		
-    </div>
-	{% include "footer.html" %}
+		<div class="container">
+    		<div class="middle">
+    			<div class="breadcrumb">
+    				{% block "breadcrumb" %}
+    					<a href="{{ROOT_URL}}">Home</a> /
+    					<a href="{% url main.views.index %}" title="{% trans "Annotated Medicine Lists" %}">{% trans "Annotated Medicine Lists" %}</a>
+    				{% endblock %}
+    			</div>
+    			<div class="content">
+    				{% block "content" %}{% endblock %}
+    			</div>
+    			{% block "extracontent" %}{% endblock %}
+    		</div>
+       </div>
+	   {% include "footer.html" %}
 	</body>
 </html>

@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -12,8 +12,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 };
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -66,7 +66,6 @@ STRONG {
 	font-weight: bold;
 }
 BODY {
-    background: #FFF url(../images/bg-barra-superior_s1.png) repeat-x 0px -10px;
 	font-family: tahoma;
 	color: #555;
 }
@@ -126,7 +125,7 @@ BODY, TABLE, TD, TH {
 .loginBox .submit {
 	background: url(../images/bt-ok.png) no-repeat;
 	width: 29px;
-	height: 26px;	
+	height: 26px;
 }
 .loginBox .submit:hover {
 	background-position: -29px;
@@ -256,8 +255,9 @@ BODY, TABLE, TD, TH {
 	font-weight: normal;
 }
 .middle {
-	margin: 160px 0px 20px 0px;
+	margin: 40px 0px 20px 0px;
 }
+
 .home .middle .content {
 	background: #849CB1;
 	border: 10px solid #2B4D6A;
@@ -268,11 +268,9 @@ BODY, TABLE, TD, TH {
 .middle #searchBox {
 	background: #E7EBEE;
 	border-radius: 6px;
-	padding: 12px 6px 6px 6px;
-	position: absolute;
-	top: 200px;
+	padding: 20px 10px 20px 10px;
 	z-index: 30;
-	margin: 0px 0px 0px 20px;
+	margin: 10px 0px 30px 20px;
 	width: 930px;
 }
 .middle #searchBox #searchSubmit {
@@ -384,7 +382,7 @@ BODY, TABLE, TD, TH {
 	color: #ff5000;
 }
 .content {
-	
+
 }
 .content {
 	margin: 12px 40px;
@@ -536,7 +534,7 @@ BODY, TABLE, TD, TH {
 	width: 500px;
 	font-family: monospace;
 	color: #666;
-	
+
 }
 .context STRONG {
 	display: block;
@@ -684,10 +682,17 @@ TH.tableHeadFilters LABEL{
 
 }
 .footer {
-	background: #000 url(../images/bg-barra-inferior.png) repeat-x;
 	color: #FFF;
-	height: 130px;
+    background-color: #DDDDDD;
+	height: 50px;
+    width:  100%;
 }
+.footer-fixed{
+    bottom: 0px;
+    position: fixed;
+    width: 100%;
+}
+
 .wrapper {
 	width: 940px;
 	margin: 0px auto;
@@ -714,7 +719,7 @@ TH.tableHeadFilters LABEL{
 	margin-top: 16px;
 }
 #stelaLogo {
-	
+
 }
 .ui-widget-content {
 	color: #555;
@@ -739,4 +744,44 @@ TH.tableHeadFilters LABEL{
 .history_list UL{
 	list-style-type:circle;
 	margin: 5px 0 0 30px;
+}
+.header{
+    left: 0px;
+    top: 0px;
+    width: 1280px;
+    height: 76px;
+    background-color: rgb(234, 234, 234);
+    border-top: 6px solid rgb(68, 68, 68);
+}
+.header .logo{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 455px;
+    height: 46px;
+}
+
+.header .title{
+    position: absolute;
+    left: 510px;
+    top: 25px;
+    height: 46px;
+    font-size: 200%;
+    color: rgb(255, 102, 0);
+}
+.header .language{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    width: 100px;
+}
+.header .language ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+.header .language ul li{
+    display: block;
+    margin-top: 7px;
 }

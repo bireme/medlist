@@ -44,8 +44,8 @@
 						set_default_searchfield();
 					}
 				});
-				
-				// if search field has a default value, it changes 
+
+				// if search field has a default value, it changes
 				// value for null
 				searchform.submit(function(){
 					if(searchfield.val() == text) {
@@ -53,27 +53,36 @@
 					}
 				});
 			});
-			
 
-			
+
+
 		</script>
 	</head>
 	<body>
-		<div class="container home">
         {% include "top.html" %}
-		<div class="middle">
-			<div id="searchBox">
-				<form name="search" method="post" action="{{IAHX_URL}}" id="searchform">
-					<input type="hidden" name="where" value="MEDICINES"/>
-					<input type="text" id="searchfield" class="textEntry" name="q"/>
-					<input type="submit" class="submit" id="searchSubmit" value=""/>
-				</form>
-			</div>
-			<div class="content">
-				{% block "content" %}{% endblock %}
-			</div>
-		</div>		
-    </div>
-	{% include "footer.html" %}
+		<div class="container home">
+    		<div class="middle">
+                <div class="breadcrumb">
+    				{% block "breadcrumb" %}
+    					<a href="{{ ROOT_URL }}" title="{% trans "Home" %}">{% trans "Home" %}</a> /
+    					<a href="{% url main.views.index %}" title="{% trans "Annotated Medicine Lists" %}">{% trans "Annotated Medicine Lists" %}</a>
+    				{% endblock %}
+    			</div>
+
+    			<div id="searchBox">
+    				<form name="search" method="post" action="{{IAHX_URL}}" id="searchform">
+    					<input type="hidden" name="where" value="MEDICINES"/>
+    					<input type="text" id="searchfield" class="textEntry" name="q"/>
+    					<input type="submit" class="submit" id="searchSubmit" value=""/>
+    				</form>
+    			</div>
+    			<div class="content">
+    				{% block "content" %}{% endblock %}
+    			</div>
+    		</div>
+        </div>
+        <div class="footer-fixed">
+            {% include "footer.html" %}
+        </div>
 	</body>
 </html>
