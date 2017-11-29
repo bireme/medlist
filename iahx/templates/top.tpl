@@ -1,7 +1,7 @@
 {include file="top-header.tpl"}
+{include file="top-banner.tpl"}
 <div class="container">
-
-	{include file="top-banner.tpl"}
+	
 	{include file="top-breadcrumb.tpl"}
 
 	<div class="content">

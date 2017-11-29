@@ -1,5 +1,4 @@
 BODY {
-	background: #FFF url(../image/common/ml/bg-barra-superior_s1.png) repeat-x 0px -10px;
 	font-family: tahoma;
 	color: #555;
 
@@ -737,11 +736,6 @@ DIV.record DIV.data DIV.abstractFulltextList LI{
 .collapseAll, .expandAll {display: none;}
 
 
-
-
-
-
-
 .itemFooter {
 	font-size: 85%;
 	font-weight: bold;
@@ -749,9 +743,9 @@ DIV.record DIV.data DIV.abstractFulltextList LI{
 .footer {
 	clear: both;
 	margin-top: 24px;
-	background: #000 url(../image/common/ml/bg-barra-inferior.png) repeat-x;
+	background-color: #DDDDDD;
 	color: #FFF;
-	height: 67px;
+	height: 50px;
 }
 .wrapper {
 	width: 940px;
@@ -783,6 +777,47 @@ DIV.record DIV.data DIV.abstractFulltextList LI{
 }
 
 
+.header{
+    left: 0px;
+    top: 0px;
+    width: 1280px;
+    height: 76px;
+    background-color: rgb(234, 234, 234);
+    border-top: 6px solid rgb(68, 68, 68);
+}
+.header .logo{
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    width: 455px;
+    height: 46px;
+}
 
-
+.header .title{
+    position: absolute;
+    left: 510px;
+    top: 25px;
+    height: 46px;
+    font-size: 200%;
+    color: rgb(255, 102, 0);
+}
+.header .language{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    width: 100px;
+}
+.header .language ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+}
+.header .language ul li{
+    display: block;
+    margin-top: 7px;
+}
+.header a{
+	text-decoration: none;
+}
 

@@ -72,6 +72,7 @@
     			<div id="searchBox">
     				<form name="search" method="post" action="{{IAHX_URL}}" id="searchform">
     					<input type="hidden" name="where" value="MEDICINES"/>
+                        <input type="hidden" name="lang" value="{{request.LANGUAGE_CODE|slice:'0:2'}}"/>
     					<input type="text" id="searchfield" class="textEntry" name="q"/>
     					<input type="submit" class="submit" id="searchSubmit" value=""/>
     				</form>
