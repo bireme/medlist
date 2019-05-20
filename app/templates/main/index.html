@@ -5,74 +5,26 @@
 {% block "title" %}{% trans "Home" %} | {% endblock %}
 
 {% block "content" %}
-	<div class="contentBlock">
-		<div class="bTitle">{% trans "Medicine Lists and Evidence Summaries" %}</div>
-		<div class="innerBlock">
-			<div class="icon whoList"></div>
-			<div class="listData">
-				<div class="lTitle">{% trans "WHO Lists" %}</div>
-				<div class="compare"><a href="{% url 'compare' %}">{% trans "Compare lists"|capfirst %}</a></div>
-			</div>
-			<div class="spacer"></div>
-			<ul>
-				{% for list in who_lists %}
-					{% if list.published %}
-						<li><a href="{% url 'show_list' list.id %}" title="{{list.name}}">{{ list|translate:request.LANGUAGE_CODE }}</a></li>
-					{% endif %}
-				{% endfor %}
-			</ul>
-		</div>
-		<div class="innerBlock">
-			<div class="icon pahoList"></div>
-			<div class="listData">
-				<div class="lTitle">{% trans "PAHO Lists" %}</div>
-				<div class="compare"><a href="{% url 'compare' %}">{% trans "Compare lists"|capfirst %}</a></div>
-			</div>
-			<div class="spacer"></div>
-			<ul>
-				{% for list in paho_lists %}
-					{% if list.published %}
-						<li><a href="{% url 'show_list' list.id %}" title="{{list.name}}">{{ list|translate:request.LANGUAGE_CODE }}</a></li>
-					{% endif %}
-				{% endfor %}
-			</ul>
-		</div>
-		<div class="innerBlock">
-			<div class="icon nationalList"></div>
-			<div class="listData">
-				<div class="lTitle">{% trans "National Forms" %}</div>
-			</div>
-			<div class="spacer"></div>
-			<select class="textEntry big" select id="countrylists">
-				<option value="">{% trans "Select Country" %}</option>
-				{% for list in country_lists %}
-					{% if list.published %}
-						<option value="{% url 'show_list' list.id %}">{{ list|translate:request.LANGUAGE_CODE }}</option>
-					{% endif %}
-				{% endfor %}
-			</select>
-		</div>
-		<div class="innerBlock">
-			<div class="icon evidenceSummaries"></div>
-			<div class="listData">
-				<div class="lTitle">{% trans "Evidence Summaries" %}</div>
-			</div>
-			<div class="spacer"></div>
-			<ul>
-				<li><a href="{{IAHX_URL}}?lang={{ request.LANGUAGE_CODE|slice:":2" }}&where=EVIDENCES" title="{% trans "Show all evidence summaries" %}">{% trans "Show all evidence summaries" %}</a></li>
-			</ul>
-		</div>
-	</div>
-	<div class="spacer"></div>
-{% endblock %}
+    <div class="list-group">
+        <a class="list-group-item list-group-item-action active" href="{% url 'compare' %}">{% trans "Compare lists"|capfirst %}</a>
 
+    {% for list in who_lists %}
+        {% if list.published %}
+            <a class="list-group-item list-group-item-action" href="{% url 'show_list' list.id %}" title="{{list.name}}">{{ list|translate:request.LANGUAGE_CODE }}</a><br/>
+        {% endif %}
+    {% endfor %}
 
-{% block "extracontent" %}
-	<script>
-		$(document).ready(function(){
-			$("#countrylists").change(function(){
-				location.href = $(this).val();
-			});
-		});
-	</script>
+    {% for list in paho_lists %}
+        {% if list.published %}
+            <a class="list-group-item list-group-item-action" href="{% url 'show_list' list.id %}" title="{{list.name}}">{{ list|translate:request.LANGUAGE_CODE }}</a><br/>
+        {% endif %}
+    {% endfor %}
+
+    {% for list in country_lists %}
+        {% if list.published %}
+            <a class="list-group-item list-group-item-action" href="{% url 'show_list' list.id %}">{{ list|translate:request.LANGUAGE_CODE }}</a><br/>
+        {% endif %}
+    {% endfor %}
+    </div>
+    <br/>
 {% endblock %}

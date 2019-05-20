@@ -1,5 +1,7 @@
 {% load i18n %}
 {% load static %}
+{% load app_filters %}
+
 <header>
 	<h3 class="tituloPrincial text-center">Listas Anotadas de Medicamentos e Dispositivos</h3>
 	<nav class="navbar navbar-expand-lg navbar-dark">
@@ -11,24 +13,6 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
 						<a class="nav-link" href="index.php">Home</a>
-					</li>
-					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-							Listas
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-							<a class="dropdown-item" href="comparar.php">Comparar Listas</a>
-							<a class="dropdown-item" href="lista.php">WHO Model Lista of Essetial Medicines 1</a>
-							<a class="dropdown-item" href="lista.php">WHO Model Lista of Essetial Medicines 2</a>
-							<a class="dropdown-item" href="lista.php">PAHO Strategic Fund medicine List 1</a>
-							<a class="dropdown-item" href="lista.php">PAHO Strategic Fund medicine List 2</a>
-							<a class="dropdown-item" href="lista.php">WHO Model Lista of Essetial Medicines (Dispositivos)</a>
-							<a class="dropdown-item" href="lista.php">PAHO Strategic Fund medicine List (Dispositivos)</a>
-							<!-- <a class="dropdown-item" href="comparar.php">Listas Nacionais</a> -->
-						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="sumario.php">Sumário de Evidências</a>
 					</li>
 				</ul>
 				<div class="dropdown-divider"></div>

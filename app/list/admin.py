@@ -32,6 +32,10 @@ class SectionAdmin(admin.ModelAdmin):
 
     fields = ('title', 'list', 'parent', 'observation')
 
+    def response_change(self, request, obj):
+        return redirect('/close_window')
+
+
 class ListAdmin(admin.ModelAdmin):
     list_display = ('name', 'abbreviation', 'type','get_link_list', 'published')
     list_filter = ('type', 'year')
@@ -72,10 +76,14 @@ class SectionPharmFormAdmin(admin.ModelAdmin):
 
     actions = ['index', ]
 
+    def response_change(self, request, obj):
+        return redirect('/close_window')
+
     # adding option to activate or not a register
     def index(modeladmin, request, queryset):
         for obj in queryset:
             obj.save()
+
     index.short_description = _("Indexes these pharmaceutical forms")
 
 admin.site.register(Section, SectionAdmin)

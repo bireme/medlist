@@ -181,5 +181,66 @@
             </div>
         </div>
     </div>
-    <br>
+
+{% endblock %}
+
+{% block "extracontent" %}
+    <section class="sectionCinza2 padding1">
+		<div class="container">
+			<h1 class="titulo1"><span class="colorText">Recursos</span> de Informação: <small><b>{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}</b></small></h1>
+
+			<ul class="nav nav-tabs" id="myTab" role="tablist">
+				<li class="nav-item">
+					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#resource1" role="tab" aria-controls="home" aria-selected="true">Produção Científica</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#resource2" role="tab" aria-controls="profile" aria-selected="false">Evidências</a>
+				</li>
+			</ul>
+			<div class="tab-content font12 containerTab" id="myTabContent">
+                <!-- resource1 -->
+				<div class="tab-pane fade show active" id="resource1" role="tabpanel" aria-labelledby="profile-tab">
+					<a href=""><b>Cabazitaxel, abiraterona y enzalutamida en cáncer de próstata metastásico resistente a la castración con fracaso a docetaxel</b><br>
+					INTRODUCCIÓN: El cáncer de próstata es la neoplasia maligna no cutánea más frecuente en varones. En estadíos tempranos el tratamiento es quirúrgico y radioterapéutico mientras que si la enfermedad está localmente avanzada o hay metástasis los pacientes son tratados con terapia anti-androgénica...</a>
+					<hr>
+
+					<a href=""><b>Tobramicina inhalatoria en polvo versus tobramicina inhalatoria en solución en fibrosis quística</b><br>
+					INTRODUCCIÓN: La fibrosis quística (FQ) es una enfermedad genética autosómica recesiva causada por alteración del gen CFTR (del inglés Cystic Fibrosis Transmembrane Conductance Regulator), que afecta aproximadamente a 1 cada 2.000-3.000 nacidos en Europa y 1 cada 3.500 nacimientos en EE.UU. Esta al...</a>
+					<hr>
+
+					<a href=""><b>Pruebas de expresión genómica en pacientes con cáncer de mama: MammaPrint®, OncotypeDX® y Prosigna®</b><br>
+					INTRODUCCIÓN: El cáncer de mama es la neoplasia más frecuente y principal causa de muerte por cáncer en mujeres. El 70% de los casos diagnostican en estadios tempranos. La decisión de administrar quimioterapia adyuvante se fundamenta en el riesgo estimado de recidiva. Su cálculo se basa en diversos...</a>
+					<hr>
+				</div>
+			    <!-- resource2 -->
+                <div class="tab-pane fade" id="resource2" role="tabpanel" aria-labelledby="profile-tab">
+					<a href=""><b>Cabazitaxel, abiraterona y enzalutamida en cáncer de próstata metastásico resistente a la castración con fracaso a docetaxel</b><br>
+					INTRODUCCIÓN: El cáncer de próstata es la neoplasia maligna no cutánea más frecuente en varones. En estadíos tempranos el tratamiento es quirúrgico y radioterapéutico mientras que si la enfermedad está localmente avanzada o hay metástasis los pacientes son tratados con terapia anti-androgénica...</a>
+					<hr>
+
+					<a href=""><b>Tobramicina inhalatoria en polvo versus tobramicina inhalatoria en solución en fibrosis quística</b><br>
+					INTRODUCCIÓN: La fibrosis quística (FQ) es una enfermedad genética autosómica recesiva causada por alteración del gen CFTR (del inglés Cystic Fibrosis Transmembrane Conductance Regulator), que afecta aproximadamente a 1 cada 2.000-3.000 nacidos en Europa y 1 cada 3.500 nacimientos en EE.UU. Esta al...</a>
+					<hr>
+
+					<a href=""><b>Pruebas de expresión genómica en pacientes con cáncer de mama: MammaPrint®, OncotypeDX® y Prosigna®</b><br>
+					INTRODUCCIÓN: El cáncer de mama es la neoplasia más frecuente y principal causa de muerte por cáncer en mujeres. El 70% de los casos diagnostican en estadios tempranos. La decisión de administrar quimioterapia adyuvante se fundamenta en el riesgo estimado de recidiva. Su cálculo se basa en diversos...</a>
+					<hr>
+				</div>
+			</div>
+		</div>
+	</section>
+{% endblock %}
+
+
+{% block extrafooter %}
+<script>
+    var similar_url = 'similar/';
+    // Send the data using post
+    var posting = $.post( similar_url, { text: text_param, doc_id: '{{doc.id}}' } );
+
+    // Put the results in a div
+    posting.done(function( data ) {
+      $('#similar-docs').empty().append(data);
+    });
+</script>
 {% endblock %}

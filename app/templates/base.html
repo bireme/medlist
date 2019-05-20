@@ -39,8 +39,9 @@
 			</ol>
 		</nav>
         {% block "content" %}{% endblock %}
-        {% block "extracontent" %}{% endblock %}
     </section>
+    {% block "extracontent" %}{% endblock %}
+    
     {% include "footer.html" %}
     {% block "extrafooter" %}{% endblock %}
 </body>

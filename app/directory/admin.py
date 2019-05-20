@@ -3,6 +3,7 @@ from django.contrib import admin
 from django.contrib import messages
 from django.utils.safestring import mark_safe
 from django.utils.translation import ugettext_lazy as _
+from django.shortcuts import redirect
 
 from evidence.models import *
 from directory.models import *
@@ -112,6 +113,10 @@ class PharmaceuticalFormAdmin(admin.ModelAdmin):
     list_filter = ('pharmaceutical_form_type__name', 'active')
 
     actions = ['make_active']
+
+    def response_change(self, request, obj):
+        return redirect('/close_window')
+
 
     # removes delete option
     def has_delete_permission(self, request, obj=None):

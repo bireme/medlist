@@ -12,7 +12,10 @@
 
 {% block "content" %}
     <h1 class="titulo1">
-        {{ list|translate:request.LANGUAGE_CODE }} <a href="{% url 'admin:list_list_change' list.pk %}" class="trigger"><i class="far fa-edit"></i></a>
+        {{ list|translate:request.LANGUAGE_CODE }}
+        {% if user.is_superuser %}
+            <a href="{% url 'admin:list_list_change' list.pk %}" class="trigger"><i class="far fa-edit"></i></a>
+        {% endif %}
     </h1>
 
 	<div class="list">
