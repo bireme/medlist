@@ -3,19 +3,18 @@ from django.template import RequestContext
 from evidence.models import *
 
 def show(request, id):
+    output = {}
+    evidence = None
+    language = request.LANGUAGE_CODE
 
-	output = {}
-	language = request.LANGUAGE_CODE
+    evidence_summary = get_object_or_404(EvidenceSummary, pk=id)
+    evidence_local = EvidenceSummaryLocal.objects.filter(evidence=evidence_summary).filter(language=language)
 
-	evidence = get_object_or_404(EvidenceSummary, pk=id)
-	translate = EvidenceSummaryLocal.objects.filter(evidence=evidence).filter(language=language)
+    if evidence_local:
+        evidence = evidence_local[0]
+    else:
+        evidence = evidence_summary
 
-	if translate:
-		translate = translate[0]
-	else:
-		translate = evidence
+    output['evidence'] = evidence
 
-	output['evidence'] = evidence
-	output['translate'] = translate
-
-	return render(request, 'evidence/show.html', output)
+    return render(request, 'evidence/show.html', output)

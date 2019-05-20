@@ -2,94 +2,53 @@
 {% load i18n %}
 {% load app_filters %}
 
-{% block "extrahead" %}
-	  
-{% endblock %}
-
 {% block "title" %}
-	{{ translate }} |
+	{{ evidence.title }} |
 {% endblock %}
 
-{% block "breadcrumb" %}
-	{{ block.super }} / {% trans "Evidence Summary" %}
+{% block breadcrumb_last %}
+	{% trans "Evidence Summary" %}
 {% endblock %}
 
 {% block "content" %}
-	<div class="list">
-		<div class="blockTitle">{{ translate }}</div>
-
-		{% if translate.file or translate.link %}
-			<div id="downloadButton" class="button">
-				{% if translate.file %}
-					<a href="{{ MEDIA_URL }}{{ translate.file }}" class="download" target="_blank">download</a>
-				{% else %}
-					<a href="{{ translate.link }}" class="download" target="_blank">download</a>
-				{% endif %}
-			</div>
+	<div class="jumbotron">
+		<h2>{{ evidence.title }}</h2>
+        <hr>
+		{% if evidence.context %}
+            <strong>{% trans "Context" %}</strong>
+            <p>{{ evidence.context }}</p>
 		{% endif %}
-		
-		<div class="context">
-			{% if translate.context %}
-				<strong>{% trans "Context" %}:</strong> {{ translate.context }}
-			{% endif %}
-			
-			{% if translate.description %}
-				<strong>{% trans "Description" %}:</strong>
-				<p>{{ translate.description }}</p>
-			{% endif %}
 
-			{% if translate.question %}
-				<strong>{% trans "Question" %}:</strong>
-				<p>{{ translate.question }}</p>
-			{% endif %}
+		{% if evidence.description %}
+			<strong>{% trans "Description" %}</strong>
+			<p>{{ evidence.description }}</p>
+		{% endif %}
 
-			{% if translate.file or translate.link %}
-				<strong>URL:</strong>
-				{% if translate.file %}
-					<input class="url2copy" type="text" value="http://{{ request.get_host }}/{{ translate.file }}" />
-					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1" height="1" id="clippy" >
-					    <param name="movie" value="{{ STATIC_URL }}/flash/clippy.swf"/>
-					    <param name="allowScriptAccess" value="always" />
-					    <param name="quality" value="high" />
-					    <param name="scale" value="noscale" />
-					    <param NAME="FlashVars" value="text=http://{{ request.get_host }}/{{ translate.file }}">
-					    <param name="bgcolor" value="#fff">
-					    <embed src="{{ STATIC_URL }}/flash/clippy.swf" width="110" height="14" name="clippy" quality="high"
-					        allowScriptAccess="always"
-					        type="application/x-shockwave-flash"
-					        pluginspage="http://www.macromedia.com/go/getflashplayer"
-					        FlashVars="text=http://{{ request.get_host }}/{{ translate.file }}"
-					        bgcolor="#fff" />
-					</object>
-				{% else %}
-					<input class="url2copy" type="text" value="{{ translate.link }}" />
-					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="1" height="1" id="clippy" >
-					    <param name="movie" value="{{ STATIC_URL }}/flash/clippy.swf"/>
-					    <param name="allowScriptAccess" value="always" />
-					    <param name="quality" value="high" />
-					    <param name="scale" value="noscale" />
-					    <param NAME="FlashVars" value="text={{ translate.link }}">
-					    <param name="bgcolor" value="#fff">
-					    <embed src="{{ STATIC_URL }}/flash/clippy.swf" width="110" height="14" name="clippy" quality="high"
-					        allowScriptAccess="always"
-					        type="application/x-shockwave-flash"
-					        pluginspage="http://www.macromedia.com/go/getflashplayer"
-					        FlashVars="text={{ translate.link }}"
-					        bgcolor="#fff" />
-					</object>
-				{% endif %}
+		{% if evidence.question %}
+			<strong>{% trans "Question" %}</strong>
+			<p>{{ evidence.question }}</p>
+		{% endif %}
+
+        {% if evidence.file or evidence.link %}
+            <div>
+                {% if evidence.file %}
+                    <a href="{{ MEDIA_URL }}{{ evidence.file }}" class="btn btn-dark" target="_blank">download</a>
+                {% else %}
+                    <a href="{{ evidence.link }}" class="btn btn-dark" target="_blank">download</a>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+
+	{% if evidence.file and evidence.file_is_pdf or evidence.link and evidence.link_is_pdf %}
+		<div id="documentViewer" class="pdf">
+			{% if evidence.file %}
+				<embed type="application/pdf" src="http://{{ request.get_host }}/{{ evidence.file }}" width="1100" height="650">
+			{% else %}
+				<embed type="application/pdf" src="{{ evidence.link }}" width="1100" height="650">
 			{% endif %}
 		</div>
+	{% endif %}
+    <br/>
 
-		{% if translate.file and translate.file_is_pdf or translate.link and translate.link_is_pdf %}
-			<div id="documentViewer" class="pdf">
-				{% if translate.file %}
-					<embed type="application/pdf" src="http://{{ request.get_host }}/{{ translate.file }}" width="805" height="650">		
-				{% else %}
-					<embed type="application/pdf" src="{{ translate.link }}" width="805" height="650">		
-				{% endif %}
-			</div>
-		{% endif %}
-
-	</div>
 {% endblock %}

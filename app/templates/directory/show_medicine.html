@@ -5,10 +5,7 @@
 
 {% block "title" %}{{ medicine|translate:request.LANGUAGE_CODE|capfirst }} | {% trans "Medicine" %} | {% endblock %}
 
-{% block "breadcrumb" %}
-
-	{{ block.super }} /
-
+{% block breadcrumb_last %}
 	{% if 'section' in request.GET %}
 		<a href="{% url 'show_list' id=section.list.id %}" title="{{ section.list.name }}">{{ section.list.name }}</a> /
 		{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}
@@ -19,7 +16,6 @@
 {% endblock %}
 
 {% block "content" %}
-
     <h1 class="titulo1">{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}</h1>
 
     <h4><b><span class="colorText">Formas</span>  Farmacêuticas</b></h4>
@@ -194,7 +190,7 @@
 					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#resource1" role="tab" aria-controls="home" aria-selected="true">Produção Científica</a>
 				</li>
                 <li class="nav-item">
-					<a class="nav-link" id="profile-tab" data-toggle="tab" href="#resource2" role="tab" aria-controls="profile" aria-selected="false">Evidências</a>
+					<a class="nav-link {% if not evidences %}disabled{% endif %}" id="profile-tab" data-toggle="tab" href="#resource2" role="tab" aria-controls="profile" aria-selected="false">{% trans "Medicine Evidences Summaries" %}</a>
 				</li>
 			</ul>
 			<div class="tab-content font12 containerTab" id="myTabContent">
@@ -214,17 +210,15 @@
 				</div>
 			    <!-- resource2 -->
                 <div class="tab-pane fade" id="resource2" role="tabpanel" aria-labelledby="profile-tab">
-					<a href=""><b>Cabazitaxel, abiraterona y enzalutamida en cáncer de próstata metastásico resistente a la castración con fracaso a docetaxel</b><br>
-					INTRODUCCIÓN: El cáncer de próstata es la neoplasia maligna no cutánea más frecuente en varones. En estadíos tempranos el tratamiento es quirúrgico y radioterapéutico mientras que si la enfermedad está localmente avanzada o hay metástasis los pacientes son tratados con terapia anti-androgénica...</a>
-					<hr>
-
-					<a href=""><b>Tobramicina inhalatoria en polvo versus tobramicina inhalatoria en solución en fibrosis quística</b><br>
-					INTRODUCCIÓN: La fibrosis quística (FQ) es una enfermedad genética autosómica recesiva causada por alteración del gen CFTR (del inglés Cystic Fibrosis Transmembrane Conductance Regulator), que afecta aproximadamente a 1 cada 2.000-3.000 nacidos en Europa y 1 cada 3.500 nacimientos en EE.UU. Esta al...</a>
-					<hr>
-
-					<a href=""><b>Pruebas de expresión genómica en pacientes con cáncer de mama: MammaPrint®, OncotypeDX® y Prosigna®</b><br>
-					INTRODUCCIÓN: El cáncer de mama es la neoplasia más frecuente y principal causa de muerte por cáncer en mujeres. El 70% de los casos diagnostican en estadios tempranos. La decisión de administrar quimioterapia adyuvante se fundamenta en el riesgo estimado de recidiva. Su cálculo se basa en diversos...</a>
-					<hr>
+                    {% if evidences %}
+        		        {% for summary in evidences %}
+        			        <a href="{% url 'show_evidence' summary.evidence.id %}">
+                                <b>{{ summary.evidence.question }}</b><br/>
+                                {{ summary.evidence.context }}
+                            </a>
+                            <hr>
+        			    {% endfor %}
+            		{% endif %}
 				</div>
 			</div>
 		</div>

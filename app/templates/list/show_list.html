@@ -5,8 +5,7 @@
 
 {% block "title" %}{{ list.name|capfirst }} | {% trans "List" %} | {% endblock %}
 
-{% block "breadcrumb" %}
-	{{ block.super }} /
+{% block breadcrumb_last %}
 	{{ list|translate:request.LANGUAGE_CODE|capfirst }}
 {% endblock %}
 

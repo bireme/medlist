@@ -35,13 +35,16 @@
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="{{ROOT_URL}}">Home</a></li>
-				<li class="breadcrumb-item active" aria-current="page"><a href="{% url 'home' %}" title="{% trans "Annotated Medicine Lists" %}">{% trans "Annotated Medicine Lists" %}</a></li>
+				<li class="breadcrumb-item"><a href="{% url 'home' %}" title="{% trans "Annotated Medicine Lists" %}">{% trans "Annotated Medicine Lists" %}</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                    {% block breadcrumb_last %}{% endblock %}
+                </li>
 			</ol>
 		</nav>
         {% block "content" %}{% endblock %}
     </section>
     {% block "extracontent" %}{% endblock %}
-    
+
     {% include "footer.html" %}
     {% block "extrafooter" %}{% endblock %}
 </body>
