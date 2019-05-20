@@ -2,9 +2,10 @@
 from solr import SolrConnection
 from django.conf import settings
 from django.contrib import messages
-from models import PharmaceuticalForm, PharmaceuticalFormTypeLocal, MedicineLocal
-from medlist.list.models import Section, SectionPharmForm
-from medlist.evidence.models import MedicineEvidenceSummary
+
+from directory.models import PharmaceuticalForm, PharmaceuticalFormTypeLocal, MedicineLocal
+from list.models import Section, SectionPharmForm
+from evidence.models import MedicineEvidenceSummary
 
 
 def solr_index(med):
@@ -23,7 +24,7 @@ def solr_index(med):
             solr = SolrConnection(settings.SOLR_URL)
             solr.delete(id=str(med.id))
             response = solr.commit()
-        except Exception as ex: 
+        except Exception as ex:
             return False
 
         return True
@@ -33,7 +34,7 @@ def solr_index(med):
     medicine_list = ['en^%s' % med.name.strip()]
     for translation in medicine_translations:
         medicine_list.append('%s^%s' % (translation.language, translation.name.strip()))
-    
+
     medicine_list = "|".join(medicine_list) # ex.: en^codeine|pt-br^codeína|es^codeína
 
     # retrieve actives pharmaceutical forms of currente medicine
@@ -67,21 +68,21 @@ def solr_index(med):
             section_translations = "|".join(section.get_translations())
 
             section_tree = section.get_ancestors()
-            
+
             if section_tree:
-                for sec in section_tree:                    
+                for sec in section_tree:
                     category_translations = "|".join(sec.get_translations())
                     if category_translations not in category_list:
                         category_list.append(category_translations)
-            
+
             if section_translations not in category_list:
                 category_list.append(section_translations)
-   
+
             list_associated = "|".join( section.list.get_translations() )
             if section.list.type == 'c':
-                if list_associated not in countries:                                
+                if list_associated not in countries:
                     countries.append(list_associated)
-            else:                
+            else:
                 if list_associated not in lists:
                     lists.append(list_associated)
 
@@ -95,10 +96,10 @@ def solr_index(med):
     try:
         solr = SolrConnection(settings.SOLR_URL)
         solr.add(
-            id = str(med.id), 
+            id = str(med.id),
             type = "medicine",
             name = medicine_list,
-            pharmaceutical_form = pharma_form_list,        
+            pharmaceutical_form = pharma_form_list,
             pharmaceutical_form_type = pharma_form_type_list,
             list=lists,
             country=countries,
@@ -107,8 +108,7 @@ def solr_index(med):
             has_evidence=has_evidence,
         )
         response = solr.commit()
-    except Exception as ex: 
+    except Exception as ex:
         return False
 
     return True
-

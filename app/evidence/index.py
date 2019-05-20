@@ -2,8 +2,8 @@ import os
 from solr import SolrConnection
 from django.db.models import signals
 from django.conf import settings
-from models import *
-from evidence.models import LANGUAGES_CHOICES
+
+from evidence.models import *
 
 def update_index(sender, instance, created, **kwargs):
 
@@ -26,7 +26,7 @@ def index_evidence(evidence):
     evidence_medicine_list = []
 
     evidence_medicine = MedicineEvidenceSummary.objects.filter(evidence=evidence.id)
-    for evimed in evidence_medicine: 
+    for evimed in evidence_medicine:
         if evimed.medicine.name not in evidence_medicine_list:
                 evidence_medicine_list.append(evimed.medicine.name)
 
@@ -34,9 +34,9 @@ def index_evidence(evidence):
     try:
         solr = SolrConnection(settings.SOLR_URL)
         solr.add(
-            id = "evidence-%s-%s" % (evidence.language, evidence.id), 
+            id = "evidence-%s-%s" % (evidence.language, evidence.id),
             type = "evidence",
-            title = evidence.title,            
+            title = evidence.title,
             description = evidence.description,
             context = evidence.context,
             question = evidence.question,
@@ -46,7 +46,7 @@ def index_evidence(evidence):
             evidence_medicine = evidence_medicine_list,
         )
         response = solr.commit()
-    except Exception as ex: 
+    except Exception as ex:
         return False
 
     return True

@@ -1,19 +1,20 @@
-from django.shortcuts import render_to_response
-from medlist.list.models import List
-from django.template import RequestContext
+from django.shortcuts import render
+from django.http import HttpResponse
+from list.models import List
+
 
 def index(request):
 
-	lists = List.objects.all().order_by("name")
-	#print lists
-	paho_lists = lists.filter(type="p")
-	who_lists = lists.filter(type="w")
-	country_lists = lists.filter(type="c")
+    lists = List.objects.all().order_by("name")
+    paho_lists = lists.filter(type="p")
+    who_lists = lists.filter(type="w")
+    country_lists = lists.filter(type="c")
 
-	dict_response = RequestContext (request, {
-		'paho_lists' : paho_lists,
-		"who_lists" : who_lists,
-		"country_lists" : country_lists,
-	})
+    dict_response = {'paho_lists' : paho_lists, 'who_lists' : who_lists, 'country_lists' : country_lists}
 
-	return render_to_response("main/index.html", dict_response)
+    return render(request, 'main/index.html', dict_response)
+
+
+def close_window(request):
+    output = "<html><head><script>window.parent.CloseModal();</script></head></html>"
+    return HttpResponse(output)

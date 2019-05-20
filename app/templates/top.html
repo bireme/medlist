@@ -1,39 +1,57 @@
 {% load i18n %}
-<form action="/i18n/setlang/" method="post" id="setlang">
-    {% csrf_token %}
-    <input name="next" type="hidden" value="{{ redirect_to }}" />
-    <input name="language" type="hidden" value=""  id="lang"/>
-</form>
+{% load static %}
+<header>
+	<h3 class="tituloPrincial text-center">Listas Anotadas de Medicamentos e Dispositivos</h3>
+	<nav class="navbar navbar-expand-lg navbar-dark">
+		<div class="container">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.php">Home</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Listas
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="comparar.php">Comparar Listas</a>
+							<a class="dropdown-item" href="lista.php">WHO Model Lista of Essetial Medicines 1</a>
+							<a class="dropdown-item" href="lista.php">WHO Model Lista of Essetial Medicines 2</a>
+							<a class="dropdown-item" href="lista.php">PAHO Strategic Fund medicine List 1</a>
+							<a class="dropdown-item" href="lista.php">PAHO Strategic Fund medicine List 2</a>
+							<a class="dropdown-item" href="lista.php">WHO Model Lista of Essetial Medicines (Dispositivos)</a>
+							<a class="dropdown-item" href="lista.php">PAHO Strategic Fund medicine List (Dispositivos)</a>
+							<!-- <a class="dropdown-item" href="comparar.php">Listas Nacionais</a> -->
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="sumario.php">Sumário de Evidências</a>
+					</li>
+				</ul>
+				<div class="dropdown-divider"></div>
+				<ul class="navbar-nav navLang">
+					<a class="nav-link" href="#" onclick="change_lang('en')">En</a>
+					<a class="nav-link" href="#" onclick="change_lang('es')">Es</a>
+					<a class="nav-link" href="#" onclick="change_lang('pt-BR')">Pt</a>
+				</ul>
 
-<script>
-	$(function(){
-		var lang = "{{ request.LANGUAGE_CODE }}";
-		var box_langs = $(".availableLangs");
-		var cur_lang = $(".currentLang");
-
-		$("#lang_" + lang).hide();
-		box_langs.hide();
-
-		cur_lang.click(function(){
-			box_langs.toggle();
-		});
-    })
-</script>
-
-<div class="header">
-    <div class="logo">
-        <a href="{{ ROOT_URL }}" title="{% trans "Home" %}">
-            <img src="{{ STATIC_URL }}/images/logo-prais-{{request.LANGUAGE_CODE}}.png">
-        </a>
-    </div>
-    <div class="title">
-        {% trans "Annotated Medicine Lists" %}
-    </div>
-    <div class="language" id="langs" style="display: block;">
-        <ul>
-            <li><a id="lang_en" href="#" onclick="change_lang('en')" ><span>English</span></a></li>
-            <li><a id="lang_pt-br" href="#" onclick="change_lang('pt-BR')" ><span>Português</span></a></li>
-            <li><a id="lang_es" href="#" onclick="change_lang('es')"><span>Español</span></a></li>
-        </ul>
-    </div>
-</div>
+                <div class="dropdown-divider"></div>
+                <ul class="navbar-nav navLogin">
+                    <a class="nav-link" href="{% url 'admin:login' %}?next=/close_window">Login</a>
+                    <a class="nav-link" href="{% url 'admin:logout' %}?next=/close_window"> Logout</a>
+                </ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<img src="{% static '/images/' %}{{request.LANGUAGE_CODE}}/prais_top.png" alt="" class="img-fluid">
+			</div>
+		</div>
+		<hr>
+	</div>
+</header>

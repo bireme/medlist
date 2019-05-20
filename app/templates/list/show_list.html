@@ -1,28 +1,9 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load static %}
 {% load app_filters %}
 
 {% block "title" %}{{ list.name|capfirst }} | {% trans "List" %} | {% endblock %}
-
-{% block "extrahead" %}
-	<script type="text/javascript" src="{{STATIC_URL}}js/jquery.easing.js"></script>
-    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.collapse.js"></script>    
-	<script type="text/javascript" src="{{STATIC_URL}}js/tinybox.js"></script>    
-    <link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}css/tinybox-styles.css" media="screen" />
-
-	<script type="text/javascript">
-		$(function(){
-			$('#collapser').jqcollapse({
-			   slide: true,
-			   speed: 500,
-			   easing: 'easeOutCubic'
-			});
-		});
-	</script>
-
-    <script type="text/javascript" src="{{STATIC_URL}}js/footnotes.js"></script>
-
-{% endblock %}
 
 {% block "breadcrumb" %}
 	{{ block.super }} /
@@ -30,34 +11,117 @@
 {% endblock %}
 
 {% block "content" %}
+    <h1 class="titulo1">
+        {{ list|translate:request.LANGUAGE_CODE }} <a href="{% url 'admin:list_list_change' list.pk %}" class="trigger"><i class="far fa-edit"></i></a>
+    </h1>
+
 	<div class="list">
-		<div class="blockTitle">{{ list|translate:request.LANGUAGE_CODE }}</div>
-		<div class="spacer"></div>
-		
 		{% if list.obs %}
 			<div class="observation">
 				{{ list.obs|safe }}
 			</div>
 		{% endif %}
-		
-		<ul id="collapser">
-			{% include "list/section.html" %}
-		</ul>
-		<div class="spacer"></div>
+
+		{% include "list/section.html" %}
+
+        {% if history_list %}
+    		<div class="history_list">
+    			<strong class="lTitle">{% trans "History" %}</strong>
+    			<ul>
+    				{% for history in history_list %}
+    					<li>
+    						<a href="{% url 'show_history' history.id %}">{{ history.year }} {{ history.edition }}</a>
+    					</li>
+    				{% endfor %}
+    			</ul>
+    		<div>
+    	{% endif %}
 	</div>
 {% endblock %}
 
 {% block "extracontent" %}
-	{% if history_list %}
-		<div class="history_list">
-			<strong class="lTitle">{% trans "History" %}</strong>
-			<ul>
-				{% for history in history_list %}
-					<li>					
-						<a href="{% url history.views.show_history history.id %}">{{ history.year }} {{ history.edition }}</a>
-					</li>
-				{% endfor %}						
-			</ul>			
-		<div>
-	{% endif %}
+    <div id="modal-admin">
+    </div>
+
+    <div id="modal-login">
+    </div>
+
+    <div id="modal-alert">
+    </div>
+{% endblock %}
+
+{% block "extrafooter" %}
+    <script src="{% static '/js/footnotes.js' %}"></script>
+
+    <script type="text/javascript">
+        $(document).on('click', '.trigger', function (event) {
+            event.preventDefault();
+            $('#modal-admin').iziModal('open', event);
+        });
+
+        $(document).on('click', '.trigger-login', function (event) {
+            event.preventDefault();
+            $('#modal-login').iziModal('open', event);
+        });
+
+        $("#modal-login").iziModal({
+            title: 'ADMIN',
+            iframe: true,
+            iframeHeight: 400,
+            width: 400,
+            fullscreen: false,
+            closeButton: true,
+            closeOnEscape: false,
+            overlayClose: false,
+            onClosed: ReloadPage
+        });
+
+        $("#modal-admin").iziModal({
+            title: 'ADMIN',
+            iframe: true,
+            iframeHeight: 800,
+            width: 1200,
+            fullscreen: true,
+            closeButton: true,
+            closeOnEscape: false,
+            overlayClose: false,
+            onClosed: ReloadPage
+        });
+
+        $("#modal-alert").iziModal({  // Set here modal trigger ID
+            title: 'Conteúdo atualizado',
+            subtitle: 'Aguarde ... atualizando página',
+            overlayColor: 'rgba(0, 0, 0, 0.4)',
+            iconColor: 'red',
+            iconClass: 'face',
+            overlayClose: true,
+            closeOnEscape: true,
+            bodyOverflow: false,
+            focusInput: true,
+            autoOpen: false,
+            fullscreen: false,
+            openFullscreen: false,
+            timeout: 3000, //Set a time, in miliseconds, to close automaticaly the modal
+            timeoutProgressbar: true, //Set here to 'true' if your enabled a timeout.
+            timeoutProgressbarColor: '#4183D7',
+            transitionInModal: 'transitionIn',
+            transitionOutModal: 'transitionOut',
+            transitionInOverlay: 'fadeIn',
+            transitionOutOverlay: 'fadeOut',
+        });
+
+        function ReloadPage(){
+            $('#modal-alert').iziModal('open');
+            location.reload();
+        }
+        function CloseModal(){
+            $('#modal-admin').iziModal('close');
+            $('#modal-login').iziModal('close');
+        }
+
+        // show first section of the list on page load
+        $(document).ready(function() {
+            $('#list-tabContent div:first-child').addClass("show active");
+        });
+    </script>
 {% endblock %}

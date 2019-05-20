@@ -1,8 +1,8 @@
 from django.contrib import admin
-from models import *
+from history.models import *
 
 
-class HistoryLocalAdmin(admin.TabularInline):    
+class HistoryLocalAdmin(admin.TabularInline):
     readonly_fields = ('language', 'name', 'obs', 'xml', 'content',)
     model = HistoryLocal
     extra = 0

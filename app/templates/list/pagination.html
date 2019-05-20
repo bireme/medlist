@@ -1,23 +1,32 @@
-<div class="pagination">
-	{% if pagination %}
-		<ul>
-			{% if pagination.has_previous %}
-				<li><a href="#" rel="{{ pagination.previous_page_number }}" class="page"> < </a></li>
-	        {% endif %}
+<!-- Pagination -->
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center pagination-sm">
+        {% if pagination.has_previous %}
+            <li class="page-item">
+                <a href="#" rel="{{ pagination.previous_page_number }}" class="page page-link">
+                    <i class="fas fa-caret-left"></i>
+                 </a>
+             </li>
+        {% endif %}
 
-			{% for item in paginator.page_range %}
-				<li>
-					{% if pagination.number == item %}
-						<span class="selected">{{ item }}</span>
-					{% else %}
-						<a href="#" rel="{{ item }}" class="page">{{ item }}</a>
-					{% endif %}
-				</li>
-			{% endfor %}
+        {% for item in paginator.page_range %}
+            <li>
+                {% if pagination.number == item %}
+                    <li class="page-item active">
+                        <a class="page-link" href="#">{{ item }}</a>
+                    </li>
+                {% else %}
+                    <li class="page-item">
+                        <a class="page page-link" href="#" rel="{{ item }}">{{ item }}</a>
+                    </li>
+                {% endif %}
+            </li>
+        {% endfor %}
 
-			{% if pagination.has_next %}
-				<li><a href="#" rel="{{ pagination.next_page_number }}" class="page"> > </a></li>
-	        {% endif %}
-		</ul>
-	{% endif %}
-</div>
+        {% if pagination.has_next %}
+            <li class="page-item">
+                <a href="#" rel="{{ pagination.next_page_number }}" class="page page-link"><i class="fas fa-caret-right"></i></a>
+            </li>
+        {% endif %}
+    </ul>
+</nav>

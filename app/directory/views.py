@@ -1,14 +1,15 @@
 #! coding:utf-8
-from medlist.directory.models import *
-from django.shortcuts import render_to_response, HttpResponse
+from django.shortcuts import render, render_to_response, HttpResponse
 from django.http import Http404
 from django.template import RequestContext
-from medlist.list.models import *
-from medlist.evidence.models import MedicineEvidenceSummary
+
+from list.models import *
+from evidence.models import MedicineEvidenceSummary
+from directory.models import *
 
 def show_medicine(request, id):
-	
-	# get the medicine 
+
+	# get the medicine
 	try:
 		medicine = Medicine.objects.get(id=id)
 	except:
@@ -24,13 +25,13 @@ def show_medicine(request, id):
 	forms_in_lists = {}
 	for list in List.objects.filter(published=True):
 		for form in pharm_forms:
-			
+
 			if not list.id in forms_in_lists.keys():
 				forms_in_lists[list.id] = {'type': list.type, 'forms': [], 'list': List.objects.get(id=list.id)}
-			
-			if SectionPharmForm.objects.filter(section__list__id=list.id).filter(pharmaceutical_form=form): 
+
+			if SectionPharmForm.objects.filter(section__list__id=list.id).filter(pharmaceutical_form=form):
 				if not form.id in forms_in_lists[list.id]:
-					forms_in_lists[list.id]["forms"].append(form.id)			
+					forms_in_lists[list.id]["forms"].append(form.id)
 
 	new_forms = {}
 	for form in pharm_forms:
@@ -50,12 +51,12 @@ def show_medicine(request, id):
 				tmp_countries[section.list.name] = True
 			else:
 				tmp_lists[section.list.subtype] = True
-							
+
 
 	lists = tmp_lists.keys()
 	countries = tmp_countries.keys()
 
-	dict_response = RequestContext (request, {
+	dict_response = {
 		'medicine': medicine,
 		'pharm_forms': pharm_forms,
 		'forms': new_forms,
@@ -63,7 +64,7 @@ def show_medicine(request, id):
 		'countries': countries,
 		'evidences': evidences,
 		'forms_in_lists': forms_in_lists,
-	})
+	}
 
 	# if cames information
 	if 'section' in request.GET:
@@ -75,7 +76,4 @@ def show_medicine(request, id):
 		dict_response['section'] = section
 		dict_response['tree'] = tree
 
-	return render_to_response('directory/show_medicine.html', dict_response, 
-		context_instance=RequestContext(request))
-
-
+	return render(request, 'directory/show_medicine.html', dict_response)

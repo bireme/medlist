@@ -1,16 +1,18 @@
 #!coding: utf-8
 
-from medlist.list.models import *
-from medlist.history.models import *
-from django.shortcuts import HttpResponse, render_to_response, get_object_or_404
+from django.shortcuts import HttpResponse, render, render_to_response, get_object_or_404
 from django.views.decorators.cache import cache_page
 from django.views.decorators.csrf import csrf_protect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.template import RequestContext
 from django.http import Http404
 from django.core.cache import cache
-from search import search
-import settings
+
+from list.models import *
+from list.search import search
+from history.models import *
+
+from medlist import settings
 
 def get_parents(id):
 	output = {}
@@ -34,7 +36,7 @@ def show_list(request, id):
 		if not 'preview' in request.GET.keys():
 			raise Http404
 
-	sections = Section.tree.filter(list=list)
+	sections = Section.objects.filter(list=list)
 	sections_has_complementary = []
 	for section in sections:
 		if SectionPharmForm.objects.filter(section=section).filter(complementary_list=True).count() > 0:
@@ -45,7 +47,7 @@ def show_list(request, id):
 	for section in sections:
 		query = SectionPharmForm.objects.filter(section=section)
 		pharm_section[section.id] = query
-		
+
 	history_list = History.objects.filter(abbreviation=list.abbreviation)
 
 	output = {'list': list}
@@ -53,8 +55,8 @@ def show_list(request, id):
 	output['pharm_section'] = pharm_section
 	output['sections_has_complementary'] = sections_has_complementary
 	output['history_list'] = history_list
-	
-	return render_to_response('list/show_list.html', output, context_instance=RequestContext(request))
+
+	return render(request, 'list/show_list.html', output)
 
 #@cache_page(settings.CACHE_TIMEOUT)
 def compare(request):
@@ -83,13 +85,13 @@ def compare(request):
 	# if UNMATCHEDS, make a ANDNOT query
 	elif request.GET.get('only_unmatched') and request.GET.get('only_unmatched') == 'true':
 		lists = "(%s) ANDNOT (%s)" % (lists, lists.replace("OR", "AND"))
-	
+
 	# search these forms
 	pharmaceutical_forms = search(lists)
 	#print len(pharmaceutical_forms)
 
 	languages = {}
-	languages['pt-br'] = ['medicine_pt', 'type_pt']
+	languages['pt'] = ['medicine_pt', 'type_pt']
 	languages['es'] = ['medicine_es', 'type_es']
 
 	if request.LANGUAGE_CODE != 'en':
@@ -102,7 +104,7 @@ def compare(request):
 
 			pharmaceutical_forms[count] = form
 			count += 1
-	
+
 	# make pagination
 	paginator = Paginator(pharmaceutical_forms, settings.ITEMS_PER_PAGE)
 	if request.GET.get('page'):
@@ -111,11 +113,11 @@ def compare(request):
 		except EmptyPage: pagination = paginator.page(paginator.num_pages)
 	else:
 		pagination = paginator.page(1)
-		
+
 	# output all results
 	output['pharmaceutical_forms'] = pagination.object_list
 	output['lists'] = List.objects.filter(id__in=list_of_lists)
 	output['paginator'] = paginator
 	output['pagination'] = pagination
 
-	return render_to_response('list/compare.html', output, context_instance=RequestContext(request))
+	return render(request, 'list/compare.html', output)

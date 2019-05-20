@@ -1,19 +1,20 @@
 from whoosh.qparser import QueryParser
 from whoosh.searching import Results
+
+from medlist import settings
 import whoosh
-import settings
 
 
 def search(query, field="list", limit=None, sortedby='medicine', type=None):
 
-	query = unicode(query)
+	query = str(query)
 
 	ix = whoosh.index.open_dir(settings.WHOOSH_INDEX)
 	searcher = ix.searcher()
 
 	parser = whoosh.qparser.QueryParser(field, ix.schema)
 	myquery = parser.parse(query)
-	
+
 	search = searcher.search(myquery, limit=None, sortedby=sortedby)
 
 	results = []

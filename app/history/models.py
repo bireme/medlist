@@ -1,6 +1,7 @@
+#! coding: utf-8
+from datetime import datetime
 from django.utils.translation import ugettext_lazy as _
 from django.db import models
-from datetime import datetime
 from list.models import *
 
 LANGUAGES_CHOICES = (
@@ -47,7 +48,7 @@ class History(models.Model):
             lang_code = lang_code[0]
 
         translations = HistoryLocal.objects.filter(history=self.id, language=lang_code)
-        
+
         if translations:
             translation = translations[0]
             if attr:
@@ -59,7 +60,7 @@ class History(models.Model):
         if not translations:
             if attr:
                 return getattr(self, attr)
-        
+
         return self.name
 
 
@@ -72,7 +73,7 @@ class HistoryLocal(models.Model):
         verbose_name = _("history translation")
         verbose_name_plural = _("history translations")
 
-    history = models.ForeignKey(History, verbose_name=_("history"), null=True)
+    history = models.ForeignKey(History, verbose_name=_("history"), null=True, on_delete=models.PROTECT)
     language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
     name = models.CharField(_("name"), max_length=255)
     obs = models.TextField(_("observation"), null=True, blank=True)
@@ -81,7 +82,3 @@ class HistoryLocal(models.Model):
 
     def __unicode__(self):
         return unicode(self.language)
-
-    
-
-

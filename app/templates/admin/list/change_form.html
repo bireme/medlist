@@ -4,11 +4,11 @@
 	<script>
 		// to prevent jquery conflicts
 		$ = django.jQuery; jQuery = django.jQuery;
-	
+
 		$(function(){
 		    $("#id_list").change(function(){
 		    	var val = $(this).find('option:selected').val();
-		    	$.getJSON("{% url api.views.get_sections %}/?list="+val, function(json) {
+		    	$.getJSON("{% url 'get_sections' %}/?list="+val, function(json) {
 		    		var options = '<option value="" selected="selected">---------</option>';
 		    		$.each(json, function(k,v){
 		    			var option = "<option value="+k+">";

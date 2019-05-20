@@ -1,27 +1,9 @@
 {% extends "base.html" %}
 {% load i18n %}
+{% load static %}
 
 {% block "title" %}{% trans "Compare Lists" %} | {{block.super}}{% endblock %}
 
-{% block "extrahead" %}
-	<script type="text/javascript" src="{{STATIC_URL}}js/jquery.easing.js"></script>
-    <script type="text/javascript" src="{{STATIC_URL}}js/jquery.collapse.js"></script>    
-
-	<script type="text/javascript">
-		$(function(){
-			$('#collapser').jqcollapse({
-			   slide: true,
-			   speed: 500,
-			   easing: 'easeOutCubic',
-			   expanded: true
-			});
-
-			$('.jqcNode').addClass('minus');
-		});
-	</script>
-
-	<script type="text/javascript" src="{{ STATIC_URL }}/js/compare.js"></script>
-{% endblock %}
 
 {% block "breadcrumb" %}
 	{{ block.super }} /
@@ -29,10 +11,10 @@
 {% endblock %}
 
 {% block "content" %}
-	<form id="lists_filter" action="{% url list.views.compare %}" method="GET" />
+	<form id="lists_filter" action="{% url 'compare' %}" method="GET" />
 		<!-- controllers -->
 		<input type="hidden" id="id_hidden" name="lists" value="{{request.GET.lists}}" />
-		
+
 		{% if request.GET.only_matched == 'true' %}
 			<input type="hidden" id="id_hidden_only_matched" name="only_matched" value="true" />
 		{% else %}
@@ -48,91 +30,88 @@
 		<input type="hidden" id="pagination" name="page" value="1" />
 	</form>
 
-	<div class="list">
-		<div class="blockTitle">{% trans "Compare Lists" %}</div>
-		<div class="spacer"></div>
-		<div id="filters">
-			<div class="blockSubTitle">{% trans "Filters" %}</div>
-			<ul id="collapser">
-				<li>{% trans "lists"|capfirst %}
-					<ul>
-						<li>
-							{% for list in lists_special %}
-								<input type="checkbox" id="list_{{list.id}}" class="list_filter" value="{{list.id}}"/>
-								<label for="list_{{list.id}}" class="rightSide">{{list.abbreviation}}</label>
-							{% endfor %}
-						</li>
-					</ul>
-				</li>
-				<li>{% trans "countries"|capfirst %}
-					<ul>
-						<li>
-							{% for list in lists_country %}
-								<input type="checkbox" id="list_{{list.id}}" class="list_filter" value="{{list.id}}"/>
-								<label for="list_{{list.id}}" class="rightSide">{{list.abbreviation}}</label>
-							{% endfor %}
-						</li>
-					</ul>
-				</li>
-			</ul>
-		</div><!--/filters-->
+	<h1 class="titulo1"><span class="colorText">Comprar</span> Listas</h1>
 
-		<div class="hBlock">
-			<input type="radio" class="matches" name="matches" id="all_results_radio" rel="all_results" /> <label for="all_results_radio" class="rightSide">{% trans "All Results" %}</label>
-			<input type="radio" class="matches" name="matches" rel="only_matched" id="match" /> <label for="match" class="rightSide">{% trans "Only Matched" %}</label>
-			<input type="radio" class="matches" name="matches" rel="only_unmatched" id="unmatch" /> <label for="unmatch" class="rightSide">{% trans "Only Unmatched" %}</label>
-		</div>
-		<div class="spacer"></div>
+	<div class="alert alert-secondary">
+		<h4>{% trans "Filters" %}:</h4>
+        <hr>
+		<b>{% trans "lists"|capfirst %}:</b>
+		{% for list in lists_special %}
+            <div class="form-check form-check-inline">
+			    <input class="form-check-input list_filter" type="checkbox" id="list_{{list.id}}" value="{{list.id}}"/>
+			    <label class="form-check-label" for="list_{{list.id}}">{{list.abbreviation}}</label>
+            </div>
+		{% endfor %}
+        <br>
+		<b>{% trans "countries"|capfirst %}:</b>
+	    {% for list in lists_country %}
+            <div class="form-check form-check-inline">
+			    <input class="form-check-input list_filter" type="checkbox" id="list_{{list.id}}" value="{{list.id}}"/>
+			    <label class="form-check-label" for="list_{{list.id}}">{{list.abbreviation}}</label>
+            </div>
+		{% endfor %}
+	</div>
 
-		{% if pharmaceutical_forms|length > 0 %}
-			{% include "list/pagination.html" %}
-			<table width="100%" cellpadding="0" cellspacing="0" border="0" class="genericTable compareLists">
-				<thead>				
-					<tr>
-						<th class="rowRef">{% trans "Name"|capfirst %}</th>
-						<th class="rowRef">{% trans "Pharmaceutical Form"|capfirst %}</th>
+	<div class="hBlock">
+		<input type="radio" class="matches" name="matches" id="all_results_radio" rel="all_results" /> <label for="all_results_radio" class="rightSide">{% trans "All Results" %}</label>
+		<input type="radio" class="matches" name="matches" rel="only_matched" id="match" /> <label for="match" class="rightSide">{% trans "Only Matched" %}</label>
+		<input type="radio" class="matches" name="matches" rel="only_unmatched" id="unmatch" /> <label for="unmatch" class="rightSide">{% trans "Only Unmatched" %}</label>
+	</div>
+	<div class="spacer"></div>
 
-						{% for list in lists %}	
-							<th>{{ list.abbreviation|capfirst }}</th>
+	{% if pharmaceutical_forms|length > 0 %}
+		{% include "list/pagination.html" %}
+        <div class="table-responsive">
+			<table class="table table-sm table-hover table-striped">
+				<thead>
+				    <tr>
+					    <th>{% trans "Name"|capfirst %}</th>
+					    <th>{% trans "Pharmaceutical Form"|capfirst %}</th>
+						{% for list in lists %}
+							<th class="text-center">{{ list.abbreviation|capfirst }}</th>
 						{% endfor %}
-						
-					</tr>
-				</thead>
-				<tbody>
-					{% for item in pharmaceutical_forms %}
-						<tr>
-							<td class="rowRef">
-								<a href="{% url directory.views.show_medicine item.medicine_id %}#type{{ item.id }}">{{ item.medicine|capfirst }}</a>
-							</td>
-							<td class="rowRef">
-								{{ item.type|capfirst }}<br>
-								{% if item.composition  %}
-									{{ item.composition|capfirst }}
+				    </tr>
+			    </thead>
+			    <tbody>
+				{% for item in pharmaceutical_forms %}
+					<tr>
+						<td class="tbLargura">
+							<a href="{% url 'show_medicine' item.medicine_id %}#type{{ item.id }}">{{ item.medicine|capfirst }}</a>
+						</td>
+						<td class="tbLargura">
+							{{ item.type|capfirst }}<br>
+							{% if item.composition  %}
+								{{ item.composition|capfirst }}
+							{% else %}
+								<i>{% trans "No have composition" %}</i>
+							{% endif %}
+						</td>
+
+						{% for list in lists %}
+							<td class="text-center">
+								{% if list.id in item.list %}
+									<i class="fas fa-check"></i>
 								{% else %}
-									<i>{% trans "No have composition" %}</i>
+									-
 								{% endif %}
 							</td>
+						{% endfor %}
+					</tr>
+				{% endfor %}
+			    </tbody>
+		    </table>
+        </div>
+		{% include "list/pagination.html" %}
 
-							{% for list in lists %}	
-								<td>
-									{% if list.id in item.list %}
-										<span class="checked"><span>x</span></span>
-									{% else %}
-										-
-									{% endif %}
-								</td>
-							{% endfor %}
-						</tr>
-					{% endfor %}
-				</tbody>
-			</table>
-			{% include "list/pagination.html" %}
+	{% else %}
+		<p>
+			<br>
+			{% trans "Sorry, but there's no results for this filter's combination." %}
+		</p>
+	{% endif %}
 
-		{% else %}
-			<p>
-				<br>
-				{% trans "Sorry, but there's no results for this filter's combination." %}
-			</p>
-		{% endif %}
-	</div><!--/list-->
+{% endblock %}
+
+{% block "extrafooter" %}
+	<script type="text/javascript" src="{% static '/js/compare.js' %}"></script>
 {% endblock %}

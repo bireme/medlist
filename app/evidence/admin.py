@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.utils.translation import ugettext_lazy as _
-from index import index_evidence
-from models import *
+
+from evidence.index import index_evidence
+from evidence.models import *
 
 class EvidenceSummaryLocalInline(admin.StackedInline):
     model = EvidenceSummaryLocal
@@ -10,7 +11,7 @@ class EvidenceSummaryLocalInline(admin.StackedInline):
 class EvidenceSummaryAdmin(admin.ModelAdmin):
 
     inlines = (EvidenceSummaryLocalInline, )
-    list_display = ('id', '__unicode__', 'created', 'updated')
+    list_display = ('title', 'created', 'updated')
     search_fields = ('title', 'question', 'context', 'file', 'id')
 
     actions = ['index']

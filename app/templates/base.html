@@ -1,36 +1,48 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 {% load static %}
 {% load i18n %}
-{% get_static_prefix as STATIC_URL %}
-<html>
-	<head>
-		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+	<meta name="autor" content="">
+	<meta name="keywords" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="img/favicon.png" sizes="192x192">
+	<link rel="stylesheet" href="{% static '/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static '/css/iziModal.min.css' %}">
+	<link rel="stylesheet" href="{% static '/css/style.css' %}">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <title>{% block "title" %}{% endblock %}{% trans "Annotated Medicine Lists" %}</title>
 
-		<script type="text/javascript" src="{{ STATIC_URL }}/js/jquery-1.7.1.min.js"></script>
-		<script type="text/javascript" src="{{ STATIC_URL }}/js/functions.js"></script>
-		<link rel="stylesheet" type="text/css" href="{{ STATIC_URL }}/css/styles.css" media="screen" />
+    {% if GOOGLE_ANALYTICS_ID %}
+        <!-- Global Site Tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{GOOGLE_ANALYTICS_ID}}"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
 
-		<title>{% block "title" %}{% endblock %}{% trans "Annotated Medicine Lists" %}</title>
+          gtag('config', '{{GOOGLE_ANALYTICS_ID}}');
+        </script>
+    {% endif %}
 
-		{% block "extrahead" %}{% endblock %}
-	</head>
-	<body>
-        {% include "top.html" %}
-		<div class="container">
-    		<div class="middle">
-    			<div class="breadcrumb">
-    				{% block "breadcrumb" %}
-    					<a href="{{ROOT_URL}}">Home</a> /
-    					<a href="{% url main.views.index %}" title="{% trans "Annotated Medicine Lists" %}">{% trans "Annotated Medicine Lists" %}</a>
-    				{% endblock %}
-    			</div>
-    			<div class="content">
-    				{% block "content" %}{% endblock %}
-    			</div>
-    			{% block "extracontent" %}{% endblock %}
-    		</div>
-       </div>
-	   {% include "footer.html" %}
-	</body>
+    {% block "extrahead" %}{% endblock %}
+</head>
+<body>
+    {% include "top.html" %}
+    <section class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="{{ROOT_URL}}">Home</a></li>
+				<li class="breadcrumb-item active" aria-current="page"><a href="{% url 'home' %}" title="{% trans "Annotated Medicine Lists" %}">{% trans "Annotated Medicine Lists" %}</a></li>
+			</ol>
+		</nav>
+        {% block "content" %}{% endblock %}
+        {% block "extracontent" %}{% endblock %}
+    </section>
+    {% include "footer.html" %}
+    {% block "extrafooter" %}{% endblock %}
+</body>
+
 </html>

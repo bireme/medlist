@@ -1,16 +1,6 @@
-{% extends "base-index.html" %}
+{% extends "base.html" %}
 {% load i18n %}
 {% load app_filters %}
-
-{% block "extrahead" %}
-	<script>
-		$(document).ready(function(){
-			$("#countrylists").change(function(){
-				location.href = $(this).val();
-			});
-		});
-	</script>
-{% endblock %}
 
 {% block "title" %}{% trans "Home" %} | {% endblock %}
 
@@ -21,13 +11,13 @@
 			<div class="icon whoList"></div>
 			<div class="listData">
 				<div class="lTitle">{% trans "WHO Lists" %}</div>
-				<div class="compare"><a href="{% url list.views.compare %}">{% trans "Compare lists"|capfirst %}</a></div>
+				<div class="compare"><a href="{% url 'compare' %}">{% trans "Compare lists"|capfirst %}</a></div>
 			</div>
 			<div class="spacer"></div>
 			<ul>
 				{% for list in who_lists %}
 					{% if list.published %}
-						<li><a href="{% url list.views.show_list list.id %}" title="{{list.name}}">{{ list|translate:request.LANGUAGE_CODE }}</a></li>
+						<li><a href="{% url 'show_list' list.id %}" title="{{list.name}}">{{ list|translate:request.LANGUAGE_CODE }}</a></li>
 					{% endif %}
 				{% endfor %}
 			</ul>
@@ -36,13 +26,13 @@
 			<div class="icon pahoList"></div>
 			<div class="listData">
 				<div class="lTitle">{% trans "PAHO Lists" %}</div>
-				<div class="compare"><a href="{% url list.views.compare %}">{% trans "Compare lists"|capfirst %}</a></div>
+				<div class="compare"><a href="{% url 'compare' %}">{% trans "Compare lists"|capfirst %}</a></div>
 			</div>
 			<div class="spacer"></div>
 			<ul>
 				{% for list in paho_lists %}
 					{% if list.published %}
-						<li><a href="{% url list.views.show_list list.id %}" title="{{list.name}}">{{ list|translate:request.LANGUAGE_CODE }}</a></li>
+						<li><a href="{% url 'show_list' list.id %}" title="{{list.name}}">{{ list|translate:request.LANGUAGE_CODE }}</a></li>
 					{% endif %}
 				{% endfor %}
 			</ul>
@@ -57,7 +47,7 @@
 				<option value="">{% trans "Select Country" %}</option>
 				{% for list in country_lists %}
 					{% if list.published %}
-						<option value="{% url list.views.show_list list.id %}">{{ list|translate:request.LANGUAGE_CODE }}</option>
+						<option value="{% url 'show_list' list.id %}">{{ list|translate:request.LANGUAGE_CODE }}</option>
 					{% endif %}
 				{% endfor %}
 			</select>
@@ -74,4 +64,15 @@
 		</div>
 	</div>
 	<div class="spacer"></div>
+{% endblock %}
+
+
+{% block "extracontent" %}
+	<script>
+		$(document).ready(function(){
+			$("#countrylists").change(function(){
+				location.href = $(this).val();
+			});
+		});
+	</script>
 {% endblock %}

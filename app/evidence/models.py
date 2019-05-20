@@ -1,8 +1,9 @@
 from django.db import models
 from datetime import datetime
 from django.utils.translation import ugettext_lazy as _
-from medlist.directory.models import *
 from django.conf import settings
+
+from directory.models import *
 
 class EvidenceSummary(models.Model):
 
@@ -12,7 +13,7 @@ class EvidenceSummary(models.Model):
 
     def new_filename(instance, filename):
         path = 'evidences_files'
-        
+
         fname, dot, extension = filename.rpartition('.')
         fname = slugify(fname)[:60]
         file = "%s.%s" % (fname, extension)
@@ -41,7 +42,7 @@ class EvidenceSummary(models.Model):
     file = models.FileField(_("File"), upload_to=new_filename, blank=True)
 
     def __unicode__(self):
-        return unicode(self.title)
+        return str(self.title)
 
     def get_translation(self, lang_code):
         translation = EvidenceSummaryLocal.objects.filter(evidence=self.id, language=lang_code)
@@ -52,9 +53,9 @@ class EvidenceSummary(models.Model):
 
     def save(self, *args, **kwargs):
         self.updated = datetime.now()
-        super(EvidenceSummary, self).save(*args, **kwargs) 
+        super(EvidenceSummary, self).save(*args, **kwargs)
 
-class EvidenceSummaryLocal(models.Model):   
+class EvidenceSummaryLocal(models.Model):
 
     class Meta:
         verbose_name = _("Evidence Summary Translate")
@@ -62,14 +63,14 @@ class EvidenceSummaryLocal(models.Model):
 
     def new_filename(instance, filename):
         path = 'evidences_files'
-        
+
         fname, dot, extension = filename.rpartition('.')
         fname = slugify(fname)[:60]
         file = "%s.%s" % (fname, extension)
 
         return os.path.join(path, file)
 
-    evidence = models.ForeignKey(EvidenceSummary)
+    evidence = models.ForeignKey(EvidenceSummary, on_delete=models.PROTECT)
     language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
 
     created = models.DateTimeField(_("Created at"), default=datetime.now(), editable=False)
@@ -94,10 +95,10 @@ class EvidenceSummaryLocal(models.Model):
 
     def save(self, *args, **kwargs):
         self.updated = datetime.now()
-        super(EvidenceSummaryLocal, self).save(*args, **kwargs) 
+        super(EvidenceSummaryLocal, self).save(*args, **kwargs)
 
     def __unicode__(self):
-        return unicode(self.title)
+        return str(self.title)
 
 class MedicineEvidenceSummary(models.Model):
 
@@ -105,8 +106,8 @@ class MedicineEvidenceSummary(models.Model):
         verbose_name = "Evidence Summary in Medicine"
         verbose_name_plural = "Evidence Summaries in Medicine"
 
-    medicine = models.ForeignKey(Medicine)
-    evidence = models.ForeignKey(EvidenceSummary)
+    medicine = models.ForeignKey(Medicine, on_delete=models.PROTECT)
+    evidence = models.ForeignKey(EvidenceSummary, on_delete=models.PROTECT)
 
     def __unicode__(self):
-        return unicode(self.evidence.title)
+        return str(self.evidence.title)

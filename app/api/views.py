@@ -1,7 +1,9 @@
-from medlist.directory.models import *
-from medlist.list.models import *
-from django.shortcuts import get_object_or_404, render_to_response, HttpResponse
 import json
+from django.shortcuts import get_object_or_404, render_to_response, HttpResponse
+
+from directory.models import *
+from list.models import *
+
 
 # dict that has the id-section relation
 id_section = {}
@@ -24,7 +26,7 @@ def get_depth(id, depth_number=0):
 			hierarchy_number = "%s.%s" % (depth_number, count)
 
 		id_section[section.id] = hierarchy_number
-		
+
 		output[section.id] = {'children': get_depth(section.id, hierarchy_number), 'title': section.title, 'hierarchy_number': hierarchy_number}
 		count += 1
 
@@ -42,7 +44,7 @@ def get_hierarchy_relation(request, list):
 
 	obj_sections = Section.objects.filter(list=list)
 	obj_sections = obj_sections.filter(parent=None)
-	
+
 	for section in obj_sections:
 		id_section[section.id] = unicode(count)
 		sections[section.id] = {'children': get_depth(section.id, count), 'title': section.title, 'hierarchy_number': count}
@@ -60,7 +62,7 @@ def iahx(request):
 
 	output = []
 	for med in medicines:
-		
+
 		forms = PharmaceuticalForm.objects.filter(medicine=med.id)
 		med_local = MedicineLocal.objects.filter(medicine=med.id)
 
@@ -95,7 +97,7 @@ def get_pharmaceutical_forms(request):
 				obj = PharmaceuticalForm.objects.get(id=id)
 				output[id]= "%s: %s" % (obj.id, obj.__unicode__())
 			except: pass
-		
+
 		return HttpResponse(json.dumps(output), mimetype="application/json")
 
 	all = PharmaceuticalForm.objects.all()
@@ -103,8 +105,8 @@ def get_pharmaceutical_forms(request):
 		all = all.filter(medicine__name__icontains=request.GET['term'])
 
 	if 'id' in request.GET and request.GET['id'] != "":
-		all = all.filter(id=request.GET['id'])	
-	
+		all = all.filter(id=request.GET['id'])
+
 	output = []
 	for item in all:
 		# output.append({'id': item.id, 'name': item.__unicode__()})
@@ -135,7 +137,7 @@ def index(request):
 
 	count = 1
 	for medicine in Medicine.objects.all():
-		
+
 		solr_index(medicine)
 		count += 1
 
@@ -147,8 +149,5 @@ def index(request):
 
 	t2 = time.time()
 	ellapsed = t2-t1
-	
+
 	return HttpResponse("Ellapsed %fs" % ellapsed, mimetype="text/plain")
-
-
-
