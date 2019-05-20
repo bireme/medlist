@@ -12,20 +12,25 @@
 			<div class="collapse navbar-collapse" id="navbarSupportedContent">
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="index.php">Home</a>
+						<a class="nav-link" href="#">Home</a>
 					</li>
 				</ul>
 				<div class="dropdown-divider"></div>
+                <!--
 				<ul class="navbar-nav navLang">
 					<a class="nav-link" href="#" onclick="change_lang('en')">En</a>
 					<a class="nav-link" href="#" onclick="change_lang('es')">Es</a>
 					<a class="nav-link" href="#" onclick="change_lang('pt-BR')">Pt</a>
 				</ul>
+                -->
 
                 <div class="dropdown-divider"></div>
                 <ul class="navbar-nav navLogin">
-                    <a class="nav-link" href="{% url 'admin:login' %}?next=/close_window">Login</a>
-                    <a class="nav-link" href="{% url 'admin:logout' %}?next=/close_window"> Logout</a>
+                    {% if request.user.is_authenticated %}
+                        <a class="nav-link" href="{% url 'admin:logout' %}?next=/">Logout</a>
+                    {% else %}
+                        <a class="nav-link trigger" href="{% url 'admin:login' %}?next=/close_window">Login</a>
+                    {% endif %}
                 </ul>
 			</div>
 		</div>

@@ -25,6 +25,8 @@ from directory import views as directory_views
 from evidence import views as evidence_views
 from history import views as history_views
 
+admin.site.site_header = 'MEDLIST'
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', main_views.index, name='home'),
