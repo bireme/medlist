@@ -64,16 +64,18 @@
     									{% for list, forms in forms_in_lists.items %}
     										{% if forms.type != 'c' %}
     											{% if form_id in forms.forms %}
-    												<li class="checked"><span>YES</span>
+    												<li>
     													<a href="{% url 'show_list' forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
-    														{{ forms.list|translate:request.LANGUAGE_CODE|slice:"40" }}{% if forms.list|translate:request.LANGUAGE_CODE|length > 40 %}...{% endif %}
+    														{{ forms.list|translate:request.LANGUAGE_CODE }}
     													</a>
+                                                        <span class="badge badge-primary">{% trans "YES" %}</span>
     												</li>
     											{% else %}
-    												<li class="notchecked"><span>NO</span>
+    												<li>
     													<a href="{% url 'show_list' forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
-    														{{ forms.list|translate:request.LANGUAGE_CODE|slice:"40" }}{% if forms.list|translate:request.LANGUAGE_CODE|length > 40 %}...{% endif %}
+    														{{ forms.list|translate:request.LANGUAGE_CODE }}
     													</a>
+                                                        <span class="badge badge-secondary">{% trans "NO" %}</span>
     												</li>
     											{% endif%}
     										{% endif%}
