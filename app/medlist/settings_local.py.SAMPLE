@@ -15,6 +15,5 @@ DATABASES = {
 }
 
 ALLOWED_HOSTS = ['localhost']
-
 SOLR_URL = 'http://localhost/medlist/'
 GOOGLE_ANALYTICS_ID=''
