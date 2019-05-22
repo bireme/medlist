@@ -24,6 +24,7 @@ from list import views as list_views
 from directory import views as directory_views
 from evidence import views as evidence_views
 from history import views as history_views
+from utils import views as utils_views
 
 admin.site.site_header = 'MEDLIST'
 
@@ -43,6 +44,8 @@ urlpatterns = [
 
     re_path(r'^history/(?P<id>\d+)/?$', history_views.save_history, name='save_history'),
     re_path(r'^show_history/(?P<id>\d+)/?$', history_views.show_history, name='show_history'),
+
+    re_path(r'^get_scientific_production/?$', utils_views.get_scientific_production, name='get_scientific_production'),
 
     # internationalization
     re_path(r'^i18n/', include('django.conf.urls.i18n')),
