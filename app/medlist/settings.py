@@ -73,6 +73,8 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                
+                'utils.context_processors.django_settings',
             ],
         },
     },
@@ -119,12 +121,16 @@ STATICFILES_DIRS = ( os.path.join('static'), )
 WHOOSH_INDEX = os.path.join(BASE_DIR, 'index')
 
 # MEDLIST CONFIGURATIONS
-
-ROOT_URL = 'http://prais.paho.org/'
+HOME_URL = ''
 ## pagination of compare lists
 ITEMS_PER_PAGE = 50
 ## cache for list page
 CACHE_TIMEOUT = 0
+
+# for settings_context_processor
+TEMPLATE_VISIBLE_SETTINGS = (
+    'HOME_URL',
+)
 
 try:
     from medlist.settings_local import *

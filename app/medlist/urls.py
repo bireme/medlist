@@ -15,6 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.conf.urls.static import static
+from django.conf.urls.i18n import i18n_patterns
 from django.urls import path, re_path, include
 from medlist import settings
 
@@ -35,15 +36,7 @@ urlpatterns = [
 
     re_path(r'^api/get_sections/?$', api_views.get_sections, name='get_sections'),
 
-    re_path(r'^list/(?P<id>\d+)/?$', list_views.show_list, name='show_list'),
-    re_path(r'^list/compare/?$', list_views.compare, name='compare'),
-
-    re_path(r'^medicine/(?P<id>\d+)/?$', directory_views.show_medicine, name='show_medicine'),
-
-    re_path(r'^evidence/(?P<id>\d+)/?$', evidence_views.show, name='show_evidence'),
-
     re_path(r'^history/(?P<id>\d+)/?$', history_views.save_history, name='save_history'),
-    re_path(r'^show_history/(?P<id>\d+)/?$', history_views.show_history, name='show_history'),
 
     re_path(r'^get_scientific_production/?$', utils_views.get_scientific_production, name='get_scientific_production'),
 
@@ -51,3 +44,21 @@ urlpatterns = [
     re_path(r'^i18n/', include('django.conf.urls.i18n')),
     #re_path(r'^cookie-lang/?$', 'utils.views.cookie_lang'),
 ]
+
+# automatic add language prefix to each url (ex. /list/ -> /es/list/ )
+urlpatterns += i18n_patterns(
+    re_path(r'^list/(?P<id>\d+)/?$', list_views.show_list, name='show_list'),
+    re_path(r'^list/compare/?$', list_views.compare, name='compare'),
+
+    re_path(r'^medicine/(?P<id>\d+)/?$', directory_views.show_medicine, name='show_medicine'),
+
+    re_path(r'^evidence/(?P<id>\d+)/?$', evidence_views.show, name='show_evidence'),
+
+    re_path(r'^show_history/(?P<id>\d+)/?$', history_views.show_history, name='show_history'),
+)
+
+# messages translation
+if 'rosetta' in settings.INSTALLED_APPS:
+    urlpatterns += patterns('',
+        url(r'^rosetta/', include('rosetta.urls')),
+    )

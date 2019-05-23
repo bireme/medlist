@@ -5,7 +5,7 @@ CACHE_TIMEOUT = (60 * 60) * 12
 
 DATABASES = {
     'default': {
-        'ENGINE': 'mysql.connector.django',
+        'ENGINE': 'django.db.backends.mysql',
         'NAME': '',
         'USER': '',
         'PASSWORD': '',
@@ -15,5 +15,6 @@ DATABASES = {
 }
 
 ALLOWED_HOSTS = ['localhost']
+HOME_URL = 'http://localhost/'
 SOLR_URL = 'http://localhost/medlist/'
 GOOGLE_ANALYTICS_ID=''
