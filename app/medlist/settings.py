@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'mptt',
+    'rosetta',
 
     'api',
     'main',
@@ -73,7 +74,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                
+
                 'utils.context_processors.django_settings',
             ],
         },
@@ -110,6 +111,16 @@ TIME_ZONE = 'America/Sao_Paulo'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = False
+
+LANGUAGES = (
+    ('en', u'English'),
+    ('pt', u'Português'),
+    ('es', u'Espanhol'),
+)
+
+LOCALE_PATHS =(
+    os.path.join(BASE_DIR, 'locale'),
+)
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/

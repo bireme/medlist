@@ -18,7 +18,7 @@
 {% block "content" %}
     <h1 class="titulo1">{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}</h1>
 
-    <h4><b><span class="colorText">Formas</span>  Farmacêuticas</b></h4>
+    <h4><b><span class="colorText">{% trans "Pharmaceutical Form" %}</span></b></h4>
     <div class="row">
         <div class="col-12 col-md-3 medPills">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
@@ -185,11 +185,11 @@
 {% block "extracontent" %}
     <section class="sectionCinza2 padding1">
 		<div class="container">
-			<h1 class="titulo1"><span class="colorText">Recursos</span> de Informação: <small><b>{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}</b></small></h1>
+			<h1 class="titulo1"><span class="colorText">{% trans "Information Resources" %}:</span> <small><b>{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}</b></small></h1>
 
 			<ul class="nav nav-tabs" id="myTab" role="tablist">
 				<li class="nav-item">
-					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#resource1" role="tab" aria-controls="home" aria-selected="true">Produção Científica</a>
+					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#resource1" role="tab" aria-controls="home" aria-selected="true">{% trans "Scientific Production" %}</a>
 				</li>
                 <li class="nav-item">
 					<a class="nav-link {% if not evidences %}disabled{% endif %}" id="profile-tab" data-toggle="tab" href="#resource2" role="tab" aria-controls="profile" aria-selected="false">{% trans "Medicine Evidences Summaries" %}</a>
@@ -198,7 +198,7 @@
 			<div class="tab-content font12 containerTab" id="myTabContent">
                 <!-- resource1 -->
 				<div class="tab-pane fade show active" id="resource1" role="tabpanel" aria-labelledby="profile-tab">
-                    Carregando ...
+                    {% trans "Loading" %} ...
 				</div>
 			    <!-- resource2 -->
                 <div class="tab-pane fade" id="resource2" role="tabpanel" aria-labelledby="profile-tab">

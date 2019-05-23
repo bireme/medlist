@@ -59,6 +59,6 @@ urlpatterns += i18n_patterns(
 
 # messages translation
 if 'rosetta' in settings.INSTALLED_APPS:
-    urlpatterns += patterns('',
-        url(r'^rosetta/', include('rosetta.urls')),
+    urlpatterns += (
+        re_path(r'^rosetta/', include('rosetta.urls')),
     )
