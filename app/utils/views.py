@@ -9,7 +9,7 @@ import requests
 @csrf_exempt
 def get_scientific_production(request):
     text_param = request.GET.get('text')
-    service_url = "{0}?adhocSimilarDocs={1}".format(settings.VHL_SIMILAR_SERVICE_URL, text_param)
+    service_url = "http://similardocs.bireme.org/SDService?adhocSimilarDocs={0}".format(text_param)
 
     response = requests.get(service_url)
 
