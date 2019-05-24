@@ -35,7 +35,7 @@
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="{{HOME_URL}}">Home</a></li>
-				<li class="breadcrumb-item"><a href="{% url 'home' %}" title="{% trans "Annotated Medicine Lists" %}">{% trans "Annotated Medicine Lists" %}</a></li>
+				<li class="breadcrumb-item"><a href="{{HOME_URL}}">{% trans "Annotated Medicine Lists" %}</a></li>
                 <li class="breadcrumb-item active" aria-current="page">
                     {% block breadcrumb_last %}{% endblock %}
                 </li>
