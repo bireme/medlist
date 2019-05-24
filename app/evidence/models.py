@@ -30,8 +30,8 @@ class EvidenceSummary(models.Model):
             return True
         return False
 
-    created = models.DateTimeField(_("Created at"), default=datetime.now(), editable=False)
-    updated = models.DateTimeField(_("Updated at"), default=datetime.now(), editable=False)
+    created = models.DateTimeField(_("Created at"), auto_now_add=True, editable=False)
+    updated = models.DateTimeField(_("Updated at"), auto_now=True, editable=False)
 
     language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES, default='en')
     title = models.CharField(_("Title"), max_length=255)
@@ -73,8 +73,8 @@ class EvidenceSummaryLocal(models.Model):
     evidence = models.ForeignKey(EvidenceSummary, on_delete=models.PROTECT)
     language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES)
 
-    created = models.DateTimeField(_("Created at"), default=datetime.now(), editable=False)
-    updated = models.DateTimeField(_("Updated at"), default=datetime.now(), editable=False)
+    created = models.DateTimeField(_("Created at"), auto_now_add=True, editable=False)
+    updated = models.DateTimeField(_("Updated at"), auto_now=True, editable=False)
 
     title = models.CharField(_("Title"), max_length=255)
     description = models.TextField(_("Description"), blank=True, null=True)

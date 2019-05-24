@@ -102,6 +102,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        'LOCATION': '/tmp/django_cache',
+    }
+}
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
@@ -136,7 +143,7 @@ HOME_URL = ''
 ## pagination of compare lists
 ITEMS_PER_PAGE = 50
 ## cache for list page
-CACHE_TIMEOUT = 0
+CACHE_TIMEOUT = (60 * 60) * 12
 
 # for settings_context_processor
 TEMPLATE_VISIBLE_SETTINGS = (

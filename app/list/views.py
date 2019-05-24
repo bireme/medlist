@@ -58,7 +58,7 @@ def show_list(request, id):
 
 	return render(request, 'list/show_list.html', output)
 
-#@cache_page(settings.CACHE_TIMEOUT)
+@cache_page(settings.CACHE_TIMEOUT)
 def compare(request):
 
 	output = {}
