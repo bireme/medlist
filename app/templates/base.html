@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="{% static '/css/iziModal.min.css' %}">
 	<link rel="stylesheet" href="{% static '/css/style.css' %}">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
-    <title>{% block "title" %}{% endblock %}{% trans "Annotated Medicine Lists" %}</title>
+    <title>{% block "title" %}{% endblock %}{% trans "Annotated Medicine and Device Lists" %}</title>
 
     {% if GOOGLE_ANALYTICS_ID %}
         <!-- Global Site Tag (gtag.js) - Google Analytics -->
@@ -35,7 +35,7 @@
 		<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 				<li class="breadcrumb-item"><a href="{{HOME_URL}}">Home</a></li>
-				<li class="breadcrumb-item"><a href="{{HOME_URL}}">{% trans "Annotated Medicine Lists" %}</a></li>
+				<li class="breadcrumb-item"><a href="{{PORTAL_URL}}">{% trans "Annotated Medicine and Device Lists" %}</a></li>
                 <li class="breadcrumb-item active" aria-current="page">
                     {% block breadcrumb_last %}{% endblock %}
                 </li>

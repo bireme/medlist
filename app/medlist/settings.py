@@ -140,6 +140,7 @@ WHOOSH_INDEX = os.path.join(BASE_DIR, 'index')
 
 # MEDLIST CONFIGURATIONS
 HOME_URL = ''
+PORTAL_URL = ''
 ## pagination of compare lists
 ITEMS_PER_PAGE = 50
 ## cache for list page
@@ -148,6 +149,7 @@ CACHE_TIMEOUT = (60 * 60) * 12
 # for settings_context_processor
 TEMPLATE_VISIBLE_SETTINGS = (
     'HOME_URL',
+    'PORTAL_URL',
 )
 
 try:

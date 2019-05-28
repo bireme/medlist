@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-23 16:49-0300\n"
-"PO-Revision-Date: 2019-05-23 16:51-0306\n"
+"POT-Creation-Date: 2019-05-28 16:00-0300\n"
+"PO-Revision-Date: 2019-05-28 16:01-0306\n"
 "Last-Translator: b'  <admin@localhost.com>'\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
 "Language: \n"
@@ -334,8 +334,9 @@ msgid "Django administration"
 msgstr ""
 
 #: templates/base.html:16 templates/base.html:38 templates/top.html:6
-msgid "Annotated Medicine Lists"
-msgstr "Listas Anotadas de Medicamentos"
+#| msgid "Annotated Medicine Lists"
+msgid "Annotated Medicine and Device Lists"
+msgstr "Listas Anotadas de Medicamentos y Dispositivos"
 
 #: templates/directory/show_medicine.html:6
 msgid "Medicine"
