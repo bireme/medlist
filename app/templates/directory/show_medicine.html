@@ -16,163 +16,80 @@
 {% endblock %}
 
 {% block "content" %}
-    <h1 class="titulo1">{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}</h1>
-
-    <h4><b><span class="colorText">{% trans "Pharmaceutical Form" %}</span></b></h4>
+    <h1 class="titulo1 colorText">{{ medicine|translate:request.LANGUAGE_CODE|capfirst }}</h1>
     <div class="row">
         <div class="col-12 col-md-3 medPills">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
                 {% for form_id,form in forms.items %}
 					<a href="#type_{{form.form.id}}" class="nav-link  {% if forloop.first %}active{% endif %}" data-toggle="pill" role="tab" aria-controls="v-pills-messages" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
                         {{ form.form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}
+                        {% if form.form.composition %}
+                            <small class="navSmall">
+                                {% field_lang form.form "composition" request.LANGUAGE_CODE %}
+                            </small>
+                        {% endif %}
                     </a>
 				{% endfor %}
             </div>
         </div>
         <div class="col-12 col-md-9">
-            <div class="tab-content" id="v-pills-tabContent">
-
+            <div class="tab-content" id="tabMedicamentos">
                 {% for form_id,form in forms.items %}
                     <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="type_{{form.form.id}}" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                        {% if form.form_in_lists|length > 0 %}
+    					    <h4><b>{% trans "This medicine is present in" %}:</b></h4>
+                            <div class="table-responsive">
+    							<table class="table table-bordered table-striped table-hover">
+    								<thead>
+    									<tr>
+    										<th>{% trans "List" %}</th>
+    										<th>{% trans "Section" %}</th>
+    										<th>{% trans "Observation" %}</th>
+    									</tr>
+    								</thead>
 
-    					<h5><b>{{ form.form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}</b></h5>
+                                    <tbody class="font12">
+        							{% for sf in form.form_in_lists %}
+                                        <tr>
+                                            <td>
+                                                <a href="{% url 'show_list' id=sf.section.list.id %}">{{ sf.section.list|translate:request.LANGUAGE_CODE|capfirst }}</a>
+                                            </td>
+                                            <td>
+                                                {{ sf.section|translate:request.LANGUAGE_CODE|capfirst }}
+                                            </td>
+                                            <td>
+                                                {% if sf.restriction_age %}
+        											<b>{% trans "age or weight restriction"|capfirst %}:</b>
+        											{% field_lang sf "restriction_age" request.LANGUAGE_CODE %}<br>
+            									{% endif %}
 
-                        <div class="substancia2 col-6">
-                            {% if form.form.atc_code %}
-                                ATC
-                                <strong>{{ form.form.atc_code }}</strong>
-                            {% else %}
-                                ATC
-                                <strong>N/A</strong>
-                            {% endif %}
-                            <hr>
-                            {% if form.form.composition %}
-                                {% trans "Composition" %}
-                                <strong>{% field_lang form.form "composition" request.LANGUAGE_CODE %}</strong>
-                            {% else %}
-                                {% trans "Composition" %}
-                                <strong>N/A</strong>
-                            {% endif %}
+            									{% if sf.only_for_children %}
+        											<b>{% trans "This medicine is only for children."|capfirst %}</b><br>
+            									{% endif %}
+
+            									{% if sf.specialist_care_for_children %}
+    											    <b>{% trans "This medicine requires a children care specialist."|capfirst %}</b><br>
+            									{% endif %}
+
+            									{% if sf.observation %}
+        											<b>{% trans "Others observations"|capfirst %}:</b><br>
+        											{% field_lang sf "observation" request.LANGUAGE_CODE %}<br>
+            									{% endif %}
+
+            									{% if sf.best_evidence %}
+        											<b>{% trans "This medicine has the best evidence for effectiveness and safety."|capfirst %}</b><br>
+            									{% endif %}
+
+            									{% if not sf.restriction_age and not sf.only_for_children and not  sf.specialist_care_for_children and not sf.observation and not sf.best_evidence %}
+                                                    <i>{% trans "No observations" %}</i>
+            									{% endif %}
+                                            </td>
+                                        </tr>
+                                    {% endfor %}
+                                    </tbody>
+                            </table>
                         </div>
 
-    					<div class="highlightBlock">
-    						<div class="listItemBlock">
-    							<div class="listItem lists">
-    								<b>{% trans "Lists" %}</b>
-    								<ul>
-    									<!-- {{form_id}} -->
-    									{% for list, forms in forms_in_lists.items %}
-    										{% if forms.type != 'c' %}
-    											{% if form_id in forms.forms %}
-    												<li>
-    													<a href="{% url 'show_list' forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
-    														{{ forms.list|translate:request.LANGUAGE_CODE }}
-    													</a>
-                                                        <span class="badge badge-primary">{% trans "YES" %}</span>
-    												</li>
-    											{% else %}
-    												<li>
-    													<a href="{% url 'show_list' forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}">
-    														{{ forms.list|translate:request.LANGUAGE_CODE }}
-    													</a>
-                                                        <span class="badge badge-secondary">{% trans "NO" %}</span>
-    												</li>
-    											{% endif%}
-    										{% endif%}
-    									{% endfor %}
-    								</ul>
-    							</div>
-
-    							<div class="listItem countries">
-    								<b>{% trans "Country lists" %}</b>
-    								<script>
-    									$(function(){
-    										var this_class = ".country-{{form.form.id}}";
-    										var message = "{% trans 'No country medicine list has published this medicine' %}";
-    										var countries_content = $(this_class).html();
-
-    										if(countries_content != null) {
-    											countries_content = countries_content.replace(/^\s+|\s+$/g,"");
-    										}
-
-    										if(countries_content == "") {
-    										    $(this_class).html("<i>"+message+".</i>");
-    									    } else {
-    									    	last_link = $(this_class + " .country_link:last-child").html();
-    									    	last_link = last_link.replace(/^\s+|\s+$/g,"").slice(0, -1) + ".";
-    									    	$(this_class + " .country_link:last-child").html(last_link);
-    									   }
-    									});
-    								</script>
-    								<div class="countriesContent country-{{form.form.id}}">
-                                        <ul>
-    									{% for list, forms in forms_in_lists.items %}
-    										{% if forms.type == 'c' %}
-    											{% if form_id in forms.forms %}
-    												<li>
-                                                        <a href="{% url 'show_list' forms.list.id %}" title="{{ forms.list|translate:request.LANGUAGE_CODE }}" class="country_link">
-    													    {{ forms.list }}
-    												    </a>
-                                                    </li>
-    											{% endif %}
-    										{% endif%}
-    									{% endfor %}
-                                        </ul>
-    								</div>
-    							</div>
-    						</div>
-    					</div>
-
-                        <hr>
-						{% if form.form_in_lists|length > 0 %}
-							<h5><b>{% trans "Observations for this pharmaceutical form can be found on the lists:" %}</b></h5>
-                            <br>
-							{% for sf in form.form_in_lists %}
-								<strong>{{ sf.section.list|translate:request.LANGUAGE_CODE|capfirst }}</strong><br>
-								<em>{{ sf.section|translate:request.LANGUAGE_CODE|capfirst }}</em>
-
-								<ul class="listItems">
-									{% if sf.restriction_age %}
-										<li>
-											<b>{% trans "age or weight restriction"|capfirst %}:</b>
-											{% field_lang sf "restriction_age" request.LANGUAGE_CODE %}<br>
-										</li>
-									{% endif %}
-
-									{% if sf.only_for_children %}
-										<li>
-											<b>{% trans "This medicine is only for children."|capfirst %}</b><br>
-										</li>
-									{% endif %}
-
-									{% if sf.specialist_care_for_children %}
-										<li>
-											<b>{% trans "This medicine requires a children care specialist."|capfirst %}</b><br>
-										</li>
-									{% endif %}
-
-									{% if sf.observation %}
-										<li>
-											<b>{% trans "Others observations"|capfirst %}:</b><br>
-											{% field_lang sf "observation" request.LANGUAGE_CODE %}
-											<br>
-										</li>
-									{% endif %}
-
-									{% if sf.best_evidence %}
-										<li>
-											<b>{% trans "This medicine has the best evidence for effectiveness and safety."|capfirst %}</b><br>
-											<br>
-										</li>
-									{% endif %}
-
-									{% if not sf.restriction_age and not sf.only_for_children and not  sf.specialist_care_for_children and not sf.observation and not sf.best_evidence %}
-										<li>
-                                            <i>{% trans "No observations" %}</i>
-                                        </li>
-									{% endif %}
-								</ul>
-							{% endfor %}
 						{% endif %}
     				</div>
     			{% endfor %}

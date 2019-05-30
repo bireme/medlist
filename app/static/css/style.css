@@ -9,11 +9,8 @@
 .cursor{ cursor: pointer; }
 .sectionCinza{background: #eee; margin-top: 50px;}
 .sectionCinza2{background: #eceded; margin-top: 50px;}
-.tituloPrincial{
-	color: #FFF; padding: 10px;
-	background: #2e789e; margin-bottom: 0;
-	font-weight: bold; font-size: 30px;
-}
+.tituloPrincial{background: #2e789e;  padding: 10px; margin-bottom: 10px}
+.tituloPrincial h3{padding: 10px; color: #FFF; font-weight: bold; font-size: 30px; text-align: center;}
 .nav-pills{ background: #eee; }
 .nav-pills>a{ color: #333!important; }
 .nav-pills>a.active{ color: #fff!important; }
@@ -35,6 +32,10 @@
 .navLang{
 	text-align: right;
 }
+#idioma{ text-align: right; position: absolute; top: -10px; right: 0; }
+#idioma a{color: #fff; background: #1b5c7e; padding: 7px; font-size: 12px;}
+#idioma ul{list-style: none;}
+#idioma ul li{display: inline-block; margin-left: 0px; }
 .containerTab{
 	padding:20px; border:1px solid #ddd; border-top: 0;
 	background: #fff;
@@ -71,8 +72,8 @@
 	color: #fff;
 }
 .rt-icon {
-    font-size: 30px; color: #fff;
-    padding-top: 5px;
+	font-size: 30px; color: #fff;
+	padding-top: 5px;
 }
 .breadcrumb{
 	background: #fff;
@@ -81,44 +82,43 @@
 }
 .titulo1{
 	font-family: 'Open sans', sans-serif;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 1.25 !important;
-    margin-bottom: 25px !important;
-    color: #18191a;
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 1.25 !important;
+	margin-bottom: 25px !important;
+	color: #18191a;
 }
 .colorText{color: #FD6800;}
 /*home*/
 #banner{
 	position: relative;
 }
-	#bannerTexto{
-		text-shadow: 2px 2px 2px #000;
-		z-index: 100;
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	}
-	#bannerTexto h1{
-		font-size: 120px; font-weight: bold;
-		color: #fff;
-	}
-	#bannerTexto h3{
-		font-size: 30px; font-weight: bold;
-		color: #fff; margin-top: -20px;
-	}
-
+#bannerTexto{
+	text-shadow: 2px 2px 2px #000;
+	z-index: 100;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#bannerTexto h1{
+	font-size: 120px; font-weight: bold;
+	color: #fff;
+}
+#bannerTexto h3{
+	font-size: 30px; font-weight: bold;
+	color: #fff; margin-top: -20px;
+}
 /*Comprar Listas*/
 .tbLargura{
 	font-size: 12px;
 	max-width: 300px;
 	word-wrap: break-word;
-}/*Medicamentos*/
-.medPills{
+	}/*Medicamentos*/
+	.medPills{
 	/*position: -webkit-sticky;
 	position: sticky;*/
-  	top: 0;
+	top: 0;
 }
 .substancia{
 	width: 350px; max-width: 500px;
@@ -156,25 +156,25 @@
 .tab-content{
 	padding: 20px;
 }
-	.conteudoPainel h6{
-		background: #2e789e; color: #ddd;
-		border-left: 5px solid #FD6800;
-		padding: 10px;
-	}
-	.conteudoPainel ul{
-		list-style: none;
-		padding:0; margin-top: 0; 
-	}
-		.conteudoPainel ul li{
-		 border-bottom:1px solid #ddd; 
-		 padding: 0px 5px; 
-		}
-		.conteudoPainel ul li:nth-child(odd){
-			background: #eee;
-		}
-			.conteudoPainel ul li a{
-				 display: block;
-			}
+.conteudoPainel h6{
+	background: #2e789e; color: #ddd;
+	border-left: 5px solid #FD6800;
+	padding: 10px;
+}
+.conteudoPainel ul{
+	list-style: none;
+	padding:0; margin-top: 0; 
+}
+.conteudoPainel ul li{
+	border-bottom:1px solid #ddd; 
+	padding: 0px 5px; 
+}
+.conteudoPainel ul li:nth-child(odd){
+	background: #eee;
+}
+.conteudoPainel ul li a{
+	display: block;
+}
 .listaN1{
 	padding: 0;
 }
@@ -210,12 +210,12 @@
 	padding: 20px 50px 50px 50px;
 	background-color: #ddd;
 }
-	#homeCount h4{
-		font-size: 20px; font-weight: bold;
-		border-bottom: 1px solid #ccc;
-		padding-bottom: 10px;
-		font-family: 'Roboto', sans-serif;
-	}
+#homeCount h4{
+	font-size: 20px; font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	font-family: 'Roboto', sans-serif;
+}
 .homeCountNumber{
 	font-size: 30px; 
 	font-weight: 700;
@@ -223,47 +223,49 @@
 /*caixas home*/
 .homeBox{
 	background-color: #fff; 
-    padding: 45px 40px 20px;
-    box-shadow: 0 0 3px rgba(0,0,0,.15);
-    box-sizing: border-box;
-    margin-top: -30px; text-align: center;
-    transition: box-shadow 0.5s ease, background 0.5s ease;
-    min-height: 320px;
+	padding: 45px 40px 20px; 
+	box-shadow: 0 0 3px rgba(0,0,0,.15);
+	box-sizing: border-box;
+	margin-top: -30px; text-align: center;
+	transition: box-shadow 0.5s ease, background 0.5s ease;
+	min-height: 320px;
 }
+#listasHome .col-md-3:first-child .homeBox {margin-left: 30px;}
+#listasHome .col-md-3:last-child .homeBox{margin-right: 30px;}
 .homeBox:hover{
 	box-shadow: 0 0 3px rgba(0,0,0,.5);
 	background: #eee;
 }
-	.homeBox img{
-		margin-bottom: 10px;
-	}
-	#search{
-		position: relative;
-		width: 80%; 
-		margin: auto;margin-bottom: 10px;
-		border: 0;
-	}
-	.inputSearch{
-	    width: 100%; margin: 0; padding: 20px;
-	    padding-left: 20px;
-	    border: 0; border-radius: 5px;
-	    font-size: 15px;
-	    background: rgba(255, 255, 255, .8);
-	    transition: background .5s ease;
-	 }
-	 .inputSearch:focus{
-		background: #fff;	
-	 }
-
-	 .submit{
-	    padding: 11px 20px;
-	    background: #2e789e; color: #fff;
-	    border: 0; border-radius: 5px;
-	    position: absolute; top: 8px; right: 10px;
-	 }
-	 .submit:hover{
-	    background: #63a3e8; color: #fff;
-	 }
+.homeBox img{
+	margin-bottom: 10px;
+}
+#search{
+	position: relative;
+	width: 80%; 
+	margin: auto;margin-bottom: 10px;
+	border: 0;
+}
+.inputSearch{
+	width: 100%; margin: 0; padding: 20px;
+	padding-left: 20px;
+	border: 0; border-radius: 5px;
+	font-size: 15px;
+	background: rgba(255, 255, 255, .8);
+	transition: background .5s ease;
+}
+.inputSearch:focus{
+	background: #fff;	
+}
+.submit{
+	padding: 11px 20px;
+	background: #2e789e; color: #fff;
+	border: 0; border-radius: 5px;
+	position: absolute; top: 8px; right: 10px;
+}
+.submit:hover{
+	background: #63a3e8; color: #fff;
+}
+.textBtn{color: #fff;}
 .carousel-caption h4{
 	font-weight: 700;
 	color: #fff; text-shadow: 2px 2px 0 #000;
@@ -296,33 +298,50 @@
 	border-bottom: 2px solid #ddd;
 	border-radius: 0!important;
 }
+.navSmall{color: #999; font-style: italic; display: block; line-height: 16px;}
+.active>.navSmall{color: #fff;}
+#tabMedicamentos {padding: 0!important;}
 /********************* Breakpoint *************/
 @media (max-width: 768px){
+	.homeCountTitle{
+		text-align: center;
+	}
 	.tituloPrincial{font-size: 24px;}
 	.navLang{text-align: center; display:inline-block!important;}
 	.navLang .nav-link{display: inline-block!important; padding-right:10px;}
 	.homeBox{
-	    padding: 35px 30px 10px;
-	    margin-top: 20px;
-	    min-height: auto;
+		padding: 35px 30px 10px;
+		margin-top: 20px;
+		min-height: auto;
 	}
-	#banner{ display: none; }
-	#bannerTexto h1{
-		font-size: 30px;
+	.carousel-caption{
+		right: 5%; left: 5%;
+		padding: 10px; bottom: 10px;
 	}
-	#bannerTexto h3{
+	.carousel-caption h4{
+		font-size: 18px;
+	}
+	.textBtn{display: none;}
+	#search{
+		width: 100%; 
+		margin: auto;
+	}
+	#boxSearch{
+		left:5%; right: 5%;
+		width: 90%;
+	}
+	#idioma{ position: static; display: block; text-align: center; }
+	#idioma ul li{display: inline-block; margin: 0px; }	
+}
+.setaTab{
+	animation: setaTab;
+	display: block;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
 	font-size: 20px;
-	}
-	.setaTab{
-		animation: setaTab;
-		display: block;
-		animation-duration: 1s;
-		animation-iteration-count: infinite;
-		font-size: 20px;
-	}
-	@keyframes setaTab{
-		0% {opacity:.5;}
-		50% {opacity:.1;}
-	 	100% {opacity:.5;}
-	}
+}
+@keyframes setaTab{
+	0% {opacity:.5;}
+	50% {opacity:.1;}
+	100% {opacity:.5;}
 }
