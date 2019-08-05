@@ -7,6 +7,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from django.template import RequestContext
 from django.http import Http404
 from django.core.cache import cache
+from utils.decorators import conditional_cache
 
 from list.models import *
 from list.search import search
@@ -24,7 +25,7 @@ def get_parents(id):
 	else:
 		return output
 
-@cache_page(settings.CACHE_TIMEOUT)
+@conditional_cache(decorator=cache_page(settings.CACHE_TIMEOUT))
 @csrf_protect
 def show_list(request, id):
 
@@ -58,7 +59,7 @@ def show_list(request, id):
 
 	return render(request, 'list/show_list.html', output)
 
-@cache_page(settings.CACHE_TIMEOUT)
+@conditional_cache(decorator=cache_page(settings.CACHE_TIMEOUT))
 def compare(request):
 
 	output = {}
