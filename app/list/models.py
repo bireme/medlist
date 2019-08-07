@@ -172,8 +172,7 @@ class Section(MPTTModel):
         return clean_title.strip()
 
     def __str__(self):
-        output = "%s - %s" % (self.list.abbreviation, self.title)
-        return str(output)
+        return  self.title
 
 
     get_hierarchy.short_description = _("hierarchy")
@@ -206,12 +205,12 @@ class SectionPharmForm(models.Model):
     pharmaceutical_form = models.ForeignKey(PharmaceuticalForm, verbose_name=_("pharmaceutical form"), on_delete=models.PROTECT)
     only_for_children = models.BooleanField(_("only for children"))
     specialist_care_for_children = models.BooleanField(_("specialist care for children"))
-    observation = models.TextField(_("observation"), blank=True, null=True)
-    observation_es = models.TextField(_("observation (Spanish)"), blank=True, null=True)
-    observation_pt = models.TextField(_("observation (Portuguese)"), blank=True, null=True)
-    restriction_age = models.CharField(_("restriction age or weight"), max_length=255, null=True, blank=True)
-    restriction_age_es = models.CharField(_("restriction age or weight (Spanish)"), max_length=255, null=True, blank=True)
-    restriction_age_pt = models.CharField(_("restriction age or weight (Portuguese)"), max_length=255, null=True, blank=True)
+    observation = models.TextField(_("Observations (English)"), blank=True, null=True)
+    observation_es = models.TextField(_("Observations (Spanish)"), blank=True, null=True)
+    observation_pt = models.TextField(_("Observations (Portuguese)"), blank=True, null=True)
+    restriction_age = models.CharField(_("Restriction age or weight (English)"), max_length=255, null=True, blank=True)
+    restriction_age_es = models.CharField(_("Restriction age or weight (Spanish)"), max_length=255, null=True, blank=True)
+    restriction_age_pt = models.CharField(_("Restriction age or weight (Portuguese)"), max_length=255, null=True, blank=True)
     best_evidence = models.BooleanField(_("The best evidence for effectiveness and safety"))
     complementary_list = models.BooleanField(_("complementary list"))
 

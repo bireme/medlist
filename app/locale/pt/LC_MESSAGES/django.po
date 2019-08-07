@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-05-30 11:03-0300\n"
-"PO-Revision-Date: 2019-05-30 11:05-0306\n"
+"POT-Creation-Date: 2019-08-07 14:28-0300\n"
+"PO-Revision-Date: 2019-08-07 14:35-0306\n"
 "Last-Translator: b'  <admin@localhost.com>'\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
 "Language: \n"
@@ -49,24 +49,24 @@ msgid "active"
 msgstr "ativo"
 
 #: directory/models.py:44 directory/models.py:97
-#: templates/list/section.html:40 templates/list/section.html:100
+#: templates/list/section.html:40 templates/list/section.html:112
 msgid "medicine"
 msgstr "medicamento"
 
 #: directory/models.py:45 directory/models.py:88 evidence/models.py:36
 #: evidence/models.py:74 history/models.py:77 list/models.py:86
-#: list/models.py:187
+#: list/models.py:186
 msgid "language"
 msgstr "idioma"
 
 #: directory/models.py:46 directory/models.py:58 directory/models.py:89
 #: history/models.py:31 history/models.py:78 list/models.py:36
-#: list/models.py:87 list/models.py:188
+#: list/models.py:87 list/models.py:187
 msgid "name"
 msgstr "nome"
 
 #: directory/models.py:98 templates/list/section.html:41
-#: templates/list/section.html:101
+#: templates/list/section.html:113
 msgid "pharmaceutical form type"
 msgstr "forma farmacêutica"
 
@@ -75,21 +75,19 @@ msgid "atc code"
 msgstr "código ATC"
 
 #: directory/models.py:100 templates/list/section.html:42
-#: templates/list/section.html:102
+#: templates/list/section.html:114
 msgid "composition"
 msgstr "composição"
 
 #: directory/models.py:101
-#, fuzzy
 #| msgid "composition"
 msgid "composition (Spanish)"
-msgstr "composição"
+msgstr "Composição (Espanhol)"
 
 #: directory/models.py:102
-#, fuzzy
 #| msgid "composition"
 msgid "composition (Portuguese)"
-msgstr "composição"
+msgstr "Composição (Português)"
 
 #: evidence/admin.py:27
 msgid "Unable to index Evidence Summary"
@@ -196,10 +194,9 @@ msgid "year of publication"
 msgstr "ano de publicação"
 
 #: history/models.py:34 list/models.py:39
-#, fuzzy
 #| msgid "section"
 msgid "edition"
-msgstr "seção"
+msgstr "Edição"
 
 #: history/models.py:35 list/models.py:40
 msgid "Type"
@@ -214,8 +211,8 @@ msgid "published"
 msgstr "publicado"
 
 #: history/models.py:38 history/models.py:79 list/models.py:43
-#: list/models.py:88 list/models.py:110 list/models.py:189 list/models.py:209
-#: templates/list/section.html:43 templates/list/section.html:103
+#: list/models.py:88 list/models.py:110 list/models.py:188
+#: templates/list/section.html:43 templates/list/section.html:115
 msgid "observation"
 msgstr "observações"
 
@@ -224,24 +221,23 @@ msgid "history translation"
 msgstr ""
 
 #: history/models.py:74
-#, fuzzy
 #| msgid "Evidence Summary Translations"
 msgid "history translations"
-msgstr "Traduções do Sumário de Evidência"
+msgstr "Traduções de histórico"
 
-#: list/admin.py:61
+#: list/admin.py:74
 msgid "Published or unpublished selected lists"
 msgstr "Publicar ou despublicar as listas selecionadas"
 
-#: list/admin.py:67
+#: list/admin.py:80
 msgid "Created of list archive copy successfully"
 msgstr "Criação do histórico da lista realizada com sucesso"
 
-#: list/admin.py:69
+#: list/admin.py:82
 msgid "Create a archive copy of selected lists"
 msgstr "Cria uma cópia de histórico das listas selecionadas"
 
-#: list/admin.py:87
+#: list/admin.py:117
 msgid "Indexes these pharmaceutical forms"
 msgstr "indexar estas formas farmacêuticas"
 
@@ -253,7 +249,7 @@ msgstr "lista"
 msgid "lists"
 msgstr "listas"
 
-#: list/models.py:101 list/models.py:186 list/models.py:205
+#: list/models.py:101 list/models.py:185 list/models.py:204
 msgid "section"
 msgstr "seção"
 
@@ -269,65 +265,61 @@ msgstr "título"
 msgid "parent section"
 msgstr "seção pai"
 
-#: list/models.py:179
+#: list/models.py:178
 msgid "hierarchy"
 msgstr "hierarquia"
 
-#: list/models.py:181
+#: list/models.py:180
 msgid "list abbreviation"
 msgstr "abreviação"
 
-#: list/models.py:202 list/models.py:206
+#: list/models.py:201 list/models.py:205
 msgid "pharmaceutical form"
 msgstr "forma farmacêutica"
 
-#: list/models.py:203
+#: list/models.py:202
 msgid "pharmaceutical forms"
 msgstr "forma farmacêutica"
 
-#: list/models.py:207
+#: list/models.py:206
 msgid "only for children"
 msgstr "apenas para crianças"
 
-#: list/models.py:208
+#: list/models.py:207
 msgid "specialist care for children"
-msgstr "apenas para crianças"
+msgstr "cuidados especializados para crianças"
+
+#: list/models.py:208
+msgid "Observations (English)"
+msgstr "Observações (Inglês)"
+
+#: list/models.py:209
+msgid "Observations (Spanish)"
+msgstr "Observações (Espanhol)"
 
 #: list/models.py:210
-#, fuzzy
-#| msgid "observation"
-msgid "observation (Spanish)"
-msgstr "observações"
+msgid "Observations (Portuguese)"
+msgstr "Observações (Português)"
 
 #: list/models.py:211
-#, fuzzy
-#| msgid "observation"
-msgid "observation (Portuguese)"
-msgstr "observações"
+msgid "Restriction age or weight (English)"
+msgstr "Restrição de idade ou peso (Inglês)"
 
 #: list/models.py:212
-msgid "restriction age or weight"
-msgstr "restrição de idade ou peso"
+msgid "Restriction age or weight (Spanish)"
+msgstr "Restrição de idade ou peso (Espanhol)"
 
 #: list/models.py:213
-#, fuzzy
-#| msgid "restriction age or weight"
-msgid "restriction age or weight (Spanish)"
-msgstr "restrição de idade ou peso"
+msgid "Restriction age or weight (Portuguese)"
+msgstr "Restrição de idade ou peso (Português)"
 
 #: list/models.py:214
-#, fuzzy
-#| msgid "restriction age or weight"
-msgid "restriction age or weight (Portuguese)"
-msgstr "restrição de idade ou peso"
-
-#: list/models.py:215
 msgid "The best evidence for effectiveness and safety"
 msgstr ""
 "Este medicamento possui a melhor evidência em questões de efetividade e "
 "segurança"
 
-#: list/models.py:216 templates/list/section.html:93
+#: list/models.py:215 templates/list/section.html:105
 msgid "complementary list"
 msgstr "lista complementar"
 
@@ -348,7 +340,6 @@ msgid "medicines"
 msgstr "medicamentos"
 
 #: templates/directory/show_medicine.html:40
-#| msgid "This medicine is only for children."
 msgid "This medicine is present in"
 msgstr "Este medicamento esta presente em"
 
@@ -357,16 +348,14 @@ msgid "List"
 msgstr "Listas"
 
 #: templates/directory/show_medicine.html:46
-#, fuzzy
 #| msgid "section"
 msgid "Section"
-msgstr "seção"
+msgstr "Seção"
 
 #: templates/directory/show_medicine.html:47
-#, fuzzy
 #| msgid "observation"
 msgid "Observation"
-msgstr "observações"
+msgstr "Observação"
 
 #: templates/directory/show_medicine.html:62
 msgid "age or weight restriction"
@@ -409,10 +398,9 @@ msgid "Loading"
 msgstr "Carregando"
 
 #: templates/history/show_history.html:27 templates/list/show_list.html:31
-#, fuzzy
 #| msgid "history"
 msgid "History"
-msgstr "histórico"
+msgstr "Histórico"
 
 #: templates/list/compare.html:5 templates/list/compare.html:10
 msgid "Compare Lists"
@@ -455,6 +443,16 @@ msgid "Sorry, but there's no results for this filter's combination."
 msgstr ""
 "Desculpe, não existe resultado para a combinação de filtros escolhida."
 
+#: templates/list/section.html:93
+#| msgid "medicine"
+msgid "Add medicine"
+msgstr "Adicionar medicamento"
+
+#: templates/list/section.html:158 templates/list/section.html:165
+#| msgid "section"
+msgid "Add section"
+msgstr "Adicionar seção"
+
 #: templates/main/index.html:5
 msgid "Home"
 msgstr "Início"
@@ -462,6 +460,9 @@ msgstr "Início"
 #: templates/main/index.html:9
 msgid "Compare lists"
 msgstr "comparar listas"
+
+#~ msgid "restriction age or weight"
+#~ msgstr "restrição de idade ou peso"
 
 #~ msgid "Composition"
 #~ msgstr "Composição"

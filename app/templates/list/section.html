@@ -76,15 +76,27 @@
            	                                                </td>
                                                             {% if user.is_superuser %}
                                                                 <td>
-                                                                    <a href="{% url 'admin:directory_pharmaceuticalform_change' form.pk %}" class="trigger"><i class="far fa-edit"></i></a>
+                                                                    <a href="{% url 'admin:list_sectionpharmform_change' section_form.pk %}" class="trigger"><i class="far fa-edit"></i></a>
                                                                 </td>
                                                             {% endif %}
            												</tr>
            											{% endwith %}
            										{% endif %}
+
            									{% endfor %}
+
            								{% endif %}
+
+                                        {% if forloop.last %}
+                                            <tr>
+                                                <td colspan="5">
+                                                    <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_sectionpharmform_add' %}?section_id={{node.id}}" role="button">{% trans "Add medicine" %}</a>
+                                                </td>
+                                            </tr>
+                                        {% endif %}
+
            							{% endfor %}
+
                                     </tbody>
            						</table>
                    			</div>
@@ -126,7 +138,7 @@
            															{% endif %}
            														</td>
            		                                                <td>
-           		                                                    {% if  section_form.restriction_age %}<a href="#" class="observation obs_a"> a </a>{% endif %}
+           		                                                    {% if section_form.restriction_age %}<a href="#" class="observation obs_a"> a </a>{% endif %}
            		                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation obs_c1"> c1 </a>{% endif %}
            		                                                    {% if section_form.only_for_children %}<a href="#" class="observation obs_c2"> c2 </a>{% endif %}
            		                                                    {% if section_form.best_evidence %}<a href="#" class="observation obs_e"> e </a>{% endif %}
@@ -141,12 +153,20 @@
            						</table>
            	        		</div>
                    		{% endif %}
-
                    	</ul>
+                    <div>
+                        <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_section_add' %}?list_id={{list.id}}&parent_id={{node.id}}" role="button">{% trans "Add section" %}</a>
+                    </div>
                    {% endif %}
-               {% if not node.is_child_node %}
-                  </div>
-               {% endif %}
+
+                   {% if not node.is_child_node  %}
+                           {% if not node.is_leaf_node %}
+                           <div>
+                               <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_section_add' %}?list_id={{list.id}}&parent_id={{node.id}}" role="button">{% trans "Add section" %}</a>
+                           </div>
+                           {% endif %}
+                      </div>
+                   {% endif %}
            {% endrecursetree %}
        </div>
     </div>
@@ -156,6 +176,11 @@
                 <a class="nav-link navLinkList" id="medicines_{{node.tree_id}}" data-toggle="pill" href="#m_{{node.tree_id}}" role="tab">{{ node|translate:request.LANGUAGE_CODE }}</a>
             {% endrecursetree %}
         </div>
+
+        <div>
+            <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_section_add' %}?list_id={{list.id}}" role="button">{% trans "Add section" %}</a>
+        </div>
+
     </div>
 </div>
 

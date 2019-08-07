@@ -32,7 +32,26 @@ class SectionAdmin(admin.ModelAdmin):
 
     fields = ('title', 'list', 'parent', 'observation')
 
+
+    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+        if db_field.name == 'list':
+            list_id = request.GET.get('list_id')
+            kwargs['initial'] = list_id
+            return db_field.formfield(**kwargs)
+        elif db_field.name == 'parent':
+            parent_id = request.GET.get('parent_id')
+            kwargs['initial'] = parent_id
+            return db_field.formfield(**kwargs)
+
+        return super(SectionAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
+
+    def response_add(self, request, obj):
+        return redirect('/close_window')
+
     def response_change(self, request, obj):
+        return redirect('/close_window')
+
+    def response_delete(self, request, obj_display, obj_id):
         return redirect('/close_window')
 
 
@@ -72,12 +91,29 @@ class SectionPharmFormAdmin(admin.ModelAdmin):
     list_display = ('__str__', 'section')
     list_filter = ('best_evidence', 'only_for_children', 'specialist_care_for_children',)
     search_fields = ('id', 'pharmaceutical_form__medicine__name', 'pharmaceutical_form__composition')
-    raw_id_fields = ('section', 'pharmaceutical_form')
+    #raw_id_fields = ('section', 'pharmaceutical_form')
+    autocomplete_fields = ('section', 'pharmaceutical_form')
 
     actions = ['index', ]
 
+    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+        print(db_field.name)
+        if db_field.name == 'section':
+            section_id = request.GET.get('section_id')
+            kwargs['initial'] = section_id
+            return db_field.formfield(**kwargs)
+
+        return super(SectionPharmFormAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
+
+    def response_add(self, request, obj):
+        return redirect('/close_window')
+
     def response_change(self, request, obj):
         return redirect('/close_window')
+
+    def response_delete(self, request, obj_display, obj_id):
+        return redirect('/close_window')
+
 
     # adding option to activate or not a register
     def index(modeladmin, request, queryset):
