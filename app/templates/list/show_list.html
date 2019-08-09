@@ -50,6 +50,83 @@
 
     <div id="modal-alert">
     </div>
+
+    <div id="modal-obs-a" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog  modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">{% trans "Observation" %} (a)</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>Indicates that there is an age or weight restriction on use of the medicine.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">{% trans "Close" %}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="modal-obs-c1" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">{% trans "Observation" %} (c1)</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>It signifies that the medicine(s) require(s) specialist diagnostic or monitoring facilities, and/or specialist medical care, and/or specialist training for their use in children.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">{% trans "Close" %}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="modal-obs-c2" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">{% trans "Observation" %} (c2)</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>It signifies that there is a specific indication for restricting its use to children.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">{% trans "Close" %}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+    <div id="modal-obs-e" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog modal-xl modal-dialog-centered" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">{% trans "Observation" %} (e)</h5>
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">&times;</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p>It is primarily intended to indicate similar clinical performance within a pharmacological class. The listed medicine should be the example of the class for which there is the best evidence for effectiveness and safety. In some cases, this may be the first medicine that is licensed for marketing; in other instances, subsequently licensed compounds may be safer or more effective. Where there is no difference in terms of efficacy and safety data, the listed medicine should be the one that is generally available at the lowest price, based on international drug price information sources. Not all square boxes are applicable to medicine selection for children — see the second EMLc for details. Therapeutic equivalence is only indicated on the basis of reviews of efficacy and safety and when consistent with WHO clinical guidelines. National lists should not use a similar symbol and should be specific in their final selection, which would depend on local availability and price. </p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-primary" data-dismiss="modal">{% trans "Close" %}</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
 {% endblock %}
 
 {% block "extrafooter" %}

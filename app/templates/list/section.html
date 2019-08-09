@@ -69,10 +69,10 @@
            														{% endif %}
            													</td>
            	                                                <td>
-           	                                                    {% if section_form.restriction_age %}<a href="#" class="observation obs_a"> a </a>{% endif %}
-           	                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation obs_c1"> c1 </a>{% endif %}
-           	                                                    {% if section_form.only_for_children %}<a href="#" class="observation obs_c2"> c2 </a>{% endif %}
-           	                                                    {% if section_form.best_evidence %}<a href="#" class="observation obs_e"> e </a>{% endif %}
+           	                                                    {% if section_form.restriction_age %}<a href="" data-toggle="modal" data-target="#modal-obs-a"> a </a>{% endif %}
+           	                                                    {% if section_form.specialist_care_for_children %}<a href="" data-toggle="modal" data-target="#modal-obs-c1"> c1 </a>{% endif %}
+           	                                                    {% if section_form.only_for_children %}<a href="" data-toggle="modal" data-target="#modal-obs-c2"> c2 </a>{% endif %}
+           	                                                    {% if section_form.best_evidence %}<a href="" data-toggle="modal" data-target="#modal-obs-e"> e </a>{% endif %}
            	                                                </td>
                                                             {% if user.is_superuser %}
                                                                 <td>
@@ -138,10 +138,10 @@
            															{% endif %}
            														</td>
            		                                                <td>
-           		                                                    {% if section_form.restriction_age %}<a href="#" class="observation obs_a"> a </a>{% endif %}
-           		                                                    {% if section_form.specialist_care_for_children %}<a href="#" class="observation obs_c1"> c1 </a>{% endif %}
-           		                                                    {% if section_form.only_for_children %}<a href="#" class="observation obs_c2"> c2 </a>{% endif %}
-           		                                                    {% if section_form.best_evidence %}<a href="#" class="observation obs_e"> e </a>{% endif %}
+           		                                                    {% if section_form.restriction_age %}<a href="" data-toggle="modal" data-target="#modal-obs-a"> a </a>{% endif %}
+           		                                                    {% if section_form.specialist_care_for_children %}<a href="" data-toggle="modal" data-target="#modal-obs-c1"> c1 </a>{% endif %}
+           		                                                    {% if section_form.only_for_children %}<a href="" data-toggle="modal" data-target="#modal-obs-c2"> c2 </a>{% endif %}
+           		                                                    {% if section_form.best_evidence %}<a href="" data-toggle="modal" data-target="#modal-obs-e"> e </a>{% endif %}
            		                                                </td>
            													</tr>
            												{% endwith %}
