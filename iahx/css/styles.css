@@ -1,7 +1,8 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+}
 BODY {
-	font-family: tahoma;
 	color: #555;
-
 }
 BODY, TABLE, TD, TH {
 	font-size: 8.5pt;
@@ -13,38 +14,6 @@ a{
 	margin: 0 auto;
     width: 980px;
 	}
-/*
-DIV.top {
-}
-DIV.identification H2 {
-	font-weight: normal;
-	font-size: 100%;
-	text-transform: lowercase;
-}
-DIV.identification H1 {
-	font-size: 140%;
-	color: #22268E;
-}
-DIV.otherVersions A {
-	color: #ffffff;
-	text-decoration: none;
-}
-DIV.otherVersions A IMG {
-	border: 1px solid #7d7b6b;
-	filter: Alpha(Opacity=20);
-	opacity: 0.2;
-}
-DIV.otherVersions A.selected {
-	color: #81c4f4;
-	  font-weight: bold;
-}
-DIV.otherVersions A.selected IMG, DIV.otherVersions A:hover IMG {
-	border: 1px solid #e1ddbb;
-	filter: Alpha(Opacity=100);
-	opacity: 1;
-}
-*/
-
 
 /********** MEDLIST BRANDING CLASSES **********/
 .top A {
@@ -89,7 +58,7 @@ DIV.otherVersions A.selected IMG, DIV.otherVersions A:hover IMG {
 .loginBox .submit {
 	background: url(../image/common/ml/bt-ok.png) no-repeat;
 	width: 29px;
-	height: 26px;	
+	height: 26px;
 }
 .loginBox .submit:hover {
 	background-position: -29px;
@@ -674,8 +643,8 @@ DIV.record DIV.data DIV.abstractFulltextList LI{
 	color: #cecece;
 	border: none;
 	margin-bottom: -1px;
-	
-	
+
+
 }
 #megaBox ul.menu li.active a {
 	border: 1px solid #A7A6A6;
@@ -773,51 +742,45 @@ DIV.record DIV.data DIV.abstractFulltextList LI{
 	margin-top: 16px;
 }
 #stelaLogo {
-	
+
 }
 
-
-.header{
-    left: 0px;
-    top: 0px;
-    width: 1280px;
-    height: 76px;
-    background-color: rgb(234, 234, 234);
-    border-top: 6px solid rgb(68, 68, 68);
+.tituloPrincial h3 {
+    padding: 10px;
+    color: #FFF;
+    font-weight: bold;
+    font-size: 30px;
 }
-.header .logo{
+
+.tituloPrincial {
+    background: #2e789e;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.text-center {
+    text-align: center !important;
+}
+
+#idioma {
+    text-align: right;
     position: absolute;
-    left: 20px;
-    top: 15px;
-    width: 455px;
-    height: 46px;
+    right: 0;
+}
+#idioma a {
+    color: #fff;
+    background: #1b5c7e;
+    padding: 7px;
+    font-size: 12px;
+    text-decoration: none;
 }
 
-.header .title{
-    position: absolute;
-    left: 510px;
-    top: 25px;
-    height: 46px;
-    font-size: 200%;
-    color: rgb(255, 102, 0);
+#idioma ul li {
+    display: inline-block;
+    margin-left: 0px;
 }
-.header .language{
-    position: absolute;
-    right: 30px;
-    top: 15px;
-    width: 100px;
+hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0,0,0,.1);
 }
-.header .language ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    width: 100px;
-}
-.header .language ul li{
-    display: block;
-    margin-top: 7px;
-}
-.header a{
-	text-decoration: none;
-}
-

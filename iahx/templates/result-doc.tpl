@@ -16,7 +16,7 @@
 
         {if $doc->type == 'medicine' or $doc->type == ''}
             <h3>
-                <a href="{$config->medlist_url}medicine/{$doc->id}/">
+                <a href="{$config->medlist_url}{$lang}/medicine/{$doc->id}/">
                     {extractdata element=$doc->name part=$lang default="en"}
                 </a>
             </h3>
@@ -51,7 +51,7 @@
             {/if}
     {else}
         <h3>
-            <a href="{$config->medlist_url}evidence/{$doc->id|substr:12}">
+            <a href="{$config->medlist_url}{$lang}/evidence/{$doc->id|substr:12}">
                 {$doc->title}
             </a>
         </h3>
@@ -68,7 +68,7 @@
             {occ label=$texts.LABEL_LANGUAGE element=$doc->language translation=$texts suffix=LANG_}
         </div>
         <div>
-            <a href="{$config->medlist_url}evidence/{$doc->id|substr:12}">{$texts.LABEL_VIEW_DETAILS}</a>
+            <a href="{$config->medlist_url}{$lang}/evidence/{$doc->id|substr:12}">{$texts.LABEL_VIEW_DETAILS}</a>
         </div>
 
         <div class="in_lists">
