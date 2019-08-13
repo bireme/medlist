@@ -10,7 +10,7 @@
                     <div class="tab-pane fade tabStatic" id="m_{{node.tree_id}}" role="tabpanel" >
                 {% endif %}
                    {{ node|translate:request.LANGUAGE_CODE }}
-                   {% if user.is_superuser %}
+                   {% if user.is_authenticated %}
                         <a href="{% url 'admin:list_section_change' node.pk %}" class="trigger"><i class="far fa-edit"></i></a>
                    {% endif %}
                    {% if not node.is_leaf_node %}
@@ -87,7 +87,7 @@
 
            								{% endif %}
 
-                                        {% if forloop.last %}
+                                        {% if forloop.last and user.is_authenticated %}
                                             <tr>
                                                 <td colspan="5">
                                                     <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_sectionpharmform_add' %}?section_id={{node.id}}" role="button">{% trans "Add medicine" %}</a>
@@ -154,16 +154,18 @@
            	        		</div>
                    		{% endif %}
                    	</ul>
-                    <div>
-                        <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_section_add' %}?list_id={{list.id}}&parent_id={{node.id}}" role="button">{% trans "Add section" %}</a>
-                    </div>
+                        {% if user.is_authenticated %}
+                            <div>
+                                <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_section_add' %}?list_id={{list.id}}&parent_id={{node.id}}" role="button">{% trans "Add section" %}</a>
+                            </div>
+                        {% endif %}
                    {% endif %}
 
                    {% if not node.is_child_node  %}
-                           {% if not node.is_leaf_node %}
-                           <div>
-                               <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_section_add' %}?list_id={{list.id}}&parent_id={{node.id}}" role="button">{% trans "Add section" %}</a>
-                           </div>
+                           {% if not node.is_leaf_node and user.is_authenticated %}
+                               <div>
+                                   <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_section_add' %}?list_id={{list.id}}&parent_id={{node.id}}" role="button">{% trans "Add section" %}</a>
+                               </div>
                            {% endif %}
                       </div>
                    {% endif %}
@@ -176,11 +178,11 @@
                 <a class="nav-link navLinkList" id="medicines_{{node.tree_id}}" data-toggle="pill" href="#m_{{node.tree_id}}" role="tab">{{ node|translate:request.LANGUAGE_CODE }}</a>
             {% endrecursetree %}
         </div>
-
-        <div>
-            <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_section_add' %}?list_id={{list.id}}" role="button">{% trans "Add section" %}</a>
-        </div>
-
+        {% if user.is_authenticated %}
+            <div>
+                <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_section_add' %}?list_id={{list.id}}" role="button">{% trans "Add section" %}</a>
+            </div>
+        {% endif %}
     </div>
 </div>
 
