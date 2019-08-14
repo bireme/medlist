@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-07 14:28-0300\n"
-"PO-Revision-Date: 2019-08-07 14:35-0306\n"
+"POT-Creation-Date: 2019-08-14 15:28-0300\n"
+"PO-Revision-Date: 2019-08-14 15:31-0306\n"
 "Last-Translator: b'  <admin@localhost.com>'\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
 "Language: \n"
@@ -80,12 +80,10 @@ msgid "composition"
 msgstr "composição"
 
 #: directory/models.py:101
-#| msgid "composition"
 msgid "composition (Spanish)"
 msgstr "Composição (Espanhol)"
 
 #: directory/models.py:102
-#| msgid "composition"
 msgid "composition (Portuguese)"
 msgstr "Composição (Português)"
 
@@ -194,7 +192,6 @@ msgid "year of publication"
 msgstr "ano de publicação"
 
 #: history/models.py:34 list/models.py:39
-#| msgid "section"
 msgid "edition"
 msgstr "Edição"
 
@@ -221,23 +218,22 @@ msgid "history translation"
 msgstr ""
 
 #: history/models.py:74
-#| msgid "Evidence Summary Translations"
 msgid "history translations"
 msgstr "Traduções de histórico"
 
-#: list/admin.py:74
+#: list/admin.py:80
 msgid "Published or unpublished selected lists"
 msgstr "Publicar ou despublicar as listas selecionadas"
 
-#: list/admin.py:80
+#: list/admin.py:86
 msgid "Created of list archive copy successfully"
 msgstr "Criação do histórico da lista realizada com sucesso"
 
-#: list/admin.py:82
+#: list/admin.py:88
 msgid "Create a archive copy of selected lists"
 msgstr "Cria uma cópia de histórico das listas selecionadas"
 
-#: list/admin.py:117
+#: list/admin.py:123
 msgid "Indexes these pharmaceutical forms"
 msgstr "indexar estas formas farmacêuticas"
 
@@ -348,12 +344,12 @@ msgid "List"
 msgstr "Listas"
 
 #: templates/directory/show_medicine.html:46
-#| msgid "section"
 msgid "Section"
 msgstr "Seção"
 
-#: templates/directory/show_medicine.html:47
-#| msgid "observation"
+#: templates/directory/show_medicine.html:47 templates/list/show_list.html:58
+#: templates/list/show_list.html:77 templates/list/show_list.html:96
+#: templates/list/show_list.html:115
 msgid "Observation"
 msgstr "Observação"
 
@@ -393,12 +389,16 @@ msgstr "Produção Científica"
 msgid "Medicine Evidences Summaries"
 msgstr "Sumários de Evidência"
 
-#: templates/directory/show_medicine.html:118
+#: templates/directory/show_medicine.html:115
+msgid "Marketed Drugs"
+msgstr "Medicamentos Comercializados"
+
+#: templates/directory/show_medicine.html:123
+#: templates/directory/show_medicine.html:141
 msgid "Loading"
 msgstr "Carregando"
 
 #: templates/history/show_history.html:27 templates/list/show_list.html:31
-#| msgid "history"
 msgid "History"
 msgstr "Histórico"
 
@@ -444,14 +444,18 @@ msgstr ""
 "Desculpe, não existe resultado para a combinação de filtros escolhida."
 
 #: templates/list/section.html:93
-#| msgid "medicine"
 msgid "Add medicine"
 msgstr "Adicionar medicamento"
 
-#: templates/list/section.html:158 templates/list/section.html:165
-#| msgid "section"
+#: templates/list/section.html:159 templates/list/section.html:167
+#: templates/list/section.html:183
 msgid "Add section"
 msgstr "Adicionar seção"
+
+#: templates/list/show_list.html:67 templates/list/show_list.html:86
+#: templates/list/show_list.html:105 templates/list/show_list.html:124
+msgid "Close"
+msgstr "Fechar"
 
 #: templates/main/index.html:5
 msgid "Home"
@@ -460,6 +464,18 @@ msgstr "Início"
 #: templates/main/index.html:9
 msgid "Compare lists"
 msgstr "comparar listas"
+
+#: templates/utils/rxnorm_data.html:6
+msgid "Branded Drug or Pack"
+msgstr "Medicamento de Marca ou Pacote"
+
+#: templates/utils/rxnorm_data.html:8
+msgid "Clinical Drug or Pack"
+msgstr "Droga Clínica ou Pacote"
+
+#: templates/utils/rxnorm_data.html:20
+msgid "No information available"
+msgstr "Nenhuma informação disponível"
 
 #~ msgid "restriction age or weight"
 #~ msgstr "restrição de idade ou peso"

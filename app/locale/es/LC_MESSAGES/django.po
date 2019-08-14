@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-07 14:28-0300\n"
-"PO-Revision-Date: 2019-08-07 14:33-0306\n"
+"POT-Creation-Date: 2019-08-14 15:28-0300\n"
+"PO-Revision-Date: 2019-08-14 15:33-0306\n"
 "Last-Translator: b'  <admin@localhost.com>'\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
 "Language: \n"
@@ -79,12 +79,10 @@ msgid "composition"
 msgstr "composición"
 
 #: directory/models.py:101
-#| msgid "composition"
 msgid "composition (Spanish)"
 msgstr "Composición (Español)"
 
 #: directory/models.py:102
-#| msgid "composition"
 msgid "composition (Portuguese)"
 msgstr "Composición (Portugués)"
 
@@ -193,7 +191,6 @@ msgid "year of publication"
 msgstr "año de publicación"
 
 #: history/models.py:34 list/models.py:39
-#| msgid "section"
 msgid "edition"
 msgstr "Edición"
 
@@ -223,19 +220,19 @@ msgstr ""
 msgid "history translations"
 msgstr ""
 
-#: list/admin.py:74
+#: list/admin.py:80
 msgid "Published or unpublished selected lists"
 msgstr "Publicar o despublicar las listas seleccionadas"
 
-#: list/admin.py:80
+#: list/admin.py:86
 msgid "Created of list archive copy successfully"
 msgstr "Archivo de la lista creado  con éxito"
 
-#: list/admin.py:82
+#: list/admin.py:88
 msgid "Create a archive copy of selected lists"
 msgstr "Crear una copia de archivo de las listas de seleccionados"
 
-#: list/admin.py:117
+#: list/admin.py:123
 msgid "Indexes these pharmaceutical forms"
 msgstr "Indizar estas formas farmacéuticas"
 
@@ -288,32 +285,26 @@ msgid "specialist care for children"
 msgstr "especialista en el cuidado de los niños"
 
 #: list/models.py:208
-#| msgid "observation"
 msgid "Observations (English)"
 msgstr "Observaciones (Inglés)"
 
 #: list/models.py:209
-#| msgid "observation"
 msgid "Observations (Spanish)"
 msgstr "Observaciones (Español)"
 
 #: list/models.py:210
-#| msgid "observation"
 msgid "Observations (Portuguese)"
 msgstr "Observaciones (Portugués)"
 
 #: list/models.py:211
-#| msgid "restriction age or weight"
 msgid "Restriction age or weight (English)"
 msgstr "Restricción de la edad o el peso (Inglés)"
 
 #: list/models.py:212
-#| msgid "restriction age or weight"
 msgid "Restriction age or weight (Spanish)"
 msgstr "Restricción de la edad o el peso (Español)"
 
 #: list/models.py:213
-#| msgid "restriction age or weight"
 msgid "Restriction age or weight (Portuguese)"
 msgstr "Restricción de la edad o el peso (Portugués)"
 
@@ -350,12 +341,12 @@ msgid "List"
 msgstr "Lista"
 
 #: templates/directory/show_medicine.html:46
-#| msgid "section"
 msgid "Section"
 msgstr "Sección"
 
-#: templates/directory/show_medicine.html:47
-#| msgid "observation"
+#: templates/directory/show_medicine.html:47 templates/list/show_list.html:58
+#: templates/list/show_list.html:77 templates/list/show_list.html:96
+#: templates/list/show_list.html:115
 msgid "Observation"
 msgstr "Observación"
 
@@ -397,12 +388,16 @@ msgstr "Produccion Cientifica"
 msgid "Medicine Evidences Summaries"
 msgstr "Sumarios de Evidencia"
 
-#: templates/directory/show_medicine.html:118
+#: templates/directory/show_medicine.html:115
+msgid "Marketed Drugs"
+msgstr "Medicamentos Comercializadas"
+
+#: templates/directory/show_medicine.html:123
+#: templates/directory/show_medicine.html:141
 msgid "Loading"
 msgstr "Cargando"
 
 #: templates/history/show_history.html:27 templates/list/show_list.html:31
-#| msgid "history"
 msgid "History"
 msgstr "Histórico"
 
@@ -447,14 +442,18 @@ msgid "Sorry, but there's no results for this filter's combination."
 msgstr "No hay resultados para esta combinación de filtro."
 
 #: templates/list/section.html:93
-#| msgid "medicine"
 msgid "Add medicine"
 msgstr "Añadir medicamento"
 
-#: templates/list/section.html:158 templates/list/section.html:165
-#| msgid "section"
+#: templates/list/section.html:159 templates/list/section.html:167
+#: templates/list/section.html:183
 msgid "Add section"
 msgstr "Añadir sección"
+
+#: templates/list/show_list.html:67 templates/list/show_list.html:86
+#: templates/list/show_list.html:105 templates/list/show_list.html:124
+msgid "Close"
+msgstr "Cerrar"
 
 #: templates/main/index.html:5
 msgid "Home"
@@ -463,6 +462,18 @@ msgstr "Início"
 #: templates/main/index.html:9
 msgid "Compare lists"
 msgstr "Compare las listas"
+
+#: templates/utils/rxnorm_data.html:6
+msgid "Branded Drug or Pack"
+msgstr "Medicamento de Marca ou Paquete"
+
+#: templates/utils/rxnorm_data.html:8
+msgid "Clinical Drug or Pack"
+msgstr "Medicamento Clínico ou Pacote"
+
+#: templates/utils/rxnorm_data.html:20
+msgid "No information available"
+msgstr "No hay información disponible"
 
 #~ msgid "restriction age or weight"
 #~ msgstr "restricción de la edad o el peso"

@@ -1,0 +1,21 @@
+{% load i18n %}
+
+{% if term_list %}
+    {% for key, value_list in term_list.items %}
+        {% if key == 'SBD' %}
+            <b>{% trans "Branded Drug or Pack" %}</b>
+        {% elif key == 'SCD' %}
+            <b>{% trans "Clinical Drug or Pack" %}</b>
+        {% endif %}
+        <br/>
+
+        {% for value in value_list %}
+            <a href="https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm={{value.id}}" target="_blank">
+                {{value.name}}
+            </a>
+            <hr>
+        {% endfor %}
+    {% endfor %}
+{% else %}
+    {% trans "No information available" %}
+{% endif %}

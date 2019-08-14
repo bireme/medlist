@@ -40,6 +40,8 @@ urlpatterns = [
 
     re_path(r'^get_scientific_production/?$', utils_views.get_scientific_production, name='get_scientific_production'),
 
+    re_path(r'^get_rxnorm_data/?$', utils_views.get_rxnorm_data, name='get_rxnorm_data'),
+
     # internationalization
     re_path(r'^i18n/', include('django.conf.urls.i18n')),
     #re_path(r'^cookie-lang/?$', 'utils.views.cookie_lang'),

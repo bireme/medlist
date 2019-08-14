@@ -111,7 +111,11 @@
                 <li class="nav-item">
 					<a class="nav-link {% if not evidences %}disabled{% endif %}" id="profile-tab" data-toggle="tab" href="#resource2" role="tab" aria-controls="profile" aria-selected="false">{% trans "Medicine Evidences Summaries" %}</a>
 				</li>
+                <li class="nav-item">
+					<a class="nav-link" id="rxnav-tab" data-toggle="tab" href="#resource3" role="tab" aria-controls="profile" aria-selected="false">{% trans "Marketed Drugs" %}</a>
+				</li>
 			</ul>
+
 			<div class="tab-content font12 containerTab" id="myTabContent">
                 <!-- resource1 -->
 				<div class="tab-pane fade show active" id="resource1" role="tabpanel" aria-labelledby="profile-tab">
@@ -131,6 +135,12 @@
         			    {% endfor %}
             		{% endif %}
 				</div>
+                <!-- resource3 -->
+				<div class="tab-pane fade" id="resource3" role="tabpanel" aria-labelledby="rxnav-tab">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">{% trans "Loading" %} ...</span>
+                    </div>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -139,13 +149,24 @@
 
 {% block "extrafooter" %}
 <script>
+    // Get scientific production
     var similar_url = '{% url "home" %}get_scientific_production/?text={{medicine}}';
-    // Send the data
     var jqxhr = $.get(similar_url);
 
     // Put the results in a div
     jqxhr.done(function( data ) {
       $('#resource1').empty().append(data);
     });
+
+    // Get RxNorm data
+    var rxnorm_url = '{% url "home" %}get_rxnorm_data/?medicine={{medicine}}'
+    var jqxhr = $.get(rxnorm_url);
+
+    // Put the results in a div
+    jqxhr.done(function( data ) {
+      $('#resource3').empty().append(data);
+    });
+
+
 </script>
 {% endblock %}
