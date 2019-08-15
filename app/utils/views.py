@@ -9,7 +9,10 @@ import json
 @csrf_exempt
 def get_scientific_production(request):
     text_param = request.GET.get('text')
+    source_param = request.GET.get('source')
     service_url = "http://similardocs.bireme.org/SDService?adhocSimilarDocs={0}".format(text_param)
+    if source_param:
+        service_url = "{0}&sources={1}".format(service_url, source_param)
 
     response = requests.get(service_url)
 
@@ -73,7 +76,6 @@ def get_rxnorm_data(request):
         # if term_list has only parameter data delete it
         if not has_data:
             term_list = {}
-
 
     return render_to_response('utils/rxnorm_data.html',
                                         {'term_list': term_list})

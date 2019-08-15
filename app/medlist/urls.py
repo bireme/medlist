@@ -40,7 +40,6 @@ urlpatterns = [
 
     re_path(r'^get_scientific_production/?$', utils_views.get_scientific_production, name='get_scientific_production'),
 
-    re_path(r'^get_rxnorm_data/?$', utils_views.get_rxnorm_data, name='get_rxnorm_data'),
 
     # internationalization
     re_path(r'^i18n/', include('django.conf.urls.i18n')),
@@ -57,6 +56,9 @@ urlpatterns += i18n_patterns(
     re_path(r'^evidence/(?P<id>\d+)/?$', evidence_views.show, name='show_evidence'),
 
     re_path(r'^show_history/(?P<id>\d+)/?$', history_views.show_history, name='show_history'),
+
+    re_path(r'^get_rxnorm_data/?$', utils_views.get_rxnorm_data, name='get_rxnorm_data'),
+    
 )
 
 # messages translation

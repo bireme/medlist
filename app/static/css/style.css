@@ -41,7 +41,7 @@
 	background: #fff;
 }
 #footer{
-	background: #dddddd; padding: 20px 0; 
+	background: #dddddd; padding: 20px 0;
 	text-align: center;
 }
 #footer img{
@@ -123,12 +123,12 @@
 .substancia{
 	width: 350px; max-width: 500px;
 	float: right; text-align: center;
-	background: #fd68003b; padding:20px; 
+	background: #fd68003b; padding:20px;
 	margin:0px 0px 20px 20px; border-radius: 8px;
 	border: 2px solid #fd6800;
 }
 .substancia2{
-	background: #fd68003b; padding:20px; 
+	background: #fd68003b; padding:20px;
 	margin:0px 0px 20px 20px; border-radius: 8px;
 	border: 2px solid #fd6800;
 }
@@ -163,11 +163,11 @@
 }
 .conteudoPainel ul{
 	list-style: none;
-	padding:0; margin-top: 0; 
+	padding:0; margin-top: 0;
 }
 .conteudoPainel ul li{
-	border-bottom:1px solid #ddd; 
-	padding: 0px 5px; 
+	border-bottom:1px solid #ddd;
+	padding: 0px 5px;
 }
 .conteudoPainel ul li:nth-child(odd){
 	background: #eee;
@@ -181,7 +181,7 @@
 .listaN1>li{
 	padding: 15px 20px ; margin-bottom: 5px;
 	border:1px solid #ddd; border-radius: 5px;
-	list-style: none; display: block; 
+	list-style: none; display: block;
 }
 .listaN1>li:hover{
 	background: #fcfcfc;
@@ -217,13 +217,13 @@
 	font-family: 'Roboto', sans-serif;
 }
 .homeCountNumber{
-	font-size: 30px; 
+	font-size: 30px;
 	font-weight: 700;
 }
 /*caixas home*/
 .homeBox{
-	background-color: #fff; 
-	padding: 45px 40px 20px; 
+	background-color: #fff;
+	padding: 45px 40px 20px;
 	box-shadow: 0 0 3px rgba(0,0,0,.15);
 	box-sizing: border-box;
 	margin-top: -30px; text-align: center;
@@ -241,7 +241,7 @@
 }
 #search{
 	position: relative;
-	width: 80%; 
+	width: 80%;
 	margin: auto;margin-bottom: 10px;
 	border: 0;
 }
@@ -254,7 +254,7 @@
 	transition: background .5s ease;
 }
 .inputSearch:focus{
-	background: #fff;	
+	background: #fff;
 }
 .submit{
 	padding: 11px 20px;
@@ -278,7 +278,7 @@
 .publico{
 	font-size: 14px;
 	transition: background 1s ease;
-	padding:20px; 
+	padding:20px;
 }
 .publico:hover{
 	background: #ededed;
@@ -301,6 +301,7 @@
 .navSmall{color: #999; font-style: italic; display: block; line-height: 16px;}
 .active>.navSmall{color: #fff;}
 #tabMedicamentos {padding: 0!important;}
+.boxOver{max-height: 500px; overflow-y: auto;}
 /********************* Breakpoint *************/
 @media (max-width: 768px){
 	.homeCountTitle{
@@ -323,7 +324,7 @@
 	}
 	.textBtn{display: none;}
 	#search{
-		width: 100%; 
+		width: 100%;
 		margin: auto;
 	}
 	#boxSearch{
@@ -331,7 +332,8 @@
 		width: 90%;
 	}
 	#idioma{ position: static; display: block; text-align: center; }
-	#idioma ul li{display: inline-block; margin: 0px; }	
+	#idioma ul li{display: inline-block; margin: 0px; }
+    .boxOver{border-bottom: 10px solid #ddd; padding: 20px 10px ; margin-top: 15px; margin-bottom: 15px}
 }
 .setaTab{
 	animation: setaTab;

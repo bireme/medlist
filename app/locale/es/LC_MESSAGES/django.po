@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-14 15:28-0300\n"
-"PO-Revision-Date: 2019-08-14 15:33-0306\n"
+"POT-Creation-Date: 2019-08-15 15:30-0300\n"
+"PO-Revision-Date: 2019-08-15 15:32-0306\n"
 "Last-Translator: b'  <admin@localhost.com>'\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
 "Language: \n"
@@ -385,17 +385,27 @@ msgid "Scientific Production"
 msgstr "Produccion Cientifica"
 
 #: templates/directory/show_medicine.html:112
-msgid "Medicine Evidences Summaries"
-msgstr "Sumarios de Evidencia"
+msgid "Evaluation Reports"
+msgstr "Informes de Evaluación"
 
 #: templates/directory/show_medicine.html:115
 msgid "Marketed Drugs"
 msgstr "Medicamentos Comercializadas"
 
-#: templates/directory/show_medicine.html:123
-#: templates/directory/show_medicine.html:141
+#: templates/directory/show_medicine.html:118
+msgid "Medicine Evidences Summaries"
+msgstr "Sumarios de Evidencia"
+
+#: templates/directory/show_medicine.html:126
+#: templates/directory/show_medicine.html:132
+#: templates/directory/show_medicine.html:138
 msgid "Loading"
 msgstr "Cargando"
+
+#: templates/directory/show_medicine.html:152
+#: templates/utils/rxnorm_data.html:23
+msgid "No information available"
+msgstr "No hay información disponible"
 
 #: templates/history/show_history.html:27 templates/list/show_list.html:31
 msgid "History"
@@ -463,17 +473,13 @@ msgstr "Início"
 msgid "Compare lists"
 msgstr "Compare las listas"
 
-#: templates/utils/rxnorm_data.html:6
+#: templates/utils/rxnorm_data.html:8
 msgid "Branded Drug or Pack"
 msgstr "Medicamento de Marca ou Paquete"
 
-#: templates/utils/rxnorm_data.html:8
+#: templates/utils/rxnorm_data.html:10
 msgid "Clinical Drug or Pack"
 msgstr "Medicamento Clínico ou Pacote"
-
-#: templates/utils/rxnorm_data.html:20
-msgid "No information available"
-msgstr "No hay información disponible"
 
 #~ msgid "restriction age or weight"
 #~ msgstr "restricción de la edad o el peso"

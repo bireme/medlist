@@ -109,22 +109,37 @@
 					<a class="nav-link active" id="home-tab" data-toggle="tab" href="#resource1" role="tab" aria-controls="home" aria-selected="true">{% trans "Scientific Production" %}</a>
 				</li>
                 <li class="nav-item">
-					<a class="nav-link {% if not evidences %}disabled{% endif %}" id="profile-tab" data-toggle="tab" href="#resource2" role="tab" aria-controls="profile" aria-selected="false">{% trans "Medicine Evidences Summaries" %}</a>
+					<a class="nav-link" id="brisa-tab" data-toggle="tab" href="#resource2" role="tab" aria-controls="profile" aria-selected="false">{% trans "Evaluation Reports" %}</a>
 				</li>
                 <li class="nav-item">
 					<a class="nav-link" id="rxnav-tab" data-toggle="tab" href="#resource3" role="tab" aria-controls="profile" aria-selected="false">{% trans "Marketed Drugs" %}</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" id="evidence-tab" data-toggle="tab" href="#resource4" role="tab" aria-controls="profile" aria-selected="false">{% trans "Medicine Evidences Summaries" %}</a>
 				</li>
 			</ul>
 
 			<div class="tab-content font12 containerTab" id="myTabContent">
                 <!-- resource1 -->
-				<div class="tab-pane fade show active" id="resource1" role="tabpanel" aria-labelledby="profile-tab">
+				<div class="tab-pane fade show active" id="resource1" role="tabpanel" aria-labelledby="home-tab">
                     <div class="spinner-border" role="status">
                         <span class="sr-only">{% trans "Loading" %} ...</span>
                     </div>
 				</div>
-			    <!-- resource2 -->
-                <div class="tab-pane fade" id="resource2" role="tabpanel" aria-labelledby="profile-tab">
+                <!-- resource2 -->
+                <div class="tab-pane fade" id="resource2" role="tabpanel" aria-labelledby="brisa-tab">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">{% trans "Loading" %} ...</span>
+                    </div>
+				</div>
+                <!-- resource3 -->
+				<div class="tab-pane fade" id="resource3" role="tabpanel" aria-labelledby="rxnav-tab">
+                    <div class="spinner-border" role="status">
+                        <span class="sr-only">{% trans "Loading" %} ...</span>
+                    </div>
+				</div>
+			    <!-- resource4 -->
+                <div class="tab-pane fade" id="resource4" role="tabpanel" aria-labelledby="evidence-tab">
                     {% if evidences %}
         		        {% for summary in evidences %}
         			        <a href="{% url 'show_evidence' summary.evidence.id %}">
@@ -133,13 +148,9 @@
                             </a>
                             <hr>
         			    {% endfor %}
+                    {% else %}
+                        {% trans "No information available" %}
             		{% endif %}
-				</div>
-                <!-- resource3 -->
-				<div class="tab-pane fade" id="resource3" role="tabpanel" aria-labelledby="rxnav-tab">
-                    <div class="spinner-border" role="status">
-                        <span class="sr-only">{% trans "Loading" %} ...</span>
-                    </div>
 				</div>
 			</div>
 		</div>
@@ -149,24 +160,31 @@
 
 {% block "extrafooter" %}
 <script>
-    // Get scientific production
-    var similar_url = '{% url "home" %}get_scientific_production/?text={{medicine}}';
-    var jqxhr = $.get(similar_url);
+    // Get scientific production (general)
+    var get_articles_url = '{% url "get_scientific_production" %}?text={{medicine}}';
+    var jqxhr = $.get(get_articles_url);
 
     // Put the results in a div
     jqxhr.done(function( data ) {
       $('#resource1').empty().append(data);
     });
 
+    // Get evaluation reports from BRISA database
+    var get_reports_url = '{% url "get_scientific_production" %}?text={{medicine}}&source=BRISA';
+    var jqxhr = $.get(get_reports_url);
+
+    // Put the results in a div
+    jqxhr.done(function( data ) {
+      $('#resource2').empty().append(data);
+    });
+
     // Get RxNorm data
-    var rxnorm_url = '{% url "home" %}get_rxnorm_data/?medicine={{medicine}}'
-    var jqxhr = $.get(rxnorm_url);
+    var get_rxnorm_url = '{% url "get_rxnorm_data" %}?medicine={{medicine}}'
+    var jqxhr = $.get(get_rxnorm_url);
 
     // Put the results in a div
     jqxhr.done(function( data ) {
       $('#resource3').empty().append(data);
     });
-
-
 </script>
 {% endblock %}
