@@ -78,4 +78,4 @@ def get_rxnorm_data(request):
             term_list = {}
 
     return render_to_response('utils/rxnorm_data.html',
-                                        {'term_list': term_list})
+                                        {'term_list': term_list, 'medicine': medicine_param})
