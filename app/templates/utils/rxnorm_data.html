@@ -5,21 +5,21 @@
         <em><b>{% trans "Source" %}: <a href="https://mor.nlm.nih.gov/RxNav/search?searchBy=String&searchTerm={{medicine}}" target="blank">RxNav</a> - NIH / US NML</b></em>
     </p>
     <div class="row">
-        <br/>
         {% for key, value_list in term_list.items %}
-            <div class="col-md-6 boxOver">
+            <div class="col-md-6">
                 {% if key == 'SBD' %}
                     <h5>{% trans "Branded Drug or Pack" %}</h5>
                 {% elif key == 'SCD' %}
                     <h5>{% trans "Clinical Drug or Pack" %}</h5>
                 {% endif %}
-
-                {% for value in value_list %}
-                    <a href="https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm={{value.id}}" target="_blank">
-                        {{value.name}}
-                    </a>
-                    <hr/>
-                {% endfor %}
+                <div class="boxOver">
+                    {% for value in value_list %}
+                        <a href="https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm={{value.id}}" target="_blank">
+                            {{value.name}}
+                        </a>
+                        <hr/>
+                    {% endfor %}
+                </div>
             </div>
         {% endfor %}
     </div>
