@@ -65,11 +65,12 @@ def get_rxnorm_data(request):
                 for concept in concept_list:
                     tty = concept['tty']
                     term_list[tty] = []
-                    for prop in concept['conceptProperties']:
-                        has_data = True
-                        term_list[tty].append({'name': prop['name'], 'id': prop['rxcui']})
+                    if 'conceptProperties' in concept:
+                        for prop in concept['conceptProperties']:
+                            has_data = True
+                            term_list[tty].append({'name': prop['name'], 'id': prop['rxcui']})
 
-                    term_list[tty] = sorted(term_list[tty], key = lambda i: i['name'])
+                        term_list[tty] = sorted(term_list[tty], key = lambda i: i['name'])
         except:
             pass
 

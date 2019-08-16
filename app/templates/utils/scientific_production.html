@@ -1,12 +1,18 @@
-{% for reference in reference_list %}
-    <a href="http://pesquisa.teste.bvsalud.org/portal/resource/en/{{ reference.id }}" target="_blank">
-        <b>{% if reference.ti_en %}{{ reference.ti_en }}{% else %}{{ reference.ti }}{% endif %}</b>
-        <br>
-        {% if reference.ab_en %}
-            {{ reference.ab_en|slice:"0:320" }}...
-        {% elif reference.ab %}
-            {{ reference.ab|slice:"0:320" }}...
-        {% endif %}
-    </a>
-    <hr>
-{% endfor %}
+{% load i18n %}
+
+{% if reference_list %}
+    {% for reference in reference_list %}
+        <a href="http://pesquisa.teste.bvsalud.org/portal/resource/en/{{ reference.id }}" target="_blank">
+            <b>{% if reference.ti_en %}{{ reference.ti_en }}{% else %}{{ reference.ti }}{% endif %}</b>
+            <br>
+            {% if reference.ab_en %}
+                {{ reference.ab_en|slice:"0:320" }}...
+            {% elif reference.ab %}
+                {{ reference.ab|slice:"0:320" }}...
+            {% endif %}
+        </a>
+        <hr>
+    {% endfor %}
+{% else %}
+    {% trans "No information available" %}
+{% endif %}
