@@ -2,7 +2,7 @@
 
 {% if reference_list %}
     {% for reference in reference_list %}
-        <a href="http://pesquisa.teste.bvsalud.org/portal/resource/en/{{ reference.id }}" target="_blank">
+        <a href="http://pesquisa.bvsalud.org/portal/resource/en/{{ reference.id }}" target="_blank">
             <b>{% if reference.ti_en %}{{ reference.ti_en }}{% else %}{{ reference.ti }}{% endif %}</b>
             <br>
             {% if reference.ab_en %}
