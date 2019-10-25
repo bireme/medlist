@@ -1,6 +1,6 @@
         <div class="resultsFor">
             <a href="{$config->prais_url}">{$texts.PRAIS_HOME}</a> >
-            <a href="{$config->medlist_url}">{$texts.MEDLIST_HOME}</a> >
+            <a href="{$config->medlist_portal_url}">{$texts.MEDLIST_HOME}</a> >
             <a href="{$smarty.server.PHP_SELF}?lang={$lang}&where=MEDICINES">{$texts.SEARCH_HOME}</a>
         </div>
 
@@ -49,12 +49,12 @@
                         <input type="hidden" name="printMode" value=""/>
                         <input type="hidden" name="output" value=""/>
                         <input type="hidden" name="fb" value=""/>
-                        
+
                         <!-- custom search appearance -->
                         {foreach from=$csa key=csa_key item=csa_value}
                            <input type="hidden" name="{$csa_key}" value="{$csa_value}"/>
                         {/foreach}
-                        
+
 
                         {if isset($smarty.request.debug)}
                             <input type="hidden" name="debug" value="1"/>

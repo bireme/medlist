@@ -6,7 +6,8 @@
     <default_lang>en</default_lang>
     <log_dir>./logs/</log_dir>
     <prais_url>http://www.paho.org/prais</prais_url>
-    <medlist_url>http://medlist.paho.org/</medlist_url>
+    <medlist_portal_url>http://medlist.paho.org/</medlist_portal_url>
+    <medlist_url>http://medlistapp.paho.org/</medlist_url>
     <environment>homolog</environment>
     <google_analytics_code></google_analytics_code>
     <google_analytics_domain></google_analytics_domain>
