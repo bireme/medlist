@@ -132,6 +132,7 @@ LOCALE_PATHS =(
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
+MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
 STATIC_ROOT = ''
 
@@ -151,6 +152,7 @@ TEMPLATE_VISIBLE_SETTINGS = (
     'HOME_URL',
     'PORTAL_URL',
     'GOOGLE_ANALYTICS_ID',
+    'MEDIA_URL',
 )
 
 try:
