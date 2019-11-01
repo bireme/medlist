@@ -41,7 +41,7 @@
                								<th>{% trans 'pharmaceutical form type'|capfirst %}</th>
                								<th>{% trans 'composition'|capfirst %}</th>
                                             <th>{% trans 'observation'|capfirst %}</th>
-                                            {% if user.is_superuser %}
+                                            {% if user.is_authenticated %}
                                                 <th></th>
                                             {% endif %}
                							</tr>
@@ -74,7 +74,7 @@
            	                                                    {% if section_form.only_for_children %}<a href="" data-toggle="modal" data-target="#modal-obs-c2"> c2 </a>{% endif %}
            	                                                    {% if section_form.best_evidence %}<a href="" data-toggle="modal" data-target="#modal-obs-e"> e </a>{% endif %}
            	                                                </td>
-                                                            {% if user.is_superuser %}
+                                                            {% if user.is_authenticated %}
                                                                 <td>
                                                                     <a href="{% url 'admin:list_sectionpharmform_change' section_form.pk %}" class="trigger"><i class="far fa-edit"></i></a>
                                                                 </td>
