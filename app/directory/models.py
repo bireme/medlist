@@ -5,6 +5,7 @@ from datetime import datetime
 from medlist import settings
 from django.utils.translation import ugettext_lazy as _
 from django.template.defaultfilters import slugify
+from django.db.models.functions import Lower
 
 LANGUAGES_CHOICES = (
     ('en', 'English'),    # default language
@@ -14,8 +15,11 @@ LANGUAGES_CHOICES = (
 
 class Medicine(models.Model):
 
-    name = models.CharField(max_length=255)
+    class Meta:
+        ordering = [Lower('name'), ]
 
+
+    name = models.CharField(max_length=255)
     created = models.DateTimeField(_("date creation"), default=datetime.now, editable=False)
     active = models.BooleanField(_("active"), default=True)
 
@@ -54,6 +58,7 @@ class PharmaceuticalFormType(models.Model):
     class Meta:
         verbose_name = "Pharmaceutical Form Type"
         verbose_name_plural = "Pharmaceutical Form Types"
+        ordering = [Lower('name'), ]
 
     name = models.CharField(_("name"), max_length=255)
 
@@ -83,6 +88,7 @@ class PharmaceuticalFormTypeLocal(models.Model):
     class Meta:
         verbose_name = "Pharmaceutical Form Type Translation"
         verbose_name_plural = "Pharmaceutical Form Type Translations"
+        ordering = [Lower('name'), ]
 
     pharmaceutical_form_type = models.ForeignKey(PharmaceuticalFormType, on_delete=models.PROTECT)
     language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES[1:])
