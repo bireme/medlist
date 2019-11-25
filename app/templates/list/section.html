@@ -76,7 +76,7 @@
            	                                                </td>
                                                             {% if user.is_authenticated %}
                                                                 <td>
-                                                                    <a href="{% url 'admin:list_sectionpharmform_change' section_form.pk %}" class="trigger"><i class="far fa-edit"></i></a>
+                                                                    <a href="{% url 'admin:list_section_change' node.pk %}" class="trigger"><i class="far fa-edit"></i></a>
                                                                 </td>
                                                             {% endif %}
            												</tr>
@@ -90,7 +90,7 @@
                                         {% if forloop.last and user.is_authenticated %}
                                             <tr>
                                                 <td colspan="5">
-                                                    <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_sectionpharmform_add' %}?section_id={{node.id}}" role="button">{% trans "Add medicine" %}</a>
+                                                    <a class="btn btn-outline-primary btn-sm trigger" href="{% url 'admin:list_section_change' node.pk %}" class="trigger" role="button">{% trans "Add medicine" %}</a>
                                                 </td>
                                             </tr>
                                         {% endif %}
