@@ -90,7 +90,7 @@ class PharmaceuticalFormTypeLocal(models.Model):
         verbose_name_plural = "Pharmaceutical Form Type Translations"
         ordering = [Lower('name'), ]
 
-    pharmaceutical_form_type = models.ForeignKey(PharmaceuticalFormType, on_delete=models.PROTECT)
+    pharmaceutical_form_type = models.ForeignKey(PharmaceuticalFormType, on_delete=models.CASCADE)
     language = models.CharField(_("language"), max_length=10, choices=LANGUAGES_CHOICES[1:])
     name = models.CharField(_("name"), max_length=255)
 
@@ -101,7 +101,7 @@ class PharmaceuticalForm(models.Model):
         verbose_name_plural = "Pharmaceutical Forms"
 
     medicine = models.ForeignKey(Medicine, verbose_name=_("medicine"), on_delete=models.PROTECT)
-    pharmaceutical_form_type =  models.ForeignKey(PharmaceuticalFormType, verbose_name=_("pharmaceutical form type"), on_delete=models.PROTECT)
+    pharmaceutical_form_type =  models.ForeignKey(PharmaceuticalFormType, verbose_name=_("pharmaceutical form type"), on_delete=models.CASCADE)
     atc_code = models.CharField(_("atc code"), max_length=255, blank=True)
     composition = models.CharField(_("composition"), max_length=255, blank=True)
     composition_es = models.CharField(_("composition (Spanish)"), max_length=255, blank=True)
