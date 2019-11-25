@@ -16,7 +16,7 @@ class PharmaceuticalFormAdmin(admin.StackedInline):
 
 class MedicineEvidenceSummaryInline(admin.StackedInline):
     model = MedicineEvidenceSummary
-    raw_id_fields = ("evidence", )
+    autocomplete_fields = ('evidence', )
     extra = 0
 
 class PharmaceuticalFormTypeLocalAdmin(admin.TabularInline):
@@ -104,6 +104,7 @@ class PharmaceuticalFormTypeAdmin(admin.ModelAdmin):
 
     list_display = ('__str__',)
     search_fields = ('name',)
+
 
 class PharmaceuticalFormAdmin(admin.ModelAdmin):
     model = PharmaceuticalForm

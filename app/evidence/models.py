@@ -41,7 +41,7 @@ class EvidenceSummary(models.Model):
     link = models.URLField(_("link"), blank=True)
     file = models.FileField(_("File"), upload_to=new_filename, blank=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return str(self.title)
 
     def get_translation(self, lang_code):

@@ -19,7 +19,7 @@ class SectionLocalAdmin(admin.StackedInline):
     extra = 0
 
 class SectionPharmFormAdmin(admin.StackedInline):
-    raw_id_fields = ("pharmaceutical_form",)
+    autocomplete_fields = ('pharmaceutical_form', )
     model = SectionPharmForm
     extra = 0
 
