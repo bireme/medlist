@@ -62,9 +62,6 @@ class ListAdmin(admin.ModelAdmin):
     actions = ['make_published', 'archive_list']
     inlines = [ListLocalAdmin, ]
 
-    def response_change(self, request, obj):
-        return redirect('/close_window')
-
     def get_link_list(self, obj):
         output = '<a href="/list/%s/?preview" target="_blank">Link</a>' % obj.id
         return mark_safe(output)

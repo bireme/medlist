@@ -10,7 +10,7 @@
                     <a class="nav-link" href="{% url 'admin:logout' %}?next=/">Logout</a>
                     <a class="nav-link" href="{% url 'admin:password_change' %}" target="_blank">Change password</a>
                 {% else %}
-                    <a class="nav-link trigger" href="{% url 'admin:login' %}?next=/">Login</a>
+                    <a class="nav-link trigger" href="{% url 'admin:login' %}?next=/admin/">Login</a>
                 {% endif %}
             </ul>
 	        <h3 class="tituloPrincial text-center">{% trans "Annotated Medicine and Device Lists" %}</h3>
