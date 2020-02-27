@@ -3,6 +3,7 @@
 {% if reference_list %}
     {% for reference in reference_list %}
         <a href="http://pesquisa.bvsalud.org/portal/resource/en/{{ reference.id }}" target="_blank">
+            {% autoescape off %}
             <b>{% if reference.ti_en %}{{ reference.ti_en }}{% else %}{{ reference.ti }}{% endif %}</b>
             <br>
             {% if reference.ab_en %}
@@ -10,6 +11,7 @@
             {% elif reference.ab %}
                 {{ reference.ab|slice:"0:320" }}...
             {% endif %}
+            {% endautoescape %}
         </a>
         <hr>
     {% endfor %}

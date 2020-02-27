@@ -160,9 +160,18 @@
 
 {% block "extrafooter" %}
 <script>
+    var csrftoken = getCookie('csrftoken');
+    $.ajaxSetup({
+        crossDomain: false, // obviates need for sameOrigin test
+        beforeSend: function(xhr, settings) {
+            if (!csrfSafeMethod(settings.type)) {
+                xhr.setRequestHeader("X-CSRFToken", csrftoken);
+            }
+        }
+    });
     // Get scientific production (general)
-    var get_articles_url = '{% url "get_scientific_production" %}?text={{medicine}}';
-    var jqxhr = $.get(get_articles_url);
+    var get_articles_url = '{% url "get_scientific_production" %}';
+    var jqxhr = $.post(get_articles_url, {text: '{{medicine}}'});
 
     // Put the results in a div
     jqxhr.done(function( data ) {
@@ -170,8 +179,8 @@
     });
 
     // Get evaluation reports from BRISA database
-    var get_reports_url = '{% url "get_scientific_production" %}?text={{medicine}}&source=BRISA';
-    var jqxhr = $.get(get_reports_url);
+    var get_reports_url = '{% url "get_scientific_production" %}';
+    var jqxhr = $.post(get_reports_url, {text: '{{medicine}}', source: 'BRISA'});
 
     // Put the results in a div
     jqxhr.done(function( data ) {
@@ -179,8 +188,8 @@
     });
 
     // Get RxNorm data
-    var get_rxnorm_url = '{% url "get_rxnorm_data" %}?medicine={{medicine}}'
-    var jqxhr = $.get(get_rxnorm_url);
+    var get_rxnorm_url = '{% url "get_rxnorm_data" %}'
+    var jqxhr = $.post(get_rxnorm_url, {medicine: '{{medicine}}'});
 
     // Put the results in a div
     jqxhr.done(function( data ) {

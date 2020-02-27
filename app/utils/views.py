@@ -1,4 +1,4 @@
-from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.csrf import csrf_protect
 from django.shortcuts import render_to_response
 from django.conf import settings
 from xml.etree import ElementTree
@@ -6,10 +6,10 @@ from xml.etree import ElementTree
 import requests
 import json
 
-@csrf_exempt
+@csrf_protect
 def get_scientific_production(request):
-    text_param = request.GET.get('text')
-    source_param = request.GET.get('source')
+    text_param = request.POST.get('text')
+    source_param = request.POST.get('source')
     service_url = "http://similardocs.bireme.org/SDService?adhocSimilarDocs={0}".format(text_param)
     if source_param:
         service_url = "{0}&sources={1}".format(service_url, source_param)
@@ -31,9 +31,9 @@ def get_scientific_production(request):
                                                 {'reference_list': reference_list})
 
 
-@csrf_exempt
+@csrf_protect
 def get_rxnorm_data(request):
-    medicine_param = request.GET.get('medicine').strip()
+    medicine_param = request.POST.get('medicine').strip()
     term_list = {}
     rxcui = ''
 
