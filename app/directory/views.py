@@ -35,13 +35,16 @@ def show_medicine(request, id):
 
 	new_forms = {}
 	for form in pharm_forms:
-		new_forms[form.id] = {}
-		new_forms[form.id]['form'] = form
-		new_forms[form.id]['form_in_lists'] = SectionPharmForm.objects.filter(pharmaceutical_form=form)
+		# get only pharmaceutical forms present in published lists
+		form_in_lists = SectionPharmForm.objects.filter(pharmaceutical_form=form, section__list__published=True)
+		if form_in_lists:
+			new_forms[form.id] = {}
+			new_forms[form.id]['form'] = form
+			new_forms[form.id]['form_in_lists'] = form_in_lists
 
 	forms = []
 	for form in pharm_forms:
-		forms += SectionPharmForm.objects.filter(pharmaceutical_form=form)
+		forms += SectionPharmForm.objects.filter(pharmaceutical_form=form, section__list__published=True)
 
 	tmp_lists = {}
 	tmp_countries = {}
