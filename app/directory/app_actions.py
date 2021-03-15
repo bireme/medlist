@@ -65,7 +65,9 @@ def solr_index(med):
                 observation_list.append('observation')
 
             section = Section.objects.get(pk=section_pharm_form.section.id)
-            section_translations = "|".join(section.get_translations())
+            # skip first level section (only add sections that have parent)
+            if section.parent:
+                section_translations = "|".join(section.get_translations())
 
             section_tree = section.get_ancestors()
 

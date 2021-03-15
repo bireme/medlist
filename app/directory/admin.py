@@ -47,7 +47,6 @@ class MedicineAdmin(admin.ModelAdmin):
 
     # adding option to activate or not a register
     def make_active(modeladmin, request, queryset):
-        make_active.short_description = _("Activate or deactivate selected medicines")
 
         for obj in queryset:
             if obj.active:
@@ -55,10 +54,10 @@ class MedicineAdmin(admin.ModelAdmin):
             else:
                 obj.active = True
             obj.save()
+    make_active.short_description = _("Activate or deactivate selected medicines")
 
     # adding option to index a medicine on Solr index
     def index(modeladmin, request, queryset):
-        index.short_description = _("Index selected medicines")
         index_sucess = True
 
         for obj in queryset:
@@ -68,6 +67,7 @@ class MedicineAdmin(admin.ModelAdmin):
             messages.error(request, _("Unable to index medicines"))
         else:
             modeladmin.message_user(request, _("Selected medicines were indexed"))
+    index.short_description = _("Index selected medicines")
 
 
     def save_formset(self, request, form, formset, change):
