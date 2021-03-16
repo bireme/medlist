@@ -77,7 +77,7 @@ def solr_index(med):
                     if category_translations not in category_list:
                         category_list.append(category_translations)
 
-            if section_translations not in category_list:
+            if section_translations and section_translations not in category_list:
                 category_list.append(section_translations)
 
             if section.list.published:
