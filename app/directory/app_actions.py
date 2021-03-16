@@ -80,13 +80,15 @@ def solr_index(med):
             if section_translations not in category_list:
                 category_list.append(section_translations)
 
-            list_associated = "|".join( section.list.get_translations() )
-            if section.list.type == 'c':
-                if list_associated not in countries:
-                    countries.append(list_associated)
-            else:
-                if list_associated not in lists:
-                    lists.append(list_associated)
+            if section.list.published:
+                list_associated = "|".join( section.list.get_translations() )
+
+                if section.list.type == 'c':
+                    if list_associated not in countries:
+                        countries.append(list_associated)
+                else:
+                    if list_associated not in lists:
+                        lists.append(list_associated)
 
     #check if current medicine have Evidence summaries
     has_evidence = None
