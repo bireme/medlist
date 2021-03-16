@@ -66,6 +66,7 @@ def solr_index(med):
 
             section = Section.objects.get(pk=section_pharm_form.section.id)
             # skip first level section (only add sections that have parent)
+            section_translations = None
             if section.parent:
                 section_translations = "|".join(section.get_translations())
 
