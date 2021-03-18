@@ -5,7 +5,7 @@ from medlist import settings
 import whoosh
 
 
-def search(query, field="list", limit=None, sortedby='medicine', type=None):
+def search(query, field="list", limit=None, filter_compare=None, sortedby='medicine', type=None):
 
 	query = str(query)
 
@@ -15,7 +15,10 @@ def search(query, field="list", limit=None, sortedby='medicine', type=None):
 	parser = whoosh.qparser.QueryParser(field, ix.schema)
 	myquery = parser.parse(query)
 
-	search = searcher.search(myquery, limit=None, sortedby=sortedby)
+	if filter_compare:
+		filter_compare = whoosh.query.Term("comparative_type", filter_compare)
+
+	search = searcher.search(myquery, filter=filter_compare, limit=None, sortedby=sortedby)
 
 	results = []
 	for result in search:

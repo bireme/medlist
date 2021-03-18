@@ -59,7 +59,7 @@ def show_list(request, id):
 
 	return render(request, 'list/show_list.html', output)
 
-@conditional_cache(decorator=cache_page(settings.CACHE_TIMEOUT))
+#@conditional_cache(decorator=cache_page(settings.CACHE_TIMEOUT))
 def compare(request):
 
 	output = {}
@@ -69,6 +69,13 @@ def compare(request):
 	output['lists_country'] = List.objects.filter(published=True).filter(type='c')
 
 	list_of_lists = []
+
+	list_param = request.GET.getlist('list')
+	comparative_type_param = request.GET.get('comparative_type', 'complete')
+	matches_param = request.GET.get('matches', 'all')
+
+	lists = ' OR '.join(list_param)
+	'''
 	if 'lists' in request.GET and request.GET['lists'] != "":
 		# remove nulls from list
 		lists = request.GET['lists'].replace(',null', '').replace('null', '')
@@ -78,23 +85,24 @@ def compare(request):
 		lists = lists.replace(",", " OR ")
 	else:
 		lists = ""
+	'''
 
 	# if MATCHEDS, make a AND query
-	if request.GET.get('only_matched') and request.GET.get('only_matched') == 'true':
+	if matches_param == 'only_matched':
 		lists = lists.replace("OR", "AND")
 
 	# if UNMATCHEDS, make a ANDNOT query
-	elif request.GET.get('only_unmatched') and request.GET.get('only_unmatched') == 'true':
+	elif matches_param == 'only_unmatched':
 		lists = "(%s) ANDNOT (%s)" % (lists, lists.replace("OR", "AND"))
 
 	# search these forms
-	pharmaceutical_forms = search(lists)
-	#print len(pharmaceutical_forms)
+	pharmaceutical_forms = search(lists, filter_compare=comparative_type_param)
 
 	languages = {}
 	languages['pt'] = ['medicine_pt', 'type_pt']
 	languages['es'] = ['medicine_es', 'type_es']
 
+	'''
 	if request.LANGUAGE_CODE != 'en':
 		count = 0
 		for form in pharmaceutical_forms:
@@ -105,6 +113,7 @@ def compare(request):
 
 			pharmaceutical_forms[count] = form
 			count += 1
+	'''
 
 	# make pagination
 	paginator = Paginator(pharmaceutical_forms, settings.ITEMS_PER_PAGE)
@@ -117,8 +126,11 @@ def compare(request):
 
 	# output all results
 	output['pharmaceutical_forms'] = pagination.object_list
-	output['lists'] = List.objects.filter(id__in=list_of_lists)
+	output['lists'] = List.objects.filter(id__in=list_param)
 	output['paginator'] = paginator
 	output['pagination'] = pagination
+	output['list_param'] = list_param
+	output['comparative_type_param'] = comparative_type_param
+	output['matches_param'] = matches_param
 
 	return render(request, 'list/compare.html', output)
