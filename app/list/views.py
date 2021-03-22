@@ -75,17 +75,6 @@ def compare(request):
 	matches_param = request.GET.get('matches', 'all')
 
 	lists = ' OR '.join(list_param)
-	'''
-	if 'lists' in request.GET and request.GET['lists'] != "":
-		# remove nulls from list
-		lists = request.GET['lists'].replace(',null', '').replace('null', '')
-		# make a list of the lists
-		list_of_lists = lists.split(',')
-		# Make a OR query to get all forms in these lists
-		lists = lists.replace(",", " OR ")
-	else:
-		lists = ""
-	'''
 
 	# if MATCHEDS, make a AND query
 	if matches_param == 'only_matched':
@@ -96,24 +85,17 @@ def compare(request):
 		lists = "(%s) ANDNOT (%s)" % (lists, lists.replace("OR", "AND"))
 
 	# search these forms
-	pharmaceutical_forms = search(lists, filter_compare=comparative_type_param)
+	search_result = search(lists, filter_compare=comparative_type_param)
 
-	languages = {}
-	languages['pt'] = ['medicine_pt', 'type_pt']
-	languages['es'] = ['medicine_es', 'type_es']
-
-	'''
+	# sort by medicine name
+	sort_by_field_name = 'medicine'
 	if request.LANGUAGE_CODE != 'en':
-		count = 0
-		for form in pharmaceutical_forms:
-			for lang in languages[request.LANGUAGE_CODE]:
-				if lang in form and form[lang]:
-					field = lang.split("_")[0]
-					form[field] = form[lang]
+		if request.LANGUAGE_CODE == 'es':
+			sort_by_field_name = 'medicine_es'
+		else:
+			sort_by_field_name = 'medicine_pt'
 
-			pharmaceutical_forms[count] = form
-			count += 1
-	'''
+	pharmaceutical_forms = sorted(search_result, key=lambda x: x[sort_by_field_name].lower())
 
 	# make pagination
 	paginator = Paginator(pharmaceutical_forms, settings.ITEMS_PER_PAGE)
