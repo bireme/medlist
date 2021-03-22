@@ -66,7 +66,7 @@ def compare(request):
 
 	# output lists to make form
 	output['lists_special'] = List.objects.filter(published=True).exclude(type='c')
-	output['lists_country'] = List.objects.filter(published=True).filter(type='c')
+	output['lists_country'] = List.objects.filter(published=True).filter(type='c').order_by('name')
 
 	list_of_lists = []
 
