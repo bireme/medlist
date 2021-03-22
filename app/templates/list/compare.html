@@ -2,6 +2,10 @@
 {% load i18n %}
 {% load static %}
 
+{% block "extrahead" %}
+	<link rel="stylesheet" href="{% static '/css/multiple-select.min.css' %}">
+{% endblock %}
+
 {% block "title" %}{% trans "Compare Lists" %} | {{block.super}}{% endblock %}
 
 
@@ -20,21 +24,23 @@
 		<div class="alert alert-secondary">
 			<h4>{% trans "Filters" %}:</h4>
 			<hr>
-			<b>{% trans "lists"|capfirst %}:</b>
-			{% for list in lists_special %}
-				<div class="form-check form-check-inline">
-					<input class="form-check-input list_filter" type="checkbox" id="list_{{list.id}}" name="list" value="{{list.id}}" {% if list.id|slugify in list_param %}checked{% endif%}/>
-					<label class="form-check-label" for="list_{{list.id}}">{{list.name}} <small><strong>({{list.abbreviation}})</strong></small></label>
-				</div>
-			{% endfor %}
+			<b>{% trans "lists"|capfirst %}:</b><br/>
+			<select multiple="multiple" id="list_filter_special" name="list">
+				{% for list in lists_special %}
+					<option value="{{list.id}}" {% if list.id|slugify in list_param %}selected="selected"{% endif%}>
+						{{list.name}} <small><strong>({{list.abbreviation}})</strong></small>
+					</option>
+				{% endfor %}
+			</select>
 			<br>
-			<b>{% trans "countries"|capfirst %}:</b>
-			{% for list in lists_country %}
-				<div class="form-check form-check-inline">
-					<input class="form-check-input list_filter" type="checkbox" id="list_{{list.id}}" name="list" value="{{list.id}}" {% if list.id|slugify in list_param %}checked{% endif%} />
-					<label class="form-check-label" for="list_{{list.id}}">{{list.name}} <small><strong>({{list.abbreviation}})</strong></small></label>
-				</div>
-			{% endfor %}
+			<b>{% trans "countries"|capfirst %}:</b><br/>
+			<select multiple="multiple" id="list_filter_countries" name="list">
+				{% for list in lists_country %}
+					<option value="{{list.id}}" {% if list.id|slugify in list_param %}selected="selected"{% endif%}>
+						{{list.name}} <small><strong>({{list.abbreviation}})</strong></small>
+					</option>
+				{% endfor %}
+			</select>
 		</div>
 
 		<div class="hBlock">
@@ -123,9 +129,14 @@
 {% endblock %}
 
 {% block "extrafooter" %}
-	<!--script type="text/javascript" src="{% static '/js/compare.js' %}"></script-->
+	<script src="{% static '/js/multiple-select.min.js' %}"></script>
+
 	<script type="text/javascript">
 		$(function(){
+
+			$('#list_filter_special').multipleSelect({selectAll: false, filter: false, width: 800});
+			$('#list_filter_countries').multipleSelect({selectAll: false, filter: true, width: 800});
+
 			var page = $(".page");
 			// listening items of page
 			page.click(function(){
