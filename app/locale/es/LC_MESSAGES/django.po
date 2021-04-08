@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2019-08-15 15:30-0300\n"
-"PO-Revision-Date: 2019-08-15 15:32-0306\n"
+"POT-Creation-Date: 2021-04-08 15:11-0300\n"
+"PO-Revision-Date: 2021-04-08 15:29-0306\n"
 "Last-Translator: b'  <admin@localhost.com>'\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
 "Language: \n"
@@ -18,71 +18,71 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 "X-Translated-Using: django-rosetta 0.9.3\n"
 
-#: directory/admin.py:56 directory/admin.py:133
+#: directory/admin.py:57 directory/admin.py:138
 msgid "Activate or deactivate selected medicines"
 msgstr "Activar o desactivar  medicamentos seleccionados"
 
-#: directory/admin.py:65
+#: directory/admin.py:67
 msgid "Unable to index medicines"
 msgstr "No fue posible indizar los medicamentos"
 
-#: directory/admin.py:67
+#: directory/admin.py:69
 msgid "Selected medicines were indexed"
 msgstr "Os medicamentos seleccionados fueron indizados"
 
-#: directory/admin.py:69
+#: directory/admin.py:70
 msgid "Index selected medicines"
 msgstr "Indizar los medicamentos seleccionados"
 
-#: directory/admin.py:92
+#: directory/admin.py:96
 msgid "Search index update fail."
 msgstr "No fue posible actualizar el indice de búsqueda"
 
-#: directory/models.py:19 directory/models.py:60 directory/models.py:105
+#: directory/models.py:23 directory/models.py:65 directory/models.py:116
 #: history/models.py:39 list/models.py:45 list/models.py:112
 msgid "date creation"
 msgstr "fecha de creación"
 
-#: directory/models.py:20 directory/models.py:103
+#: directory/models.py:24 directory/models.py:114
 msgid "active"
 msgstr "activo"
 
-#: directory/models.py:44 directory/models.py:97
+#: directory/models.py:48 directory/models.py:108
 #: templates/list/section.html:40 templates/list/section.html:112
 msgid "medicine"
 msgstr "medicamento"
 
-#: directory/models.py:45 directory/models.py:88 evidence/models.py:36
+#: directory/models.py:49 directory/models.py:94 evidence/models.py:36
 #: evidence/models.py:74 history/models.py:77 list/models.py:86
 #: list/models.py:186
 msgid "language"
 msgstr "idioma"
 
-#: directory/models.py:46 directory/models.py:58 directory/models.py:89
+#: directory/models.py:50 directory/models.py:63 directory/models.py:95
 #: history/models.py:31 history/models.py:78 list/models.py:36
 #: list/models.py:87 list/models.py:187
 msgid "name"
 msgstr "nombre"
 
-#: directory/models.py:98 templates/list/section.html:41
+#: directory/models.py:109 templates/list/section.html:41
 #: templates/list/section.html:113
 msgid "pharmaceutical form type"
 msgstr "tipo de forma farmacéutica"
 
-#: directory/models.py:99
+#: directory/models.py:110
 msgid "atc code"
 msgstr "código ATC"
 
-#: directory/models.py:100 templates/list/section.html:42
+#: directory/models.py:111 templates/list/section.html:42
 #: templates/list/section.html:114
 msgid "composition"
 msgstr "composición"
 
-#: directory/models.py:101
+#: directory/models.py:112
 msgid "composition (Spanish)"
 msgstr "Composición (Español)"
 
-#: directory/models.py:102
+#: directory/models.py:113
 msgid "composition (Portuguese)"
 msgstr "Composición (Portugués)"
 
@@ -220,19 +220,19 @@ msgstr ""
 msgid "history translations"
 msgstr ""
 
-#: list/admin.py:80
+#: list/admin.py:77
 msgid "Published or unpublished selected lists"
 msgstr "Publicar o despublicar las listas seleccionadas"
 
-#: list/admin.py:86
+#: list/admin.py:83
 msgid "Created of list archive copy successfully"
 msgstr "Archivo de la lista creado  con éxito"
 
-#: list/admin.py:88
+#: list/admin.py:85
 msgid "Create a archive copy of selected lists"
 msgstr "Crear una copia de archivo de las listas de seleccionados"
 
-#: list/admin.py:123
+#: list/admin.py:120
 msgid "Indexes these pharmaceutical forms"
 msgstr "Indizar estas formas farmacéuticas"
 
@@ -240,7 +240,7 @@ msgstr "Indizar estas formas farmacéuticas"
 msgid "list"
 msgstr "lista"
 
-#: list/models.py:34 templates/list/compare.html:38
+#: list/models.py:34 templates/list/compare.html:27
 msgid "lists"
 msgstr "listas"
 
@@ -320,11 +320,12 @@ msgstr "lista complementaria"
 msgid "Django administration"
 msgstr "Administración MEDLIST"
 
-#: templates/base.html:16 templates/base.html:38 templates/top.html:15
+#: templates/base.html:16 templates/base.html:38 templates/top.html:16
 msgid "Annotated Medicine and Device Lists"
 msgstr "Listas Anotadas de Medicamentos y Dispositivos"
 
-#: templates/directory/show_medicine.html:6
+#: templates/directory/show_medicine.html:6 templates/list/compare.html:54
+#: templates/list/compare.html:83
 msgid "Medicine"
 msgstr "Medicamento"
 
@@ -403,7 +404,8 @@ msgid "Loading"
 msgstr "Cargando"
 
 #: templates/directory/show_medicine.html:152
-#: templates/utils/rxnorm_data.html:23
+#: templates/utils/rxnorm_data.html:27
+#: templates/utils/scientific_production.html:19
 msgid "No information available"
 msgstr "No hay información disponible"
 
@@ -411,43 +413,45 @@ msgstr "No hay información disponible"
 msgid "History"
 msgstr "Histórico"
 
-#: templates/list/compare.html:5 templates/list/compare.html:10
+#: templates/list/compare.html:9 templates/list/compare.html:14
+#: templates/list/compare.html:18
 msgid "Compare Lists"
 msgstr "Comparar listas"
 
-#: templates/list/compare.html:36
+#: templates/list/compare.html:25
 msgid "Filters"
 msgstr "Filtros"
 
-#: templates/list/compare.html:46
+#: templates/list/compare.html:36
 msgid "countries"
 msgstr "paises"
 
-#: templates/list/compare.html:56
+#: templates/list/compare.html:48
+msgid "Medicine, Pharmaceutical Form and Composition"
+msgstr "Medicamento, Forma Farmacéutica y Composición"
+
+#: templates/list/compare.html:51
+#| msgid "Pharmaceutical Form"
+msgid "Medicine and Pharmaceutical Form"
+msgstr "Medicamento y Forma farmacéutica"
+
+#: templates/list/compare.html:61
 msgid "All Results"
 msgstr "Todos los resultados"
 
-#: templates/list/compare.html:57
+#: templates/list/compare.html:64
 msgid "Only Matched"
 msgstr "Sólo los que coinciden"
 
-#: templates/list/compare.html:58
+#: templates/list/compare.html:67
 msgid "Only Unmatched"
 msgstr "Sólo los que no coinciden"
 
-#: templates/list/compare.html:68
-msgid "Name"
-msgstr "Nombre"
-
-#: templates/list/compare.html:69
+#: templates/list/compare.html:85
 msgid "Pharmaceutical Form"
 msgstr "Forma farmacéutica"
 
-#: templates/list/compare.html:86
-msgid "No have composition"
-msgstr "no hay composición"
-
-#: templates/list/compare.html:109
+#: templates/list/compare.html:125
 msgid "Sorry, but there's no results for this filter's combination."
 msgstr "No hay resultados para esta combinación de filtro."
 
@@ -473,13 +477,23 @@ msgstr "Início"
 msgid "Compare lists"
 msgstr "Compare las listas"
 
-#: templates/utils/rxnorm_data.html:8
+#: templates/utils/rxnorm_data.html:5
+msgid "Source"
+msgstr "Fuente"
+
+#: templates/utils/rxnorm_data.html:11
 msgid "Branded Drug or Pack"
 msgstr "Medicamento de Marca ou Paquete"
 
-#: templates/utils/rxnorm_data.html:10
+#: templates/utils/rxnorm_data.html:13
 msgid "Clinical Drug or Pack"
 msgstr "Medicamento Clínico ou Pacote"
+
+#~ msgid "Name"
+#~ msgstr "Nombre"
+
+#~ msgid "No have composition"
+#~ msgstr "no hay composición"
 
 #~ msgid "restriction age or weight"
 #~ msgstr "restricción de la edad o el peso"
