@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: medlist-0.1\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2021-04-08 15:11-0300\n"
-"PO-Revision-Date: 2021-04-08 15:27-0306\n"
+"PO-Revision-Date: 2021-04-08 15:32-0306\n"
 "Last-Translator: b'  <admin@localhost.com>'\n"
 "Language-Team: BIREME <reddes@bireme.org>\n"
 "Language: \n"
@@ -330,7 +330,7 @@ msgstr "Listas Anotadas de Medicamentos e Dispositivos"
 #: templates/directory/show_medicine.html:6 templates/list/compare.html:54
 #: templates/list/compare.html:83
 msgid "Medicine"
-msgstr "medicamento"
+msgstr "Medicamento"
 
 #: templates/directory/show_medicine.html:13
 msgid "medicines"
