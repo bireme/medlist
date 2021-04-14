@@ -33,14 +33,21 @@ def show_medicine(request, id):
 				if not form.id in forms_in_lists[list.id]:
 					forms_in_lists[list.id]["forms"].append(form.id)
 
-	new_forms = {}
+	pharm_form_list = {}
 	for form in pharm_forms:
 		# get only pharmaceutical forms present in published lists
 		form_in_lists = SectionPharmForm.objects.filter(pharmaceutical_form=form, section__list__published=True)
 		if form_in_lists:
-			new_forms[form.id] = {}
-			new_forms[form.id]['form'] = form
-			new_forms[form.id]['form_in_lists'] = form_in_lists
+			pharm_form_list[form.id] = {}
+			pharm_form_list[form.id]['form'] = form
+			pharm_form_list[form.id]['form_pharmaceutical_form_type'] = form.pharmaceutical_form_type.get_translation(request.LANGUAGE_CODE)
+			pharm_form_list[form.id]['form_in_lists'] = form_in_lists
+
+	# sort list by pharmaceutical_form_type
+	pharm_form_id_sorted = sorted(pharm_form_list, key=lambda x: pharm_form_list[x]['form_pharmaceutical_form_type'].lower())
+	pharm_form_list_final = []
+	for sorted_id in pharm_form_id_sorted:
+		pharm_form_list_final.append(pharm_form_list[sorted_id])
 
 	forms = []
 	for form in pharm_forms:
@@ -62,7 +69,7 @@ def show_medicine(request, id):
 	dict_response = {
 		'medicine': medicine,
 		'pharm_forms': pharm_forms,
-		'forms': new_forms,
+		'pharm_form_list': pharm_form_list_final,
 		'lists': lists,
 		'countries': countries,
 		'evidences': evidences,

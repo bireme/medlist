@@ -20,9 +20,9 @@
     <div class="row">
         <div class="col-12 col-md-3 medPills overflow-auto" style="max-height: 300px; margin-bottom: 20px;">
             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist">
-                {% for form_id,form in forms.items %}
+                {% for form in pharm_form_list %}
 					<a href="#type_{{form.form.id}}" class="nav-link  {% if forloop.first %}active{% endif %}" data-toggle="pill" role="tab" aria-controls="v-pills-messages" aria-selected="{% if forloop.first %}true{% else %}false{% endif %}">
-                        {{ form.form.pharmaceutical_form_type|translate:request.LANGUAGE_CODE }}
+                        {{ form.form_pharmaceutical_form_type|capfirst }}
                         {% if form.form.composition %}
                             <small class="navSmall">
                                 {% field_lang form.form "composition" request.LANGUAGE_CODE %}
@@ -34,7 +34,7 @@
         </div>
         <div class="col-12 col-md-9 overflow-auto" style="max-height:300px">
             <div class="tab-content" id="tabMedicamentos">
-                {% for form_id,form in forms.items %}
+                {% for form in pharm_form_list %}
                     <div class="tab-pane fade {% if forloop.first %}show active{% endif %}" id="type_{{form.form.id}}" role="tabpanel" aria-labelledby="v-pills-home-tab">
                         {% if form.form_in_lists|length > 0 %}
     					    <h4><b>{% trans "This medicine is present in" %}:</b></h4>
