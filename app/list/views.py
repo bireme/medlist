@@ -46,7 +46,7 @@ def show_list(request, id):
 
 	pharm_section = {}
 	for section in sections:
-		query = SectionPharmForm.objects.filter(section=section)
+		query = SectionPharmForm.objects.filter(section=section).order_by('pharmaceutical_form__medicine__name')
 		pharm_section[section.id] = query
 
 	history_list = History.objects.filter(abbreviation=list.abbreviation)
