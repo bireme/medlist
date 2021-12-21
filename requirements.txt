@@ -1,4 +1,4 @@
-Django==2.2.4
+Django==2.2.25
 solrpy==0.9.9
 django-mptt==0.9.1
 Whoosh==2.7.4
