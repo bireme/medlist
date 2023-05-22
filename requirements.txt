@@ -3,5 +3,5 @@ solrpy==0.9.9
 django-mptt==0.9.1
 Whoosh==2.7.4
 bootstrap_admin==0.4.3
-requests==2.22.0
+requests==2.31.0
 #django-rosetta==0.6.6
