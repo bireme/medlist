@@ -16,7 +16,7 @@ class BruteForceProtectionMiddleware:
             ip_address = request.META.get("REMOTE_ADDR")
 
             # Increment the failed login attempt count for this IP address
-            cache_key = f"login_attempts:{ip_address}"
+            cache_key = "login_attempts:{}".format(ip_address)
             login_attempts = cache.get(cache_key, 0)
 
             # if user is not authenticated == login fail
@@ -26,7 +26,7 @@ class BruteForceProtectionMiddleware:
             # If the login attempts exceed the threshold, block further attempts
             if login_attempts >= settings.BRUTE_FORCE_THRESHOLD:
                 return HttpResponseForbidden(
-                    f"Too many login attempts. Please try again later after {settings.BRUTE_FORCE_TIMEOUT // 60} minutes."
+                    "Too many login attempts. Please try again later after {} minutes.".format(settings.BRUTE_FORCE_TIMEOUT // 60)
                 )
 
         return response
