@@ -59,6 +59,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'django.middleware.locale.LocaleMiddleware',
+    'utils.middleware.BruteForceProtectionMiddleware',
 ]
 
 ROOT_URLCONF = 'medlist.urls'
@@ -134,9 +135,9 @@ LOCALE_PATHS =(
 
 MEDIA_URL = '/media/'
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 
-STATICFILES_DIRS = ( os.path.join('static'), )
+STATICFILES_DIRS = (os.path.join('static'),)
 WHOOSH_INDEX = os.path.join(BASE_DIR, 'index')
 
 # MEDLIST CONFIGURATIONS
@@ -154,6 +155,10 @@ TEMPLATE_VISIBLE_SETTINGS = (
     'GOOGLE_ANALYTICS_ID',
     'MEDIA_URL',
 )
+
+LOGIN_URL = '/admin/login/'
+BRUTE_FORCE_THRESHOLD = 3  # Allow only 3 failed login attempts
+BRUTE_FORCE_TIMEOUT = 300  # Lock the user out for 5 minutes (300 seconds)
 
 try:
     from medlist.settings_local import *
